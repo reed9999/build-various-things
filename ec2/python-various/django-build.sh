@@ -1,3 +1,4 @@
+# This works and passes tests
 pushd ~/django
 python3 -m venv ~/.virtualenvs/djangodev
 source ~/.virtualenvs/djangodev/bin/activate

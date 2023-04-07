@@ -1,0 +1,8 @@
+Ran 16251 tests in 337.776s
+
+OK (skipped=1671, expected failures=5)
+
+
+
+on t3.large I believe.
+
