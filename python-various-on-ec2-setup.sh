@@ -12,7 +12,9 @@ git config --global core.autocrlf input
 
 sudo rm /usr/bin/python3
 sudo ln -s /usr/bin/python3.11 /usr/bin/python3
+pushd ~
 git clone https://github.com/pytest-dev/pytest.git
 git clone --depth 1 https://github.com/django/django.git
 git clone https://github.com/qutebrowser/qutebrowser.git
 git clone --depth 1 https://github.com/pytorch/pytorch
+popd

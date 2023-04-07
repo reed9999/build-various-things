@@ -1,3 +1,12 @@
+# Issues with this commit
+Merging is going to get out of hand so let's try to control this!
+
+- bootstrap obv is a mess. I really only want git.
+- ~~it's not pushd'ing correctly so code is put in scripts if I run from scripts.~~ fixed
+- and THEN... of course the refactoring. But be sure to add the newly refactored dir!!
+- getting it to use Python3.11 is still a mess. This revision is probably forgetting to re-link 3.9, 
+  and it seems we're not installing pip for 3.11.
+
 # README - Compiling and Building Various Things
 Here I attempt to automate build processes... just because.
 (Building from source is a prereq to mucking around in source, kind of, 
@@ -12,10 +21,16 @@ Qutebrowser isn't a high priority for me but I did look into contributing once,
 when I found it on a list of welcoming open source projects,
  so I have a fondness for it.
 
-So far I got all the code; haven't gotten builds to work because I can't find 
-pytest build instructions and `python3 setup.py` fails.
+So far I got all the code; some builds work and some don't.
 
-This sounds inauspicious: 
+- pytest seems OK.
+- Django passes its wonderful test suite.
+- qutebrowser not working here; I think I got it on ohio-03.
+
+
+### Build warnings
+
+This sounds inauspicious, from pytest I believe.
 ```
 $ python3 ./setup.py --help
 /usr/lib/python3.9/site-packages/setuptools/installer.py:27: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
@@ -29,8 +44,7 @@ Common commands: (see '--help-commands' for more)
 
 However `python3 ./setup.py build` was OK except for those so who knows?
 
-python3 ./setup.py build
-
+Django gets some deprecation warnings.
 ## Enhancements
 Can we just use an EC2 image with gcc? Try:
 
