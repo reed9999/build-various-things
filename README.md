@@ -44,3 +44,17 @@ closer regions to compare.
 
 Terraform-automate of course.
 
+
+
+
+## Temp stuff -- mysql
+# https://dev.mysql.com/doc/refman/8.0/en/installing-development-tree.html
+# https://dev.mysql.com/doc/refman/8.0/en/source-installation-prerequisites.html
+
+
+sudo yum install cmake
+sudo yum install gcc
+sudo yum install boost
+sudo yum install ncurses
+sudo yum install perl   # to run tests
+sudo yum install -y bison
