@@ -6,5 +6,11 @@ git config --global user.email reed9999@uw.edu
 git config --global core.autocrlf input
 git config --global credential.helper store  # be careful! stores in plaintext
 sudo yum install -y gcc
-git clone https://github.com/reed9999/cpython.git
+
+pushd ~
+git clone --depth 1 https://github.com/reed9999/cpython.git
 git remote add upstream https://github.com/python/cpython
+
+# I'm including Python-native tools here just for balance, even though they use more Python than C/C++.
+git clone --depth 1 https://github.com/pypa/pip.git 
+popd
