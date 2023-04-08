@@ -16,7 +16,8 @@ echo "***** BEGIN DJANGO TESTS $(date)"
 ./runtests.py
 echo "***** END DJANGO TESTS $(date)"
 echo
-popd
+popd  # from tests
+popd  # from django
 
 sudo rm /usr/bin/python3
 sudo mv /usr/bin/python3-original /usr/bin/python3
