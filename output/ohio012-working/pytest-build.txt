@@ -555,3 +555,915 @@ py37-pylib: skipped because could not find python interpreter with spec(s): py37
 py37-pylib: SKIP ⚠ in 0 seconds
 doctesting: install_deps> python -I -m pip install PyYAML
 doctesting: install_package_deps> python -I -m pip install argcomplete 'attrs>=19.2.0' 'colorama; sys_platform == "win32"' 'exceptiongroup>=1.0.0rc8; python_version < "3.11"' 'hypothesis>=3.56' 'importlib-metadata>=0.12; python_version < "3.8"' iniconfig mock nose packaging 'pluggy<2.0,>=0.12' 'pygments>=2.7.2' requests 'tomli>=1.0.0; python_version < "3.11"' xmlschema
+doctesting: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/3/pytest-7.2.0.dev544+g3683722bc.tar.gz
+doctesting: commands[0]> pytest doc/en
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/doctesting/.pytest_cache
+rootdir: /home/ec2-user/pytest/doc/en
+configfile: pytest.ini
+plugins: hypothesis-6.71.0
+collected 15 items
+
+doc/en/example/assertion/test_failures.py .                              [  6%]
+doc/en/example/assertion/test_setup_flow_example.py ..                   [ 20%]
+doc/en/example/assertion/global_testmodule_config/test_hello_world.py .  [ 26%]
+doc/en/example/fixtures/test_fixtures_order_autouse.py .                 [ 33%]
+doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.py . [ 40%]
+.                                                                        [ 46%]
+doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.py .... [ 73%]
+                                                                         [ 73%]
+doc/en/example/fixtures/test_fixtures_order_dependencies.py .            [ 80%]
+doc/en/example/fixtures/test_fixtures_order_scope.py .                   [ 86%]
+doc/en/example/fixtures/test_fixtures_request_different_scope.py ..      [100%]
+
+============================== 15 passed in 0.32s ==============================
+doctesting: commands[1]> pytest --doctest-modules --pyargs _pytest
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: .tox/doctesting/.pytest_cache
+rootdir: /home/ec2-user/pytest
+configfile: pyproject.toml
+plugins: hypothesis-6.71.0
+collected 5 items
+
+.tox/doctesting/lib/python3.9/site-packages/_pytest/freeze_support.py .  [ 20%]
+.tox/doctesting/lib/python3.9/site-packages/_pytest/python_api.py ..     [ 60%]
+.tox/doctesting/lib/python3.9/site-packages/_pytest/recwarn.py ..        [100%]
+
+============================== 5 passed in 0.16s ===============================
+doctesting: OK ✔ in 7.58 seconds
+plugins: install_deps> python -m pip install --pre -r testing/plugins_integration/requirements.txt
+plugins: install_package_deps> python -m pip install --pre argcomplete 'attrs>=19.2.0' 'colorama; sys_platform == "win32"' 'exceptiongroup>=1.0.0rc8; python_version < "3.11"' 'hypothesis>=3.56' 'importlib-metadata>=0.12; python_version < "3.8"' iniconfig mock nose packaging 'pluggy<2.0,>=0.12' 'pygments>=2.7.2' requests 'tomli>=1.0.0; python_version < "3.11"' xmlschema
+plugins: install_package> python -m pip install --pre --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/4/pytest-7.2.0.dev544+g3683722bc.tar.gz
+plugins: commands[0] /home/ec2-user/pytest/testing/plugins_integration> pip check
+No broken requirements found.
+plugins: commands[1] /home/ec2-user/pytest/testing/plugins_integration> pytest bdd_wallet.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 1 item
+
+bdd_wallet.py .                                                          [100%]
+
+============================== 1 passed in 0.02s ===============================
+plugins: commands[2] /home/ec2-user/pytest/testing/plugins_integration> pytest --cov=. simple_integration.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 4 items
+
+simple_integration.py ....                                               [100%]
+
+---------- coverage: platform linux, python 3.9.16-final-0 -----------
+Name                            Stmts   Miss  Cover
+---------------------------------------------------
+bdd_wallet.py                      25     25     0%
+django_settings.py                  1      1     0%
+pytest_anyio_integration.py         5      5     0%
+pytest_asyncio_integration.py       5      5     0%
+pytest_mock_integration.py          2      2     0%
+pytest_trio_integration.py          5      5     0%
+pytest_twisted_integration.py      11     11     0%
+simple_integration.py               6      0   100%
+---------------------------------------------------
+TOTAL                              60     54    10%
+
+
+============================== 4 passed in 0.04s ===============================
+plugins: commands[3] /home/ec2-user/pytest/testing/plugins_integration> pytest --ds=django_settings simple_integration.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+django: settings: django_settings (from option)
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 4 items
+
+simple_integration.py ....                                               [100%]
+
+=============================== warnings summary ===============================
+../../.tox/plugins/lib/python3.9/site-packages/django/conf/__init__.py:214
+  /home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/django/conf/__init__.py:214: RemovedInDjango50Warning: The default value of USE_TZ will change from False to True in Django 5.0. Set USE_TZ to False in your project settings if you want to keep the current default behavior.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 4 passed, 1 warning in 0.03s =========================
+plugins: commands[4] /home/ec2-user/pytest/testing/plugins_integration> pytest --html=simple.html simple_integration.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 4 items
+
+simple_integration.py ....                                               [100%]
+
+- generated html file: file:///home/ec2-user/pytest/testing/plugins_integration/simple.html -
+============================== 4 passed in 0.02s ===============================
+plugins: commands[5] /home/ec2-user/pytest/testing/plugins_integration> pytest --reruns 5 simple_integration.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 4 items
+
+simple_integration.py ....                                               [100%]
+
+============================== 4 passed in 0.02s ===============================
+plugins: commands[6] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_anyio_integration.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 2 items
+
+pytest_anyio_integration.py ..                                           [100%]
+
+============================== 2 passed in 0.05s ===============================
+plugins: commands[7] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_asyncio_integration.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 1 item
+
+pytest_asyncio_integration.py .                                          [100%]
+
+============================== 1 passed in 0.01s ===============================
+plugins: commands[8] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_mock_integration.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 1 item
+
+pytest_mock_integration.py .                                             [100%]
+
+============================== 1 passed in 0.01s ===============================
+plugins: commands[9] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_trio_integration.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 1 item
+
+pytest_trio_integration.py .                                             [100%]
+
+=============================== warnings summary ===============================
+pytest_trio_integration.py::test_sleep
+  /home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_wakeup_socketpair.py:56: RuntimeWarning: It looks like Trio's signal handling code might have collided with another library you're using. If you're running Trio in guest mode, then this might mean you should set host_uses_signal_set_wakeup_fd=True. Otherwise, file a bug on Trio and we'll help you figure out what's going on.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 1 passed, 1 warning in 0.01s =========================
+plugins: commands[10] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_twisted_integration.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+collected 2 items
+
+pytest_twisted_integration.py ..                                         [100%]
+
+============================== 2 passed in 0.01s ===============================
+plugins: commands[11] /home/ec2-user/pytest/testing/plugins_integration> pytest simple_integration.py --force-sugar --flakes
+Test session starts (platform: linux, Python 3.9.16, pytest 7.2.0.dev544+g3683722bc, pytest-sugar 0.9.5)
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.5, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.71.0
+asyncio: mode=strict
+
+ simple_integration.py ✓                                          20% ██         simple_integration.py ✓✓                                         40% ████       simple_integration.py ✓✓✓                                        60% ██████     simple_integration.py ✓✓✓✓                                       80% ████████   simple_integration.py ✓✓✓✓✓                                     100% ██████████
+
+Results (0.03s):
+       5 passed
+plugins: OK ✔ in 24.65 seconds
+py37-freeze: skipped because could not find python interpreter with spec(s): py37
+py37-freeze: SKIP ⚠ in 0 seconds
+docs: install_deps> python -I -m pip install 'towncrier<21.3.0' -r /home/ec2-user/pytest/doc/en/requirements.txt
+docs: install_package_deps> python -I -m pip install argcomplete 'attrs>=19.2.0' 'colorama; sys_platform == "win32"' 'exceptiongroup>=1.0.0rc8; python_version < "3.11"' 'hypothesis>=3.56' 'importlib-metadata>=0.12; python_version < "3.8"' iniconfig mock nose packaging 'pluggy<2.0,>=0.12' 'pygments>=2.7.2' requests 'tomli>=1.0.0; python_version < "3.11"' xmlschema
+docs: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/5/pytest-7.2.0.dev544+g3683722bc-py3-none-any.whl
+docs: commands[0]> python scripts/towncrier-draft-to-file.py
+docs: commands[1]> sphinx-build -W --keep-going -b html doc/en doc/en/_build/html -t changelog_towncrier_draft
+Running Sphinx v5.3.0
+making output directory... done
+[autosummary] generating autosummary for: _changelog_towncrier_draft.rst, adopt.rst, announce/index.rst, announce/release-2.0.0.rst, announce/release-2.0.1.rst, announce/release-2.0.2.rst, announce/release-2.0.3.rst, announce/release-2.1.0.rst, announce/release-2.1.1.rst, announce/release-2.1.2.rst, ..., reference/customize.rst, reference/exit-codes.rst, reference/fixtures.rst, reference/index.rst, reference/plugin_list.rst, reference/reference.rst, sponsor.rst, talks.rst, tidelift.rst, yieldfixture.rst
+loading intersphinx inventory from https://pluggy.readthedocs.io/en/stable/objects.inv...
+loading intersphinx inventory from https://docs.python.org/3/objects.inv...
+loading intersphinx inventory from https://numpy.org/doc/stable/objects.inv...
+loading intersphinx inventory from https://pip.pypa.io/en/stable/objects.inv...
+loading intersphinx inventory from https://tox.wiki/en/stable/objects.inv...
+loading intersphinx inventory from https://virtualenv.pypa.io/en/stable/objects.inv...
+loading intersphinx inventory from https://setuptools.pypa.io/en/stable/objects.inv...
+loading intersphinx inventory from https://packaging.python.org/en/latest/objects.inv...
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 220 source files that are out of date
+updating environment: [new config] 220 added, 0 changed, 0 removed
+reading sources... [  0%] _changelog_towncrier_draft
+reading sources... [  0%] adopt
+reading sources... [  1%] announce/index
+reading sources... [  1%] announce/release-2.0.0
+reading sources... [  2%] announce/release-2.0.1
+reading sources... [  2%] announce/release-2.0.2
+reading sources... [  3%] announce/release-2.0.3
+reading sources... [  3%] announce/release-2.1.0
+reading sources... [  4%] announce/release-2.1.1
+reading sources... [  4%] announce/release-2.1.2
+reading sources... [  5%] announce/release-2.1.3
+reading sources... [  5%] announce/release-2.2.0
+reading sources... [  5%] announce/release-2.2.1
+reading sources... [  6%] announce/release-2.2.2
+reading sources... [  6%] announce/release-2.2.4
+reading sources... [  7%] announce/release-2.3.0
+reading sources... [  7%] announce/release-2.3.1
+reading sources... [  8%] announce/release-2.3.2
+reading sources... [  8%] announce/release-2.3.3
+reading sources... [  9%] announce/release-2.3.4
+reading sources... [  9%] announce/release-2.3.5
+reading sources... [ 10%] announce/release-2.4.0
+reading sources... [ 10%] announce/release-2.4.1
+reading sources... [ 10%] announce/release-2.4.2
+reading sources... [ 11%] announce/release-2.5.0
+reading sources... [ 11%] announce/release-2.5.1
+reading sources... [ 12%] announce/release-2.5.2
+reading sources... [ 12%] announce/release-2.6.0
+reading sources... [ 13%] announce/release-2.6.1
+reading sources... [ 13%] announce/release-2.6.2
+reading sources... [ 14%] announce/release-2.6.3
+reading sources... [ 14%] announce/release-2.7.0
+reading sources... [ 15%] announce/release-2.7.1
+reading sources... [ 15%] announce/release-2.7.2
+reading sources... [ 15%] announce/release-2.8.2
+reading sources... [ 16%] announce/release-2.8.3
+reading sources... [ 16%] announce/release-2.8.4
+reading sources... [ 17%] announce/release-2.8.5
+reading sources... [ 17%] announce/release-2.8.6
+reading sources... [ 18%] announce/release-2.8.7
+reading sources... [ 18%] announce/release-2.9.0
+reading sources... [ 19%] announce/release-2.9.1
+reading sources... [ 19%] announce/release-2.9.2
+reading sources... [ 20%] announce/release-3.0.0
+reading sources... [ 20%] announce/release-3.0.1
+reading sources... [ 20%] announce/release-3.0.2
+reading sources... [ 21%] announce/release-3.0.3
+reading sources... [ 21%] announce/release-3.0.4
+reading sources... [ 22%] announce/release-3.0.5
+reading sources... [ 22%] announce/release-3.0.6
+reading sources... [ 23%] announce/release-3.0.7
+reading sources... [ 23%] announce/release-3.1.0
+reading sources... [ 24%] announce/release-3.1.1
+reading sources... [ 24%] announce/release-3.1.2
+reading sources... [ 25%] announce/release-3.1.3
+reading sources... [ 25%] announce/release-3.10.0
+reading sources... [ 25%] announce/release-3.10.1
+reading sources... [ 26%] announce/release-3.2.0
+reading sources... [ 26%] announce/release-3.2.1
+reading sources... [ 27%] announce/release-3.2.2
+reading sources... [ 27%] announce/release-3.2.3
+reading sources... [ 28%] announce/release-3.2.4
+reading sources... [ 28%] announce/release-3.2.5
+reading sources... [ 29%] announce/release-3.3.0
+reading sources... [ 29%] announce/release-3.3.1
+reading sources... [ 30%] announce/release-3.3.2
+reading sources... [ 30%] announce/release-3.4.0
+reading sources... [ 30%] announce/release-3.4.1
+reading sources... [ 31%] announce/release-3.4.2
+reading sources... [ 31%] announce/release-3.5.0
+reading sources... [ 32%] announce/release-3.5.1
+reading sources... [ 32%] announce/release-3.6.0
+reading sources... [ 33%] announce/release-3.6.1
+reading sources... [ 33%] announce/release-3.6.2
+reading sources... [ 34%] announce/release-3.6.3
+reading sources... [ 34%] announce/release-3.6.4
+reading sources... [ 35%] announce/release-3.7.0
+reading sources... [ 35%] announce/release-3.7.1
+reading sources... [ 35%] announce/release-3.7.2
+reading sources... [ 36%] announce/release-3.7.3
+reading sources... [ 36%] announce/release-3.7.4
+reading sources... [ 37%] announce/release-3.8.0
+reading sources... [ 37%] announce/release-3.8.1
+reading sources... [ 38%] announce/release-3.8.2
+reading sources... [ 38%] announce/release-3.9.0
+reading sources... [ 39%] announce/release-3.9.1
+reading sources... [ 39%] announce/release-3.9.2
+reading sources... [ 40%] announce/release-3.9.3
+reading sources... [ 40%] announce/release-4.0.0
+reading sources... [ 40%] announce/release-4.0.1
+reading sources... [ 41%] announce/release-4.0.2
+reading sources... [ 41%] announce/release-4.1.0
+reading sources... [ 42%] announce/release-4.1.1
+reading sources... [ 42%] announce/release-4.2.0
+reading sources... [ 43%] announce/release-4.2.1
+reading sources... [ 43%] announce/release-4.3.0
+reading sources... [ 44%] announce/release-4.3.1
+reading sources... [ 44%] announce/release-4.4.0
+reading sources... [ 45%] announce/release-4.4.1
+reading sources... [ 45%] announce/release-4.4.2
+reading sources... [ 45%] announce/release-4.5.0
+reading sources... [ 46%] announce/release-4.6.0
+reading sources... [ 46%] announce/release-4.6.1
+reading sources... [ 47%] announce/release-4.6.2
+reading sources... [ 47%] announce/release-4.6.3
+reading sources... [ 48%] announce/release-4.6.4
+reading sources... [ 48%] announce/release-4.6.5
+reading sources... [ 49%] announce/release-4.6.6
+reading sources... [ 49%] announce/release-4.6.7
+reading sources... [ 50%] announce/release-4.6.8
+reading sources... [ 50%] announce/release-4.6.9
+reading sources... [ 50%] announce/release-5.0.0
+reading sources... [ 51%] announce/release-5.0.1
+reading sources... [ 51%] announce/release-5.1.0
+reading sources... [ 52%] announce/release-5.1.1
+reading sources... [ 52%] announce/release-5.1.2
+reading sources... [ 53%] announce/release-5.1.3
+reading sources... [ 53%] announce/release-5.2.0
+reading sources... [ 54%] announce/release-5.2.1
+reading sources... [ 54%] announce/release-5.2.2
+reading sources... [ 55%] announce/release-5.2.3
+reading sources... [ 55%] announce/release-5.2.4
+reading sources... [ 55%] announce/release-5.3.0
+reading sources... [ 56%] announce/release-5.3.1
+reading sources... [ 56%] announce/release-5.3.2
+reading sources... [ 57%] announce/release-5.3.3
+reading sources... [ 57%] announce/release-5.3.4
+reading sources... [ 58%] announce/release-5.3.5
+reading sources... [ 58%] announce/release-5.4.0
+reading sources... [ 59%] announce/release-5.4.1
+reading sources... [ 59%] announce/release-5.4.2
+reading sources... [ 60%] announce/release-5.4.3
+reading sources... [ 60%] announce/release-6.0.0
+reading sources... [ 60%] announce/release-6.0.0rc1
+reading sources... [ 61%] announce/release-6.0.1
+reading sources... [ 61%] announce/release-6.0.2
+reading sources... [ 62%] announce/release-6.1.0
+reading sources... [ 62%] announce/release-6.1.1
+reading sources... [ 63%] announce/release-6.1.2
+reading sources... [ 63%] announce/release-6.2.0
+reading sources... [ 64%] announce/release-6.2.1
+reading sources... [ 64%] announce/release-6.2.2
+reading sources... [ 65%] announce/release-6.2.3
+reading sources... [ 65%] announce/release-6.2.4
+reading sources... [ 65%] announce/release-6.2.5
+reading sources... [ 66%] announce/release-7.0.0
+reading sources... [ 66%] announce/release-7.0.0rc1
+reading sources... [ 67%] announce/release-7.0.1
+reading sources... [ 67%] announce/release-7.1.0
+reading sources... [ 68%] announce/release-7.1.1
+reading sources... [ 68%] announce/release-7.1.2
+reading sources... [ 69%] announce/release-7.1.3
+reading sources... [ 69%] announce/release-7.2.0
+reading sources... [ 70%] announce/release-7.2.1
+reading sources... [ 70%] announce/release-7.2.2
+reading sources... [ 70%] announce/sprint2016
+reading sources... [ 71%] backwards-compatibility
+reading sources... [ 71%] builtin
+reading sources... [ 72%] changelog
+reading sources... [ 72%] contact
+reading sources... [ 73%] contents
+reading sources... [ 73%] contributing
+reading sources... [ 74%] deprecations
+reading sources... [ 74%] development_guide
+reading sources... [ 75%] example/index
+reading sources... [ 75%] example/markers
+reading sources... [ 75%] example/nonpython
+reading sources... [ 76%] example/parametrize
+reading sources... [ 76%] example/pythoncollection
+reading sources... [ 77%] example/reportingdemo
+reading sources... [ 77%] example/simple
+reading sources... [ 78%] example/special
+reading sources... [ 78%] explanation/anatomy
+reading sources... [ 79%] explanation/fixtures
+reading sources... [ 79%] explanation/flaky
+reading sources... [ 80%] explanation/goodpractices
+reading sources... [ 80%] explanation/index
+reading sources... [ 80%] explanation/pythonpath
+reading sources... [ 81%] funcarg_compare
+reading sources... [ 81%] getting-started
+reading sources... [ 82%] historical-notes
+reading sources... [ 82%] history
+reading sources... [ 83%] how-to/assert
+reading sources... [ 83%] how-to/bash-completion
+reading sources... [ 84%] how-to/cache
+reading sources... [ 84%] how-to/capture-stdout-stderr
+reading sources... [ 85%] how-to/capture-warnings
+reading sources... [ 85%] how-to/doctest
+reading sources... [ 85%] how-to/existingtestsuite
+reading sources... [ 86%] how-to/failures
+reading sources... [ 86%] how-to/fixtures
+reading sources... [ 87%] how-to/index
+reading sources... [ 87%] how-to/logging
+reading sources... [ 88%] how-to/mark
+reading sources... [ 88%] how-to/monkeypatch
+reading sources... [ 89%] how-to/nose
+reading sources... [ 89%] how-to/output
+reading sources... [ 90%] how-to/parametrize
+reading sources... [ 90%] how-to/plugins
+reading sources... [ 90%] how-to/skipping
+reading sources... [ 91%] how-to/tmp_path
+reading sources... [ 91%] how-to/unittest
+reading sources... [ 92%] how-to/usage
+reading sources... [ 92%] how-to/writing_hook_functions
+reading sources... [ 93%] how-to/writing_plugins
+reading sources... [ 93%] how-to/xunit_setup
+reading sources... [ 94%] index
+reading sources... [ 94%] license
+reading sources... [ 95%] proposals/parametrize_with_fixtures
+reading sources... [ 95%] recwarn
+reading sources... [ 95%] reference/customize
+reading sources... [ 96%] reference/exit-codes
+reading sources... [ 96%] reference/fixtures
+reading sources... [ 97%] reference/index
+reading sources... [ 97%] reference/plugin_list
+reading sources... [ 98%] reference/reference
+reading sources... [ 98%] sponsor
+reading sources... [ 99%] talks
+reading sources... [ 99%] tidelift
+reading sources... [100%] yieldfixture
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [  0%] _changelog_towncrier_draft
+writing output... [  0%] adopt
+writing output... [  1%] announce/index
+writing output... [  1%] announce/release-2.0.0
+writing output... [  2%] announce/release-2.0.1
+writing output... [  2%] announce/release-2.0.2
+writing output... [  3%] announce/release-2.0.3
+writing output... [  3%] announce/release-2.1.0
+writing output... [  4%] announce/release-2.1.1
+writing output... [  4%] announce/release-2.1.2
+writing output... [  5%] announce/release-2.1.3
+writing output... [  5%] announce/release-2.2.0
+writing output... [  5%] announce/release-2.2.1
+writing output... [  6%] announce/release-2.2.2
+writing output... [  6%] announce/release-2.2.4
+writing output... [  7%] announce/release-2.3.0
+writing output... [  7%] announce/release-2.3.1
+writing output... [  8%] announce/release-2.3.2
+writing output... [  8%] announce/release-2.3.3
+writing output... [  9%] announce/release-2.3.4
+writing output... [  9%] announce/release-2.3.5
+writing output... [ 10%] announce/release-2.4.0
+writing output... [ 10%] announce/release-2.4.1
+writing output... [ 10%] announce/release-2.4.2
+writing output... [ 11%] announce/release-2.5.0
+writing output... [ 11%] announce/release-2.5.1
+writing output... [ 12%] announce/release-2.5.2
+writing output... [ 12%] announce/release-2.6.0
+writing output... [ 13%] announce/release-2.6.1
+writing output... [ 13%] announce/release-2.6.2
+writing output... [ 14%] announce/release-2.6.3
+writing output... [ 14%] announce/release-2.7.0
+writing output... [ 15%] announce/release-2.7.1
+writing output... [ 15%] announce/release-2.7.2
+writing output... [ 15%] announce/release-2.8.2
+writing output... [ 16%] announce/release-2.8.3
+writing output... [ 16%] announce/release-2.8.4
+writing output... [ 17%] announce/release-2.8.5
+writing output... [ 17%] announce/release-2.8.6
+writing output... [ 18%] announce/release-2.8.7
+writing output... [ 18%] announce/release-2.9.0
+writing output... [ 19%] announce/release-2.9.1
+writing output... [ 19%] announce/release-2.9.2
+writing output... [ 20%] announce/release-3.0.0
+writing output... [ 20%] announce/release-3.0.1
+writing output... [ 20%] announce/release-3.0.2
+writing output... [ 21%] announce/release-3.0.3
+writing output... [ 21%] announce/release-3.0.4
+writing output... [ 22%] announce/release-3.0.5
+writing output... [ 22%] announce/release-3.0.6
+writing output... [ 23%] announce/release-3.0.7
+writing output... [ 23%] announce/release-3.1.0
+writing output... [ 24%] announce/release-3.1.1
+writing output... [ 24%] announce/release-3.1.2
+writing output... [ 25%] announce/release-3.1.3
+writing output... [ 25%] announce/release-3.10.0
+writing output... [ 25%] announce/release-3.10.1
+writing output... [ 26%] announce/release-3.2.0
+writing output... [ 26%] announce/release-3.2.1
+writing output... [ 27%] announce/release-3.2.2
+writing output... [ 27%] announce/release-3.2.3
+writing output... [ 28%] announce/release-3.2.4
+writing output... [ 28%] announce/release-3.2.5
+writing output... [ 29%] announce/release-3.3.0
+writing output... [ 29%] announce/release-3.3.1
+writing output... [ 30%] announce/release-3.3.2
+writing output... [ 30%] announce/release-3.4.0
+writing output... [ 30%] announce/release-3.4.1
+writing output... [ 31%] announce/release-3.4.2
+writing output... [ 31%] announce/release-3.5.0
+writing output... [ 32%] announce/release-3.5.1
+writing output... [ 32%] announce/release-3.6.0
+writing output... [ 33%] announce/release-3.6.1
+writing output... [ 33%] announce/release-3.6.2
+writing output... [ 34%] announce/release-3.6.3
+writing output... [ 34%] announce/release-3.6.4
+writing output... [ 35%] announce/release-3.7.0
+writing output... [ 35%] announce/release-3.7.1
+writing output... [ 35%] announce/release-3.7.2
+writing output... [ 36%] announce/release-3.7.3
+writing output... [ 36%] announce/release-3.7.4
+writing output... [ 37%] announce/release-3.8.0
+writing output... [ 37%] announce/release-3.8.1
+writing output... [ 38%] announce/release-3.8.2
+writing output... [ 38%] announce/release-3.9.0
+writing output... [ 39%] announce/release-3.9.1
+writing output... [ 39%] announce/release-3.9.2
+writing output... [ 40%] announce/release-3.9.3
+writing output... [ 40%] announce/release-4.0.0
+writing output... [ 40%] announce/release-4.0.1
+writing output... [ 41%] announce/release-4.0.2
+writing output... [ 41%] announce/release-4.1.0
+writing output... [ 42%] announce/release-4.1.1
+writing output... [ 42%] announce/release-4.2.0
+writing output... [ 43%] announce/release-4.2.1
+writing output... [ 43%] announce/release-4.3.0
+writing output... [ 44%] announce/release-4.3.1
+writing output... [ 44%] announce/release-4.4.0
+writing output... [ 45%] announce/release-4.4.1
+writing output... [ 45%] announce/release-4.4.2
+writing output... [ 45%] announce/release-4.5.0
+writing output... [ 46%] announce/release-4.6.0
+writing output... [ 46%] announce/release-4.6.1
+writing output... [ 47%] announce/release-4.6.2
+writing output... [ 47%] announce/release-4.6.3
+writing output... [ 48%] announce/release-4.6.4
+writing output... [ 48%] announce/release-4.6.5
+writing output... [ 49%] announce/release-4.6.6
+writing output... [ 49%] announce/release-4.6.7
+writing output... [ 50%] announce/release-4.6.8
+writing output... [ 50%] announce/release-4.6.9
+writing output... [ 50%] announce/release-5.0.0
+writing output... [ 51%] announce/release-5.0.1
+writing output... [ 51%] announce/release-5.1.0
+writing output... [ 52%] announce/release-5.1.1
+writing output... [ 52%] announce/release-5.1.2
+writing output... [ 53%] announce/release-5.1.3
+writing output... [ 53%] announce/release-5.2.0
+writing output... [ 54%] announce/release-5.2.1
+writing output... [ 54%] announce/release-5.2.2
+writing output... [ 55%] announce/release-5.2.3
+writing output... [ 55%] announce/release-5.2.4
+writing output... [ 55%] announce/release-5.3.0
+writing output... [ 56%] announce/release-5.3.1
+writing output... [ 56%] announce/release-5.3.2
+writing output... [ 57%] announce/release-5.3.3
+writing output... [ 57%] announce/release-5.3.4
+writing output... [ 58%] announce/release-5.3.5
+writing output... [ 58%] announce/release-5.4.0
+writing output... [ 59%] announce/release-5.4.1
+writing output... [ 59%] announce/release-5.4.2
+writing output... [ 60%] announce/release-5.4.3
+writing output... [ 60%] announce/release-6.0.0
+writing output... [ 60%] announce/release-6.0.0rc1
+writing output... [ 61%] announce/release-6.0.1
+writing output... [ 61%] announce/release-6.0.2
+writing output... [ 62%] announce/release-6.1.0
+writing output... [ 62%] announce/release-6.1.1
+writing output... [ 63%] announce/release-6.1.2
+writing output... [ 63%] announce/release-6.2.0
+writing output... [ 64%] announce/release-6.2.1
+writing output... [ 64%] announce/release-6.2.2
+writing output... [ 65%] announce/release-6.2.3
+writing output... [ 65%] announce/release-6.2.4
+writing output... [ 65%] announce/release-6.2.5
+writing output... [ 66%] announce/release-7.0.0
+writing output... [ 66%] announce/release-7.0.0rc1
+writing output... [ 67%] announce/release-7.0.1
+writing output... [ 67%] announce/release-7.1.0
+writing output... [ 68%] announce/release-7.1.1
+writing output... [ 68%] announce/release-7.1.2
+writing output... [ 69%] announce/release-7.1.3
+writing output... [ 69%] announce/release-7.2.0
+writing output... [ 70%] announce/release-7.2.1
+writing output... [ 70%] announce/release-7.2.2
+writing output... [ 70%] announce/sprint2016
+writing output... [ 71%] backwards-compatibility
+writing output... [ 71%] builtin
+writing output... [ 72%] changelog
+writing output... [ 72%] contact
+writing output... [ 73%] contents
+writing output... [ 73%] contributing
+writing output... [ 74%] deprecations
+writing output... [ 74%] development_guide
+writing output... [ 75%] example/index
+writing output... [ 75%] example/markers
+writing output... [ 75%] example/nonpython
+writing output... [ 76%] example/parametrize
+writing output... [ 76%] example/pythoncollection
+writing output... [ 77%] example/reportingdemo
+writing output... [ 77%] example/simple
+writing output... [ 78%] example/special
+writing output... [ 78%] explanation/anatomy
+writing output... [ 79%] explanation/fixtures
+writing output... [ 79%] explanation/flaky
+writing output... [ 80%] explanation/goodpractices
+writing output... [ 80%] explanation/index
+writing output... [ 80%] explanation/pythonpath
+writing output... [ 81%] funcarg_compare
+writing output... [ 81%] getting-started
+writing output... [ 82%] historical-notes
+writing output... [ 82%] history
+writing output... [ 83%] how-to/assert
+writing output... [ 83%] how-to/bash-completion
+writing output... [ 84%] how-to/cache
+writing output... [ 84%] how-to/capture-stdout-stderr
+writing output... [ 85%] how-to/capture-warnings
+writing output... [ 85%] how-to/doctest
+writing output... [ 85%] how-to/existingtestsuite
+writing output... [ 86%] how-to/failures
+writing output... [ 86%] how-to/fixtures
+writing output... [ 87%] how-to/index
+writing output... [ 87%] how-to/logging
+writing output... [ 88%] how-to/mark
+writing output... [ 88%] how-to/monkeypatch
+writing output... [ 89%] how-to/nose
+writing output... [ 89%] how-to/output
+writing output... [ 90%] how-to/parametrize
+writing output... [ 90%] how-to/plugins
+writing output... [ 90%] how-to/skipping
+writing output... [ 91%] how-to/tmp_path
+writing output... [ 91%] how-to/unittest
+writing output... [ 92%] how-to/usage
+writing output... [ 92%] how-to/writing_hook_functions
+writing output... [ 93%] how-to/writing_plugins
+writing output... [ 93%] how-to/xunit_setup
+writing output... [ 94%] index
+writing output... [ 94%] license
+writing output... [ 95%] proposals/parametrize_with_fixtures
+writing output... [ 95%] recwarn
+writing output... [ 95%] reference/customize
+writing output... [ 96%] reference/exit-codes
+writing output... [ 96%] reference/fixtures
+writing output... [ 97%] reference/index
+writing output... [ 97%] reference/plugin_list
+writing output... [ 98%] reference/reference
+writing output... [ 98%] sponsor
+writing output... [ 99%] talks
+writing output... [ 99%] tidelift
+writing output... [100%] yieldfixture
+
+generating indices... py-modindex done
+highlighting module code... [  3%] _pytest._code.code
+highlighting module code... [  6%] _pytest.assertion
+highlighting module code... [ 10%] _pytest.cacheprovider
+highlighting module code... [ 13%] _pytest.capture
+highlighting module code... [ 17%] _pytest.config
+highlighting module code... [ 20%] _pytest.config.argparsing
+highlighting module code... [ 24%] _pytest.config.exceptions
+highlighting module code... [ 27%] _pytest.doctest
+highlighting module code... [ 31%] _pytest.fixtures
+highlighting module code... [ 34%] _pytest.freeze_support
+highlighting module code... [ 37%] _pytest.hookspec
+highlighting module code... [ 41%] _pytest.junitxml
+highlighting module code... [ 44%] _pytest.legacypath
+highlighting module code... [ 48%] _pytest.logging
+highlighting module code... [ 51%] _pytest.main
+highlighting module code... [ 55%] _pytest.mark
+highlighting module code... [ 58%] _pytest.mark.structures
+highlighting module code... [ 62%] _pytest.monkeypatch
+highlighting module code... [ 65%] _pytest.nodes
+highlighting module code... [ 68%] _pytest.outcomes
+highlighting module code... [ 72%] _pytest.pytester
+highlighting module code... [ 75%] _pytest.python
+highlighting module code... [ 79%] _pytest.python_api
+highlighting module code... [ 82%] _pytest.recwarn
+highlighting module code... [ 86%] _pytest.reports
+highlighting module code... [ 89%] _pytest.runner
+highlighting module code... [ 93%] _pytest.stash
+highlighting module code... [ 96%] _pytest.tmpdir
+highlighting module code... [100%] builtins
+
+writing additional pages... search done
+copying images... [  8%] img/freiburg2.jpg
+copying images... [ 16%] example/fixtures/test_fixtures_request_different_scope.svg
+copying images... [ 25%] example/fixtures/fixture_availability.svg
+copying images... [ 33%] example/fixtures/fixture_availability_plugins.svg
+copying images... [ 41%] example/fixtures/test_fixtures_order_scope.svg
+copying images... [ 50%] example/fixtures/test_fixtures_order_dependencies.svg
+copying images... [ 58%] example/fixtures/test_fixtures_order_dependencies_flat.svg
+copying images... [ 66%] example/fixtures/test_fixtures_order_dependencies_unclear.svg
+copying images... [ 75%] example/fixtures/test_fixtures_order_autouse.svg
+copying images... [ 83%] example/fixtures/test_fixtures_order_autouse_flat.svg
+copying images... [ 91%] example/fixtures/test_fixtures_order_autouse_multiple_scopes.svg
+copying images... [100%] example/fixtures/test_fixtures_order_autouse_temp_effects.svg
+
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en)... done
+dumping object inventory... done
+build succeeded.
+
+The HTML pages are in doc/en/_build/html.
+docs: OK ✔ in 26.13 seconds
+docs-checklinks: install_deps> python -I -m pip install -r /home/ec2-user/pytest/doc/en/requirements.txt
+docs-checklinks: install_package_deps> python -I -m pip install argcomplete 'attrs>=19.2.0' 'colorama; sys_platform == "win32"' 'exceptiongroup>=1.0.0rc8; python_version < "3.11"' 'hypothesis>=3.56' 'importlib-metadata>=0.12; python_version < "3.8"' iniconfig mock nose packaging 'pluggy<2.0,>=0.12' 'pygments>=2.7.2' requests 'tomli>=1.0.0; python_version < "3.11"' xmlschema
+docs-checklinks: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/6/pytest-7.2.0.dev544+g3683722bc-py3-none-any.whl
+docs-checklinks: commands[0] /home/ec2-user/pytest/doc/en> sphinx-build -W -q --keep-going -b linkcheck . _build
+docs-checklinks: exit 1 (78.68 seconds) /home/ec2-user/pytest/doc/en> sphinx-build -W -q --keep-going -b linkcheck . _build pid=41775
+docs-checklinks: FAIL ✖ in 1 minute 25.34 seconds
+py311-exceptiongroup: install_deps> python -I -m pip install 'exceptiongroup>=1.0.0rc8'
+py311-exceptiongroup: install_package_deps> python -I -m pip install argcomplete 'attrs>=19.2.0' 'colorama; sys_platform == "win32"' 'exceptiongroup>=1.0.0rc8; python_version < "3.11"' 'hypothesis>=3.56' 'importlib-metadata>=0.12; python_version < "3.8"' iniconfig mock nose packaging 'pluggy<2.0,>=0.12' 'pygments>=2.7.2' requests 'tomli>=1.0.0; python_version < "3.11"' xmlschema
+py311-exceptiongroup: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/7/pytest-7.2.0.dev544+g3683722bc.tar.gz
+py311-exceptiongroup: commands[0]> pytest
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: .tox/py311-exceptiongroup/.pytest_cache
+rootdir: /home/ec2-user/pytest
+configfile: pyproject.toml
+testpaths: testing
+plugins: hypothesis-6.71.0
+collected 3420 items
+
+testing/acceptance_test.py .....                                         [  0%]
+testing/deprecated_test.py .......                                       [  0%]
+testing/test_argcomplete.py ..                                           [  0%]
+testing/test_assertion.py .............................................. [  1%]
+.......................                                                  [  2%]
+testing/test_assertrewrite.py .......................................... [  3%]
+..                                                                       [  3%]
+testing/test_capture.py ................................................ [  5%]
+.............s..                                                         [  5%]
+testing/test_collection.py .                                             [  5%]
+testing/test_compat.py ...........                                       [  5%]
+testing/test_config.py ................................................. [  7%]
+.....                                                                    [  7%]
+testing/test_conftest.py ...........                                     [  7%]
+testing/test_debugging.py .                                              [  7%]
+testing/test_doctest.py .............                                    [  8%]
+testing/test_entry_points.py .                                           [  8%]
+testing/test_faulthandler.py ...                                         [  8%]
+testing/test_findpaths.py ..............s...                             [  8%]
+testing/test_helpconfig.py .                                             [  8%]
+testing/test_junitxml.py ....                                            [  9%]
+testing/test_legacypath.py ....                                          [  9%]
+testing/test_main.py .....                                               [  9%]
+testing/test_mark.py ..............                                      [  9%]
+testing/test_mark_expression.py ........................................ [ 10%]
+............................................                             [ 12%]
+testing/test_monkeypatch.py ...............................              [ 13%]
+testing/test_nodes.py ..............                                     [ 13%]
+testing/test_nose.py ..                                                  [ 13%]
+testing/test_parseopt.py ............................                    [ 14%]
+testing/test_pastebin.py ....                                            [ 14%]
+testing/test_pathlib.py .............................................s.. [ 15%]
+...                                                                      [ 15%]
+testing/test_pluginmanager.py .........                                  [ 16%]
+testing/test_pytester.py .....................                           [ 16%]
+testing/test_recwarn.py ........................................         [ 18%]
+testing/test_runner.py ..............                                    [ 18%]
+testing/test_scope.py ....                                               [ 18%]
+testing/test_skipping.py .                                               [ 18%]
+testing/test_stash.py .                                                  [ 18%]
+testing/test_terminal.py .......................................         [ 19%]
+testing/test_tmpdir.py ...s...............                               [ 20%]
+testing/test_warning_types.py ..............                             [ 20%]
+testing/test_warnings.py .                                               [ 20%]
+testing/_py/test_local.py .............................................. [ 22%]
+...................ss..............s.................x......s........... [ 24%]
+..........................sssssss............................x...        [ 26%]
+testing/code/test_code.py .................                              [ 26%]
+testing/code/test_excinfo.py ...............s.......s................... [ 27%]
+........................................................................ [ 29%]
+............                                                             [ 30%]
+testing/code/test_source.py ............................................ [ 31%]
+...........                                                              [ 31%]
+testing/freeze/tests/test_trivial.py ..                                  [ 31%]
+testing/io/test_saferepr.py ..............                               [ 32%]
+testing/io/test_terminalwriter.py ...................................... [ 33%]
+.......                                                                  [ 33%]
+testing/io/test_wcwidth.py .................                             [ 34%]
+testing/logging/test_fixture.py .........                                [ 34%]
+testing/logging/test_formatter.py ....                                   [ 34%]
+testing/logging/test_reporting.py ..                                     [ 34%]
+testing/python/approx.py .sss..sssss.................................... [ 35%]
+..ssssss................ss........                                       [ 36%]
+testing/python/collect.py ..                                             [ 37%]
+testing/python/fixtures.py ..........                                    [ 37%]
+testing/python/integration.py ....                                       [ 37%]
+testing/python/metafunc.py .........................................     [ 38%]
+testing/python/raises.py .......................                         [ 39%]
+testing/freeze/tests/test_doctest.txt .                                  [ 39%]
+testing/acceptance_test.py ............................................. [ 40%]
+.....x....................                                               [ 41%]
+testing/deprecated_test.py .............                                 [ 41%]
+testing/test_assertion.py ...................................            [ 42%]
+testing/test_assertrewrite.py .......................................... [ 44%]
+..............                                                           [ 44%]
+testing/test_cacheprovider.py .......................................... [ 45%]
+..........                                                               [ 45%]
+testing/test_capture.py ......x....................................      [ 47%]
+testing/test_collection.py ...........................x................. [ 48%]
+.....................s.................                                  [ 49%]
+testing/test_compat.py ..                                                [ 49%]
+testing/test_config.py .............x................................... [ 51%]
+........................................................................ [ 53%]
+.....                                                                    [ 53%]
+testing/test_conftest.py .............s.............................     [ 54%]
+testing/test_debugging.py .............                                  [ 55%]
+testing/test_doctest.py ................................................ [ 56%]
+..............x......................................................... [ 58%]
+.                                                                        [ 58%]
+testing/test_error_diffs.py ............                                 [ 58%]
+testing/test_faulthandler.py ...                                         [ 59%]
+testing/test_helpconfig.py ........                                      [ 59%]
+testing/test_junitxml.py ............................................... [ 60%]
+..................................................s...s................. [ 62%]
+......                                                                   [ 62%]
+testing/test_legacypath.py ..........                                    [ 63%]
+testing/test_link_resolve.py .                                           [ 63%]
+testing/test_main.py .............                                       [ 63%]
+testing/test_mark.py ................................................... [ 65%]
+........x................                                                [ 65%]
+testing/test_monkeypatch.py ....                                         [ 65%]
+testing/test_nodes.py ....                                               [ 66%]
+testing/test_nose.py ......................                              [ 66%]
+testing/test_parseopt.py .                                               [ 66%]
+testing/test_pastebin.py ...                                             [ 66%]
+testing/test_pluginmanager.py ................                           [ 67%]
+testing/test_pytester.py x.........................                      [ 68%]
+testing/test_python_path.py .....                                        [ 68%]
+testing/test_recwarn.py ..                                               [ 68%]
+testing/test_reports.py ..................                               [ 68%]
+testing/test_runner.py .......................x.....................     [ 70%]
+testing/test_runner_xunit.py .............                               [ 70%]
+testing/test_session.py ........................                         [ 71%]
+testing/test_setuponly.py ..........................                     [ 71%]
+testing/test_setupplan.py ...                                            [ 72%]
+testing/test_skipping.py ............................................... [ 73%]
+.............................................                            [ 74%]
+testing/test_stepwise.py ..............                                  [ 75%]
+testing/test_terminal.py ..............................................s [ 76%]
+....................................................sss......s......     [ 78%]
+testing/test_threadexception.py ....                                     [ 78%]
+testing/test_tmpdir.py ....................                              [ 79%]
+testing/test_tracebackhide.py .                                          [ 79%]
+testing/test_unittest.py ......................sssssss.................. [ 80%]
+...............s........                                                 [ 81%]
+testing/test_unraisableexception.py ....                                 [ 81%]
+testing/test_warning_types.py .                                          [ 81%]
+testing/test_warnings.py ...................sss.........                 [ 82%]
+testing/code/test_excinfo.py ......................                      [ 83%]
+testing/examples/test_issue519.py .                                      [ 83%]
+testing/logging/test_fixture.py .......                                  [ 83%]
+testing/logging/test_reporting.py ...................................... [ 84%]
+...                                                                      [ 84%]
+testing/python/approx.py .                                               [ 84%]
+testing/python/collect.py .............................................. [ 85%]
+.............................                                            [ 86%]
+testing/python/fixtures.py ............................................. [ 88%]
+..........................x............................................. [ 90%]
+......................................................s..                [ 91%]
+testing/python/integration.py ...............                            [ 92%]
+testing/python/metafunc.py ............................................. [ 93%]
+...............                                                          [ 93%]
+testing/python/raises.py ...                                             [ 94%]
+testing/python/show_fixtures_per_test.py ........                        [ 94%]
+testing/acceptance_test.py ....                                          [ 94%]
+testing/test_assertion.py ............                                   [ 94%]
+testing/test_assertrewrite.py .........                                  [ 95%]
+testing/test_capture.py ........................                         [ 95%]
+testing/test_collection.py .                                             [ 95%]
+testing/test_compat.py s                                                 [ 95%]
+testing/test_config.py ..                                                [ 95%]
+testing/test_debugging.py sssssssssss.ssssssssssssssss.sss....ssss.sss   [ 97%]
+testing/test_faulthandler.py ..s.                                        [ 97%]
+testing/test_helpconfig.py ..                                            [ 97%]
+testing/test_legacypath.py .                                             [ 97%]
+testing/test_meta.py ................................................... [ 98%]
+................                                                         [ 99%]
+testing/test_pytester.py ...
