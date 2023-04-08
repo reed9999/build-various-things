@@ -1,0 +1,36 @@
+
+tox got very mixed results on pytest on Ohio 003 (t3.small)
+Several tests seemed to fail because of problems with permissions; in particular, root was the owner of 
+build/bdist.linux-x86_64/. This probably reflects an inappropriate sudo somewhere along the line.
+
+
+
+
+
+
+======================================================================= 3 failed, 3309 passed, 97 skipped, 11 xfailed in 184.05s (0:03:04) =======================================================================
+py311-exceptiongroup: exit 1 (184.71 seconds) /home/ec2-user/pytest> pytest pid=85421
+.pkg: _exit> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+  linting: FAIL code 3 (0.51=setup[0.01]+cmd[0.51] seconds)
+  py37: SKIP (0.01 seconds)
+  py38: SKIP (0.00 seconds)
+  py39: FAIL code error: could not create 'build/bdist.linux-x86_64/wheel': Permission denied (0.38 seconds)
+  py310: SKIP (0.00 seconds)
+  py311: FAIL code error: could not create 'build/bdist.linux-x86_64/wheel': Permission denied (0.11 seconds)
+  py312: SKIP (0.00 seconds)
+  pypy3: SKIP (0.00 seconds)
+  py37-pexpect: SKIP (0.01 seconds)
+  py37-xdist: SKIP (0.00 seconds)
+  py37-unittestextras: SKIP (0.00 seconds)
+  py37-numpy: SKIP (0.00 seconds)
+  py37-pluggymain: SKIP (0.00 seconds)
+  py37-pylib: SKIP (0.00 seconds)
+  doctesting: FAIL code error: could not create 'build/bdist.linux-x86_64/wheel': Permission denied (0.11 seconds)
+  plugins: FAIL code error: could not create 'build/bdist.linux-x86_64/wheel': Permission denied (2.19 seconds)
+  py37-freeze: SKIP (0.01 seconds)
+  docs: OK (44.27=setup[13.31]+cmd[0.53,30.43] seconds)
+  docs-checklinks: FAIL code 1 (134.58=setup[10.85]+cmd[123.73] seconds)
+  py311-exceptiongroup: FAIL code 1 (197.22=setup[12.51]+cmd[184.71] seconds)
+  evaluation failed :( (379.61 seconds)
+
+
