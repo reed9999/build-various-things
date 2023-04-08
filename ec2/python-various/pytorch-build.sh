@@ -1,4 +1,5 @@
-# Fails - see below
+# Pytorch is better treated as its own thing. 
+# It requires Anaconda, so use an Anaconda ec2 instance to build.
 echo "##### PYTORCH"
 pushd ~/pytorch
 python3 -m venv ~/.virtualenvs/pytorchdev
