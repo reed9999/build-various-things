@@ -1,4 +1,12 @@
-Somehow this instance has no yum so I would have to figure out where to get python with rpm to be able 
+It turns out that the symlink finagling for django happened without Python 3.11 being in place.
+This meant the django stuff failed with no good Python, and apparently never undid the finagling, so 
+everything else broke. Below are the details.
+
+
+ a broken yum --
+-bash: /usr/bin/yum: cannot execute: required file not found
+--
+so I would have to figure out where to get python with rpm to be able 
 to do anything. The image is
 Amazon Linux 2023 AMI 2023.0.20230329.0 x86_64 HVM kernel-6.1
 ami-0103f211a154d64a6
