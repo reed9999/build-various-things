@@ -1,38 +1,16 @@
-# Moved pytest to its own thing
+SCRIPTS="~/scripts"
+pushd ~
 
-pushd django
-# TODO bring into harmony with https://docs.djangoproject.com/en/dev/intro/contributing/
-python3 -m venv ~/.virtualenvs/djangodev
-source ~/.virtualenvs/djangodev/bin/activate
-python3 -m pip install --editable .
+echo "##### PYTEST"
+${SCRIPTS}/python-various/pytest-build.sh
 
-pushd tests
-python -m pip install -r requirements/py3.txt
-echo 
-echo "***** BEGIN DJANGO TESTS $(date)"
-./runtests.py
-echo "***** END DJANGO TESTS $(date)"
-echo
-popd
+echo "##### DJANGO"
+${SCRIPTS}/python-various/django-build.sh
 
 echo "##### QUTEBROWSER"
-pushd qutebrowser
-python3 -m venv ~/.virtualenvs/qutebrowserdev
-source ~/.virtualenvs/qutebrowserdev/bin/activate
-python3 -m pip install setuptools
-python3 -m pip install --editable .
-
-python3 ./setup.py build
-python3 ./setup.py test
-popd
+${SCRIPTS}/python-various/qutebrowser-build.sh
 
 echo "##### PYTORCH"
-pushd pytorch
-python3 -m venv ~/.virtualenvs/pytorchdev
-source ~/.virtualenvs/pytorchdev/bin/activate
-python3 -m pip install setuptools
-python3 -m pip install --editable .
+${SCRIPTS}/python-various/qutebrowser-build.sh
 
-python3 ./setup.py build
-python3 ./setup.py test
 popd
