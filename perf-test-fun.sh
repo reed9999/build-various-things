@@ -4,6 +4,7 @@ mkdir this-instance
 
 echo
 echo "~~ begin various setup ~~ $(date)"
+ec2/python-various/setup.sh
 echo
 
 echo
