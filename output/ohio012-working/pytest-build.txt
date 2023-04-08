@@ -1466,4 +1466,249 @@ testing/test_helpconfig.py ..                                            [ 97%]
 testing/test_legacypath.py .                                             [ 97%]
 testing/test_meta.py ................................................... [ 98%]
 ................                                                         [ 99%]
-testing/test_pytester.py ...
+testing/test_pytester.py ....s                                           [ 99%]
+testing/test_reports.py .                                                [ 99%]
+testing/test_terminal.py ss..                                            [ 99%]
+testing/test_unittest.py s.                                              [ 99%]
+testing/test_warnings.py .........                                       [ 99%]
+testing/python/collect.py .                                              [ 99%]
+testing/python/fixtures.py ..                                            [100%]
+
+=========== 3312 passed, 97 skipped, 11 xfailed in 107.29s (0:01:47) ===========
+.pkg: _exit> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+  linting: FAIL code 3 (5.99=setup[1.89]+cmd[4.10] seconds)
+  py37: SKIP (0.01 seconds)
+  py38: SKIP (0.00 seconds)
+  py39: OK (126.88=setup[9.41]+cmd[117.47] seconds)
+  py310: SKIP (0.00 seconds)
+  py311: OK (114.67=setup[6.21]+cmd[108.46] seconds)
+  py312: SKIP (0.00 seconds)
+  pypy3: SKIP (0.00 seconds)
+  py37-pexpect: SKIP (0.00 seconds)
+  py37-xdist: SKIP (0.00 seconds)
+  py37-unittestextras: SKIP (0.00 seconds)
+  py37-numpy: SKIP (0.00 seconds)
+  py37-pluggymain: SKIP (0.00 seconds)
+  py37-pylib: SKIP (0.00 seconds)
+  doctesting: OK (7.58=setup[6.80]+cmd[0.47,0.31] seconds)
+  plugins: OK (24.65=setup[17.51]+cmd[0.58,0.93,0.64,0.64,0.55,0.54,0.59,0.53,0.54,0.54,0.54,0.54] seconds)
+  py37-freeze: SKIP (0.00 seconds)
+  docs: OK (26.13=setup[7.64]+cmd[0.29,18.20] seconds)
+  docs-checklinks: FAIL code 1 (85.34=setup[6.66]+cmd[78.68] seconds)
+  py311-exceptiongroup: OK (114.42=setup[6.50]+cmd[107.91] seconds)
+  evaluation failed :( (505.84 seconds)
+-- next: attempt install of our new libraries
+running install
+running bdist_egg
+running egg_info
+writing src/pytest.egg-info/PKG-INFO
+writing dependency_links to src/pytest.egg-info/dependency_links.txt
+writing entry points to src/pytest.egg-info/entry_points.txt
+writing requirements to src/pytest.egg-info/requires.txt
+writing top-level names to src/pytest.egg-info/top_level.txt
+adding license file 'LICENSE'
+writing manifest file 'src/pytest.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+copying src/_pytest/_version.py -> build/lib/_pytest
+creating build/bdist.linux-x86_64/egg
+copying build/lib/py.py -> build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/__init__.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/_argcomplete.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/cacheprovider.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/capture.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/compat.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/debugging.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/deprecated.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/doctest.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/faulthandler.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/fixtures.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/freeze_support.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/helpconfig.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/hookspec.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/junitxml.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/legacypath.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/logging.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/main.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/monkeypatch.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/nodes.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/nose.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/outcomes.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/pastebin.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/pathlib.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/pytester.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/pytester_assertions.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/python.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/python_api.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/python_path.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/recwarn.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/reports.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/runner.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/scope.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/setuponly.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/setupplan.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/skipping.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/stash.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/stepwise.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/terminal.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/threadexception.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/timing.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/tmpdir.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/unittest.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/unraisableexception.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/warning_types.py -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/warnings.py -> build/bdist.linux-x86_64/egg/_pytest
+creating build/bdist.linux-x86_64/egg/_pytest/_code
+copying build/lib/_pytest/_code/__init__.py -> build/bdist.linux-x86_64/egg/_pytest/_code
+copying build/lib/_pytest/_code/code.py -> build/bdist.linux-x86_64/egg/_pytest/_code
+copying build/lib/_pytest/_code/source.py -> build/bdist.linux-x86_64/egg/_pytest/_code
+creating build/bdist.linux-x86_64/egg/_pytest/_io
+copying build/lib/_pytest/_io/__init__.py -> build/bdist.linux-x86_64/egg/_pytest/_io
+copying build/lib/_pytest/_io/saferepr.py -> build/bdist.linux-x86_64/egg/_pytest/_io
+copying build/lib/_pytest/_io/terminalwriter.py -> build/bdist.linux-x86_64/egg/_pytest/_io
+copying build/lib/_pytest/_io/wcwidth.py -> build/bdist.linux-x86_64/egg/_pytest/_io
+creating build/bdist.linux-x86_64/egg/_pytest/_py
+copying build/lib/_pytest/_py/__init__.py -> build/bdist.linux-x86_64/egg/_pytest/_py
+copying build/lib/_pytest/_py/error.py -> build/bdist.linux-x86_64/egg/_pytest/_py
+copying build/lib/_pytest/_py/path.py -> build/bdist.linux-x86_64/egg/_pytest/_py
+creating build/bdist.linux-x86_64/egg/_pytest/assertion
+copying build/lib/_pytest/assertion/__init__.py -> build/bdist.linux-x86_64/egg/_pytest/assertion
+copying build/lib/_pytest/assertion/rewrite.py -> build/bdist.linux-x86_64/egg/_pytest/assertion
+copying build/lib/_pytest/assertion/truncate.py -> build/bdist.linux-x86_64/egg/_pytest/assertion
+copying build/lib/_pytest/assertion/util.py -> build/bdist.linux-x86_64/egg/_pytest/assertion
+creating build/bdist.linux-x86_64/egg/_pytest/config
+copying build/lib/_pytest/config/__init__.py -> build/bdist.linux-x86_64/egg/_pytest/config
+copying build/lib/_pytest/config/argparsing.py -> build/bdist.linux-x86_64/egg/_pytest/config
+copying build/lib/_pytest/config/compat.py -> build/bdist.linux-x86_64/egg/_pytest/config
+copying build/lib/_pytest/config/exceptions.py -> build/bdist.linux-x86_64/egg/_pytest/config
+copying build/lib/_pytest/config/findpaths.py -> build/bdist.linux-x86_64/egg/_pytest/config
+creating build/bdist.linux-x86_64/egg/_pytest/mark
+copying build/lib/_pytest/mark/__init__.py -> build/bdist.linux-x86_64/egg/_pytest/mark
+copying build/lib/_pytest/mark/expression.py -> build/bdist.linux-x86_64/egg/_pytest/mark
+copying build/lib/_pytest/mark/structures.py -> build/bdist.linux-x86_64/egg/_pytest/mark
+copying build/lib/_pytest/py.typed -> build/bdist.linux-x86_64/egg/_pytest
+copying build/lib/_pytest/_version.py -> build/bdist.linux-x86_64/egg/_pytest
+creating build/bdist.linux-x86_64/egg/pytest
+copying build/lib/pytest/__init__.py -> build/bdist.linux-x86_64/egg/pytest
+copying build/lib/pytest/__main__.py -> build/bdist.linux-x86_64/egg/pytest
+copying build/lib/pytest/py.typed -> build/bdist.linux-x86_64/egg/pytest
+byte-compiling build/bdist.linux-x86_64/egg/py.py to py.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/__init__.py to __init__.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_argcomplete.py to _argcomplete.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/cacheprovider.py to cacheprovider.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/capture.py to capture.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/compat.py to compat.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/debugging.py to debugging.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/deprecated.py to deprecated.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/doctest.py to doctest.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/faulthandler.py to faulthandler.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/fixtures.py to fixtures.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/freeze_support.py to freeze_support.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/helpconfig.py to helpconfig.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/hookspec.py to hookspec.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/junitxml.py to junitxml.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/legacypath.py to legacypath.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/logging.py to logging.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/main.py to main.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/monkeypatch.py to monkeypatch.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/nodes.py to nodes.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/nose.py to nose.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/outcomes.py to outcomes.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/pastebin.py to pastebin.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/pathlib.py to pathlib.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/pytester.py to pytester.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/pytester_assertions.py to pytester_assertions.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/python.py to python.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/python_api.py to python_api.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/python_path.py to python_path.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/recwarn.py to recwarn.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/reports.py to reports.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/runner.py to runner.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/scope.py to scope.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/setuponly.py to setuponly.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/setupplan.py to setupplan.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/skipping.py to skipping.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/stash.py to stash.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/stepwise.py to stepwise.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/terminal.py to terminal.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/threadexception.py to threadexception.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/timing.py to timing.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/tmpdir.py to tmpdir.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/unittest.py to unittest.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/unraisableexception.py to unraisableexception.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/warning_types.py to warning_types.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/warnings.py to warnings.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_code/__init__.py to __init__.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_code/code.py to code.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_code/source.py to source.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_io/__init__.py to __init__.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_io/saferepr.py to saferepr.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_io/terminalwriter.py to terminalwriter.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_io/wcwidth.py to wcwidth.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_py/__init__.py to __init__.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_py/error.py to error.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_py/path.py to path.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/assertion/__init__.py to __init__.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/assertion/rewrite.py to rewrite.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/assertion/truncate.py to truncate.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/assertion/util.py to util.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/config/__init__.py to __init__.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/config/argparsing.py to argparsing.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/config/compat.py to compat.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/config/exceptions.py to exceptions.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/config/findpaths.py to findpaths.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/mark/__init__.py to __init__.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/mark/expression.py to expression.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/mark/structures.py to structures.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/_pytest/_version.py to _version.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pytest/__init__.py to __init__.cpython-39.pyc
+byte-compiling build/bdist.linux-x86_64/egg/pytest/__main__.py to __main__.cpython-39.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/pytest.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/pytest.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/pytest.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/pytest.egg-info/entry_points.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/pytest.egg-info/not-zip-safe -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/pytest.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying src/pytest.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+creating dist
+creating 'dist/pytest-7.2.0.dev544+g3683722bc-py3.9.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing pytest-7.2.0.dev544+g3683722bc-py3.9.egg
+creating /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages/pytest-7.2.0.dev544+g3683722bc-py3.9.egg
+Extracting pytest-7.2.0.dev544+g3683722bc-py3.9.egg to /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages
+Adding pytest 7.2.0.dev544+g3683722bc to easy-install.pth file
+Installing py.test script to /home/ec2-user/.virtualenvs/pytestdev/bin
+Installing pytest script to /home/ec2-user/.virtualenvs/pytestdev/bin
+
+Installed /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages/pytest-7.2.0.dev544+g3683722bc-py3.9.egg
+Processing dependencies for pytest==7.2.0.dev544+g3683722bc
+Searching for tomli==2.0.1
+Best match: tomli 2.0.1
+Adding tomli 2.0.1 to easy-install.pth file
+
+Using /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages
+Searching for exceptiongroup==1.1.1
+Best match: exceptiongroup 1.1.1
+Adding exceptiongroup 1.1.1 to easy-install.pth file
+
+Using /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages
+Searching for pluggy==1.0.0
+Best match: pluggy 1.0.0
+Adding pluggy 1.0.0 to easy-install.pth file
+
+Using /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages
+Searching for packaging==23.0
+Best match: packaging 23.0
+Adding packaging 23.0 to easy-install.pth file
+
+Using /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages
+Searching for iniconfig==2.0.0
+Best match: iniconfig 2.0.0
+Adding iniconfig 2.0.0 to easy-install.pth file
+
+Using /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages
+Finished processing dependencies for pytest==7.2.0.dev544+g3683722bc
+~/scripts ~/scripts
