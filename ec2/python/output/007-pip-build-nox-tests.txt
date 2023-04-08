@@ -1,0 +1,64 @@
+~/pip ~/scripts/ec2/python
+Obtaining file:///home/ec2-user/pip
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: pip
+  Building editable for pip (pyproject.toml): started
+  Building editable for pip (pyproject.toml): finished with status 'done'
+  Created wheel for pip: filename=pip-23.1.dev0-0.editable-py3-none-any.whl size=9335 sha256=e152553746e5fb36f333f6bee5cd633423438aa9071a5d60c6983c3ae57bd047
+  Stored in directory: /tmp/pip-ephem-wheel-cache-s9lvcj_0/wheels/85/1b/cb/8804863e999e2ab662fdb6f1315acb49d9c2ebc6e11589ad44
+Successfully built pip
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.1.dev0
+    Uninstalling pip-23.1.dev0:
+      Successfully uninstalled pip-23.1.dev0
+Successfully installed pip-23.1.dev0
+~/pip/tests ~/pip ~/scripts/ec2/python
+Ignoring virtualenv: markers 'python_version >= "3.10"' don't match your environment
+Requirement already satisfied: cryptography in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 1)) (40.0.1)
+Requirement already satisfied: freezegun in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 2)) (1.2.2)
+Requirement already satisfied: installer in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 3)) (0.7.0)
+Requirement already satisfied: pytest in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 4)) (7.2.2)
+Requirement already satisfied: pytest-cov in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 5)) (4.0.0)
+Requirement already satisfied: pytest-rerunfailures in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 6)) (11.1.2)
+Requirement already satisfied: pytest-xdist in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 7)) (3.2.1)
+Requirement already satisfied: scripttest in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 8)) (1.3)
+Requirement already satisfied: setuptools in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 9)) (59.6.0)
+Requirement already satisfied: virtualenv<20.0 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 10)) (16.7.12)
+Requirement already satisfied: werkzeug in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 12)) (2.2.3)
+Requirement already satisfied: wheel in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 13)) (0.40.0)
+Requirement already satisfied: tomli-w in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements.txt (line 14)) (1.0.0)
+Requirement already satisfied: cffi>=1.12 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from cryptography->-r requirements.txt (line 1)) (1.15.1)
+Requirement already satisfied: python-dateutil>=2.7 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from freezegun->-r requirements.txt (line 2)) (2.8.2)
+Requirement already satisfied: attrs>=19.2.0 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from pytest->-r requirements.txt (line 4)) (22.2.0)
+Requirement already satisfied: iniconfig in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from pytest->-r requirements.txt (line 4)) (2.0.0)
+Requirement already satisfied: packaging in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from pytest->-r requirements.txt (line 4)) (23.0)
+Requirement already satisfied: pluggy<2.0,>=0.12 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from pytest->-r requirements.txt (line 4)) (1.0.0)
+Requirement already satisfied: exceptiongroup>=1.0.0rc8 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from pytest->-r requirements.txt (line 4)) (1.1.1)
+Requirement already satisfied: tomli>=1.0.0 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from pytest->-r requirements.txt (line 4)) (2.0.1)
+Requirement already satisfied: coverage[toml]>=5.2.1 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from pytest-cov->-r requirements.txt (line 5)) (7.2.3)
+Requirement already satisfied: execnet>=1.1 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from pytest-xdist->-r requirements.txt (line 7)) (1.9.0)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from werkzeug->-r requirements.txt (line 12)) (2.1.2)
+Requirement already satisfied: pycparser in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from cffi>=1.12->cryptography->-r requirements.txt (line 1)) (2.21)
+Requirement already satisfied: six>=1.5 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from python-dateutil>=2.7->freezegun->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: setuptools!=60.6.0,>=40.8.0 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements-common_wheels.txt (line 8)) (59.6.0)
+Requirement already satisfied: wheel in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements-common_wheels.txt (line 9)) (0.40.0)
+Requirement already satisfied: coverage>=4.4 in /home/ec2-user/.virtualenvs/pipdev/lib/python3.9/site-packages (from -r requirements-common_wheels.txt (line 11)) (7.2.3)
+
+***** BEGIN PIP TESTS Sat Apr  8 17:55:41 UTC 2023
+***** END PIP LINT; BEGIN NOX/PYTEST TESTS Sat Apr  8 17:55:41 UTC 2023
+***** END NOX/PYTEST TESTS; BEGIN DOCS Sat Apr  8 17:55:41 UTC 2023
+
+Is doc already here?: 
+
+***** END PIP TESTS Sat Apr  8 17:55:41 UTC 2023
+
+~/pip ~/scripts/ec2/python
+~/scripts/ec2/python
