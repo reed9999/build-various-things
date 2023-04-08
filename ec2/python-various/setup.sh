@@ -9,6 +9,7 @@ sudo pip install --upgrade build
 git config --global user.name "Philip J. Reed" 
 git config --global user.email reed9999@uw.edu
 git config --global core.autocrlf input
+git config --global credential.helper store  # be careful! stores in plaintext
 
 sudo rm /usr/bin/python3
 sudo ln -s /usr/bin/python3.11 /usr/bin/python3
