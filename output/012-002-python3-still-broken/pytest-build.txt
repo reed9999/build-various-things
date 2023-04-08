@@ -1,0 +1,5 @@
+~/pytest ~/scripts ~/scripts
+-- next: setup.py build
+
+-- next: attempt install of our new libraries
+~/scripts ~/scripts

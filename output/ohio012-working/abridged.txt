@@ -1,0 +1,600 @@
+~/scripts ~/scripts
+
+~~ begin various setup ~~ Sat Apr  8 20:32:40 UTC 2023
+Last metadata expiration check: 0:54:07 ago on Sat Apr  8 19:38:33 2023.
+Package python3.11-3.11.2-2.amzn2023.0.6.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:54:07 ago on Sat Apr  8 19:38:33 2023.
+Package python3-pip-21.3.1-2.amzn2023.0.5.noarch is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Requirement already satisfied: build in /usr/local/lib/python3.9/site-packages (0.10.0)
+Requirement already satisfied: packaging>=19.0 in /usr/local/lib/python3.9/site-packages (from build) (23.0)
+Requirement already satisfied: tomli>=1.1.0 in /usr/local/lib/python3.9/site-packages (from build) (2.0.1)
+Requirement already satisfied: pyproject_hooks in /usr/local/lib/python3.9/site-packages (from build) (1.0.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Requirement already satisfied: setuptools in /usr/lib/python3.9/site-packages (59.6.0)
+Collecting setuptools
+  Using cached setuptools-67.6.1-py3-none-any.whl (1.1 MB)
+Installing collected packages: setuptools
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 59.6.0
+ERROR: Cannot uninstall setuptools 59.6.0, RECORD file not found. Hint: The package was installed by rpm.
+~ ~/scripts ~/scripts
+fatal: destination path 'pytest' already exists and is not an empty directory.
+fatal: destination path 'django' already exists and is not an empty directory.
+fatal: destination path 'qutebrowser' already exists and is not an empty directory.
+fatal: destination path 'pytorch' already exists and is not an empty directory.
+~/scripts ~/scripts
+
+
+~~ begin pytest build ~~ Sat Apr  8 20:32:41 UTC 2023
+
+~/pytest ~/scripts ~/scripts
+Obtaining file:///home/ec2-user/pytest
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting exceptiongroup>=1.0.0rc8
+  Using cached exceptiongroup-1.1.1-py3-none-any.whl (14 kB)
+Collecting packaging
+  Using cached packaging-23.0-py3-none-any.whl (42 kB)
+Collecting iniconfig
+  Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting tomli>=1.0.0
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting pluggy<2.0,>=0.12
+  Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Building wheels for collected packages: pytest
+  Building editable for pytest (pyproject.toml): started
+  Building editable for pytest (pyproject.toml): finished with status 'done'
+  Created wheel for pytest: filename=pytest-7.2.0.dev544+g3683722bc-0.editable-py3-none-any.whl size=5235 sha256=e1281ff720e86a5ea668a41ef2282ff999f4f2f4c6625ddc39c88d7d2c85c1d2
+  Stored in directory: /tmp/pip-ephem-wheel-cache-9bafuuwb/wheels/e8/11/da/5a40a5b91215367e426f09a4e16ae43f0098b9710104a5f1e8
+Successfully built pytest
+Installing collected packages: tomli, pluggy, packaging, iniconfig, exceptiongroup, pytest
+Successfully installed exceptiongroup-1.1.1 iniconfig-2.0.0 packaging-23.0 pluggy-1.0.0 pytest-7.2.0.dev544+g3683722bc tomli-2.0.1
+WARNING: You are using pip version 21.3.1; however, version 23.0.1 is available.
+You should consider upgrading via the '/home/ec2-user/.virtualenvs/pytestdev/bin/python3 -m pip install --upgrade pip' command.
+-- next: setup.py build
+/home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/setuptools/installer.py:27: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
+  warnings.warn(
+WARNING: The wheel package is not available.
+WARNING: The wheel package is not available.
+running build
+running build_py
+creating build
+creating build/lib
+copying src/py.py -> build/lib
+creating build/lib/_pytest
+copying src/_pytest/__init__.py -> build/lib/_pytest
+copying src/_pytest/_argcomplete.py -> build/lib/_pytest
+copying src/_pytest/cacheprovider.py -> build/lib/_pytest
+copying src/_pytest/capture.py -> build/lib/_pytest
+copying src/_pytest/compat.py -> build/lib/_pytest
+copying src/_pytest/debugging.py -> build/lib/_pytest
+copying src/_pytest/deprecated.py -> build/lib/_pytest
+copying src/_pytest/doctest.py -> build/lib/_pytest
+copying src/_pytest/faulthandler.py -> build/lib/_pytest
+copying src/_pytest/fixtures.py -> build/lib/_pytest
+copying src/_pytest/freeze_support.py -> build/lib/_pytest
+copying src/_pytest/helpconfig.py -> build/lib/_pytest
+copying src/_pytest/hookspec.py -> build/lib/_pytest
+copying src/_pytest/junitxml.py -> build/lib/_pytest
+copying src/_pytest/legacypath.py -> build/lib/_pytest
+copying src/_pytest/logging.py -> build/lib/_pytest
+copying src/_pytest/main.py -> build/lib/_pytest
+copying src/_pytest/monkeypatch.py -> build/lib/_pytest
+copying src/_pytest/nodes.py -> build/lib/_pytest
+copying src/_pytest/nose.py -> build/lib/_pytest
+copying src/_pytest/outcomes.py -> build/lib/_pytest
+copying src/_pytest/pastebin.py -> build/lib/_pytest
+copying src/_pytest/pathlib.py -> build/lib/_pytest
+copying src/_pytest/pytester.py -> build/lib/_pytest
+copying src/_pytest/pytester_assertions.py -> build/lib/_pytest
+copying src/_pytest/python.py -> build/lib/_pytest
+copying src/_pytest/python_api.py -> build/lib/_pytest
+copying src/_pytest/python_path.py -> build/lib/_pytest
+copying src/_pytest/recwarn.py -> build/lib/_pytest
+copying src/_pytest/reports.py -> build/lib/_pytest
+copying src/_pytest/runner.py -> build/lib/_pytest
+copying src/_pytest/scope.py -> build/lib/_pytest
+copying src/_pytest/setuponly.py -> build/lib/_pytest
+copying src/_pytest/setupplan.py -> build/lib/_pytest
+copying src/_pytest/skipping.py -> build/lib/_pytest
+copying src/_pytest/stash.py -> build/lib/_pytest
+copying src/_pytest/stepwise.py -> build/lib/_pytest
+copying src/_pytest/terminal.py -> build/lib/_pytest
+copying src/_pytest/threadexception.py -> build/lib/_pytest
+copying src/_pytest/timing.py -> build/lib/_pytest
+copying src/_pytest/tmpdir.py -> build/lib/_pytest
+copying src/_pytest/unittest.py -> build/lib/_pytest
+copying src/_pytest/unraisableexception.py -> build/lib/_pytest
+copying src/_pytest/warning_types.py -> build/lib/_pytest
+copying src/_pytest/warnings.py -> build/lib/_pytest
+copying src/_pytest/_version.py -> build/lib/_pytest
+creating build/lib/_pytest/_code
+copying src/_pytest/_code/__init__.py -> build/lib/_pytest/_code
+copying src/_pytest/_code/code.py -> build/lib/_pytest/_code
+copying src/_pytest/_code/source.py -> build/lib/_pytest/_code
+creating build/lib/_pytest/_io
+copying src/_pytest/_io/__init__.py -> build/lib/_pytest/_io
+copying src/_pytest/_io/saferepr.py -> build/lib/_pytest/_io
+copying src/_pytest/_io/terminalwriter.py -> build/lib/_pytest/_io
+copying src/_pytest/_io/wcwidth.py -> build/lib/_pytest/_io
+creating build/lib/_pytest/_py
+copying src/_pytest/_py/__init__.py -> build/lib/_pytest/_py
+copying src/_pytest/_py/error.py -> build/lib/_pytest/_py
+copying src/_pytest/_py/path.py -> build/lib/_pytest/_py
+creating build/lib/_pytest/assertion
+copying src/_pytest/assertion/__init__.py -> build/lib/_pytest/assertion
+copying src/_pytest/assertion/rewrite.py -> build/lib/_pytest/assertion
+copying src/_pytest/assertion/truncate.py -> build/lib/_pytest/assertion
+copying src/_pytest/assertion/util.py -> build/lib/_pytest/assertion
+creating build/lib/_pytest/config
+copying src/_pytest/config/__init__.py -> build/lib/_pytest/config
+copying src/_pytest/config/argparsing.py -> build/lib/_pytest/config
+copying src/_pytest/config/compat.py -> build/lib/_pytest/config
+copying src/_pytest/config/exceptions.py -> build/lib/_pytest/config
+copying src/_pytest/config/findpaths.py -> build/lib/_pytest/config
+creating build/lib/_pytest/mark
+copying src/_pytest/mark/__init__.py -> build/lib/_pytest/mark
+copying src/_pytest/mark/expression.py -> build/lib/_pytest/mark
+copying src/_pytest/mark/structures.py -> build/lib/_pytest/mark
+creating build/lib/pytest
+copying src/pytest/__init__.py -> build/lib/pytest
+copying src/pytest/__main__.py -> build/lib/pytest
+copying src/_pytest/py.typed -> build/lib/_pytest
+copying src/pytest/py.typed -> build/lib/pytest
+
+Collecting tox
+  Downloading tox-4.4.11-py3-none-any.whl (148 kB)
+Collecting colorama>=0.4.6
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting platformdirs>=3.2
+  Using cached platformdirs-3.2.0-py3-none-any.whl (14 kB)
+Requirement already satisfied: packaging>=23 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (23.0)
+Requirement already satisfied: pluggy>=1 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (1.0.0)
+Collecting virtualenv>=20.21
+  Downloading virtualenv-20.21.0-py3-none-any.whl (8.7 MB)
+Collecting filelock>=3.10.7
+  Downloading filelock-3.11.0-py3-none-any.whl (10.0 kB)
+Collecting cachetools>=5.3
+  Downloading cachetools-5.3.0-py3-none-any.whl (9.3 kB)
+Collecting pyproject-api>=1.5.1
+  Downloading pyproject_api-1.5.1-py3-none-any.whl (12 kB)
+Requirement already satisfied: tomli>=2.0.1 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (2.0.1)
+Collecting chardet>=5.1
+  Downloading chardet-5.1.0-py3-none-any.whl (199 kB)
+Collecting distlib<1,>=0.3.6
+  Downloading distlib-0.3.6-py2.py3-none-any.whl (468 kB)
+Installing collected packages: platformdirs, filelock, distlib, virtualenv, pyproject-api, colorama, chardet, cachetools, tox
+Successfully installed cachetools-5.3.0 chardet-5.1.0 colorama-0.4.6 distlib-0.3.6 filelock-3.11.0 platformdirs-3.2.0 pyproject-api-1.5.1 tox-4.4.11 virtualenv-20.21.0
+WARNING: You are using pip version 21.3.1; however, version 23.0.1 is available.
+You should consider upgrading via the '/home/ec2-user/.virtualenvs/pytestdev/bin/python3 -m pip install --upgrade pip' command.
+linting: install_deps> python -I -m pip install 'pre-commit>=2.9.3'
+linting: commands[0]> pre-commit run --all-files --show-diff-on-failure
+[INFO] Initializing environment for https://github.com/psf/black.
+[INFO] Initializing environment for https://github.com/asottile/blacken-docs.
+[INFO] Initializing environment for https://github.com/asottile/blacken-docs:black==23.1.0.
+[INFO] Initializing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Initializing environment for https://github.com/PyCQA/autoflake.
+[INFO] Initializing environment for https://github.com/PyCQA/flake8.
+[INFO] Initializing environment for https://github.com/PyCQA/flake8:flake8-typing-imports==1.12.0,flake8-docstrings==1.5.0.
+[INFO] Initializing environment for https://github.com/asottile/reorder_python_imports.
+[INFO] Initializing environment for https://github.com/asottile/pyupgrade.
+[INFO] Initializing environment for https://github.com/asottile/setup-cfg-fmt.
+[INFO] Initializing environment for https://github.com/pre-commit/pygrep-hooks.
+[INFO] Initializing environment for https://github.com/pre-commit/mirrors-mypy.
+[INFO] Initializing environment for https://github.com/pre-commit/mirrors-mypy:iniconfig>=1.1.0,attrs>=19.2.0,packaging,tomli,types-pkg_resources,exceptiongroup>=1.0.0rc8.
+[INFO] Initializing environment for local:pygments,restructuredtext_lint.
+[INFO] Installing environment for https://github.com/psf/black.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+An unexpected error has occurred: CalledProcessError: command: ('/home/ec2-user/pytest/.tox/linting/bin/python', '-mvirtualenv', '/home/ec2-user/.cache/pre-commit/repoio5cvkhi/py_env-3.10', '-p', '3.10')
+return code: 1
+stdout:
+    RuntimeError: failed to find interpreter for Builtin discover of python_spec='3.10'
+stderr: (none)
+Check the log at /home/ec2-user/.cache/pre-commit/pre-commit.log
+linting: exit 3 (4.10 seconds) /home/ec2-user/pytest> pre-commit run --all-files --show-diff-on-failure pid=31894
+linting: FAIL ✖ in 5.99 seconds
+py37: skipped because could not find python interpreter with spec(s): py37
+py37: SKIP ⚠ in 0.01 seconds
+py38: skipped because could not find python interpreter with spec(s): py38
+py38: SKIP ⚠ in 0 seconds
+.pkg: install_requires> python -I -m pip install 'setuptools-scm[toml]>=6.2.3' 'setuptools>=45.0'
+.pkg: _optional_hooks> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+.pkg: get_requires_for_build_editable> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+.pkg: install_requires_for_build_editable> python -I -m pip install setuptools 'setuptools-scm>=6.0' wheel
+.pkg: get_requires_for_build_sdist> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+.pkg: install_requires_for_build_sdist> python -I -m pip install setuptools 'setuptools-scm>=6.0'
+.pkg: build_wheel> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+.pkg: build_sdist> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+py39: install_package_deps> python -I -m pip install argcomplete 'attrs>=19.2.0' 'colorama; sys_platform == "win32"' 'exceptiongroup>=1.0.0rc8; python_version < "3.11"' 'hypothesis>=3.56' 'importlib-metadata>=0.12; python_version < "3.8"' iniconfig mock nose packaging 'pluggy<2.0,>=0.12' 'pygments>=2.7.2' requests 'tomli>=1.0.0; python_version < "3.11"' xmlschema
+py39: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/1/pytest-7.2.0.dev544+g3683722bc.tar.gz
+py39: commands[0]> pytest
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: .tox/py39/.pytest_cache
+rootdir: /home/ec2-user/pytest
+configfile: pyproject.toml
+testpaths: testing
+plugins: hypothesis-6.71.0
+collected 3420 items
+
+testing/acceptance_test.py .....                                         [  0%]
+testing/deprecated_test.py .......                                       [  0%]
+testing/test_argcomplete.py ..                                           [  0%]
+testing/test_assertion.py .............................................. [  1%]
+.......................                                                  [  2%]
+testing/test_assertrewrite.py .......................................... [  3%]
+..                                                                       [  3%]
+testing/test_capture.py ................................................ [  5%]
+.............s..                                                         [  5%]
+testing/test_collection.py .                                             [  5%]
+testing/test_compat.py ...........                                       [  5%]
+testing/test_config.py ................................................. [  7%]
+.....                                                                    [  7%]
+testing/test_conftest.py ...........                                     [  7%]
+testing/test_debugging.py .                                              [  7%]
+testing/test_doctest.py .............                                    [  8%]
+testing/test_entry_points.py .                                           [  8%]
+testing/test_faulthandler.py ...                                         [  8%]
+testing/test_findpaths.py ..............s...                             [  8%]
+testing/test_helpconfig.py .                                             [  8%]
+testing/test_junitxml.py ....                                            [  9%]
+testing/test_legacypath.py ....                                          [  9%]
+testing/test_main.py .....                                               [  9%]
+testing/test_mark.py ..............                                      [  9%]
+testing/test_mark_expression.py ........................................ [ 10%]
+............................................                             [ 12%]
+testing/test_monkeypatch.py ...............................              [ 13%]
+testing/test_nodes.py ..............                                     [ 13%]
+testing/test_nose.py ..                                                  [ 13%]
+testing/test_parseopt.py ............................                    [ 14%]
+testing/test_pastebin.py ....                                            [ 14%]
+testing/test_pathlib.py .............................................s.. [ 15%]
+...                                                                      [ 15%]
+testing/test_pluginmanager.py .........                                  [ 16%]
+testing/test_pytester.py .....................                           [ 16%]
+testing/test_recwarn.py ........................................         [ 18%]
+testing/test_runner.py ..............                                    [ 18%]
+testing/test_scope.py ....                                               [ 18%]
+testing/test_skipping.py .                                               [ 18%]
+testing/test_stash.py .                                                  [ 18%]
+testing/test_terminal.py .......................................         [ 19%]
+testing/test_tmpdir.py ...s...............                               [ 20%]
+testing/test_warning_types.py ..............                             [ 20%]
+testing/test_warnings.py .                                               [ 20%]
+testing/_py/test_local.py .............................................. [ 22%]
+...................ss..............s.................x......s........... [ 24%]
+..........................sssssss............................x...        [ 26%]
+testing/code/test_code.py .................                              [ 26%]
+testing/code/test_excinfo.py ...............s.......s................... [ 27%]
+........................................................................ [ 29%]
+............                                                             [ 30%]
+testing/code/test_source.py ............................................ [ 31%]
+...........                                                              [ 31%]
+testing/freeze/tests/test_trivial.py ..                                  [ 31%]
+testing/io/test_saferepr.py ..............                               [ 32%]
+testing/io/test_terminalwriter.py ...................................... [ 33%]
+.......                                                                  [ 33%]
+testing/io/test_wcwidth.py .................                             [ 34%]
+testing/logging/test_fixture.py .........                                [ 34%]
+testing/logging/test_formatter.py ....                                   [ 34%]
+testing/logging/test_reporting.py ..                                     [ 34%]
+testing/python/approx.py .sss..sssss.................................... [ 35%]
+..ssssss................ss........                                       [ 36%]
+testing/python/collect.py ..                                             [ 37%]
+testing/python/fixtures.py ..........                                    [ 37%]
+testing/python/integration.py ....                                       [ 37%]
+testing/python/metafunc.py .........................................     [ 38%]
+testing/python/raises.py .......................                         [ 39%]
+testing/freeze/tests/test_doctest.txt .                                  [ 39%]
+testing/acceptance_test.py ............................................. [ 40%]
+.....x....................                                               [ 41%]
+testing/deprecated_test.py .............                                 [ 41%]
+testing/test_assertion.py ...................................            [ 42%]
+testing/test_assertrewrite.py .......................................... [ 44%]
+..............                                                           [ 44%]
+testing/test_cacheprovider.py .......................................... [ 45%]
+..........                                                               [ 45%]
+testing/test_capture.py ......x....................................      [ 47%]
+testing/test_collection.py ...........................x................. [ 48%]
+.....................s.................                                  [ 49%]
+testing/test_compat.py ..                                                [ 49%]
+testing/test_config.py .............x................................... [ 51%]
+........................................................................ [ 53%]
+.....                                                                    [ 53%]
+testing/test_conftest.py .............s.............................     [ 54%]
+testing/test_debugging.py .............                                  [ 55%]
+testing/test_doctest.py ................................................ [ 56%]
+..............x......................................................... [ 58%]
+.                                                                        [ 58%]
+testing/test_error_diffs.py ............                                 [ 58%]
+testing/test_faulthandler.py ...                                         [ 59%]
+testing/test_helpconfig.py ........                                      [ 59%]
+testing/test_junitxml.py ............................................... [ 60%]
+..................................................s...s................. [ 62%]
+......                                                                   [ 62%]
+testing/test_legacypath.py ..........                                    [ 63%]
+testing/test_link_resolve.py .                                           [ 63%]
+testing/test_main.py .............                                       [ 63%]
+testing/test_mark.py ................................................... [ 65%]
+........x................                                                [ 65%]
+testing/test_monkeypatch.py ....                                         [ 65%]
+testing/test_nodes.py ....                                               [ 66%]
+testing/test_nose.py ......................                              [ 66%]
+testing/test_parseopt.py .                                               [ 66%]
+testing/test_pastebin.py ...                                             [ 66%]
+testing/test_pluginmanager.py ................                           [ 67%]
+testing/test_pytester.py x.........................                      [ 68%]
+testing/test_python_path.py .....                                        [ 68%]
+testing/test_recwarn.py ..                                               [ 68%]
+testing/test_reports.py ..................                               [ 68%]
+testing/test_runner.py .......................x.....................     [ 70%]
+testing/test_runner_xunit.py .............                               [ 70%]
+testing/test_session.py ........................                         [ 71%]
+testing/test_setuponly.py ..........................                     [ 71%]
+testing/test_setupplan.py ...                                            [ 72%]
+testing/test_skipping.py ............................................... [ 73%]
+.............................................                            [ 74%]
+testing/test_stepwise.py ..............                                  [ 75%]
+testing/test_terminal.py ..............................................s [ 76%]
+....................................................sss......s......     [ 78%]
+testing/test_threadexception.py ....                                     [ 78%]
+testing/test_tmpdir.py ....................                              [ 79%]
+testing/test_tracebackhide.py .                                          [ 79%]
+testing/test_unittest.py ......................sssssss.................. [ 80%]
+...............s........                                                 [ 81%]
+testing/test_unraisableexception.py ....                                 [ 81%]
+testing/test_warning_types.py .                                          [ 81%]
+testing/test_warnings.py ...................sss.........                 [ 82%]
+testing/code/test_excinfo.py ....sssssssss.........                      [ 83%]
+testing/examples/test_issue519.py .                                      [ 83%]
+testing/logging/test_fixture.py .......                                  [ 83%]
+testing/logging/test_reporting.py ...................................... [ 84%]
+...                                                                      [ 84%]
+testing/python/approx.py .                                               [ 84%]
+testing/python/collect.py .............................................. [ 85%]
+.............................                                            [ 86%]
+testing/python/fixtures.py ............................................. [ 88%]
+..........................x............................................. [ 90%]
+......................................................s..                [ 91%]
+testing/python/integration.py ...............                            [ 92%]
+testing/python/metafunc.py ............................................. [ 93%]
+...............                                                          [ 93%]
+testing/python/raises.py ...                                             [ 94%]
+testing/python/show_fixtures_per_test.py ........                        [ 94%]
+testing/acceptance_test.py ....                                          [ 94%]
+testing/test_assertion.py ............                                   [ 94%]
+testing/test_assertrewrite.py .........                                  [ 95%]
+testing/test_capture.py ........................                         [ 95%]
+testing/test_collection.py .                                             [ 95%]
+testing/test_compat.py .                                                 [ 95%]
+testing/test_config.py ..                                                [ 95%]
+testing/test_debugging.py sssssssssss.ssssssssssssssss.sss....ssss.sss   [ 97%]
+testing/test_faulthandler.py ..s.                                        [ 97%]
+testing/test_helpconfig.py ..                                            [ 97%]
+testing/test_legacypath.py .                                             [ 97%]
+testing/test_meta.py ................................................... [ 98%]
+................                                                         [ 99%]
+testing/test_pytester.py ....s                                           [ 99%]
+testing/test_reports.py .                                                [ 99%]
+testing/test_terminal.py ss..                                            [ 99%]
+testing/test_unittest.py s.                                              [ 99%]
+testing/test_warnings.py .........                                       [ 99%]
+testing/python/collect.py .                                              [ 99%]
+testing/python/fixtures.py ..                                            [100%]
+
+========== 3304 passed, 105 skipped, 11 xfailed in 117.01s (0:01:57) ===========
+py39: OK ✔ in 2 minutes 6.88 seconds
+py310: skipped because could not find python interpreter with spec(s): py310
+py310: SKIP ⚠ in 0 seconds
+py311: install_package_deps> python -I -m pip install argcomplete 'attrs>=19.2.0' 'colorama; sys_platform == "win32"' 'exceptiongroup>=1.0.0rc8; python_version < "3.11"' 'hypothesis>=3.56' 'importlib-metadata>=0.12; python_version < "3.8"' iniconfig mock nose packaging 'pluggy<2.0,>=0.12' 'pygments>=2.7.2' requests 'tomli>=1.0.0; python_version < "3.11"' xmlschema
+py311: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/2/pytest-7.2.0.dev544+g3683722bc.tar.gz
+py311: commands[0]> pytest
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-7.2.0.dev544+g3683722bc, pluggy-1.0.0
+cachedir: .tox/py311/.pytest_cache
+rootdir: /home/ec2-user/pytest
+configfile: pyproject.toml
+testpaths: testing
+plugins: hypothesis-6.71.0
+collected 3420 items
+
+testing/acceptance_test.py .....                                         [  0%]
+testing/deprecated_test.py .......                                       [  0%]
+testing/test_argcomplete.py ..                                           [  0%]
+testing/test_assertion.py .............................................. [  1%]
+.......................                                                  [  2%]
+testing/test_assertrewrite.py .......................................... [  3%]
+..                                                                       [  3%]
+testing/test_capture.py ................................................ [  5%]
+.............s..                                                         [  5%]
+testing/test_collection.py .                                             [  5%]
+testing/test_compat.py ...........                                       [  5%]
+testing/test_config.py ................................................. [  7%]
+.....                                                                    [  7%]
+testing/test_conftest.py ...........                                     [  7%]
+testing/test_debugging.py .                                              [  7%]
+testing/test_doctest.py .............                                    [  8%]
+testing/test_entry_points.py .                                           [  8%]
+testing/test_faulthandler.py ...                                         [  8%]
+testing/test_findpaths.py ..............s...                             [  8%]
+testing/test_helpconfig.py .                                             [  8%]
+testing/test_junitxml.py ....                                            [  9%]
+testing/test_legacypath.py ....                                          [  9%]
+testing/test_main.py .....                                               [  9%]
+testing/test_mark.py ..............                                      [  9%]
+testing/test_mark_expression.py ........................................ [ 10%]
+............................................                             [ 12%]
+testing/test_monkeypatch.py ...............................              [ 13%]
+testing/test_nodes.py ..............                                     [ 13%]
+testing/test_nose.py ..                                                  [ 13%]
+testing/test_parseopt.py ............................                    [ 14%]
+testing/test_pastebin.py ....                                            [ 14%]
+testing/test_pathlib.py .............................................s.. [ 15%]
+...                                                                      [ 15%]
+testing/test_pluginmanager.py .........                                  [ 16%]
+testing/test_pytester.py .....................                           [ 16%]
+testing/test_recwarn.py ........................................         [ 18%]
+testing/test_runner.py ..............                                    [ 18%]
+testing/test_scope.py ....                                               [ 18%]
+testing/test_skipping.py .                                               [ 18%]
+testing/test_stash.py .                                                  [ 18%]
+testing/test_terminal.py .......................................         [ 19%]
+testing/test_tmpdir.py ...s...............                               [ 20%]
+testing/test_warning_types.py ..............                             [ 20%]
+testing/test_warnings.py .                                               [ 20%]
+testing/_py/test_local.py .............................................. [ 22%]
+...................ss..............s.................x......s........... [ 24%]
+..........................sssssss............................x...        [ 26%]
+testing/code/test_code.py .................                              [ 26%]
+testing/code/test_excinfo.py ...............s.......s................... [ 27%]
+........................................................................ [ 29%]
+............                                                             [ 30%]
+testing/code/test_source.py ............................................ [ 31%]
+...........                                                              [ 31%]
+testing/freeze/tests/test_trivial.py ..                                  [ 31%]
+testing/io/test_saferepr.py ..............                               [ 32%]
+testing/io/test_terminalwriter.py ...................................... [ 33%]
+.......                                                                  [ 33%]
+testing/io/test_wcwidth.py .................                             [ 34%]
+testing/logging/test_fixture.py .........                                [ 34%]
+testing/logging/test_formatter.py ....                                   [ 34%]
+testing/logging/test_reporting.py ..                                     [ 34%]
+testing/python/approx.py .sss..sssss.................................... [ 35%]
+..ssssss................ss........                                       [ 36%]
+testing/python/collect.py ..                                             [ 37%]
+testing/python/fixtures.py ..........                                    [ 37%]
+testing/python/integration.py ....                                       [ 37%]
+testing/python/metafunc.py .........................................     [ 38%]
+testing/python/raises.py .......................                         [ 39%]
+testing/freeze/tests/test_doctest.txt .                                  [ 39%]
+testing/acceptance_test.py ............................................. [ 40%]
+.....x....................                                               [ 41%]
+testing/deprecated_test.py .............                                 [ 41%]
+testing/test_assertion.py ...................................            [ 42%]
+testing/test_assertrewrite.py .......................................... [ 44%]
+..............                                                           [ 44%]
+testing/test_cacheprovider.py .......................................... [ 45%]
+..........                                                               [ 45%]
+testing/test_capture.py ......x....................................      [ 47%]
+testing/test_collection.py ...........................x................. [ 48%]
+.....................s.................                                  [ 49%]
+testing/test_compat.py ..                                                [ 49%]
+testing/test_config.py .............x................................... [ 51%]
+........................................................................ [ 53%]
+.....                                                                    [ 53%]
+testing/test_conftest.py .............s.............................     [ 54%]
+testing/test_debugging.py .............                                  [ 55%]
+testing/test_doctest.py ................................................ [ 56%]
+..............x......................................................... [ 58%]
+.                                                                        [ 58%]
+testing/test_error_diffs.py ............                                 [ 58%]
+testing/test_faulthandler.py ...                                         [ 59%]
+testing/test_helpconfig.py ........                                      [ 59%]
+testing/test_junitxml.py ............................................... [ 60%]
+..................................................s...s................. [ 62%]
+......                                                                   [ 62%]
+testing/test_legacypath.py ..........                                    [ 63%]
+testing/test_link_resolve.py .                                           [ 63%]
+testing/test_main.py .............                                       [ 63%]
+testing/test_mark.py ................................................... [ 65%]
+........x................                                                [ 65%]
+testing/test_monkeypatch.py ....                                         [ 65%]
+testing/test_nodes.py ....                                               [ 66%]
+testing/test_nose.py ......................                              [ 66%]
+testing/test_parseopt.py .                                               [ 66%]
+testing/test_pastebin.py ...                                             [ 66%]
+testing/test_pluginmanager.py ................                           [ 67%]
+testing/test_pytester.py x.........................                      [ 68%]
+testing/test_python_path.py .....                                        [ 68%]
+testing/test_recwarn.py ..                                               [ 68%]
+testing/test_reports.py ..................                               [ 68%]
+testing/test_runner.py .......................x.....................     [ 70%]
+testing/test_runner_xunit.py .............                               [ 70%]
+testing/test_session.py ........................                         [ 71%]
+testing/test_setuponly.py ..........................                     [ 71%]
+testing/test_setupplan.py ...                                            [ 72%]
+testing/test_skipping.py ............................................... [ 73%]
+.............................................                            [ 74%]
+testing/test_stepwise.py ..............                                  [ 75%]
+testing/test_terminal.py ..............................................s [ 76%]
+....................................................sss......s......     [ 78%]
+testing/test_threadexception.py ....                                     [ 78%]
+testing/test_tmpdir.py ....................                              [ 79%]
+testing/test_tracebackhide.py .                                          [ 79%]
+testing/test_unittest.py ......................sssssss.................. [ 80%]
+...............s........                                                 [ 81%]
+testing/test_unraisableexception.py ....                                 [ 81%]
+testing/test_warning_types.py .                                          [ 81%]
+testing/test_warnings.py ...................sss.........                 [ 82%]
+testing/code/test_excinfo.py .............sssssssss                      [ 83%]
+testing/examples/test_issue519.py .                                      [ 83%]
+testing/logging/test_fixture.py .......                                  [ 83%]
+testing/logging/test_reporting.py ...................................... [ 84%]
+...                                                                      [ 84%]
+testing/python/approx.py .                                               [ 84%]
+testing/python/collect.py .............................................. [ 85%]
+.............................                                            [ 86%]
+testing/python/fixtures.py ............................................. [ 88%]
+..........................x............................................. [ 90%]
+......................................................s..                [ 91%]
+testing/python/integration.py ...............                            [ 92%]
+testing/python/metafunc.py ............................................. [ 93%]
+...............                                                          [ 93%]
+testing/python/raises.py ...                                             [ 94%]
+testing/python/show_fixtures_per_test.py ........                        [ 94%]
+testing/acceptance_test.py ....                                          [ 94%]
+testing/test_assertion.py ............                                   [ 94%]
+testing/test_assertrewrite.py .........                                  [ 95%]
+testing/test_capture.py ........................                         [ 95%]
+testing/test_collection.py .                                             [ 95%]
+testing/test_compat.py s                                                 [ 95%]
+testing/test_config.py ..                                                [ 95%]
+testing/test_debugging.py sssssssssss.ssssssssssssssss.sss....ssss.sss   [ 97%]
+testing/test_faulthandler.py ..s.                                        [ 97%]
+testing/test_helpconfig.py ..                                            [ 97%]
+testing/test_legacypath.py .                                             [ 97%]
+testing/test_meta.py ................................................... [ 98%]
+................                                                         [ 99%]
+testing/test_pytester.py ....s                                           [ 99%]
+testing/test_reports.py .                                                [ 99%]
+testing/test_terminal.py ss..                                            [ 99%]
+testing/test_unittest.py s.                                              [ 99%]
+testing/test_warnings.py .........                                       [ 99%]
+testing/python/collect.py .                                              [ 99%]
+testing/python/fixtures.py ..                                            [100%]
+
+========== 3303 passed, 106 skipped, 11 xfailed in 107.94s (0:01:47) ===========
+py311: OK ✔ in 1 minute 54.67 seconds
+py312: skipped because could not find python interpreter with spec(s): py312
+py312: SKIP ⚠ in 0 seconds
+pypy3: skipped because could not find python interpreter with spec(s): pypy3
+pypy3: SKIP ⚠ in 0 seconds
+py37-pexpect: skipped because could not find python interpreter with spec(s): py37
+py37-pexpect: SKIP ⚠ in 0 seconds
+py37-xdist: skipped because could not find python interpreter with spec(s): py37
+py37-xdist: SKIP ⚠ in 0 seconds
+py37-unittestextras: skipped because could not find python interpreter with spec(s): py37
+py37-unittestextras: SKIP ⚠ in 0 seconds
+py37-numpy: skipped because could not find python interpreter with spec(s): py37
+py37-numpy: SKIP ⚠ in 0 seconds
+py37-pluggymain: skipped because could not find python interpreter with spec(s): py37
+py37-pluggymain: SKIP ⚠ in 0 seconds
+py37-pylib: skipped because could not find python interpreter with spec(s): py37
+py37-pylib: SKIP ⚠ in 0 seconds
+doctesting: install_deps> python -I -m pip install PyYAML
+doctesting: install_package_deps> python -I -m pip install argcomplete 'attrs>=19.2.0' 'colorama; sys_platform == "win32"' 'exceptiongroup>=1.0.0rc8; python_version < "3.11"' 'hypothesis>=3.56' 'importlib-metadata>=0.12; python_version < "3.8"' iniconfig mock nose packaging 'pluggy<2.0,>=0.12' 'pygments>=2.7.2' requests 'tomli>=1.0.0; python_version < "3.11"' xmlschema
