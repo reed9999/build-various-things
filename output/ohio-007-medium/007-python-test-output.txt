@@ -1,0 +1,619 @@
+The following modules are *disabled* in configure script:
+_sqlite3                                                       
+
+The necessary bits to build these optional modules were not found:
+_bz2                  _ctypes               _ctypes_test       
+_curses               _curses_panel         _dbm               
+_gdbm                 _hashlib              _lzma              
+_ssl                  _tkinter              _uuid              
+nis                   readline              zlib               
+To find the necessary bits, look in configure.ac and config.log.
+
+Could not build the ssl module!
+Python requires a OpenSSL 1.1.1 or newer
+
+Checked 111 modules (30 built-in, 64 shared, 1 n/a on linux-x86_64, 1 disabled, 15 missing, 0 failed on import)
+./python -E  ./Tools/scripts/run_tests.py 
+== CPython 3.12.0a6+ (heads/main:fd1947ecfb, Apr 8 2023, 04:40:33) [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+== Linux-6.1.21-1.45.amzn2023.x86_64-x86_64-with-glibc2.34 little-endian
+== Python build: debug
+== cwd: /home/ec2-user/cpython/build/test_python_58849æ
+== CPU count: 2
+== encodings: locale=UTF-8, FS=utf-8
+Using random seed 4850350
+0:00:00 load avg: 2.72 Run tests in parallel using 4 child processes
+0:00:01 load avg: 2.72 [  1/433] test_pprint passed
+0:00:02 load avg: 2.98 [  2/433] test_lltrace passed
+0:00:04 load avg: 2.98 [  3/433] test_tabnanny passed
+0:00:04 load avg: 2.98 [  4/433] test_codecmaps_kr passed
+0:00:05 load avg: 2.98 [  5/433] test_rlcompleter passed
+0:00:05 load avg: 2.98 [  6/433] test_dbm_gnu skipped
+test_dbm_gnu skipped -- No module named '_gdbm'
+0:00:06 load avg: 2.98 [  7/433] test_webbrowser passed
+0:00:10 load avg: 3.14 [  8/433] test_struct passed
+0:00:16 load avg: 3.29 [  9/433] test_long passed
+0:00:17 load avg: 3.29 [ 10/433] test_opcodes passed
+0:00:18 load avg: 3.43 [ 11/433] test_shelve passed
+0:00:19 load avg: 3.43 [ 12/433] test_asdl_parser passed
+0:00:22 load avg: 3.56 [ 13/433] test_int passed
+0:00:25 load avg: 3.56 [ 14/433] test_argparse passed
+0:00:41 load avg: 3.94 [ 15/433] test_unicode passed -- running: test_compileall (36.2 sec), test_hashlib (41.7 sec)
+0:00:42 load avg: 4.03 [ 16/433] test_sndhdr passed -- running: test_compileall (37.1 sec), test_hashlib (42.7 sec)
+0:00:44 load avg: 4.03 [ 17/433] test_memoryview passed -- running: test_compileall (39.0 sec), test_hashlib (44.5 sec)
+0:00:45 load avg: 4.03 [ 18/433] test_shlex passed -- running: test_compileall (39.5 sec), test_hashlib (45.0 sec)
+0:01:08 load avg: 4.52 [ 19/433] test_support passed -- running: test_zipfile (43.2 sec), test_compileall (1 min 2 sec), test_hashlib (1 min 8 sec)
+0:01:09 load avg: 4.52 [ 20/433] test_fnmatch passed -- running: test_zipfile (44.3 sec), test_compileall (1 min 3 sec), test_hashlib (1 min 9 sec)
+0:01:10 load avg: 4.52 [ 21/433] test_zipfile passed (45.1 sec) -- running: test_compileall (1 min 5 sec), test_hashlib (1 min 10 sec)
+0:01:12 load avg: 4.52 [ 22/433] test_eof passed -- running: test_compileall (1 min 6 sec), test_hashlib (1 min 12 sec)
+0:01:31 load avg: 4.72 [ 23/433] test_exceptions passed -- running: test_compileall (1 min 25 sec), test_hashlib (1 min 31 sec)
+0:01:32 load avg: 4.72 [ 24/433] test_hmac passed -- running: test_compileall (1 min 26 sec), test_hashlib (1 min 32 sec)
+0:01:36 load avg: 4.74 [ 25/433] test_tempfile passed -- running: test_compileall (1 min 30 sec), test_hashlib (1 min 36 sec)
+0:01:37 load avg: 4.74 [ 26/433] test_ioctl skipped -- running: test_compileall (1 min 31 sec), test_hashlib (1 min 37 sec)
+test_ioctl skipped -- Unable to open /dev/tty
+0:01:37 load avg: 4.76 [ 27/433] test_openpty passed -- running: test_compileall (1 min 32 sec), test_hashlib (1 min 37 sec)
+0:01:38 load avg: 4.76 [ 28/433] test_threadedtempfile passed -- running: test_compileall (1 min 33 sec), test_hashlib (1 min 38 sec)
+0:01:39 load avg: 4.76 [ 29/433] test_mmap passed -- running: test_compileall (1 min 34 sec), test_source_encoding (30.3 sec), test_hashlib (1 min 39 sec)
+0:01:41 load avg: 4.76 [ 30/433] test_ntpath passed -- running: test_compileall (1 min 35 sec), test_source_encoding (31.9 sec), test_hashlib (1 min 41 sec)
+0:01:42 load avg: 4.78 [ 31/433] test_hashlib passed (1 min 41 sec) -- running: test_compileall (1 min 36 sec), test_source_encoding (33.0 sec)
+0:01:44 load avg: 4.78 [ 32/433] test_imp passed -- running: test_compileall (1 min 38 sec), test_source_encoding (35.1 sec)
+0:01:45 load avg: 4.78 [ 33/433] test_compileall passed (1 min 39 sec) -- running: test_source_encoding (36.4 sec)
+0:01:59 load avg: 4.91 [ 34/433] test_queue passed -- running: test_source_encoding (50.1 sec)
+0:02:03 load avg: 5.23 [ 35/433] test_source_encoding passed (53.4 sec)
+0:02:04 load avg: 5.23 [ 36/433] test_ftplib passed
+0:02:06 load avg: 5.23 [ 37/433] test_extcall passed
+0:02:16 load avg: 5.51 [ 38/433] test_threading passed (30.9 sec) -- running: test_multiprocessing_main_handling (33.7 sec)
+0:02:17 load avg: 5.79 [ 39/433] test_uu passed -- running: test_multiprocessing_main_handling (35.0 sec)
+0:02:20 load avg: 5.79 [ 40/433] test_strftime passed -- running: test_multiprocessing_main_handling (37.9 sec)
+0:02:20 load avg: 5.79 [ 41/433] test_json passed -- running: test_multiprocessing_main_handling (38.5 sec)
+0:02:21 load avg: 5.79 [ 42/433] test_bz2 skipped -- running: test_multiprocessing_main_handling (38.7 sec)
+test_bz2 skipped -- No module named '_bz2'
+0:02:22 load avg: 5.72 [ 43/433] test_zoneinfo skipped -- running: test_multiprocessing_main_handling (40.5 sec)
+test_zoneinfo skipped -- No module named '_lzma'
+0:02:24 load avg: 5.72 [ 44/433] test_xmlrpc_net passed -- running: test_multiprocessing_main_handling (42.3 sec)
+0:02:25 load avg: 5.72 [ 45/433] test_cppext passed -- running: test_multiprocessing_main_handling (43.5 sec)
+0:02:30 load avg: 5.75 [ 46/433] test_posix passed -- running: test_multiprocessing_main_handling (48.5 sec)
+0:02:32 load avg: 5.75 [ 47/433] test_funcattrs passed -- running: test_multiprocessing_main_handling (49.7 sec)
+0:02:32 load avg: 5.77 [ 48/433] test_xxlimited passed -- running: test_multiprocessing_main_handling (50.5 sec)
+0:02:32 load avg: 5.77 [ 49/433] test_multiprocessing_main_handling passed (49.8 sec)
+0:02:34 load avg: 5.77 [ 50/433] test_slice passed
+0:02:35 load avg: 5.77 [ 51/433] test_winsound skipped (resource denied)
+test_winsound skipped -- Use of the 'audio' resource not enabled
+0:02:37 load avg: 5.79 [ 52/433] test_itertools passed (31.1 sec)
+0:02:38 load avg: 5.79 [ 53/433] test_curses skipped
+test_curses skipped -- No module named '_curses'
+0:02:39 load avg: 5.79 [ 54/433] test_cgi passed
+0:02:40 load avg: 5.79 [ 55/433] test_genericclass passed
+0:02:41 load avg: 5.79 [ 56/433] test_linecache passed
+0:02:42 load avg: 5.79 [ 57/433] test_abstract_numbers passed
+0:02:44 load avg: 5.72 [ 58/433] test_pathlib passed
+0:02:44 load avg: 5.72 [ 59/433] test_tarfile passed
+0:02:45 load avg: 5.72 [ 60/433] test_fileinput passed
+0:02:45 load avg: 5.72 [ 61/433] test_time passed
+0:02:45 load avg: 5.72 [ 62/433] test_bytes passed
+0:02:46 load avg: 5.72 [ 63/433] test_mimetypes passed
+0:02:46 load avg: 5.72 [ 64/433] test_sys_setprofile passed
+0:02:46 load avg: 5.72 [ 65/433] test_codecencodings_kr passed
+0:02:47 load avg: 5.66 [ 66/433] test_pulldom passed
+0:02:47 load avg: 5.66 [ 67/433] test_enumerate passed
+0:02:48 load avg: 5.66 [ 68/433] test_tcl skipped
+test_tcl skipped -- No module named '_tkinter'
+0:02:48 load avg: 5.66 [ 69/433] test_poplib passed
+0:02:48 load avg: 5.66 [ 70/433] test_class passed
+0:02:49 load avg: 5.66 [ 71/433] test_defaultdict passed
+0:02:51 load avg: 5.66 [ 72/433] test_urllib2 passed
+0:02:53 load avg: 5.69 [ 73/433] test_getpath passed
+0:02:54 load avg: 5.69 [ 74/433] test_contextlib_async passed
+0:02:55 load avg: 5.69 [ 75/433] test_binascii passed
+0:02:56 load avg: 5.69 [ 76/433] test_type_annotations passed
+0:02:58 load avg: 5.96 [ 77/433] test_weakset passed
+0:03:00 load avg: 5.96 [ 78/433] test_descrtut passed
+0:03:02 load avg: 5.88 [ 79/433] test_fcntl passed
+struct.pack:  b'\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+struct.pack:  b'\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+0:03:03 load avg: 5.88 [ 80/433] test_crashers passed
+0:03:06 load avg: 5.88 [ 81/433] test_email passed
+0:03:07 load avg: 5.81 [ 82/433] test_genexps passed
+0:03:14 load avg: 5.66 [ 83/433] test_random passed
+0:03:16 load avg: 5.66 [ 84/433] test_binop passed -- running: test_buffer (30.2 sec)
+0:03:17 load avg: 5.66 [ 85/433] test_pyexpat passed -- running: test_buffer (31.0 sec)
+0:03:17 load avg: 5.61 [ 86/433] test_stat passed -- running: test_buffer (31.9 sec)
+0:03:19 load avg: 5.61 [ 87/433] test_ssl skipped -- running: test_buffer (33.1 sec), test_multiprocessing_forkserver (30.8 sec)
+test_ssl skipped -- No module named '_ssl'
+0:03:30 load avg: 5.44 [ 88/433] test_buffer passed (43.3 sec) -- running: test_multiprocessing_forkserver (41.8 sec)
+0:03:31 load avg: 5.44 [ 89/433] test_htmlparser passed -- running: test_multiprocessing_forkserver (43.1 sec)
+0:03:39 load avg: 5.22 [ 90/433] test_userstring passed -- running: test_io (35.3 sec), test_multiprocessing_forkserver (50.8 sec)
+0:03:39 load avg: 5.22 [ 91/433] test_keywordonlyarg passed -- running: test_io (35.8 sec), test_multiprocessing_forkserver (51.3 sec)
+0:03:41 load avg: 5.22 [ 92/433] test_site passed -- running: test_io (38.0 sec), test_multiprocessing_forkserver (53.4 sec)
+0:03:42 load avg: 5.22 [ 93/433] test_compiler_codegen passed -- running: test_io (38.7 sec), test_multiprocessing_forkserver (54.2 sec)
+0:03:49 load avg: 5.47 [ 94/433] test_weakref passed -- running: test_io (45.4 sec), test_multiprocessing_forkserver (1 min)
+0:03:54 load avg: 5.27 [ 95/433] test_peepholer passed -- running: test_io (50.8 sec), test_multiprocessing_forkserver (1 min 6 sec)
+0:04:02 load avg: 5.17 [ 96/433] test_io passed (57.8 sec) -- running: test_multiprocessing_forkserver (1 min 13 sec)
+0:04:03 load avg: 5.48 [ 97/433] test_dict_version passed -- running: test_multiprocessing_forkserver (1 min 15 sec)
+0:04:19 load avg: 5.30 [ 98/433] test_descr passed -- running: test_socket (37.4 sec), test_multiprocessing_forkserver (1 min 31 sec)
+0:04:20 load avg: 5.30 [ 99/433] test_embed passed -- running: test_socket (38.4 sec), test_multiprocessing_forkserver (1 min 32 sec)
+0:04:21 load avg: 5.30 [100/433] test_metaclass passed -- running: test_socket (39.3 sec), test_multiprocessing_forkserver (1 min 33 sec)
+0:04:22 load avg: 5.30 [101/433] test_kqueue skipped -- running: test_socket (39.9 sec), test_multiprocessing_forkserver (1 min 34 sec)
+test_kqueue skipped -- test works only on BSD
+0:04:23 load avg: 5.20 [102/433] test_pkg passed -- running: test_socket (40.9 sec), test_multiprocessing_forkserver (1 min 35 sec)
+0:04:24 load avg: 5.20 [103/433] test_codecmaps_cn passed -- running: test_socket (41.7 sec), test_multiprocessing_forkserver (1 min 35 sec)
+0:04:24 load avg: 5.20 [104/433] test_uuid passed -- running: test_socket (42.4 sec), test_multiprocessing_forkserver (1 min 36 sec)
+usage: [-h] [-u {uuid1,uuid3,uuid4,uuid5}] [-n NAMESPACE] [-N NAME]
+: error: Incorrect number of arguments. uuid3 requires a namespace and a name. Run 'python -m uuid -h' for more information.
+usage: [-h] [-u {uuid1,uuid3,uuid4,uuid5}] [-n NAMESPACE] [-N NAME]
+: error: Incorrect number of arguments. uuid3 requires a namespace and a name. Run 'python -m uuid -h' for more information.
+0:04:25 load avg: 5.20 [105/433] test_epoll passed -- running: test_socket (43.2 sec), test_multiprocessing_forkserver (1 min 37 sec)
+0:04:26 load avg: 5.20 [106/433] test_pipes passed -- running: test_socket (43.9 sec), test_multiprocessing_forkserver (1 min 38 sec)
+0:04:27 load avg: 5.20 [107/433] test_unpack passed -- running: test_socket (44.6 sec), test_multiprocessing_forkserver (1 min 38 sec)
+0:04:28 load avg: 5.10 [108/433] test_range passed -- running: test_socket (45.5 sec), test_multiprocessing_forkserver (1 min 39 sec)
+0:04:28 load avg: 5.10 [109/433] test_netrc passed -- running: test_socket (46.4 sec), test_multiprocessing_forkserver (1 min 40 sec)
+0:04:29 load avg: 5.10 [110/433] test_idle skipped -- running: test_socket (47.0 sec), test_multiprocessing_forkserver (1 min 41 sec)
+test_idle skipped -- No module named '_tkinter'
+0:04:29 load avg: 5.10 [111/433] test_print passed -- running: test_socket (47.4 sec), test_multiprocessing_forkserver (1 min 41 sec)
+0:04:30 load avg: 5.10 [112/433] test_xml_dom_minicompat passed -- running: test_socket (47.7 sec), test_multiprocessing_forkserver (1 min 41 sec)
+0:04:30 load avg: 5.10 [113/433] test_grp passed -- running: test_socket (48.4 sec), test_multiprocessing_forkserver (1 min 42 sec)
+0:04:33 load avg: 5.01 [114/433] test_finalization passed -- running: test_socket (50.6 sec), test_multiprocessing_forkserver (1 min 44 sec)
+0:04:39 load avg: 4.85 [115/433] test_ast passed -- running: test_socket (57.1 sec), test_multiprocessing_forkserver (1 min 51 sec)
+0:04:44 load avg: 6.22 [116/433] test_timeout passed -- running: test_socket (1 min 1 sec), test_multiprocessing_forkserver (1 min 55 sec)
+0:04:46 load avg: 6.22 [117/433] test_script_helper passed -- running: test_socket (1 min 4 sec), test_multiprocessing_forkserver (1 min 58 sec)
+0:04:47 load avg: 6.22 [118/433] test_gettext passed -- running: test_socket (1 min 5 sec), test_multiprocessing_forkserver (1 min 59 sec)
+0:04:52 load avg: 5.97 [119/433] test_eintr passed -- running: test_socket (1 min 9 sec), test_multiprocessing_forkserver (2 min 3 sec)
+0:04:52 load avg: 5.97 [120/433] test_future4 passed -- running: test_socket (1 min 10 sec), test_multiprocessing_forkserver (2 min 4 sec)
+0:05:04 load avg: 5.95 [121/433] test_socket passed (1 min 21 sec) -- running: test_multiprocessing_forkserver (2 min 16 sec)
+0:05:05 load avg: 5.95 [122/433] test_cmd passed -- running: test_multiprocessing_forkserver (2 min 17 sec)
+0:05:09 load avg: 5.87 [123/433] test_traceback passed -- running: test_multiprocessing_forkserver (2 min 21 sec)
+0:05:13 load avg: 5.80 [124/433] test_multiprocessing_forkserver passed (2 min 24 sec)
+0:05:15 load avg: 5.80 [125/433] test_docxmlrpc passed
+0:05:16 load avg: 5.80 [126/433] test_iter passed
+0:05:17 load avg: 5.74 [127/433] test_future5 passed -- running: test_capi (30.3 sec)
+0:05:19 load avg: 5.74 [128/433] test_builtin passed -- running: test_capi (32.1 sec)
+0:05:20 load avg: 5.74 [129/433] test_wmi skipped -- running: test_capi (33.0 sec)
+test_wmi skipped -- No module named '_wmi'
+0:05:21 load avg: 5.74 [130/433] test_sunau passed -- running: test_capi (34.2 sec)
+0:05:22 load avg: 5.68 [131/433] test_xxtestfuzz passed -- running: test_capi (35.3 sec)
+/home/ec2-user/cpython/Lib/test/test_xxtestfuzz.py:13: DeprecationWarning: module 'sre_compile' is deprecated
+  _xxtestfuzz.run(b"")
+/home/ec2-user/cpython/Lib/test/test_xxtestfuzz.py:13: DeprecationWarning: module 'sre_constants' is deprecated
+  _xxtestfuzz.run(b"")
+0:05:24 load avg: 5.68 [132/433] test_sched passed -- running: test_capi (36.8 sec)
+0:05:25 load avg: 5.68 [133/433] test__opcode passed -- running: test_capi (37.8 sec)
+0:05:31 load avg: 5.62 [134/433] test_inspect passed -- running: test_capi (44.1 sec)
+0:05:36 load avg: 5.57 [135/433] test_http_cookiejar passed -- running: test_capi (48.5 sec)
+0:05:44 load avg: 5.89 [136/433] test___all__ passed -- running: test_capi (57.0 sec), test_unparse (35.1 sec)
+0:05:45 load avg: 5.89 [137/433] test_fileutils passed -- running: test_capi (57.7 sec), test_unparse (35.9 sec)
+0:05:46 load avg: 5.89 [138/433] test_syntax passed -- running: test_capi (58.7 sec), test_unparse (36.8 sec)
+0:05:47 load avg: 5.89 [139/433] test_copyreg passed -- running: test_capi (59.4 sec), test_unparse (37.5 sec)
+0:05:48 load avg: 5.73 [140/433] test_csv passed -- running: test_capi (1 min 1 sec), test_unparse (39.5 sec), test_decimal (31.0 sec)
+0:05:53 load avg: 6.08 [141/433] test_warnings passed -- running: test_capi (1 min 6 sec), test_unparse (44.4 sec), test_decimal (35.9 sec)
+/home/ec2-user/cpython/Lib/test/test_warnings/__init__.py:390: UserWarning: Other types of warnings are not errors
+  self.module.warn("Other types of warnings are not errors")
+/home/ec2-user/cpython/Lib/test/test_warnings/__init__.py:390: UserWarning: Other types of warnings are not errors
+  self.module.warn("Other types of warnings are not errors")
+0:05:54 load avg: 6.08 [142/433] test_urllib_response passed -- running: test_capi (1 min 7 sec), test_unparse (45.2 sec), test_decimal (36.8 sec)
+0:05:59 load avg: 6.39 [143/433] test_fstring passed -- running: test_capi (1 min 11 sec), test_unparse (49.6 sec), test_decimal (41.1 sec)
+0:06:07 load avg: 6.44 [144/433] test_decimal passed (49.3 sec) -- running: test_capi (1 min 20 sec), test_unparse (58.4 sec)
+0:06:08 load avg: 6.24 [145/433] test_subclassinit passed -- running: test_capi (1 min 20 sec), test_unparse (58.9 sec)
+0:06:09 load avg: 6.24 [146/433] test_gzip skipped -- running: test_capi (1 min 21 sec), test_unparse (59.6 sec)
+test_gzip skipped -- No module named 'zlib'
+0:06:09 load avg: 6.24 [147/433] test_type_cache passed -- running: test_capi (1 min 22 sec), test_unparse (1 min)
+0:06:14 load avg: 5.98 [148/433] test_pyclbr passed -- running: test_capi (1 min 27 sec), test_unparse (1 min 5 sec)
+0:06:15 load avg: 5.98 [149/433] test_structseq passed -- running: test_capi (1 min 27 sec), test_unparse (1 min 6 sec)
+0:06:16 load avg: 5.98 [150/433] test_codeop passed -- running: test_capi (1 min 28 sec), test_unparse (1 min 6 sec)
+0:06:27 load avg: 5.85 [151/433] test_cmd_line_script passed -- running: test_capi (1 min 40 sec), test_unparse (1 min 18 sec)
+/home/ec2-user/cpython/Lib/subprocess.py:849: RuntimeWarning: pass_fds overriding close_fds.
+  warnings.warn("pass_fds overriding close_fds.", RuntimeWarning)
+0:06:30 load avg: 5.85 [152/433] test_selectors passed (30.3 sec) -- running: test_capi (1 min 42 sec), test_unparse (1 min 20 sec)
+0:06:31 load avg: 5.85 [153/433] test_urlparse passed -- running: test_capi (1 min 43 sec), test_unparse (1 min 21 sec)
+0:06:31 load avg: 5.85 [154/433] test_html passed -- running: test_capi (1 min 43 sec), test_unparse (1 min 21 sec)
+0:06:32 load avg: 5.85 [155/433] test_syslog passed -- running: test_capi (1 min 45 sec), test_unparse (1 min 23 sec)
+0:06:32 load avg: 5.85 [156/433] test_getpass passed -- running: test_capi (1 min 45 sec), test_unparse (1 min 23 sec)
+0:06:33 load avg: 6.10 [157/433] test_bigmem passed -- running: test_capi (1 min 46 sec), test_unparse (1 min 24 sec)
+0:06:34 load avg: 6.10 [158/433] test_graphlib passed -- running: test_capi (1 min 46 sec), test_unparse (1 min 24 sec)
+0:06:35 load avg: 6.10 [159/433] test_operator passed -- running: test_capi (1 min 47 sec), test_unparse (1 min 26 sec)
+0:06:36 load avg: 6.10 [160/433] test_ctypes skipped -- running: test_capi (1 min 48 sec), test_unparse (1 min 26 sec)
+test_ctypes skipped -- No module named '_ctypes'
+0:06:37 load avg: 6.10 [161/433] test_super passed -- running: test_capi (1 min 50 sec), test_unparse (1 min 28 sec)
+0:06:38 load avg: 6.25 [162/433] test_xdrlib passed -- running: test_capi (1 min 51 sec), test_unparse (1 min 29 sec)
+0:06:43 load avg: 6.15 [163/433] test_doctest passed -- running: test_capi (1 min 56 sec), test_unparse (1 min 34 sec)
+<frozen importlib._bootstrap>:824: ImportWarning: TestImporter.exec_module() not found; falling back to load_module()
+0:06:44 load avg: 6.15 [164/433] test_exception_group passed -- running: test_capi (1 min 57 sec), test_unparse (1 min 35 sec)
+0:06:44 load avg: 6.15 [165/433] test_wait3 passed -- running: test_capi (1 min 57 sec), test_unparse (1 min 35 sec)
+0:06:46 load avg: 6.15 [166/433] test_posixpath passed -- running: test_capi (1 min 59 sec), test_unparse (1 min 37 sec)
+0:06:48 load avg: 6.38 [167/433] test_urllibnet passed -- running: test_capi (2 min 1 sec), test_unparse (1 min 39 sec)
+0:06:50 load avg: 6.38 [168/433] test_code passed -- running: test_capi (2 min 2 sec), test_unparse (1 min 40 sec)
+0:06:51 load avg: 6.38 [169/433] test_except_star passed -- running: test_capi (2 min 3 sec), test_unparse (1 min 41 sec)
+0:06:52 load avg: 6.38 [170/433] test_robotparser passed -- running: test_capi (2 min 5 sec), test_unparse (1 min 43 sec)
+0:06:53 load avg: 6.51 [171/433] test_richcmp passed -- running: test_capi (2 min 6 sec), test_unparse (1 min 44 sec)
+0:06:56 load avg: 6.51 [172/433] test_atexit passed -- running: test_capi (2 min 8 sec), test_unparse (1 min 46 sec)
+0:07:11 load avg: 7.22 [173/433] test_set passed -- running: test_capi (2 min 23 sec), test_unparse (2 min 1 sec)
+0:07:12 load avg: 7.22 [174/433] test_launcher skipped -- running: test_capi (2 min 24 sec), test_unparse (2 min 2 sec)
+test_launcher skipped -- test only applies to Windows
+0:07:13 load avg: 7.68 [175/433] test_pep646_syntax passed -- running: test_capi (2 min 25 sec), test_unparse (2 min 3 sec)
+0:07:14 load avg: 7.68 [176/433] test_isinstance passed -- running: test_capi (2 min 26 sec), test_unparse (2 min 5 sec)
+0:07:20 load avg: 7.79 [177/433] test_array passed -- running: test_capi (2 min 32 sec), test_unparse (2 min 10 sec)
+0:07:32 load avg: 7.82 [178/433] test_unparse passed (2 min 22 sec) -- running: test_capi (2 min 44 sec), test_pickle (36.1 sec)
+0:07:54 load avg: 6.81 [179/433] test_compile passed (32.9 sec) -- running: test_capi (3 min 6 sec), test_pickle (57.9 sec)
+0:08:07 load avg: 6.53 [180/433] test_pdb passed -- running: test_capi (3 min 20 sec), test_pickle (1 min 11 sec), test_unicodedata (35.6 sec)
+0:08:10 load avg: 6.41 [181/433] test_pickle passed (1 min 13 sec) -- running: test_capi (3 min 22 sec), test_unicodedata (38.2 sec)
+0:08:11 load avg: 6.41 [182/433] test_turtle skipped -- running: test_capi (3 min 23 sec), test_unicodedata (39.2 sec)
+test_turtle skipped -- No module named '_tkinter'
+0:08:23 load avg: 6.17 [183/433] test_venv passed -- running: test_capi (3 min 35 sec), test_unicodedata (51.0 sec)
+Could not find platform dependent libraries <exec_prefix>
+0:08:25 load avg: 6.17 [184/433] test_capi passed (3 min 37 sec) -- running: test_unicodedata (53.7 sec)
+0:08:26 load avg: 6.17 [185/433] test_import passed -- running: test_unicodedata (54.5 sec)
+0:08:27 load avg: 6.17 [186/433] test_memoryio passed -- running: test_unicodedata (55.6 sec)
+0:08:28 load avg: 6.00 [187/433] test_mailcap passed -- running: test_unicodedata (56.5 sec)
+/home/ec2-user/cpython/Lib/mailcap.py:228: UnsafeMailcapInput: Refusing to substitute MIME type 'audio/*' into a shell command.
+  warnings.warn(msg, UnsafeMailcapInput)
+/home/ec2-user/cpython/Lib/mailcap.py:228: UnsafeMailcapInput: Refusing to substitute MIME type 'audio/*' into a shell command.
+  warnings.warn(msg, UnsafeMailcapInput)
+0:08:29 load avg: 6.00 [188/433] test_dis passed -- running: test_unicodedata (57.5 sec)
+0:08:30 load avg: 6.00 [189/433] test_utf8source passed -- running: test_unicodedata (58.1 sec)
+0:08:31 load avg: 6.00 [190/433] test_filecmp passed -- running: test_unicodedata (58.8 sec)
+0:08:31 load avg: 6.00 [191/433] test_iterlen passed -- running: test_unicodedata (59.3 sec)
+0:08:35 load avg: 6.00 [192/433] test_re passed -- running: test_unicodedata (1 min 2 sec)
+0:08:40 load avg: 5.84 [193/433] test_runpy passed -- running: test_unicodedata (1 min 7 sec)
+0:08:40 load avg: 5.84 [194/433] test_nis skipped -- running: test_unicodedata (1 min 8 sec)
+test_nis skipped -- No module named 'nis'
+0:08:45 load avg: 5.61 [195/433] test_deque passed -- running: test_signal (33.8 sec), test_unicodedata (1 min 12 sec)
+0:08:45 load avg: 5.61 [196/433] test_ossaudiodev skipped (resource denied) -- running: test_signal (34.2 sec), test_unicodedata (1 min 13 sec)
+test_ossaudiodev skipped -- Use of the 'audio' resource not enabled
+0:08:46 load avg: 5.61 [197/433] test_pwd passed -- running: test_signal (34.7 sec), test_unicodedata (1 min 13 sec)
+0:08:46 load avg: 5.61 [198/433] test_sysconfig passed -- running: test_signal (35.6 sec), test_unicodedata (1 min 14 sec)
+0:08:47 load avg: 5.61 [199/433] test_doctest2 passed -- running: test_signal (36.0 sec), test_unicodedata (1 min 15 sec)
+0:08:48 load avg: 5.40 [200/433] test_cgitb passed -- running: test_signal (36.9 sec), test_unicodedata (1 min 16 sec)
+0:08:48 load avg: 5.40 [201/433] test_optparse passed -- running: test_signal (37.6 sec), test_unicodedata (1 min 16 sec)
+0:08:49 load avg: 5.40 [202/433] test_abc passed -- running: test_signal (37.9 sec), test_unicodedata (1 min 17 sec)
+0:08:50 load avg: 5.40 [203/433] test_list passed -- running: test_signal (39.5 sec), test_unicodedata (1 min 18 sec)
+0:08:51 load avg: 5.40 [204/433] test_ucn passed -- running: test_signal (40.5 sec), test_unicodedata (1 min 19 sec)
+/home/ec2-user/cpython/Lib/test/support/__init__.py:743: ResourceWarning: unclosed <socket.socket [closed] fd=3, family=2, type=1, proto=6>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+0:08:52 load avg: 5.40 [205/433] test_colorsys passed -- running: test_signal (41.0 sec), test_unicodedata (1 min 20 sec)
+0:08:52 load avg: 5.40 [206/433] test_unicodedata passed (1 min 20 sec) -- running: test_signal (41.2 sec)
+0:08:52 load avg: 5.40 [207/433] test_with passed -- running: test_signal (41.6 sec)
+0:08:53 load avg: 5.40 [208/433] test_raise passed -- running: test_signal (41.6 sec)
+0:08:53 load avg: 5.29 [209/433] test_sqlite3 skipped -- running: test_signal (41.9 sec)
+test_sqlite3 skipped -- No module named '_sqlite3'
+0:08:53 load avg: 5.29 [210/433] test_http_cookies passed -- running: test_signal (42.3 sec)
+0:08:54 load avg: 5.29 [211/433] test_devpoll skipped -- running: test_signal (42.8 sec)
+test_devpoll skipped -- test works only on Solaris OS family
+0:08:54 load avg: 5.29 [212/433] test_unicode_identifiers passed -- running: test_signal (43.3 sec)
+0:08:55 load avg: 5.29 [213/433] test_pty passed -- running: test_signal (43.8 sec)
+hi there
+0:08:55 load avg: 5.29 [214/433] test_userdict passed -- running: test_signal (44.3 sec)
+0:08:56 load avg: 5.29 [215/433] test_sundry passed -- running: test_signal (44.6 sec)
+0:08:56 load avg: 5.29 [216/433] test_listcomps passed -- running: test_signal (45.1 sec)
+0:08:56 load avg: 5.29 [217/433] test_int_literal passed -- running: test_signal (45.5 sec)
+0:08:57 load avg: 5.29 [218/433] test_readline skipped -- running: test_signal (46.1 sec)
+test_readline skipped -- No module named 'readline'
+0:08:59 load avg: 5.18 [219/433] test_dataclasses passed -- running: test_signal (47.8 sec), test_multiprocessing_fork (30.5 sec)
+0:08:59 load avg: 5.18 [220/433] test_os passed -- running: test_signal (48.1 sec), test_multiprocessing_fork (30.8 sec)
+0:09:00 load avg: 5.18 [221/433] test_lzma skipped -- running: test_signal (48.7 sec), test_multiprocessing_fork (31.4 sec)
+test_lzma skipped -- No module named '_lzma'
+0:09:00 load avg: 5.18 [222/433] test_dbm passed -- running: test_signal (49.4 sec), test_multiprocessing_fork (32.1 sec)
+0:09:01 load avg: 5.18 [223/433] test_grammar passed -- running: test_signal (50.2 sec), test_multiprocessing_fork (32.9 sec)
+0:09:02 load avg: 5.18 [224/433] test_unicode_file passed -- running: test_signal (50.7 sec), test_multiprocessing_fork (33.4 sec)
+0:09:02 load avg: 5.18 [225/433] test_fractions passed -- running: test_signal (51.4 sec), test_multiprocessing_fork (34.1 sec)
+0:09:03 load avg: 5.25 [226/433] test_bisect passed -- running: test_signal (52.5 sec), test_multiprocessing_fork (35.2 sec)
+0:09:04 load avg: 5.25 [227/433] test_index passed -- running: test_signal (52.9 sec), test_multiprocessing_fork (35.7 sec)
+0:09:04 load avg: 5.25 [228/433] test__osx_support passed -- running: test_signal (53.4 sec), test_multiprocessing_fork (36.1 sec)
+0:09:06 load avg: 5.25 [229/433] test_resource passed -- running: test_signal (54.8 sec), test_multiprocessing_fork (37.5 sec)
+0:09:07 load avg: 5.25 [230/433] test_future passed -- running: test_signal (55.7 sec), test_multiprocessing_fork (38.4 sec)
+0:09:07 load avg: 5.25 [231/433] test_type_comments passed -- running: test_signal (56.6 sec), test_multiprocessing_fork (39.3 sec)
+0:09:08 load avg: 5.25 [232/433] test_signal passed (56.0 sec) -- running: test_multiprocessing_fork (39.4 sec)
+0:09:10 load avg: 5.15 [233/433] test_glob passed -- running: test_multiprocessing_fork (42.2 sec)
+0:09:11 load avg: 5.15 [234/433] test_format passed -- running: test_multiprocessing_fork (43.0 sec)
+0:09:12 load avg: 5.15 [235/433] test_contextlib passed -- running: test_multiprocessing_fork (44.2 sec)
+0:09:13 load avg: 5.22 [236/433] test_contains passed -- running: test_multiprocessing_fork (45.0 sec)
+0:09:14 load avg: 5.22 [237/433] test_peg_generator skipped -- running: test_multiprocessing_fork (45.6 sec)
+test_peg_generator skipped -- distutils has been removed in Python 3.12
+0:09:14 load avg: 5.22 [238/433] test_keyword passed -- running: test_multiprocessing_fork (46.0 sec)
+0:09:15 load avg: 5.22 [239/433] test_codecencodings_tw passed -- running: test_multiprocessing_fork (47.2 sec)
+0:09:16 load avg: 5.22 [240/433] test_pstats passed -- running: test_multiprocessing_fork (47.9 sec)
+0:09:17 load avg: 5.22 [241/433] test_bool passed -- running: test_multiprocessing_fork (48.9 sec)
+0:09:18 load avg: 5.22 [242/433] test_decorators passed -- running: test_multiprocessing_fork (49.4 sec)
+0:09:19 load avg: 5.12 [243/433] test_float passed -- running: test_multiprocessing_fork (50.4 sec)
+0:09:19 load avg: 5.12 [244/433] test_locale passed -- running: test_multiprocessing_fork (51.0 sec)
+0:09:20 load avg: 5.12 [245/433] test_tools passed -- running: test_multiprocessing_fork (52.0 sec)
+0:09:23 load avg: 5.35 [246/433] test_heapq passed -- running: test_multiprocessing_fork (54.9 sec)
+0:09:24 load avg: 5.35 [247/433] test_tix skipped -- running: test_multiprocessing_fork (55.8 sec)
+test_tix skipped -- No module named '_tkinter'
+0:09:25 load avg: 5.35 [248/433] test_audioop passed -- running: test_multiprocessing_fork (56.7 sec)
+0:09:32 load avg: 5.32 [249/433] test_pow passed -- running: test_multiprocessing_spawn (33.2 sec), test_multiprocessing_fork (1 min 3 sec)
+0:09:33 load avg: 5.22 [250/433] test_codecencodings_iso2022 passed -- running: test_multiprocessing_spawn (34.3 sec), test_multiprocessing_fork (1 min 4 sec)
+0:09:35 load avg: 5.22 [251/433] test_call passed -- running: test_multiprocessing_spawn (36.1 sec), test_multiprocessing_fork (1 min 6 sec)
+0:09:41 load avg: 5.04 [252/433] test_audit passed -- running: test_multiprocessing_spawn (42.2 sec), test_multiprocessing_fork (1 min 12 sec)
+0:09:43 load avg: 5.20 [253/433] test_py_compile passed -- running: test_multiprocessing_spawn (44.2 sec), test_multiprocessing_fork (1 min 14 sec)
+0:09:46 load avg: 5.20 [254/433] test_zipimport_support passed -- running: test_multiprocessing_spawn (46.9 sec), test_multiprocessing_fork (1 min 17 sec)
+0:09:48 load avg: 5.20 [255/433] test_profile passed -- running: test_multiprocessing_spawn (48.9 sec), test_multiprocessing_fork (1 min 19 sec)
+0:09:48 load avg: 5.18 [256/433] test_codecencodings_hk passed -- running: test_multiprocessing_spawn (49.4 sec), test_multiprocessing_fork (1 min 19 sec)
+0:09:48 load avg: 5.18 [257/433] test_tkinter skipped -- running: test_multiprocessing_spawn (49.7 sec), test_multiprocessing_fork (1 min 20 sec)
+test_tkinter skipped -- No module named '_tkinter'
+0:09:49 load avg: 5.18 [258/433] test_codecmaps_hk passed -- running: test_multiprocessing_spawn (50.2 sec), test_multiprocessing_fork (1 min 20 sec)
+0:09:52 load avg: 5.18 [259/433] test_shutil passed -- running: test_concurrent_futures (32.4 sec), test_multiprocessing_spawn (52.8 sec), test_multiprocessing_fork (1 min 23 sec)
+0:09:52 load avg: 5.18 [260/433] test_repl passed -- running: test_concurrent_futures (33.1 sec), test_multiprocessing_spawn (53.6 sec), test_multiprocessing_fork (1 min 24 sec)
+0:09:53 load avg: 5.18 [261/433] test_dynamic passed -- running: test_concurrent_futures (33.4 sec), test_multiprocessing_spawn (53.8 sec), test_multiprocessing_fork (1 min 24 sec)
+0:09:53 load avg: 5.09 [262/433] test_socketserver passed -- running: test_concurrent_futures (34.2 sec), test_multiprocessing_spawn (54.6 sec), test_multiprocessing_fork (1 min 25 sec)
+/home/ec2-user/cpython/Lib/test/test_socketserver.py:63: DeprecationWarning: This process (pid=75776) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+/home/ec2-user/cpython/Lib/socketserver.py:610: DeprecationWarning: This process (pid=75776) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+0:09:54 load avg: 5.09 [263/433] test_gdb skipped -- running: test_concurrent_futures (34.6 sec), test_multiprocessing_spawn (55.1 sec), test_multiprocessing_fork (1 min 25 sec)
+test_gdb skipped -- Couldn't find gdb on the path
+0:09:54 load avg: 5.09 [264/433] test_yield_from passed -- running: test_concurrent_futures (34.9 sec), test_multiprocessing_spawn (55.4 sec), test_multiprocessing_fork (1 min 25 sec)
+0:09:58 load avg: 5.16 [265/433] test_file_eintr passed -- running: test_concurrent_futures (39.3 sec), test_multiprocessing_spawn (59.7 sec), test_multiprocessing_fork (1 min 30 sec)
+0:10:01 load avg: 5.16 [266/433] test_marshal passed -- running: test_concurrent_futures (41.9 sec), test_multiprocessing_spawn (1 min 2 sec), test_multiprocessing_fork (1 min 32 sec)
+0:10:02 load avg: 5.16 [267/433] test_modulefinder passed -- running: test_concurrent_futures (43.1 sec), test_multiprocessing_spawn (1 min 3 sec), test_multiprocessing_fork (1 min 34 sec)
+0:10:04 load avg: 4.99 [268/433] test_typing passed -- running: test_concurrent_futures (44.6 sec), test_multiprocessing_spawn (1 min 5 sec), test_multiprocessing_fork (1 min 35 sec)
+0:10:11 load avg: 5.47 [269/433] test_multiprocessing_fork passed (1 min 42 sec) -- running: test_concurrent_futures (52.1 sec), test_multiprocessing_spawn (1 min 12 sec)
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=71590) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=71197) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=73789) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=71197) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+0:10:21 load avg: 5.94 [270/433] test_context passed -- running: test_concurrent_futures (1 min 1 sec), test_multiprocessing_spawn (1 min 22 sec)
+0:10:45 load avg: 6.44 [271/433] test_importlib passed -- running: test_tokenize (40.8 sec), test_concurrent_futures (1 min 25 sec), test_multiprocessing_spawn (1 min 45 sec)
+0:10:46 load avg: 6.44 [272/433] test_perf_profiler passed -- running: test_tokenize (42.3 sec), test_concurrent_futures (1 min 26 sec), test_multiprocessing_spawn (1 min 47 sec)
+0:10:47 load avg: 6.44 [273/433] test_ipaddress passed -- running: test_tokenize (43.5 sec), test_concurrent_futures (1 min 28 sec), test_multiprocessing_spawn (1 min 48 sec)
+0:10:48 load avg: 6.44 [274/433] test_codeccallbacks passed -- running: test_tokenize (44.2 sec), test_concurrent_futures (1 min 28 sec), test_multiprocessing_spawn (1 min 49 sec)
+0:10:51 load avg: 6.25 [275/433] test_strtod passed -- running: test_tokenize (47.5 sec), test_concurrent_futures (1 min 32 sec), test_multiprocessing_spawn (1 min 52 sec)
+0:11:21 load avg: 6.37 running: test_tokenize (1 min 17 sec), test_concurrent_futures (2 min 2 sec), test_multiprocessing_spawn (2 min 22 sec), test_subprocess (30.0 sec)
+0:11:51 load avg: 6.32 running: test_tokenize (1 min 47 sec), test_concurrent_futures (2 min 32 sec), test_multiprocessing_spawn (2 min 52 sec), test_subprocess (1 min)
+0:12:04 load avg: 5.66 [276/433] test_subprocess passed (1 min 12 sec) -- running: test_tokenize (2 min), test_concurrent_futures (2 min 45 sec), test_multiprocessing_spawn (3 min 5 sec)
+0:12:07 load avg: 5.66 [277/433] test_urllib2net passed -- running: test_tokenize (2 min 2 sec), test_concurrent_futures (2 min 47 sec), test_multiprocessing_spawn (3 min 7 sec)
+0:12:07 load avg: 5.66 [278/433] test_unary passed -- running: test_tokenize (2 min 3 sec), test_concurrent_futures (2 min 47 sec), test_multiprocessing_spawn (3 min 8 sec)
+0:12:11 load avg: 5.68 [279/433] test_httpservers passed -- running: test_tokenize (2 min 7 sec), test_concurrent_futures (2 min 51 sec), test_multiprocessing_spawn (3 min 12 sec)
+/home/ec2-user/cpython/Lib/http/server.py:1168: DeprecationWarning: This process (pid=83345) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+0:12:11 load avg: 5.68 [280/433] test_future3 passed -- running: test_tokenize (2 min 7 sec), test_concurrent_futures (2 min 52 sec), test_multiprocessing_spawn (3 min 12 sec)
+0:12:17 load avg: 5.55 [281/433] test_threadsignals passed -- running: test_tokenize (2 min 13 sec), test_concurrent_futures (2 min 57 sec), test_multiprocessing_spawn (3 min 18 sec)
+0:12:20 load avg: 5.66 [282/433] test_collections passed -- running: test_tokenize (2 min 16 sec), test_concurrent_futures (3 min), test_multiprocessing_spawn (3 min 21 sec)
+0:12:20 load avg: 5.66 [283/433] test_secrets passed -- running: test_tokenize (2 min 16 sec), test_concurrent_futures (3 min 1 sec), test_multiprocessing_spawn (3 min 21 sec)
+0:12:24 load avg: 5.45 [284/433] test_tokenize passed (2 min 20 sec) -- running: test_concurrent_futures (3 min 5 sec), test_multiprocessing_spawn (3 min 25 sec)
+0:12:25 load avg: 5.45 [285/433] test_smtpnet skipped -- running: test_concurrent_futures (3 min 5 sec), test_multiprocessing_spawn (3 min 26 sec)
+test_smtpnet skipped -- No module named '_ssl'
+0:12:31 load avg: 5.25 [286/433] test_tracemalloc passed -- running: test_concurrent_futures (3 min 11 sec), test_multiprocessing_spawn (3 min 32 sec)
+0:12:31 load avg: 5.25 [287/433] test_imghdr passed -- running: test_concurrent_futures (3 min 11 sec), test_multiprocessing_spawn (3 min 32 sec)
+0:12:32 load avg: 5.25 [288/433] test_largefile passed -- running: test_concurrent_futures (3 min 12 sec), test_multiprocessing_spawn (3 min 32 sec)
+0:12:32 load avg: 5.25 [289/433] test_augassign passed -- running: test_concurrent_futures (3 min 12 sec), test_multiprocessing_spawn (3 min 33 sec)
+0:12:32 load avg: 5.25 [290/433] test_dbm_ndbm skipped -- running: test_concurrent_futures (3 min 12 sec), test_multiprocessing_spawn (3 min 33 sec)
+test_dbm_ndbm skipped -- No module named '_dbm'
+0:12:33 load avg: 4.99 [291/433] test_codecmaps_tw passed -- running: test_concurrent_futures (3 min 14 sec), test_multiprocessing_spawn (3 min 34 sec)
+0:12:41 load avg: 4.83 [292/433] test_concurrent_futures passed (3 min 21 sec) -- running: test_multiprocessing_spawn (3 min 42 sec)
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=74323) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ec2-user/cpython/Lib/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+0:12:42 load avg: 4.83 [293/433] test_fileio passed -- running: test_multiprocessing_spawn (3 min 42 sec)
+0:12:42 load avg: 4.83 [294/433] test_unittest passed -- running: test_multiprocessing_spawn (3 min 43 sec)
+/home/ec2-user/cpython/Lib/unittest/case.py:580: RuntimeWarning: TestResult has no addDuration method
+  warnings.warn("TestResult has no addDuration method",
+0:12:42 load avg: 4.83 [295/433] test_dbm_dumb passed -- running: test_multiprocessing_spawn (3 min 43 sec)
+0:12:43 load avg: 4.83 [296/433] test_named_expressions passed -- running: test_multiprocessing_spawn (3 min 44 sec)
+0:12:43 load avg: 4.83 [297/433] test_string passed -- running: test_multiprocessing_spawn (3 min 44 sec)
+0:12:44 load avg: 4.77 [298/433] test_wsgiref passed -- running: test_multiprocessing_spawn (3 min 45 sec)
+0:12:44 load avg: 4.77 [299/433] test_plistlib passed -- running: test_multiprocessing_spawn (3 min 45 sec)
+0:12:45 load avg: 4.77 [300/433] test_baseexception passed -- running: test_multiprocessing_spawn (3 min 45 sec)
+0:12:45 load avg: 4.77 [301/433] test_code_module passed -- running: test_multiprocessing_spawn (3 min 45 sec)
+0:12:45 load avg: 4.77 [302/433] test_sax passed -- running: test_multiprocessing_spawn (3 min 46 sec)
+0:12:45 load avg: 4.77 [303/433] test_codecencodings_cn passed -- running: test_multiprocessing_spawn (3 min 46 sec)
+0:12:46 load avg: 4.77 [304/433] test_dtrace passed -- running: test_multiprocessing_spawn (3 min 46 sec)
+0:12:46 load avg: 4.77 [305/433] test_setcomps passed -- running: test_multiprocessing_spawn (3 min 47 sec)
+0:12:48 load avg: 4.77 [306/433] test_enum passed -- running: test_multiprocessing_spawn (3 min 49 sec)
+0:12:48 load avg: 4.71 [307/433] test_wave passed -- running: test_multiprocessing_spawn (3 min 49 sec)
+0:12:51 load avg: 4.71 [308/433] test_pydoc passed -- running: test_multiprocessing_spawn (3 min 52 sec), test_asyncio (31.0 sec)
+0:12:52 load avg: 4.71 [309/433] test_base64 passed -- running: test_multiprocessing_spawn (3 min 53 sec), test_asyncio (31.8 sec)
+0:12:52 load avg: 4.71 [310/433] test__locale passed -- running: test_multiprocessing_spawn (3 min 53 sec), test_asyncio (32.2 sec)
+0:12:53 load avg: 4.71 [311/433] test_complex passed -- running: test_multiprocessing_spawn (3 min 54 sec), test_asyncio (32.6 sec)
+0:12:55 load avg: 4.57 [312/433] test_nntplib passed -- running: test_multiprocessing_spawn (3 min 56 sec), test_asyncio (35.1 sec)
+0:12:56 load avg: 4.57 [313/433] test_gc passed -- running: test_multiprocessing_spawn (3 min 57 sec), test_asyncio (35.4 sec)
+0:12:58 load avg: 4.36 [314/433] test_multibytecodec passed -- running: test_multiprocessing_spawn (3 min 59 sec), test_asyncio (38.2 sec)
+0:12:59 load avg: 4.36 [315/433] test_userlist passed -- running: test_multiprocessing_spawn (4 min), test_asyncio (38.5 sec)
+0:12:59 load avg: 4.36 [316/433] test_numeric_tower passed -- running: test_multiprocessing_spawn (4 min), test_asyncio (38.9 sec)
+0:12:59 load avg: 4.36 [317/433] test_univnewlines passed -- running: test_multiprocessing_spawn (4 min), test_asyncio (39.2 sec)
+0:13:00 load avg: 4.36 [318/433] test_reprlib passed -- running: test_multiprocessing_spawn (4 min 1 sec), test_asyncio (39.5 sec)
+0:13:00 load avg: 4.36 [319/433] test_typechecks passed -- running: test_multiprocessing_spawn (4 min 1 sec), test_asyncio (39.8 sec)
+0:13:01 load avg: 4.36 [320/433] test_asyncgen passed -- running: test_multiprocessing_spawn (4 min 2 sec), test_asyncio (41.0 sec)
+0:13:02 load avg: 4.36 [321/433] test_multiprocessing_spawn passed (4 min 2 sec) -- running: test_asyncio (41.4 sec)
+0:13:02 load avg: 4.36 [322/433] test_unpack_ex passed -- running: test_asyncio (41.4 sec)
+0:13:02 load avg: 4.36 [323/433] test_dynamicclassattribute passed -- running: test_asyncio (41.9 sec)
+0:13:02 load avg: 4.36 [324/433] test_winreg skipped -- running: test_asyncio (42.1 sec)
+test_winreg skipped -- No module named 'winreg'
+0:13:02 load avg: 4.36 [325/433] test_aifc passed -- running: test_asyncio (42.2 sec)
+0:13:03 load avg: 4.36 [326/433] test_msilib skipped -- running: test_asyncio (42.5 sec)
+test_msilib skipped -- No module named '_msi'
+0:13:03 load avg: 4.36 [327/433] test_timeit passed -- running: test_asyncio (42.7 sec)
+0:13:03 load avg: 4.36 [328/433] test_winconsoleio skipped -- running: test_asyncio (42.8 sec)
+test_winconsoleio skipped -- test only relevant on win32
+0:13:03 load avg: 4.25 [329/433] test_zlib skipped -- running: test_asyncio (43.1 sec)
+test_zlib skipped -- No module named 'zlib'
+0:13:04 load avg: 4.25 [330/433] test_minidom passed -- running: test_asyncio (43.3 sec)
+0:13:04 load avg: 4.25 [331/433] test_osx_env passed -- running: test_asyncio (43.5 sec)
+0:13:04 load avg: 4.25 [332/433] test_dictcomps passed -- running: test_asyncio (43.8 sec)
+0:13:08 load avg: 4.25 [333/433] test_pickletools passed -- running: test_asyncio (47.7 sec)
+0:13:08 load avg: 4.07 [334/433] test_quopri passed -- running: test_asyncio (48.1 sec)
+0:13:09 load avg: 4.07 [335/433] test_bigaddrspace passed -- running: test_asyncio (48.4 sec)
+0:13:09 load avg: 4.07 [336/433] test_string_literals passed -- running: test_asyncio (49.1 sec)
+0:13:10 load avg: 4.07 [337/433] test_zipapp passed -- running: test_asyncio (49.6 sec)
+0:13:10 load avg: 4.07 [338/433] test_exception_variations passed -- running: test_asyncio (49.8 sec)
+0:13:11 load avg: 4.07 [339/433] test_configparser passed -- running: test_asyncio (50.8 sec)
+0:13:15 load avg: 3.83 [340/433] test_poll passed -- running: test_asyncio (54.6 sec)
+0:13:17 load avg: 3.83 [341/433] test_codecmaps_jp passed -- running: test_asyncio (56.4 sec)
+0:13:17 load avg: 3.83 [342/433] test_types passed -- running: test_asyncio (56.7 sec)
+0:13:20 load avg: 3.68 [343/433] test_c_locale_coercion passed -- running: test_asyncio (59.6 sec)
+0:13:20 load avg: 3.68 [344/433] test_errno passed -- running: test_asyncio (59.8 sec)
+0:13:21 load avg: 3.68 [345/433] test_logging passed -- running: test_asyncio (1 min)
+0:13:21 load avg: 3.68 [346/433] test_imaplib passed -- running: test_asyncio (1 min)
+0:13:21 load avg: 3.68 [347/433] test_global passed -- running: test_asyncio (1 min 1 sec)
+0:13:22 load avg: 3.68 [348/433] test_zipimport passed -- running: test_asyncio (1 min 1 sec)
+0:13:23 load avg: 3.68 [349/433] test_patma passed -- running: test_asyncio (1 min 2 sec)
+0:13:23 load avg: 3.68 [350/433] test_sys passed -- running: test_asyncio (1 min 2 sec)
+0:13:23 load avg: 3.68 [351/433] test_frozen passed -- running: test_asyncio (1 min 2 sec)
+0:13:23 load avg: 3.68 [352/433] test__xxinterpchannels passed -- running: test_asyncio (1 min 2 sec)
+0:13:24 load avg: 3.71 [353/433] test_getopt passed -- running: test_asyncio (1 min 3 sec)
+0:13:24 load avg: 3.71 [354/433] test_spwd passed -- running: test_asyncio (1 min 3 sec)
+0:13:24 load avg: 3.71 [355/433] test_stringprep passed -- running: test_asyncio (1 min 3 sec)
+0:13:25 load avg: 3.71 [356/433] test_urllib passed -- running: test_asyncio (1 min 4 sec)
+0:13:26 load avg: 3.71 [357/433] test_crypt passed -- running: test_asyncio (1 min 5 sec)
+0:13:27 load avg: 3.71 [358/433] test_genericalias passed -- running: test_asyncio (1 min 6 sec)
+0:13:27 load avg: 3.71 [359/433] test_tuple passed -- running: test_asyncio (1 min 6 sec)
+0:13:27 load avg: 3.71 [360/433] test_bdb passed -- running: test_asyncio (1 min 6 sec)
+0:13:28 load avg: 3.71 [361/433] test_generators passed -- running: test_asyncio (1 min 7 sec)
+0:13:28 load avg: 3.71 [362/433] test_clinic passed -- running: test_asyncio (1 min 7 sec)
+0:13:32 load avg: 3.65 [363/433] test_calendar passed -- running: test_asyncio (1 min 11 sec)
+0:13:32 load avg: 3.65 [364/433] test_opcache passed -- running: test_asyncio (1 min 12 sec)
+0:13:33 load avg: 3.65 [365/433] test_interpreters passed -- running: test_asyncio (1 min 12 sec)
+0:13:33 load avg: 3.65 [366/433] test_telnetlib passed -- running: test_asyncio (1 min 12 sec)
+0:13:33 load avg: 3.65 [367/433] test_startfile skipped -- running: test_asyncio (1 min 12 sec)
+test_startfile skipped -- object <module 'os' from '/home/ec2-user/cpython/Lib/os.py'> has no attribute 'startfile'
+0:13:33 load avg: 3.60 [368/433] test_file passed -- running: test_asyncio (1 min 13 sec)
+0:13:33 load avg: 3.60 [369/433] test_cmath passed -- running: test_asyncio (1 min 13 sec)
+0:13:36 load avg: 3.60 [370/433] test_codecs passed -- running: test_asyncio (1 min 15 sec)
+0:13:37 load avg: 3.60 [371/433] test_dict passed -- running: test_asyncio (1 min 16 sec)
+0:13:37 load avg: 3.60 [372/433] test_ttk skipped -- running: test_asyncio (1 min 16 sec)
+test_ttk skipped -- No module named '_tkinter'
+0:13:37 load avg: 3.60 [373/433] test_property passed -- running: test_asyncio (1 min 16 sec)
+0:13:38 load avg: 3.60 [374/433] test_ensurepip passed -- running: test_asyncio (1 min 17 sec)
+0:13:38 load avg: 3.60 [375/433] test_dictviews passed -- running: test_asyncio (1 min 17 sec)
+0:13:38 load avg: 3.60 [376/433] test_charmapcodec passed -- running: test_asyncio (1 min 17 sec)
+0:13:39 load avg: 3.39 [377/433] test_fork1 passed -- running: test_asyncio (1 min 18 sec)
+0:13:39 load avg: 3.39 [378/433] test_httplib passed -- running: test_asyncio (1 min 19 sec)
+0:13:40 load avg: 3.39 [379/433] test_symtable passed -- running: test_asyncio (1 min 19 sec)
+0:13:40 load avg: 3.39 [380/433] test_select passed -- running: test_asyncio (1 min 19 sec)
+0:13:40 load avg: 3.39 [381/433] test_tomllib passed -- running: test_asyncio (1 min 20 sec)
+0:13:41 load avg: 3.39 [382/433] test_longexp passed -- running: test_asyncio (1 min 20 sec)
+0:13:41 load avg: 3.39 [383/433] test_bufio passed -- running: test_asyncio (1 min 20 sec)
+0:13:41 load avg: 3.39 [384/433] test_stable_abi_ctypes skipped -- running: test_asyncio (1 min 20 sec)
+test_stable_abi_ctypes skipped -- No module named '_ctypes'
+0:13:42 load avg: 3.39 [385/433] test_popen passed -- running: test_asyncio (1 min 21 sec)
+0:13:47 load avg: 3.20 [386/433] test_wait4 passed -- running: test_asyncio (1 min 26 sec)
+0:13:47 load avg: 3.20 [387/433] test_frame passed -- running: test_asyncio (1 min 27 sec)
+0:13:48 load avg: 3.20 [388/433] test_coroutines passed -- running: test_asyncio (1 min 27 sec)
+0:13:51 load avg: 3.10 [389/433] test_xmlrpc passed -- running: test_asyncio (1 min 31 sec)
+0:13:52 load avg: 3.10 [390/433] test_compare passed -- running: test_asyncio (1 min 31 sec)
+0:13:54 load avg: 3.09 [391/433] test_datetime passed -- running: test_asyncio (1 min 33 sec)
+0:13:54 load avg: 3.09 [392/433] test_textwrap passed -- running: test_asyncio (1 min 34 sec)
+0:13:55 load avg: 3.09 [393/433] test_copy passed -- running: test_asyncio (1 min 34 sec)
+0:13:55 load avg: 3.09 [394/433] test_picklebuffer passed -- running: test_asyncio (1 min 34 sec)
+0:13:57 load avg: 3.09 [395/433] test_codecencodings_jp passed -- running: test_asyncio (1 min 36 sec)
+0:13:57 load avg: 3.09 [396/433] test_genericpath passed -- running: test_asyncio (1 min 36 sec)
+0:13:57 load avg: 3.09 [397/433] test___future__ passed -- running: test_asyncio (1 min 37 sec)
+0:13:58 load avg: 3.09 [398/433] test_urllib2_localnet passed -- running: test_asyncio (1 min 37 sec)
+0:13:58 load avg: 3.09 [399/433] test_module passed -- running: test_asyncio (1 min 38 sec)
+0:14:01 load avg: 3.09 [400/433] test_difflib passed -- running: test_asyncio (1 min 41 sec)
+0:14:04 load avg: 3.24 [401/433] test_faulthandler passed -- running: test_asyncio (1 min 44 sec)
+0:14:05 load avg: 3.24 [402/433] test__xxsubinterpreters passed -- running: test_asyncio (1 min 44 sec)
+0:14:07 load avg: 3.24 [403/433] test_smtplib passed -- running: test_asyncio (1 min 46 sec)
+0:14:09 load avg: 3.54 [404/433] test_cprofile passed -- running: test_asyncio (1 min 48 sec)
+0:14:15 load avg: 3.90 [405/433] test_trace passed -- running: test_asyncio (1 min 54 sec)
+0:14:22 load avg: 3.99 [406/433] test_cmd_line passed -- running: test_math (30.1 sec), test_asyncio (2 min 1 sec)
+0:14:24 load avg: 3.99 [407/433] test_utf8_mode passed -- running: test_math (32.1 sec), test_asyncio (2 min 3 sec)
+0:14:25 load avg: 3.99 [408/433] test_functools passed -- running: test_math (33.0 sec), test_asyncio (2 min 4 sec)
+0:14:25 load avg: 3.99 [409/433] test_unicode_file_functions passed -- running: test_math (33.8 sec), test_asyncio (2 min 5 sec)
+0:14:26 load avg: 3.99 [410/433] test_zipfile64 skipped (resource denied) -- running: test_math (34.1 sec), test_asyncio (2 min 5 sec)
+test_zipfile64 skipped -- test requires loads of disk-space bytes and a long time to run
+0:14:27 load avg: 3.99 [411/433] test_thread passed -- running: test_math (35.7 sec), test_asyncio (2 min 6 sec)
+0:14:31 load avg: 3.91 [412/433] test_threading_local passed -- running: test_math (38.9 sec), test_asyncio (2 min 10 sec)
+0:14:31 load avg: 3.91 [413/433] test_exception_hierarchy passed -- running: test_math (39.4 sec), test_asyncio (2 min 10 sec)
+0:14:34 load avg: 3.92 [414/433] test_xml_etree_c passed -- running: test_math (42.1 sec), test_asyncio (2 min 13 sec)
+0:14:34 load avg: 3.92 [415/433] test_strptime passed -- running: test_math (42.8 sec), test_asyncio (2 min 14 sec)
+0:14:35 load avg: 3.92 [416/433] test_pkgutil passed -- running: test_math (43.5 sec), test_asyncio (2 min 14 sec)
+0:14:41 load avg: 3.92 [417/433] test_sys_settrace passed -- running: test_math (49.1 sec), test_lib2to3 (31.6 sec), test_asyncio (2 min 20 sec)
+/home/ec2-user/cpython/Lib/test/test_sys_settrace.py:1771: RuntimeWarning: assigning None to 1 unbound local
+  frame.f_lineno = self.firstLine + self.jumpTo
+/home/ec2-user/cpython/Lib/test/test_sys_settrace.py:1771: RuntimeWarning: assigning None to 2 unbound locals
+  frame.f_lineno = self.firstLine + self.jumpTo
+0:14:44 load avg: 3.93 [418/433] test_mailbox passed -- running: test_math (52.1 sec), test_lib2to3 (34.6 sec), test_asyncio (2 min 23 sec)
+0:14:45 load avg: 3.93 [419/433] test_platform passed -- running: test_math (53.5 sec), test_lib2to3 (36.0 sec), test_asyncio (2 min 24 sec)
+0:14:46 load avg: 3.93 [420/433] test_positional_only_arg passed -- running: test_math (54.0 sec), test_lib2to3 (36.5 sec), test_asyncio (2 min 25 sec)
+0:15:11 load avg: 3.95 [421/433] test_statistics passed -- running: test_math (1 min 19 sec), test_lib2to3 (1 min 2 sec), test_asyncio (2 min 50 sec)
+0:15:12 load avg: 3.95 [422/433] test_sort passed -- running: test_math (1 min 20 sec), test_lib2to3 (1 min 2 sec), test_asyncio (2 min 51 sec)
+0:15:12 load avg: 3.95 [423/433] test_ttk_textonly skipped -- running: test_math (1 min 20 sec), test_lib2to3 (1 min 3 sec), test_asyncio (2 min 52 sec)
+test_ttk_textonly skipped -- No module named '_tkinter'
+0:15:14 load avg: 3.96 [424/433] test_ordered_dict passed -- running: test_math (1 min 22 sec), test_lib2to3 (1 min 4 sec), test_asyncio (2 min 53 sec)
+0:15:16 load avg: 3.96 [425/433] test_hash passed -- running: test_math (1 min 24 sec), test_lib2to3 (1 min 7 sec), test_asyncio (2 min 56 sec)
+0:15:46 load avg: 4.22 running: test_math (1 min 54 sec), test_regrtest (30.0 sec), test_lib2to3 (1 min 37 sec), test_asyncio (3 min 26 sec)
+0:15:52 load avg: 4.44 [426/433] test_regrtest passed (35.2 sec) -- running: test_math (2 min), test_lib2to3 (1 min 42 sec), test_asyncio (3 min 31 sec)
+0:15:53 load avg: 4.44 [427/433] test_generator_stop passed -- running: test_math (2 min), test_lib2to3 (1 min 43 sec), test_asyncio (3 min 32 sec)
+0:15:54 load avg: 4.40 [428/433] test_xml_etree passed -- running: test_math (2 min 2 sec), test_lib2to3 (1 min 44 sec), test_asyncio (3 min 33 sec)
+0:15:54 load avg: 4.40 [429/433] test_flufl passed -- running: test_math (2 min 2 sec), test_lib2to3 (1 min 45 sec), test_asyncio (3 min 34 sec)
+0:15:55 load avg: 4.40 [430/433] test_scope passed -- running: test_math (2 min 3 sec), test_lib2to3 (1 min 45 sec), test_asyncio (3 min 34 sec)
+0:15:57 load avg: 4.40 [431/433] test_lib2to3 passed (1 min 47 sec) -- running: test_math (2 min 5 sec), test_asyncio (3 min 37 sec)
+0:16:27 load avg: 3.46 running: test_math (2 min 35 sec), test_asyncio (4 min 7 sec)
+0:16:28 load avg: 3.46 [432/433] test_math passed (2 min 35 sec) -- running: test_asyncio (4 min 7 sec)
+0:16:58 load avg: 2.43 running: test_asyncio (4 min 37 sec)
+0:17:01 load avg: 2.31 [433/433] test_asyncio passed (4 min 40 sec)
+
+== Tests result: SUCCESS ==
+
+397 tests OK.
+
+36 tests skipped:
+    test_bz2 test_ctypes test_curses test_dbm_gnu test_dbm_ndbm
+    test_devpoll test_gdb test_gzip test_idle test_ioctl test_kqueue
+    test_launcher test_lzma test_msilib test_nis test_ossaudiodev
+    test_peg_generator test_readline test_smtpnet test_sqlite3
+    test_ssl test_stable_abi_ctypes test_startfile test_tcl test_tix
+    test_tkinter test_ttk test_ttk_textonly test_turtle
+    test_winconsoleio test_winreg test_winsound test_wmi
+    test_zipfile64 test_zlib test_zoneinfo
+
+Total duration: 17 min 1 sec
+Tests result: SUCCESS
