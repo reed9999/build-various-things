@@ -1496,3 +1496,183 @@ test_winreg skipped -- No module named 'winreg'
 0:33:52 load avg: 3.13 [369/433] test_zlib skipped -- running: test_asyncio (3 min 17 sec), test_unicodedata (2 min 30 sec)
 test_zlib skipped -- No module named 'zlib'
 0:33:57 load avg: 3.12 [370/433] test_unpack passed -- running: test_asyncio (3 min 22 sec), test_unicodedata (2 min 35 sec)
+0:34:21 load avg: 3.08 [371/433] test_utf8_mode passed -- running: test_asyncio (3 min 46 sec), test_unicodedata (2 min 59 sec)
+0:34:34 load avg: 3.13 [372/433] test_string_literals passed -- running: test_asyncio (3 min 59 sec), test_unicodedata (3 min 12 sec)
+0:34:38 load avg: 3.13 [373/433] test_bool passed -- running: test_asyncio (4 min 3 sec), test_unicodedata (3 min 16 sec)
+0:34:45 load avg: 3.11 [374/433] test_types passed -- running: test_asyncio (4 min 10 sec), test_unicodedata (3 min 23 sec)
+0:34:50 load avg: 3.10 [375/433] test_telnetlib passed -- running: test_asyncio (4 min 15 sec), test_unicodedata (3 min 28 sec)
+0:35:06 load avg: 3.08 [376/433] test_urlparse passed -- running: test_asyncio (4 min 31 sec), test_unicodedata (3 min 44 sec)
+0:35:36 load avg: 2.82 running: test_asyncio (5 min 1 sec), test_signal (30.1 sec), test_unicodedata (4 min 14 sec)
+0:36:06 load avg: 2.65 running: test_asyncio (5 min 31 sec), test_signal (1 min), test_unicodedata (4 min 44 sec)
+0:36:36 load avg: 3.28 running: test_asyncio (6 min 1 sec), test_signal (1 min 30 sec), test_unicodedata (5 min 14 sec)
+0:37:00 load avg: 3.69 [377/433] test_signal passed (1 min 49 sec) -- running: test_asyncio (6 min 25 sec), test_unicodedata (5 min 38 sec)
+0:37:04 load avg: 3.69 [378/433] test_unicodedata passed (5 min 39 sec) -- running: test_asyncio (6 min 29 sec)
+0:37:11 load avg: 3.74 [379/433] test_optparse passed -- running: test_asyncio (6 min 36 sec)
+0:37:23 load avg: 3.78 [380/433] test_strptime passed -- running: test_asyncio (6 min 48 sec)
+0:37:53 load avg: 3.81 running: test_asyncio (7 min 18 sec), test_import (30.0 sec), test_descr (48.8 sec)
+0:37:54 load avg: 3.83 [381/433] test_import passed -- running: test_asyncio (7 min 19 sec), test_descr (50.2 sec)
+0:37:56 load avg: 3.83 [382/433] test_posixpath passed -- running: test_asyncio (7 min 21 sec), test_descr (52.5 sec)
+0:37:58 load avg: 3.83 [383/433] test_devpoll skipped -- running: test_asyncio (7 min 23 sec), test_descr (53.8 sec)
+test_devpoll skipped -- test works only on Solaris OS family
+0:38:00 load avg: 3.92 [384/433] test_getpass passed -- running: test_asyncio (7 min 25 sec), test_descr (56.1 sec)
+0:38:07 load avg: 3.93 [385/433] test_descr passed (57.6 sec) -- running: test_asyncio (7 min 32 sec)
+0:38:17 load avg: 4.17 [386/433] test_dis passed -- running: test_asyncio (7 min 42 sec)
+0:38:20 load avg: 4.15 [387/433] test_pprint passed -- running: test_asyncio (7 min 45 sec)
+0:38:24 load avg: 4.15 [388/433] test_longexp passed -- running: test_asyncio (7 min 49 sec)
+0:38:29 load avg: 4.22 [389/433] test_zipapp passed -- running: test_asyncio (7 min 54 sec)
+0:38:37 load avg: 4.34 [390/433] test_except_star passed -- running: test_asyncio (8 min 2 sec), test_selectors (37.0 sec)
+0:39:06 load avg: 4.26 [391/433] test_site passed -- running: test_asyncio (8 min 31 sec), test_selectors (1 min 6 sec)
+0:39:36 load avg: 6.92 running: test_asyncio (9 min 1 sec), test_selectors (1 min 36 sec), test_queue (30.2 sec)
+0:40:06 load avg: 15.57 running: test_asyncio (9 min 31 sec), test_selectors (2 min 6 sec), test_queue (1 min)
+0:40:14 load avg: 14.73 [392/433] test_queue passed (1 min) -- running: test_asyncio (9 min 39 sec), test_selectors (2 min 13 sec)
+0:40:43 load avg: 10.51 [393/433] test_selectors passed (2 min 40 sec) -- running: test_asyncio (10 min 8 sec)
+0:40:53 load avg: 9.50 [394/433] test_html passed -- running: test_asyncio (10 min 18 sec), test_tempfile (39.7 sec)
+0:41:00 load avg: 8.73 [395/433] test_tempfile passed (38.5 sec) -- running: test_asyncio (10 min 25 sec)
+0:41:10 load avg: 8.08 [396/433] test_httplib passed -- running: test_asyncio (10 min 35 sec)
+0:41:11 load avg: 8.08 [397/433] test_linecache passed -- running: test_asyncio (10 min 36 sec)
+0:41:19 load avg: 7.83 [398/433] test_osx_env passed -- running: test_asyncio (10 min 44 sec)
+0:41:22 load avg: 7.52 [399/433] test_imghdr passed -- running: test_asyncio (10 min 47 sec)
+0:41:28 load avg: 7.32 [400/433] test_type_annotations passed -- running: test_asyncio (10 min 53 sec)
+0:41:30 load avg: 7.06 [401/433] test_peg_generator skipped -- running: test_asyncio (10 min 55 sec)
+test_peg_generator skipped -- distutils has been removed in Python 3.12
+0:41:45 load avg: 6.52 [402/433] test_dbm_dumb passed -- running: test_asyncio (11 min 10 sec)
+0:41:54 load avg: 6.40 [403/433] test_dbm_gnu skipped -- running: test_asyncio (11 min 19 sec)
+test_dbm_gnu skipped -- No module named '_gdbm'
+0:41:54 load avg: 6.40 [404/433] test_fcntl passed -- running: test_asyncio (11 min 19 sec)
+struct.pack:  b'\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+struct.pack:  b'\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+0:42:16 load avg: 5.91 [405/433] test_strftime passed -- running: test_asyncio (11 min 41 sec)
+0:42:46 load avg: 5.24 running: test_asyncio (12 min 11 sec), test_enum (52.7 sec)
+0:42:53 load avg: 5.22 [406/433] test_enum passed (53.4 sec) -- running: test_asyncio (12 min 18 sec), test_os (36.9 sec)
+0:42:55 load avg: 5.20 [407/433] test_asdl_parser passed -- running: test_asyncio (12 min 20 sec), test_os (38.6 sec)
+0:42:56 load avg: 5.20 [408/433] test_exception_variations passed -- running: test_asyncio (12 min 21 sec), test_os (40.2 sec)
+0:42:58 load avg: 5.20 [409/433] test_textwrap passed -- running: test_asyncio (12 min 23 sec), test_os (41.8 sec)
+0:43:00 load avg: 5.18 [410/433] test_filecmp passed -- running: test_asyncio (12 min 25 sec), test_os (43.5 sec)
+0:43:03 load avg: 5.18 [411/433] test_os passed (40.9 sec) -- running: test_asyncio (12 min 28 sec)
+0:43:05 load avg: 5.09 [412/433] test_code_module passed -- running: test_asyncio (12 min 30 sec)
+0:43:06 load avg: 5.09 [413/433] test_tkinter skipped -- running: test_asyncio (12 min 31 sec)
+test_tkinter skipped -- No module named '_tkinter'
+0:43:08 load avg: 5.09 [414/433] test_richcmp passed -- running: test_asyncio (12 min 33 sec)
+0:43:09 load avg: 5.09 [415/433] test_exception_hierarchy passed -- running: test_asyncio (12 min 35 sec)
+0:43:14 load avg: 5.08 [416/433] test_codecencodings_jp passed -- running: test_asyncio (12 min 39 sec)
+0:43:16 load avg: 5.08 [417/433] test_genericalias passed -- running: test_asyncio (12 min 41 sec)
+0:43:21 load avg: 4.99 [418/433] test_struct passed -- running: test_asyncio (12 min 46 sec)
+0:43:23 load avg: 4.99 [419/433] test_iterlen passed -- running: test_asyncio (12 min 48 sec)
+0:43:25 load avg: 4.91 [420/433] test_winconsoleio skipped -- running: test_asyncio (12 min 50 sec)
+test_winconsoleio skipped -- test only relevant on win32
+0:43:41 load avg: 4.64 [421/433] test_logging passed (38.3 sec) -- running: test_asyncio (13 min 7 sec)
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=76287) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+0:44:08 load avg: 4.56 [422/433] test_difflib passed (40.2 sec) -- running: test_asyncio (13 min 33 sec)
+0:44:08 load avg: 4.56 [423/433] test_xml_etree passed -- running: test_asyncio (13 min 34 sec)
+0:44:19 load avg: 4.55 [424/433] test_fractions passed -- running: test_asyncio (13 min 45 sec)
+0:44:33 load avg: 4.50 [425/433] test_modulefinder passed -- running: test_asyncio (13 min 58 sec)
+0:44:36 load avg: 4.54 [426/433] test_weakset passed -- running: test_asyncio (14 min 1 sec)
+0:44:53 load avg: 4.57 [427/433] test_codecencodings_iso2022 passed -- running: test_asyncio (14 min 18 sec)
+0:44:56 load avg: 4.60 [428/433] test_codecencodings_cn passed -- running: test_asyncio (14 min 21 sec)
+0:45:04 load avg: 4.64 [429/433] test_compare passed -- running: test_asyncio (14 min 29 sec)
+0:45:09 load avg: 4.66 [430/433] test_opcache passed -- running: test_asyncio (14 min 35 sec)
+0:45:13 load avg: 4.61 [431/433] test_wmi skipped -- running: test_asyncio (14 min 38 sec)
+test_wmi skipped -- No module named '_wmi'
+0:45:18 load avg: 4.56 [432/433] test_listcomps passed -- running: test_asyncio (14 min 43 sec)
+0:45:48 load avg: 3.72 running: test_asyncio (15 min 13 sec)
+0:46:18 load avg: 3.25 running: test_asyncio (15 min 43 sec)
+0:46:48 load avg: 3.04 running: test_asyncio (16 min 13 sec)
+0:47:18 load avg: 2.89 running: test_asyncio (16 min 43 sec)
+0:47:48 load avg: 2.73 running: test_asyncio (17 min 13 sec)
+0:48:18 load avg: 2.56 running: test_asyncio (17 min 43 sec)
+0:48:48 load avg: 2.80 running: test_asyncio (18 min 13 sec)
+0:49:18 load avg: 2.63 running: test_asyncio (18 min 43 sec)
+0:49:48 load avg: 2.50 running: test_asyncio (19 min 13 sec)
+0:50:18 load avg: 2.50 running: test_asyncio (19 min 43 sec)
+0:50:48 load avg: 2.44 running: test_asyncio (20 min 13 sec)
+0:51:18 load avg: 2.46 running: test_asyncio (20 min 43 sec)
+0:51:48 load avg: 2.46 running: test_asyncio (21 min 13 sec)
+0:52:18 load avg: 2.55 running: test_asyncio (21 min 43 sec)
+0:52:48 load avg: 2.40 running: test_asyncio (22 min 13 sec)
+0:53:18 load avg: 2.44 running: test_asyncio (22 min 43 sec)
+0:53:48 load avg: 2.41 running: test_asyncio (23 min 13 sec)
+0:54:18 load avg: 2.44 running: test_asyncio (23 min 43 sec)
+0:54:48 load avg: 2.47 running: test_asyncio (24 min 13 sec)
+0:55:18 load avg: 2.40 running: test_asyncio (24 min 43 sec)
+0:55:48 load avg: 2.52 running: test_asyncio (25 min 13 sec)
+0:56:18 load avg: 2.44 running: test_asyncio (25 min 43 sec)
+0:56:48 load avg: 2.34 running: test_asyncio (26 min 13 sec)
+0:57:18 load avg: 2.21 running: test_asyncio (26 min 43 sec)
+0:57:48 load avg: 2.12 running: test_asyncio (27 min 13 sec)
+0:58:18 load avg: 2.07 running: test_asyncio (27 min 43 sec)
+0:58:48 load avg: 1.99 running: test_asyncio (28 min 13 sec)
+0:59:18 load avg: 1.99 running: test_asyncio (28 min 43 sec)
+0:59:48 load avg: 2.05 running: test_asyncio (29 min 13 sec)
+1:00:18 load avg: 2.03 running: test_asyncio (29 min 43 sec)
+1:00:48 load avg: 2.02 running: test_asyncio (30 min 13 sec)
+1:01:18 load avg: 2.13 running: test_asyncio (30 min 43 sec)
+1:01:48 load avg: 2.08 running: test_asyncio (31 min 13 sec)
+1:02:18 load avg: 2.12 running: test_asyncio (31 min 43 sec)
+1:02:48 load avg: 2.07 running: test_asyncio (32 min 13 sec)
+1:02:59 load avg: 2.13 [433/433] test_asyncio passed (32 min 21 sec)
+Executing <Task finished name='Task-813' coro=<BaseEventLoop.shutdown_default_executor() done, defined at /home/ec2-user/cpython/Lib/asyncio/base_events.py:564> result=None created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:652> took 0.105 seconds
+Executing <Task pending name='Task-828' coro=<BarrierTests.test_abort_barrier_when_exception_then_resetting.<locals>.coro() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:1603> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[gather.<locals>._done_callback() at /home/ec2-user/cpython/Lib/asyncio/tasks.py:724] created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:377> took 0.122 seconds
+Executing <Task pending name='Task-836' coro=<BarrierTests.test_abort_barrier_when_tasks_half_draining_half_blocking.<locals>.coro() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:1527> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[gather.<locals>._done_callback() at /home/ec2-user/cpython/Lib/asyncio/tasks.py:724] created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:377> took 0.133 seconds
+Executing <Task pending name='Task-932' coro=<BarrierTests.test_repr() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:1104> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.171 seconds
+Executing <Task pending name='Task-952' coro=<BarrierTests.test_reset_barrier_when_tasks_half_draining() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:1378> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:669> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.109 seconds
+Executing <Task pending name='Task-972' coro=<BarrierTests.test_reset_barrier_while_tasks_draining() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:1497> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:669> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.136 seconds
+Executing <Task pending name='Task-977' coro=<BarrierTests.test_reset_barrier_while_tasks_draining.<locals>.coro() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:1484> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[gather.<locals>._done_callback() at /home/ec2-user/cpython/Lib/asyncio/tasks.py:724] created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:377> took 0.135 seconds
+Executing <Task pending name='Task-982' coro=<BarrierTests.test_reset_barrier_while_tasks_waiting() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:1353> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:669> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.102 seconds
+Executing <Task pending name='Task-1027' coro=<ConditionTests.test_notify_all.<locals>.c1() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:631> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:377> took 0.113 seconds
+Executing <Task pending name='Task-1051' coro=<ConditionTests.test_wait() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:421> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.115 seconds
+Executing <Task pending name='Task-1051' coro=<ConditionTests.test_wait() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:437> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.121 seconds
+Executing <Task pending name='Task-1060' coro=<Condition.wait() running at /home/ec2-user/cpython/Lib/asyncio/locks.py:266> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:377> took 0.157 seconds
+Executing <Task pending name='Task-1066' coro=<ConditionTests.test_wait_cancel_after_notify.<locals>.wait_on_cond() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:504> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:377> took 0.123 seconds
+Executing <Task finished name='Task-1075' coro=<BaseEventLoop.shutdown_default_executor() done, defined at /home/ec2-user/cpython/Lib/asyncio/base_events.py:564> result=None created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:652> took 0.114 seconds
+Executing <Task finished name='Task-1105' coro=<BaseEventLoop.shutdown_asyncgens() done, defined at /home/ec2-user/cpython/Lib/asyncio/base_events.py:539> result=None created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:652> took 0.157 seconds
+Executing <Task pending name='Task-1108' coro=<EventTests.test_wait() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:322> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.119 seconds
+Executing <Task finished name='Task-1108' coro=<EventTests.test_wait() done, defined at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:301> result=None created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.117 seconds
+Executing <Task pending name='Task-1127' coro=<LockTests.test_acquire() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:110> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.120 seconds
+Executing <Task pending name='Task-1127' coro=<LockTests.test_acquire() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_locks.py:117> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.117 seconds
+Executing <Task pending name='Task-1290' coro=<CoroutineTests.test_double_await.<locals>.runner() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_pep492.py:198> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:652> took 0.119 seconds
+Executing <Task finished name='Task-1322' coro=<BaseEventLoop.shutdown_default_executor() done, defined at /home/ec2-user/cpython/Lib/asyncio/base_events.py:564> result=None created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:652> took 0.117 seconds
+Executing <Task finished name='Task-1325' coro=<IsolatedAsyncioTestCase.asyncTearDown() done, defined at /home/ec2-user/cpython/Lib/unittest/async_case.py:43> result=None created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.113 seconds
+Executing <Task pending name='Task-1330' coro=<_QueueJoinTestMixin.test_task_done.<locals>.worker() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:480> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[TaskGroup._on_task_done()] created at /home/ec2-user/cpython/Lib/asyncio/taskgroups.py:163> took 0.119 seconds
+Executing <Task finished name='Task-1329' coro=<_QueueJoinTestMixin.test_task_done() done, defined at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:465> result=None created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.118 seconds
+Executing <Task finished name='Task-1340' coro=<LifoQueueTests.test_order() done, defined at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:437> result=None created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.118 seconds
+Executing <Task pending name='Task-1355' coro=<_QueueJoinTestMixin.test_task_done() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:488> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.120 seconds
+Executing <Task pending name='Task-1355' coro=<_QueueJoinTestMixin.test_task_done() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:484> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.177 seconds
+Executing <Task finished name='Task-1363' coro=<BaseEventLoop.shutdown_asyncgens() done, defined at /home/ec2-user/cpython/Lib/asyncio/base_events.py:539> result=None created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:652> took 0.117 seconds
+Executing <Task finished name='Task-1370' coro=<IsolatedAsyncioTestCase.asyncSetUp() done, defined at /home/ec2-user/cpython/Lib/unittest/async_case.py:40> result=None created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.117 seconds
+Executing <Task finished name='Task-1387' coro=<IsolatedAsyncioTestCase.asyncTearDown() done, defined at /home/ec2-user/cpython/Lib/unittest/async_case.py:43> result=None created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.117 seconds
+Executing <Task pending name='Task-1397' coro=<Queue.get() running at /home/ec2-user/cpython/Lib/asyncio/queues.py:158> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[TaskGroup._on_task_done()] created at /home/ec2-user/cpython/Lib/asyncio/taskgroups.py:163> took 0.118 seconds
+Executing <Task pending name='Task-1403' coro=<QueueBasicTests.test_str() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:60> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.119 seconds
+Executing <Task pending name='Task-1403' coro=<QueueBasicTests.test_str() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:60> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.118 seconds
+Executing <Task pending name='Task-1428' coro=<Queue.get() running at /home/ec2-user/cpython/Lib/asyncio/queues.py:158> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:377> took 0.117 seconds
+Executing <Task pending name='Task-1438' coro=<QueueGetTests.test_get_with_waiting_putters() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:190> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.117 seconds
+Executing <Task pending name='Task-1454' coro=<QueueGetTests.test_why_are_getters_waiting.<locals>.producer() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:199> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[TaskGroup._on_task_done()] created at /home/ec2-user/cpython/Lib/asyncio/taskgroups.py:163> took 0.117 seconds
+Executing <Task pending name='Task-1470' coro=<_QueueJoinTestMixin.test_task_done() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:488> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.159 seconds
+Executing <Task pending name='Task-1471' coro=<_QueueJoinTestMixin.test_task_done.<locals>.worker() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:480> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[TaskGroup._on_task_done()] created at /home/ec2-user/cpython/Lib/asyncio/taskgroups.py:163> took 0.120 seconds
+Executing <Task pending name='Task-1492' coro=<QueuePutTests.test_cancelled_put_silence_value_error_exception() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:420> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.118 seconds
+Executing <Task pending name='Task-1509' coro=<QueuePutTests.test_get_cancel_drop_many_pending_readers() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:281> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.119 seconds
+Executing <Task finished name='Task-1511' coro=<Queue.get() done, defined at /home/ec2-user/cpython/Lib/asyncio/queues.py:149> result=1 created at /home/ec2-user/cpython/Lib/asyncio/taskgroups.py:163> took 0.117 seconds
+Executing <Task pending name='Task-1518' coro=<Queue.get() running at /home/ec2-user/cpython/Lib/asyncio/queues.py:158> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:377> took 0.117 seconds
+Executing <Task finished name='Task-1521' coro=<BaseEventLoop.shutdown_asyncgens() done, defined at /home/ec2-user/cpython/Lib/asyncio/base_events.py:539> result=None created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:652> took 0.117 seconds
+Executing <Task pending name='Task-1545' coro=<QueuePutTests.test_put_cancelled_race() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_queues.py:357> cb=[_run_until_complete_cb() at /home/ec2-user/cpython/Lib/asyncio/base_events.py:180] created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.118 seconds
+Executing <Task finished name='Task-1565' coro=<IsolatedAsyncioTestCase.asyncTearDown() done, defined at /home/ec2-user/cpython/Lib/unittest/async_case.py:43> result=None created at /home/ec2-user/cpython/Lib/asyncio/runners.py:100> took 0.117 seconds
+Executing <Task finished name='Task-1584' coro=<BaseEventLoop.shutdown_default_executor() done, defined at /home/ec2-user/cpython/Lib/asyncio/base_events.py:564> result=None created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:652> took 0.117 seconds
+Executing <Task finished name='Task-1614' coro=<BaseTest.new_loop.<locals>.shutdown_asyncgens() done, defined at /home/ec2-user/cpython/Lib/test/test_asyncio/test_runners.py:53> result=None created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:652> took 0.117 seconds
+Executing <Task pending name='Task-3199' coro=<TestTaskGroup.test_cancel_children_on_child_error.<locals>.runner() running at /home/ec2-user/cpython/Lib/test/test_asyncio/test_taskgroups.py:155> wait_for=<Future pending cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/base_events.py:427> cb=[Task.task_wakeup()] created at /home/ec2-user/cpython/Lib/asyncio/tasks.py:377> took 0.537 seconds
+
+== Tests result: SUCCESS ==
+
+397 tests OK.
+
+36 tests skipped:
+    test_bz2 test_ctypes test_curses test_dbm_gnu test_dbm_ndbm
+    test_devpoll test_gdb test_gzip test_idle test_ioctl test_kqueue
+    test_launcher test_lzma test_msilib test_nis test_ossaudiodev
+    test_peg_generator test_readline test_smtpnet test_sqlite3
+    test_ssl test_stable_abi_ctypes test_startfile test_tcl test_tix
+    test_tkinter test_ttk test_ttk_textonly test_turtle
+    test_winconsoleio test_winreg test_winsound test_wmi
+    test_zipfile64 test_zlib test_zoneinfo
+
+Total duration: 1 hour 2 min
+Tests result: SUCCESS
