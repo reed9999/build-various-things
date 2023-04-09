@@ -1,0 +1,1498 @@
+~/cpython ~/scripts ~/scripts
+Last metadata expiration check: 0:43:51 ago on Sun Apr  9 04:00:43 2023.
+No match for argument: build-essential
+checking for git... found
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for Python interpreter freezing... ./_bootstrap_python
+checking for python3.12... no
+checking for python3.11... python3.11
+checking Python for regen version... Python 3.11.2
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for --enable-universalsdk... no
+checking for --with-universal-archs... no
+checking MACHDEP... "linux"
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for egrep... /usr/bin/grep -E
+checking for CC compiler name... gcc
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for g++... no
+configure:
+
+  By default, distutils will build C++ extension modules with "g++".
+  If this is not intended, then set CXX on the configure command line.
+  
+checking for the platform triplet based on compiler characteristics... x86_64-linux-gnu
+checking for multiarch... 
+checking for PEP 11 support tier... x86_64-pc-linux-gnu/gcc has tier 1 (supported)
+checking for -Wl,--no-as-needed... yes
+checking for the Android API level... not Android
+checking for --with-emscripten-target... 
+checking for --enable-wasm-dynamic-linking... missing
+checking for --enable-wasm-pthreads... missing
+checking for --with-suffix... 
+checking for case-insensitive build directory... no
+checking LIBRARY... libpython$(VERSION)$(ABIFLAGS).a
+checking LINKCC... $(PURIFY) $(CC)
+checking EXPORTSYMS... 
+checking for GNU ld... yes
+checking for --enable-shared... no
+checking for --with-static-libpython... yes
+checking for --enable-profiling... no
+checking LDLIBRARY... checking HOSTRUNNER... 
+libpython$(VERSION)$(ABIFLAGS).a
+checking for ar... ar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for --with-pydebug... yes
+checking for --with-trace-refs... no
+checking for --enable-pystats... no
+checking for --with-assertions... implied by --with-pydebug
+checking for --enable-optimizations... no
+checking PROFILE_TASK... -m test --pgo --timeout=$(TESTTIMEOUT)
+checking for --with-lto... no
+checking for --enable-bolt... no
+checking for llvm-profdata... no
+checking if gcc supports -fstrict-overflow and -fno-strict-overflow... yes
+checking for --with-strict-overflow... no
+checking if gcc supports -Og optimization level... yes
+checking if we can add -Wextra... yes
+checking whether gcc -fno-strict-aliasing accepts and needs -fno-strict-aliasing... no
+checking if we can disable gcc unused-parameter warning... yes
+checking if we can disable gcc int-conversion warning... yes
+checking if we can disable gcc missing-field-initializers warning... yes
+checking if we can enable gcc sign-compare warning... yes
+checking if we can enable gcc unreachable-code warning... yes
+checking if we can enable gcc strict-prototypes warning... no
+checking if we can make implicit function declaration an error in gcc -Werror=implicit-function-declaration... yes
+checking if we can use visibility in gcc -fvisibility=hidden... yes
+checking whether pthreads are available without options... yes
+checking whether g++ also accepts flags for thread support... no
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking asm/types.h usability... yes
+checking asm/types.h presence... yes
+checking for asm/types.h... yes
+checking bluetooth.h usability... no
+checking bluetooth.h presence... no
+checking for bluetooth.h... no
+checking conio.h usability... no
+checking conio.h presence... no
+checking for conio.h... no
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking direct.h usability... no
+checking direct.h presence... no
+checking for direct.h... no
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking io.h usability... no
+checking io.h presence... no
+checking for io.h... no
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking linux/auxvec.h usability... yes
+checking linux/auxvec.h presence... yes
+checking for linux/auxvec.h... yes
+checking sys/auxv.h usability... yes
+checking sys/auxv.h presence... yes
+checking for sys/auxv.h... yes
+checking linux/fs.h usability... yes
+checking linux/fs.h presence... yes
+checking for linux/fs.h... yes
+checking linux/memfd.h usability... yes
+checking linux/memfd.h presence... yes
+checking for linux/memfd.h... yes
+checking linux/random.h usability... yes
+checking linux/random.h presence... yes
+checking for linux/random.h... yes
+checking linux/soundcard.h usability... yes
+checking linux/soundcard.h presence... yes
+checking for linux/soundcard.h... yes
+checking linux/tipc.h usability... yes
+checking linux/tipc.h presence... yes
+checking for linux/tipc.h... yes
+checking linux/wait.h usability... yes
+checking linux/wait.h presence... yes
+checking for linux/wait.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking net/ethernet.h usability... yes
+checking net/ethernet.h presence... yes
+checking for net/ethernet.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking netpacket/packet.h usability... yes
+checking netpacket/packet.h presence... yes
+checking for netpacket/packet.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking process.h usability... no
+checking process.h presence... no
+checking for process.h... no
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking setjmp.h usability... yes
+checking setjmp.h presence... yes
+checking for setjmp.h... yes
+checking shadow.h usability... yes
+checking shadow.h presence... yes
+checking for shadow.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking spawn.h usability... yes
+checking spawn.h presence... yes
+checking for spawn.h... yes
+checking stropts.h usability... no
+checking stropts.h presence... no
+checking for stropts.h... no
+checking sys/audioio.h usability... no
+checking sys/audioio.h presence... no
+checking for sys/audioio.h... no
+checking sys/bsdtty.h usability... no
+checking sys/bsdtty.h presence... no
+checking for sys/bsdtty.h... no
+checking sys/devpoll.h usability... no
+checking sys/devpoll.h presence... no
+checking for sys/devpoll.h... no
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking sys/epoll.h usability... yes
+checking sys/epoll.h presence... yes
+checking for sys/epoll.h... yes
+checking sys/event.h usability... no
+checking sys/event.h presence... no
+checking for sys/event.h... no
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/kern_control.h usability... no
+checking sys/kern_control.h presence... no
+checking for sys/kern_control.h... no
+checking sys/loadavg.h usability... no
+checking sys/loadavg.h presence... no
+checking for sys/loadavg.h... no
+checking sys/lock.h usability... no
+checking sys/lock.h presence... no
+checking for sys/lock.h... no
+checking sys/memfd.h usability... no
+checking sys/memfd.h presence... no
+checking for sys/memfd.h... no
+checking sys/mkdev.h usability... no
+checking sys/mkdev.h presence... no
+checking for sys/mkdev.h... no
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/modem.h usability... no
+checking sys/modem.h presence... no
+checking for sys/modem.h... no
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking sys/random.h usability... yes
+checking sys/random.h presence... yes
+checking for sys/random.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/sendfile.h usability... yes
+checking sys/sendfile.h presence... yes
+checking for sys/sendfile.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/soundcard.h usability... yes
+checking sys/soundcard.h presence... yes
+checking for sys/soundcard.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking sys/sys_domain.h usability... no
+checking sys/sys_domain.h presence... no
+checking for sys/sys_domain.h... no
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking sys/sysmacros.h usability... yes
+checking sys/sysmacros.h presence... yes
+checking for sys/sysmacros.h... yes
+checking sys/termio.h usability... no
+checking sys/termio.h presence... no
+checking for sys/termio.h... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/uio.h usability... yes
+checking sys/uio.h presence... yes
+checking for sys/uio.h... yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking sys/xattr.h usability... yes
+checking sys/xattr.h presence... yes
+checking for sys/xattr.h... yes
+checking sysexits.h usability... yes
+checking sysexits.h presence... yes
+checking for sysexits.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking util.h usability... no
+checking util.h presence... no
+checking for util.h... no
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether sys/types.h defines makedev... no
+checking for sys/mkdev.h... (cached) no
+checking for sys/sysmacros.h... (cached) yes
+checking bluetooth/bluetooth.h usability... no
+checking bluetooth/bluetooth.h presence... no
+checking for bluetooth/bluetooth.h... no
+checking for net/if.h... yes
+checking for linux/netlink.h... yes
+checking for linux/qrtr.h... yes
+checking for linux/vm_sockets.h... yes
+checking for linux/can.h... yes
+checking for linux/can/bcm.h... yes
+checking for linux/can/j1939.h... yes
+checking for linux/can/raw.h... yes
+checking for netcan/can.h... no
+checking for clock_t in time.h... yes
+checking for makedev... yes
+checking for le64toh... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking for ssize_t... yes
+checking for __uint128_t... yes
+checking size of int... 4
+checking size of long... 8
+checking alignment of long... 8
+checking size of long long... 8
+checking size of void *... 8
+checking size of short... 2
+checking size of float... 4
+checking size of double... 8
+checking size of fpos_t... 16
+checking size of size_t... 8
+checking alignment of size_t... 8
+checking size of pid_t... 4
+checking size of uintptr_t... 8
+checking for long double... yes
+checking size of long double... 16
+checking size of _Bool... 1
+checking size of off_t... 8
+checking whether to enable large file support... no
+checking size of time_t... 8
+checking for pthread_t... yes
+checking size of pthread_t... 8
+checking size of pthread_key_t... 4
+checking whether pthread_key_t is compatible with int... yes
+checking for --enable-framework... no
+checking for --with-dsymutil... no
+checking for dyld... no
+checking for --with-address-sanitizer... no
+checking for --with-memory-sanitizer... no
+checking for --with-undefined-behavior-sanitizer... no
+checking the extension of shared libraries... .so
+checking LDSHARED... $(CC) -shared
+checking BLDSHARED flags... $(CC) -shared
+checking CCSHARED... -fPIC
+checking LINKFORSHARED... -Xlinker -export-dynamic
+checking CFLAGSFORSHARED... 
+checking SHLIBS... $(LIBS)
+checking perf trampoline... yes
+checking for sendfile in -lsendfile... no
+checking for dlopen in -ldl... yes
+checking for shl_load in -ldld... no
+checking uuid.h usability... no
+checking uuid.h presence... no
+checking for uuid.h... no
+checking for LIBUUID... no
+checking uuid/uuid.h usability... no
+checking uuid/uuid.h presence... no
+checking for uuid/uuid.h... no
+checking for uuid/uuid.h... (cached) no
+checking for library containing sem_init... none required
+checking for textdomain in -lintl... no
+checking aligned memory access is required... no
+checking for --with-hash-algorithm... default
+checking for --with-tzpath... "/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/etc/zoneinfo"
+checking for t_open in -lnsl... no
+checking for socket in -lsocket... no
+checking for --with-libs... no
+checking for --with-system-expat... no
+checking for LIBFFI... no
+checking ffi.h usability... no
+checking ffi.h presence... no
+checking for ffi.h... no
+checking for --with-system-libmpdec... no
+checking for --with-decimal-contextvar... yes
+checking for decimal libmpdec machine... uint128
+checking for LIBNSL... no
+checking for library containing yp_match... no
+checking for LIBSQLITE3... no
+checking sqlite3.h usability... no
+checking sqlite3.h presence... no
+checking for sqlite3.h... no
+checking for --enable-loadable-sqlite-extensions... no
+checking gdbm.h usability... no
+checking gdbm.h presence... no
+checking for gdbm.h... no
+checking ndbm.h usability... no
+checking ndbm.h presence... no
+checking for ndbm.h... no
+checking for ndbm presence and linker args...  ()
+checking gdbm/ndbm.h usability... no
+checking gdbm/ndbm.h presence... no
+checking for gdbm/ndbm.h... no
+checking gdbm-ndbm.h usability... no
+checking gdbm-ndbm.h presence... no
+checking for gdbm-ndbm.h... no
+checking db.h usability... no
+checking db.h presence... no
+checking for db.h... no
+checking for --with-dbmliborder... gdbm:ndbm:bdb
+checking for _dbm module CFLAGS and LIBS...  
+checking if PTHREAD_SCOPE_SYSTEM is supported... yes
+checking for pthread_sigmask... yes
+checking for pthread_getcpuclockid... yes
+checking if --enable-ipv6 is specified... yes
+checking if RFC2553 API is available... yes
+checking ipv6 stack type... linux-glibc
+checking CAN_RAW_FD_FRAMES... yes
+checking for CAN_RAW_JOIN_FILTERS... yes
+checking for --with-doc-strings... yes
+checking for --with-pymalloc... yes
+checking for --with-freelists... yes
+checking for --with-c-locale-coercion... yes
+checking for --with-valgrind... no
+checking for --with-dtrace... no
+checking for dlopen... yes
+checking DYNLOADFILE... dynload_shlib.o
+checking MACHDEP_OBJS... none
+checking for accept4... yes
+checking for alarm... yes
+checking for bind_textdomain_codeset... yes
+checking for chmod... yes
+checking for chown... yes
+checking for clock... yes
+checking for close_range... yes
+checking for confstr... yes
+checking for copy_file_range... yes
+checking for ctermid... yes
+checking for dup... yes
+checking for dup3... yes
+checking for execv... yes
+checking for explicit_bzero... yes
+checking for explicit_memset... no
+checking for faccessat... yes
+checking for fchmod... yes
+checking for fchmodat... yes
+checking for fchown... yes
+checking for fchownat... yes
+checking for fdopendir... yes
+checking for fdwalk... no
+checking for fexecve... yes
+checking for fork... yes
+checking for fork1... no
+checking for fpathconf... yes
+checking for fstatat... yes
+checking for ftime... yes
+checking for ftruncate... yes
+checking for futimens... yes
+checking for futimes... yes
+checking for futimesat... yes
+checking for gai_strerror... yes
+checking for getegid... yes
+checking for getentropy... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getgrgid... yes
+checking for getgrgid_r... yes
+checking for getgrnam_r... yes
+checking for getgrouplist... yes
+checking for getgroups... yes
+checking for gethostname... yes
+checking for getitimer... yes
+checking for getloadavg... yes
+checking for getlogin... yes
+checking for getpeername... yes
+checking for getpgid... yes
+checking for getpid... yes
+checking for getppid... yes
+checking for getpriority... yes
+checking for _getpty... no
+checking for getpwent... yes
+checking for getpwnam_r... yes
+checking for getpwuid... yes
+checking for getpwuid_r... yes
+checking for getresgid... yes
+checking for getresuid... yes
+checking for getrusage... yes
+checking for getsid... yes
+checking for getspent... yes
+checking for getspnam... yes
+checking for getuid... yes
+checking for getwd... yes
+checking for if_nameindex... yes
+checking for initgroups... yes
+checking for kill... yes
+checking for killpg... yes
+checking for lchown... yes
+checking for linkat... yes
+checking for lockf... yes
+checking for lstat... yes
+checking for lutimes... yes
+checking for madvise... yes
+checking for mbrtowc... yes
+checking for memrchr... yes
+checking for mkdirat... yes
+checking for mkfifo... yes
+checking for mkfifoat... yes
+checking for mknod... yes
+checking for mknodat... yes
+checking for mktime... yes
+checking for mmap... yes
+checking for mremap... yes
+checking for nice... yes
+checking for openat... yes
+checking for opendir... yes
+checking for pathconf... yes
+checking for pause... yes
+checking for pipe... yes
+checking for pipe2... yes
+checking for plock... no
+checking for poll... yes
+checking for posix_fadvise... yes
+checking for posix_fallocate... yes
+checking for posix_spawn... yes
+checking for posix_spawnp... yes
+checking for pread... yes
+checking for preadv... yes
+checking for preadv2... yes
+checking for pthread_condattr_setclock... yes
+checking for pthread_init... no
+checking for pthread_kill... yes
+checking for pwrite... yes
+checking for pwritev... yes
+checking for pwritev2... yes
+checking for readlink... yes
+checking for readlinkat... yes
+checking for readv... yes
+checking for realpath... yes
+checking for renameat... yes
+checking for rtpSpawn... no
+checking for sched_get_priority_max... yes
+checking for sched_rr_get_interval... yes
+checking for sched_setaffinity... yes
+checking for sched_setparam... yes
+checking for sched_setscheduler... yes
+checking for sem_clockwait... yes
+checking for sem_getvalue... yes
+checking for sem_open... yes
+checking for sem_timedwait... yes
+checking for sem_unlink... yes
+checking for sendfile... yes
+checking for setegid... yes
+checking for seteuid... yes
+checking for setgid... yes
+checking for sethostname... yes
+checking for setitimer... yes
+checking for setlocale... yes
+checking for setpgid... yes
+checking for setpgrp... yes
+checking for setpriority... yes
+checking for setregid... yes
+checking for setresgid... yes
+checking for setresuid... yes
+checking for setreuid... yes
+checking for setsid... yes
+checking for setuid... yes
+checking for setvbuf... yes
+checking for shutdown... yes
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for sigfillset... yes
+checking for siginterrupt... yes
+checking for sigpending... yes
+checking for sigrelse... yes
+checking for sigtimedwait... yes
+checking for sigwait... yes
+checking for sigwaitinfo... yes
+checking for snprintf... yes
+checking for splice... yes
+checking for strftime... yes
+checking for strlcpy... no
+checking for strsignal... yes
+checking for symlinkat... yes
+checking for sync... yes
+checking for sysconf... yes
+checking for system... yes
+checking for tcgetpgrp... yes
+checking for tcsetpgrp... yes
+checking for tempnam... yes
+checking for timegm... yes
+checking for times... yes
+checking for tmpfile... yes
+checking for tmpnam... yes
+checking for tmpnam_r... yes
+checking for truncate... yes
+checking for ttyname... yes
+checking for umask... yes
+checking for uname... yes
+checking for unlinkat... yes
+checking for utimensat... yes
+checking for utimes... yes
+checking for vfork... yes
+checking for wait... yes
+checking for wait3... yes
+checking for wait4... yes
+checking for waitid... yes
+checking for waitpid... yes
+checking for wcscoll... yes
+checking for wcsftime... yes
+checking for wcsxfrm... yes
+checking for wmemcmp... yes
+checking for writev... yes
+checking whether dirfd is declared... yes
+checking for chroot... yes
+checking for link... yes
+checking for symlink... yes
+checking for fchdir... yes
+checking for fsync... yes
+checking for fdatasync... yes
+checking for epoll_create... yes
+checking for epoll_create1... yes
+checking for kqueue... no
+checking for prlimit... yes
+checking for _dyld_shared_cache_contains_path... no
+checking for memfd_create... yes
+checking for eventfd... yes
+checking for ctermid_r... no
+checking for flock declaration... yes
+checking for flock... yes
+checking for flock in -lbsd... no
+checking for getpagesize... yes
+checking for broken unsetenv... no
+checking for true... true
+checking for inet_aton in -lc... yes
+checking for chflags... no
+checking for lchflags... no
+checking for ZLIB... no
+checking zlib.h usability... no
+checking zlib.h presence... no
+checking for zlib.h... no
+checking for BZIP2... no
+checking bzlib.h usability... no
+checking bzlib.h presence... no
+checking for bzlib.h... no
+checking for LIBLZMA... no
+checking lzma.h usability... no
+checking lzma.h presence... no
+checking for lzma.h... no
+checking for hstrerror... yes
+checking for getservbyname... yes
+checking for getservbyport... yes
+checking for gethostbyname... yes
+checking for gethostbyaddr... yes
+checking for getprotobyname... yes
+checking for inet_aton... yes
+checking for inet_ntoa... yes
+checking for inet_pton... yes
+checking for getpeername... (cached) yes
+checking for getsockname... yes
+checking for accept... yes
+checking for bind... yes
+checking for connect... yes
+checking for listen... yes
+checking for recvfrom... yes
+checking for sendto... yes
+checking for setsockopt... yes
+checking for socket... yes
+checking for setgroups... yes
+checking for openpty... yes
+checking for library containing login_tty... none required
+checking for forkpty... yes
+checking for fseek64... no
+checking for fseeko... yes
+checking for fstatvfs... yes
+checking for ftell64... no
+checking for ftello... yes
+checking for statvfs... yes
+checking for dup2... yes
+checking for getpgrp... yes
+checking for setpgrp... (cached) yes
+checking for setns... yes
+checking for unshare... yes
+checking for LIBCRYPT... yes
+checking for crypt or crypt_r... yes
+checking for clock_gettime... yes
+checking for clock_getres... yes
+checking for clock_settime... yes
+checking for clock_nanosleep... yes
+checking for nanosleep... yes
+checking for major, minor, and makedev... yes
+checking for getaddrinfo... yes
+checking getaddrinfo bug... no
+checking for getnameinfo... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for struct stat.st_rdev... yes
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_flags... no
+checking for struct stat.st_gen... no
+checking for struct stat.st_birthtime... no
+checking for struct stat.st_blocks... yes
+checking for struct passwd.pw_gecos... yes
+checking for struct passwd.pw_passwd... yes
+checking for siginfo_t.si_band... yes
+checking for time.h that defines altzone... no
+checking for addrinfo... yes
+checking for sockaddr_storage... yes
+checking for sockaddr_alg... yes
+checking for an ANSI C-conforming const... yes
+checking for working signed char... yes
+checking for prototypes... yes
+checking for socketpair... yes
+checking if sockaddr has sa_len member... no
+checking for gethostbyname_r... yes
+checking gethostbyname_r with 6 args... yes
+checking for __fpu_control... yes
+checking for --with-libm=STRING... default LIBM="-lm"
+checking for --with-libc=STRING... default LIBC=""
+checking for x64 gcc inline assembler... yes
+checking whether float word ordering is bigendian... no
+checking whether we can use gcc inline assembler to get and set x87 control word... yes
+checking whether we can use gcc inline assembler to get and set mc68881 fpcr... no
+checking for x87-style double rounding... no
+checking for acosh... yes
+checking for asinh... yes
+checking for atanh... yes
+checking for erf... yes
+checking for erfc... yes
+checking for expm1... yes
+checking for log1p... yes
+checking for log2... yes
+checking whether POSIX semaphores are enabled... yes
+checking for broken sem_getvalue... no
+checking whether RTLD_LAZY is declared... yes
+checking whether RTLD_NOW is declared... yes
+checking whether RTLD_GLOBAL is declared... yes
+checking whether RTLD_LOCAL is declared... yes
+checking whether RTLD_NODELETE is declared... yes
+checking whether RTLD_NOLOAD is declared... yes
+checking whether RTLD_DEEPBIND is declared... yes
+checking whether RTLD_MEMBER is declared... no
+checking digit size for Python's longs... no value specified
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking size of wchar_t... 4
+checking whether wchar_t is signed... yes
+checking whether wchar_t is usable... no
+checking whether byte ordering is bigendian... no
+checking ABIFLAGS... d
+checking SOABI... cpython-312d-x86_64-linux-gnu
+checking LDVERSION... $(VERSION)$(ABIFLAGS)
+checking for --with-platlibdir... no
+checking for --with-wheel-pkg-dir... no
+checking whether right shift extends the sign bit... yes
+checking for getc_unlocked() and friends... yes
+checking for LIBREADLINE... no
+checking readline/readline.h usability... no
+checking readline/readline.h presence... no
+checking for readline/readline.h... no
+checking how to link readline... no
+checking for broken nice()... no
+checking for broken poll()... no
+checking for working tzset()... yes
+checking for tv_nsec in struct stat... yes
+checking for tv_nsec2 in struct stat... no
+checking curses.h usability... no
+checking curses.h presence... no
+checking for curses.h... no
+checking ncurses.h usability... no
+checking ncurses.h presence... no
+checking for ncurses.h... no
+checking curses module flags... no
+checking panel.h usability... no
+checking panel.h presence... no
+checking for panel.h... no
+checking panel flags... no
+checking for term.h... no
+checking whether mvwdelch is an expression... no
+checking whether WINDOW has _flags... no
+checking for curses function is_pad... no
+checking for curses function is_term_resized... no
+checking for curses function resize_term... no
+checking for curses function resizeterm... no
+checking for curses function immedok... no
+checking for curses function syncok... no
+checking for curses function wchgat... no
+checking for curses function filter... no
+checking for curses function has_key... no
+checking for curses function typeahead... no
+checking for curses function use_env... no
+configure: checking for device files
+checking for /dev/ptmx... yes
+checking for /dev/ptc... no
+checking for socklen_t... yes
+checking for broken mbstowcs... no
+checking for --with-computed-gotos... no value specified
+checking whether gcc supports computed gotos... yes
+checking for build directories... done
+checking for -O2... yes
+checking for glibc _FORTIFY_SOURCE/memmove bug... no
+checking for gcc ipa-pure-const bug... no
+checking for stdatomic.h... yes
+checking for builtin __atomic_load_n and __atomic_store_n functions... yes
+checking for ensurepip... upgrade
+checking if the dirent structure of a d_type field... yes
+checking for the Linux getrandom() syscall... yes
+checking for the getrandom() function... yes
+checking for library containing shm_open... none required
+checking for shm_open... yes
+checking for shm_unlink... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking for openssl/ssl.h in /usr/local/ssl... no
+checking for openssl/ssl.h in /usr/lib/ssl... no
+checking for openssl/ssl.h in /usr/ssl... no
+checking for openssl/ssl.h in /usr/pkg... no
+checking for openssl/ssl.h in /usr/local... no
+checking for openssl/ssl.h in /usr... no
+checking whether compiling and linking against OpenSSL works... no
+checking for --with-openssl-rpath... 
+checking whether OpenSSL provides required ssl module APIs... no
+checking whether OpenSSL provides required hashlib module APIs... no
+checking for --with-ssl-default-suites... python
+checking for --with-builtin-hashlib-hashes... md5,sha1,sha2,sha3,blake2
+checking for LIBB2... no
+checking for --disable-test-modules... yes
+checking for stdlib extension module _multiprocessing... yes
+checking for stdlib extension module _posixshmem... yes
+checking for stdlib extension module fcntl... yes
+checking for stdlib extension module mmap... yes
+checking for stdlib extension module _socket... yes
+checking for stdlib extension module grp... yes
+checking for stdlib extension module ossaudiodev... yes
+checking for stdlib extension module pwd... yes
+checking for stdlib extension module resource... yes
+checking for stdlib extension module _scproxy... n/a
+checking for stdlib extension module spwd... yes
+checking for stdlib extension module syslog... yes
+checking for stdlib extension module termios... yes
+checking for stdlib extension module pyexpat... yes
+checking for stdlib extension module _elementtree... yes
+checking for stdlib extension module _md5... yes
+checking for stdlib extension module _sha1... yes
+checking for stdlib extension module _sha2... yes
+checking for stdlib extension module _sha3... yes
+checking for stdlib extension module _blake2... yes
+checking for stdlib extension module _crypt... yes
+checking for stdlib extension module _ctypes... missing
+checking for stdlib extension module _curses... missing
+checking for stdlib extension module _curses_panel... missing
+checking for stdlib extension module _decimal... yes
+checking for stdlib extension module _dbm... missing
+checking for stdlib extension module _gdbm... missing
+checking for stdlib extension module nis... missing
+checking for stdlib extension module readline... missing
+checking for stdlib extension module _sqlite3... disabled
+checking for stdlib extension module _tkinter... missing
+checking for stdlib extension module _uuid... missing
+checking for stdlib extension module zlib... missing
+checking for stdlib extension module _bz2... missing
+checking for stdlib extension module _lzma... missing
+checking for stdlib extension module _ssl... missing
+checking for stdlib extension module _hashlib... missing
+checking for stdlib extension module _testcapi... yes
+checking for stdlib extension module _testclinic... yes
+checking for stdlib extension module _testinternalcapi... yes
+checking for stdlib extension module _testbuffer... yes
+checking for stdlib extension module _testimportmultiple... yes
+checking for stdlib extension module _testmultiphase... yes
+checking for stdlib extension module xxsubtype... yes
+checking for stdlib extension module _xxtestfuzz... yes
+checking for stdlib extension module _ctypes_test... missing
+checking for stdlib extension module xxlimited... yes
+checking for stdlib extension module xxlimited_35... yes
+configure: creating ./config.status
+config.status: creating Makefile.pre
+config.status: creating Misc/python.pc
+config.status: creating Misc/python-embed.pc
+config.status: creating Misc/python-config.sh
+config.status: creating Modules/Setup.bootstrap
+config.status: creating Modules/Setup.stdlib
+config.status: creating Modules/ld_so_aix
+config.status: creating pyconfig.h
+configure: creating Modules/Setup.local
+configure: creating Makefile
+Note: Deepfreeze may have added some global objects,
+      so run 'make regen-global-objects' if necessary.
+The following modules are *disabled* in configure script:
+_sqlite3                                                       
+
+The necessary bits to build these optional modules were not found:
+_bz2                  _ctypes               _ctypes_test       
+_curses               _curses_panel         _dbm               
+_gdbm                 _hashlib              _lzma              
+_ssl                  _tkinter              _uuid              
+nis                   readline              zlib               
+To find the necessary bits, look in configure.ac and config.log.
+
+Could not build the ssl module!
+Python requires a OpenSSL 1.1.1 or newer
+
+Checked 111 modules (30 built-in, 64 shared, 1 n/a on linux-x86_64, 1 disabled, 15 missing, 0 failed on import)
+The following modules are *disabled* in configure script:
+_sqlite3                                                       
+
+The necessary bits to build these optional modules were not found:
+_bz2                  _ctypes               _ctypes_test       
+_curses               _curses_panel         _dbm               
+_gdbm                 _hashlib              _lzma              
+_ssl                  _tkinter              _uuid              
+nis                   readline              zlib               
+To find the necessary bits, look in configure.ac and config.log.
+
+Could not build the ssl module!
+Python requires a OpenSSL 1.1.1 or newer
+
+Checked 111 modules (30 built-in, 64 shared, 1 n/a on linux-x86_64, 1 disabled, 15 missing, 0 failed on import)
+./python -E  ./Tools/scripts/run_tests.py 
+== CPython 3.12.0a6+ (heads/main:fd1947e, Apr 9 2023, 04:46:53) [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)]
+== Linux-6.1.21-1.45.amzn2023.x86_64-x86_64-with-glibc2.34 little-endian
+== Python build: debug
+== cwd: /home/ec2-user/cpython/build/test_python_50940æ
+== CPU count: 1
+== encodings: locale=UTF-8, FS=utf-8
+Using random seed 9226926
+0:00:00 load avg: 1.76 Run tests in parallel using 3 child processes
+0:00:00 load avg: 1.76 [  1/433] test__osx_support passed
+0:00:00 load avg: 1.76 [  2/433] test_raise passed
+0:00:01 load avg: 1.76 [  3/433] test_secrets passed
+0:00:02 load avg: 1.76 [  4/433] test_openpty passed
+0:00:05 load avg: 1.86 [  5/433] test_smtplib passed
+0:00:06 load avg: 1.86 [  6/433] test_future5 passed
+0:00:07 load avg: 1.86 [  7/433] test_memoryio passed
+0:00:08 load avg: 1.86 [  8/433] test_class passed
+0:00:10 load avg: 1.95 [  9/433] test_dict passed
+0:00:20 load avg: 2.11 [ 10/433] test_trace passed
+0:00:21 load avg: 2.11 [ 11/433] test_univnewlines passed
+0:00:22 load avg: 2.11 [ 12/433] test_codeop passed
+0:00:23 load avg: 2.11 [ 13/433] test_long passed
+0:00:23 load avg: 2.11 [ 14/433] test_http_cookies passed
+0:00:23 load avg: 2.11 [ 15/433] test_dictcomps passed
+0:00:24 load avg: 2.11 [ 16/433] test_pulldom passed
+0:00:24 load avg: 2.11 [ 17/433] test_asyncgen passed
+0:00:25 load avg: 2.18 [ 18/433] test_scope passed
+0:00:25 load avg: 2.18 [ 19/433] test_exception_group passed
+0:00:27 load avg: 2.18 [ 20/433] test_robotparser passed
+0:00:27 load avg: 2.18 [ 21/433] test_positional_only_arg passed
+0:00:30 load avg: 2.25 [ 22/433] test_codecmaps_jp passed
+0:00:30 load avg: 2.25 [ 23/433] test_dataclasses passed
+0:00:31 load avg: 2.25 [ 24/433] test_dbm passed -- running: test_statistics (30.7 sec)
+0:00:31 load avg: 2.25 [ 25/433] test_float passed -- running: test_statistics (31.1 sec)
+0:00:32 load avg: 2.25 [ 26/433] test_ossaudiodev skipped (resource denied) -- running: test_statistics (31.8 sec)
+test_ossaudiodev skipped -- Use of the 'audio' resource not enabled
+0:00:33 load avg: 2.25 [ 27/433] test_sunau passed -- running: test_statistics (32.7 sec)
+0:00:36 load avg: 2.31 [ 28/433] test_call passed -- running: test_statistics (35.8 sec)
+0:00:39 load avg: 2.31 [ 29/433] test_statistics passed (37.7 sec)
+0:00:39 load avg: 2.31 [ 30/433] test_defaultdict passed
+0:00:40 load avg: 2.28 [ 31/433] test_ftplib passed
+0:00:40 load avg: 2.28 [ 32/433] test_ttk_textonly skipped
+test_ttk_textonly skipped -- No module named '_tkinter'
+0:00:41 load avg: 2.28 [ 33/433] test_csv passed
+0:00:42 load avg: 2.28 [ 34/433] test_webbrowser passed
+0:00:42 load avg: 2.28 [ 35/433] test_pydoc passed
+0:00:43 load avg: 2.28 [ 36/433] test_pkg passed
+0:00:44 load avg: 2.28 [ 37/433] test_platform passed
+0:00:44 load avg: 2.28 [ 38/433] test_http_cookiejar passed
+0:00:44 load avg: 2.28 [ 39/433] test_uu passed
+0:00:45 load avg: 2.34 [ 40/433] test_sort passed
+0:00:45 load avg: 2.34 [ 41/433] test_codecencodings_kr passed
+0:00:48 load avg: 2.34 [ 42/433] test_time passed
+0:00:49 load avg: 2.34 [ 43/433] test_pkgutil passed
+0:00:49 load avg: 2.34 [ 44/433] test_subclassinit passed
+0:00:51 load avg: 2.31 [ 45/433] test_profile passed
+0:00:52 load avg: 2.31 [ 46/433] test_htmlparser passed
+0:00:52 load avg: 2.31 [ 47/433] test_turtle skipped
+test_turtle skipped -- No module named '_tkinter'
+0:00:53 load avg: 2.31 [ 48/433] test_patma passed
+0:00:53 load avg: 2.31 [ 49/433] test_ast passed
+0:00:54 load avg: 2.31 [ 50/433] test_dict_version passed
+0:00:54 load avg: 2.31 [ 51/433] test_bisect passed
+0:00:54 load avg: 2.31 [ 52/433] test_launcher skipped
+test_launcher skipped -- test only applies to Windows
+0:00:55 load avg: 2.31 [ 53/433] test_type_comments passed
+0:00:55 load avg: 2.21 [ 54/433] test_frame passed
+0:00:55 load avg: 2.21 [ 55/433] test_pep646_syntax passed
+0:00:55 load avg: 2.21 [ 56/433] test_idle skipped
+test_idle skipped -- No module named '_tkinter'
+0:00:56 load avg: 2.21 [ 57/433] test_code passed
+0:00:56 load avg: 2.21 [ 58/433] test_utf8source passed
+0:00:57 load avg: 2.21 [ 59/433] test_poll passed
+0:00:58 load avg: 2.21 [ 60/433] test_mimetypes passed
+0:00:58 load avg: 2.21 [ 61/433] test_decorators passed
+0:00:58 load avg: 2.21 [ 62/433] test_generator_stop passed
+0:00:59 load avg: 2.21 [ 63/433] test_file_eintr passed
+0:00:59 load avg: 2.21 [ 64/433] test_gettext passed
+0:00:59 load avg: 2.21 [ 65/433] test_ioctl skipped
+test_ioctl skipped -- Unable to open /dev/tty
+0:01:00 load avg: 2.19 [ 66/433] test_timeit passed
+0:01:01 load avg: 2.19 [ 67/433] test_sax passed
+0:01:01 load avg: 2.19 [ 68/433] test_nntplib passed
+0:01:02 load avg: 2.19 [ 69/433] test_hash passed
+0:01:02 load avg: 2.19 [ 70/433] test_bigmem passed
+0:01:03 load avg: 2.19 [ 71/433] test_thread passed
+0:01:04 load avg: 2.19 [ 72/433] test_sched passed
+0:01:05 load avg: 2.26 [ 73/433] test_copy passed
+0:01:06 load avg: 2.26 [ 74/433] test_named_expressions passed
+0:01:07 load avg: 2.26 [ 75/433] test_gc passed
+0:01:07 load avg: 2.26 [ 76/433] test_enumerate passed
+0:01:08 load avg: 2.26 [ 77/433] test_crashers passed
+0:01:09 load avg: 2.26 [ 78/433] test_pwd passed
+0:01:10 load avg: 2.32 [ 79/433] test_marshal passed
+0:01:11 load avg: 2.32 [ 80/433] test_ipaddress passed
+0:01:12 load avg: 2.32 [ 81/433] test_repl passed
+0:01:13 load avg: 2.32 [ 82/433] test_userlist passed
+0:01:21 load avg: 2.50 [ 83/433] test_unittest passed
+/home/ec2-user/cpython/Lib/unittest/case.py:580: RuntimeWarning: TestResult has no addDuration method
+  warnings.warn("TestResult has no addDuration method",
+0:01:22 load avg: 2.50 [ 84/433] test_int_literal passed
+0:01:27 load avg: 2.54 [ 85/433] test_sys passed
+0:01:30 load avg: 2.58 [ 86/433] test_bufio passed
+0:01:33 load avg: 2.58 [ 87/433] test__xxinterpchannels passed
+0:01:47 load avg: 2.52 [ 88/433] test_weakref passed (33.0 sec) -- running: test_multiprocessing_spawn (36.6 sec)
+0:01:57 load avg: 2.52 [ 89/433] test_argparse passed -- running: test_multiprocessing_spawn (47.1 sec)
+0:01:59 load avg: 2.52 [ 90/433] test_file passed -- running: test_multiprocessing_spawn (48.4 sec)
+0:02:02 load avg: 2.56 [ 91/433] test_tabnanny passed -- running: test_multiprocessing_spawn (51.5 sec)
+0:02:10 load avg: 2.54 [ 92/433] test_pathlib passed -- running: test_socket (37.0 sec), test_multiprocessing_spawn (59.9 sec)
+0:02:11 load avg: 2.54 [ 93/433] test_zipfile64 skipped (resource denied) -- running: test_socket (38.0 sec), test_multiprocessing_spawn (1 min)
+test_zipfile64 skipped -- test requires loads of disk-space bytes and a long time to run
+0:02:12 load avg: 2.54 [ 94/433] test_keyword passed -- running: test_socket (39.4 sec), test_multiprocessing_spawn (1 min 2 sec)
+0:02:26 load avg: 2.72 [ 95/433] test_cmd_line passed -- running: test_socket (52.6 sec), test_multiprocessing_spawn (1 min 15 sec)
+0:02:27 load avg: 2.72 [ 96/433] test_list passed -- running: test_socket (54.1 sec), test_multiprocessing_spawn (1 min 16 sec)
+0:02:28 load avg: 2.72 [ 97/433] test_cmd passed -- running: test_socket (54.7 sec), test_multiprocessing_spawn (1 min 17 sec)
+0:02:30 load avg: 2.98 [ 98/433] test_urllib2 passed -- running: test_socket (57.4 sec), test_multiprocessing_spawn (1 min 20 sec)
+0:02:33 load avg: 2.98 [ 99/433] test_resource passed -- running: test_socket (1 min), test_multiprocessing_spawn (1 min 23 sec)
+0:02:35 load avg: 2.98 [100/433] test_msilib skipped -- running: test_socket (1 min 1 sec), test_multiprocessing_spawn (1 min 24 sec)
+test_msilib skipped -- No module named '_msi'
+0:02:45 load avg: 3.20 [101/433] test_sys_settrace passed -- running: test_socket (1 min 11 sec), test_multiprocessing_spawn (1 min 34 sec)
+/home/ec2-user/cpython/Lib/test/test_sys_settrace.py:1771: RuntimeWarning: assigning None to 1 unbound local
+  frame.f_lineno = self.firstLine + self.jumpTo
+/home/ec2-user/cpython/Lib/test/test_sys_settrace.py:1771: RuntimeWarning: assigning None to 2 unbound locals
+  frame.f_lineno = self.firstLine + self.jumpTo
+0:02:46 load avg: 3.20 [102/433] test_fileio passed -- running: test_socket (1 min 13 sec), test_multiprocessing_spawn (1 min 36 sec)
+0:02:53 load avg: 3.35 [103/433] test_socket passed (1 min 19 sec) -- running: test_multiprocessing_spawn (1 min 43 sec)
+0:02:58 load avg: 3.32 [104/433] test_inspect passed -- running: test_multiprocessing_spawn (1 min 47 sec)
+0:03:02 load avg: 3.29 [105/433] test_range passed -- running: test_multiprocessing_spawn (1 min 52 sec)
+0:03:04 load avg: 3.29 [106/433] test_functools passed -- running: test_multiprocessing_spawn (1 min 54 sec)
+0:03:04 load avg: 3.29 [107/433] test_unicode passed -- running: test_multiprocessing_spawn (1 min 54 sec)
+0:03:05 load avg: 3.27 [108/433] test_fileinput passed -- running: test_multiprocessing_spawn (1 min 55 sec)
+0:03:05 load avg: 3.27 [109/433] test_locale passed -- running: test_multiprocessing_spawn (1 min 55 sec)
+0:03:06 load avg: 3.27 [110/433] test_urllib_response passed -- running: test_multiprocessing_spawn (1 min 55 sec)
+0:03:06 load avg: 3.27 [111/433] test_binascii passed -- running: test_multiprocessing_spawn (1 min 55 sec)
+0:03:07 load avg: 3.27 [112/433] test_pyexpat passed -- running: test_multiprocessing_spawn (1 min 56 sec)
+0:03:07 load avg: 3.27 [113/433] test_baseexception passed -- running: test_multiprocessing_spawn (1 min 56 sec)
+0:03:08 load avg: 3.27 [114/433] test_with passed -- running: test_multiprocessing_spawn (1 min 57 sec)
+0:03:09 load avg: 3.27 [115/433] test_numeric_tower passed -- running: test_multiprocessing_spawn (1 min 58 sec)
+0:03:10 load avg: 3.57 [116/433] test_imp passed -- running: test_multiprocessing_spawn (1 min 59 sec)
+0:03:10 load avg: 3.57 [117/433] test_grp passed -- running: test_multiprocessing_spawn (2 min)
+0:03:11 load avg: 3.57 [118/433] test_graphlib passed -- running: test_multiprocessing_spawn (2 min 1 sec)
+0:03:20 load avg: 3.36 [119/433] test___all__ passed -- running: test_multiprocessing_spawn (2 min 9 sec)
+0:03:21 load avg: 3.49 [120/433] test_unpack_ex passed -- running: test_multiprocessing_spawn (2 min 10 sec)
+0:03:21 load avg: 3.49 [121/433] test_spwd passed -- running: test_multiprocessing_spawn (2 min 11 sec)
+0:03:21 load avg: 3.49 [122/433] test_readline skipped -- running: test_multiprocessing_spawn (2 min 11 sec)
+test_readline skipped -- No module named 'readline'
+0:03:22 load avg: 3.49 [123/433] test_mailcap passed -- running: test_multiprocessing_spawn (2 min 11 sec)
+/home/ec2-user/cpython/Lib/mailcap.py:228: UnsafeMailcapInput: Refusing to substitute MIME type 'audio/*' into a shell command.
+  warnings.warn(msg, UnsafeMailcapInput)
+/home/ec2-user/cpython/Lib/mailcap.py:228: UnsafeMailcapInput: Refusing to substitute MIME type 'audio/*' into a shell command.
+  warnings.warn(msg, UnsafeMailcapInput)
+0:03:25 load avg: 3.49 [124/433] test_zipimport_support passed -- running: test_multiprocessing_spawn (2 min 14 sec)
+0:03:26 load avg: 3.61 [125/433] test_popen passed -- running: test_multiprocessing_spawn (2 min 16 sec)
+0:03:28 load avg: 3.61 [126/433] test_urllibnet passed -- running: test_multiprocessing_spawn (2 min 18 sec)
+0:03:30 load avg: 3.61 [127/433] test_reprlib passed -- running: test_multiprocessing_spawn (2 min 19 sec)
+0:03:35 load avg: 3.59 [128/433] test_configparser passed -- running: test_multiprocessing_spawn (2 min 25 sec)
+0:03:37 load avg: 3.59 [129/433] test_urllib passed -- running: test_multiprocessing_spawn (2 min 27 sec)
+0:03:37 load avg: 3.59 [130/433] test_faulthandler passed -- running: test_multiprocessing_spawn (2 min 27 sec)
+0:03:39 load avg: 3.59 [131/433] test_charmapcodec passed -- running: test_multiprocessing_spawn (2 min 28 sec)
+0:03:41 load avg: 3.86 [132/433] test_iter passed -- running: test_multiprocessing_spawn (2 min 31 sec)
+0:03:44 load avg: 3.86 [133/433] test_codecmaps_cn passed -- running: test_multiprocessing_spawn (2 min 33 sec)
+0:03:47 load avg: 4.03 [134/433] test_urllib2net passed -- running: test_multiprocessing_spawn (2 min 36 sec)
+0:03:53 load avg: 4.03 [135/433] test_eintr passed -- running: test_multiprocessing_spawn (2 min 42 sec)
+0:03:53 load avg: 4.03 [136/433] test_genexps passed -- running: test_multiprocessing_spawn (2 min 43 sec)
+0:03:54 load avg: 4.03 [137/433] test_wave passed -- running: test_multiprocessing_spawn (2 min 43 sec)
+0:03:55 load avg: 3.95 [138/433] test_complex passed -- running: test_multiprocessing_spawn (2 min 45 sec)
+0:04:09 load avg: 3.73 [139/433] test_tools passed -- running: test_multiprocessing_spawn (2 min 58 sec)
+0:04:10 load avg: 3.73 [140/433] test_zoneinfo skipped -- running: test_multiprocessing_spawn (2 min 59 sec)
+test_zoneinfo skipped -- No module named '_lzma'
+0:04:11 load avg: 3.67 [141/433] test_yield_from passed -- running: test_multiprocessing_spawn (3 min)
+0:04:11 load avg: 3.67 [142/433] test_abc passed -- running: test_multiprocessing_spawn (3 min 1 sec)
+0:04:12 load avg: 3.67 [143/433] test_future passed -- running: test_multiprocessing_spawn (3 min 2 sec)
+0:04:14 load avg: 3.67 [144/433] test_userdict passed -- running: test_multiprocessing_spawn (3 min 3 sec)
+0:04:14 load avg: 3.67 [145/433] test_tcl skipped -- running: test_multiprocessing_spawn (3 min 4 sec)
+test_tcl skipped -- No module named '_tkinter'
+0:04:15 load avg: 3.61 [146/433] test_xdrlib passed -- running: test_multiprocessing_spawn (3 min 5 sec)
+0:04:26 load avg: 3.52 [147/433] test_email passed -- running: test_io (39.4 sec), test_multiprocessing_spawn (3 min 15 sec)
+0:04:27 load avg: 3.52 [148/433] test_coroutines passed -- running: test_io (40.3 sec), test_multiprocessing_spawn (3 min 16 sec)
+0:04:32 load avg: 3.32 [149/433] test_fork1 passed -- running: test_io (45.6 sec), test_multiprocessing_spawn (3 min 22 sec)
+/home/ec2-user/cpython/Lib/test/test_fork1.py:39: DeprecationWarning: This process (pid=54252) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+0:04:33 load avg: 3.32 [150/433] test_xmlrpc_net passed -- running: test_io (45.9 sec), test_multiprocessing_spawn (3 min 22 sec)
+0:04:42 load avg: 3.42 [151/433] test_io passed (54.3 sec) -- running: test_multiprocessing_spawn (3 min 31 sec)
+0:04:43 load avg: 3.42 [152/433] test_type_cache passed -- running: test_multiprocessing_spawn (3 min 33 sec)
+0:04:44 load avg: 3.42 [153/433] test_sqlite3 skipped -- running: test_multiprocessing_spawn (3 min 33 sec)
+test_sqlite3 skipped -- No module named '_sqlite3'
+0:04:45 load avg: 3.42 [154/433] test_dbm_ndbm skipped -- running: test_multiprocessing_spawn (3 min 34 sec)
+test_dbm_ndbm skipped -- No module named '_dbm'
+0:04:51 load avg: 3.50 [155/433] test_pow passed -- running: test_multiprocessing_spawn (3 min 40 sec)
+0:04:52 load avg: 3.50 [156/433] test_fileutils passed -- running: test_multiprocessing_spawn (3 min 41 sec)
+0:05:07 load avg: 3.66 [157/433] test_embed passed (34.2 sec) -- running: test_multiprocessing_spawn (3 min 56 sec)
+0:05:10 load avg: 3.66 [158/433] test_generators passed -- running: test_multiprocessing_spawn (3 min 59 sec)
+0:05:12 load avg: 3.61 [159/433] test_finalization passed -- running: test_multiprocessing_spawn (4 min 1 sec)
+0:05:20 load avg: 3.52 [160/433] test_audit passed -- running: test_multiprocessing_spawn (4 min 10 sec)
+0:05:21 load avg: 3.52 [161/433] test_zipfile passed -- running: test_multiprocessing_spawn (4 min 10 sec)
+0:05:21 load avg: 3.52 [162/433] test_unary passed -- running: test_multiprocessing_spawn (4 min 11 sec)
+0:05:22 load avg: 3.52 [163/433] test_contextlib_async passed -- running: test_multiprocessing_spawn (4 min 11 sec)
+0:05:22 load avg: 3.52 [164/433] test_ttk skipped -- running: test_multiprocessing_spawn (4 min 12 sec)
+test_ttk skipped -- No module named '_tkinter'
+0:05:23 load avg: 3.52 [165/433] test_epoll passed -- running: test_multiprocessing_spawn (4 min 12 sec)
+0:05:25 load avg: 3.52 [166/433] test_strtod passed -- running: test_multiprocessing_spawn (4 min 14 sec)
+0:05:26 load avg: 3.47 [167/433] test_largefile passed -- running: test_multiprocessing_spawn (4 min 15 sec)
+0:05:26 load avg: 3.47 [168/433] test_shlex passed -- running: test_multiprocessing_spawn (4 min 16 sec)
+0:05:27 load avg: 3.47 [169/433] test_gzip skipped -- running: test_multiprocessing_spawn (4 min 17 sec)
+test_gzip skipped -- No module named 'zlib'
+0:05:34 load avg: 3.36 [170/433] test_random passed -- running: test_multiprocessing_spawn (4 min 23 sec)
+0:05:35 load avg: 3.36 [171/433] test_pty passed -- running: test_multiprocessing_spawn (4 min 24 sec)
+hi there
+0:06:01 load avg: 3.00 [172/433] test_multiprocessing_spawn passed (4 min 50 sec) -- running: test_decimal (38.1 sec)
+0:06:05 load avg: 3.00 [173/433] test_decimal passed (41.4 sec) -- running: test_tokenize (30.0 sec)
+0:06:06 load avg: 3.00 [174/433] test_shelve passed -- running: test_tokenize (31.4 sec)
+0:06:07 load avg: 3.00 [175/433] test_curses skipped -- running: test_tokenize (32.1 sec)
+test_curses skipped -- No module named '_curses'
+0:06:09 load avg: 3.00 [176/433] test_lltrace passed -- running: test_tokenize (33.7 sec)
+0:06:21 load avg: 3.00 [177/433] test_support passed -- running: test_tokenize (46.4 sec)
+0:06:22 load avg: 3.00 [178/433] test_bigaddrspace passed -- running: test_tokenize (47.1 sec)
+0:06:23 load avg: 3.00 [179/433] test_picklebuffer passed -- running: test_tokenize (47.9 sec)
+0:06:25 load avg: 3.00 [180/433] test_ucn passed -- running: test_tokenize (49.6 sec)
+/home/ec2-user/cpython/Lib/test/support/__init__.py:743: ResourceWarning: unclosed <socket.socket [closed] fd=3, family=2, type=1, proto=6>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+0:06:26 load avg: 3.00 [181/433] test_wsgiref passed -- running: test_tokenize (51.0 sec)
+0:06:56 load avg: 3.00 running: test_hashlib (47.3 sec), test_tokenize (1 min 20 sec), test_pickle (30.0 sec)
+0:07:26 load avg: 3.00 running: test_hashlib (1 min 17 sec), test_tokenize (1 min 50 sec), test_pickle (1 min)
+0:07:29 load avg: 3.00 [182/433] test_pickle passed (1 min 2 sec) -- running: test_hashlib (1 min 20 sec), test_tokenize (1 min 53 sec)
+0:07:30 load avg: 3.00 [183/433] test_aifc passed -- running: test_hashlib (1 min 21 sec), test_tokenize (1 min 55 sec)
+0:07:44 load avg: 3.00 [184/433] test_hashlib passed (1 min 35 sec) -- running: test_tokenize (2 min 9 sec)
+0:07:46 load avg: 3.00 [185/433] test_unicode_file_functions passed -- running: test_tokenize (2 min 10 sec)
+0:07:47 load avg: 3.00 [186/433] test_urllib2_localnet passed -- running: test_tokenize (2 min 12 sec)
+0:07:53 load avg: 3.00 [187/433] test_crypt passed -- running: test_tokenize (2 min 17 sec)
+0:07:53 load avg: 3.00 [188/433] test_dictviews passed -- running: test_tokenize (2 min 18 sec)
+0:08:19 load avg: 3.01 [189/433] test_source_encoding passed (48.1 sec) -- running: test_tokenize (2 min 43 sec)
+0:08:19 load avg: 3.01 [190/433] test_pipes passed -- running: test_tokenize (2 min 44 sec)
+0:08:29 load avg: 2.86 [191/433] test_cmd_line_script passed -- running: test_multiprocessing_forkserver (35.7 sec), test_tokenize (2 min 53 sec)
+/home/ec2-user/cpython/Lib/subprocess.py:849: RuntimeWarning: pass_fds overriding close_fds.
+  warnings.warn("pass_fds overriding close_fds.", RuntimeWarning)
+0:08:32 load avg: 2.79 [192/433] test_tokenize passed (2 min 56 sec) -- running: test_multiprocessing_forkserver (38.6 sec)
+0:08:33 load avg: 2.79 [193/433] test_extcall passed -- running: test_multiprocessing_forkserver (39.6 sec)
+0:08:36 load avg: 2.72 [194/433] test_array passed -- running: test_multiprocessing_forkserver (43.0 sec)
+0:08:37 load avg: 2.72 [195/433] test_unicode_file passed -- running: test_multiprocessing_forkserver (43.7 sec)
+0:08:38 load avg: 2.72 [196/433] test_compiler_codegen passed -- running: test_multiprocessing_forkserver (44.3 sec)
+0:08:38 load avg: 2.72 [197/433] test_stringprep passed -- running: test_multiprocessing_forkserver (44.8 sec)
+0:08:39 load avg: 2.72 [198/433] test_eof passed -- running: test_multiprocessing_forkserver (45.8 sec)
+0:08:40 load avg: 2.72 [199/433] test_string passed -- running: test_multiprocessing_forkserver (46.6 sec)
+0:08:41 load avg: 2.75 [200/433] test_cgi passed -- running: test_multiprocessing_forkserver (47.8 sec)
+0:08:42 load avg: 2.75 [201/433] test_venv passed -- running: test_multiprocessing_forkserver (48.2 sec)
+Could not find platform dependent libraries <exec_prefix>
+0:08:42 load avg: 2.75 [202/433] test_rlcompleter passed -- running: test_multiprocessing_forkserver (49.0 sec)
+0:08:43 load avg: 2.75 [203/433] test_dynamic passed -- running: test_multiprocessing_forkserver (49.3 sec)
+0:08:45 load avg: 2.75 [204/433] test_py_compile passed -- running: test_multiprocessing_forkserver (51.5 sec)
+0:08:45 load avg: 2.75 [205/433] test_fnmatch passed -- running: test_multiprocessing_forkserver (52.0 sec)
+0:08:46 load avg: 2.77 [206/433] test_collections passed -- running: test_multiprocessing_forkserver (52.7 sec)
+0:08:47 load avg: 2.77 [207/433] test_codecmaps_hk passed -- running: test_multiprocessing_forkserver (53.2 sec)
+0:08:47 load avg: 2.77 [208/433] test_contains passed -- running: test_multiprocessing_forkserver (53.8 sec)
+0:08:48 load avg: 2.77 [209/433] test_nis skipped -- running: test_multiprocessing_forkserver (54.3 sec)
+test_nis skipped -- No module named 'nis'
+0:08:48 load avg: 2.77 [210/433] test_int passed -- running: test_multiprocessing_forkserver (54.7 sec)
+0:08:48 load avg: 2.77 [211/433] test_frozen passed -- running: test_multiprocessing_forkserver (54.9 sec)
+0:08:49 load avg: 2.77 [212/433] test_dtrace passed -- running: test_multiprocessing_forkserver (55.4 sec)
+0:08:51 load avg: 2.62 [213/433] test_cprofile passed -- running: test_multiprocessing_forkserver (57.4 sec)
+0:08:51 load avg: 2.62 [214/433] test_doctest2 passed -- running: test_multiprocessing_forkserver (57.7 sec)
+0:09:21 load avg: 2.23 running: test_multiprocessing_forkserver (1 min 27 sec), test_math (30.0 sec), test_concurrent_futures (33.1 sec)
+0:09:51 load avg: 3.56 running: test_multiprocessing_forkserver (1 min 57 sec), test_math (1 min), test_concurrent_futures (1 min 3 sec)
+0:09:56 load avg: 3.56 [215/433] test_multiprocessing_forkserver passed (2 min 1 sec) -- running: test_math (1 min 4 sec), test_concurrent_futures (1 min 7 sec)
+0:10:05 load avg: 3.24 [216/433] test_timeout passed -- running: test_math (1 min 14 sec), test_concurrent_futures (1 min 17 sec)
+0:10:08 load avg: 3.14 [217/433] test_heapq passed -- running: test_math (1 min 16 sec), test_concurrent_futures (1 min 19 sec)
+0:10:08 load avg: 3.14 [218/433] test_startfile skipped -- running: test_math (1 min 16 sec), test_concurrent_futures (1 min 20 sec)
+test_startfile skipped -- object <module 'os' from '/home/ec2-user/cpython/Lib/os.py'> has no attribute 'startfile'
+0:10:16 load avg: 3.21 [219/433] test_pdb passed -- running: test_math (1 min 24 sec), test_concurrent_futures (1 min 27 sec)
+0:10:16 load avg: 3.11 [220/433] test_opcodes passed -- running: test_math (1 min 25 sec), test_concurrent_futures (1 min 28 sec)
+0:10:17 load avg: 3.11 [221/433] test_codecencodings_tw passed -- running: test_math (1 min 25 sec), test_concurrent_futures (1 min 28 sec)
+0:10:17 load avg: 3.11 [222/433] test_sndhdr passed -- running: test_math (1 min 26 sec), test_concurrent_futures (1 min 29 sec)
+0:10:18 load avg: 3.11 [223/433] test_errno passed -- running: test_math (1 min 26 sec), test_concurrent_futures (1 min 29 sec)
+0:10:21 load avg: 3.26 [224/433] test_codecmaps_kr passed -- running: test_math (1 min 30 sec), test_concurrent_futures (1 min 33 sec)
+0:10:23 load avg: 3.26 [225/433] test_pstats passed -- running: test_math (1 min 31 sec), test_concurrent_futures (1 min 34 sec)
+0:10:24 load avg: 3.26 [226/433] test_slice passed -- running: test_math (1 min 32 sec), test_concurrent_futures (1 min 36 sec)
+0:10:25 load avg: 3.26 [227/433] test_xxlimited passed -- running: test_math (1 min 33 sec), test_concurrent_futures (1 min 36 sec)
+0:10:26 load avg: 3.26 [228/433] test_descrtut passed -- running: test_math (1 min 34 sec), test_concurrent_futures (1 min 37 sec)
+0:10:27 load avg: 3.24 [229/433] test_atexit passed -- running: test_math (1 min 36 sec), test_concurrent_futures (1 min 39 sec)
+0:10:29 load avg: 3.24 [230/433] test_docxmlrpc passed -- running: test_math (1 min 37 sec), test_concurrent_futures (1 min 40 sec)
+0:10:30 load avg: 3.24 [231/433] test_genericpath passed -- running: test_math (1 min 38 sec), test_concurrent_futures (1 min 41 sec)
+0:10:40 load avg: 3.37 [232/433] test_imaplib passed -- running: test_math (1 min 49 sec), test_concurrent_futures (1 min 52 sec)
+0:11:10 load avg: 3.50 running: test_regrtest (30.0 sec), test_math (2 min 19 sec), test_concurrent_futures (2 min 22 sec)
+0:11:33 load avg: 3.78 [233/433] test_regrtest passed (52.7 sec) -- running: test_math (2 min 42 sec), test_concurrent_futures (2 min 45 sec)
+0:11:34 load avg: 3.78 [234/433] test_structseq passed -- running: test_math (2 min 42 sec), test_concurrent_futures (2 min 45 sec)
+0:11:34 load avg: 3.78 [235/433] test_operator passed -- running: test_math (2 min 43 sec), test_concurrent_futures (2 min 46 sec)
+0:11:36 load avg: 3.64 [236/433] test_ordered_dict passed -- running: test_math (2 min 44 sec), test_concurrent_futures (2 min 48 sec)
+0:11:37 load avg: 3.64 [237/433] test_keywordonlyarg passed -- running: test_math (2 min 45 sec), test_concurrent_futures (2 min 48 sec)
+0:11:37 load avg: 3.64 [238/433] test_lzma skipped -- running: test_math (2 min 46 sec), test_concurrent_futures (2 min 49 sec)
+test_lzma skipped -- No module named '_lzma'
+0:11:43 load avg: 3.43 [239/433] test_wait4 passed -- running: test_math (2 min 51 sec), test_concurrent_futures (2 min 54 sec)
+0:11:44 load avg: 3.43 [240/433] test_mmap passed -- running: test_math (2 min 52 sec), test_concurrent_futures (2 min 55 sec)
+0:11:45 load avg: 3.43 [241/433] test_clinic passed -- running: test_math (2 min 53 sec), test_concurrent_futures (2 min 56 sec)
+0:11:45 load avg: 3.43 [242/433] test_super passed -- running: test_math (2 min 54 sec), test_concurrent_futures (2 min 57 sec)
+0:11:46 load avg: 3.31 [243/433] test_ensurepip passed -- running: test_math (2 min 54 sec), test_concurrent_futures (2 min 58 sec)
+0:11:47 load avg: 3.31 [244/433] test_setcomps passed -- running: test_math (2 min 55 sec), test_concurrent_futures (2 min 58 sec)
+0:11:47 load avg: 3.31 [245/433] test_smtpnet skipped -- running: test_math (2 min 56 sec), test_concurrent_futures (2 min 59 sec)
+test_smtpnet skipped -- No module named '_ssl'
+0:11:48 load avg: 3.31 [246/433] test_binop passed -- running: test_math (2 min 56 sec), test_concurrent_futures (2 min 59 sec)
+0:11:53 load avg: 3.13 [247/433] test_interpreters passed -- running: test_math (3 min 2 sec), test_concurrent_futures (3 min 5 sec)
+0:11:54 load avg: 3.13 [248/433] test_kqueue skipped -- running: test_math (3 min 2 sec), test_concurrent_futures (3 min 5 sec)
+test_kqueue skipped -- test works only on BSD
+0:11:54 load avg: 3.13 [249/433] test_bdb passed -- running: test_math (3 min 3 sec), test_concurrent_futures (3 min 6 sec)
+0:11:55 load avg: 3.13 [250/433] test_future3 passed -- running: test_math (3 min 3 sec), test_concurrent_futures (3 min 6 sec)
+0:11:55 load avg: 3.13 [251/433] test_dynamicclassattribute passed -- running: test_math (3 min 4 sec), test_concurrent_futures (3 min 7 sec)
+0:11:56 load avg: 3.13 [252/433] test_grammar passed -- running: test_math (3 min 4 sec), test_concurrent_futures (3 min 7 sec)
+0:11:56 load avg: 3.04 [253/433] test_netrc passed -- running: test_math (3 min 5 sec), test_concurrent_futures (3 min 8 sec)
+0:12:02 load avg: 2.95 [254/433] test_peepholer passed -- running: test_math (3 min 11 sec), test_concurrent_futures (3 min 14 sec)
+0:12:09 load avg: 2.88 [255/433] test_concurrent_futures passed (3 min 20 sec) -- running: test_math (3 min 18 sec)
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=57366) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ec2-user/cpython/Lib/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ec2-user/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+0:12:10 load avg: 2.88 [256/433] test_unicode_identifiers passed -- running: test_math (3 min 18 sec)
+0:12:11 load avg: 2.89 [257/433] test_builtin passed -- running: test_math (3 min 20 sec)
+0:12:15 load avg: 2.89 [258/433] test_fstring passed -- running: test_math (3 min 24 sec)
+0:12:19 load avg: 2.90 [259/433] test_doctest passed -- running: test_math (3 min 27 sec)
+<frozen importlib._bootstrap>:824: ImportWarning: TestImporter.exec_module() not found; falling back to load_module()
+0:12:28 load avg: 2.91 [260/433] test_tarfile passed -- running: test_math (3 min 36 sec)
+0:12:28 load avg: 2.91 [261/433] test__opcode passed -- running: test_math (3 min 37 sec)
+0:12:32 load avg: 2.92 [262/433] test_importlib passed -- running: test_math (3 min 40 sec)
+0:12:33 load avg: 2.92 [263/433] test_zipimport passed -- running: test_math (3 min 41 sec)
+0:12:33 load avg: 2.92 [264/433] test__xxsubinterpreters passed -- running: test_math (3 min 41 sec)
+0:12:35 load avg: 2.92 [265/433] test_plistlib passed -- running: test_math (3 min 43 sec)
+0:12:35 load avg: 2.92 [266/433] test_shutil passed -- running: test_math (3 min 44 sec)
+0:12:36 load avg: 2.93 [267/433] test_memoryview passed -- running: test_math (3 min 45 sec)
+0:12:37 load avg: 2.93 [268/433] test_socketserver passed -- running: test_math (3 min 45 sec)
+/home/ec2-user/cpython/Lib/test/test_socketserver.py:63: DeprecationWarning: This process (pid=62253) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+/home/ec2-user/cpython/Lib/socketserver.py:610: DeprecationWarning: This process (pid=62253) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+0:12:37 load avg: 2.93 [269/433] test_quopri passed -- running: test_math (3 min 46 sec)
+0:12:42 load avg: 2.93 [270/433] test_math passed (3 min 49 sec)
+0:12:44 load avg: 2.93 [271/433] test_runpy passed
+0:12:45 load avg: 2.93 [272/433] test_multibytecodec passed
+0:12:46 load avg: 2.93 [273/433] test_xxtestfuzz passed
+/home/ec2-user/cpython/Lib/test/test_xxtestfuzz.py:13: DeprecationWarning: module 'sre_compile' is deprecated
+  _xxtestfuzz.run(b"")
+/home/ec2-user/cpython/Lib/test/test_xxtestfuzz.py:13: DeprecationWarning: module 'sre_constants' is deprecated
+  _xxtestfuzz.run(b"")
+0:12:50 load avg: 2.94 [274/433] test_pyclbr passed
+0:12:51 load avg: 2.86 [275/433] test_cmath passed
+0:12:54 load avg: 2.86 [276/433] test_traceback passed
+0:12:55 load avg: 2.86 [277/433] test_getopt passed
+0:12:57 load avg: 2.71 [278/433] test_threadsignals passed
+0:13:15 load avg: 2.56 [279/433] test_xmlrpc passed
+0:13:15 load avg: 2.56 [280/433] test_stat passed
+0:13:19 load avg: 2.59 [281/433] test_httpservers passed
+/home/ec2-user/cpython/Lib/http/server.py:1168: DeprecationWarning: This process (pid=62470) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+0:13:20 load avg: 2.59 [282/433] test_module passed
+0:13:21 load avg: 2.62 [283/433] test_buffer passed
+0:13:21 load avg: 2.62 [284/433] test_minidom passed
+0:13:22 load avg: 2.62 [285/433] test_sys_setprofile passed
+0:13:29 load avg: 2.65 [286/433] test_deque passed -- running: test_compileall (33.8 sec)
+0:13:29 load avg: 2.65 [287/433] test_bz2 skipped -- running: test_compileall (34.5 sec)
+test_bz2 skipped -- No module named '_bz2'
+0:13:30 load avg: 2.65 [288/433] test_codecencodings_hk passed -- running: test_compileall (35.4 sec)
+0:13:31 load avg: 2.65 [289/433] test_winsound skipped (resource denied) -- running: test_compileall (36.1 sec)
+test_winsound skipped -- Use of the 'audio' resource not enabled
+0:14:01 load avg: 2.73 [290/433] test_compileall passed (1 min 5 sec) -- running: test_lib2to3 (38.9 sec)
+0:14:01 load avg: 2.67 [291/433] test_index passed -- running: test_lib2to3 (39.5 sec), test_multiprocessing_fork (30.5 sec)
+0:14:31 load avg: 2.71 running: test_lib2to3 (1 min 9 sec), test_threading (30.0 sec), test_multiprocessing_fork (1 min)
+0:14:49 load avg: 2.78 [292/433] test_threading passed (46.8 sec) -- running: test_lib2to3 (1 min 27 sec), test_multiprocessing_fork (1 min 18 sec)
+0:14:54 load avg: 2.79 [293/433] test_future4 passed -- running: test_lib2to3 (1 min 31 sec), test_multiprocessing_fork (1 min 22 sec)
+0:15:06 load avg: 2.61 [294/433] test_codecmaps_tw passed -- running: test_lib2to3 (1 min 44 sec), test_multiprocessing_fork (1 min 35 sec)
+0:15:10 load avg: 2.61 [295/433] test_abstract_numbers passed -- running: test_lib2to3 (1 min 47 sec), test_multiprocessing_fork (1 min 38 sec)
+0:15:16 load avg: 2.82 [296/433] test_ntpath passed -- running: test_lib2to3 (1 min 54 sec), test_multiprocessing_fork (1 min 45 sec)
+0:15:21 load avg: 2.82 [297/433] test_print passed -- running: test_lib2to3 (1 min 59 sec), test_multiprocessing_fork (1 min 50 sec)
+0:15:26 load avg: 2.83 [298/433] test_sundry passed -- running: test_lib2to3 (2 min 3 sec), test_multiprocessing_fork (1 min 54 sec)
+0:15:56 load avg: 3.13 running: test_lib2to3 (2 min 33 sec), test_multiprocessing_fork (2 min 24 sec)
+0:16:24 load avg: 2.83 [299/433] test_multiprocessing_fork passed (2 min 51 sec) -- running: test_lib2to3 (3 min 2 sec), test_set (58.3 sec)
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=62843) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=62651) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=64553) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ec2-user/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=62651) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+0:16:35 load avg: 2.86 [300/433] test_threading_local passed -- running: test_lib2to3 (3 min 13 sec), test_set (1 min 9 sec)
+0:16:39 load avg: 2.87 [301/433] test_tix skipped -- running: test_lib2to3 (3 min 16 sec), test_set (1 min 12 sec)
+test_tix skipped -- No module named '_tkinter'
+0:16:45 load avg: 2.88 [302/433] test_syslog passed -- running: test_lib2to3 (3 min 22 sec), test_set (1 min 18 sec)
+0:16:50 load avg: 2.89 [303/433] test_poplib passed -- running: test_lib2to3 (3 min 28 sec), test_set (1 min 24 sec)
+0:16:56 load avg: 2.90 [304/433] test_ssl skipped -- running: test_lib2to3 (3 min 33 sec), test_set (1 min 29 sec)
+test_ssl skipped -- No module named '_ssl'
+0:17:16 load avg: 2.93 [305/433] test_set passed (1 min 45 sec) -- running: test_lib2to3 (3 min 54 sec)
+0:17:46 load avg: 3.02 running: test_lib2to3 (4 min 24 sec), test_c_locale_coercion (30.1 sec), test_compile (50.3 sec)
+0:17:52 load avg: 3.02 [306/433] test_c_locale_coercion passed (33.9 sec) -- running: test_lib2to3 (4 min 30 sec), test_compile (56.8 sec)
+0:17:57 load avg: 3.02 [307/433] test_re passed -- running: test_lib2to3 (4 min 35 sec), test_compile (1 min 1 sec)
+0:17:58 load avg: 3.02 [308/433] test_contextlib passed -- running: test_lib2to3 (4 min 36 sec), test_compile (1 min 2 sec)
+0:18:08 load avg: 3.02 [309/433] test_compile passed (1 min 9 sec) -- running: test_lib2to3 (4 min 46 sec)
+0:18:09 load avg: 3.02 [310/433] test_flufl passed -- running: test_lib2to3 (4 min 47 sec)
+0:18:10 load avg: 3.02 [311/433] test_codeccallbacks passed -- running: test_lib2to3 (4 min 48 sec)
+0:18:11 load avg: 3.02 [312/433] test_format passed -- running: test_lib2to3 (4 min 49 sec)
+0:18:14 load avg: 2.93 [313/433] test_typing passed -- running: test_lib2to3 (4 min 52 sec)
+0:18:15 load avg: 2.93 [314/433] test_audioop passed -- running: test_lib2to3 (4 min 53 sec)
+0:18:18 load avg: 2.86 [315/433] test_glob passed -- running: test_lib2to3 (4 min 56 sec)
+0:18:19 load avg: 2.86 [316/433] test_typechecks passed -- running: test_lib2to3 (4 min 57 sec)
+0:18:49 load avg: 3.70 running: test_lib2to3 (5 min 27 sec), test_multiprocessing_main_handling (50.9 sec), test_capi (30.0 sec)
+0:19:19 load avg: 4.68 running: test_lib2to3 (5 min 57 sec), test_multiprocessing_main_handling (1 min 20 sec), test_capi (1 min)
+0:19:49 load avg: 4.63 running: test_lib2to3 (6 min 27 sec), test_multiprocessing_main_handling (1 min 50 sec), test_capi (1 min 30 sec)
+0:20:19 load avg: 5.26 running: test_lib2to3 (6 min 57 sec), test_multiprocessing_main_handling (2 min 20 sec), test_capi (2 min)
+0:20:41 load avg: 5.27 [317/433] test_multiprocessing_main_handling passed (2 min 42 sec) -- running: test_lib2to3 (7 min 19 sec), test_capi (2 min 22 sec)
+0:21:06 load avg: 4.49 [318/433] test_mailbox passed -- running: test_lib2to3 (7 min 44 sec), test_capi (2 min 47 sec)
+0:21:12 load avg: 4.26 [319/433] test_tomllib passed -- running: test_lib2to3 (7 min 50 sec), test_capi (2 min 53 sec)
+0:21:23 load avg: 4.07 [320/433] test_base64 passed -- running: test_lib2to3 (8 min 1 sec), test_capi (3 min 4 sec)
+0:21:27 load avg: 4.07 [321/433] test_lib2to3 passed (8 min 3 sec) -- running: test_capi (3 min 7 sec)
+0:21:28 load avg: 3.98 [322/433] test_global passed -- running: test_capi (3 min 8 sec)
+0:21:58 load avg: 3.59 running: test_unparse (30.8 sec), test_codecs (30.1 sec), test_capi (3 min 38 sec)
+0:22:07 load avg: 3.55 [323/433] test_codecs passed (35.7 sec) -- running: test_unparse (40.0 sec), test_capi (3 min 47 sec)
+0:22:37 load avg: 3.40 running: test_unparse (1 min 10 sec), test_tracemalloc (30.0 sec), test_capi (4 min 17 sec)
+0:22:53 load avg: 3.29 [324/433] test_tracemalloc passed (43.9 sec) -- running: test_unparse (1 min 26 sec), test_capi (4 min 34 sec)
+0:23:23 load avg: 3.10 running: test_unparse (1 min 56 sec), test_subprocess (30.0 sec), test_capi (5 min 4 sec)
+0:23:53 load avg: 3.07 running: test_unparse (2 min 26 sec), test_subprocess (1 min), test_capi (5 min 34 sec)
+0:24:23 load avg: 3.04 running: test_unparse (2 min 56 sec), test_subprocess (1 min 30 sec), test_capi (6 min 4 sec)
+0:24:53 load avg: 2.89 running: test_unparse (3 min 26 sec), test_subprocess (2 min), test_capi (6 min 34 sec)
+0:25:23 load avg: 3.13 running: test_unparse (3 min 56 sec), test_subprocess (2 min 30 sec), test_capi (7 min 4 sec)
+0:25:53 load avg: 3.19 running: test_unparse (4 min 26 sec), test_subprocess (3 min), test_capi (7 min 34 sec)
+0:25:58 load avg: 3.17 [325/433] test_subprocess passed (3 min 3 sec) -- running: test_unparse (4 min 31 sec), test_capi (7 min 39 sec)
+0:26:02 load avg: 3.17 [326/433] test_stable_abi_ctypes skipped -- running: test_unparse (4 min 34 sec), test_capi (7 min 42 sec)
+test_stable_abi_ctypes skipped -- No module named '_ctypes'
+0:26:08 load avg: 3.22 [327/433] test_select passed -- running: test_unparse (4 min 41 sec), test_capi (7 min 49 sec)
+0:26:12 load avg: 3.22 [328/433] test_cppext passed -- running: test_unparse (4 min 45 sec), test_capi (7 min 53 sec)
+0:26:16 load avg: 3.20 [329/433] test_property passed -- running: test_unparse (4 min 49 sec), test_capi (7 min 57 sec)
+0:26:21 load avg: 3.18 [330/433] test_colorsys passed -- running: test_unparse (4 min 53 sec), test_capi (8 min 1 sec)
+0:26:27 load avg: 3.17 [331/433] test_sysconfig passed -- running: test_unparse (5 min), test_capi (8 min 8 sec)
+0:26:35 load avg: 3.14 [332/433] test_syntax passed -- running: test_unparse (5 min 8 sec), test_capi (8 min 16 sec)
+0:26:40 load avg: 3.13 [333/433] test_isinstance passed -- running: test_unparse (5 min 12 sec), test_capi (8 min 20 sec)
+0:27:10 load avg: 3.29 running: test_unparse (5 min 42 sec), test_pickletools (30.1 sec), test_capi (8 min 50 sec)
+0:27:40 load avg: 3.18 running: test_unparse (6 min 12 sec), test_pickletools (1 min), test_capi (9 min 20 sec)
+0:27:48 load avg: 3.16 [334/433] test_pickletools passed (1 min 4 sec) -- running: test_unparse (6 min 20 sec), test_capi (9 min 28 sec)
+0:27:56 load avg: 3.14 [335/433] test_context passed -- running: test_unparse (6 min 29 sec), test_capi (9 min 37 sec)
+0:28:02 load avg: 3.05 [336/433] test_wait3 passed -- running: test_unparse (6 min 35 sec), test_capi (9 min 43 sec)
+0:28:03 load avg: 3.04 [337/433] test_xml_dom_minicompat passed -- running: test_unparse (6 min 36 sec), test_capi (9 min 44 sec)
+0:28:11 load avg: 3.04 [338/433] test_userstring passed -- running: test_unparse (6 min 44 sec), test_capi (9 min 52 sec)
+0:28:12 load avg: 3.04 [339/433] test__locale passed -- running: test_unparse (6 min 45 sec), test_capi (9 min 53 sec)
+0:28:13 load avg: 3.04 [340/433] test_threadedtempfile passed -- running: test_unparse (6 min 46 sec), test_capi (9 min 54 sec)
+0:28:23 load avg: 3.03 [341/433] test_unparse passed (6 min 53 sec) -- running: test_capi (10 min 4 sec)
+0:28:24 load avg: 3.03 [342/433] test_calendar passed -- running: test_capi (10 min 5 sec)
+0:28:25 load avg: 3.03 [343/433] test_hmac passed -- running: test_capi (10 min 5 sec)
+0:28:25 load avg: 3.03 [344/433] test_funcattrs passed -- running: test_capi (10 min 6 sec)
+0:28:29 load avg: 3.03 [345/433] test_cgitb passed -- running: test_capi (10 min 10 sec)
+0:28:32 load avg: 3.03 [346/433] test_symtable passed -- running: test_capi (10 min 13 sec)
+0:28:36 load avg: 3.02 [347/433] test_augassign passed -- running: test_capi (10 min 17 sec)
+0:28:43 load avg: 3.02 [348/433] test_tuple passed -- running: test_capi (10 min 23 sec)
+0:28:44 load avg: 3.02 [349/433] test_getpath passed -- running: test_capi (10 min 25 sec)
+0:28:52 load avg: 3.02 [350/433] test_script_helper passed -- running: test_capi (10 min 33 sec)
+0:28:56 load avg: 3.02 [351/433] test___future__ passed -- running: test_capi (10 min 36 sec)
+0:29:02 load avg: 3.02 [352/433] test_uuid passed -- running: test_capi (10 min 43 sec)
+usage: [-h] [-u {uuid1,uuid3,uuid4,uuid5}] [-n NAMESPACE] [-N NAME]
+: error: Incorrect number of arguments. uuid3 requires a namespace and a name. Run 'python -m uuid -h' for more information.
+usage: [-h] [-u {uuid1,uuid3,uuid4,uuid5}] [-n NAMESPACE] [-N NAME]
+: error: Incorrect number of arguments. uuid3 requires a namespace and a name. Run 'python -m uuid -h' for more information.
+0:29:15 load avg: 2.93 [353/433] test_posix passed -- running: test_capi (10 min 56 sec)
+0:29:24 load avg: 2.94 [354/433] test_warnings passed -- running: test_capi (11 min 5 sec)
+/home/ec2-user/cpython/Lib/test/test_warnings/__init__.py:390: UserWarning: Other types of warnings are not errors
+  self.module.warn("Other types of warnings are not errors")
+/home/ec2-user/cpython/Lib/test/test_warnings/__init__.py:390: UserWarning: Other types of warnings are not errors
+  self.module.warn("Other types of warnings are not errors")
+0:29:28 load avg: 2.94 [355/433] test_ctypes skipped -- running: test_capi (11 min 9 sec)
+test_ctypes skipped -- No module named '_ctypes'
+0:29:32 load avg: 2.95 [356/433] test_gdb skipped -- running: test_capi (11 min 12 sec)
+test_gdb skipped -- Couldn't find gdb on the path
+0:29:35 load avg: 2.95 [357/433] test_winreg skipped -- running: test_capi (11 min 16 sec)
+test_winreg skipped -- No module named 'winreg'
+0:30:05 load avg: 3.05 running: test_datetime (30.0 sec), test_itertools (50.0 sec), test_capi (11 min 46 sec)
+0:30:34 load avg: 3.01 [358/433] test_datetime passed (55.9 sec) -- running: test_itertools (1 min 19 sec), test_capi (12 min 15 sec)
+0:31:05 load avg: 3.07 running: test_asyncio (30.1 sec), test_itertools (1 min 49 sec), test_capi (12 min 45 sec)
+0:31:13 load avg: 2.98 [359/433] test_capi passed (12 min 52 sec) -- running: test_asyncio (38.4 sec), test_itertools (1 min 57 sec)
+0:31:21 load avg: 3.14 [360/433] test_metaclass passed -- running: test_asyncio (47.0 sec), test_itertools (2 min 6 sec)
+0:31:27 load avg: 3.13 [361/433] test_itertools passed (2 min 8 sec) -- running: test_asyncio (52.9 sec)
+0:31:57 load avg: 3.22 running: test_asyncio (1 min 22 sec), test_json (30.1 sec), test_unicodedata (35.9 sec)
+0:32:27 load avg: 3.25 running: test_asyncio (1 min 52 sec), test_json (1 min), test_unicodedata (1 min 5 sec)
+0:32:39 load avg: 3.20 [362/433] test_json passed (1 min 8 sec) -- running: test_asyncio (2 min 4 sec), test_unicodedata (1 min 17 sec)
+0:32:48 load avg: 3.18 [363/433] test_perf_profiler passed -- running: test_asyncio (2 min 13 sec), test_unicodedata (1 min 26 sec)
+0:33:07 load avg: 3.13 [364/433] test_exceptions passed -- running: test_asyncio (2 min 32 sec), test_unicodedata (1 min 45 sec)
+0:33:25 load avg: 3.09 [365/433] test_bytes passed -- running: test_asyncio (2 min 50 sec), test_unicodedata (2 min 3 sec)
+0:33:38 load avg: 3.08 [366/433] test_xml_etree_c passed -- running: test_asyncio (3 min 4 sec), test_unicodedata (2 min 17 sec)
+0:33:43 load avg: 3.07 [367/433] test_genericclass passed -- running: test_asyncio (3 min 8 sec), test_unicodedata (2 min 21 sec)
+0:33:49 load avg: 3.13 [368/433] test_copyreg passed -- running: test_asyncio (3 min 14 sec), test_unicodedata (2 min 27 sec)
+0:33:52 load avg: 3.13 [369/433] test_zlib skipped -- running: test_asyncio (3 min 17 sec), test_unicodedata (2 min 30 sec)
+test_zlib skipped -- No module named 'zlib'
+0:33:57 load avg: 3.12 [370/433] test_unpack passed -- running: test_asyncio (3 min 22 sec), test_unicodedata (2 min 35 sec)
