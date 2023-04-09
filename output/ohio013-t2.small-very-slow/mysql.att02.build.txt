@@ -1,0 +1,279 @@
+I accidentally killed this one because I forgot to nohup.
+It started quickly because the previous one had gotten to around 30% before aborting.
+
+
+~ ~/scripts ~
+pwd /home/ec2-user/build-mysql-server
+*****
+* cmake 
+*****
+
+
+-- Running cmake version 3.22.2
+-- Found Git: /usr/bin/git (found version "2.39.2") 
+-- CMAKE_MODULE_PATH is /home/ec2-user/mysql-server/cmake
+-- MySQL 8.0.32
+-- Source directory /home/ec2-user/mysql-server
+-- Binary directory /home/ec2-user/build-mysql-server
+-- CMAKE_GENERATOR: Unix Makefiles
+-- SIZEOF_VOIDP 8
+-- Packaging as: mysql-8.0.32-Linux-x86_64
+-- Local boost dir /home/ec2-user/boost/boost_1_77_0
+-- Local boost zip /home/ec2-user/boost/boost_1_77_0.tar.bz2
+-- Found /home/ec2-user/boost/boost_1_77_0/boost/version.hpp 
+-- BOOST_VERSION_NUMBER is #define BOOST_VERSION 107700
+-- BOOST_INCLUDE_DIR /home/ec2-user/boost/boost_1_77_0
+-- NUMA library missing or required version not available
+-- ZLIB_VERSION (bundled) is 1.2.13
+-- ZLIB_INCLUDE_DIR /home/ec2-user/mysql-server/extra/zlib/zlib-1.2.13
+-- ZLIB_LIBRARY zlib
+-- ZSTD_LEGACY_SUPPORT not defined!
+-- ZSTD_VERSION (bundled) is 1.5.0
+-- ZSTD_INCLUDE_DIR /home/ec2-user/mysql-server/extra/zstd/zstd-1.5.0/lib
+-- ZSTD_LIBRARY zstd
+-- OPENSSL_VERSION (system) is 3.0.8
+-- The openssl command does not support zlib
+-- OPENSSL_INCLUDE_DIR = /usr/include
+-- OPENSSL_LIBRARY = /usr/lib64/libssl.so
+-- CRYPTO_LIBRARY = /usr/lib64/libcrypto.so
+-- OPENSSL_LIB_DIR = 
+-- OPENSSL_VERSION_MAJOR = 3
+-- OPENSSL_VERSION_MINOR = 0
+-- OPENSSL_FIX_VERSION = 8
+-- SSL_LIBRARIES = /usr/lib64/libssl.so;/usr/lib64/libcrypto.so
+-- KERBEROS path is none, disabling kerberos support.
+-- HAVE_KRB5_KRB5_H  
+-- KERBEROS_LIBRARIES  
+-- AWK_EXECUTABLE is /usr/bin/gawk
+-- Found Git: /usr/bin/git  
+-- LIBEVENT_VERSION (bundled) 2.1.11
+-- LIBEVENT_INCLUDE_DIRS /home/ec2-user/mysql-server/extra/libevent/libevent-2.1.11-stable/include;/home/ec2-user/build-mysql-server/extra/libevent/libevent-2.1.11-stable/include
+-- LIBEVENT_LIBRARIES event_core;event_extra;event_openssl;event_pthreads
+-- LZ4_VERSION (bundled) is 1.9.4
+-- LZ4_INCLUDE_DIR /home/ec2-user/mysql-server/extra/lz4/lz4-1.9.4/lib
+-- LZ4_LIBRARY lz4_lib
+-- ICU_VERSION (bundled) is 69
+-- ICU_INCLUDE_DIRS /home/ec2-user/mysql-server/extra/icu/icu-release-69-1/source/common;/home/ec2-user/mysql-server/extra/icu/icu-release-69-1/source/stubdata;/home/ec2-user/mysql-server/extra/icu/icu-release-69-1/source/i18n
+-- ICU_LIBRARIES icui18n;icuuc;icustubdata
+-- PROTOBUF_VERSION (bundled) is 3.19.4
+-- PROTOBUF_INCLUDE_DIR /home/ec2-user/mysql-server/extra/protobuf/protobuf-3.19.4/src
+-- PROTOBUF_LIBRARY libprotobuf
+-- PROTOBUF_LITE_LIBRARY libprotobuf-lite
+-- PROTOBUF_PROTOC_EXECUTABLE protoc
+-- WITH_CURL=none, not using any curl library.
+-- CURL_LIBRARY = 
+-- CURL_INCLUDE_DIR = 
+-- RAPIDJSON_INCLUDE_DIR /home/ec2-user/mysql-server/extra/rapidjson/include
+-- RAPIDJSON_MAJOR_VERSION is 1
+-- RAPIDJSON_MINOR_VERSION is 1
+-- FIDO_VERSION (bundled) is 1.8.0
+-- FIDO_INCLUDE_DIR /home/ec2-user/mysql-server/extra/libfido2/libfido2-1.8.0/src
+-- FIDO_LIBRARY fido2
+-- CMAKE_MODULE_LINKER_FLAGS_DEBUG  -Wl,-rpath,'$ORIGIN/../../private'
+-- CMAKE_SHARED_LINKER_FLAGS_DEBUG  -Wl,-rpath,'$ORIGIN/../../private'
+-- Found Unix DNS SRV APIs
+-- Skipping the LDAP client authentication plugin
+-- Skipping FIDO client authentication plugin.
+-- Skipping the KERBEROS client authentication plugin.
+-- Skipping the OCI authentication client plugin.
+-- Library mysqlclient depends on OSLIBS m;/usr/lib64/libssl.so;/usr/lib64/libcrypto.so
+-- MERGE_CONVENIENCE_LIBRARIES TARGET mysqlclient
+-- MERGE_CONVENIENCE_LIBRARIES LIBS clientlib;mytime;strings;vio;mysys;zlib;zstd
+-- Building ndbcluster plugin
+-- Excluding Cluster Java components
+-- LIBS_TO_MERGE mysys;mytime;ndbapi;ndbgeneral;ndblogger;ndbmgmapi;ndbmgmcommon;ndbportlib;ndbsignaldata;ndbtrace;ndbtransport;strings;zlib
+-- Library ndbclient_static depends on OSLIBS m;/usr/lib64/libssl.so;/usr/lib64/libcrypto.so
+-- MERGE_CONVENIENCE_LIBRARIES TARGET ndbclient_static
+-- MERGE_CONVENIENCE_LIBRARIES LIBS mysys;mytime;ndbapi;ndbgeneral;ndblogger;ndbmgmapi;ndbmgmcommon;ndbportlib;ndbsignaldata;ndbtrace;ndbtransport;strings;zlib
+-- RPC_INCLUDE_DIRS /usr/include/tirpc
+-- MYSQLX - Text log of protobuf messages enabled
+-- Library json_binlog_static depends on OSLIBS m;/usr/lib64/libssl.so;/usr/lib64/libcrypto.so
+-- MERGE_CONVENIENCE_LIBRARIES TARGET json_binlog_static
+-- MERGE_CONVENIENCE_LIBRARIES LIBS json_client_library;mysys;mytime;strings
+-- BISON outputs /home/ec2-user/build-mysql-server/sql/sql_yacc.cc;/home/ec2-user/build-mysql-server/sql/sql_yacc.h
+-- BISON outputs /home/ec2-user/build-mysql-server/sql/sql_hints.yy.cc;/home/ec2-user/build-mysql-server/sql/sql_hints.yy.h
+-- CONFIG_CLIENT_LIBS -lssl -lcrypto -lresolv -lm
+-- CONFIG_LIBS_PRIVATE  -lresolv -lm
+-- INSTALL mysqlclient.pc lib/pkgconfig
+-- MySQL 8.0.32
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- CMAKE_BUILD_TYPE: RelWithDebInfo
+-- COMPILE_DEFINITIONS: _GNU_SOURCE;_FILE_OFFSET_BITS=64;RAPIDJSON_NO_SIZETYPEDEFINE;RAPIDJSON_SCHEMA_USE_INTERNALREGEX=0;RAPIDJSON_SCHEMA_USE_STDREGEX=1;BOOST_NO_CXX98_FUNCTION_BASE;HAVE_CONFIG_H;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;_USE_MATH_DEFINES;LZ4_DISABLE_DEPRECATE_WARNINGS;HAVE_TLSv13
+-- CMAKE_C_FLAGS: -fno-omit-frame-pointer -ftls-model=initial-exec  -Wall -Wextra -Wformat-security -Wvla -Wundef -Wmissing-format-attribute -Wwrite-strings -Wjump-misses-init -Wstringop-truncation -Wmissing-include-dirs
+-- CMAKE_CXX_FLAGS: -std=c++17 -fno-omit-frame-pointer -ftls-model=initial-exec  -Wall -Wextra -Wformat-security -Wvla -Wundef -Wmissing-format-attribute -Woverloaded-virtual -Wcast-qual -Wimplicit-fallthrough=5 -Wstringop-truncation -Wsuggest-override -Wmissing-include-dirs -Wextra-semi -Wlogical-op
+-- CMAKE_CXX_FLAGS_DEBUG: -DSAFE_MUTEX -DENABLED_DEBUG_SYNC -g
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -g1
+-- CMAKE_CXX_FLAGS_RELEASE: -ffunction-sections -fdata-sections -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_MINSIZEREL: -ffunction-sections -fdata-sections -Os -DNDEBUG
+-- CMAKE_C_LINK_FLAGS: 
+-- CMAKE_CXX_LINK_FLAGS: 
+-- CMAKE_EXE_LINKER_FLAGS 
+-- CMAKE_MODULE_LINKER_FLAGS 
+-- CMAKE_SHARED_LINKER_FLAGS 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ec2-user/build-mysql-server
+*****
+* configure
+*****
+
+
+*****
+* make 
+*****
+
+
+Consolidate compiler generated dependencies of target lz4_lib
+[  0%] Built target lz4_lib
+Consolidate compiler generated dependencies of target gmock
+[  0%] Built target gmock
+Consolidate compiler generated dependencies of target gtest
+[  0%] Built target gtest
+Consolidate compiler generated dependencies of target gmock_main
+[  0%] Built target gmock_main
+Consolidate compiler generated dependencies of target gtest_main
+[  0%] Built target gtest_main
+Consolidate compiler generated dependencies of target zlib_objlib
+[  0%] Built target zlib_objlib
+[  0%] Built target zlib
+Consolidate compiler generated dependencies of target libprotobuf
+[  1%] Built target libprotobuf
+Consolidate compiler generated dependencies of target libprotoc
+[  2%] Built target libprotoc
+Consolidate compiler generated dependencies of target protoc
+[  2%] Built target protoc
+Consolidate compiler generated dependencies of target rpl_protobuf_lite
+[  2%] Built target rpl_protobuf_lite
+Consolidate compiler generated dependencies of target zstd_objlib
+[  3%] Built target zstd_objlib
+[  3%] Built target zstd
+Consolidate compiler generated dependencies of target event_core
+[  3%] Built target event_core
+Consolidate compiler generated dependencies of target event_extra
+[  3%] Built target event_extra
+Consolidate compiler generated dependencies of target event_openssl
+[  3%] Built target event_openssl
+Consolidate compiler generated dependencies of target event_pthreads
+[  3%] Built target event_pthreads
+Consolidate compiler generated dependencies of target icuuc
+[  7%] Built target icuuc
+Consolidate compiler generated dependencies of target icui18n
+[ 12%] Built target icui18n
+Consolidate compiler generated dependencies of target icustubdata
+[ 12%] Built target icustubdata
+Consolidate compiler generated dependencies of target libprotobuf-lite
+[ 13%] Built target libprotobuf-lite
+Consolidate compiler generated dependencies of target mysys_objlib
+[ 15%] Built target mysys_objlib
+Consolidate compiler generated dependencies of target uca9dump
+[ 15%] Built target uca9dump
+Consolidate compiler generated dependencies of target strings_objlib
+[ 16%] Built target strings_objlib
+Consolidate compiler generated dependencies of target mytime_objlib
+[ 16%] Built target mytime_objlib
+[ 16%] Built target mytime
+[ 16%] Built target mysys
+[ 16%] Built target strings
+Consolidate compiler generated dependencies of target vio_objlib
+[ 16%] Built target vio_objlib
+[ 16%] Built target vio
+Consolidate compiler generated dependencies of target comp_err
+[ 16%] Built target comp_err
+[ 16%] Built target GenError
+Consolidate compiler generated dependencies of target binlogevents_static
+[ 16%] Built target binlogevents_static
+Consolidate compiler generated dependencies of target archive
+[ 16%] Built target archive
+Consolidate compiler generated dependencies of target blackhole
+[ 17%] Built target blackhole
+Consolidate compiler generated dependencies of target csv
+[ 17%] Built target csv
+Consolidate compiler generated dependencies of target federated
+[ 17%] Built target federated
+Consolidate compiler generated dependencies of target heap_library
+[ 17%] Built target heap_library
+Consolidate compiler generated dependencies of target heap
+[ 17%] Built target heap
+[ 17%] Built target all_sys_schema
+Consolidate compiler generated dependencies of target comp_sql
+[ 17%] Built target comp_sql
+[ 17%] Built target sql_commands
+[ 17%] Built target GenSysSchema
+Consolidate compiler generated dependencies of target myisam_library
+[ 18%] Built target myisam_library
+Consolidate compiler generated dependencies of target myisam
+[ 18%] Built target myisam
+Consolidate compiler generated dependencies of target myisammrg
+[ 19%] Built target myisammrg
+Consolidate compiler generated dependencies of target ndbapi_objlib
+[ 20%] Built target ndbapi_objlib
+[ 20%] Built target ndbapi
+Consolidate compiler generated dependencies of target ndbportlib_objlib
+[ 20%] Built target ndbportlib_objlib
+[ 20%] Built target ndbportlib
+Consolidate compiler generated dependencies of target ndbtrace_objlib
+[ 20%] Built target ndbtrace_objlib
+Consolidate compiler generated dependencies of target ndbmgmapi_objlib
+[ 20%] Built target ndbmgmapi_objlib
+Consolidate compiler generated dependencies of target ndbsignaldata_objlib
+[ 23%] Built target ndbsignaldata_objlib
+[ 23%] Built target ndbsignaldata
+Consolidate compiler generated dependencies of target ndbgeneral_objlib
+[ 23%] Built target ndbgeneral_objlib
+Consolidate compiler generated dependencies of target ndblogger_objlib
+[ 24%] Built target ndblogger_objlib
+Consolidate compiler generated dependencies of target ndbmgmcommon_objlib
+[ 24%] Built target ndbmgmcommon_objlib
+[ 24%] Built target ndbmgmapi
+[ 24%] Built target ndbmgmcommon
+[ 24%] Built target ndblogger
+[ 24%] Built target ndbgeneral
+[ 24%] Built target ndbtrace
+Consolidate compiler generated dependencies of target ndbtransport_objlib
+[ 24%] Built target ndbtransport_objlib
+[ 24%] Built target ndbtransport
+Consolidate compiler generated dependencies of target ndbclient_static
+[ 24%] Built target ndbclient_static
+Consolidate compiler generated dependencies of target ndbcluster
+[ 26%] Built target ndbcluster
+Consolidate compiler generated dependencies of target perfschema
+[ 29%] Built target perfschema
+Consolidate compiler generated dependencies of target temptable
+[ 29%] Built target temptable
+Consolidate compiler generated dependencies of target ngram_parser
+[ 29%] Built target ngram_parser
+[ 29%] Built target GenLiteProtos
+Consolidate compiler generated dependencies of target mysqlxmessages_lite
+[ 30%] Built target mysqlxmessages_lite
+Consolidate compiler generated dependencies of target mysqlxmessages
+[ 31%] Built target mysqlxmessages
+Consolidate compiler generated dependencies of target xprotocol_plugin
+[ 31%] Built target xprotocol_plugin
+[ 31%] Built target xprotocol_tags
+Consolidate compiler generated dependencies of target mysqlx
+[ 34%] Built target mysqlx
+Consolidate compiler generated dependencies of target gen_lex_hash
+[ 34%] Built target gen_lex_hash
+[ 34%] Built target GenServerSource
+Consolidate compiler generated dependencies of target gen_lex_token
+[ 34%] Built target gen_lex_token
+Consolidate compiler generated dependencies of target gen_keyword_list
+[ 34%] Built target gen_keyword_list
+[ 34%] Built target GenDigestServerSource
+[ 34%] Built target GenKeywordList
+Consolidate compiler generated dependencies of target mysql_server_component_services
+[ 35%] Built target mysql_server_component_services
+[ 35%] Built target GenFixPrivs
+[ 35%] Built target GenBootstrapPriv
+Consolidate compiler generated dependencies of target slave
+[ 36%] Built target slave
+Consolidate compiler generated dependencies of target master
+[ 36%] Built target master
+Consolidate compiler generated dependencies of target rpl
+[ 36%] Built target rpl
+Consolidate compiler generated dependencies of target binlog
+[ 37%] Built target binlog
+Consolidate compiler generated dependencies of target sql_dd
+[ 40%] Built target sql_dd
+Consolidate compiler generated dependencies of target sql_gis
+[ 40%] Building CXX object sql/CMakeFiles/sql_gis.dir/gis/difference_functor.cc.o
