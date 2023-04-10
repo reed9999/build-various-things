@@ -14,7 +14,7 @@ sudo chmod +x /usr/bin/bazel
 
 
 # Given the nojdk in the above name, the following might not be needed.
-sudo yum install -y java-11-amazon-corretto-devel
+# sudo yum install -y java-11-amazon-corretto-devel
 
 
 # Approach 2
@@ -34,11 +34,20 @@ sudo yum install -y java-11-amazon-corretto-devel
 sudo yum install -y python 
 sudo yum install -y zip 
 sudo yum install -y unzip
+sudo yum install -yf gcc gcc-c++ kernel-devel make
+
+
+date >> ~/017-bazel-build-output.txt &
+nohup bazel build //src:bazel-dev >> ~/017-bazel-build-output.txt &
+date >> ~/017-bazel-build-output.txt &
+
 popd
 
 
 
-# It seems to still need GCC
+
+
+
 <<HERE
 ]$ bazel build //src:bazel-dev
 INFO: Repository local_config_cc instantiated at:
