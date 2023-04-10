@@ -72,3 +72,25 @@ sudo yum install boost
 sudo yum install ncurses
 sudo yum install perl   # to run tests
 sudo yum install -y bison
+
+
+
+
+# Bazel
+
+Here is another approach to getting JDK and Bazel. I didn't fully carry it out but it seems like it 
+could be finished off pretty quickly if the approach used didn't complete.
+
+```
+pushd ~
+curl -O https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
+tar zxvf openjdk-11.0.1_linux-x64_bin.tar.gz
+sudo mv jdk-11.0.1 /usr/local/
+# 
+curl -O https://copr.fedorainfracloud.org/coprs/vbatts/bazel/repo/epel-7/vbatts-bazel-epel-7.repo
+sudo mv vbatts-bazel-epel-7.repo /etc/yum.repos.d/
+sudo yum install bazel4
+popd
+
+
+```
