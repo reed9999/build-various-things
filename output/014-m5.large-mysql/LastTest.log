@@ -1,0 +1,2890 @@
+Start testing: Apr 10 00:26 UTC
+----------------------------------------------------------
+7/266 Testing: NdbGetInAddr-t
+7/266 Test: NdbGetInAddr-t
+Command: "/home/ec2-user/build-mysql-server/runtime_output_directory/NdbGetInAddr-t"
+Directory: /home/ec2-user/build-mysql-server/storage/ndb/src/common/portlib
+"NdbGetInAddr-t" start time: Apr 10 00:26 UTC
+Output:
+----------------------------------------------------------
+1..1
+Checking if 'localhost' can be used for testing
+Testing 'localhost' with length: 9
+> 'localhost' -> '127.0.0.1'
+Testing 'localhost' with length: 9
+> 'localhost' -> '127.0.0.1'
+> mismatch from expected '::1'
+Signal 6 thrown, attempting backtrace.
+stack_bottom = 0 thread_stack 0x0
+/home/ec2-user/build-mysql-server/runtime_output_directory/NdbGetInAddr-t(my_print_stacktrace(unsigned char const*, unsigned long)+0x2e) [0x40460e]
+/home/ec2-user/build-mysql-server/runtime_output_directory/NdbGetInAddr-t() [0x4032c0]
+/lib64/libc.so.6(+0x54df0) [0x7f0cefa54df0]
+/lib64/libc.so.6(+0xa154c) [0x7f0cefaa154c]
+/lib64/libc.so.6(raise+0x16) [0x7f0cefa54d46]
+/lib64/libc.so.6(abort+0xd3) [0x7f0cefa287f3]
+/home/ec2-user/build-mysql-server/runtime_output_directory/NdbGetInAddr-t() [0x4028ab]
+/home/ec2-user/build-mysql-server/runtime_output_directory/NdbGetInAddr-t(NdbGetInAddr_test()+0x530) [0x403270]
+/home/ec2-user/build-mysql-server/runtime_output_directory/NdbGetInAddr-t(main+0x13) [0x402303]
+/lib64/libc.so.6(+0x3feb0) [0x7f0cefa3feb0]
+/lib64/libc.so.6(__libc_start_main+0x80) [0x7f0cefa3ff60]
+/home/ec2-user/build-mysql-server/runtime_output_directory/NdbGetInAddr-t(_start+0x25) [0x402345]
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"NdbGetInAddr-t" end time: Apr 10 00:26 UTC
+"NdbGetInAddr-t" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/gcs_xcom_expels_in_progress-t
+89/266 Testing: gcs_xcom_expels_in_progress
+89/266 Test: gcs_xcom_expels_in_progress
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/libmysqlgcs
+"gcs_xcom_expels_in_progress" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"gcs_xcom_expels_in_progress" end time: Apr 10 00:26 UTC
+"gcs_xcom_expels_in_progress" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/gcs_xcom_network_provider-t
+90/266 Testing: gcs_xcom_network_provider
+90/266 Test: gcs_xcom_network_provider
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/libmysqlgcs
+"gcs_xcom_network_provider" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"gcs_xcom_network_provider" end time: Apr 10 00:26 UTC
+"gcs_xcom_network_provider" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/gcs_xcom_network_provider_manager-t
+91/266 Testing: gcs_xcom_network_provider_manager
+91/266 Test: gcs_xcom_network_provider_manager
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/libmysqlgcs
+"gcs_xcom_network_provider_manager" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"gcs_xcom_network_provider_manager" end time: Apr 10 00:26 UTC
+"gcs_xcom_network_provider_manager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/gcs_xcom_xcom_single_writer-t
+92/266 Testing: gcs_xcom_xcom_single_writer
+92/266 Test: gcs_xcom_xcom_single_writer
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/libmysqlgcs
+"gcs_xcom_xcom_single_writer" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"gcs_xcom_xcom_single_writer" end time: Apr 10 00:26 UTC
+"gcs_xcom_xcom_single_writer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/merge_temptable_tests-t
+93/266 Testing: merge_temptable_tests-t
+93/266 Test: merge_temptable_tests-t
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/temptable
+"merge_temptable_tests-t" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"merge_temptable_tests-t" end time: Apr 10 00:26 UTC
+"merge_temptable_tests-t" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/transaction_payload_codec-t
+94/266 Testing: transaction_payload_codec
+94/266 Test: transaction_payload_codec
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/binlogevents
+"transaction_payload_codec" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"transaction_payload_codec" end time: Apr 10 00:26 UTC
+"transaction_payload_codec" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/transaction_compression-t
+95/266 Testing: transaction_compression
+95/266 Test: transaction_compression
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/binlogevents
+"transaction_compression" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"transaction_compression" end time: Apr 10 00:26 UTC
+"transaction_compression" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/transaction_payload_iterator-t
+96/266 Testing: transaction_payload_iterator
+96/266 Test: transaction_payload_iterator
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/binlogevents
+"transaction_payload_iterator" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"transaction_payload_iterator" end time: Apr 10 00:26 UTC
+"transaction_payload_iterator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/gtids-t
+97/266 Testing: gtids
+97/266 Test: gtids
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/binlogevents
+"gtids" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"gtids" end time: Apr 10 00:26 UTC
+"gtids" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/gno_intervals-t
+98/266 Testing: gno_intervals
+98/266 Test: gno_intervals
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/binlogevents
+"gno_intervals" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"gno_intervals" end time: Apr 10 00:26 UTC
+"gno_intervals" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/heartbeat_codec-t
+99/266 Testing: heartbeat_codec
+99/266 Test: heartbeat_codec
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/binlogevents
+"heartbeat_codec" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"heartbeat_codec" end time: Apr 10 00:26 UTC
+"heartbeat_codec" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/unique_ptr-t
+100/266 Testing: unique_ptr
+100/266 Test: unique_ptr
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/memory
+"unique_ptr" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"unique_ptr" end time: Apr 10 00:26 UTC
+"unique_ptr" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/ref_ptr-t
+101/266 Testing: ref_ptr
+101/266 Test: ref_ptr
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/memory
+"ref_ptr" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ref_ptr" end time: Apr 10 00:26 UTC
+"ref_ptr" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/aligned_atomic-t
+102/266 Testing: aligned_atomic
+102/266 Test: aligned_atomic
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/memory
+"aligned_atomic" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"aligned_atomic" end time: Apr 10 00:26 UTC
+"aligned_atomic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/integrals_lockfree_queue-t
+103/266 Testing: integrals_lockfree_queue
+103/266 Test: integrals_lockfree_queue
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/containers
+"integrals_lockfree_queue" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"integrals_lockfree_queue" end time: Apr 10 00:26 UTC
+"integrals_lockfree_queue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/shared_spin_lock-t
+104/266 Testing: shared_spin_lock
+104/266 Test: shared_spin_lock
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/locks
+"shared_spin_lock" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"shared_spin_lock" end time: Apr 10 00:26 UTC
+"shared_spin_lock" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/cstreams_reader_state-t
+105/266 Testing: cstreams_reader_state
+105/266 Test: cstreams_reader_state
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/gunit/changestreams
+"cstreams_reader_state" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cstreams_reader_state" end time: Apr 10 00:26 UTC
+"cstreams_reader_state" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/simple-t
+106/266 Testing: simple
+106/266 Test: simple
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/examples
+"simple" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"simple" end time: Apr 10 00:26 UTC
+"simple" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/skip-t
+107/266 Testing: skip
+107/266 Test: skip
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/examples
+"skip" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"skip" end time: Apr 10 00:26 UTC
+"skip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/todo-t
+108/266 Testing: todo
+108/266 Test: todo
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/examples
+"todo" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"todo" end time: Apr 10 00:26 UTC
+"todo" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/skip_all-t
+109/266 Testing: skip_all
+109/266 Test: skip_all
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/examples
+"skip_all" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"skip_all" end time: Apr 10 00:26 UTC
+"skip_all" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/no_plan-t
+110/266 Testing: no_plan
+110/266 Test: no_plan
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/examples
+"no_plan" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"no_plan" end time: Apr 10 00:26 UTC
+"no_plan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/basic-t
+111/266 Testing: basic
+111/266 Test: basic
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/unittest/mytap/t
+"basic" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"basic" end time: Apr 10 00:26 UTC
+"basic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_access_rights
+112/266 Testing: routertest_harness_access_rights
+112/266 Test: routertest_harness_access_rights
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_access_rights" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_access_rights" end time: Apr 10 00:26 UTC
+"routertest_harness_access_rights" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_utility_string
+113/266 Testing: routertest_harness_utility_string
+113/266 Test: routertest_harness_utility_string
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_utility_string" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_utility_string" end time: Apr 10 00:26 UTC
+"routertest_harness_utility_string" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_loader
+114/266 Testing: routertest_harness_loader
+114/266 Test: routertest_harness_loader
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_loader" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_loader" end time: Apr 10 00:26 UTC
+"routertest_harness_loader" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_loader_lifecycle
+115/266 Testing: routertest_harness_loader_lifecycle
+115/266 Test: routertest_harness_loader_lifecycle
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_loader_lifecycle" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_loader_lifecycle" end time: Apr 10 00:26 UTC
+"routertest_harness_loader_lifecycle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_logging
+116/266 Testing: routertest_harness_logging
+116/266 Test: routertest_harness_logging
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_logging" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_logging" end time: Apr 10 00:26 UTC
+"routertest_harness_logging" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_designator
+117/266 Testing: routertest_harness_designator
+117/266 Test: routertest_harness_designator
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_designator" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_designator" end time: Apr 10 00:26 UTC
+"routertest_harness_designator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_iterator
+118/266 Testing: routertest_harness_iterator
+118/266 Test: routertest_harness_iterator
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_iterator" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_iterator" end time: Apr 10 00:26 UTC
+"routertest_harness_iterator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_utilities
+119/266 Testing: routertest_harness_utilities
+119/266 Test: routertest_harness_utilities
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_utilities" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_utilities" end time: Apr 10 00:26 UTC
+"routertest_harness_utilities" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_common
+120/266 Testing: routertest_harness_common
+120/266 Test: routertest_harness_common
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_common" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_common" end time: Apr 10 00:26 UTC
+"routertest_harness_common" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_config
+121/266 Testing: routertest_harness_config
+121/266 Test: routertest_harness_config
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_config" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_config" end time: Apr 10 00:26 UTC
+"routertest_harness_config" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_filesystem
+122/266 Testing: routertest_harness_filesystem
+122/266 Test: routertest_harness_filesystem
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_filesystem" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_filesystem" end time: Apr 10 00:26 UTC
+"routertest_harness_filesystem" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_hostname_validator
+123/266 Testing: routertest_harness_hostname_validator
+123/266 Test: routertest_harness_hostname_validator
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_hostname_validator" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_hostname_validator" end time: Apr 10 00:26 UTC
+"routertest_harness_hostname_validator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_bug22104451
+124/266 Testing: routertest_harness_bug22104451
+124/266 Test: routertest_harness_bug22104451
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_bug22104451" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_bug22104451" end time: Apr 10 00:26 UTC
+"routertest_harness_bug22104451" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_random_generator
+125/266 Testing: routertest_harness_random_generator
+125/266 Test: routertest_harness_random_generator
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_random_generator" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_random_generator" end time: Apr 10 00:26 UTC
+"routertest_harness_random_generator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_mysql_router_thread
+126/266 Testing: routertest_harness_mysql_router_thread
+126/266 Test: routertest_harness_mysql_router_thread
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_mysql_router_thread" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_mysql_router_thread" end time: Apr 10 00:26 UTC
+"routertest_harness_mysql_router_thread" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_mpmc_queue
+127/266 Testing: routertest_harness_mpmc_queue
+127/266 Test: routertest_harness_mpmc_queue
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_mpmc_queue" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_mpmc_queue" end time: Apr 10 00:26 UTC
+"routertest_harness_mpmc_queue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_dynamic_state
+128/266 Testing: routertest_harness_dynamic_state
+128/266 Test: routertest_harness_dynamic_state
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_dynamic_state" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_dynamic_state" end time: Apr 10 00:26 UTC
+"routertest_harness_dynamic_state" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_arg_handler
+129/266 Testing: routertest_harness_arg_handler
+129/266 Test: routertest_harness_arg_handler
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_arg_handler" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_arg_handler" end time: Apr 10 00:26 UTC
+"routertest_harness_arg_handler" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_vt100
+130/266 Testing: routertest_harness_vt100
+130/266 Test: routertest_harness_vt100
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_vt100" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_vt100" end time: Apr 10 00:26 UTC
+"routertest_harness_vt100" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_string_utils
+131/266 Testing: routertest_harness_string_utils
+131/266 Test: routertest_harness_string_utils
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_string_utils" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_string_utils" end time: Apr 10 00:26 UTC
+"routertest_harness_string_utils" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_process_launcher
+132/266 Testing: routertest_harness_process_launcher
+132/266 Test: routertest_harness_process_launcher
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_process_launcher" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_process_launcher" end time: Apr 10 00:26 UTC
+"routertest_harness_process_launcher" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_tcp_address
+133/266 Testing: routertest_harness_tcp_address
+133/266 Test: routertest_harness_tcp_address
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_tcp_address" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_tcp_address" end time: Apr 10 00:26 UTC
+"routertest_harness_tcp_address" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_config_builder
+134/266 Testing: routertest_harness_config_builder
+134/266 Test: routertest_harness_config_builder
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_config_builder" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_config_builder" end time: Apr 10 00:26 UTC
+"routertest_harness_config_builder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_event_state_tracker
+135/266 Testing: routertest_harness_event_state_tracker
+135/266 Test: routertest_harness_event_state_tracker
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_event_state_tracker" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_event_state_tracker" end time: Apr 10 00:26 UTC
+"routertest_harness_event_state_tracker" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_config_option
+136/266 Testing: routertest_harness_config_option
+136/266 Test: routertest_harness_config_option
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_config_option" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_config_option" end time: Apr 10 00:26 UTC
+"routertest_harness_config_option" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_hexify
+137/266 Testing: routertest_harness_hexify
+137/266 Test: routertest_harness_hexify
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_hexify" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_hexify" end time: Apr 10 00:26 UTC
+"routertest_harness_hexify" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_keyring
+138/266 Testing: routertest_harness_keyring
+138/266 Test: routertest_harness_keyring
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_keyring" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_keyring" end time: Apr 10 00:26 UTC
+"routertest_harness_keyring" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_keyring_manager
+139/266 Testing: routertest_harness_keyring_manager
+139/266 Test: routertest_harness_keyring_manager
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_keyring_manager" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_keyring_manager" end time: Apr 10 00:26 UTC
+"routertest_harness_keyring_manager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_buffer
+140/266 Testing: routertest_harness_net_ts_buffer
+140/266 Test: routertest_harness_net_ts_buffer
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_buffer" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_buffer" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_buffer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_executor
+141/266 Testing: routertest_harness_net_ts_executor
+141/266 Test: routertest_harness_net_ts_executor
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_executor" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_executor" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_executor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_impl_callstack
+142/266 Testing: routertest_harness_net_ts_impl_callstack
+142/266 Test: routertest_harness_net_ts_impl_callstack
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_impl_callstack" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_impl_callstack" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_impl_callstack" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_impl_file
+143/266 Testing: routertest_harness_net_ts_impl_file
+143/266 Test: routertest_harness_net_ts_impl_file
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_impl_file" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_impl_file" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_impl_file" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_impl_io_service_base
+144/266 Testing: routertest_harness_net_ts_impl_io_service_base
+144/266 Test: routertest_harness_net_ts_impl_io_service_base
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_impl_io_service_base" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_impl_io_service_base" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_impl_io_service_base" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_impl_kqueue_io_service
+145/266 Testing: routertest_harness_net_ts_impl_kqueue_io_service
+145/266 Test: routertest_harness_net_ts_impl_kqueue_io_service
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_impl_kqueue_io_service" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_impl_kqueue_io_service" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_impl_kqueue_io_service" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_impl_linux_epoll_io_service
+146/266 Testing: routertest_harness_net_ts_impl_linux_epoll_io_service
+146/266 Test: routertest_harness_net_ts_impl_linux_epoll_io_service
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_impl_linux_epoll_io_service" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_impl_linux_epoll_io_service" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_impl_linux_epoll_io_service" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_impl_netif
+147/266 Testing: routertest_harness_net_ts_impl_netif
+147/266 Test: routertest_harness_net_ts_impl_netif
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_impl_netif" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_impl_netif" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_impl_netif" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_impl_poll_io_service
+148/266 Testing: routertest_harness_net_ts_impl_poll_io_service
+148/266 Test: routertest_harness_net_ts_impl_poll_io_service
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_impl_poll_io_service" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_impl_poll_io_service" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_impl_poll_io_service" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_impl_resolver
+149/266 Testing: routertest_harness_net_ts_impl_resolver
+149/266 Test: routertest_harness_net_ts_impl_resolver
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_impl_resolver" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_impl_resolver" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_impl_resolver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_impl_socket
+150/266 Testing: routertest_harness_net_ts_impl_socket
+150/266 Test: routertest_harness_net_ts_impl_socket
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_impl_socket" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_impl_socket" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_impl_socket" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_internet
+151/266 Testing: routertest_harness_net_ts_internet
+151/266 Test: routertest_harness_net_ts_internet
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_internet" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_internet" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_internet" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_io_context
+152/266 Testing: routertest_harness_net_ts_io_context
+152/266 Test: routertest_harness_net_ts_io_context
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_io_context" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_io_context" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_io_context" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_io_context_socket
+153/266 Testing: routertest_harness_net_ts_io_context_socket
+153/266 Test: routertest_harness_net_ts_io_context_socket
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_io_context_socket" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_io_context_socket" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_io_context_socket" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_socket
+154/266 Testing: routertest_harness_net_ts_socket
+154/266 Test: routertest_harness_net_ts_socket
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_socket" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_socket" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_socket" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_timer
+155/266 Testing: routertest_harness_net_ts_timer
+155/266 Test: routertest_harness_net_ts_timer
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_timer" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_timer" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_timer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_win32_named_pipe
+156/266 Testing: routertest_harness_net_ts_win32_named_pipe
+156/266 Test: routertest_harness_net_ts_win32_named_pipe
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_win32_named_pipe" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_win32_named_pipe" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_win32_named_pipe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_net_ts_local
+157/266 Testing: routertest_harness_net_ts_local
+157/266 Test: routertest_harness_net_ts_local
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_net_ts_local" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_net_ts_local" end time: Apr 10 00:26 UTC
+"routertest_harness_net_ts_local" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_stdx_bit
+158/266 Testing: routertest_harness_stdx_bit
+158/266 Test: routertest_harness_stdx_bit
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_stdx_bit" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_stdx_bit" end time: Apr 10 00:26 UTC
+"routertest_harness_stdx_bit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_stdx_expected
+159/266 Testing: routertest_harness_stdx_expected
+159/266 Test: routertest_harness_stdx_expected
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_stdx_expected" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_stdx_expected" end time: Apr 10 00:26 UTC
+"routertest_harness_stdx_expected" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_stdx_flags
+160/266 Testing: routertest_harness_stdx_flags
+160/266 Test: routertest_harness_stdx_flags
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_stdx_flags" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_stdx_flags" end time: Apr 10 00:26 UTC
+"routertest_harness_stdx_flags" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_stdx_io_file_handle
+161/266 Testing: routertest_harness_stdx_io_file_handle
+161/266 Test: routertest_harness_stdx_io_file_handle
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_stdx_io_file_handle" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_stdx_io_file_handle" end time: Apr 10 00:26 UTC
+"routertest_harness_stdx_io_file_handle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_stdx_monitor
+162/266 Testing: routertest_harness_stdx_monitor
+162/266 Test: routertest_harness_stdx_monitor
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_stdx_monitor" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_stdx_monitor" end time: Apr 10 00:26 UTC
+"routertest_harness_stdx_monitor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_stdx_ranges
+163/266 Testing: routertest_harness_stdx_ranges
+163/266 Test: routertest_harness_stdx_ranges
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/harness/tests
+"routertest_harness_stdx_ranges" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_stdx_ranges" end time: Apr 10 00:26 UTC
+"routertest_harness_stdx_ranges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_time
+164/266 Testing: routertest_http_time
+164/266 Test: routertest_http_time
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_time" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_time" end time: Apr 10 00:26 UTC
+"routertest_http_time" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_http_uri
+165/266 Testing: routertest_http_http_uri
+165/266 Test: routertest_http_http_uri
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_http_uri" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_http_uri" end time: Apr 10 00:26 UTC
+"routertest_http_http_uri" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_base64
+166/266 Testing: routertest_http_base64
+166/266 Test: routertest_http_base64
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_base64" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_base64" end time: Apr 10 00:26 UTC
+"routertest_http_base64" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_auth_backend
+167/266 Testing: routertest_http_auth_backend
+167/266 Test: routertest_http_auth_backend
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_auth_backend" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_auth_backend" end time: Apr 10 00:26 UTC
+"routertest_http_auth_backend" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_kdf_sha_crypt
+168/266 Testing: routertest_http_kdf_sha_crypt
+168/266 Test: routertest_http_kdf_sha_crypt
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_kdf_sha_crypt" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_kdf_sha_crypt" end time: Apr 10 00:26 UTC
+"routertest_http_kdf_sha_crypt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_kdf_pbkdf2
+169/266 Testing: routertest_http_kdf_pbkdf2
+169/266 Test: routertest_http_kdf_pbkdf2
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_kdf_pbkdf2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_kdf_pbkdf2" end time: Apr 10 00:26 UTC
+"routertest_http_kdf_pbkdf2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_passwd
+170/266 Testing: routertest_http_passwd
+170/266 Test: routertest_http_passwd
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_passwd" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_passwd" end time: Apr 10 00:26 UTC
+"routertest_http_passwd" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_auth
+171/266 Testing: routertest_http_auth
+171/266 Test: routertest_http_auth
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_auth" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_auth" end time: Apr 10 00:26 UTC
+"routertest_http_auth" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_auth_method
+172/266 Testing: routertest_http_auth_method
+172/266 Test: routertest_http_auth_method
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_auth_method" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_auth_method" end time: Apr 10 00:26 UTC
+"routertest_http_auth_method" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_content_type
+173/266 Testing: routertest_http_content_type
+173/266 Test: routertest_http_content_type
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_content_type" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_content_type" end time: Apr 10 00:26 UTC
+"routertest_http_content_type" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_http_matcher
+174/266 Testing: routertest_http_matcher
+174/266 Test: routertest_http_matcher
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/http/tests
+"routertest_http_matcher" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_http_matcher" end time: Apr 10 00:26 UTC
+"routertest_http_matcher" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_io_io_plugin
+175/266 Testing: routertest_io_io_plugin
+175/266 Test: routertest_io_io_plugin
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/io/tests
+"routertest_io_io_plugin" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_io_io_plugin" end time: Apr 10 00:26 UTC
+"routertest_io_io_plugin" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_io_io_component
+176/266 Testing: routertest_io_io_component
+176/266 Test: routertest_io_io_component
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/io/tests
+"routertest_io_io_component" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_io_io_component" end time: Apr 10 00:26 UTC
+"routertest_io_io_component" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_harness_plugin_keepalive
+177/266 Testing: routertest_harness_plugin_keepalive
+177/266 Test: routertest_harness_plugin_keepalive
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/keepalive/tests
+"routertest_harness_plugin_keepalive" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_harness_plugin_keepalive" end time: Apr 10 00:26 UTC
+"routertest_harness_plugin_keepalive" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_metadata_cache_cache_plugin
+178/266 Testing: routertest_metadata_cache_cache_plugin
+178/266 Test: routertest_metadata_cache_cache_plugin
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/metadata_cache/tests
+"routertest_metadata_cache_cache_plugin" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_metadata_cache_cache_plugin" end time: Apr 10 00:26 UTC
+"routertest_metadata_cache_cache_plugin" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_metadata_cache_failover
+179/266 Testing: routertest_metadata_cache_failover
+179/266 Test: routertest_metadata_cache_failover
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/metadata_cache/tests
+"routertest_metadata_cache_failover" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_metadata_cache_failover" end time: Apr 10 00:26 UTC
+"routertest_metadata_cache_failover" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_metadata_cache_instance_attributes
+180/266 Testing: routertest_metadata_cache_instance_attributes
+180/266 Test: routertest_metadata_cache_instance_attributes
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/metadata_cache/tests
+"routertest_metadata_cache_instance_attributes" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_metadata_cache_instance_attributes" end time: Apr 10 00:26 UTC
+"routertest_metadata_cache_instance_attributes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_metadata_cache_metadata
+181/266 Testing: routertest_metadata_cache_metadata
+181/266 Test: routertest_metadata_cache_metadata
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/metadata_cache/tests
+"routertest_metadata_cache_metadata" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_metadata_cache_metadata" end time: Apr 10 00:26 UTC
+"routertest_metadata_cache_metadata" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_metadata_cache_metadata_cache
+182/266 Testing: routertest_metadata_cache_metadata_cache
+182/266 Test: routertest_metadata_cache_metadata_cache
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/metadata_cache/tests
+"routertest_metadata_cache_metadata_cache" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_metadata_cache_metadata_cache" end time: Apr 10 00:26 UTC
+"routertest_metadata_cache_metadata_cache" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_metadata_cache_plugin_config
+183/266 Testing: routertest_metadata_cache_plugin_config
+183/266 Test: routertest_metadata_cache_plugin_config
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/metadata_cache/tests
+"routertest_metadata_cache_plugin_config" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_metadata_cache_plugin_config" end time: Apr 10 00:26 UTC
+"routertest_metadata_cache_plugin_config" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_mock_server_authentication
+184/266 Testing: routertest_mock_server_authentication
+184/266 Test: routertest_mock_server_authentication
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/mock_server/tests
+"routertest_mock_server_authentication" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_mock_server_authentication" end time: Apr 10 00:26 UTC
+"routertest_mock_server_authentication" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_mysql_protocol_classic_protocol_frame
+185/266 Testing: routertest_mysql_protocol_classic_protocol_frame
+185/266 Test: routertest_mysql_protocol_classic_protocol_frame
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/mysql_protocol/tests
+"routertest_mysql_protocol_classic_protocol_frame" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_mysql_protocol_classic_protocol_frame" end time: Apr 10 00:26 UTC
+"routertest_mysql_protocol_classic_protocol_frame" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_mysql_protocol_classic_protocol_message
+186/266 Testing: routertest_mysql_protocol_classic_protocol_message
+186/266 Test: routertest_mysql_protocol_classic_protocol_message
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/mysql_protocol/tests
+"routertest_mysql_protocol_classic_protocol_message" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_mysql_protocol_classic_protocol_message" end time: Apr 10 00:26 UTC
+"routertest_mysql_protocol_classic_protocol_message" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_mysql_protocol_classic_protocol_session_track
+187/266 Testing: routertest_mysql_protocol_classic_protocol_session_track
+187/266 Test: routertest_mysql_protocol_classic_protocol_session_track
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/mysql_protocol/tests
+"routertest_mysql_protocol_classic_protocol_session_track" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_mysql_protocol_classic_protocol_session_track" end time: Apr 10 00:26 UTC
+"routertest_mysql_protocol_classic_protocol_session_track" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_mysql_protocol_classic_protocol_wire
+188/266 Testing: routertest_mysql_protocol_classic_protocol_wire
+188/266 Test: routertest_mysql_protocol_classic_protocol_wire
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/mysql_protocol/tests
+"routertest_mysql_protocol_classic_protocol_wire" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_mysql_protocol_classic_protocol_wire" end time: Apr 10 00:26 UTC
+"routertest_mysql_protocol_classic_protocol_wire" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_mysql_protocol_classic_protocol
+189/266 Testing: routertest_mysql_protocol_classic_protocol
+189/266 Test: routertest_mysql_protocol_classic_protocol
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/mysql_protocol/tests
+"routertest_mysql_protocol_classic_protocol" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_mysql_protocol_classic_protocol" end time: Apr 10 00:26 UTC
+"routertest_mysql_protocol_classic_protocol" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_mysqlrouter_plugin_info_plugin_info_app
+190/266 Testing: routertest_mysqlrouter_plugin_info_plugin_info_app
+190/266 Test: routertest_mysqlrouter_plugin_info_plugin_info_app
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/plugin_info/tests
+"routertest_mysqlrouter_plugin_info_plugin_info_app" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_mysqlrouter_plugin_info_plugin_info_app" end time: Apr 10 00:26 UTC
+"routertest_mysqlrouter_plugin_info_plugin_info_app" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_certificate_generator
+191/266 Testing: routertest_router_certificate_generator
+191/266 Test: routertest_router_certificate_generator
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_certificate_generator" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_certificate_generator" end time: Apr 10 00:26 UTC
+"routertest_router_certificate_generator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_certificate_handler
+192/266 Testing: routertest_router_certificate_handler
+192/266 Test: routertest_router_certificate_handler
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_certificate_handler" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_certificate_handler" end time: Apr 10 00:26 UTC
+"routertest_router_certificate_handler" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_uri
+193/266 Testing: routertest_router_uri
+193/266 Test: routertest_router_uri
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_uri" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_uri" end time: Apr 10 00:26 UTC
+"routertest_router_uri" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_utils
+194/266 Testing: routertest_router_utils
+194/266 Test: routertest_router_utils
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_utils" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_utils" end time: Apr 10 00:26 UTC
+"routertest_router_utils" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_mysqlrouter_utils
+195/266 Testing: routertest_router_mysqlrouter_utils
+195/266 Test: routertest_router_mysqlrouter_utils
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_mysqlrouter_utils" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_mysqlrouter_utils" end time: Apr 10 00:26 UTC
+"routertest_router_mysqlrouter_utils" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_log_filter
+196/266 Testing: routertest_router_log_filter
+196/266 Test: routertest_router_log_filter
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_log_filter" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_log_filter" end time: Apr 10 00:26 UTC
+"routertest_router_log_filter" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_config_files
+197/266 Testing: routertest_router_config_files
+197/266 Test: routertest_router_config_files
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_config_files" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_config_files" end time: Apr 10 00:26 UTC
+"routertest_router_config_files" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_mysql_session
+198/266 Testing: routertest_router_mysql_session
+198/266 Test: routertest_router_mysql_session
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_mysql_session" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_mysql_session" end time: Apr 10 00:26 UTC
+"routertest_router_mysql_session" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_metadata_check
+199/266 Testing: routertest_router_metadata_check
+199/266 Test: routertest_router_metadata_check
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_metadata_check" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_metadata_check" end time: Apr 10 00:26 UTC
+"routertest_router_metadata_check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_cluster_metadata
+200/266 Testing: routertest_router_cluster_metadata
+200/266 Test: routertest_router_cluster_metadata
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_cluster_metadata" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_cluster_metadata" end time: Apr 10 00:26 UTC
+"routertest_router_cluster_metadata" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_windows_service
+201/266 Testing: routertest_router_windows_service
+201/266 Test: routertest_router_windows_service
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_windows_service" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_windows_service" end time: Apr 10 00:26 UTC
+"routertest_router_windows_service" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_config_generator
+202/266 Testing: routertest_router_config_generator
+202/266 Test: routertest_router_config_generator
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_config_generator" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_config_generator" end time: Apr 10 00:26 UTC
+"routertest_router_config_generator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_mysqlrouter_app
+203/266 Testing: routertest_router_mysqlrouter_app
+203/266 Test: routertest_router_mysqlrouter_app
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_mysqlrouter_app" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_mysqlrouter_app" end time: Apr 10 00:26 UTC
+"routertest_router_mysqlrouter_app" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_keyring_frontend
+204/266 Testing: routertest_router_keyring_frontend
+204/266 Test: routertest_router_keyring_frontend
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_keyring_frontend" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_keyring_frontend" end time: Apr 10 00:26 UTC
+"routertest_router_keyring_frontend" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_issues_bug22084430
+205/266 Testing: routertest_issues_bug22084430
+205/266 Test: routertest_issues_bug22084430
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_issues_bug22084430" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_issues_bug22084430" end time: Apr 10 00:26 UTC
+"routertest_issues_bug22084430" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_issues_bug24909259
+206/266 Testing: routertest_issues_bug24909259
+206/266 Test: routertest_issues_bug24909259
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_issues_bug24909259" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_issues_bug24909259" end time: Apr 10 00:26 UTC
+"routertest_issues_bug24909259" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_router_default_paths
+207/266 Testing: routertest_router_default_paths
+207/266 Test: routertest_router_default_paths
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/router/tests
+"routertest_router_default_paths" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_router_default_paths" end time: Apr 10 00:26 UTC
+"routertest_router_default_paths" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_block_clients
+208/266 Testing: routertest_routing_block_clients
+208/266 Test: routertest_routing_block_clients
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_block_clients" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_block_clients" end time: Apr 10 00:26 UTC
+"routertest_routing_block_clients" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_connection_container
+209/266 Testing: routertest_routing_connection_container
+209/266 Test: routertest_routing_connection_container
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_connection_container" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_connection_container" end time: Apr 10 00:26 UTC
+"routertest_routing_connection_container" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_first_available
+210/266 Testing: routertest_routing_first_available
+210/266 Test: routertest_routing_first_available
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_first_available" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_first_available" end time: Apr 10 00:26 UTC
+"routertest_routing_first_available" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_metadata_cache_group
+211/266 Testing: routertest_routing_metadata_cache_group
+211/266 Test: routertest_routing_metadata_cache_group
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_metadata_cache_group" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_metadata_cache_group" end time: Apr 10 00:26 UTC
+"routertest_routing_metadata_cache_group" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_next_available
+212/266 Testing: routertest_routing_next_available
+212/266 Test: routertest_routing_next_available
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_next_available" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_next_available" end time: Apr 10 00:26 UTC
+"routertest_routing_next_available" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_round_robin
+213/266 Testing: routertest_routing_round_robin
+213/266 Test: routertest_routing_round_robin
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_round_robin" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_round_robin" end time: Apr 10 00:26 UTC
+"routertest_routing_round_robin" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_routing
+214/266 Testing: routertest_routing_routing
+214/266 Test: routertest_routing_routing
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_routing" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_routing" end time: Apr 10 00:26 UTC
+"routertest_routing_routing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_setup_named_socket_service
+215/266 Testing: routertest_routing_setup_named_socket_service
+215/266 Test: routertest_routing_setup_named_socket_service
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_setup_named_socket_service" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_setup_named_socket_service" end time: Apr 10 00:26 UTC
+"routertest_routing_setup_named_socket_service" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_setup_tcp_service
+216/266 Testing: routertest_routing_setup_tcp_service
+216/266 Test: routertest_routing_setup_tcp_service
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_setup_tcp_service" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_setup_tcp_service" end time: Apr 10 00:26 UTC
+"routertest_routing_setup_tcp_service" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_auth_digest
+217/266 Testing: routertest_routing_auth_digest
+217/266 Test: routertest_routing_auth_digest
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_auth_digest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_auth_digest" end time: Apr 10 00:26 UTC
+"routertest_routing_auth_digest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_plugin
+218/266 Testing: routertest_routing_plugin
+218/266 Test: routertest_routing_plugin
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_plugin" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_plugin" end time: Apr 10 00:26 UTC
+"routertest_routing_plugin" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_routing_classic_protocol_splicer
+219/266 Testing: routertest_routing_classic_protocol_splicer
+219/266 Test: routertest_routing_classic_protocol_splicer
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/src/routing/tests
+"routertest_routing_classic_protocol_splicer" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_routing_classic_protocol_splicer" end time: Apr 10 00:26 UTC
+"routertest_routing_classic_protocol_splicer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_async_replicaset
+220/266 Testing: routertest_component_async_replicaset
+220/266 Test: routertest_component_async_replicaset
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_async_replicaset" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_async_replicaset" end time: Apr 10 00:26 UTC
+"routertest_component_async_replicaset" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_bootstrap
+221/266 Testing: routertest_component_bootstrap
+221/266 Test: routertest_component_bootstrap
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_bootstrap" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_bootstrap" end time: Apr 10 00:26 UTC
+"routertest_component_bootstrap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_bootstrap_account
+222/266 Testing: routertest_component_bootstrap_account
+222/266 Test: routertest_component_bootstrap_account
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_bootstrap_account" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_bootstrap_account" end time: Apr 10 00:26 UTC
+"routertest_component_bootstrap_account" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_bootstrap_clusterset
+223/266 Testing: routertest_component_bootstrap_clusterset
+223/266 Test: routertest_component_bootstrap_clusterset
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_bootstrap_clusterset" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_bootstrap_clusterset" end time: Apr 10 00:26 UTC
+"routertest_component_bootstrap_clusterset" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_bootstrap_system_deployment
+224/266 Testing: routertest_component_bootstrap_system_deployment
+224/266 Test: routertest_component_bootstrap_system_deployment
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_bootstrap_system_deployment" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_bootstrap_system_deployment" end time: Apr 10 00:26 UTC
+"routertest_component_bootstrap_system_deployment" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_bootstrap_tls_endpoint
+225/266 Testing: routertest_component_bootstrap_tls_endpoint
+225/266 Test: routertest_component_bootstrap_tls_endpoint
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_bootstrap_tls_endpoint" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_bootstrap_tls_endpoint" end time: Apr 10 00:26 UTC
+"routertest_component_bootstrap_tls_endpoint" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_clusterset
+226/266 Testing: routertest_component_clusterset
+226/266 Test: routertest_component_clusterset
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_clusterset" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_clusterset" end time: Apr 10 00:26 UTC
+"routertest_component_clusterset" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_component_test_framework
+227/266 Testing: routertest_component_component_test_framework
+227/266 Test: routertest_component_component_test_framework
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_component_test_framework" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_component_test_framework" end time: Apr 10 00:26 UTC
+"routertest_component_component_test_framework" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_config
+228/266 Testing: routertest_component_config
+228/266 Test: routertest_component_config
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_config" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_config" end time: Apr 10 00:26 UTC
+"routertest_component_config" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_config_overwrites
+229/266 Testing: routertest_component_config_overwrites
+229/266 Test: routertest_component_config_overwrites
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_config_overwrites" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_config_overwrites" end time: Apr 10 00:26 UTC
+"routertest_component_config_overwrites" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_connection_pool
+230/266 Testing: routertest_component_connection_pool
+230/266 Test: routertest_component_connection_pool
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_connection_pool" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_connection_pool" end time: Apr 10 00:26 UTC
+"routertest_component_connection_pool" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_gr_notifications
+231/266 Testing: routertest_component_gr_notifications
+231/266 Test: routertest_component_gr_notifications
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_gr_notifications" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_gr_notifications" end time: Apr 10 00:26 UTC
+"routertest_component_gr_notifications" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_http_server
+232/266 Testing: routertest_component_http_server
+232/266 Test: routertest_component_http_server
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_http_server" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_http_server" end time: Apr 10 00:26 UTC
+"routertest_component_http_server" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_logging
+233/266 Testing: routertest_component_logging
+233/266 Test: routertest_component_logging
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_logging" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_logging" end time: Apr 10 00:26 UTC
+"routertest_component_logging" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_logging_eventlog
+234/266 Testing: routertest_component_logging_eventlog
+234/266 Test: routertest_component_logging_eventlog
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_logging_eventlog" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_logging_eventlog" end time: Apr 10 00:26 UTC
+"routertest_component_logging_eventlog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_master_key_reader_writer
+235/266 Testing: routertest_component_master_key_reader_writer
+235/266 Test: routertest_component_master_key_reader_writer
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_master_key_reader_writer" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_master_key_reader_writer" end time: Apr 10 00:26 UTC
+"routertest_component_master_key_reader_writer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_metadata_ttl
+236/266 Testing: routertest_component_metadata_ttl
+236/266 Test: routertest_component_metadata_ttl
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_metadata_ttl" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_metadata_ttl" end time: Apr 10 00:26 UTC
+"routertest_component_metadata_ttl" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_pidfile
+237/266 Testing: routertest_component_pidfile
+237/266 Test: routertest_component_pidfile
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_pidfile" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_pidfile" end time: Apr 10 00:26 UTC
+"routertest_component_pidfile" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_rest_api
+238/266 Testing: routertest_component_rest_api
+238/266 Test: routertest_component_rest_api
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_rest_api" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_rest_api" end time: Apr 10 00:26 UTC
+"routertest_component_rest_api" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_rest_api_enable
+239/266 Testing: routertest_component_rest_api_enable
+239/266 Test: routertest_component_rest_api_enable
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_rest_api_enable" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_rest_api_enable" end time: Apr 10 00:26 UTC
+"routertest_component_rest_api_enable" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_rest_metadata_cache
+240/266 Testing: routertest_component_rest_metadata_cache
+240/266 Test: routertest_component_rest_metadata_cache
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_rest_metadata_cache" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_rest_metadata_cache" end time: Apr 10 00:26 UTC
+"routertest_component_rest_metadata_cache" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_rest_mock_server
+241/266 Testing: routertest_component_rest_mock_server
+241/266 Test: routertest_component_rest_mock_server
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_rest_mock_server" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_rest_mock_server" end time: Apr 10 00:26 UTC
+"routertest_component_rest_mock_server" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_rest_router
+242/266 Testing: routertest_component_rest_router
+242/266 Test: routertest_component_rest_router
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_rest_router" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_rest_router" end time: Apr 10 00:26 UTC
+"routertest_component_rest_router" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_rest_routing
+243/266 Testing: routertest_component_rest_routing
+243/266 Test: routertest_component_rest_routing
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_rest_routing" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_rest_routing" end time: Apr 10 00:26 UTC
+"routertest_component_rest_routing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_rest_connection_pool
+244/266 Testing: routertest_component_rest_connection_pool
+244/266 Test: routertest_component_rest_connection_pool
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_rest_connection_pool" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_rest_connection_pool" end time: Apr 10 00:26 UTC
+"routertest_component_rest_connection_pool" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_router_configuration_errors
+245/266 Testing: routertest_component_router_configuration_errors
+245/266 Test: routertest_component_router_configuration_errors
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_router_configuration_errors" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_router_configuration_errors" end time: Apr 10 00:26 UTC
+"routertest_component_router_configuration_errors" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_router_stacktrace
+246/266 Testing: routertest_component_router_stacktrace
+246/266 Test: routertest_component_router_stacktrace
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_router_stacktrace" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_router_stacktrace" end time: Apr 10 00:26 UTC
+"routertest_component_router_stacktrace" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_routing
+247/266 Testing: routertest_component_routing
+247/266 Test: routertest_component_routing
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_routing" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_routing" end time: Apr 10 00:26 UTC
+"routertest_component_routing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_routing_connection
+248/266 Testing: routertest_component_routing_connection
+248/266 Test: routertest_component_routing_connection
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_routing_connection" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_routing_connection" end time: Apr 10 00:26 UTC
+"routertest_component_routing_connection" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_routing_connection_errors
+249/266 Testing: routertest_component_routing_connection_errors
+249/266 Test: routertest_component_routing_connection_errors
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_routing_connection_errors" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_routing_connection_errors" end time: Apr 10 00:26 UTC
+"routertest_component_routing_connection_errors" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_routing_strategy
+250/266 Testing: routertest_component_routing_strategy
+250/266 Test: routertest_component_routing_strategy
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_routing_strategy" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_routing_strategy" end time: Apr 10 00:26 UTC
+"routertest_component_routing_strategy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_routing_sharing
+251/266 Testing: routertest_component_routing_sharing
+251/266 Test: routertest_component_routing_sharing
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_routing_sharing" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_routing_sharing" end time: Apr 10 00:26 UTC
+"routertest_component_routing_sharing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_sd_notify
+252/266 Testing: routertest_component_sd_notify
+252/266 Test: routertest_component_sd_notify
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_sd_notify" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_sd_notify" end time: Apr 10 00:26 UTC
+"routertest_component_sd_notify" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_shutdown
+253/266 Testing: routertest_component_shutdown
+253/266 Test: routertest_component_shutdown
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_shutdown" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_shutdown" end time: Apr 10 00:26 UTC
+"routertest_component_shutdown" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_state_file
+254/266 Testing: routertest_component_state_file
+254/266 Test: routertest_component_state_file
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_state_file" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_state_file" end time: Apr 10 00:26 UTC
+"routertest_component_state_file" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_user_option
+255/266 Testing: routertest_component_user_option
+255/266 Test: routertest_component_user_option
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_user_option" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_user_option" end time: Apr 10 00:26 UTC
+"routertest_component_user_option" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_metadata_http_auth_backend
+256/266 Testing: routertest_component_metadata_http_auth_backend
+256/266 Test: routertest_component_metadata_http_auth_backend
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_metadata_http_auth_backend" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_metadata_http_auth_backend" end time: Apr 10 00:26 UTC
+"routertest_component_metadata_http_auth_backend" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_socket_close
+257/266 Testing: routertest_component_socket_close
+257/266 Test: routertest_component_socket_close
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_socket_close" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_socket_close" end time: Apr 10 00:26 UTC
+"routertest_component_socket_close" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_stacktrace
+258/266 Testing: routertest_component_stacktrace
+258/266 Test: routertest_component_stacktrace
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_stacktrace" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_stacktrace" end time: Apr 10 00:26 UTC
+"routertest_component_stacktrace" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_destination_status
+259/266 Testing: routertest_component_destination_status
+259/266 Test: routertest_component_destination_status
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_destination_status" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_destination_status" end time: Apr 10 00:26 UTC
+"routertest_component_destination_status" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_routing_splicer
+260/266 Testing: routertest_component_routing_splicer
+260/266 Test: routertest_component_routing_splicer
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_routing_splicer" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_routing_splicer" end time: Apr 10 00:26 UTC
+"routertest_component_routing_splicer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_component_mock_server
+261/266 Testing: routertest_component_mock_server
+261/266 Test: routertest_component_mock_server
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/component
+"routertest_component_mock_server" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_component_mock_server" end time: Apr 10 00:26 UTC
+"routertest_component_mock_server" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_integration_routing_direct
+262/266 Testing: routertest_integration_routing_direct
+262/266 Test: routertest_integration_routing_direct
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/integration
+"routertest_integration_routing_direct" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_integration_routing_direct" end time: Apr 10 00:26 UTC
+"routertest_integration_routing_direct" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_integration_routing_reuse
+263/266 Testing: routertest_integration_routing_reuse
+263/266 Test: routertest_integration_routing_reuse
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/integration
+"routertest_integration_routing_reuse" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_integration_routing_reuse" end time: Apr 10 00:26 UTC
+"routertest_integration_routing_reuse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_integration_routing_sharing
+264/266 Testing: routertest_integration_routing_sharing
+264/266 Test: routertest_integration_routing_sharing
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/integration
+"routertest_integration_routing_sharing" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_integration_routing_sharing" end time: Apr 10 00:26 UTC
+"routertest_integration_routing_sharing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_integration_routing_sharing_constrained_pools
+265/266 Testing: routertest_integration_routing_sharing_constrained_pools
+265/266 Test: routertest_integration_routing_sharing_constrained_pools
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/integration
+"routertest_integration_routing_sharing_constrained_pools" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_integration_routing_sharing_constrained_pools" end time: Apr 10 00:26 UTC
+"routertest_integration_routing_sharing_constrained_pools" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ec2-user/build-mysql-server/runtime_output_directory/routertest_integration_routing_sharing_restart
+266/266 Testing: routertest_integration_routing_sharing_restart
+266/266 Test: routertest_integration_routing_sharing_restart
+Command: ""
+Directory: /home/ec2-user/build-mysql-server/router/tests/integration
+"routertest_integration_routing_sharing_restart" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"routertest_integration_routing_sharing_restart" end time: Apr 10 00:26 UTC
+"routertest_integration_routing_sharing_restart" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 10 00:26 UTC
+
+NDB =   0.00 sec*proc
+
