@@ -11,11 +11,6 @@ sudo yum install -y pip
 sudo pip install --upgrade build
 sudo pip install --upgrade setuptools
 
-git config --global user.name "Philip J. Reed" 
-git config --global user.email reed9999@uw.edu
-git config --global core.autocrlf input
-git config --global credential.helper store  # be careful! stores in plaintext
-
 pushd ~
 git clone https://github.com/pytest-dev/pytest.git
 git clone --depth 1 https://github.com/django/django.git
