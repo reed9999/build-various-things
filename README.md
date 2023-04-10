@@ -59,24 +59,26 @@ closer regions to compare.
 Terraform-automate of course.
 
 
-
-
-## Temp stuff -- mysql
+## MySQL
 # https://dev.mysql.com/doc/refman/8.0/en/installing-development-tree.html
 # https://dev.mysql.com/doc/refman/8.0/en/source-installation-prerequisites.html
 
 
-sudo yum install cmake
-sudo yum install gcc
-sudo yum install boost
-sudo yum install ncurses
-sudo yum install perl   # to run tests
-sudo yum install -y bison
+If I need something fun to explore, check out these i18n dependencies: 
+https://github.com/unicode-org/icu
 
+Or these language compilers - do we need all of them?
+google protobuff
+extra protobuff
 
+This is an intriguing name:
+storage/innobase/CMakeFiles/innobase.dir/row/row0mysql.cc.o
 
 
 # Bazel
+Got it working, sort of, on t2.micro but it died in the most taxing part of the build. 
+
+Took about 20 min to build on m6a.xlarge, with another 10 for command-line completion.
 
 Here is another approach to getting JDK and Bazel. I didn't fully carry it out but it seems like it 
 could be finished off pretty quickly if the approach used didn't complete.
