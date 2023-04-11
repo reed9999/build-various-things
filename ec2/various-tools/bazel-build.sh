@@ -27,12 +27,12 @@ sudo yum install -y unzip
 sudo yum install -y gcc gcc-c++ kernel-devel make
 
 
-date >> ~/017-bazel-build-output.txt &
+date > ~/017-bazel-build-output.txt 
 nohup bazel build //src:bazel-dev >> ~/017-bazel-build-output.txt &
 date >> ~/017-bazel-build-output.txt &
 
 # We can also run the tab completion. On an xlarge it adds about 10 more minutes.
- bazel build //scripts:bazel-complete.bash
+ # bazel build //scripts:bazel-complete.bash
 
 
 popd
