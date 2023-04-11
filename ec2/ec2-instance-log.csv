@@ -3,3 +3,4 @@ Ohio,14,m5.large,2023-04-09 13:30 EDT,mysql,built with errors,20:45
 Ohio,15,t2.micro,2023-04-09 20:45 EDT,misc
 Ohio,16,m-something bigger,2023-04-09 22:00 EDT,Bazel
 Ohio,17,m6a-xlarge,2023-04-10 9:40, Bazel
+Ohio,18,t2.small,2023-04-11 10:00,Bazel,t2.small is still too small for this workload. Got throttled for a bit.,00:30

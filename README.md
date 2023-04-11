@@ -1,16 +1,22 @@
-# Issues with this commit
-Merging is going to get out of hand so let's try to control this!
-
-- bootstrap obv is a mess. I really only want git.
-- ~~it's not pushd'ing correctly so code is put in scripts if I run from scripts.~~ fixed
-- and THEN... of course the refactoring. But be sure to add the newly refactored dir!!
-- getting it to use Python3.11 is still a mess. This revision is probably forgetting to re-link 3.9, 
-  and it seems we're not installing pip for 3.11.
-
 # README - Compiling and Building Various Things
 Here I attempt to automate build processes... just because.
 (Building from source is a prereq to mucking around in source, kind of, 
 and beyond that it just feels good.)
+
+## Directions
+There are many ways I could take this.
+0. Terraform!
+1. Keep adding new things to build.
+2. Dig into the most relevant (Python, Python tools, maybe Bazel) and understand the build.
+3. Some builds have test failures. Why? Can I fix these, follow up on them, etc.?
+	- And in Bazel I don't even understand how the self-build is being tested.
+4. Change environments, see what else needs to change.
+	- instance types
+	- OS (Win, Mac)
+	- Azure, GCP
+	- local
+5. Perf test any of the above, esp. larger instance types.
+6. Muck about in source code. Break things. Put in my own strings, my own easter eggs.
 
 ## Python (CPython)
 Build worked per scripts. Maybe 20 min. Testing now. Maybe about the same amount of time.
