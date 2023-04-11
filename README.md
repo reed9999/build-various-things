@@ -3,10 +3,11 @@ Here I attempt to automate build processes... just because.
 (Building from source is a prereq to mucking around in source, kind of, 
 and beyond that it just feels good.)
 
-## Directions
+## Directions I could go in
 There are many ways I could take this.
 0. Terraform!
 1. Keep adding new things to build.
+2. Puzzles
 2. Dig into the most relevant (Python, Python tools, maybe Bazel) and understand the build.
 3. Some builds have test failures. Why? Can I fix these, follow up on them, etc.?
 	- And in Bazel I don't even understand how the self-build is being tested.
@@ -20,6 +21,7 @@ There are many ways I could take this.
 
 ## Python (CPython)
 Build worked per scripts. Maybe 20 min. Testing now. Maybe about the same amount of time.
+- cpython: yes but *probably* needs a decent-sized instance, I don't recall.
 
 ## Python various tools
 Just a sample of stuff off top of my head that would be fun to develop on. 
@@ -27,11 +29,13 @@ Qutebrowser isn't a high priority for me but I did look into contributing once,
 when I found it on a list of welcoming open source projects,
  so I have a fondness for it.
 
-So far I got all the code; some builds work and some don't.
 
 - pytest seems OK.
 - Django passes its wonderful test suite.
-- qutebrowser not working here; I think I got it on ohio-03.
+- qutebrowser: I've seen it build successfully somewhere, maybe on ohio-03.
+
+
+- pytorch - back burner. Should use Ananconda and I don't want to set that kind of instance up just yet.
 
 
 ### Build warnings
@@ -48,10 +52,11 @@ WARNING: The wheel package is not available.
 Common commands: (see '--help-commands' for more)
 ```
 
-However `python3 ./setup.py build` was OK except for those so who knows?
+However `python3 ./setup.py build` was OK except for those (PUZZLE)
 
-Django gets some deprecation warnings.
-## Enhancements
+Django gets some deprecation warnings. Can they reasonably be fixed.
+
+## Enhancements -- see also "Directions..." above.
 Can we just use an EC2 image with gcc? Try:
 
 amzn2-ami-kernel-5.10-hvm-2.0.20230320.0-x86_64-gp2
@@ -64,8 +69,17 @@ closer regions to compare.
 
 Terraform-automate of course.
 
+## Pip
+Good example of Nox. See 
+https://hynek.me/articles/why-i-like-nox/
+
+Tests failed in pytest, which seems a bit surprising, so 
+
+PUZZLE: What is nox doing different to make them pass?
 
 ## MySQL
+- mysql: yes but needs a decent-sized instance.
+- bazel: yes but needs a decent-sized instance.
 # https://dev.mysql.com/doc/refman/8.0/en/installing-development-tree.html
 # https://dev.mysql.com/doc/refman/8.0/en/source-installation-prerequisites.html
 
@@ -102,3 +116,4 @@ popd
 
 
 ```
+
