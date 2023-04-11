@@ -1,0 +1,2080 @@
+~ ~/scripts
+~/ruby ~ ~/scripts
+~/ruby/build ~/ruby ~ ~/scripts
+checking for ruby... /usr/bin/ruby
+tool/config.guess already exists
+tool/config.sub already exists
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking for ld... ld
+checking for gcc-ar... gcc-ar
+checking for g++... no
+checking for gcc-nm... gcc-nm
+checking for gcc-ranlib... gcc-ranlib
+checking for gcc... (cached) gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for gcc option to accept ISO C99... none needed
+checking for g++... no
+checking for c++... no
+checking for gpp... no
+checking for aCC... no
+checking for CC... no
+checking for cxx... no
+checking for cc++... no
+checking for cl.exe... no
+checking for FCC... no
+checking for KCC... no
+checking for RCC... no
+checking for xlC_r... no
+checking for xlC... no
+checking whether we are using the GNU C++ compiler... no
+checking whether g++ accepts -g... no
+checking how to run the C preprocessor... gcc -E
+checking for gas... no
+checking for as... as
+checking for gobjcopy... no
+checking for objcopy... objcopy
+checking for gobjdump... no
+checking for objdump... objdump
+checking for gstrip... no
+checking for strip... strip
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether the linker is GNU ld... yes
+checking whether gcc -E accepts -o... yes
+checking for gcc... /usr/bin/gcc
+checking for gcc-ar flags... rcD
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for dtrace... no
+checking for dot... no
+checking for doxygen... no
+checking for pkg-config... pkg-config
+checking whether it is Android... no
+checking for cd using physical directory... cd -P
+checking whether CFLAGS is valid... yes
+checking whether LDFLAGS is valid... yes
+checking whether ELF binaries are produced... yes
+checking whether -Wl,-rpath,. is accepted as LDFLAGS... yes
+checking whether -fdeclspec is accepted as LDFLAGS... no
+checking whether -fdeclspec is accepted as CXXFLAGS... no
+checking whether -Wextra-tokens is accepted as CFLAGS... no
+checking whether -Wdeprecated-declarations is accepted as CFLAGS... yes
+checking whether -Wdivision-by-zero is accepted as CFLAGS... no
+checking whether -Wdiv-by-zero is accepted as CFLAGS... yes
+checking whether -Wduplicated-cond is accepted as CFLAGS... yes
+checking whether -Wimplicit-function-declaration is accepted as CFLAGS... yes
+checking whether -Wimplicit-int is accepted as CFLAGS... yes
+checking whether -Wmisleading-indentation is accepted as CFLAGS... yes
+checking whether -Wpointer-arith is accepted as CFLAGS... yes
+checking whether -Wshorten-64-to-32 is accepted as CFLAGS... no
+checking whether -Wwrite-strings is accepted as CFLAGS... yes
+checking whether -Wold-style-definition is accepted as CFLAGS... yes
+checking whether -Wimplicit-fallthrough=0 is accepted as CFLAGS... yes
+checking whether -Wmissing-noreturn is accepted as CFLAGS... yes
+checking whether -Wno-cast-function-type is accepted as CFLAGS... yes
+checking whether -Wno-constant-logical-operand is accepted as CFLAGS... yes
+checking whether -Wno-long-long is accepted as CFLAGS... yes
+checking whether -Wno-missing-field-initializers is accepted as CFLAGS... yes
+checking whether -Wno-overlength-strings is accepted as CFLAGS... yes
+checking whether -Wno-packed-bitfield-compat is accepted as CFLAGS... yes
+checking whether -Wno-parentheses-equality is accepted as CFLAGS... yes
+checking whether -Wno-self-assign is accepted as CFLAGS... yes
+checking whether -Wno-tautological-compare is accepted as CFLAGS... yes
+checking whether -Wno-unused-parameter is accepted as CFLAGS... yes
+checking whether -Wno-unused-value is accepted as CFLAGS... yes
+checking whether -Wsuggest-attribute=format is accepted as CFLAGS... yes
+checking whether -Wsuggest-attribute=noreturn is accepted as CFLAGS... yes
+checking whether -Wunused-variable is accepted as CFLAGS... yes
+checking whether -diag-disable=175,188,1684,2259,2312 is accepted as CFLAGS... no
+checking whether -Wundef is accepted as CFLAGS... yes
+checking whether -Wall -Wextra is accepted as CFLAGS... yes
+checking whether -Qunused-arguments is accepted as CFLAGS... no
+checking whether -O3 -D_FORTIFY_SOURCE=2 is accepted as CFLAGS... yes
+checking whether -fstack-protector-strong is accepted as CFLAGS... yes
+checking whether -fstack-protector-strong is accepted as LDFLAGS... yes
+checking for -fstack-protector... -fstack-protector-strong
+checking whether -Wl,--compress-debug-sections=zlib is accepted as LDFLAGS... yes
+checking whether -fno-strict-overflow is accepted as CFLAGS... yes
+checking whether -ggdb3 is accepted as CFLAGS... yes
+checking whether -fvisibility=hidden is accepted as CFLAGS... yes
+checking whether -fno-fast-math is accepted as CFLAGS... yes
+checking whether -fexcess-precision=standard is accepted as CFLAGS... yes
+checking whether -fp-model precise is accepted as CFLAGS... no
+checking whether compiler has statement and declarations in expressions... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lthr... no
+checking for pthread_create in -lpthread... yes
+checking for pthread_np.h... no
+checking thread model... pthread
+configure: Test skipped due to lack of a C++ compiler.
+checking for crypt in -lcrypt... yes
+checking for dlopen in -ldl... yes
+checking for shutdown in -lsocket... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for afunix.h... no
+checking atomic.h usability... no
+checking atomic.h presence... no
+checking for atomic.h... no
+checking copyfile.h usability... no
+checking copyfile.h presence... no
+checking for copyfile.h... no
+checking direct.h usability... no
+checking direct.h presence... no
+checking for direct.h... no
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking intrinsics.h usability... no
+checking intrinsics.h presence... no
+checking for intrinsics.h... no
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking malloc/malloc.h usability... no
+checking malloc/malloc.h presence... no
+checking for malloc/malloc.h... no
+checking malloc_np.h usability... no
+checking malloc_np.h presence... no
+checking for malloc_np.h... no
+checking net/socket.h usability... no
+checking net/socket.h presence... no
+checking for net/socket.h... no
+checking process.h usability... no
+checking process.h presence... no
+checking for process.h... no
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking sanitizer/asan_interface.h usability... yes
+checking sanitizer/asan_interface.h presence... yes
+checking for sanitizer/asan_interface.h... yes
+checking sanitizer/msan_interface.h usability... no
+checking sanitizer/msan_interface.h presence... no
+checking for sanitizer/msan_interface.h... no
+checking setjmpex.h usability... no
+checking setjmpex.h presence... no
+checking for setjmpex.h... no
+checking stdalign.h usability... yes
+checking stdalign.h presence... yes
+checking for stdalign.h... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking sys/attr.h usability... no
+checking sys/attr.h presence... no
+checking for sys/attr.h... no
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking sys/fcntl.h usability... yes
+checking sys/fcntl.h presence... yes
+checking for sys/fcntl.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/id.h usability... no
+checking sys/id.h presence... no
+checking for sys/id.h... no
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/mkdev.h usability... no
+checking sys/mkdev.h presence... no
+checking for sys/mkdev.h... no
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking sys/random.h usability... yes
+checking sys/random.h presence... yes
+checking for sys/random.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/sendfile.h usability... yes
+checking sys/sendfile.h presence... yes
+checking for sys/sendfile.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking sys/sysmacros.h usability... yes
+checking sys/sysmacros.h presence... yes
+checking for sys/sysmacros.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking sys/uio.h usability... yes
+checking sys/uio.h presence... yes
+checking for sys/uio.h... yes
+checking sys/utime.h usability... no
+checking sys/utime.h presence... no
+checking for sys/utime.h... no
+checking syscall.h usability... yes
+checking syscall.h presence... yes
+checking for syscall.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking ucontext.h usability... yes
+checking ucontext.h presence... yes
+checking for ucontext.h... yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking x86intrin.h usability... yes
+checking x86intrin.h presence... yes
+checking for x86intrin.h... yes
+checking for x86intrin.h when defined(__x86_64__)... yes
+checking gmp.h usability... no
+checking gmp.h presence... no
+checking for gmp.h... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether byte ordering is bigendian... no
+checking for an ANSI C-conforming const... yes
+checking whether char is unsigned... no
+checking for inline... inline
+checking for working volatile... yes
+checking for typeof syntax and keyword spelling... typeof
+checking for C/C++ restrict keyword... __restrict
+checking for long long... yes
+checking for off_t... yes
+checking char bit... 8
+checking size of int... 4
+checking size of short... 2
+checking size of long... 8
+checking size of long long... 8
+checking size of __int64... 0
+checking size of __int128... 16
+checking size of off_t... 8
+checking size of void*... 8
+checking size of float... 4
+checking size of double... 8
+checking size of time_t... 8
+checking size of clock_t... 8
+checking packed struct attribute... x __attribute__((packed))
+checking whether -Wno-address-of-packed-member is accepted as CFLAGS... yes
+checking for printf prefix for long long... ll
+checking for pid_t... yes
+checking for convertible type of pid_t... INT
+checking for uid_t... yes
+checking for convertible type of uid_t... UINT
+checking for gid_t... yes
+checking for convertible type of gid_t... UINT
+checking for time_t... yes
+checking for convertible type of time_t... LONG
+checking for dev_t... yes
+checking for convertible type of dev_t... ULONG
+checking for mode_t... yes
+checking for convertible type of mode_t... UINT
+checking for rlim_t... yes
+checking for convertible type of rlim_t... ULONG
+checking for off_t... (cached) yes
+checking for convertible type of off_t... LONG
+checking for clockid_t... yes
+checking for convertible type of clockid_t... INT
+checking for variable length macro... yes
+checking if _Alignof() works... yes
+checking for CONSTFUNC function attribute... __attribute__ ((__const__)) x
+checking for PUREFUNC function attribute... __attribute__ ((__pure__)) x
+checking for NORETURN function attribute... __attribute__ ((__noreturn__)) x
+checking for DEPRECATED function attribute... __attribute__ ((__deprecated__)) x
+checking for DEPRECATED_BY function attribute... __attribute__ ((__deprecated__("by "#n))) x
+checking for NOINLINE function attribute... __attribute__ ((__noinline__)) x
+checking for ALWAYS_INLINE function attribute... __attribute__ ((__always_inline__)) x
+checking for NO_SANITIZE function attribute... __attribute__ ((__no_sanitize__(san))) x
+checking for NO_SANITIZE_ADDRESS function attribute... __attribute__ ((__no_sanitize_address__)) x
+checking for NO_ADDRESS_SAFETY_ANALYSIS function attribute... __attribute__ ((__no_address_safety_analysis__)) x
+checking for WARN_UNUSED_RESULT function attribute... __attribute__ ((__warn_unused_result__)) x
+checking for MAYBE_UNUSED function attribute... __attribute__ ((__unused__)) x
+checking for ERRORFUNC function attribute... __attribute__ ((__error__ mesg)) x
+checking for WARNINGFUNC function attribute... __attribute__ ((__warning__ mesg)) x
+checking for WEAK function attribute... __attribute__ ((__weak__)) x
+checking for __attribute__((__depreacted__(msg))) in C++... no
+checking for std::nullptr_t... no
+checking for FUNC_STDCALL function attribute... x
+checking for FUNC_CDECL function attribute... x
+checking for FUNC_FASTCALL function attribute... x
+checking for FUNC_UNOPTIMIZED function attribute... __attribute__ ((__optimize__("O0"))) x
+checking for FUNC_MINIMIZED function attribute... __attribute__ ((__optimize__("-Os","-fomit-frame-pointer"))) x
+checking for function alias... alias
+checking for __atomic builtins... yes
+checking for __sync builtins... yes
+checking for __builtin_unreachable... yes
+checking for __assume... no
+checking for exported function attribute... __attribute__ ((__visibility__("default")))
+checking for RUBY_FUNC_NONNULL function attribute... __attribute__ ((__nonnull__(n))) x
+checking for function name string predefined identifier... __func__
+checking if enum over int is allowed... yes
+checking whether sys_nerr is declared... no
+checking whether getenv is declared... yes
+checking for size_t... yes
+checking size of size_t... 8
+checking size of ptrdiff_t... 8
+checking size of dev_t... 8
+checking for printf prefix for size_t... z
+checking for printf prefix for ptrdiff_t... t
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_blocks... yes
+checking for struct stat.st_rdev... yes
+checking size of struct stat.st_size... SIZEOF_OFF_T
+checking size of struct stat.st_blocks... SIZEOF_OFF_T
+checking size of struct stat.st_ino... SIZEOF_LONG
+checking size of struct stat.st_dev... SIZEOF_DEV_T
+checking size of struct stat.st_rdev... SIZEOF_DEV_T
+checking for struct stat.st_atim... yes
+checking for struct stat.st_atimespec... no
+checking for struct stat.st_atimensec... no
+checking for struct stat.st_mtim... yes
+checking for struct stat.st_mtimespec... no
+checking for struct stat.st_mtimensec... no
+checking for struct stat.st_ctim... yes
+checking for struct stat.st_ctimespec... no
+checking for struct stat.st_ctimensec... no
+checking for struct stat.st_birthtimespec... no
+checking for struct statx.stx_btime... yes
+checking for struct timeval... yes
+checking size of struct timeval.tv_sec... SIZEOF_TIME_T
+checking for struct timespec... yes
+checking for struct timezone... yes
+checking for fd_mask... yes
+checking for int8_t... yes
+checking size of int8_t... 1
+checking for uint8_t... yes
+checking size of uint8_t... 1
+checking for int16_t... yes
+checking size of int16_t... 2
+checking for uint16_t... yes
+checking size of uint16_t... 2
+checking for int32_t... yes
+checking size of int32_t... 4
+checking for uint32_t... yes
+checking size of uint32_t... 4
+checking for int64_t... yes
+checking size of int64_t... 8
+checking for uint64_t... yes
+checking size of uint64_t... 8
+checking for int128_t... __int128
+checking for uint128_t... unsigned __int128
+checking for intptr_t... yes
+checking size of intptr_t... 8
+checking for uintptr_t... yes
+checking size of uintptr_t... 8
+checking for printf prefix for intptr_t... NONE
+checking for ssize_t... yes
+checking size of ssize_t... 8
+checking for printf prefix for int64_t... NONE
+checking for stack end address... __libc_stack_end
+checking for uid_t in sys/types.h... (cached) yes
+checking type of array argument to getgroups... gid_t
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for dynamic size alloca... ok
+checking for working memcmp... yes
+checking for dup... yes
+checking for dup2... yes
+checking for acosh... yes
+checking for cbrt... yes
+checking for crypt... yes
+checking for erf... yes
+checking for explicit_bzero... yes
+checking for ffs... yes
+checking for flock... yes
+checking for hypot... yes
+checking for lgamma_r... yes
+checking for memmove... yes
+checking for nan... yes
+checking for nextafter... yes
+checking for setproctitle... no
+checking for strchr... yes
+checking for strerror... yes
+checking for strlcat... no
+checking for strlcpy... no
+checking for strstr... yes
+checking for tgamma... yes
+checking sys/pstat.h usability... no
+checking sys/pstat.h presence... no
+checking for sys/pstat.h... no
+checking for pid_t... (cached) yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for __syscall... no
+checking for _longjmp... yes
+checking for arc4random_buf... no
+checking for atan2l... yes
+checking for atan2f... yes
+checking for chmod... yes
+checking for chown... yes
+checking for chroot... yes
+checking for chsize... no
+checking for clock_gettime... yes
+checking for copy_file_range... yes
+checking for cosh... yes
+checking for crypt_r... yes
+checking for daemon... (cached) no
+checking for dirfd... yes
+checking for dl_iterate_phdr... yes
+checking for dlopen... yes
+checking for dladdr... yes
+checking for dup3... yes
+checking for eaccess... yes
+checking for endgrent... yes
+checking for eventfd... yes
+checking for execl... yes
+checking for execle... yes
+checking for execv... yes
+checking for execve... yes
+checking for explicit_memset... no
+checking for fcopyfile... no
+checking for fchdir... yes
+checking for fchmod... yes
+checking for fchown... yes
+checking for fcntl... yes
+checking for fdatasync... yes
+checking for fdopendir... yes
+checking for fgetattrlist... no
+checking for fmod... yes
+checking for fstatat... yes
+checking for fsync... yes
+checking for ftruncate... yes
+checking for ftruncate64... yes
+checking for getattrlist... no
+checking for getcwd... yes
+checking for getegid... yes
+checking for getentropy... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getgidx... no
+checking for getgrnam... yes
+checking for getgrnam_r... yes
+checking for getgroups... yes
+checking for getlogin... yes
+checking for getlogin_r... yes
+checking for getpgid... yes
+checking for getpgrp... yes
+checking for getppid... yes
+checking for getpriority... yes
+checking for getpwnam... yes
+checking for getpwnam_r... yes
+checking for getpwuid... yes
+checking for getpwuid_r... yes
+checking for getrandom... yes
+checking for getresgid... yes
+checking for getresuid... yes
+checking for getrlimit... yes
+checking for getsid... yes
+checking for gettimeofday... yes
+checking for getuid... yes
+checking for getuidx... no
+checking for gmtime_r... yes
+checking for grantpt... yes
+checking for initgroups... yes
+checking for ioctl... yes
+checking for isfinite... no
+checking for issetugid... no
+checking for kill... yes
+checking for killpg... yes
+checking for lchmod... yes
+checking for lchown... yes
+checking for link... yes
+checking for llabs... yes
+checking for lockf... yes
+checking for log2... yes
+checking for lstat... yes
+checking for lutimes... yes
+checking for malloc_usable_size... yes
+checking for malloc_size... no
+checking for mblen... yes
+checking for memalign... yes
+checking for memset_s... no
+checking for writev... yes
+checking for memrchr... yes
+checking for memmem... yes
+checking for mkfifo... yes
+checking for mknod... yes
+checking for mktime... yes
+checking for mmap... yes
+checking for mremap... yes
+checking for openat... yes
+checking for pclose... yes
+checking for pipe... yes
+checking for pipe2... yes
+checking for poll... yes
+checking for popen... yes
+checking for posix_fadvise... yes
+checking for posix_madvise... yes
+checking for posix_memalign... yes
+checking for ppoll... yes
+checking for pread... yes
+checking for pwrite... yes
+checking for qsort_r... yes
+checking for qsort_s... no
+checking for readlink... yes
+checking for realpath... yes
+checking for round... yes
+checking for sched_getaffinity... yes
+checking for seekdir... yes
+checking for select_large_fdset... no
+checking for sendfile... yes
+checking for setegid... yes
+checking for setenv... yes
+checking for seteuid... yes
+checking for setgid... yes
+checking for setgroups... yes
+checking for setpgid... yes
+checking for setpgrp... yes
+checking for setregid... yes
+checking for setresgid... yes
+checking for setresuid... yes
+checking for setreuid... yes
+checking for setrgid... no
+checking for setrlimit... yes
+checking for setruid... no
+checking for setsid... yes
+checking for setuid... yes
+checking for shutdown... yes
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for sigprocmask... yes
+checking for sinh... yes
+checking for spawnv... no
+checking for symlink... yes
+checking for syscall... yes
+checking for sysconf... yes
+checking for system... yes
+checking for tanh... yes
+checking for telldir... yes
+checking for timegm... yes
+checking for times... yes
+checking for truncate... yes
+checking for truncate64... yes
+checking for tzset... yes
+checking for umask... yes
+checking for unsetenv... yes
+checking for utimensat... yes
+checking for utimes... yes
+checking for wait4... yes
+checking for waitpid... yes
+checking for __cospi... no
+checking for __sinpi... no
+checking for statx... yes
+checking if getcwd allocates buffer if NULL is given... yes
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking for struct crypt_data.initialized... yes
+checking for __builtin_alloca_with_align... yes
+checking for __builtin_assume_aligned... yes
+checking for __builtin_bswap16... yes
+checking for __builtin_bswap32... yes
+checking for __builtin_bswap64... yes
+checking for __builtin_popcount... yes
+checking for __builtin_popcountll... yes
+checking for __builtin_clz... yes
+checking for __builtin_clzl... yes
+checking for __builtin_clzll... yes
+checking for __builtin_ctz... yes
+checking for __builtin_ctzll... yes
+checking for __builtin_add_overflow... yes
+checking for __builtin_sub_overflow... yes
+checking for __builtin_mul_overflow... yes
+checking for __builtin_mul_overflow_p... yes
+checking for __builtin_constant_p... yes
+checking for __builtin_choose_expr... yes
+checking for __builtin_choose_expr_constant_p... yes
+checking for __builtin_types_compatible_p... yes
+checking for __builtin_trap... yes
+checking for __builtin_expect... yes
+checking whether qsort_r is GNU version... yes
+checking whether qsort_r is BSD version... no
+checking whether atan2 handles Inf as C99... yes
+checking for clock_getres... yes
+checking for timer_create in -lrt... yes
+checking for timer_settime in -lrt... yes
+checking for unsetenv returns a value... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for struct tm.tm_gmtoff... yes
+checking for external int daylight... yes
+checking for negative time_t for gmtime(3)... yes
+checking for localtime(3) overflow correctly... yes
+checking for sig_t... yes
+checking whether right shift preserve sign bit... yes
+checking whether _SC_CLK_TCK is supported... yes
+checking stack growing direction on x86_64... -1
+checking native coroutine implementation for x86_64-linux... amd64
+checking whether pthread_t is scalar type... yes
+checking for sched_yield... yes
+checking for pthread_attr_setinheritsched... yes
+checking for pthread_attr_get_np... no
+checking for pthread_attr_getstack... yes
+checking for pthread_attr_getguardsize... yes
+checking for pthread_get_stackaddr_np... no
+checking for pthread_get_stacksize_np... no
+checking for thr_stksegment... no
+checking for pthread_stackseg_np... no
+checking for pthread_getthrds_np... no
+checking for pthread_condattr_setclock... yes
+checking for pthread_setname_np... yes
+checking for pthread_set_name_np... no
+checking for pthread_sigmask... yes
+checking for pthread_getattr_np... yes
+checking arguments of pthread_setname_np... (pthread_self(), name)
+checking for thread-local storage sepcifier... _Thread_local
+checking if mcontext_t is a pointer... no
+checking for getcontext... yes
+checking for setcontext... yes
+checking if fork works with pthread... yes
+checking sys/user.h usability... yes
+checking sys/user.h presence... yes
+checking for sys/user.h... yes
+checking whether PAGE_SIZE is compile-time const... yes
+checking ioctl request type... unsigned long
+checking elf.h usability... yes
+checking elf.h presence... yes
+checking for elf.h... yes
+checking elf_abi.h usability... no
+checking elf_abi.h presence... no
+checking for elf_abi.h... no
+checking for uncompress in -lz... no
+checking mach-o/loader.h usability... no
+checking mach-o/loader.h presence... no
+checking for mach-o/loader.h... no
+checking whether OS depend dynamic link works... yes
+checking for backtrace... yes
+checking for broken backtrace... no
+checking valgrind/memcheck.h usability... no
+checking valgrind/memcheck.h presence... no
+checking for valgrind/memcheck.h... no
+checking for strip flags... -S -x
+checking whether -fPIE is accepted as CFLAGS... yes
+checking whether -pie is accepted as LDFLAGS... yes
+checking whether wrapper for LD_LIBRARY_PATH is needed... no
+checking whether dtrace USDT is available... no
+checking for __builtin_setjmp... yes with cast ()
+checking for _setjmpex as a macro or function... no
+checking for _setjmp as a macro or function... yes
+checking for sigsetjmp as a macro or function... no
+checking for setjmp type... __builtin_setjmp
+checking for rustc... no
+checking for cs_disasm in -lcapstone... no
+checking for prefix of external symbols... NONE
+checking if make is GNU make... yes
+.ext/include/x86_64-linux/ruby/config.h unchanged
+configure: ruby library version = 3.3.0+0
+configure: creating ./config.status
+config.status: creating GNUmakefile
+config.status: creating Makefile
+---
+Configuration summary for ruby version 3.3.0
+
+   * Installation prefix: /home/ec2-user/.rubies/ruby-main
+   * exec prefix:         ${prefix}
+   * arch:                x86_64-linux
+   * site arch:           ${arch}
+   * RUBY_BASE_NAME:      ruby
+   * ruby lib prefix:     ${libdir}/${RUBY_BASE_NAME}
+   * site libraries path: ${rubylibprefix}/${sitearch}
+   * vendor path:         ${rubylibprefix}/vendor_ruby
+   * target OS:           linux
+   * compiler:            gcc
+   * with thread:         pthread
+   * with coroutine:      amd64
+   * enable shared libs:  no
+   * dynamic library ext: so
+   * CFLAGS:              ${optflags} ${debugflags} ${warnflags}
+   * LDFLAGS:             -L. -fstack-protector-strong -rdynamic \
+                          -Wl,-export-dynamic
+   * DLDFLAGS:            -Wl,--compress-debug-sections=zlib
+   * optflags:            -O3 -fno-fast-math
+   * debugflags:          -ggdb3
+   * warnflags:           -Wall -Wextra -Wdeprecated-declarations \
+                          -Wdiv-by-zero -Wduplicated-cond \
+                          -Wimplicit-function-declaration -Wimplicit-int \
+                          -Wmisleading-indentation -Wpointer-arith \
+                          -Wwrite-strings -Wold-style-definition \
+                          -Wimplicit-fallthrough=0 -Wmissing-noreturn \
+                          -Wno-cast-function-type \
+                          -Wno-constant-logical-operand -Wno-long-long \
+                          -Wno-missing-field-initializers \
+                          -Wno-overlength-strings \
+                          -Wno-packed-bitfield-compat \
+                          -Wno-parentheses-equality -Wno-self-assign \
+                          -Wno-tautological-compare -Wno-unused-parameter \
+                          -Wno-unused-value -Wsuggest-attribute=format \
+                          -Wsuggest-attribute=noreturn -Wunused-variable \
+                          -Wundef
+   * strip command:       strip -S -x
+   * install doc:         rdoc
+   * YJIT support:        no
+   * RJIT support:        yes
+   * man page type:       doc
+   * BASERUBY -v:         ruby 3.2.1 (2023-02-08 revision 31819e82c8) \
+                          [x86_64-linux]
+
+---
+	BASERUBY = /usr/bin/ruby --disable=gems
+	CC = gcc
+	LD = ld
+	LDSHARED = gcc -shared
+	CFLAGS = -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  
+	XCFLAGS = -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fno-strict-overflow -fvisibility=hidden -fexcess-precision=standard -DRUBY_EXPORT -fPIE -I. -I.ext/include/x86_64-linux -I../include -I.. -I../enc/unicode/15.0.0 
+	CPPFLAGS =   
+	DLDFLAGS = -Wl,--compress-debug-sections=zlib -fstack-protector-strong -pie  
+	SOLIBS = -lrt -lrt -ldl -lcrypt -lm -lpthread 
+	LANG = C.UTF-8
+	LC_ALL = 
+	LC_CTYPE = 
+	MFLAGS = 
+	RUSTC = no
+	YJIT_RUSTC_ARGS = --crate-name=yjit --crate-type=staticlib --edition=2021 -g -C lto=thin -C opt-level=3 -C overflow-checks=on '--out-dir=/home/ec2-user/ruby/build/yjit/target/release/' ../yjit/src/lib.rs
+gcc (GCC) 11.3.1 20221121 (Red Hat 11.3.1-4)
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+linking miniruby
+/bin/sh ../tool/ifchange "--timestamp=.rbconfig.time" rbconfig.rb rbconfig.tmp
+rbconfig.rb unchanged
+generating encdb.h
+encdb.h unchanged
+generating enc.mk
+making srcs under enc
+make[1]: Entering directory '/home/ec2-user/ruby/build'
+make[1]: Nothing to be done for 'srcs'.
+make[1]: Leaving directory '/home/ec2-user/ruby/build'
+generating transdb.h
+transdb.h updated
+creating verconf.h
+verconf.h updated
+compiling ../loadpath.c
+builtin_binary.inc updated
+compiling ../builtin.c
+linking static-library libruby-static.a
+generating makefiles ext/configure-ext.mk
+ext/configure-ext.mk updated
+make[1]: Entering directory '/home/ec2-user/ruby/build'
+configuring debug-1.7.2/ext/debug
+configuring rbs-3.0.4/ext/rbs_extension
+make[1]: Leaving directory '/home/ec2-user/ruby/build'
+generating makefile exts.mk
+exts.mk updated
+make[1]: Entering directory '/home/ec2-user/ruby/build'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/bigdecimal'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/bigdecimal'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/coverage'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/coverage'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/date'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/date'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/digest'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/digest'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/digest/sha2'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/digest/sha2'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/io/console'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/io/console'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/json'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/json'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/monitor'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/monitor'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/nkf'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/nkf'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/objspace'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/objspace'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/pathname'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/pathname'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/pty'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/pty'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/ripper'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/ripper'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/rubyvm'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/rubyvm'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/socket'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/socket'
+make[2]: Entering directory '/home/ec2-user/ruby/build/ext/syslog'
+make[2]: Leaving directory '/home/ec2-user/ruby/build/ext/syslog'
+make[2]: Entering directory '/home/ec2-user/ruby/build/.bundle/gems/debug-1.7.2/ext/debug'
+compiling ../../../../../../.bundle/gems/debug-1.7.2/ext/debug/debug.c
+compiling ../../../../../../.bundle/gems/debug-1.7.2/ext/debug/iseq_collector.c
+linking shared-object debug/debug.so
+ln -sfT ../../../../.bundle/gems/debug-1.7.2/lib ../../../../../.bundle/gems/debug-1.7.2/lib
+make[2]: Leaving directory '/home/ec2-user/ruby/build/.bundle/gems/debug-1.7.2/ext/debug'
+make[2]: Entering directory '/home/ec2-user/ruby/build/.bundle/gems/rbs-3.0.4/ext/rbs_extension'
+compiling ../../../../../../.bundle/gems/rbs-3.0.4/ext/rbs_extension/constants.c
+compiling ../../../../../../.bundle/gems/rbs-3.0.4/ext/rbs_extension/lexer.c
+compiling ../../../../../../.bundle/gems/rbs-3.0.4/ext/rbs_extension/lexstate.c
+compiling ../../../../../../.bundle/gems/rbs-3.0.4/ext/rbs_extension/location.c
+compiling ../../../../../../.bundle/gems/rbs-3.0.4/ext/rbs_extension/main.c
+compiling ../../../../../../.bundle/gems/rbs-3.0.4/ext/rbs_extension/parser.c
+compiling ../../../../../../.bundle/gems/rbs-3.0.4/ext/rbs_extension/parserstate.c
+compiling ../../../../../../.bundle/gems/rbs-3.0.4/ext/rbs_extension/ruby_objs.c
+compiling ../../../../../../.bundle/gems/rbs-3.0.4/ext/rbs_extension/unescape.c
+linking shared-object rbs_extension.so
+ln -sfT ../../../../.bundle/gems/rbs-3.0.4/lib ../../../../../.bundle/gems/rbs-3.0.4/lib
+make[2]: Leaving directory '/home/ec2-user/ruby/build/.bundle/gems/rbs-3.0.4/ext/rbs_extension'
+make[2]: Entering directory '/home/ec2-user/ruby/build'
+linking ruby
+make[2]: Leaving directory '/home/ec2-user/ruby/build'
+make[1]: Leaving directory '/home/ec2-user/ruby/build'
+make[1]: Entering directory '/home/ec2-user/ruby/build'
+[33;1m*** Following extensions are not compiled:[m
+[31;1mfiddle:[m
+	Could not be configured. It will not be installed.
+	Check ext/fiddle/mkmf.log for more details.
+[31;1mopenssl:[m
+	Could not be configured. It will not be installed.
+	Check ext/openssl/mkmf.log for more details.
+[31;1mpsych:[m
+	Could not be configured. It will not be installed.
+	Check ext/psych/mkmf.log for more details.
+[31;1mreadline:[m
+	Could not be configured. It will not be installed.
+	Check ext/readline/mkmf.log for more details.
+[31;1mzlib:[m
+	Could not be configured. It will not be installed.
+	Check ext/zlib/mkmf.log for more details.
+[33;1m*** Fix the problems, then remove these directories and try again if you want.[m
+make[1]: Leaving directory '/home/ec2-user/ruby/build'
+making enc
+make[1]: Entering directory '/home/ec2-user/ruby/build'
+linking encoding encdb.so
+linking encoding big5.so
+linking encoding cesu_8.so
+linking encoding cp949.so
+linking encoding emacs_mule.so
+linking encoding euc_jp.so
+linking encoding euc_kr.so
+linking encoding euc_tw.so
+linking encoding gb2312.so
+linking encoding gb18030.so
+linking encoding gbk.so
+linking encoding iso_8859_1.so
+linking encoding iso_8859_2.so
+linking encoding iso_8859_3.so
+linking encoding iso_8859_4.so
+linking encoding iso_8859_5.so
+linking encoding iso_8859_6.so
+linking encoding iso_8859_7.so
+linking encoding iso_8859_8.so
+linking encoding iso_8859_9.so
+linking encoding iso_8859_10.so
+linking encoding iso_8859_11.so
+linking encoding iso_8859_13.so
+linking encoding iso_8859_14.so
+linking encoding iso_8859_15.so
+linking encoding iso_8859_16.so
+linking encoding koi8_r.so
+linking encoding koi8_u.so
+linking encoding shift_jis.so
+linking encoding utf_16be.so
+linking encoding utf_16le.so
+linking encoding utf_32be.so
+linking encoding utf_32le.so
+linking encoding windows_31j.so
+linking encoding windows_1250.so
+linking encoding windows_1251.so
+linking encoding windows_1252.so
+linking encoding windows_1253.so
+linking encoding windows_1254.so
+linking encoding windows_1257.so
+make[1]: Leaving directory '/home/ec2-user/ruby/build'
+making trans
+make[1]: Entering directory '/home/ec2-user/ruby/build'
+compiling ../enc/trans/transdb.c
+linking transcoder transdb.so
+linking transcoder big5.so
+linking transcoder cesu_8.so
+linking transcoder chinese.so
+linking transcoder ebcdic.so
+linking transcoder emoji.so
+linking transcoder emoji_iso2022_kddi.so
+linking transcoder emoji_sjis_docomo.so
+linking transcoder emoji_sjis_kddi.so
+linking transcoder emoji_sjis_softbank.so
+linking transcoder escape.so
+linking transcoder gb18030.so
+linking transcoder gbk.so
+linking transcoder iso2022.so
+linking transcoder japanese.so
+linking transcoder japanese_euc.so
+linking transcoder japanese_sjis.so
+linking transcoder korean.so
+linking transcoder single_byte.so
+linking transcoder utf8_mac.so
+linking transcoder utf_16_32.so
+make[1]: Leaving directory '/home/ec2-user/ruby/build'
+making encs
+make[1]: Entering directory '/home/ec2-user/ruby/build'
+make[1]: Nothing to be done for 'encs'.
+make[1]: Leaving directory '/home/ec2-user/ruby/build'
+Generating RDoc documentation
+Parsing sources...
+  0% [ 1/1008]  ../COPYING
+  0% [ 2/1008]  ../COPYING.ja
+  0% [ 3/1008]  ../LEGAL
+  0% [ 4/1008]  ../NEWS.md
+  0% [ 5/1008]  ../README.ja.md
+  0% [ 6/1008]  ../README.md
+  0% [ 7/1008]  ../addr2line.c
+  0% [ 8/1008]  ../array.c
+  0% [ 9/1008]  ../array.rb
+  0% [10/1008]  ../ast.c
+  1% [11/1008]  ../ast.rb
+  1% [12/1008]  ../bignum.c
+  1% [13/1008]  ../builtin.c
+  1% [14/1008]  ../class.c
+  1% [15/1008]  ../compar.c
+  1% [16/1008]  ../compile.c
+  1% [17/1008]  ../complex.c
+  1% [18/1008]  ../cont.c
+  1% [19/1008]  ../debug.c
+  1% [20/1008]  ../debug_counter.c
+  2% [21/1008]  ../dir.c
+  2% [22/1008]  ../dir.rb
+  2% [23/1008]  ../dln.c
+  2% [24/1008]  ../dln_find.c
+  2% [25/1008]  ../dmydln.c
+  2% [26/1008]  ../dmyenc.c
+  2% [27/1008]  ../dmyext.c
+  2% [28/1008]  ../doc/NEWS/NEWS-1.8.7
+  2% [29/1008]  ../doc/NEWS/NEWS-1.9.1
+  2% [30/1008]  ../doc/NEWS/NEWS-1.9.2
+  3% [31/1008]  ../doc/NEWS/NEWS-1.9.3
+  3% [32/1008]  ../doc/NEWS/NEWS-2.0.0
+  3% [33/1008]  ../doc/NEWS/NEWS-2.1.0
+  3% [34/1008]  ../doc/NEWS/NEWS-2.2.0
+  3% [35/1008]  ../doc/NEWS/NEWS-2.3.0
+  3% [36/1008]  ../doc/NEWS/NEWS-2.4.0
+  3% [37/1008]  ../doc/NEWS/NEWS-2.5.0
+  3% [38/1008]  ../doc/NEWS/NEWS-2.6.0
+  3% [39/1008]  ../doc/NEWS/NEWS-2.7.0
+  3% [40/1008]  ../doc/NEWS/NEWS-3.0.0.md
+  4% [41/1008]  ../doc/NEWS/NEWS-3.1.0.md
+  4% [42/1008]  ../doc/NEWS/NEWS-3.2.0.md
+  4% [43/1008]  ../doc/bsearch.rdoc
+  4% [44/1008]  ../doc/bug_triaging.rdoc
+  4% [45/1008]  ../doc/case_mapping.rdoc
+  4% [46/1008]  ../doc/character_selectors.rdoc
+  4% [47/1008]  ../doc/command_injection.rdoc
+  4% [48/1008]  ../doc/contributing.md
+  4% [49/1008]  ../doc/contributing/building_ruby.md
+  4% [50/1008]  ../doc/contributing/documentation_guide.md
+  5% [51/1008]  ../doc/contributing/glossary.md
+  5% [52/1008]  ../doc/contributing/making_changes_to_ruby.md
+  5% [53/1008]  ../doc/contributing/making_changes_to_stdlibs.md
+  5% [54/1008]  ../doc/contributing/reporting_issues.md
+  5% [55/1008]  ../doc/contributing/testing_ruby.md
+  5% [56/1008]  ../doc/dig_methods.rdoc
+  5% [57/1008]  ../doc/distribution.md
+  5% [58/1008]  ../doc/dtrace_probes.rdoc
+  5% [59/1008]  ../doc/encodings.rdoc
+  5% [60/1008]  ../doc/extension.ja.rdoc
+  6% [61/1008]  ../doc/extension.rdoc
+  6% [62/1008]  ../doc/fiber.md
+  6% [63/1008]  ../doc/format_specifications.rdoc
+  6% [64/1008]  ../doc/globals.rdoc
+  6% [65/1008]  ../doc/implicit_conversion.rdoc
+  6% [66/1008]  ../doc/keywords.rdoc
+  6% [67/1008]  ../doc/maintainers.md
+  6% [68/1008]  ../doc/marshal.rdoc
+  6% [69/1008]  ../doc/memory_view.md
+  6% [70/1008]  ../doc/optparse/argument_converters.rdoc
+  7% [71/1008]  ../doc/optparse/creates_option.rdoc
+  7% [72/1008]  ../doc/optparse/option_params.rdoc
+  7% [73/1008]  ../doc/optparse/tutorial.rdoc
+  7% [74/1008]  ../doc/packed_data.rdoc
+  7% [75/1008]  ../doc/ractor.md
+  7% [76/1008]  ../doc/rdoc/markup_reference.rb
+  7% [77/1008]  ../doc/regexp.rdoc
+  7% [78/1008]  ../doc/security.rdoc
+  7% [79/1008]  ../doc/signals.rdoc
+  7% [80/1008]  ../doc/standard_library.rdoc
+  8% [81/1008]  ../doc/strftime_formatting.rdoc
+  8% [82/1008]  ../doc/syntax.rdoc
+  8% [83/1008]  ../doc/syntax/assignment.rdoc
+  8% [84/1008]  ../doc/syntax/calling_methods.rdoc
+  8% [85/1008]  ../doc/syntax/comments.rdoc
+  8% [86/1008]  ../doc/syntax/control_expressions.rdoc
+  8% [87/1008]  ../doc/syntax/exceptions.rdoc
+  8% [88/1008]  ../doc/syntax/literals.rdoc
+  8% [89/1008]  ../doc/syntax/methods.rdoc
+  8% [90/1008]  ../doc/syntax/miscellaneous.rdoc
+  9% [91/1008]  ../doc/syntax/modules_and_classes.rdoc
+  9% [92/1008]  ../doc/syntax/pattern_matching.rdoc
+  9% [93/1008]  ../doc/syntax/precedence.rdoc
+  9% [94/1008]  ../doc/syntax/refinements.rdoc
+  9% [95/1008]  ../doc/timezones.rdoc
+  9% [96/1008]  ../doc/windows.md
+  9% [97/1008]  ../encoding.c
+  9% [98/1008]  ../enum.c
+  9% [99/1008]  ../enumerator.c
+  9% [100/1008]  ../error.c
+ 10% [101/1008]  ../eval.c
+ 10% [102/1008]  ../eval_error.c
+ 10% [103/1008]  ../eval_jump.c
+ 10% [104/1008]  ../ext/bigdecimal/bigdecimal.c
+ 10% [105/1008]  ../ext/bigdecimal/lib/bigdecimal.rb
+ 10% [106/1008]  ../ext/bigdecimal/lib/bigdecimal/jacobian.rb
+ 10% [107/1008]  ../ext/bigdecimal/lib/bigdecimal/ludcmp.rb
+ 10% [108/1008]  ../ext/bigdecimal/lib/bigdecimal/math.rb
+ 10% [109/1008]  ../ext/bigdecimal/lib/bigdecimal/newton.rb
+ 10% [110/1008]  ../ext/bigdecimal/lib/bigdecimal/util.rb
+ 11% [111/1008]  ../ext/cgi/escape/escape.c
+ 11% [112/1008]  ../ext/continuation/continuation.c
+ 11% [113/1008]  ../ext/coverage/coverage.c
+ 11% [114/1008]  ../ext/coverage/lib/coverage.rb
+ 11% [115/1008]  ../ext/date/date_core.c
+ 11% [116/1008]  ../ext/date/date_parse.c
+ 11% [117/1008]  ../ext/date/date_strftime.c
+ 11% [118/1008]  ../ext/date/date_strptime.c
+ 11% [119/1008]  ../ext/date/lib/date.rb
+ 11% [120/1008]  ../ext/digest/bubblebabble/bubblebabble.c
+ 12% [121/1008]  ../ext/digest/digest.c
+ 12% [122/1008]  ../ext/digest/lib/digest.rb
+ 12% [123/1008]  ../ext/digest/lib/digest/loader.rb
+ 12% [124/1008]  ../ext/digest/lib/digest/version.rb
+ 12% [125/1008]  ../ext/digest/md5/md5init.c
+ 12% [126/1008]  ../ext/digest/rmd160/rmd160init.c
+ 12% [127/1008]  ../ext/digest/sha1/sha1init.c
+ 12% [128/1008]  ../ext/digest/sha2/lib/sha2.rb
+ 12% [129/1008]  ../ext/digest/sha2/lib/sha2/loader.rb
+ 12% [130/1008]  ../ext/digest/sha2/sha2init.c
+ 12% [131/1008]  ../ext/etc/etc.c
+ 13% [132/1008]  ../ext/fcntl/fcntl.c
+ 13% [133/1008]  ../ext/fiddle/closure.c
+ 13% [134/1008]  ../ext/fiddle/conversions.c
+ 13% [135/1008]  ../ext/fiddle/fiddle.c
+ 13% [136/1008]  ../ext/fiddle/function.c
+ 13% [137/1008]  ../ext/fiddle/handle.c
+ 13% [138/1008]  ../ext/fiddle/lib/fiddle.rb
+ 13% [139/1008]  ../ext/fiddle/lib/fiddle/closure.rb
+ 13% [140/1008]  ../ext/fiddle/lib/fiddle/cparser.rb
+ 13% [141/1008]  ../ext/fiddle/lib/fiddle/function.rb
+ 14% [142/1008]  ../ext/fiddle/lib/fiddle/import.rb
+ 14% [143/1008]  ../ext/fiddle/lib/fiddle/pack.rb
+ 14% [144/1008]  ../ext/fiddle/lib/fiddle/struct.rb
+ 14% [145/1008]  ../ext/fiddle/lib/fiddle/types.rb
+ 14% [146/1008]  ../ext/fiddle/lib/fiddle/value.rb
+ 14% [147/1008]  ../ext/fiddle/lib/fiddle/version.rb
+ 14% [148/1008]  ../ext/fiddle/pinned.c
+ 14% [149/1008]  ../ext/fiddle/pointer.c
+ 14% [150/1008]  ../ext/io/console/console.c
+ 14% [151/1008]  ../ext/io/console/lib/console/size.rb
+ 15% [152/1008]  ../ext/io/nonblock/nonblock.c
+ 15% [153/1008]  ../ext/io/wait/wait.c
+ 15% [154/1008]  ../ext/json/generator/generator.c
+ 15% [155/1008]  ../ext/json/lib/json.rb
+ 15% [156/1008]  ../ext/json/lib/json/add/bigdecimal.rb
+ 15% [157/1008]  ../ext/json/lib/json/add/complex.rb
+ 15% [158/1008]  ../ext/json/lib/json/add/core.rb
+ 15% [159/1008]  ../ext/json/lib/json/add/date.rb
+ 15% [160/1008]  ../ext/json/lib/json/add/date_time.rb
+ 15% [161/1008]  ../ext/json/lib/json/add/exception.rb
+ 16% [162/1008]  ../ext/json/lib/json/add/ostruct.rb
+ 16% [163/1008]  ../ext/json/lib/json/add/range.rb
+ 16% [164/1008]  ../ext/json/lib/json/add/rational.rb
+ 16% [165/1008]  ../ext/json/lib/json/add/regexp.rb
+ 16% [166/1008]  ../ext/json/lib/json/add/set.rb
+ 16% [167/1008]  ../ext/json/lib/json/add/struct.rb
+ 16% [168/1008]  ../ext/json/lib/json/add/symbol.rb
+ 16% [169/1008]  ../ext/json/lib/json/add/time.rb
+ 16% [170/1008]  ../ext/json/lib/json/common.rb
+ 16% [171/1008]  ../ext/json/lib/json/ext.rb
+ 17% [172/1008]  ../ext/json/lib/json/generic_object.rb
+ 17% [173/1008]  ../ext/json/lib/json/version.rb
+ 17% [174/1008]  ../ext/json/parser/parser.c
+ 17% [175/1008]  ../ext/monitor/lib/monitor.rb
+ 17% [176/1008]  ../ext/monitor/monitor.c
+ 17% [177/1008]  ../ext/nkf/lib/kconv.rb
+ 17% [178/1008]  ../ext/nkf/nkf.c
+ 17% [179/1008]  ../ext/objspace/lib/objspace.rb
+ 17% [180/1008]  ../ext/objspace/lib/objspace/trace.rb
+ 17% [181/1008]  ../ext/objspace/object_tracing.c
+ 18% [182/1008]  ../ext/objspace/objspace.c
+ 18% [183/1008]  ../ext/objspace/objspace_dump.c
+ 18% [184/1008]  ../ext/openssl/lib/openssl.rb
+ 18% [185/1008]  ../ext/openssl/lib/openssl/bn.rb
+ 18% [186/1008]  ../ext/openssl/lib/openssl/buffering.rb
+ 18% [187/1008]  ../ext/openssl/lib/openssl/cipher.rb
+ 18% [188/1008]  ../ext/openssl/lib/openssl/digest.rb
+ 18% [189/1008]  ../ext/openssl/lib/openssl/hmac.rb
+ 18% [190/1008]  ../ext/openssl/lib/openssl/marshal.rb
+ 18% [191/1008]  ../ext/openssl/lib/openssl/pkcs5.rb
+ 19% [192/1008]  ../ext/openssl/lib/openssl/pkey.rb
+ 19% [193/1008]  ../ext/openssl/lib/openssl/ssl.rb
+ 19% [194/1008]  ../ext/openssl/lib/openssl/version.rb
+ 19% [195/1008]  ../ext/openssl/lib/openssl/x509.rb
+ 19% [196/1008]  ../ext/openssl/ossl.c
+ 19% [197/1008]  ../ext/openssl/ossl_asn1.c
+ 19% [198/1008]  ../ext/openssl/ossl_bio.c
+ 19% [199/1008]  ../ext/openssl/ossl_bn.c
+ 19% [200/1008]  ../ext/openssl/ossl_cipher.c
+ 19% [201/1008]  ../ext/openssl/ossl_config.c
+ 20% [202/1008]  ../ext/openssl/ossl_digest.c
+ 20% [203/1008]  ../ext/openssl/ossl_engine.c
+ 20% [204/1008]  ../ext/openssl/ossl_hmac.c
+ 20% [205/1008]  ../ext/openssl/ossl_kdf.c
+ 20% [206/1008]  ../ext/openssl/ossl_ns_spki.c
+ 20% [207/1008]  ../ext/openssl/ossl_ocsp.c
+ 20% [208/1008]  ../ext/openssl/ossl_pkcs12.c
+ 20% [209/1008]  ../ext/openssl/ossl_pkcs7.c
+ 20% [210/1008]  ../ext/openssl/ossl_pkey.c
+ 20% [211/1008]  ../ext/openssl/ossl_pkey_dh.c
+ 21% [212/1008]  ../ext/openssl/ossl_pkey_dsa.c
+ 21% [213/1008]  ../ext/openssl/ossl_pkey_ec.c
+ 21% [214/1008]  ../ext/openssl/ossl_pkey_rsa.c
+ 21% [215/1008]  ../ext/openssl/ossl_rand.c
+ 21% [216/1008]  ../ext/openssl/ossl_ssl.c
+ 21% [217/1008]  ../ext/openssl/ossl_ssl_session.c
+ 21% [218/1008]  ../ext/openssl/ossl_ts.c
+ 21% [219/1008]  ../ext/openssl/ossl_x509.c
+ 21% [220/1008]  ../ext/openssl/ossl_x509attr.c
+ 21% [221/1008]  ../ext/openssl/ossl_x509cert.c
+ 22% [222/1008]  ../ext/openssl/ossl_x509crl.c
+ 22% [223/1008]  ../ext/openssl/ossl_x509ext.c
+ 22% [224/1008]  ../ext/openssl/ossl_x509name.c
+ 22% [225/1008]  ../ext/openssl/ossl_x509req.c
+ 22% [226/1008]  ../ext/openssl/ossl_x509revoked.c
+ 22% [227/1008]  ../ext/openssl/ossl_x509store.c
+ 22% [228/1008]  ../ext/pathname/lib/pathname.rb
+ 22% [229/1008]  ../ext/pathname/pathname.c
+ 22% [230/1008]  ../ext/psych/lib/psych.rb
+ 22% [231/1008]  ../ext/psych/lib/psych/class_loader.rb
+ 23% [232/1008]  ../ext/psych/lib/psych/coder.rb
+ 23% [233/1008]  ../ext/psych/lib/psych/core_ext.rb
+ 23% [234/1008]  ../ext/psych/lib/psych/exception.rb
+ 23% [235/1008]  ../ext/psych/lib/psych/handler.rb
+ 23% [236/1008]  ../ext/psych/lib/psych/handlers/document_stream.rb
+ 23% [237/1008]  ../ext/psych/lib/psych/handlers/recorder.rb
+ 23% [238/1008]  ../ext/psych/lib/psych/json/ruby_events.rb
+ 23% [239/1008]  ../ext/psych/lib/psych/json/stream.rb
+ 23% [240/1008]  ../ext/psych/lib/psych/json/tree_builder.rb
+ 23% [241/1008]  ../ext/psych/lib/psych/json/yaml_events.rb
+ 24% [242/1008]  ../ext/psych/lib/psych/nodes.rb
+ 24% [243/1008]  ../ext/psych/lib/psych/nodes/alias.rb
+ 24% [244/1008]  ../ext/psych/lib/psych/nodes/document.rb
+ 24% [245/1008]  ../ext/psych/lib/psych/nodes/mapping.rb
+ 24% [246/1008]  ../ext/psych/lib/psych/nodes/node.rb
+ 24% [247/1008]  ../ext/psych/lib/psych/nodes/scalar.rb
+ 24% [248/1008]  ../ext/psych/lib/psych/nodes/sequence.rb
+ 24% [249/1008]  ../ext/psych/lib/psych/nodes/stream.rb
+ 24% [250/1008]  ../ext/psych/lib/psych/omap.rb
+ 24% [251/1008]  ../ext/psych/lib/psych/parser.rb
+ 25% [252/1008]  ../ext/psych/lib/psych/scalar_scanner.rb
+ 25% [253/1008]  ../ext/psych/lib/psych/set.rb
+ 25% [254/1008]  ../ext/psych/lib/psych/stream.rb
+ 25% [255/1008]  ../ext/psych/lib/psych/streaming.rb
+ 25% [256/1008]  ../ext/psych/lib/psych/syntax_error.rb
+ 25% [257/1008]  ../ext/psych/lib/psych/tree_builder.rb
+ 25% [258/1008]  ../ext/psych/lib/psych/versions.rb
+ 25% [259/1008]  ../ext/psych/lib/psych/visitors.rb
+ 25% [260/1008]  ../ext/psych/lib/psych/visitors/depth_first.rb
+ 25% [261/1008]  ../ext/psych/lib/psych/visitors/emitter.rb
+ 25% [262/1008]  ../ext/psych/lib/psych/visitors/json_tree.rb
+ 26% [263/1008]  ../ext/psych/lib/psych/visitors/to_ruby.rb
+ 26% [264/1008]  ../ext/psych/lib/psych/visitors/visitor.rb
+ 26% [265/1008]  ../ext/psych/lib/psych/visitors/yaml_tree.rb
+ 26% [266/1008]  ../ext/psych/lib/psych/y.rb
+ 26% [267/1008]  ../ext/psych/psych.c
+ 26% [268/1008]  ../ext/psych/psych_emitter.c
+ 26% [269/1008]  ../ext/psych/psych_parser.c
+ 26% [270/1008]  ../ext/psych/psych_to_ruby.c
+ 26% [271/1008]  ../ext/psych/psych_yaml_tree.c
+ 26% [272/1008]  ../ext/pty/lib/expect.rb
+ 27% [273/1008]  ../ext/pty/pty.c
+ 27% [274/1008]  ../ext/racc/cparse/cparse.c
+ 27% [275/1008]  ../ext/readline/readline.c
+ 27% [276/1008]  ../ext/ripper/lib/ripper.rb
+ 27% [277/1008]  ../ext/ripper/lib/ripper/core.rb
+ 27% [278/1008]  ../ext/ripper/lib/ripper/filter.rb
+ 27% [279/1008]  ../ext/ripper/lib/ripper/lexer.rb
+ 27% [280/1008]  ../ext/ripper/lib/ripper/sexp.rb
+ 27% [281/1008]  ../ext/socket/ancdata.c
+ 27% [282/1008]  ../ext/socket/basicsocket.c
+ 28% [283/1008]  ../ext/socket/constants.c
+ 28% [284/1008]  ../ext/socket/ifaddr.c
+ 28% [285/1008]  ../ext/socket/init.c
+ 28% [286/1008]  ../ext/socket/ipsocket.c
+ 28% [287/1008]  ../ext/socket/lib/socket.rb
+ 28% [288/1008]  ../ext/socket/option.c
+ 28% [289/1008]  ../ext/socket/raddrinfo.c
+ 28% [290/1008]  ../ext/socket/socket.c
+ 28% [291/1008]  ../ext/socket/sockssocket.c
+ 28% [292/1008]  ../ext/socket/tcpserver.c
+ 29% [293/1008]  ../ext/socket/tcpsocket.c
+ 29% [294/1008]  ../ext/socket/udpsocket.c
+ 29% [295/1008]  ../ext/socket/unixserver.c
+ 29% [296/1008]  ../ext/socket/unixsocket.c
+ 29% [297/1008]  ../ext/stringio/stringio.c
+ 29% [298/1008]  ../ext/strscan/strscan.c
+ 29% [299/1008]  ../ext/syslog/lib/syslog/logger.rb
+ 29% [300/1008]  ../ext/syslog/syslog.c
+ 29% [301/1008]  ../ext/win32/lib/win32/registry.rb
+ 29% [302/1008]  ../ext/win32/lib/win32/resolv.rb
+ 30% [303/1008]  ../ext/win32/lib/win32/sspi.rb
+ 30% [304/1008]  ../ext/win32/resolv/resolv.c
+ 30% [305/1008]  ../ext/win32ole/lib/win32ole.rb
+ 30% [306/1008]  ../ext/win32ole/lib/win32ole/property.rb
+ 30% [307/1008]  ../ext/win32ole/win32ole.c
+ 30% [308/1008]  ../ext/win32ole/win32ole_error.c
+ 30% [309/1008]  ../ext/win32ole/win32ole_event.c
+ 30% [310/1008]  ../ext/win32ole/win32ole_method.c
+ 30% [311/1008]  ../ext/win32ole/win32ole_param.c
+ 30% [312/1008]  ../ext/win32ole/win32ole_record.c
+ 31% [313/1008]  ../ext/win32ole/win32ole_type.c
+ 31% [314/1008]  ../ext/win32ole/win32ole_typelib.c
+ 31% [315/1008]  ../ext/win32ole/win32ole_variable.c
+ 31% [316/1008]  ../ext/win32ole/win32ole_variant.c
+ 31% [317/1008]  ../ext/win32ole/win32ole_variant_m.c
+ 31% [318/1008]  ../ext/zlib/zlib.c
+ 31% [319/1008]  ../file.c
+ 31% [320/1008]  ../gc.c
+ 31% [321/1008]  ../gc.rb
+ 31% [322/1008]  ../goruby.c
+ 32% [323/1008]  ../hash.c
+ 32% [324/1008]  ../id_table.c
+ 32% [325/1008]  ../inits.c
+ 32% [326/1008]  ../io.c
+ 32% [327/1008]  ../io.rb
+ 32% [328/1008]  ../io_buffer.c
+ 32% [329/1008]  ../iseq.c
+ 32% [330/1008]  ../kernel.rb
+ 32% [331/1008]  ../lib/English.rb
+ 32% [332/1008]  ../lib/abbrev.rb
+ 33% [333/1008]  ../lib/base64.rb
+ 33% [334/1008]  ../lib/benchmark.rb
+ 33% [335/1008]  ../lib/benchmark/version.rb
+ 33% [336/1008]  ../lib/bundler.rb
+ 33% [337/1008]  ../lib/cgi.rb
+ 33% [338/1008]  ../lib/cgi/cookie.rb
+ 33% [339/1008]  ../lib/cgi/core.rb
+ 33% [340/1008]  ../lib/cgi/html.rb
+ 33% [341/1008]  ../lib/cgi/session.rb
+ 33% [342/1008]  ../lib/cgi/session/pstore.rb
+ 34% [343/1008]  ../lib/cgi/util.rb
+ 34% [344/1008]  ../lib/csv.rb
+ 34% [345/1008]  ../lib/csv/core_ext/array.rb
+ 34% [346/1008]  ../lib/csv/core_ext/string.rb
+ 34% [347/1008]  ../lib/csv/delete_suffix.rb
+ 34% [348/1008]  ../lib/csv/fields_converter.rb
+ 34% [349/1008]  ../lib/csv/input_record_separator.rb
+ 34% [350/1008]  ../lib/csv/match_p.rb
+ 34% [351/1008]  ../lib/csv/parser.rb
+ 34% [352/1008]  ../lib/csv/row.rb
+ 35% [353/1008]  ../lib/csv/table.rb
+ 35% [354/1008]  ../lib/csv/version.rb
+ 35% [355/1008]  ../lib/csv/writer.rb
+ 35% [356/1008]  ../lib/delegate.rb
+ 35% [357/1008]  ../lib/did_you_mean.rb
+ 35% [358/1008]  ../lib/did_you_mean/core_ext/name_error.rb
+ 35% [359/1008]  ../lib/did_you_mean/experimental.rb
+ 35% [360/1008]  ../lib/did_you_mean/formatter.rb
+ 35% [361/1008]  ../lib/did_you_mean/formatters/plain_formatter.rb
+ 35% [362/1008]  ../lib/did_you_mean/formatters/verbose_formatter.rb
+ 36% [363/1008]  ../lib/did_you_mean/jaro_winkler.rb
+ 36% [364/1008]  ../lib/did_you_mean/levenshtein.rb
+ 36% [365/1008]  ../lib/did_you_mean/spell_checker.rb
+ 36% [366/1008]  ../lib/did_you_mean/spell_checkers/key_error_checker.rb
+ 36% [367/1008]  ../lib/did_you_mean/spell_checkers/method_name_checker.rb
+ 36% [368/1008]  ../lib/did_you_mean/spell_checkers/name_error_checkers.rb
+ 36% [369/1008]  ../lib/did_you_mean/spell_checkers/name_error_checkers/class_name_checker.rb
+ 36% [370/1008]  ../lib/did_you_mean/spell_checkers/name_error_checkers/variable_name_checker.rb
+ 36% [371/1008]  ../lib/did_you_mean/spell_checkers/null_checker.rb
+ 36% [372/1008]  ../lib/did_you_mean/spell_checkers/pattern_key_name_checker.rb
+ 37% [373/1008]  ../lib/did_you_mean/spell_checkers/require_path_checker.rb
+ 37% [374/1008]  ../lib/did_you_mean/tree_spell_checker.rb
+ 37% [375/1008]  ../lib/did_you_mean/verbose.rb
+ 37% [376/1008]  ../lib/did_you_mean/version.rb
+ 37% [377/1008]  ../lib/drb.rb
+ 37% [378/1008]  ../lib/drb/acl.rb
+ 37% [379/1008]  ../lib/drb/drb.rb
+ 37% [380/1008]  ../lib/drb/eq.rb
+ 37% [381/1008]  ../lib/drb/extserv.rb
+ 37% [382/1008]  ../lib/drb/extservm.rb
+ 37% [383/1008]  ../lib/drb/gw.rb
+ 38% [384/1008]  ../lib/drb/invokemethod.rb
+ 38% [385/1008]  ../lib/drb/observer.rb
+ 38% [386/1008]  ../lib/drb/ssl.rb
+ 38% [387/1008]  ../lib/drb/timeridconv.rb
+ 38% [388/1008]  ../lib/drb/unix.rb
+ 38% [389/1008]  ../lib/drb/version.rb
+ 38% [390/1008]  ../lib/drb/weakidconv.rb
+ 38% [391/1008]  ../lib/erb.rb
+ 38% [392/1008]  ../lib/erb/compiler.rb
+ 38% [393/1008]  ../lib/erb/def_method.rb
+ 39% [394/1008]  ../lib/erb/util.rb
+ 39% [395/1008]  ../lib/erb/version.rb
+ 39% [396/1008]  ../lib/error_highlight.rb
+ 39% [397/1008]  ../lib/error_highlight/base.rb
+ 39% [398/1008]  ../lib/error_highlight/core_ext.rb
+ 39% [399/1008]  ../lib/error_highlight/formatter.rb
+ 39% [400/1008]  ../lib/error_highlight/version.rb
+ 39% [401/1008]  ../lib/fileutils.rb
+ 39% [402/1008]  ../lib/find.rb
+ 39% [403/1008]  ../lib/forwardable.rb
+ 40% [404/1008]  ../lib/forwardable/impl.rb
+ 40% [405/1008]  ../lib/getoptlong.rb
+ 40% [406/1008]  ../lib/ipaddr.rb
+ 40% [407/1008]  ../lib/irb.rb
+ 40% [408/1008]  ../lib/irb/cmd/backtrace.rb
+ 40% [409/1008]  ../lib/irb/cmd/break.rb
+ 40% [410/1008]  ../lib/irb/cmd/catch.rb
+ 40% [411/1008]  ../lib/irb/cmd/chws.rb
+ 40% [412/1008]  ../lib/irb/cmd/continue.rb
+ 40% [413/1008]  ../lib/irb/cmd/debug.rb
+ 41% [414/1008]  ../lib/irb/cmd/delete.rb
+ 41% [415/1008]  ../lib/irb/cmd/edit.rb
+ 41% [416/1008]  ../lib/irb/cmd/finish.rb
+ 41% [417/1008]  ../lib/irb/cmd/fork.rb
+ 41% [418/1008]  ../lib/irb/cmd/help.rb
+ 41% [419/1008]  ../lib/irb/cmd/info.rb
+ 41% [420/1008]  ../lib/irb/cmd/irb_info.rb
+ 41% [421/1008]  ../lib/irb/cmd/load.rb
+ 41% [422/1008]  ../lib/irb/cmd/ls.rb
+ 41% [423/1008]  ../lib/irb/cmd/measure.rb
+ 42% [424/1008]  ../lib/irb/cmd/next.rb
+ 42% [425/1008]  ../lib/irb/cmd/nop.rb
+ 42% [426/1008]  ../lib/irb/cmd/pushws.rb
+ 42% [427/1008]  ../lib/irb/cmd/show_cmds.rb
+ 42% [428/1008]  ../lib/irb/cmd/show_source.rb
+ 42% [429/1008]  ../lib/irb/cmd/step.rb
+ 42% [430/1008]  ../lib/irb/cmd/subirb.rb
+ 42% [431/1008]  ../lib/irb/cmd/whereami.rb
+ 42% [432/1008]  ../lib/irb/color.rb
+ 42% [433/1008]  ../lib/irb/color_printer.rb
+ 43% [434/1008]  ../lib/irb/completion.rb
+ 43% [435/1008]  ../lib/irb/context.rb
+ 43% [436/1008]  ../lib/irb/easter-egg.rb
+ 43% [437/1008]  ../lib/irb/ext/change-ws.rb
+ 43% [438/1008]  ../lib/irb/ext/history.rb
+ 43% [439/1008]  ../lib/irb/ext/loader.rb
+ 43% [440/1008]  ../lib/irb/ext/multi-irb.rb
+ 43% [441/1008]  ../lib/irb/ext/save-history.rb
+ 43% [442/1008]  ../lib/irb/ext/tracer.rb
+ 43% [443/1008]  ../lib/irb/ext/use-loader.rb
+ 44% [444/1008]  ../lib/irb/ext/workspaces.rb
+ 44% [445/1008]  ../lib/irb/extend-command.rb
+ 44% [446/1008]  ../lib/irb/frame.rb
+ 44% [447/1008]  ../lib/irb/help.rb
+ 44% [448/1008]  ../lib/irb/init.rb
+ 44% [449/1008]  ../lib/irb/input-method.rb
+ 44% [450/1008]  ../lib/irb/inspector.rb
+ 44% [451/1008]  ../lib/irb/lc/error.rb
+ 44% [452/1008]  ../lib/irb/lc/ja/encoding_aliases.rb
+ 44% [453/1008]  ../lib/irb/lc/ja/error.rb
+ 45% [454/1008]  ../lib/irb/locale.rb
+ 45% [455/1008]  ../lib/irb/magic-file.rb
+ 45% [456/1008]  ../lib/irb/notifier.rb
+ 45% [457/1008]  ../lib/irb/output-method.rb
+ 45% [458/1008]  ../lib/irb/ruby-lex.rb
+ 45% [459/1008]  ../lib/irb/src_encoding.rb
+ 45% [460/1008]  ../lib/irb/version.rb
+ 45% [461/1008]  ../lib/irb/workspace.rb
+ 45% [462/1008]  ../lib/irb/ws-for-case-2.rb
+ 45% [463/1008]  ../lib/irb/xmp.rb
+ 46% [464/1008]  ../lib/logger.rb
+ 46% [465/1008]  ../lib/logger/errors.rb
+ 46% [466/1008]  ../lib/logger/formatter.rb
+ 46% [467/1008]  ../lib/logger/log_device.rb
+ 46% [468/1008]  ../lib/logger/period.rb
+ 46% [469/1008]  ../lib/logger/severity.rb
+ 46% [470/1008]  ../lib/logger/version.rb
+ 46% [471/1008]  ../lib/mkmf.rb
+ 46% [472/1008]  ../lib/mutex_m.rb
+ 46% [473/1008]  ../lib/net/http.rb
+ 47% [474/1008]  ../lib/net/http/backward.rb
+ 47% [475/1008]  ../lib/net/http/exceptions.rb
+ 47% [476/1008]  ../lib/net/http/generic_request.rb
+ 47% [477/1008]  ../lib/net/http/header.rb
+ 47% [478/1008]  ../lib/net/http/proxy_delta.rb
+ 47% [479/1008]  ../lib/net/http/request.rb
+ 47% [480/1008]  ../lib/net/http/requests.rb
+ 47% [481/1008]  ../lib/net/http/response.rb
+ 47% [482/1008]  ../lib/net/http/responses.rb
+ 47% [483/1008]  ../lib/net/http/status.rb
+ 48% [484/1008]  ../lib/net/https.rb
+ 48% [485/1008]  ../lib/net/protocol.rb
+ 48% [486/1008]  ../lib/observer.rb
+ 48% [487/1008]  ../lib/open-uri.rb
+ 48% [488/1008]  ../lib/open3.rb
+ 48% [489/1008]  ../lib/open3/version.rb
+ 48% [490/1008]  ../lib/optionparser.rb
+ 48% [491/1008]  ../lib/optparse.rb
+ 48% [492/1008]  ../lib/optparse/ac.rb
+ 48% [493/1008]  ../lib/optparse/date.rb
+ 49% [494/1008]  ../lib/optparse/kwargs.rb
+ 49% [495/1008]  ../lib/optparse/shellwords.rb
+ 49% [496/1008]  ../lib/optparse/time.rb
+ 49% [497/1008]  ../lib/optparse/uri.rb
+ 49% [498/1008]  ../lib/optparse/version.rb
+ 49% [499/1008]  ../lib/ostruct.rb
+ 49% [500/1008]  ../lib/pp.rb
+ 49% [501/1008]  ../lib/prettyprint.rb
+ 49% [502/1008]  ../lib/pstore.rb
+ 49% [503/1008]  ../lib/racc.rb
+ 50% [504/1008]  ../lib/racc/compat.rb
+ 50% [505/1008]  ../lib/racc/debugflags.rb
+ 50% [506/1008]  ../lib/racc/exception.rb
+ 50% [507/1008]  ../lib/racc/grammar.rb
+ 50% [508/1008]  ../lib/racc/grammarfileparser.rb
+ 50% [509/1008]  ../lib/racc/info.rb
+ 50% [510/1008]  ../lib/racc/iset.rb
+ 50% [511/1008]  ../lib/racc/logfilegenerator.rb
+ 50% [512/1008]  ../lib/racc/parser-text.rb
+ 50% [513/1008]  ../lib/racc/parser.rb
+ 50% [514/1008]  ../lib/racc/parserfilegenerator.rb
+ 51% [515/1008]  ../lib/racc/sourcetext.rb
+ 51% [516/1008]  ../lib/racc/state.rb
+ 51% [517/1008]  ../lib/racc/statetransitiontable.rb
+ 51% [518/1008]  ../lib/racc/static.rb
+ 51% [519/1008]  ../lib/random/formatter.rb
+ 51% [520/1008]  ../lib/rdoc.rb
+ 51% [521/1008]  ../lib/rdoc/alias.rb
+ 51% [522/1008]  ../lib/rdoc/anon_class.rb
+ 51% [523/1008]  ../lib/rdoc/any_method.rb
+ 51% [524/1008]  ../lib/rdoc/attr.rb
+ 52% [525/1008]  ../lib/rdoc/class_module.rb
+ 52% [526/1008]  ../lib/rdoc/code_object.rb
+ 52% [527/1008]  ../lib/rdoc/code_objects.rb
+ 52% [528/1008]  ../lib/rdoc/comment.rb
+ 52% [529/1008]  ../lib/rdoc/constant.rb
+ 52% [530/1008]  ../lib/rdoc/context.rb
+ 52% [531/1008]  ../lib/rdoc/cross_reference.rb
+ 52% [532/1008]  ../lib/rdoc/encoding.rb
+ 52% [533/1008]  ../lib/rdoc/erb_partial.rb
+ 52% [534/1008]  ../lib/rdoc/erbio.rb
+ 53% [535/1008]  ../lib/rdoc/extend.rb
+ 53% [536/1008]  ../lib/rdoc/generator.rb
+ 53% [537/1008]  ../lib/rdoc/ghost_method.rb
+ 53% [538/1008]  ../lib/rdoc/i18n.rb
+ 53% [539/1008]  ../lib/rdoc/include.rb
+ 53% [540/1008]  ../lib/rdoc/known_classes.rb
+ 53% [541/1008]  ../lib/rdoc/markdown.rb
+ 53% [542/1008]  ../lib/rdoc/markup.rb
+ 53% [543/1008]  ../lib/rdoc/meta_method.rb
+ 53% [544/1008]  ../lib/rdoc/method_attr.rb
+ 54% [545/1008]  ../lib/rdoc/mixin.rb
+ 54% [546/1008]  ../lib/rdoc/normal_class.rb
+ 54% [547/1008]  ../lib/rdoc/normal_module.rb
+ 54% [548/1008]  ../lib/rdoc/options.rb
+ 54% [549/1008]  ../lib/rdoc/parser.rb
+ 54% [550/1008]  ../lib/rdoc/parser/c.rb
+ 54% [551/1008]  ../lib/rdoc/parser/changelog.rb
+ 54% [552/1008]  ../lib/rdoc/parser/markdown.rb
+ 54% [553/1008]  ../lib/rdoc/parser/rd.rb
+ 54% [554/1008]  ../lib/rdoc/parser/ripper_state_lex.rb
+ 55% [555/1008]  ../lib/rdoc/parser/ruby.rb
+ 55% [556/1008]  ../lib/rdoc/parser/ruby_tools.rb
+ 55% [557/1008]  ../lib/rdoc/parser/simple.rb
+ 55% [558/1008]  ../lib/rdoc/parser/text.rb
+ 55% [559/1008]  ../lib/rdoc/rd.rb
+ 55% [560/1008]  ../lib/rdoc/rdoc.rb
+ 55% [561/1008]  ../lib/rdoc/require.rb
+ 55% [562/1008]  ../lib/rdoc/ri.rb
+ 55% [563/1008]  ../lib/rdoc/rubygems_hook.rb
+ 55% [564/1008]  ../lib/rdoc/servlet.rb
+ 56% [565/1008]  ../lib/rdoc/single_class.rb
+ 56% [566/1008]  ../lib/rdoc/stats.rb
+ 56% [567/1008]  ../lib/rdoc/store.rb
+ 56% [568/1008]  ../lib/rdoc/task.rb
+ 56% [569/1008]  ../lib/rdoc/text.rb
+ 56% [570/1008]  ../lib/rdoc/token_stream.rb
+ 56% [571/1008]  ../lib/rdoc/tom_doc.rb
+ 56% [572/1008]  ../lib/rdoc/top_level.rb
+ 56% [573/1008]  ../lib/rdoc/version.rb
+ 56% [574/1008]  ../lib/readline.rb
+ 57% [575/1008]  ../lib/reline.rb
+ 57% [576/1008]  ../lib/reline/ansi.rb
+ 57% [577/1008]  ../lib/reline/config.rb
+ 57% [578/1008]  ../lib/reline/general_io.rb
+ 57% [579/1008]  ../lib/reline/history.rb
+ 57% [580/1008]  ../lib/reline/key_actor.rb
+ 57% [581/1008]  ../lib/reline/key_actor/base.rb
+ 57% [582/1008]  ../lib/reline/key_actor/emacs.rb
+ 57% [583/1008]  ../lib/reline/key_actor/vi_command.rb
+ 57% [584/1008]  ../lib/reline/key_actor/vi_insert.rb
+ 58% [585/1008]  ../lib/reline/key_stroke.rb
+ 58% [586/1008]  ../lib/reline/kill_ring.rb
+ 58% [587/1008]  ../lib/reline/line_editor.rb
+ 58% [588/1008]  ../lib/reline/terminfo.rb
+ 58% [589/1008]  ../lib/reline/unicode.rb
+ 58% [590/1008]  ../lib/reline/unicode/east_asian_width.rb
+ 58% [591/1008]  ../lib/reline/version.rb
+ 58% [592/1008]  ../lib/reline/windows.rb
+ 58% [593/1008]  ../lib/resolv-replace.rb
+ 58% [594/1008]  ../lib/resolv.rb
+ 59% [595/1008]  ../lib/rinda/rinda.rb
+ 59% [596/1008]  ../lib/rinda/ring.rb
+ 59% [597/1008]  ../lib/rinda/tuplespace.rb
+ 59% [598/1008]  ../lib/ruby_vm/rjit/assembler.rb
+ 59% [599/1008]  ../lib/ruby_vm/rjit/block.rb
+ 59% [600/1008]  ../lib/ruby_vm/rjit/branch_stub.rb
+ 59% [601/1008]  ../lib/ruby_vm/rjit/c_pointer.rb
+ 59% [602/1008]  ../lib/ruby_vm/rjit/c_type.rb
+ 59% [603/1008]  ../lib/ruby_vm/rjit/code_block.rb
+ 59% [604/1008]  ../lib/ruby_vm/rjit/compiler.rb
+ 60% [605/1008]  ../lib/ruby_vm/rjit/context.rb
+ 60% [606/1008]  ../lib/ruby_vm/rjit/entry_stub.rb
+ 60% [607/1008]  ../lib/ruby_vm/rjit/exit_compiler.rb
+ 60% [608/1008]  ../lib/ruby_vm/rjit/hooks.rb
+ 60% [609/1008]  ../lib/ruby_vm/rjit/insn_compiler.rb
+ 60% [610/1008]  ../lib/ruby_vm/rjit/instruction.rb
+ 60% [611/1008]  ../lib/ruby_vm/rjit/invariants.rb
+ 60% [612/1008]  ../lib/ruby_vm/rjit/jit_state.rb
+ 60% [613/1008]  ../lib/ruby_vm/rjit/stats.rb
+ 60% [614/1008]  ../lib/ruby_vm/rjit/type.rb
+ 61% [615/1008]  ../lib/rubygems.rb
+ 61% [616/1008]  ../lib/rubygems/available_set.rb
+ 61% [617/1008]  ../lib/rubygems/basic_specification.rb
+ 61% [618/1008]  ../lib/rubygems/bundler_version_finder.rb
+ 61% [619/1008]  ../lib/rubygems/command.rb
+ 61% [620/1008]  ../lib/rubygems/command_manager.rb
+ 61% [621/1008]  ../lib/rubygems/commands/build_command.rb
+ 61% [622/1008]  ../lib/rubygems/commands/cert_command.rb
+ 61% [623/1008]  ../lib/rubygems/commands/check_command.rb
+ 61% [624/1008]  ../lib/rubygems/commands/cleanup_command.rb
+ 62% [625/1008]  ../lib/rubygems/commands/contents_command.rb
+ 62% [626/1008]  ../lib/rubygems/commands/dependency_command.rb
+ 62% [627/1008]  ../lib/rubygems/commands/environment_command.rb
+ 62% [628/1008]  ../lib/rubygems/commands/exec_command.rb
+ 62% [629/1008]  ../lib/rubygems/commands/fetch_command.rb
+ 62% [630/1008]  ../lib/rubygems/commands/generate_index_command.rb
+ 62% [631/1008]  ../lib/rubygems/commands/help_command.rb
+ 62% [632/1008]  ../lib/rubygems/commands/info_command.rb
+ 62% [633/1008]  ../lib/rubygems/commands/install_command.rb
+ 62% [634/1008]  ../lib/rubygems/commands/list_command.rb
+ 62% [635/1008]  ../lib/rubygems/commands/lock_command.rb
+ 63% [636/1008]  ../lib/rubygems/commands/mirror_command.rb
+ 63% [637/1008]  ../lib/rubygems/commands/open_command.rb
+ 63% [638/1008]  ../lib/rubygems/commands/outdated_command.rb
+ 63% [639/1008]  ../lib/rubygems/commands/owner_command.rb
+ 63% [640/1008]  ../lib/rubygems/commands/pristine_command.rb
+ 63% [641/1008]  ../lib/rubygems/commands/push_command.rb
+ 63% [642/1008]  ../lib/rubygems/commands/query_command.rb
+ 63% [643/1008]  ../lib/rubygems/commands/rdoc_command.rb
+ 63% [644/1008]  ../lib/rubygems/commands/search_command.rb
+ 63% [645/1008]  ../lib/rubygems/commands/server_command.rb
+ 64% [646/1008]  ../lib/rubygems/commands/setup_command.rb
+ 64% [647/1008]  ../lib/rubygems/commands/signin_command.rb
+ 64% [648/1008]  ../lib/rubygems/commands/signout_command.rb
+ 64% [649/1008]  ../lib/rubygems/commands/sources_command.rb
+ 64% [650/1008]  ../lib/rubygems/commands/specification_command.rb
+ 64% [651/1008]  ../lib/rubygems/commands/stale_command.rb
+ 64% [652/1008]  ../lib/rubygems/commands/uninstall_command.rb
+ 64% [653/1008]  ../lib/rubygems/commands/unpack_command.rb
+ 64% [654/1008]  ../lib/rubygems/commands/update_command.rb
+ 64% [655/1008]  ../lib/rubygems/commands/which_command.rb
+ 65% [656/1008]  ../lib/rubygems/commands/yank_command.rb
+ 65% [657/1008]  ../lib/rubygems/compatibility.rb
+ 65% [658/1008]  ../lib/rubygems/config_file.rb
+ 65% [659/1008]  ../lib/rubygems/core_ext/kernel_gem.rb
+ 65% [660/1008]  ../lib/rubygems/core_ext/kernel_require.rb
+ 65% [661/1008]  ../lib/rubygems/core_ext/kernel_warn.rb
+ 65% [662/1008]  ../lib/rubygems/core_ext/tcpsocket_init.rb
+ 65% [663/1008]  ../lib/rubygems/defaults.rb
+ 65% [664/1008]  ../lib/rubygems/dependency.rb
+ 65% [665/1008]  ../lib/rubygems/dependency_installer.rb
+ 66% [666/1008]  ../lib/rubygems/dependency_list.rb
+ 66% [667/1008]  ../lib/rubygems/deprecate.rb
+ 66% [668/1008]  ../lib/rubygems/doctor.rb
+ 66% [669/1008]  ../lib/rubygems/errors.rb
+ 66% [670/1008]  ../lib/rubygems/exceptions.rb
+ 66% [671/1008]  ../lib/rubygems/ext.rb
+ 66% [672/1008]  ../lib/rubygems/ext/build_error.rb
+ 66% [673/1008]  ../lib/rubygems/ext/builder.rb
+ 66% [674/1008]  ../lib/rubygems/ext/cargo_builder.rb
+ 66% [675/1008]  ../lib/rubygems/ext/cargo_builder/link_flag_converter.rb
+ 67% [676/1008]  ../lib/rubygems/ext/cmake_builder.rb
+ 67% [677/1008]  ../lib/rubygems/ext/configure_builder.rb
+ 67% [678/1008]  ../lib/rubygems/ext/ext_conf_builder.rb
+ 67% [679/1008]  ../lib/rubygems/ext/rake_builder.rb
+ 67% [680/1008]  ../lib/rubygems/gem_runner.rb
+ 67% [681/1008]  ../lib/rubygems/gemcutter_utilities.rb
+ 67% [682/1008]  ../lib/rubygems/indexer.rb
+ 67% [683/1008]  ../lib/rubygems/install_default_message.rb
+ 67% [684/1008]  ../lib/rubygems/install_message.rb
+ 67% [685/1008]  ../lib/rubygems/install_update_options.rb
+ 68% [686/1008]  ../lib/rubygems/installer.rb
+ 68% [687/1008]  ../lib/rubygems/installer_uninstaller_utils.rb
+ 68% [688/1008]  ../lib/rubygems/local_remote_options.rb
+ 68% [689/1008]  ../lib/rubygems/mock_gem_ui.rb
+ 68% [690/1008]  ../lib/rubygems/name_tuple.rb
+ 68% [691/1008]  ../lib/rubygems/openssl.rb
+ 68% [692/1008]  ../lib/rubygems/optparse.rb
+ 68% [693/1008]  ../lib/rubygems/package.rb
+ 68% [694/1008]  ../lib/rubygems/package/digest_io.rb
+ 68% [695/1008]  ../lib/rubygems/package/file_source.rb
+ 69% [696/1008]  ../lib/rubygems/package/io_source.rb
+ 69% [697/1008]  ../lib/rubygems/package/old.rb
+ 69% [698/1008]  ../lib/rubygems/package/source.rb
+ 69% [699/1008]  ../lib/rubygems/package/tar_header.rb
+ 69% [700/1008]  ../lib/rubygems/package/tar_reader.rb
+ 69% [701/1008]  ../lib/rubygems/package/tar_reader/entry.rb
+ 69% [702/1008]  ../lib/rubygems/package/tar_writer.rb
+ 69% [703/1008]  ../lib/rubygems/package_task.rb
+ 69% [704/1008]  ../lib/rubygems/path_support.rb
+ 69% [705/1008]  ../lib/rubygems/platform.rb
+ 70% [706/1008]  ../lib/rubygems/psych_tree.rb
+ 70% [707/1008]  ../lib/rubygems/query_utils.rb
+ 70% [708/1008]  ../lib/rubygems/rdoc.rb
+ 70% [709/1008]  ../lib/rubygems/remote_fetcher.rb
+ 70% [710/1008]  ../lib/rubygems/request.rb
+ 70% [711/1008]  ../lib/rubygems/request/connection_pools.rb
+ 70% [712/1008]  ../lib/rubygems/request/http_pool.rb
+ 70% [713/1008]  ../lib/rubygems/request/https_pool.rb
+ 70% [714/1008]  ../lib/rubygems/request_set.rb
+ 70% [715/1008]  ../lib/rubygems/request_set/gem_dependency_api.rb
+ 71% [716/1008]  ../lib/rubygems/request_set/lockfile.rb
+ 71% [717/1008]  ../lib/rubygems/request_set/lockfile/parser.rb
+ 71% [718/1008]  ../lib/rubygems/request_set/lockfile/tokenizer.rb
+ 71% [719/1008]  ../lib/rubygems/requirement.rb
+ 71% [720/1008]  ../lib/rubygems/resolver.rb
+ 71% [721/1008]  ../lib/rubygems/resolver/activation_request.rb
+ 71% [722/1008]  ../lib/rubygems/resolver/api_set.rb
+ 71% [723/1008]  ../lib/rubygems/resolver/api_set/gem_parser.rb
+ 71% [724/1008]  ../lib/rubygems/resolver/api_specification.rb
+ 71% [725/1008]  ../lib/rubygems/resolver/best_set.rb
+ 72% [726/1008]  ../lib/rubygems/resolver/composed_set.rb
+ 72% [727/1008]  ../lib/rubygems/resolver/conflict.rb
+ 72% [728/1008]  ../lib/rubygems/resolver/current_set.rb
+ 72% [729/1008]  ../lib/rubygems/resolver/dependency_request.rb
+ 72% [730/1008]  ../lib/rubygems/resolver/git_set.rb
+ 72% [731/1008]  ../lib/rubygems/resolver/git_specification.rb
+ 72% [732/1008]  ../lib/rubygems/resolver/index_set.rb
+ 72% [733/1008]  ../lib/rubygems/resolver/index_specification.rb
+ 72% [734/1008]  ../lib/rubygems/resolver/installed_specification.rb
+ 72% [735/1008]  ../lib/rubygems/resolver/installer_set.rb
+ 73% [736/1008]  ../lib/rubygems/resolver/local_specification.rb
+ 73% [737/1008]  ../lib/rubygems/resolver/lock_set.rb
+ 73% [738/1008]  ../lib/rubygems/resolver/lock_specification.rb
+ 73% [739/1008]  ../lib/rubygems/resolver/molinillo.rb
+ 73% [740/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo.rb
+ 73% [741/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/delegates/resolution_state.rb
+ 73% [742/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/delegates/specification_provider.rb
+ 73% [743/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph.rb
+ 73% [744/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/action.rb
+ 73% [745/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/add_edge_no_circular.rb
+ 74% [746/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/add_vertex.rb
+ 74% [747/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/delete_edge.rb
+ 74% [748/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/detach_vertex_named.rb
+ 74% [749/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/log.rb
+ 74% [750/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/set_payload.rb
+ 74% [751/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/tag.rb
+ 74% [752/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/dependency_graph/vertex.rb
+ 74% [753/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/errors.rb
+ 74% [754/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/gem_metadata.rb
+ 74% [755/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/modules/specification_provider.rb
+ 75% [756/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/modules/ui.rb
+ 75% [757/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/resolution.rb
+ 75% [758/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/resolver.rb
+ 75% [759/1008]  ../lib/rubygems/resolver/molinillo/lib/molinillo/state.rb
+ 75% [760/1008]  ../lib/rubygems/resolver/requirement_list.rb
+ 75% [761/1008]  ../lib/rubygems/resolver/set.rb
+ 75% [762/1008]  ../lib/rubygems/resolver/source_set.rb
+ 75% [763/1008]  ../lib/rubygems/resolver/spec_specification.rb
+ 75% [764/1008]  ../lib/rubygems/resolver/specification.rb
+ 75% [765/1008]  ../lib/rubygems/resolver/stats.rb
+ 75% [766/1008]  ../lib/rubygems/resolver/vendor_set.rb
+ 76% [767/1008]  ../lib/rubygems/resolver/vendor_specification.rb
+ 76% [768/1008]  ../lib/rubygems/s3_uri_signer.rb
+ 76% [769/1008]  ../lib/rubygems/safe_yaml.rb
+ 76% [770/1008]  ../lib/rubygems/security.rb
+ 76% [771/1008]  ../lib/rubygems/security/policies.rb
+ 76% [772/1008]  ../lib/rubygems/security/policy.rb
+ 76% [773/1008]  ../lib/rubygems/security/signer.rb
+ 76% [774/1008]  ../lib/rubygems/security/trust_dir.rb
+ 76% [775/1008]  ../lib/rubygems/security_option.rb
+ 76% [776/1008]  ../lib/rubygems/source.rb
+ 77% [777/1008]  ../lib/rubygems/source/git.rb
+ 77% [778/1008]  ../lib/rubygems/source/installed.rb
+ 77% [779/1008]  ../lib/rubygems/source/local.rb
+ 77% [780/1008]  ../lib/rubygems/source/lock.rb
+ 77% [781/1008]  ../lib/rubygems/source/specific_file.rb
+ 77% [782/1008]  ../lib/rubygems/source/vendor.rb
+ 77% [783/1008]  ../lib/rubygems/source_list.rb
+ 77% [784/1008]  ../lib/rubygems/spec_fetcher.rb
+ 77% [785/1008]  ../lib/rubygems/specification.rb
+ 77% [786/1008]  ../lib/rubygems/specification_policy.rb
+ 78% [787/1008]  ../lib/rubygems/stub_specification.rb
+ 78% [788/1008]  ../lib/rubygems/text.rb
+ 78% [789/1008]  ../lib/rubygems/tsort.rb
+ 78% [790/1008]  ../lib/rubygems/uninstaller.rb
+ 78% [791/1008]  ../lib/rubygems/unknown_command_spell_checker.rb
+ 78% [792/1008]  ../lib/rubygems/update_suggestion.rb
+ 78% [793/1008]  ../lib/rubygems/uri.rb
+ 78% [794/1008]  ../lib/rubygems/uri_formatter.rb
+ 78% [795/1008]  ../lib/rubygems/user_interaction.rb
+ 78% [796/1008]  ../lib/rubygems/util.rb
+ 79% [797/1008]  ../lib/rubygems/util/licenses.rb
+ 79% [798/1008]  ../lib/rubygems/util/list.rb
+ 79% [799/1008]  ../lib/rubygems/validator.rb
+ 79% [800/1008]  ../lib/rubygems/version.rb
+ 79% [801/1008]  ../lib/rubygems/version_option.rb
+ 79% [802/1008]  ../lib/securerandom.rb
+ 79% [803/1008]  ../lib/set.rb
+ 79% [804/1008]  ../lib/set/sorted_set.rb
+ 79% [805/1008]  ../lib/shellwords.rb
+ 79% [806/1008]  ../lib/singleton.rb
+ 80% [807/1008]  ../lib/syntax_suggest.rb
+ 80% [808/1008]  ../lib/syntax_suggest/api.rb
+ 80% [809/1008]  ../lib/syntax_suggest/around_block_scan.rb
+ 80% [810/1008]  ../lib/syntax_suggest/block_expand.rb
+ 80% [811/1008]  ../lib/syntax_suggest/capture_code_context.rb
+ 80% [812/1008]  ../lib/syntax_suggest/clean_document.rb
+ 80% [813/1008]  ../lib/syntax_suggest/cli.rb
+ 80% [814/1008]  ../lib/syntax_suggest/code_block.rb
+ 80% [815/1008]  ../lib/syntax_suggest/code_frontier.rb
+ 80% [816/1008]  ../lib/syntax_suggest/code_line.rb
+ 81% [817/1008]  ../lib/syntax_suggest/code_search.rb
+ 81% [818/1008]  ../lib/syntax_suggest/core_ext.rb
+ 81% [819/1008]  ../lib/syntax_suggest/display_code_with_line_numbers.rb
+ 81% [820/1008]  ../lib/syntax_suggest/display_invalid_blocks.rb
+ 81% [821/1008]  ../lib/syntax_suggest/explain_syntax.rb
+ 81% [822/1008]  ../lib/syntax_suggest/left_right_lex_count.rb
+ 81% [823/1008]  ../lib/syntax_suggest/lex_all.rb
+ 81% [824/1008]  ../lib/syntax_suggest/lex_value.rb
+ 81% [825/1008]  ../lib/syntax_suggest/parse_blocks_from_indent_line.rb
+ 81% [826/1008]  ../lib/syntax_suggest/pathname_from_message.rb
+ 82% [827/1008]  ../lib/syntax_suggest/priority_engulf_queue.rb
+ 82% [828/1008]  ../lib/syntax_suggest/priority_queue.rb
+ 82% [829/1008]  ../lib/syntax_suggest/ripper_errors.rb
+ 82% [830/1008]  ../lib/syntax_suggest/unvisited_lines.rb
+ 82% [831/1008]  ../lib/syntax_suggest/version.rb
+ 82% [832/1008]  ../lib/tempfile.rb
+ 82% [833/1008]  ../lib/time.rb
+ 82% [834/1008]  ../lib/timeout.rb
+ 82% [835/1008]  ../lib/tmpdir.rb
+ 82% [836/1008]  ../lib/tsort.rb
+ 83% [837/1008]  ../lib/un.rb
+ 83% [838/1008]  ../lib/unicode_normalize/normalize.rb
+ 83% [839/1008]  ../lib/unicode_normalize/tables.rb
+ 83% [840/1008]  ../lib/uri.rb
+ 83% [841/1008]  ../lib/uri/common.rb
+ 83% [842/1008]  ../lib/uri/file.rb
+ 83% [843/1008]  ../lib/uri/ftp.rb
+ 83% [844/1008]  ../lib/uri/generic.rb
+ 83% [845/1008]  ../lib/uri/http.rb
+ 83% [846/1008]  ../lib/uri/https.rb
+ 84% [847/1008]  ../lib/uri/ldap.rb
+ 84% [848/1008]  ../lib/uri/ldaps.rb
+ 84% [849/1008]  ../lib/uri/mailto.rb
+ 84% [850/1008]  ../lib/uri/rfc2396_parser.rb
+ 84% [851/1008]  ../lib/uri/rfc3986_parser.rb
+ 84% [852/1008]  ../lib/uri/version.rb
+ 84% [853/1008]  ../lib/uri/ws.rb
+ 84% [854/1008]  ../lib/uri/wss.rb
+ 84% [855/1008]  ../lib/weakref.rb
+ 84% [856/1008]  ../lib/yaml.rb
+ 85% [857/1008]  ../lib/yaml/dbm.rb
+ 85% [858/1008]  ../lib/yaml/store.rb
+ 85% [859/1008]  ../load.c
+ 85% [860/1008]  ../loadpath.c
+ 85% [861/1008]  ../localeinit.c
+ 85% [862/1008]  ../main.c
+ 85% [863/1008]  ../marshal.c
+ 85% [864/1008]  ../marshal.rb
+ 85% [865/1008]  ../math.c
+ 85% [866/1008]  ../memory_view.c
+ 86% [867/1008]  ../mini_builtin.c
+ 86% [868/1008]  ../miniinit.c
+ 86% [869/1008]  ../nilclass.rb
+ 86% [870/1008]  ../node.c
+ 86% [871/1008]  ../numeric.c
+ 86% [872/1008]  ../numeric.rb
+ 86% [873/1008]  ../object.c
+ 86% [874/1008]  ../pack.c
+ 86% [875/1008]  ../pack.rb
+ 86% [876/1008]  ../parse.y
+ 87% [877/1008]  ../prelude.rb
+ 87% [878/1008]  ../proc.c
+ 87% [879/1008]  ../process.c
+ 87% [880/1008]  ../ractor.c
+ 87% [881/1008]  ../ractor.rb
+ 87% [882/1008]  ../random.c
+ 87% [883/1008]  ../range.c
+ 87% [884/1008]  ../rational.c
+ 87% [885/1008]  ../re.c
+ 87% [886/1008]  ../regcomp.c
+ 87% [887/1008]  ../regenc.c
+ 88% [888/1008]  ../regerror.c
+ 88% [889/1008]  ../regexec.c
+ 88% [890/1008]  ../regparse.c
+ 88% [891/1008]  ../regsyntax.c
+ 88% [892/1008]  ../rjit.c
+ 88% [893/1008]  ../rjit.rb
+ 88% [894/1008]  ../rjit_c.c
+ 88% [895/1008]  ../ruby-runner.c
+ 88% [896/1008]  ../ruby.c
+ 88% [897/1008]  ../rubystub.c
+ 89% [898/1008]  ../scheduler.c
+ 89% [899/1008]  ../shape.c
+ 89% [900/1008]  ../signal.c
+ 89% [901/1008]  ../siphash.c
+ 89% [902/1008]  ../sparc.c
+ 89% [903/1008]  ../sprintf.c
+ 89% [904/1008]  ../st.c
+ 89% [905/1008]  ../strftime.c
+ 89% [906/1008]  ../string.c
+ 89% [907/1008]  ../string.rb
+ 90% [908/1008]  ../struct.c
+ 90% [909/1008]  ../symbol.c
+ 90% [910/1008]  ../symbol.rb
+ 90% [911/1008]  ../thread.c
+ 90% [912/1008]  ../thread_none.c
+ 90% [913/1008]  ../thread_pthread.c
+ 90% [914/1008]  ../thread_sync.c
+ 90% [915/1008]  ../thread_sync.rb
+ 90% [916/1008]  ../thread_win32.c
+ 90% [917/1008]  ../time.c
+ 91% [918/1008]  ../timev.rb
+ 91% [919/1008]  ../trace_point.rb
+ 91% [920/1008]  ../transcode.c
+ 91% [921/1008]  ../transient_heap.c
+ 91% [922/1008]  ../util.c
+ 91% [923/1008]  ../variable.c
+ 91% [924/1008]  ../version.c
+ 91% [925/1008]  ../vm.c
+ 91% [926/1008]  ../vm_args.c
+ 91% [927/1008]  ../vm_backtrace.c
+ 92% [928/1008]  ../vm_dump.c
+ 92% [929/1008]  ../vm_eval.c
+ 92% [930/1008]  ../vm_exec.c
+ 92% [931/1008]  ../vm_insnhelper.c
+ 92% [932/1008]  ../vm_method.c
+ 92% [933/1008]  ../vm_sync.c
+ 92% [934/1008]  ../vm_trace.c
+ 92% [935/1008]  ../vsnprintf.c
+ 92% [936/1008]  ../warning.rb
+ 92% [937/1008]  ../weakmap.c
+ 93% [938/1008]  ../yjit.c
+ 93% [939/1008]  ../yjit.rb
+ 93% [940/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-1.8.7
+ 93% [941/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-1.9.1
+ 93% [942/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-1.9.2
+ 93% [943/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-1.9.3
+ 93% [944/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-2.0.0
+ 93% [945/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-2.1.0
+ 93% [946/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-2.2.0
+ 93% [947/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-2.3.0
+ 94% [948/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-2.4.0
+ 94% [949/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-2.5.0
+ 94% [950/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-2.6.0
+ 94% [951/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-2.7.0
+ 94% [952/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-3.0.0.md
+ 94% [953/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-3.1.0.md
+ 94% [954/1008]  /home/ec2-user/ruby/doc/NEWS/NEWS-3.2.0.md
+ 94% [955/1008]  /home/ec2-user/ruby/doc/bsearch.rdoc
+ 94% [956/1008]  /home/ec2-user/ruby/doc/bug_triaging.rdoc
+ 94% [957/1008]  /home/ec2-user/ruby/doc/case_mapping.rdoc
+ 95% [958/1008]  /home/ec2-user/ruby/doc/character_selectors.rdoc
+ 95% [959/1008]  /home/ec2-user/ruby/doc/command_injection.rdoc
+ 95% [960/1008]  /home/ec2-user/ruby/doc/contributing.md
+ 95% [961/1008]  /home/ec2-user/ruby/doc/contributing/building_ruby.md
+ 95% [962/1008]  /home/ec2-user/ruby/doc/contributing/documentation_guide.md
+ 95% [963/1008]  /home/ec2-user/ruby/doc/contributing/glossary.md
+ 95% [964/1008]  /home/ec2-user/ruby/doc/contributing/making_changes_to_ruby.md
+ 95% [965/1008]  /home/ec2-user/ruby/doc/contributing/making_changes_to_stdlibs.md
+ 95% [966/1008]  /home/ec2-user/ruby/doc/contributing/reporting_issues.md
+ 95% [967/1008]  /home/ec2-user/ruby/doc/contributing/testing_ruby.md
+ 96% [968/1008]  /home/ec2-user/ruby/doc/dig_methods.rdoc
+ 96% [969/1008]  /home/ec2-user/ruby/doc/distribution.md
+ 96% [970/1008]  /home/ec2-user/ruby/doc/dtrace_probes.rdoc
+ 96% [971/1008]  /home/ec2-user/ruby/doc/encodings.rdoc
+ 96% [972/1008]  /home/ec2-user/ruby/doc/extension.ja.rdoc
+ 96% [973/1008]  /home/ec2-user/ruby/doc/extension.rdoc
+ 96% [974/1008]  /home/ec2-user/ruby/doc/fiber.md
+ 96% [975/1008]  /home/ec2-user/ruby/doc/format_specifications.rdoc
+ 96% [976/1008]  /home/ec2-user/ruby/doc/globals.rdoc
+ 96% [977/1008]  /home/ec2-user/ruby/doc/implicit_conversion.rdoc
+ 97% [978/1008]  /home/ec2-user/ruby/doc/keywords.rdoc
+ 97% [979/1008]  /home/ec2-user/ruby/doc/maintainers.md
+ 97% [980/1008]  /home/ec2-user/ruby/doc/marshal.rdoc
+ 97% [981/1008]  /home/ec2-user/ruby/doc/memory_view.md
+ 97% [982/1008]  /home/ec2-user/ruby/doc/optparse/argument_converters.rdoc
+ 97% [983/1008]  /home/ec2-user/ruby/doc/optparse/creates_option.rdoc
+ 97% [984/1008]  /home/ec2-user/ruby/doc/optparse/option_params.rdoc
+ 97% [985/1008]  /home/ec2-user/ruby/doc/optparse/tutorial.rdoc
+ 97% [986/1008]  /home/ec2-user/ruby/doc/packed_data.rdoc
+ 97% [987/1008]  /home/ec2-user/ruby/doc/ractor.md
+ 98% [988/1008]  /home/ec2-user/ruby/doc/rdoc/markup_reference.rb
+ 98% [989/1008]  /home/ec2-user/ruby/doc/regexp.rdoc
+ 98% [990/1008]  /home/ec2-user/ruby/doc/security.rdoc
+ 98% [991/1008]  /home/ec2-user/ruby/doc/signals.rdoc
+ 98% [992/1008]  /home/ec2-user/ruby/doc/standard_library.rdoc
+ 98% [993/1008]  /home/ec2-user/ruby/doc/strftime_formatting.rdoc
+ 98% [994/1008]  /home/ec2-user/ruby/doc/syntax.rdoc
+ 98% [995/1008]  /home/ec2-user/ruby/doc/syntax/assignment.rdoc
+ 98% [996/1008]  /home/ec2-user/ruby/doc/syntax/calling_methods.rdoc
+ 98% [997/1008]  /home/ec2-user/ruby/doc/syntax/comments.rdoc
+ 99% [998/1008]  /home/ec2-user/ruby/doc/syntax/control_expressions.rdoc
+ 99% [999/1008]  /home/ec2-user/ruby/doc/syntax/exceptions.rdoc
+ 99% [1000/1008]  /home/ec2-user/ruby/doc/syntax/literals.rdoc
+ 99% [1001/1008]  /home/ec2-user/ruby/doc/syntax/methods.rdoc
+ 99% [1002/1008]  /home/ec2-user/ruby/doc/syntax/miscellaneous.rdoc
+ 99% [1003/1008]  /home/ec2-user/ruby/doc/syntax/modules_and_classes.rdoc
+ 99% [1004/1008]  /home/ec2-user/ruby/doc/syntax/pattern_matching.rdoc
+ 99% [1005/1008]  /home/ec2-user/ruby/doc/syntax/precedence.rdoc
+ 99% [1006/1008]  /home/ec2-user/ruby/doc/syntax/refinements.rdoc
+ 99% [1007/1008]  /home/ec2-user/ruby/doc/timezones.rdoc
+100% [1008/1008]  /home/ec2-user/ruby/doc/windows.md
+
+Generating RI format into /home/ec2-user/ruby/build/.ext/rdoc...
+
+
+  Files:       1008
+
+  Classes:     1057 ( 288 undocumented)
+  Modules:      221 (  73 undocumented)
+  Constants:   1405 ( 650 undocumented)
+  Attributes:  1033 ( 317 undocumented)
+  Methods:    10054 (2392 undocumented)
+
+  Total:      13770 (3720 undocumented)
+   72.98% documented
+
+  Elapsed: 33.1s
+
+Update rbs to c24c65ce867c7d1cc3cc1ca871fc002579bd8854
+From https://github.com/ruby/rbs
+ * branch              c24c65ce867c7d1cc3cc1ca871fc002579bd8854 -> FETCH_HEAD
+HEAD is now at c24c65ce Merge pull request #1291 from pocke/Avoid_to_test__Pathname__taint_untaint___when_it_is_not_defined
+echo c24c65ce867c7d1cc3cc1ca871fc002579bd8854 | /bin/sh ../tool/ifchange ../.bundle/.timestamp/rbs.revision -
+../.bundle/.timestamp/rbs.revision unchanged
+Update typeprof to aabc019684d8b4a1ed66c2a1ca48da7bbb18dcc0
+From https://github.com/ruby/typeprof
+ * branch            aabc019684d8b4a1ed66c2a1ca48da7bbb18dcc0 -> FETCH_HEAD
+HEAD is now at aabc019 Skip VM_CALL_BLOCKISEQ for Ruby < 3.3
+echo aabc019684d8b4a1ed66c2a1ca48da7bbb18dcc0 | /bin/sh ../tool/ifchange ../.bundle/.timestamp/typeprof.revision -
+../.bundle/.timestamp/typeprof.revision unchanged
+./miniruby -I../lib -I. -I.ext/common  ../tool/runruby.rb --extout=.ext  -- --disable-gems -r./x86_64-linux-fake ../tool/rbinstall.rb --make="make" --dest-dir="" --extout=".ext" --ext-build-dir="./ext" --mflags="" --make-flags="" --data-mode=0644 --prog-mode=0755 --installed-list .installed.list --mantype="doc"  --gnumake --install=all --rdoc-output=".ext/rdoc" --html-output=".ext/html"
+Installing to 
+installing binary commands:         /home/ec2-user/.rubies/ruby-main/bin
+installing base libraries:          /home/ec2-user/.rubies/ruby-main/lib
+installing arch files:              /home/ec2-user/.rubies/ruby-main/lib/ruby/3.3.0+0/x86_64-linux
+installing pkgconfig data:          /home/ec2-user/.rubies/ruby-main/lib/pkgconfig
+installing extension objects:       /home/ec2-user/.rubies/ruby-main/lib/ruby/3.3.0+0/x86_64-linux
+installing extension objects:       /home/ec2-user/.rubies/ruby-main/lib/ruby/site_ruby/3.3.0+0/x86_64-linux
+installing extension objects:       /home/ec2-user/.rubies/ruby-main/lib/ruby/vendor_ruby/3.3.0+0/x86_64-linux
+installing extension headers:       /home/ec2-user/.rubies/ruby-main/include/ruby-3.3.0+0/x86_64-linux
+installing extension scripts:       /home/ec2-user/.rubies/ruby-main/lib/ruby/3.3.0+0
+installing extension scripts:       /home/ec2-user/.rubies/ruby-main/lib/ruby/site_ruby/3.3.0+0
+installing extension scripts:       /home/ec2-user/.rubies/ruby-main/lib/ruby/vendor_ruby/3.3.0+0
+installing extension headers:       /home/ec2-user/.rubies/ruby-main/include/ruby-3.3.0+0/ruby
+installing rdoc:                    /home/ec2-user/.rubies/ruby-main/share/ri/3.3.0+0/system
+installing html-docs:               /home/ec2-user/.rubies/ruby-main/share/doc/ruby
+installing capi-docs:               /home/ec2-user/.rubies/ruby-main/share/doc/ruby
+installing command scripts:         /home/ec2-user/.rubies/ruby-main/bin
+installing library scripts:         /home/ec2-user/.rubies/ruby-main/lib/ruby/3.3.0+0
+installing common headers:          /home/ec2-user/.rubies/ruby-main/include/ruby-3.3.0+0
+installing manpages:                /home/ec2-user/.rubies/ruby-main/share/man/man1
+installing default gems from lib:   /home/ec2-user/.rubies/ruby-main/lib/ruby/gems/3.3.0+0
+                                    abbrev 0.1.1
+                                    base64 0.1.1
+                                    benchmark 0.2.1
+                                    bundler 2.5.0.dev
+/home/ec2-user/ruby/lib/rubygems/installer.rb:352:in `rescue in install': uninitialized constant Gem::Installer::Zlib (NameError)
+	from /home/ec2-user/ruby/lib/rubygems/installer.rb:302:in `install'
+	from ../tool/rbinstall.rb:881:in `block in install'
+	from ../tool/rbinstall.rb:721:in `no_write'
+	from ../tool/rbinstall.rb:881:in `install'
+	from ../tool/rbinstall.rb:989:in `block in install_default_gem'
+	from ../tool/rbinstall.rb:976:in `each'
+	from ../tool/rbinstall.rb:976:in `install_default_gem'
+	from ../tool/rbinstall.rb:913:in `block in <main>'
+	from ../tool/rbinstall.rb:1095:in `block in <main>'
+	from ../tool/rbinstall.rb:1092:in `each'
+	from ../tool/rbinstall.rb:1092:in `<main>'
+<internal:/home/ec2-user/ruby/lib/rubygems/core_ext/kernel_require.rb>:85:in `require': cannot load such file -- psych (LoadError)
+	from <internal:/home/ec2-user/ruby/lib/rubygems/core_ext/kernel_require.rb>:85:in `require'
+	from /home/ec2-user/ruby/lib/rubygems.rb:599:in `load_yaml'
+	from /home/ec2-user/ruby/lib/rubygems/config_file.rb:347:in `load_file'
+	from /home/ec2-user/ruby/lib/rubygems/config_file.rb:190:in `initialize'
+	from /home/ec2-user/ruby/lib/rubygems.rb:330:in `new'
+	from /home/ec2-user/ruby/lib/rubygems.rb:330:in `configuration'
+	from /home/ec2-user/ruby/lib/rubygems/user_interaction.rb:165:in `verbose'
+	from /home/ec2-user/ruby/lib/rubygems/installer.rb:548:in `generate_bin_script'
+	from ../tool/rbinstall.rb:891:in `generate_bin_script'
+	from ../tool/rbinstall.rb:855:in `generate_bin_script'
+	from /home/ec2-user/ruby/lib/rubygems/installer.rb:508:in `block in generate_bin'
+	from /home/ec2-user/ruby/lib/rubygems/installer.rb:492:in `each'
+	from /home/ec2-user/ruby/lib/rubygems/installer.rb:492:in `generate_bin'
+	from /home/ec2-user/ruby/lib/rubygems/installer.rb:332:in `install'
+	from ../tool/rbinstall.rb:881:in `block in install'
+	from ../tool/rbinstall.rb:721:in `no_write'
+	from ../tool/rbinstall.rb:881:in `install'
+	from ../tool/rbinstall.rb:989:in `block in install_default_gem'
+	from ../tool/rbinstall.rb:976:in `each'
+	from ../tool/rbinstall.rb:976:in `install_default_gem'
+	from ../tool/rbinstall.rb:913:in `block in <main>'
+	from ../tool/rbinstall.rb:1095:in `block in <main>'
+	from ../tool/rbinstall.rb:1092:in `each'
+	from ../tool/rbinstall.rb:1092:in `<main>'
+make: *** [uncommon.mk:376: do-install-all] Error 1
+~/ruby ~ ~/scripts
+~ ~/scripts
+~/scripts
