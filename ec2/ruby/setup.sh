@@ -4,21 +4,20 @@
 # Some of these are unneeded but added to try to fix issues -- try to make this more parsimonious.
 pushd ~
 sudo yum install -y gcc
-sudo yum install -y libyaml
-sudo yum install -y zlib
+sudo yum install -y libyaml-devel
+# sudo yum install -y zlib
 sudo yum install -y zlib-devel
 sudo yum install -y autoconf
 sudo yum install -y bison
 sudo yum install -y gperf
-sudo yum install -y libffi
+# sudo yum install -y libffi
 sudo yum install -y libffi-devel
 # sudo yum install -y openssl # doubtful
 sudo yum install -y openssl-devel
-sudo yum install -y readline
+# sudo yum install -y readline
 sudo yum install -y readline-devel
-# sudo yum install -y psych  # any such thing?
-# sudo yum install -y psych-devel  # any such thing?
 sudo yum install -y ruby	# according to official ruby instructions
+sudo yum install -y ruby-devel	# or is it this? or both?
 
 gem install bundler
 git clone --depth 1 https://github.com/ruby/ruby.git 
