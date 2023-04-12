@@ -1,5 +1,4 @@
-## See ../../output/pytest-summary-on-003.txt
-
+echo "##### PYTEST"
 echo "pytest-build start time $(date)"
 
 pushd ~/pytest

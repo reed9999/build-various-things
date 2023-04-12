@@ -1,0 +1,775 @@
+##### QUTEBROWSER
+qutebrowser-build start time Wed Apr 12 21:12:06 UTC 2023
+~/qutebrowser ~/scripts/azure-vm
+Requirement already satisfied: setuptools in /home/azureuser/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (44.0.0)
+Collecting tox
+  Using cached tox-4.4.11-py3-none-any.whl (148 kB)
+Collecting colorama>=0.4.6
+  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting chardet>=5.1
+  Using cached chardet-5.1.0-py3-none-any.whl (199 kB)
+Collecting cachetools>=5.3
+  Using cached cachetools-5.3.0-py3-none-any.whl (9.3 kB)
+Collecting pluggy>=1
+  Using cached pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Collecting packaging>=23
+  Using cached packaging-23.1-py3-none-any.whl (48 kB)
+Collecting tomli>=2.0.1; python_version < "3.11"
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting virtualenv>=20.21
+  Using cached virtualenv-20.21.0-py3-none-any.whl (8.7 MB)
+Collecting pyproject-api>=1.5.1
+  Using cached pyproject_api-1.5.1-py3-none-any.whl (12 kB)
+Collecting platformdirs>=3.2
+  Using cached platformdirs-3.2.0-py3-none-any.whl (14 kB)
+Collecting filelock>=3.10.7
+  Using cached filelock-3.11.0-py3-none-any.whl (10.0 kB)
+Collecting distlib<1,>=0.3.6
+  Using cached distlib-0.3.6-py2.py3-none-any.whl (468 kB)
+Installing collected packages: colorama, chardet, cachetools, pluggy, packaging, tomli, platformdirs, filelock, distlib, virtualenv, pyproject-api, tox
+Successfully installed cachetools-5.3.0 chardet-5.1.0 colorama-0.4.6 distlib-0.3.6 filelock-3.11.0 packaging-23.1 platformdirs-3.2.0 pluggy-1.0.0 pyproject-api-1.5.1 tomli-2.0.1 tox-4.4.11 virtualenv-20.21.0
+Obtaining file:///home/azureuser/qutebrowser
+Collecting PyYAML
+  Using cached PyYAML-6.0-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (701 kB)
+Collecting jinja2
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting importlib_resources>=1.1.0
+  Downloading importlib_resources-5.12.0-py3-none-any.whl (36 kB)
+Collecting MarkupSafe>=2.0
+  Using cached MarkupSafe-2.1.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Collecting zipp>=3.1.0; python_version < "3.10"
+  Using cached zipp-3.15.0-py3-none-any.whl (6.8 kB)
+Installing collected packages: PyYAML, MarkupSafe, jinja2, zipp, importlib-resources, qutebrowser
+  Running setup.py develop for qutebrowser
+Successfully installed MarkupSafe-2.1.2 PyYAML-6.0 importlib-resources-5.12.0 jinja2-3.1.2 qutebrowser zipp-3.15.0
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/qutebrowser
+copying qutebrowser/__init__.py -> build/lib/qutebrowser
+copying qutebrowser/qutebrowser.py -> build/lib/qutebrowser
+copying qutebrowser/__main__.py -> build/lib/qutebrowser
+copying qutebrowser/app.py -> build/lib/qutebrowser
+creating build/lib/qutebrowser/api
+copying qutebrowser/api/__init__.py -> build/lib/qutebrowser/api
+copying qutebrowser/api/qtutils.py -> build/lib/qutebrowser/api
+copying qutebrowser/api/downloads.py -> build/lib/qutebrowser/api
+copying qutebrowser/api/config.py -> build/lib/qutebrowser/api
+copying qutebrowser/api/hook.py -> build/lib/qutebrowser/api
+copying qutebrowser/api/message.py -> build/lib/qutebrowser/api
+copying qutebrowser/api/cmdutils.py -> build/lib/qutebrowser/api
+copying qutebrowser/api/apitypes.py -> build/lib/qutebrowser/api
+copying qutebrowser/api/interceptor.py -> build/lib/qutebrowser/api
+creating build/lib/qutebrowser/extensions
+copying qutebrowser/extensions/loader.py -> build/lib/qutebrowser/extensions
+copying qutebrowser/extensions/__init__.py -> build/lib/qutebrowser/extensions
+copying qutebrowser/extensions/interceptors.py -> build/lib/qutebrowser/extensions
+creating build/lib/qutebrowser/misc
+copying qutebrowser/misc/ipc.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/cmdhistory.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/__init__.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/backendproblem.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/lineparser.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/crashdialog.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/crashsignal.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/quitter.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/split.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/sessions.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/msgbox.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/savemanager.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/utilcmds.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/guiprocess.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/checkpyver.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/consolewidget.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/elf.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/editor.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/autoupdate.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/pastebin.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/debugcachestats.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/httpclient.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/objects.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/keyhintwidget.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/sql.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/miscwidgets.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/throttle.py -> build/lib/qutebrowser/misc
+copying qutebrowser/misc/earlyinit.py -> build/lib/qutebrowser/misc
+creating build/lib/qutebrowser/components
+copying qutebrowser/components/__init__.py -> build/lib/qutebrowser/components
+copying qutebrowser/components/hostblock.py -> build/lib/qutebrowser/components
+copying qutebrowser/components/misccommands.py -> build/lib/qutebrowser/components
+copying qutebrowser/components/readlinecommands.py -> build/lib/qutebrowser/components
+copying qutebrowser/components/scrollcommands.py -> build/lib/qutebrowser/components
+copying qutebrowser/components/zoomcommands.py -> build/lib/qutebrowser/components
+copying qutebrowser/components/adblockcommands.py -> build/lib/qutebrowser/components
+copying qutebrowser/components/braveadblock.py -> build/lib/qutebrowser/components
+copying qutebrowser/components/caretcommands.py -> build/lib/qutebrowser/components
+creating build/lib/qutebrowser/browser
+copying qutebrowser/browser/hints.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/webelem.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/urlmarks.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/__init__.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/qutescheme.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/history.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/pdfjs.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/greasemonkey.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/downloads.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/browsertab.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/navigate.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/shared.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/commands.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/signalfilter.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/downloadview.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/inspector.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/qtnetworkdownloads.py -> build/lib/qutebrowser/browser
+copying qutebrowser/browser/eventfilter.py -> build/lib/qutebrowser/browser
+creating build/lib/qutebrowser/config
+copying qutebrowser/config/__init__.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/configcommands.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/configfiles.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/configexc.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/configcache.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/websettings.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/configutils.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/config.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/configtypes.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/configinit.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/configdata.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/qtargs.py -> build/lib/qutebrowser/config
+copying qutebrowser/config/stylesheet.py -> build/lib/qutebrowser/config
+creating build/lib/qutebrowser/mainwindow
+copying qutebrowser/mainwindow/__init__.py -> build/lib/qutebrowser/mainwindow
+copying qutebrowser/mainwindow/mainwindow.py -> build/lib/qutebrowser/mainwindow
+copying qutebrowser/mainwindow/prompt.py -> build/lib/qutebrowser/mainwindow
+copying qutebrowser/mainwindow/tabwidget.py -> build/lib/qutebrowser/mainwindow
+copying qutebrowser/mainwindow/messageview.py -> build/lib/qutebrowser/mainwindow
+copying qutebrowser/mainwindow/windowundo.py -> build/lib/qutebrowser/mainwindow
+copying qutebrowser/mainwindow/tabbedbrowser.py -> build/lib/qutebrowser/mainwindow
+creating build/lib/qutebrowser/commands
+copying qutebrowser/commands/runners.py -> build/lib/qutebrowser/commands
+copying qutebrowser/commands/__init__.py -> build/lib/qutebrowser/commands
+copying qutebrowser/commands/userscripts.py -> build/lib/qutebrowser/commands
+copying qutebrowser/commands/cmdexc.py -> build/lib/qutebrowser/commands
+copying qutebrowser/commands/parser.py -> build/lib/qutebrowser/commands
+copying qutebrowser/commands/command.py -> build/lib/qutebrowser/commands
+copying qutebrowser/commands/argparser.py -> build/lib/qutebrowser/commands
+creating build/lib/qutebrowser/completion
+copying qutebrowser/completion/__init__.py -> build/lib/qutebrowser/completion
+copying qutebrowser/completion/completiondelegate.py -> build/lib/qutebrowser/completion
+copying qutebrowser/completion/completionwidget.py -> build/lib/qutebrowser/completion
+copying qutebrowser/completion/completer.py -> build/lib/qutebrowser/completion
+creating build/lib/qutebrowser/keyinput
+copying qutebrowser/keyinput/keyutils.py -> build/lib/qutebrowser/keyinput
+copying qutebrowser/keyinput/__init__.py -> build/lib/qutebrowser/keyinput
+copying qutebrowser/keyinput/modeparsers.py -> build/lib/qutebrowser/keyinput
+copying qutebrowser/keyinput/basekeyparser.py -> build/lib/qutebrowser/keyinput
+copying qutebrowser/keyinput/modeman.py -> build/lib/qutebrowser/keyinput
+copying qutebrowser/keyinput/macros.py -> build/lib/qutebrowser/keyinput
+copying qutebrowser/keyinput/eventfilter.py -> build/lib/qutebrowser/keyinput
+creating build/lib/qutebrowser/utils
+copying qutebrowser/utils/__init__.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/version.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/debug.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/urlutils.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/qtutils.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/error.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/resources.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/jinja.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/docutils.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/log.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/urlmatch.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/message.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/utils.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/objreg.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/usertypes.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/standarddir.py -> build/lib/qutebrowser/utils
+copying qutebrowser/utils/javascript.py -> build/lib/qutebrowser/utils
+creating build/lib/qutebrowser/qt
+copying qutebrowser/qt/webenginewidgets.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/core.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/__init__.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/webenginecore.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/printsupport.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/qml.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/test.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/webkit.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/gui.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/webkitwidgets.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/network.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/dbus.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/sip.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/widgets.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/sql.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/machinery.py -> build/lib/qutebrowser/qt
+copying qutebrowser/qt/opengl.py -> build/lib/qutebrowser/qt
+creating build/lib/qutebrowser/components/utils
+copying qutebrowser/components/utils/__init__.py -> build/lib/qutebrowser/components/utils
+copying qutebrowser/components/utils/blockutils.py -> build/lib/qutebrowser/components/utils
+creating build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/webengineelem.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/webenginetab.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/__init__.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/webview.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/cookies.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/webengineinspector.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/certificateerror.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/tabhistory.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/darkmode.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/notification.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/spell.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/webenginedownloads.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/webenginesettings.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/interceptor.py -> build/lib/qutebrowser/browser/webengine
+copying qutebrowser/browser/webengine/webenginequtescheme.py -> build/lib/qutebrowser/browser/webengine
+creating build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/webkitsettings.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/__init__.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/http.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/webkittab.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/webkitelem.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/webview.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/cookies.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/certificateerror.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/tabhistory.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/cache.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/mhtml.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/webpage.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/webkitinspector.py -> build/lib/qutebrowser/browser/webkit
+copying qutebrowser/browser/webkit/webkithistory.py -> build/lib/qutebrowser/browser/webkit
+creating build/lib/qutebrowser/browser/network
+copying qutebrowser/browser/network/__init__.py -> build/lib/qutebrowser/browser/network
+copying qutebrowser/browser/network/proxy.py -> build/lib/qutebrowser/browser/network
+copying qutebrowser/browser/network/pac.py -> build/lib/qutebrowser/browser/network
+creating build/lib/qutebrowser/browser/webkit/network
+copying qutebrowser/browser/webkit/network/__init__.py -> build/lib/qutebrowser/browser/webkit/network
+copying qutebrowser/browser/webkit/network/webkitqutescheme.py -> build/lib/qutebrowser/browser/webkit/network
+copying qutebrowser/browser/webkit/network/networkreply.py -> build/lib/qutebrowser/browser/webkit/network
+copying qutebrowser/browser/webkit/network/filescheme.py -> build/lib/qutebrowser/browser/webkit/network
+copying qutebrowser/browser/webkit/network/networkmanager.py -> build/lib/qutebrowser/browser/webkit/network
+creating build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/__init__.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/textbase.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/tabindex.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/progress.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/keystring.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/percentage.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/searchmatch.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/url.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/bar.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/backforward.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/clock.py -> build/lib/qutebrowser/mainwindow/statusbar
+copying qutebrowser/mainwindow/statusbar/command.py -> build/lib/qutebrowser/mainwindow/statusbar
+creating build/lib/qutebrowser/completion/models
+copying qutebrowser/completion/models/__init__.py -> build/lib/qutebrowser/completion/models
+copying qutebrowser/completion/models/configmodel.py -> build/lib/qutebrowser/completion/models
+copying qutebrowser/completion/models/urlmodel.py -> build/lib/qutebrowser/completion/models
+copying qutebrowser/completion/models/filepathcategory.py -> build/lib/qutebrowser/completion/models
+copying qutebrowser/completion/models/miscmodels.py -> build/lib/qutebrowser/completion/models
+copying qutebrowser/completion/models/histcategory.py -> build/lib/qutebrowser/completion/models
+copying qutebrowser/completion/models/completionmodel.py -> build/lib/qutebrowser/completion/models
+copying qutebrowser/completion/models/listcategory.py -> build/lib/qutebrowser/completion/models
+copying qutebrowser/completion/models/util.py -> build/lib/qutebrowser/completion/models
+running egg_info
+writing qutebrowser.egg-info/PKG-INFO
+writing dependency_links to qutebrowser.egg-info/dependency_links.txt
+writing entry points to qutebrowser.egg-info/entry_points.txt
+writing requirements to qutebrowser.egg-info/requires.txt
+writing top-level names to qutebrowser.egg-info/top_level.txt
+reading manifest file 'qutebrowser.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'qutebrowser.egg-info/SOURCES.txt'
+copying qutebrowser/git-commit-id -> build/lib/qutebrowser
+creating build/lib/qutebrowser/html
+copying qutebrowser/html/back.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/base.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/bindings.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/bookmarks.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/dirbrowser.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/error.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/history.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/license.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/log.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/no_pdfjs.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/pre.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/process.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/settings.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/startpage.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/styled.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/tabs.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/version.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/warning-sandboxing.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/warning-sessions.html -> build/lib/qutebrowser/html
+copying qutebrowser/html/warning-webkit.html -> build/lib/qutebrowser/html
+creating build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-128x128.png -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-16x16.png -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-24x24.png -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-256x256.png -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-32x32.png -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-48x48.png -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-512x512.png -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-64x64.png -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-96x96.png -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-all.svg -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser-favicon.svg -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser.icns -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser.ico -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser.svg -> build/lib/qutebrowser/icons
+copying qutebrowser/icons/qutebrowser.xpm -> build/lib/qutebrowser/icons
+creating build/lib/qutebrowser/img
+copying qutebrowser/img/broken_qutebrowser_logo.png -> build/lib/qutebrowser/img
+copying qutebrowser/img/file.svg -> build/lib/qutebrowser/img
+copying qutebrowser/img/folder.svg -> build/lib/qutebrowser/img
+creating build/lib/qutebrowser/javascript
+copying qutebrowser/javascript/caret.js -> build/lib/qutebrowser/javascript
+copying qutebrowser/javascript/global_wrapper.js -> build/lib/qutebrowser/javascript
+copying qutebrowser/javascript/greasemonkey_wrapper.js -> build/lib/qutebrowser/javascript
+copying qutebrowser/javascript/history.js -> build/lib/qutebrowser/javascript
+copying qutebrowser/javascript/pac_utils.js -> build/lib/qutebrowser/javascript
+copying qutebrowser/javascript/position_caret.js -> build/lib/qutebrowser/javascript
+copying qutebrowser/javascript/scroll.js -> build/lib/qutebrowser/javascript
+copying qutebrowser/javascript/stylesheet.js -> build/lib/qutebrowser/javascript
+copying qutebrowser/javascript/webelem.js -> build/lib/qutebrowser/javascript
+creating build/lib/qutebrowser/javascript/quirks
+copying qutebrowser/javascript/quirks/array_at.user.js -> build/lib/qutebrowser/javascript/quirks
+copying qutebrowser/javascript/quirks/discord.user.js -> build/lib/qutebrowser/javascript/quirks
+copying qutebrowser/javascript/quirks/googledocs.user.js -> build/lib/qutebrowser/javascript/quirks
+copying qutebrowser/javascript/quirks/string_replaceall.user.js -> build/lib/qutebrowser/javascript/quirks
+copying qutebrowser/javascript/quirks/whatsapp_web.user.js -> build/lib/qutebrowser/javascript/quirks
+copying qutebrowser/config/configdata.yml -> build/lib/qutebrowser/config
+copying qutebrowser/utils/testfile -> build/lib/qutebrowser/utils
+py38-pyqt515-cov: install_deps> python -I -m pip install -r /home/azureuser/qutebrowser/requirements.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-tests.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-docs.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-pyqt-5.15.txt
+py38-pyqt515-cov: commands[0]> .tox/py38-pyqt515-cov/bin/python -bb -m pytest tests
+py38-pyqt515-cov: exit 4 (0.96 seconds) /home/azureuser/qutebrowser> .tox/py38-pyqt515-cov/bin/python -bb -m pytest tests pid=61926
+py38-pyqt515-cov: FAIL ✖ in 11.93 seconds
+mypy-pyqt5: install_deps> python -I -m pip install -r /home/azureuser/qutebrowser/requirements.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-dev.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-tests.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-mypy.txt
+mypy-pyqt5: commands[0]> .tox/mypy-pyqt5/bin/python -m mypy --always-false=USE_PYQT6 --always-true=USE_PYQT5 --always-false=USE_PYSIDE2 --always-false=USE_PYSIDE6 --always-true=IS_QT5 --always-false=IS_QT6 qutebrowser
+Success: no issues found in 203 source files
+mypy-pyqt5: OK ✔ in 37.5 seconds
+misc: commands[0]> .tox/misc/bin/python scripts/dev/misc_checks.py all
+
+[33m==================== git ====================[0m
+
+
+[33m==================== vcs ====================[0m
+
+
+[33m==================== spelling ====================[0m
+
+
+[33m==================== pyqt-imports ====================[0m
+
+
+[33m==================== userscript-descriptions ====================[0m
+
+[33m==================== userscript-shebangs ====================[0m
+
+[33m==================== changelog-urls ====================[0m
+misc: OK ✔ in 3.75 seconds
+vulture: install_deps> python -I -m pip install -r /home/azureuser/qutebrowser/requirements.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-vulture.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-pyqt.txt
+vulture: commands[0]> .tox/vulture/bin/python scripts/dev/run_vulture.py
+vulture: exit 1 (0.04 seconds) /home/azureuser/qutebrowser> .tox/vulture/bin/python scripts/dev/run_vulture.py pid=62015
+vulture: FAIL ✖ in 4.57 seconds
+flake8: install_deps> python -I -m pip install -r /home/azureuser/qutebrowser/requirements.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-flake8.txt
+flake8: commands[0]> .tox/flake8/bin/python -m flake8 qutebrowser tests scripts
+flake8: OK ✔ in 29.26 seconds
+pylint: install_deps> python -I -m pip install -r /home/azureuser/qutebrowser/requirements.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-tests.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-pylint.txt -r /home/azureuser/qutebrowser/misc/requirements/requirements-pyqt.txt
+pylint: commands[0]> .tox/pylint/bin/python -m pylint scripts qutebrowser --output-format=colorized --reports=no
+[7;33m************* Module qutebrowser.app[0m
+qutebrowser/app.py:50:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/app.py:50:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/app.py:51:0: E0611: [1;31mNo name 'QDesktopServices' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/app.py:51:0: E0611: [1;31mNo name 'QPixmap' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/app.py:51:0: E0611: [1;31mNo name 'QIcon' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.backendproblem[0m
+qutebrowser/misc/backendproblem.py:33:0: E0611: [1;31mNo name 'QDialog' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/backendproblem.py:33:0: E0611: [1;31mNo name 'QPushButton' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/backendproblem.py:33:0: E0611: [1;31mNo name 'QHBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/backendproblem.py:33:0: E0611: [1;31mNo name 'QVBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/backendproblem.py:33:0: E0611: [1;31mNo name 'QLabel' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/backendproblem.py:33:0: E0611: [1;31mNo name 'QMessageBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/backendproblem.py:33:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.crashdialog[0m
+qutebrowser/misc/crashdialog.py:34:0: E0611: [1;31mNo name 'QDialog' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/crashdialog.py:34:0: E0611: [1;31mNo name 'QLabel' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/crashdialog.py:34:0: E0611: [1;31mNo name 'QTextEdit' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/crashdialog.py:34:0: E0611: [1;31mNo name 'QPushButton' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/crashdialog.py:34:0: E0611: [1;31mNo name 'QVBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/crashdialog.py:34:0: E0611: [1;31mNo name 'QHBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/crashdialog.py:34:0: E0611: [1;31mNo name 'QCheckBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/crashdialog.py:34:0: E0611: [1;31mNo name 'QDialogButtonBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/crashdialog.py:34:0: E0611: [1;31mNo name 'QMessageBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.crashsignal[0m
+qutebrowser/misc/crashsignal.py:37:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.msgbox[0m
+qutebrowser/misc/msgbox.py:23:0: E0611: [1;31mNo name 'QMessageBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.utilcmds[0m
+qutebrowser/misc/utilcmds.py:31:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.consolewidget[0m
+qutebrowser/misc/consolewidget.py:27:0: E0611: [1;31mNo name 'QTextEdit' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/consolewidget.py:27:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/consolewidget.py:27:0: E0611: [1;31mNo name 'QVBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/consolewidget.py:27:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/consolewidget.py:28:0: E0611: [1;31mNo name 'QTextCursor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.keyhintwidget[0m
+qutebrowser/misc/keyhintwidget.py:30:0: E0611: [1;31mNo name 'QLabel' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/keyhintwidget.py:30:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/keyhintwidget.py:32:0: E0611: [1;31mNo name 'QKeySequence' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.sql[0m
+qutebrowser/misc/sql.py:30:0: E0611: [1;31mNo name 'QSqlDatabase' in module 'qutebrowser.qt.sql'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/sql.py:30:0: E0611: [1;31mNo name 'QSqlError' in module 'qutebrowser.qt.sql'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/sql.py:30:0: E0611: [1;31mNo name 'QSqlQuery' in module 'qutebrowser.qt.sql'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.miscwidgets[0m
+qutebrowser/misc/miscwidgets.py:25:0: E0611: [1;31mNo name 'QLineEdit' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:25:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:25:0: E0611: [1;31mNo name 'QHBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:25:0: E0611: [1;31mNo name 'QLabel' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:25:0: E0611: [1;31mNo name 'QStyleOption' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:25:0: E0611: [1;31mNo name 'QStyle' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:25:0: E0611: [1;31mNo name 'QLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:25:0: E0611: [1;31mNo name 'QSplitter' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:27:0: E0611: [1;31mNo name 'QValidator' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:27:0: E0611: [1;31mNo name 'QPainter' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/miscwidgets.py:27:0: E0611: [1;31mNo name 'QResizeEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.misc.earlyinit[0m
+qutebrowser/misc/earlyinit.py:81:4: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/misc/earlyinit.py:81:4: E0611: [1;31mNo name 'QMessageBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.components.misccommands[0m
+qutebrowser/components/misccommands.py:38:0: E0611: [1;31mNo name 'QPrintPreviewDialog' in module 'qutebrowser.qt.printsupport'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.components.readlinecommands[0m
+qutebrowser/components/readlinecommands.py:25:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/components/readlinecommands.py:25:0: E0611: [1;31mNo name 'QLineEdit' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.hints[0m
+qutebrowser/browser/hints.py:34:0: E0611: [1;31mNo name 'QLabel' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webelem[0m
+qutebrowser/browser/webelem.py:27:0: E0611: [1;31mNo name 'QMouseEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.history[0m
+qutebrowser/browser/history.py:29:0: E0611: [1;31mNo name 'QProgressDialog' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/history.py:29:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.browsertab[0m
+qutebrowser/browser/browsertab.py:31:0: E0611: [1;31mNo name 'QKeyEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/browsertab.py:31:0: E0611: [1;31mNo name 'QIcon' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/browsertab.py:31:0: E0611: [1;31mNo name 'QPixmap' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/browsertab.py:32:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/browsertab.py:32:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/browsertab.py:33:0: E0611: [1;31mNo name 'QPrintDialog' in module 'qutebrowser.qt.printsupport'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/browsertab.py:33:0: E0611: [1;31mNo name 'QPrinter' in module 'qutebrowser.qt.printsupport'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.commands[0m
+qutebrowser/browser/commands.py:27:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/commands.py:27:0: E0611: [1;31mNo name 'QTabBar' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.downloadview[0m
+qutebrowser/browser/downloadview.py:26:0: E0611: [1;31mNo name 'QListView' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/downloadview.py:26:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/downloadview.py:26:0: E0611: [1;31mNo name 'QMenu' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/downloadview.py:26:0: E0611: [1;31mNo name 'QStyleFactory' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.inspector[0m
+qutebrowser/browser/inspector.py:27:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/inspector.py:29:0: E0611: [1;31mNo name 'QCloseEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.qtnetworkdownloads[0m
+qutebrowser/browser/qtnetworkdownloads.py:30:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webengineelem[0m
+qutebrowser/browser/webengine/webengineelem.py:26:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webenginetab[0m
+qutebrowser/browser/webengine/webenginetab.py:32:0: E0611: [1;31mNo name 'QWebEngineView' in module 'qutebrowser.qt.webenginewidgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webview[0m
+qutebrowser/browser/webengine/webview.py:26:0: E0611: [1;31mNo name 'QPalette' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/webview.py:27:0: E0611: [1;31mNo name 'QWebEngineView' in module 'qutebrowser.qt.webenginewidgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webengineinspector[0m
+qutebrowser/browser/webengine/webengineinspector.py:25:0: E0611: [1;31mNo name 'QWebEngineView' in module 'qutebrowser.qt.webenginewidgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/webengineinspector.py:27:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.notification[0m
+qutebrowser/browser/webengine/notification.py:56:0: E0611: [1;31mNo name 'QImage' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/notification.py:56:0: E0611: [1;31mNo name 'QIcon' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/notification.py:56:0: E0611: [1;31mNo name 'QPixmap' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/notification.py:59:0: E0611: [1;31mNo name 'QSystemTrayIcon' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webenginesettings[0m
+qutebrowser/browser/webengine/webenginesettings.py:33:0: E0611: [1;31mNo name 'QFont' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/webenginesettings.py:34:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.interceptor[0m
+qutebrowser/browser/webengine/interceptor.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlRequestInterceptor' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/interceptor.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlRequestInfo' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webenginequtescheme[0m
+qutebrowser/browser/webengine/webenginequtescheme.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlSchemeHandler' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/webenginequtescheme.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlRequestJob' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/webenginequtescheme.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlScheme' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.network.pac[0m
+qutebrowser/browser/network/pac.py:30:0: E0611: [1;31mNo name 'QJSEngine' in module 'qutebrowser.qt.qml'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/network/pac.py:30:0: E0611: [1;31mNo name 'QJSValue' in module 'qutebrowser.qt.qml'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.config.websettings[0m
+qutebrowser/config/websettings.py:29:0: E0611: [1;31mNo name 'QFont' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.config.configutils[0m
+qutebrowser/config/configutils.py:32:0: E0611: [1;31mNo name 'QFontDatabase' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/config/configutils.py:33:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.config.configtypes[0m
+qutebrowser/config/configtypes.py:59:0: E0611: [1;31mNo name 'QColor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/config/configtypes.py:60:0: E0611: [1;31mNo name 'QTabWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/config/configtypes.py:60:0: E0611: [1;31mNo name 'QTabBar' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.config.configinit[0m
+qutebrowser/config/configinit.py:26:0: E0611: [1;31mNo name 'QMessageBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.config.stylesheet[0m
+qutebrowser/config/stylesheet.py:26:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.mainwindow.mainwindow[0m
+qutebrowser/mainwindow/mainwindow.py:30:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/mainwindow.py:30:0: E0611: [1;31mNo name 'QVBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/mainwindow.py:30:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/mainwindow.py:31:0: E0611: [1;31mNo name 'QPalette' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.mainwindow.prompt[0m
+qutebrowser/mainwindow/prompt.py:31:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/prompt.py:31:0: E0611: [1;31mNo name 'QGridLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/prompt.py:31:0: E0611: [1;31mNo name 'QVBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/prompt.py:31:0: E0611: [1;31mNo name 'QLineEdit' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/prompt.py:31:0: E0611: [1;31mNo name 'QLabel' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/prompt.py:31:0: E0611: [1;31mNo name 'QTreeView' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/prompt.py:31:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/prompt.py:31:0: E0611: [1;31mNo name 'QSpacerItem' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.mainwindow.tabwidget[0m
+qutebrowser/mainwindow/tabwidget.py:29:0: E0611: [1;31mNo name 'QTabWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:29:0: E0611: [1;31mNo name 'QTabBar' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:29:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:29:0: E0611: [1;31mNo name 'QProxyStyle' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:29:0: E0611: [1;31mNo name 'QStyle' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:29:0: E0611: [1;31mNo name 'QStylePainter' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:29:0: E0611: [1;31mNo name 'QStyleOptionTab' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:29:0: E0611: [1;31mNo name 'QCommonStyle' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:32:0: E0611: [1;31mNo name 'QIcon' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:32:0: E0611: [1;31mNo name 'QPalette' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabwidget.py:32:0: E0611: [1;31mNo name 'QColor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.mainwindow.messageview[0m
+qutebrowser/mainwindow/messageview.py:25:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/messageview.py:25:0: E0611: [1;31mNo name 'QVBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/messageview.py:25:0: E0611: [1;31mNo name 'QLabel' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/messageview.py:25:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.mainwindow.tabbedbrowser[0m
+qutebrowser/mainwindow/tabbedbrowser.py:30:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabbedbrowser.py:30:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/tabbedbrowser.py:30:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.mainwindow.statusbar.textbase[0m
+qutebrowser/mainwindow/statusbar/textbase.py:23:0: E0611: [1;31mNo name 'QLabel' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/statusbar/textbase.py:23:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/statusbar/textbase.py:24:0: E0611: [1;31mNo name 'QPainter' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.mainwindow.statusbar.progress[0m
+qutebrowser/mainwindow/statusbar/progress.py:23:0: E0611: [1;31mNo name 'QProgressBar' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/statusbar/progress.py:23:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.mainwindow.statusbar.bar[0m
+qutebrowser/mainwindow/statusbar/bar.py:26:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/statusbar/bar.py:26:0: E0611: [1;31mNo name 'QHBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/statusbar/bar.py:26:0: E0611: [1;31mNo name 'QStackedLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/statusbar/bar.py:26:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.mainwindow.statusbar.command[0m
+qutebrowser/mainwindow/statusbar/command.py:25:0: E0611: [1;31mNo name 'QKeyEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/statusbar/command.py:26:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/mainwindow/statusbar/command.py:26:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.completion.completiondelegate[0m
+qutebrowser/completion/completiondelegate.py:28:0: E0611: [1;31mNo name 'QStyle' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completiondelegate.py:28:0: E0611: [1;31mNo name 'QStyleOptionViewItem' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completiondelegate.py:28:0: E0611: [1;31mNo name 'QStyledItemDelegate' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completiondelegate.py:30:0: E0611: [1;31mNo name 'QIcon' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completiondelegate.py:30:0: E0611: [1;31mNo name 'QPalette' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completiondelegate.py:30:0: E0611: [1;31mNo name 'QTextDocument' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completiondelegate.py:30:0: E0611: [1;31mNo name 'QTextOption' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completiondelegate.py:30:0: E0611: [1;31mNo name 'QAbstractTextDocumentLayout' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completiondelegate.py:30:0: E0611: [1;31mNo name 'QSyntaxHighlighter' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completiondelegate.py:30:0: E0611: [1;31mNo name 'QTextCharFormat' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.completion.completionwidget[0m
+qutebrowser/completion/completionwidget.py:28:0: E0611: [1;31mNo name 'QTreeView' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completionwidget.py:28:0: E0611: [1;31mNo name 'QSizePolicy' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completionwidget.py:28:0: E0611: [1;31mNo name 'QStyleFactory' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/completionwidget.py:28:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.completion.models.histcategory[0m
+qutebrowser/completion/models/histcategory.py:24:0: E0611: [1;31mNo name 'QSqlQueryModel' in module 'qutebrowser.qt.sql'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/models/histcategory.py:25:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.completion.models.listcategory[0m
+qutebrowser/completion/models/listcategory.py:26:0: E0611: [1;31mNo name 'QStandardItem' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/models/listcategory.py:26:0: E0611: [1;31mNo name 'QStandardItemModel' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/completion/models/listcategory.py:27:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.keyinput.keyutils[0m
+qutebrowser/keyinput/keyutils.py:40:0: E0611: [1;31mNo name 'QKeySequence' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/keyinput/keyutils.py:40:0: E0611: [1;31mNo name 'QKeyEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.keyinput.modeparsers[0m
+qutebrowser/keyinput/modeparsers.py:31:0: E0611: [1;31mNo name 'QKeySequence' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/keyinput/modeparsers.py:31:0: E0611: [1;31mNo name 'QKeyEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.keyinput.basekeyparser[0m
+qutebrowser/keyinput/basekeyparser.py:28:0: E0611: [1;31mNo name 'QKeySequence' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/keyinput/basekeyparser.py:28:0: E0611: [1;31mNo name 'QKeyEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.keyinput.modeman[0m
+qutebrowser/keyinput/modeman.py:27:0: E0611: [1;31mNo name 'QKeyEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/keyinput/modeman.py:27:0: E0611: [1;31mNo name 'QKeySequence' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.keyinput.eventfilter[0m
+qutebrowser/keyinput/eventfilter.py:25:0: E0611: [1;31mNo name 'QKeyEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/keyinput/eventfilter.py:25:0: E0611: [1;31mNo name 'QWindow' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.utils.version[0m
+qutebrowser/utils/version.py:42:0: E0611: [1;31mNo name 'QOpenGLContext' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/utils/version.py:42:0: E0611: [1;31mNo name 'QOffscreenSurface' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/utils/version.py:44:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.utils.qtutils[0m
+qutebrowser/utils/qtutils.py:43:0: E0611: [1;31mNo name 'QColor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.utils.error[0m
+qutebrowser/utils/error.py:22:0: E0611: [1;31mNo name 'QMessageBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.utils.utils[0m
+qutebrowser/utils/utils.py:49:0: E0611: [1;31mNo name 'QClipboard' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/utils/utils.py:49:0: E0611: [1;31mNo name 'QDesktopServices' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/utils/utils.py:50:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.utils.objreg[0m
+qutebrowser/utils/objreg.py:29:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/utils/objreg.py:30:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.utils.standarddir[0m
+qutebrowser/utils/standarddir.py:31:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.qt.webenginewidgets[0m
+qutebrowser/qt/webenginewidgets.py:21:8: E0602: [1;31mUndefined variable 'QWebEngineSettings'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:22:8: E0602: [1;31mUndefined variable 'QWebEngineProfile'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:23:8: E0602: [1;31mUndefined variable 'QWebEngineDownloadItem'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:24:8: E0602: [1;31mUndefined variable 'QWebEnginePage'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:25:8: E0602: [1;31mUndefined variable 'QWebEngineCertificateError'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:26:8: E0602: [1;31mUndefined variable 'QWebEngineScript'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:27:8: E0602: [1;31mUndefined variable 'QWebEngineHistory'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:28:8: E0602: [1;31mUndefined variable 'QWebEngineHistoryItem'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:29:8: E0602: [1;31mUndefined variable 'QWebEngineScriptCollection'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:30:8: E0602: [1;31mUndefined variable 'QWebEngineClientCertificateSelection'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:31:8: E0602: [1;31mUndefined variable 'QWebEngineFullScreenRequest'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:32:8: E0602: [1;31mUndefined variable 'QWebEngineContextMenuData'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+[7;33m************* Module qutebrowser.qt.webenginecore[0m
+qutebrowser/qt/webenginecore.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+[7;33m************* Module qutebrowser.qt.printsupport[0m
+qutebrowser/qt/printsupport.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+[7;33m************* Module qutebrowser.qt.qml[0m
+qutebrowser/qt/qml.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+[7;33m************* Module qutebrowser.qt.test[0m
+qutebrowser/qt/test.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+[7;33m************* Module qutebrowser.qt.gui[0m
+qutebrowser/qt/gui.py:14:8: E0602: [1;31mUndefined variable 'QOpenGLVersionProfile'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/gui.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+[7;33m************* Module qutebrowser.qt.widgets[0m
+qutebrowser/qt/widgets.py:19:8: E0602: [1;31mUndefined variable 'QFileSystemModel'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/widgets.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+[7;33m************* Module qutebrowser.qt.sql[0m
+qutebrowser/qt/sql.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+
+-----------------------------------
+Your code has been rated at 9.67/10
+
+pylint: exit 2 (39.95 seconds) /home/azureuser/qutebrowser> .tox/pylint/bin/python -m pylint scripts qutebrowser --output-format=colorized --reports=no pid=62072
+pylint: commands[1]> .tox/pylint/bin/python scripts/dev/run_pylint_on_tests.py /home/azureuser/qutebrowser --output-format=colorized --reports=no
+[7;33m************* Module quteprocess[0m
+tests/end2end/fixtures/quteprocess.py:37:0: E0611: [1;31mNo name 'QImage' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+tests/end2end/fixtures/quteprocess.py:37:0: E0611: [1;31mNo name 'QColor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module notificationserver[0m
+tests/end2end/fixtures/notificationserver.py:25:0: E0611: [1;31mNo name 'QImage' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module testprocess[0m
+tests/end2end/fixtures/testprocess.py:31:0: E0611: [1;31mNo name 'QSignalSpy' in module 'qutebrowser.qt.test'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_helper_utils[0m
+tests/helpers/test_helper_utils.py:25:0: E0611: [1;31mNo name 'QFrame' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module testutils[0m
+tests/helpers/testutils.py:35:0: E0611: [1;31mNo name 'QColor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module stubs[0m
+tests/helpers/stubs.py:34:0: E0611: [1;31mNo name 'QIcon' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+tests/helpers/stubs.py:37:0: E0611: [1;31mNo name 'QCommonStyle' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+tests/helpers/stubs.py:37:0: E0611: [1;31mNo name 'QLineEdit' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+tests/helpers/stubs.py:37:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+tests/helpers/stubs.py:37:0: E0611: [1;31mNo name 'QTabBar' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module fixtures[0m
+tests/helpers/fixtures.py:41:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+tests/helpers/fixtures.py:41:0: E0611: [1;31mNo name 'QHBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+tests/helpers/fixtures.py:41:0: E0611: [1;31mNo name 'QVBoxLayout' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_miscwidgets[0m
+tests/unit/misc/test_miscwidgets.py:23:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_sql[0m
+tests/unit/misc/test_sql.py:28:0: E0611: [1;31mNo name 'QSqlDatabase' in module 'qutebrowser.qt.sql'[0m ([1;31mno-name-in-module[0m)
+tests/unit/misc/test_sql.py:28:0: E0611: [1;31mNo name 'QSqlError' in module 'qutebrowser.qt.sql'[0m ([1;31mno-name-in-module[0m)
+tests/unit/misc/test_sql.py:28:0: E0611: [1;31mNo name 'QSqlQuery' in module 'qutebrowser.qt.sql'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_msgbox[0m
+tests/unit/misc/test_msgbox.py:24:0: E0611: [1;31mNo name 'QMessageBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+tests/unit/misc/test_msgbox.py:24:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_ipc[0m
+tests/unit/misc/test_ipc.py:35:0: E0611: [1;31mNo name 'QSignalSpy' in module 'qutebrowser.qt.test'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_readlinecommands[0m
+tests/unit/components/test_readlinecommands.py:24:0: E0611: [1;31mNo name 'QLineEdit' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+tests/unit/components/test_readlinecommands.py:24:0: E0611: [1;31mNo name 'QApplication' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_notification[0m
+tests/unit/browser/test_notification.py:29:0: E0611: [1;31mNo name 'QImage' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_inspector[0m
+tests/unit/browser/test_inspector.py:22:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module webengine.test_webengine_cookies[0m
+tests/unit/browser/webengine/test_webengine_cookies.py:23:0: E0611: [1;31mNo name 'QWebEngineCookieStore' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module webengine.test_webengineinterceptor[0m
+tests/unit/browser/webengine/test_webengineinterceptor.py:27:0: E0611: [1;31mNo name 'QWebEngineUrlRequestInfo' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module config.test_configutils[0m
+tests/unit/config/test_configutils.py:24:0: E0611: [1;31mNo name 'QLabel' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module config.test_configtypes[0m
+tests/unit/config/test_configtypes.py:33:0: E0611: [1;31mNo name 'QColor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+tests/unit/config/test_configtypes.py:33:0: E0611: [1;31mNo name 'QFont' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module config.test_config[0m
+tests/unit/config/test_config.py:27:0: E0611: [1;31mNo name 'QColor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module mainwindow.test_tabwidget[0m
+tests/unit/mainwindow/test_tabwidget.py:28:0: E0611: [1;31mNo name 'QIcon' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+tests/unit/mainwindow/test_tabwidget.py:28:0: E0611: [1;31mNo name 'QPixmap' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_completiondelegate[0m
+tests/unit/completion/test_completiondelegate.py:25:0: E0611: [1;31mNo name 'QTextDocument' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+tests/unit/completion/test_completiondelegate.py:25:0: E0611: [1;31mNo name 'QColor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+tests/unit/completion/test_completiondelegate.py:26:0: E0611: [1;31mNo name 'QTextEdit' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module test_completer[0m
+tests/unit/completion/test_completer.py:25:0: E0611: [1;31mNo name 'QStandardItemModel' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module keyinput.test_modeman[0m
+tests/unit/keyinput/test_modeman.py:23:0: E0611: [1;31mNo name 'QKeyEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+tests/unit/keyinput/test_modeman.py:23:0: E0611: [1;31mNo name 'QKeySequence' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module keyinput.test_keyutils[0m
+tests/unit/keyinput/test_keyutils.py:27:0: E0611: [1;31mNo name 'QKeyEvent' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+tests/unit/keyinput/test_keyutils.py:27:0: E0611: [1;31mNo name 'QKeySequence' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+tests/unit/keyinput/test_keyutils.py:28:0: E0611: [1;31mNo name 'QWidget' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module keyinput.test_modeparsers[0m
+tests/unit/keyinput/test_modeparsers.py:23:0: E0611: [1;31mNo name 'QKeySequence' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module keyinput.test_bindingtrie[0m
+tests/unit/keyinput/test_bindingtrie.py:28:0: E0611: [1;31mNo name 'QKeySequence' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module utils.test_utils[0m
+tests/unit/utils/test_utils.py:34:0: E0611: [1;31mNo name 'QClipboard' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module utils.test_qtutils[0m
+tests/unit/utils/test_qtutils.py:33:0: E0611: [1;31mNo name 'QColor' in module 'qutebrowser.qt.gui'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module utils.test_debug[0m
+tests/unit/utils/test_debug.py:29:0: E0611: [1;31mNo name 'QStyle' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+tests/unit/utils/test_debug.py:29:0: E0611: [1;31mNo name 'QFrame' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+tests/unit/utils/test_debug.py:29:0: E0611: [1;31mNo name 'QSpinBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module utils.test_error[0m
+tests/unit/utils/test_error.py:25:0: E0611: [1;31mNo name 'QMessageBox' in module 'qutebrowser.qt.widgets'[0m ([1;31mno-name-in-module[0m)
+
+-----------------------------------
+Your code has been rated at 9.88/10
+
+pylint: exit 2 (39.28 seconds) /home/azureuser/qutebrowser> .tox/pylint/bin/python scripts/dev/run_pylint_on_tests.py /home/azureuser/qutebrowser --output-format=colorized --reports=no pid=62112
+pylint: FAIL ✖ in 1 minute 34.77 seconds
+pyroma: install_deps> python -I -m pip install -r /home/azureuser/qutebrowser/misc/requirements/requirements-pyroma.txt
+pyroma: commands[0]> .tox/pyroma/bin/pyroma .
+------------------------------
+Checking .
+Getting metadata for wheel...
+Found qutebrowser
+------------------------------
+Final rating: 10/10
+Your cheese is so fresh most people think it's a cream: Mascarpone
+------------------------------
+pyroma: OK ✔ in 2.72 seconds
+check-manifest: install_deps> python -I -m pip install -r /home/azureuser/qutebrowser/misc/requirements/requirements-check-manifest.txt
+check-manifest: commands[0]> .tox/check-manifest/bin/check-manifest --ignore 'qutebrowser/git-commit-id,qutebrowser/html/doc,qutebrowser/html/doc/*,qutebrowser/html/doc/img/cheatsheet-*.png,*/__pycache__'
+lists of files in version control and sdist match
+check-manifest: OK ✔ in 3.68 seconds
+eslint: commands[0] /home/azureuser/qutebrowser/qutebrowser/javascript> eslint --report-unused-disable-directives .
+eslint: exit 2 (0.00 seconds) /home/azureuser/qutebrowser/qutebrowser/javascript> eslint --report-unused-disable-directives .
+eslint: FAIL ✖ in 0.08 seconds
+yamllint: install_deps> python -I -m pip install -r /home/azureuser/qutebrowser/misc/requirements/requirements-yamllint.txt
+yamllint: commands[0]> .tox/yamllint/bin/python -m yamllint -f colored --strict .
+yamllint: OK ✔ in 2.37 seconds
+actionlint: commands[0]> actionlint
+actionlint: exit 2 (0.00 seconds) /home/azureuser/qutebrowser> actionlint
+  py38-pyqt515-cov: FAIL code 4 (11.93=setup[10.97]+cmd[0.96] seconds)
+  mypy-pyqt5: OK (37.50=setup[28.38]+cmd[9.13] seconds)
+  misc: OK (3.75=setup[0.07]+cmd[3.68] seconds)
+  vulture: FAIL code 1 (4.57=setup[4.53]+cmd[0.04] seconds)
+  flake8: OK (29.25=setup[3.35]+cmd[25.91] seconds)
+  pylint: FAIL code 2 (94.77=setup[15.54]+cmd[39.95,39.28] seconds)
+  pyroma: OK (2.72=setup[2.20]+cmd[0.52] seconds)
+  check-manifest: OK (3.68=setup[1.06]+cmd[2.62] seconds)
+  eslint: FAIL code 2 (0.08=setup[0.08]+cmd[0.00] seconds)
+  yamllint: OK (2.37=setup[1.48]+cmd[0.89] seconds)
+  actionlint: FAIL code 2 (0.09=setup[0.08]+cmd[0.00] seconds)
+  evaluation failed :( (190.77 seconds)
+~/scripts/azure-vm
+qutebrowser-build end time Wed Apr 12 21:15:23 UTC 2023
