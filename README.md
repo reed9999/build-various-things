@@ -19,9 +19,24 @@ There are many ways I could take this.
 5. Perf test any of the above, esp. larger instance types.
 6. Muck about in source code. Break things. Put in my own strings, my own easter eggs.
 
+## Summary
+- cpython: yes but *probably* needs a decent-sized instance, I don't recall.
+- pytest seems OK on EC2. It got a few failures on Azure/Ubuntu
+- Django passes its wonderful test suite.
+- qutebrowser: I've seen it build successfully somewhere, maybe on ohio-03.
+- pytorch - back burner. Should use Ananconda and I don't want to set that kind of instance up just yet.
+
+
 ## Python (CPython)
 Build worked per scripts. Maybe 20 min. Testing now. Maybe about the same amount of time.
-- cpython: yes but *probably* needs a decent-sized instance, I don't recall.
+
+### Pip
+Good example of Nox. See 
+https://hynek.me/articles/why-i-like-nox/
+
+Tests failed in pytest, which seems a bit surprising, so 
+
+PUZZLE: What is nox doing different to make them pass?
 
 ## Python various tools
 Just a sample of stuff off top of my head that would be fun to develop on. 
@@ -30,12 +45,8 @@ when I found it on a list of welcoming open source projects,
  so I have a fondness for it.
 
 
-- pytest seems OK.
-- Django passes its wonderful test suite.
-- qutebrowser: I've seen it build successfully somewhere, maybe on ohio-03.
 
 
-- pytorch - back burner. Should use Ananconda and I don't want to set that kind of instance up just yet.
 
 
 ### Build warnings
@@ -56,26 +67,6 @@ However `python3 ./setup.py build` was OK except for those (PUZZLE)
 
 Django gets some deprecation warnings. Can they reasonably be fixed.
 
-## Enhancements -- see also "Directions..." above.
-Can we just use an EC2 image with gcc? Try:
-
-amzn2-ami-kernel-5.10-hvm-2.0.20230320.0-x86_64-gp2
-ami-00a16e018e54305c6 
-
-(in sa-east-1)
-
-I started using this region for fun, and there is a little latency. Try to get this working for
-closer regions to compare.
-
-Terraform-automate of course.
-
-## Pip
-Good example of Nox. See 
-https://hynek.me/articles/why-i-like-nox/
-
-Tests failed in pytest, which seems a bit surprising, so 
-
-PUZZLE: What is nox doing different to make them pass?
 
 ## MySQL
 - mysql: yes but needs a decent-sized instance.
@@ -95,7 +86,7 @@ This is an intriguing name:
 storage/innobase/CMakeFiles/innobase.dir/row/row0mysql.cc.o
 
 
-# Bazel
+## Bazel
 Got it working, sort of, on t2.micro but it died in the most taxing part of the build. 
 
 Took about 20 min to build on m6a.xlarge, with another 10 for command-line completion.
@@ -117,3 +108,38 @@ popd
 
 ```
 
+## Azure-specific notes
+See above about pytest failing on a few.
+
+Image is whatever the latest version of Ubuntu was suggested. Two were suggested. 
+
+Operating system
+Linux (ubuntu 20.04)
+Publisher
+canonical
+Offer
+0001-com-ubuntu-server-focal
+Plan
+20_04-lts-gen2
+VM generation
+V2
+VM architecture
+x64
+Agent status
+Ready
+Agent version
+2.9.0.4
+
+
+## Enhancements -- somewhat redundant with "Directions..." above.
+Can we just use an EC2 image with gcc? Try:
+
+amzn2-ami-kernel-5.10-hvm-2.0.20230320.0-x86_64-gp2
+ami-00a16e018e54305c6 
+
+(in sa-east-1)
+
+I started using this region for fun, and there is a little latency. Try to get this working for
+closer regions to compare.
+
+Terraform-automate of course.
