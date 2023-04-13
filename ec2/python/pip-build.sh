@@ -9,16 +9,19 @@
 pushd ~/pip
 python3 -m venv ~/.virtualenvs/pipdev
 source ~/.virtualenvs/pipdev/bin/activate
-# This is "cheating"
+# This is "cheating" to use pip to build pip; I could bootstrap if I want
+# the challenge, but for now it's plenty interesting to leave it.
 python3 -m pip install --editable .
 
-pushd tests
-python -m pip install -r requirements.txt
-python -m pip install -r requirements-common_wheels.txt 
+    pushd tests
+    python3 -m pip install -r requirements.txt
+    python3 -m pip install -r requirements-common_wheels.txt 
+    # Why would nox not be included in the requirements?
+    python3 -m pip install nox
+    popd
 echo 
 echo "***** BEGIN PIP TESTS $(date)"
 
-# pytest  - this produces a lot of failures
 nox -s lint
 echo "***** END PIP LINT; BEGIN NOX/PYTEST TESTS $(date)"
 nox -s test-3.10 -- -n auto
@@ -31,5 +34,5 @@ nox -s docs
 
 echo "***** END PIP TESTS $(date)"
 echo
-popd  # from tests
+python3 ./setup.py install
 popd  # from pip
