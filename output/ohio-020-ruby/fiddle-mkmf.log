@@ -1,0 +1,62 @@
+checking for --enable-debug-build option... -------------------- no
+
+--------------------
+
+pkg_config: checking for pkg-config for libffi... -------------------- not found
+
+LD_LIBRARY_PATH=.:../.. pkg-config --exists libffi
+package configuration for libffi is not found
+--------------------
+
+have_header: checking for ffi.h... -------------------- no
+
+LD_LIBRARY_PATH=.:../.. "gcc -o conftest -I../../.ext/include/x86_64-linux -I../../../include -I../../../ext/fiddle    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef conftest.c  -L. -L../.. -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/home/ec2-user/.rubies/ruby-main/lib -L/home/ec2-user/.rubies/ruby-main/lib -lruby-static -lrt -lrt -ldl -lcrypt -lm -lpthread   -lm -lpthread  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:../.. "gcc -I../../.ext/include/x86_64-linux -I../../../include -I../../../ext/fiddle    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef   -c conftest.c"
+conftest.c:3:10: fatal error: ffi.h: No such file or directory
+    3 | #include <ffi.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+--------------------
+
+have_header: checking for ffi/ffi.h... -------------------- no
+
+LD_LIBRARY_PATH=.:../.. "gcc -I../../.ext/include/x86_64-linux -I../../../include -I../../../ext/fiddle    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdiv-by-zero -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef   -c conftest.c"
+conftest.c:3:10: fatal error: ffi/ffi.h: No such file or directory
+    3 | #include <ffi/ffi.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi/ffi.h>
+/* end */
+
+--------------------
+
+/home/ec2-user/ruby/ext/fiddle/extconf.rb:73: missing libffi. Please install libffi or use --with-libffi-source-dir with libffi source location.
+	/home/ec2-user/ruby/ext/fiddle/extconf.rb:73:in `<top (required)>'
+	../ext/extmk.rb:223:in `load'
+	../ext/extmk.rb:223:in `block in extmake'
+	/home/ec2-user/ruby/lib/mkmf.rb:314:in `open'
+	../ext/extmk.rb:219:in `extmake'
+	../ext/extmk.rb:638:in `block in <main>'
+	../ext/extmk.rb:634:in `each'
+	../ext/extmk.rb:634:in `<main>'

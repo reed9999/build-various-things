@@ -1,0 +1,1608 @@
+This is not ideal but it is *some* output I recovered via the terminal, after I had
+shut down the instance without remembering to add the 017 output file via git.
+
+
+
+
+
+~/bazel ~/scripts/ec2/various-tools
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 33.8M  100 33.8M    0     0  60.2M      0 --:--:-- --:--:-- --:--:-- 85.7M
+Last metadata expiration check: 0:10:30 ago on Mon Apr 10 13:41:12 2023.
+Dependencies resolved.
+=======================================================================================
+ Package                            Arch    Version                  Repository    Size
+=======================================================================================
+Installing:
+ java-11-amazon-corretto-devel      x86_64  1:11.0.18+10-1.amzn2023  amazonlinux  219 k
+Installing dependencies:
+ alsa-lib                           x86_64  1.2.7.2-1.amzn2023.0.2   amazonlinux  504 k
+ cairo                              x86_64  1.17.4-3.amzn2023.0.2    amazonlinux  674 k
+ dejavu-sans-fonts                  noarch  2.37-16.amzn2023.0.2     amazonlinux  1.3 M
+ dejavu-sans-mono-fonts             noarch  2.37-16.amzn2023.0.2     amazonlinux  467 k
+ dejavu-serif-fonts                 noarch  2.37-16.amzn2023.0.2     amazonlinux  1.0 M
+ fontconfig                         x86_64  2.13.94-2.amzn2023.0.2   amazonlinux  273 k
+ fonts-filesystem                   noarch  1:2.0.5-5.amzn2023.0.2   amazonlinux  8.7 k
+ freetype                           x86_64  2.12.1-3.amzn2023.0.1    amazonlinux  418 k
+ google-noto-fonts-common           noarch  20201206-2.amzn2023.0.2  amazonlinux   15 k
+ google-noto-sans-vf-fonts          noarch  20201206-2.amzn2023.0.2  amazonlinux  492 k
+ graphite2                          x86_64  1.3.14-7.amzn2023.0.2    amazonlinux   97 k
+ harfbuzz                           x86_64  7.0.0-2.amzn2023.0.1     amazonlinux  868 k
+ java-11-amazon-corretto-headless   x86_64  1:11.0.18+10-1.amzn2023  amazonlinux   91 M
+ javapackages-filesystem            noarch  6.0.0-7.amzn2023.0.5     amazonlinux   13 k
+ langpacks-core-font-en             noarch  3.0-21.amzn2023.0.4      amazonlinux   10 k
+ libX11                             x86_64  1.7.2-3.amzn2023.0.2     amazonlinux  657 k
+ libX11-common                      noarch  1.7.2-3.amzn2023.0.2     amazonlinux  152 k
+ libXau                             x86_64  1.0.9-6.amzn2023.0.2     amazonlinux   31 k
+ libXext                            x86_64  1.3.4-6.amzn2023.0.2     amazonlinux   41 k
+ libXrender                         x86_64  0.9.10-14.amzn2023.0.2   amazonlinux   28 k
+ libbrotli                          x86_64  1.0.9-4.amzn2023.0.2     amazonlinux  315 k
+ libjpeg-turbo                      x86_64  2.1.4-2.amzn2023.0.2     amazonlinux  190 k
+ libpng                             x86_64  2:1.6.37-10.amzn2023.0.2 amazonlinux  128 k
+ libxcb                             x86_64  1.13.1-7.amzn2023.0.2    amazonlinux  230 k
+ pixman                             x86_64  0.40.0-3.amzn2023.0.3    amazonlinux  295 k
+ xml-common                         noarch  0.6.3-56.amzn2023.0.2    amazonlinux   32 k
+
+Transaction Summary
+=======================================================================================
+Install  27 Packages
+
+Total download size: 99 M
+Installed size: 252 M
+Downloading Packages:
+(1/27): harfbuzz-7.0.0-2.amzn2023.0.1.x86_64.rp 9.4 MB/s | 868 kB     00:00
+(2/27): cairo-1.17.4-3.amzn2023.0.2.x86_64.rpm  6.9 MB/s | 674 kB     00:00
+(3/27): libXext-1.3.4-6.amzn2023.0.2.x86_64.rpm 422 kB/s |  41 kB     00:00
+(4/27): fontconfig-2.13.94-2.amzn2023.0.2.x86_6 5.9 MB/s | 273 kB     00:00
+(5/27): graphite2-1.3.14-7.amzn2023.0.2.x86_64. 1.1 MB/s |  97 kB     00:00
+(6/27): java-11-amazon-corretto-devel-11.0.18+1 2.4 MB/s | 219 kB     00:00
+(7/27): libbrotli-1.0.9-4.amzn2023.0.2.x86_64.r  18 MB/s | 315 kB     00:00
+(8/27): libxcb-1.13.1-7.amzn2023.0.2.x86_64.rpm 3.2 MB/s | 230 kB     00:00
+(9/27): libXau-1.0.9-6.amzn2023.0.2.x86_64.rpm  2.4 MB/s |  31 kB     00:00
+(10/27): libXrender-0.9.10-14.amzn2023.0.2.x86_ 856 kB/s |  28 kB     00:00
+(11/27): alsa-lib-1.2.7.2-1.amzn2023.0.2.x86_64 6.6 MB/s | 504 kB     00:00
+(12/27): pixman-0.40.0-3.amzn2023.0.3.x86_64.rp 4.7 MB/s | 295 kB     00:00
+(13/27): freetype-2.12.1-3.amzn2023.0.1.x86_64. 8.1 MB/s | 418 kB     00:00
+(14/27): libpng-1.6.37-10.amzn2023.0.2.x86_64.r 2.4 MB/s | 128 kB     00:00
+(15/27): libX11-1.7.2-3.amzn2023.0.2.x86_64.rpm 8.4 MB/s | 657 kB     00:00
+(16/27): google-noto-fonts-common-20201206-2.am 460 kB/s |  15 kB     00:00
+(17/27): langpacks-core-font-en-3.0-21.amzn2023 366 kB/s |  10 kB     00:00
+(18/27): libjpeg-turbo-2.1.4-2.amzn2023.0.2.x86 1.9 MB/s | 190 kB     00:00
+(19/27): fonts-filesystem-2.0.5-5.amzn2023.0.2. 339 kB/s | 8.7 kB     00:00
+(20/27): dejavu-sans-fonts-2.37-16.amzn2023.0.2  22 MB/s | 1.3 MB     00:00
+(21/27): xml-common-0.6.3-56.amzn2023.0.2.noarc 1.1 MB/s |  32 kB     00:00
+(22/27): dejavu-sans-mono-fonts-2.37-16.amzn202 5.7 MB/s | 467 kB     00:00
+(23/27): javapackages-filesystem-6.0.0-7.amzn20 393 kB/s |  13 kB     00:00
+(24/27): google-noto-sans-vf-fonts-20201206-2.a 6.5 MB/s | 492 kB     00:00
+(25/27): libX11-common-1.7.2-3.amzn2023.0.2.noa 2.0 MB/s | 152 kB     00:00
+(26/27): dejavu-serif-fonts-2.37-16.amzn2023.0. 7.9 MB/s | 1.0 MB     00:00
+(27/27): java-11-amazon-corretto-headless-11.0.  58 MB/s |  91 MB     00:01
+--------------------------------------------------------------------------------
+Total                                            52 MB/s |  99 MB     00:01
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1
+  Installing       : fonts-filesystem-1:2.0.5-5.amzn2023.0.2.noarch        1/27
+  Installing       : dejavu-sans-mono-fonts-2.37-16.amzn2023.0.2.noarch    2/27
+  Installing       : dejavu-sans-fonts-2.37-16.amzn2023.0.2.noarch         3/27
+  Installing       : libpng-2:1.6.37-10.amzn2023.0.2.x86_64                4/27
+  Installing       : dejavu-serif-fonts-2.37-16.amzn2023.0.2.noarch        5/27
+  Installing       : libX11-common-1.7.2-3.amzn2023.0.2.noarch             6/27
+  Installing       : javapackages-filesystem-6.0.0-7.amzn2023.0.5.noarc    7/27
+  Running scriptlet: xml-common-0.6.3-56.amzn2023.0.2.noarch               8/27
+  Installing       : xml-common-0.6.3-56.amzn2023.0.2.noarch               8/27
+  Installing       : google-noto-fonts-common-20201206-2.amzn2023.0.2.n    9/27
+  Installing       : google-noto-sans-vf-fonts-20201206-2.amzn2023.0.2.   10/27
+  Installing       : langpacks-core-font-en-3.0-21.amzn2023.0.4.noarch    11/27
+  Installing       : libjpeg-turbo-2.1.4-2.amzn2023.0.2.x86_64            12/27
+  Installing       : pixman-0.40.0-3.amzn2023.0.3.x86_64                  13/27
+  Installing       : libXau-1.0.9-6.amzn2023.0.2.x86_64                   14/27
+  Installing       : libxcb-1.13.1-7.amzn2023.0.2.x86_64                  15/27
+  Installing       : libX11-1.7.2-3.amzn2023.0.2.x86_64                   16/27
+  Installing       : libXext-1.3.4-6.amzn2023.0.2.x86_64                  17/27
+  Installing       : libXrender-0.9.10-14.amzn2023.0.2.x86_64             18/27
+  Installing       : alsa-lib-1.2.7.2-1.amzn2023.0.2.x86_64               19/27
+  Installing       : libbrotli-1.0.9-4.amzn2023.0.2.x86_64                20/27
+  Installing       : graphite2-1.3.14-7.amzn2023.0.2.x86_64               21/27
+  Installing       : cairo-1.17.4-3.amzn2023.0.2.x86_64                   22/27
+  Installing       : harfbuzz-7.0.0-2.amzn2023.0.1.x86_64                 23/27
+  Installing       : freetype-2.12.1-3.amzn2023.0.1.x86_64                24/27
+  Installing       : fontconfig-2.13.94-2.amzn2023.0.2.x86_64             25/27
+  Running scriptlet: fontconfig-2.13.94-2.amzn2023.0.2.x86_64             25/27
+  Installing       : java-11-amazon-corretto-headless-1:11.0.18+10-1.am   26/27
+  Running scriptlet: java-11-amazon-corretto-headless-1:11.0.18+10-1.am   26/27
+  Installing       : java-11-amazon-corretto-devel-1:11.0.18+10-1.amzn2   27/27
+  Running scriptlet: java-11-amazon-corretto-devel-1:11.0.18+10-1.amzn2   27/27
+  Running scriptlet: fontconfig-2.13.94-2.amzn2023.0.2.x86_64             27/27
+  Running scriptlet: java-11-amazon-corretto-devel-1:11.0.18+10-1.amzn2   27/27
+  Verifying        : libXext-1.3.4-6.amzn2023.0.2.x86_64                   1/27
+  Verifying        : harfbuzz-7.0.0-2.amzn2023.0.1.x86_64                  2/27
+  Verifying        : cairo-1.17.4-3.amzn2023.0.2.x86_64                    3/27
+  Verifying        : fontconfig-2.13.94-2.amzn2023.0.2.x86_64              4/27
+  Verifying        : graphite2-1.3.14-7.amzn2023.0.2.x86_64                5/27
+  Verifying        : java-11-amazon-corretto-devel-1:11.0.18+10-1.amzn2    6/27
+  Verifying        : libxcb-1.13.1-7.amzn2023.0.2.x86_64                   7/27
+  Verifying        : libbrotli-1.0.9-4.amzn2023.0.2.x86_64                 8/27
+  Verifying        : alsa-lib-1.2.7.2-1.amzn2023.0.2.x86_64                9/27
+  Verifying        : libXau-1.0.9-6.amzn2023.0.2.x86_64                   10/27
+  Verifying        : pixman-0.40.0-3.amzn2023.0.3.x86_64                  11/27
+  Verifying        : libXrender-0.9.10-14.amzn2023.0.2.x86_64             12/27
+  Verifying        : freetype-2.12.1-3.amzn2023.0.1.x86_64                13/27
+  Verifying        : libpng-2:1.6.37-10.amzn2023.0.2.x86_64               14/27
+  Verifying        : libX11-1.7.2-3.amzn2023.0.2.x86_64                   15/27
+  Verifying        : java-11-amazon-corretto-headless-1:11.0.18+10-1.am   16/27
+  Verifying        : libjpeg-turbo-2.1.4-2.amzn2023.0.2.x86_64            17/27
+  Verifying        : google-noto-fonts-common-20201206-2.amzn2023.0.2.n   18/27
+  Verifying        : langpacks-core-font-en-3.0-21.amzn2023.0.4.noarch    19/27
+  Verifying        : fonts-filesystem-1:2.0.5-5.amzn2023.0.2.noarch       20/27
+  Verifying        : dejavu-sans-fonts-2.37-16.amzn2023.0.2.noarch        21/27
+  Verifying        : dejavu-sans-mono-fonts-2.37-16.amzn2023.0.2.noarch   22/27
+  Verifying        : xml-common-0.6.3-56.amzn2023.0.2.noarch              23/27
+  Verifying        : google-noto-sans-vf-fonts-20201206-2.amzn2023.0.2.   24/27
+  Verifying        : javapackages-filesystem-6.0.0-7.amzn2023.0.5.noarc   25/27
+  Verifying        : dejavu-serif-fonts-2.37-16.amzn2023.0.2.noarch       26/27
+  Verifying        : libX11-common-1.7.2-3.amzn2023.0.2.noarch            27/27
+
+Installed:
+  alsa-lib-1.2.7.2-1.amzn2023.0.2.x86_64
+  cairo-1.17.4-3.amzn2023.0.2.x86_64
+  dejavu-sans-fonts-2.37-16.amzn2023.0.2.noarch
+  dejavu-sans-mono-fonts-2.37-16.amzn2023.0.2.noarch
+  dejavu-serif-fonts-2.37-16.amzn2023.0.2.noarch
+  fontconfig-2.13.94-2.amzn2023.0.2.x86_64
+  fonts-filesystem-1:2.0.5-5.amzn2023.0.2.noarch
+  freetype-2.12.1-3.amzn2023.0.1.x86_64
+  google-noto-fonts-common-20201206-2.amzn2023.0.2.noarch
+  google-noto-sans-vf-fonts-20201206-2.amzn2023.0.2.noarch
+  graphite2-1.3.14-7.amzn2023.0.2.x86_64
+  harfbuzz-7.0.0-2.amzn2023.0.1.x86_64
+  java-11-amazon-corretto-devel-1:11.0.18+10-1.amzn2023.x86_64
+  java-11-amazon-corretto-headless-1:11.0.18+10-1.amzn2023.x86_64
+  javapackages-filesystem-6.0.0-7.amzn2023.0.5.noarch
+  langpacks-core-font-en-3.0-21.amzn2023.0.4.noarch
+  libX11-1.7.2-3.amzn2023.0.2.x86_64
+  libX11-common-1.7.2-3.amzn2023.0.2.noarch
+  libXau-1.0.9-6.amzn2023.0.2.x86_64
+  libXext-1.3.4-6.amzn2023.0.2.x86_64
+  libXrender-0.9.10-14.amzn2023.0.2.x86_64
+  libbrotli-1.0.9-4.amzn2023.0.2.x86_64
+  libjpeg-turbo-2.1.4-2.amzn2023.0.2.x86_64
+  libpng-2:1.6.37-10.amzn2023.0.2.x86_64
+  libxcb-1.13.1-7.amzn2023.0.2.x86_64
+  pixman-0.40.0-3.amzn2023.0.3.x86_64
+  xml-common-0.6.3-56.amzn2023.0.2.noarch
+
+
+
+
+
+
+
+
+
+
+
+
+Complete!
+Last metadata expiration check: 0:10:37 ago on Mon Apr 10 13:41:12 2023.
+Package python-unversioned-command-3.9.16-1.amzn2023.0.3.noarch is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:10:37 ago on Mon Apr 10 13:41:12 2023.
+Package zip-3.0-28.amzn2023.0.2.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:10:38 ago on Mon Apr 10 13:41:12 2023.
+Package unzip-6.0-57.amzn2023.0.2.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:10:38 ago on Mon Apr 10 13:41:12 2023.
+Package gcc-11.3.1-4.amzn2023.0.3.x86_64 is already installed.
+Package gcc-c++-11.3.1-4.amzn2023.0.3.x86_64 is already installed.
+Package kernel-devel-6.1.21-1.45.amzn2023.x86_64 is already installed.
+Package make-1:4.3-5.amzn2023.0.2.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+~/scripts/ec2/various-tools
+nohup: redirecting stderr to stdout
+[ec2-user@ip-172-31-24-241 various-tools]$ !ta
+tail -f ~/017-bazel-build-output.txt
+Extracting Bazel installation...
+FATAL: Could not find system javabase. Ensure JAVA_HOME is set, or javac is on your PATH.
+Mon Apr 10 13:51:50 UTC 2023
+Mon Apr 10 13:51:50 UTC 2023
+Starting local Bazel server and connecting to it...
+Loading:
+Loading:
+Loading:
+Loading:
+Loading:
+Loading:
+Loading: 0 packages loaded
+Analyzing: target //src:bazel-dev (1 packages loaded, 0 targets configured)
+Analyzing: target //src:bazel-dev (120 packages loaded, 835 targets configured)
+Analyzing: target //src:bazel-dev (230 packages loaded, 1832 targets configured)
+Analyzing: target //src:bazel-dev (321 packages loaded, 4734 targets configured)
+Analyzing: target //src:bazel-dev (431 packages loaded, 8347 targets configured)
+Analyzing: target //src:bazel-dev (451 packages loaded, 9251 targets configured)
+Analyzing: target //src:bazel-dev (451 packages loaded, 9251 targets configured)
+INFO: Analyzed target //src:bazel-dev (453 packages loaded, 10485 targets configured).
+INFO: Found 1 target...
+[0 / 216] [Prepa] Writing file src/main/tools/daemonize-2.params
+[49 / 293] Executing genrule //src:embedded_jdk_allmodules; 0s linux-sandbox ... (3 actions, 2 running)
+[85 / 371] Executing genrule //src:embedded_jdk_allmodules; 1s linux-sandbox ... (4 actions, 3 running)
+[90 / 371] Executing genrule //src:embedded_jdk_allmodules; 2s linux-sandbox ... (4 actions, 3 running)
+[95 / 404] Executing genrule //src:embedded_jdk_allmodules; 4s linux-sandbox ... (4 actions, 3 running)
+[97 / 404] Executing genrule //src:embedded_jdk_allmodules; 5s linux-sandbox ... (4 actions running)
+[100 / 404] Executing genrule //src:embedded_jdk_allmodules; 6s linux-sandbox ... (4 actions running)
+[102 / 404] Executing genrule //src:embedded_jdk_allmodules; 7s linux-sandbox ... (4 actions running)
+[105 / 404] Executing genrule //src:embedded_jdk_allmodules; 8s linux-sandbox ... (4 actions running)
+[107 / 404] Executing genrule //src:embedded_jdk_allmodules; 9s linux-sandbox ... (4 actions, 3 running)
+[111 / 404] Executing genrule //src:embedded_jdk_allmodules; 10s linux-sandbox ... (4 actions running)
+[114 / 404] Executing genrule //src:embedded_jdk_allmodules; 11s linux-sandbox ... (4 actions running)
+[115 / 404] Executing genrule //src:embedded_jdk_allmodules; 12s linux-sandbox ... (4 actions running)
+[116 / 404] Executing genrule //src:embedded_jdk_allmodules; 13s linux-sandbox ... (4 actions running)
+[117 / 404] Executing genrule //src:embedded_jdk_allmodules; 14s linux-sandbox ... (4 actions running)
+[119 / 404] Executing genrule //src:embedded_jdk_allmodules; 15s linux-sandbox ... (4 actions running)
+[120 / 404] Executing genrule //src:embedded_jdk_allmodules; 16s linux-sandbox ... (4 actions running)
+[121 / 404] Executing genrule //src:embedded_jdk_allmodules; 17s linux-sandbox ... (4 actions, 3 running)
+[123 / 404] Executing genrule //src:embedded_jdk_allmodules; 18s linux-sandbox ... (4 actions, 3 running)
+[125 / 404] Executing genrule //src:embedded_jdk_allmodules; 19s linux-sandbox ... (4 actions, 3 running)
+[129 / 404] Executing genrule //src:embedded_jdk_allmodules; 20s linux-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/google/protobuf/message_lite.cc [for tool]:
+In file included from /usr/include/string.h:519,
+                 from external/com_google_protobuf/src/google/protobuf/stubs/port.h:39,
+                 from external/com_google_protobuf/src/google/protobuf/stubs/common.h:48,
+                 from external/com_google_protobuf/src/google/protobuf/message_lite.h:46,
+                 from external/com_google_protobuf/src/google/protobuf/message_lite.cc:36:
+In function 'void* memcpy(void*, const void*, size_t)',
+    inlined from 'uint8_t* google::protobuf::io::EpsCopyOutputStream::WriteRaw(const void*, int, uint8_t*)' at external/com_google_protobuf/src/google/protobuf/io/coded_stream.h:684:16,
+    inlined from 'virtual uint8_t* google::protobuf::internal::ImplicitWeakMessage::_InternalSerialize(uint8_t*, google::protobuf::io::EpsCopyOutputStream*) const' at external/com_google_protobuf/src/google/protobuf/implicit_weak_message.h:103:28,
+    inlined from 'bool google::protobuf::MessageLite::SerializePartialToZeroCopyStream(google::protobuf::io::ZeroCopyOutputStream*) const' at external/com_google_protobuf/src/google/protobuf/message_lite.cc:411:30:
+/usr/include/bits/string_fortified.h:29:33: warning: 'void* __builtin___memcpy_chk(void*, const void*, long unsigned int, long unsigned int)' specified size between 18446744071562067968 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+   29 |   return __builtin___memcpy_chk (__dest, __src, __len,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+   30 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+[131 / 404] Executing genrule //src:embedded_jdk_allmodules; 21s linux-sandbox ... (4 actions, 3 running)
+INFO: From Executing genrule //src:embedded_jdk_allmodules:
+WARNING: Using incubator modules: jdk.incubator.foreign, jdk.incubator.vector
+[136 / 422] Building external/com_google_protobuf/java/core/liblite_runtime_only.jar (91 source files); 13s multiplex-worker ... (4 actions running)
+[139 / 429] JavaToolchainCompileClasses external/bazel_tools/tools/jdk/platformclasspath_classes [for tool]; 1s linux-sandbox ... (4 actions running)
+[143 / 429] Compiling src/google/protobuf/generated_message_util.cc; 0s linux-sandbox ... (4 actions running)
+[145 / 429] JavaToolchainCompileBootClasspath external/bazel_tools/tools/jdk/platformclasspath.jar [for tool]; 1s linux-sandbox ... (4 actions running)
+[148 / 433] JavaToolchainCompileBootClasspath external/bazel_tools/tools/jdk/platformclasspath.jar [for tool]; 2s linux-sandbox ... (4 actions running)
+[157 / 451] Compiling Java headers external/rules_jvm_external/private/tools/java/rules/jvm/external/zip/libzip-hjar.jar (1 source file) [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[162 / 451] Compiling src/google/protobuf/extension_set.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[166 / 454] Compiling src/google/protobuf/generated_message_util.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[175 / 458] Compiling src/google/protobuf/generated_message_tctable_lite.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[181 / 459] Compiling src/google/protobuf/generated_message_tctable_lite.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[197 / 533] Compiling src/google/protobuf/generated_message_tctable_lite.cc [for tool]; 3s linux-sandbox ... (4 actions running)
+[212 / 541] Compiling src/google/protobuf/generated_enum_util.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[222 / 559] Compiling src/google/protobuf/extension_set.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[231 / 562] Compiling src/google/protobuf/extension_set.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[244 / 566] Compiling src/google/protobuf/extension_set.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[259 / 573] Compiling Java headers src/main/java/com/google/devtools/build/lib/concurrent/libconcurrent-hjar.jar (28 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[281 / 592] Compiling Java headers src/main/java/com/google/devtools/build/lib/util/libstring-hjar.jar (3 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[291 / 655] Compiling Java headers src/main/java/com/google/devtools/build/lib/jni/libjni-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[304 / 673] Compiling src/google/protobuf/wrappers.pb.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[308 / 673] Compiling Java headers src/main/java/com/google/devtools/build/lib/vfs/libospathpolicy-hjar.jar (3 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[321 / 685] Compiling src/google/protobuf/wire_format.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[330 / 690] Compiling src/google/protobuf/wire_format.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[334 / 691] Compiling src/google/protobuf/wire_format.cc [for tool]; 3s linux-sandbox ... (4 actions running)
+[341 / 697] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/serialization/autocodec/libserialization-processor-util-hjar.jar (1 source file) [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[353 / 712] Compiling src/google/protobuf/util/type_resolver_util.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[359 / 716] Compiling src/google/protobuf/util/time_util.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[363 / 720] Compiling Java headers src/main/java/com/google/devtools/build/lib/collect/compacthashset/libcompacthashset-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions running)
+[371 / 724] Compiling src/google/protobuf/util/message_differencer.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[376 / 737] Compiling src/google/protobuf/util/message_differencer.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[379 / 737] Compiling src/google/protobuf/util/message_differencer.cc [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[383 / 741] Compiling src/google/protobuf/util/message_differencer.cc [for tool]; 4s linux-sandbox ... (4 actions running)
+[392 / 745] Building external/com_google_protobuf/java/core/liblite_runtime_only.jar (91 source files) [for tool]; 4s multiplex-worker ... (4 actions running)
+[403 / 757] Building external/com_google_protobuf/java/core/liblite_runtime_only.jar (91 source files) [for tool]; 5s multiplex-worker ... (4 actions, 3 running)
+[423 / 786] Compiling src/google/protobuf/util/internal/utility.cc [for tool]; 0s linux-sandbox ... (4 actions running)
+[429 / 789] Compiling src/google/protobuf/util/internal/utility.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[441 / 808] Compiling src/google/protobuf/util/internal/type_info.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[456 / 822] Compiling Java headers src/main/java/com/google/devtools/build/lib/unsafe/libunsafe-provider-hjar.jar (1 source file) [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[461 / 841] Compiling src/google/protobuf/util/internal/protostream_objectwriter.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[465 / 842] Compiling src/google/protobuf/util/internal/protostream_objectwriter.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[479 / 858] Compiling src/google/protobuf/util/internal/protostream_objectsource.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[483 / 860] Compiling src/google/protobuf/util/internal/protostream_objectsource.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[487 / 866] Compiling src/google/protobuf/util/internal/protostream_objectsource.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[494 / 869] Compiling src/google/protobuf/util/internal/proto_writer.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[498 / 872] Compiling src/google/protobuf/util/internal/proto_writer.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[503 / 883] Compiling absl/strings/internal/str_format/arg.cc; 1s linux-sandbox ... (4 actions running)
+[511 / 886] Compiling src/google/protobuf/util/internal/json_stream_parser.cc [for tool]; 0s linux-sandbox ... (4 actions running)
+[521 / 892] Compiling Java headers src/main/java/com/google/devtools/build/lib/util/libresource_usage-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[526 / 906] Compiling absl/strings/internal/cord_rep_ring.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[531 / 914] Compiling Java headers src/main/java/com/google/devtools/build/lib/collect/libextrema-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[537 / 920] Building src/main/java/net/starlark/java/syntax/libsyntax.jar (42 source files) and running annotation processors (AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions, 3 running)
+[541 / 924] Compiling Java headers src/main/java/com/google/devtools/build/lib/util/libcustom_exit_code_publisher-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[547 / 926] Compiling src/google/protobuf/util/internal/default_value_objectwriter.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[549 / 928] Compiling Java headers src/main/java/net/starlark/java/annot/libannot_sans_processor-hjar.jar (5 source files); 1s linux-sandbox ... (4 actions running)
+[554 / 930] Compiling src/google/protobuf/util/internal/datapiece.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[557 / 930] Compiling absl/strings/cord.cc; 2s linux-sandbox ... (4 actions running)
+[564 / 940] Compiling absl/status/status_payload_printer.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[568 / 941] Compiling src/google/protobuf/util/field_comparator.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[571 / 941] Compiling absl/status/status.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[576 / 944] Building src/main/java/net/starlark/java/eval/libeval.jar (41 source files) and running annotation processors (StarlarkMethodProcessor); 2s multiplex-worker ... (4 actions running)
+[583 / 948] Compiling src/google/protobuf/type.pb.cc [for tool]; 0s linux-sandbox ... (4 actions running)
+[602 / 962] Compiling src/google/protobuf/type.pb.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[612 / 967] Compiling Java headers src/main/java/com/google/devtools/build/lib/io/libfile_symlink_exception-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[630 / 986] Compiling Java headers src/main/java/com/google/devtools/build/lib/util/libshell_escaper-hjar.jar (2 source files); 0s linux-sandbox ... (4 actions running)
+[636 / 989] Compiling src/google/protobuf/text_format.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[644 / 1,000] Compiling src/google/protobuf/text_format.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[653 / 1,009] Compiling src/google/protobuf/text_format.cc [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[680 / 1,079] Compiling src/google/protobuf/text_format.cc [for tool]; 4s linux-sandbox ... (4 actions, 3 running)
+[698 / 1,095] Compiling src/google/protobuf/struct.pb.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[714 / 1,107] Compiling src/google/protobuf/struct.pb.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[731 / 1,122] Stamping the manifest of @maven//:io_grpc_grpc_core; 0s linux-sandbox ... (4 actions running)
+[747 / 1,151] Compiling absl/strings/substitute.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[759 / 1,178] Compiling src/google/protobuf/reflection_ops.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[765 / 1,181] Compiling third_party/grpc-java/compiler/src/java_plugin/cpp/java_generator.cpp [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[772 / 1,183] Compiling src/google/protobuf/message.cc [for tool]; 1s linux-sandbox ... (3 actions, 2 running)
+[776 / 1,198] Compiling absl/strings/numbers.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[780 / 1,198] Compiling src/google/protobuf/map_field.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[793 / 1,213] Compiling Java headers src/main/java/com/google/devtools/build/lib/actions/libexecution_requirements-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[805 / 1,235] Compiling src/google/protobuf/io/tokenizer.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[807 / 1,242] Compiling absl/strings/escaping.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[815 / 1,248] Compiling Java headers src/main/java/com/google/devtools/build/lib/cmdline/libquery_exception_marker_interface-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[823 / 1,250] Compiling src/google/protobuf/generated_message_tctable_full.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[831 / 1,276] Compiling Java headers src/main/java/com/google/devtools/build/lib/packages/semantics/libsemantics-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[834 / 1,278] Compiling src/google/protobuf/generated_message_reflection.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[837 / 1,286] Compiling src/google/protobuf/generated_message_reflection.cc [for tool]; 3s linux-sandbox ... (4 actions running)
+[840 / 1,286] Compiling src/google/protobuf/generated_message_reflection.cc [for tool]; 4s linux-sandbox ... (4 actions running)
+[843 / 1,317] Compiling src/google/protobuf/generated_message_reflection.cc [for tool]; 5s linux-sandbox ... (4 actions running)
+[849 / 1,328] Compiling src/google/protobuf/generated_message_bases.cc [for tool]; 0s linux-sandbox ... (4 actions running)
+[855 / 1,334] Compiling src/google/protobuf/field_mask.pb.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[860 / 1,340] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libconfig/execution_info_modifier-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[866 / 1,362] Compiling src/google/protobuf/extension_set_heavy.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[871 / 1,365] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libtest/test_sharding_strategy-hjar.jar (3 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[876 / 1,395] Compiling absl/time/civil_time.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[884 / 1,430] Compiling src/google/protobuf/dynamic_message.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[892 / 1,532] Compiling Java headers src/main/java/com/google/devtools/build/lib/actions/libmiddleman_type-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[900 / 1,558] Compiling Java headers external/zstd-jni/libzstd-jni-hjar.jar (23 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[909 / 1,627] Compiling src/google/protobuf/descriptor_database.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[914 / 1,660] Compiling src/google/protobuf/descriptor_database.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[919 / 1,839] Compiling src/google/protobuf/descriptor_database.cc [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[922 / 1,846] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libinterner_with_presence_check-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[925 / 1,854] Compiling src/google/protobuf/descriptor.pb.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[930 / 1,861] Compiling src/google/protobuf/descriptor.pb.cc [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[938 / 1,866] Compiling src/google/protobuf/descriptor.pb.cc [for tool]; 4s linux-sandbox ... (4 actions, 3 running)
+[945 / 1,869] Compiling src/google/protobuf/descriptor.pb.cc [for tool]; 5s linux-sandbox ... (4 actions, 3 running)
+[950 / 1,871] Compiling src/google/protobuf/descriptor.pb.cc [for tool]; 6s linux-sandbox ... (4 actions, 3 running)
+[958 / 1,920] Compiling src/google/protobuf/descriptor.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[965 / 1,995] Compiling src/google/protobuf/descriptor.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[969 / 1,998] Compiling src/google/protobuf/descriptor.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[975 / 2,000] Compiling src/google/protobuf/descriptor.cc [for tool]; 3s linux-sandbox ... (4 actions running)
+[983 / 2,015] Compiling src/google/protobuf/descriptor.cc [for tool]; 5s linux-sandbox ... (4 actions, 3 running)
+[989 / 2,034] Compiling src/google/protobuf/descriptor.cc [for tool]; 6s linux-sandbox ... (4 actions, 3 running)
+[999 / 2,038] Compiling src/google/protobuf/descriptor.cc [for tool]; 7s linux-sandbox ... (4 actions, 3 running)
+[1,005 / 2,060] Compiling src/google/protobuf/descriptor.cc [for tool]; 8s linux-sandbox ... (4 actions, 3 running)
+[1,013 / 2,083] Compiling src/google/protobuf/descriptor.cc [for tool]; 9s linux-sandbox ... (4 actions, 3 running)
+[1,018 / 2,095] Compiling src/google/protobuf/descriptor.cc [for tool]; 10s linux-sandbox ... (4 actions, 3 running)
+[1,022 / 2,151] Compiling src/google/protobuf/descriptor.cc [for tool]; 11s linux-sandbox ... (4 actions, 3 running)
+[1,027 / 2,212] Compiling src/google/protobuf/descriptor.cc [for tool]; 12s linux-sandbox ... (4 actions, 3 running)
+[1,034 / 2,251] Compiling src/google/protobuf/descriptor.cc [for tool]; 13s linux-sandbox ... (4 actions, 3 running)
+[1,039 / 2,263] Compiling absl/strings/internal/cord_internal.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,049 / 2,271] Compiling src/google/protobuf/compiler/parser.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,059 / 2,385] Compiling src/google/protobuf/compiler/parser.cc [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[1,066 / 2,417] Compiling absl/strings/cord.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[1,072 / 2,448] Compiling absl/strings/cord.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[1,081 / 2,500] Compiling src/google/protobuf/api.pb.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,095 / 2,587] Compiling Java headers src/main/java/com/google/devtools/build/lib/remote/grpc/libgrpc-hjar.jar (7 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[1,111 / 2,593] Compiling Java headers src/main/java/com/google/devtools/build/lib/remote/grpc/libgrpc-hjar.jar (7 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[1,129 / 2,644] Compiling src/google/protobuf/any.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,148 / 2,738] Compiling Java headers src/main/java/com/google/devtools/build/skyframe/libskyframe_graph_stats_event-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions running)
+[1,154 / 2,742] Compiling src/main/native/compress/zstd_lazy.c; 1s linux-sandbox ... (4 actions running)
+[1,158 / 2,745] Compiling upbc/protoc-gen-upb.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,163 / 2,745] Compiling upbc/protoc-gen-upb.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[1,172 / 2,776] Compiling upbc/protoc-gen-upb.cc [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[1,182 / 2,776] Compiling upbc/protoc-gen-upb.cc [for tool]; 4s linux-sandbox ... (4 actions, 3 running)
+[1,189 / 2,787] Compiling upbc/protoc-gen-upb.cc [for tool]; 5s linux-sandbox ... (4 actions, 3 running)
+[1,195 / 2,895] Compiling upbc/protoc-gen-upb.cc [for tool]; 6s linux-sandbox ... (4 actions, 3 running)
+[1,220 / 3,019] Compiling src/google/protobuf/compiler/python/generator.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[1,235 / 3,058] Compiling src/google/protobuf/compiler/python/generator.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,241 / 3,092] Compiling src/google/protobuf/compiler/python/generator.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[1,270 / 3,121] Compiling src/main/cpp/util/bazel_log_handler.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[1,361 / 3,546] Compiling src/google/protobuf/compiler/plugin.pb.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,384 / 3,546] Compiling src/compiler/ruby_generator.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,409 / 3,546] Compiling src/compiler/python_generator.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[1,430 / 3,550] Compiling src/compiler/python_generator.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,451 / 3,575] Compiling src/compiler/python_generator.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[1,454 / 3,575] Compiling src/compiler/python_generator.cc [for tool]; 4s linux-sandbox ... (4 actions, 3 running)
+[1,461 / 3,575] Compiling src/compiler/php_generator.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[1,464 / 3,575] Compiling src/compiler/php_generator.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[1,470 / 3,575] Compiling src/google/protobuf/compiler/objectivec/objectivec_oneof.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[1,475 / 3,575] Compiling src/google/protobuf/compiler/objectivec/objectivec_message_field.cc [for tool]; 0s linux-sandbox ... (4 actions running)
+[1,481 / 3,575] Compiling src/compiler/node_generator.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,484 / 3,575] Compiling src/google/protobuf/descriptor.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[1,489 / 3,575] Compiling src/google/protobuf/descriptor.cc; 4s linux-sandbox ... (4 actions, 3 running)
+[1,491 / 3,575] Compiling src/google/protobuf/descriptor.cc; 5s linux-sandbox ... (4 actions running)
+[1,493 / 3,575] Compiling src/google/protobuf/descriptor.cc; 6s linux-sandbox ... (4 actions running)
+[1,494 / 3,575] Compiling src/google/protobuf/compiler/objectivec/objectivec_helpers.cc [for tool]; 3s linux-sandbox ... (4 actions running)
+[1,500 / 3,575] Compiling src/google/protobuf/compiler/command_line_interface.cc [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[1,502 / 3,575] Compiling src/compiler/cpp_plugin.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[1,517 / 3,642] Compiling src/google/protobuf/compiler/cpp/enum.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[1,521 / 3,642] Compiling src/google/protobuf/compiler/cpp/enum_field.cc [for tool]; 0s linux-sandbox ... (4 actions, 3 running)
+[1,522 / 3,642] Compiling src/google/protobuf/compiler/objectivec/objectivec_field.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,526 / 3,642] Compiling src/google/protobuf/compiler/cpp/extension.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,529 / 3,642] Compiling src/google/protobuf/extension_set_heavy.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[1,532 / 3,642] Compiling src/google/protobuf/compiler/cpp/field.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,535 / 3,642] Compiling src/google/protobuf/util/message_differencer.cc; 1s linux-sandbox ... (4 actions running)
+[1,537 / 3,642] Compiling src/google/protobuf/compiler/cpp/file.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,539 / 3,642] Compiling src/google/protobuf/compiler/cpp/file.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[1,542 / 3,642] Compiling src/google/protobuf/compiler/cpp/file.cc [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[1,547 / 3,642] Compiling src/google/protobuf/util/internal/type_info.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[1,549 / 3,642] Compiling src/google/protobuf/compiler/cpp/generator.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,551 / 3,642] Compiling src/google/protobuf/util/internal/protostream_objectwriter.cc; 1s linux-sandbox ... (4 actions running)
+[1,555 / 3,642] Compiling src/google/protobuf/compiler/cpp/helpers.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[1,558 / 3,642] Compiling src/google/protobuf/util/internal/proto_writer.cc; 1s linux-sandbox ... (4 actions, 2 running)
+[1,561 / 3,642] Compiling src/google/protobuf/compiler/java/primitive_field.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,563 / 3,642] Compiling src/google/protobuf/compiler/java/primitive_field.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[1,568 / 3,642] Compiling src/google/protobuf/compiler/java/name_resolver.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,571 / 3,642] Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[1,573 / 3,642] Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[1,576 / 3,642] Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]; 4s linux-sandbox ... (4 actions running)
+[1,579 / 3,642] Compiling src/google/protobuf/compiler/cpp/message.cc [for tool]; 5s linux-sandbox ... (4 actions, 3 running)
+[1,582 / 3,642] Compiling src/google/protobuf/compiler/java/message_field.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,586 / 3,642] Compiling src/google/protobuf/compiler/cpp/message_field.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,588 / 3,642] Compiling src/google/protobuf/compiler/cpp/padding_optimizer.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,589 / 3,642] Compiling src/google/protobuf/compiler/cpp/parse_function_generator.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[1,593 / 3,642] Compiling src/google/protobuf/compiler/java/message.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,595 / 3,642] Compiling src/google/protobuf/compiler/java/message.cc [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[1,598 / 3,642] Compiling src/google/protobuf/compiler/csharp/csharp_field_base.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[1,600 / 3,642] Compiling src/google/protobuf/compiler/csharp/csharp_field_base.cc [for tool]; 2s linux-sandbox ... (4 actions running)
+[1,604 / 3,642] Compiling src/google/protobuf/compiler/csharp/csharp_message.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,607 / 3,642] Compiling src/google/protobuf/compiler/csharp/csharp_reflection_class.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[1,611 / 3,642] Compiling src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc [for tool]; 0s linux-sandbox ... (4 actions running)
+[1,614 / 3,642] Compiling src/google/protobuf/compiler/java/helpers.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,616 / 3,642] Compiling src/google/protobuf/compiler/java/doc_comment.cc [for tool]; 1s linux-sandbox ... (4 actions, 3 running)
+[1,619 / 3,642] Compiling src/google/protobuf/compiler/java/enum_field.cc [for tool]; 1s linux-sandbox ... (4 actions running)
+[1,625 / 3,642] Compiling src/google/protobuf/compiler/java/field.cc [for tool]; 1s linux-sandbox ... (2 actions running)
+[1,631 / 3,642] Linking external/com_google_protobuf/protoc [for tool]; 0s linux-sandbox
+[1,689 / 3,642] Compiling src/main/protobuf/command_server.pb.cc; 0s linux-sandbox ... (4 actions, 3 running)
+INFO: From Generating Descriptor Set proto_library @com_github_cncf_udpa//xds/service/orca/v3:pkg:
+xds/service/orca/v3/orca.proto:14:1: warning: Import validate/validate.proto is unused.
+[1,705 / 3,642] Compiling src/main/protobuf/command_server.pb.cc; 1s linux-sandbox ... (4 actions, 3 running)
+INFO: From Generating proto_library @googleapis//:google_api_auth_proto:
+google/api/auth.proto:19:1: warning: Import google/api/annotations.proto is unused.
+INFO: From Compiling src/main/protobuf/command_server.pb.cc:
+In file included from bazel-out/k8-fastbuild/bin/src/main/protobuf/command_server.pb.h:34,
+                 from bazel-out/k8-fastbuild/bin/src/main/protobuf/command_server.pb.cc:4:
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:992:60: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+  992 | constexpr MemoryOptions_Code MemoryOptions_Code_Code_MAX = MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:8349:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE' is deprecated [-Wdeprecated-declarations]
+ 8349 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:985:3: note: declared here
+  985 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE PROTOBUF_DEPRECATED_ENUM = 1,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:8351:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+ 8351 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From JavaGrpcGenSource external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar:
+google/bytestream/bytestream.proto:19:1: warning: Import google/api/annotations.proto is unused.
+INFO: From Generating proto_library @googleapis//:google_bytestream_bytestream_proto:
+google/bytestream/bytestream.proto:19:1: warning: Import google/api/annotations.proto is unused.
+[1,727 / 3,642] Compiling src/main/protobuf/failure_details.pb.cc; 1s linux-sandbox ... (4 actions running)
+[1,733 / 3,642] Compiling src/main/protobuf/failure_details.pb.cc; 2s linux-sandbox ... (4 actions running)
+[1,736 / 3,642] Compiling src/main/protobuf/failure_details.pb.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[1,753 / 3,642] Compiling src/main/protobuf/failure_details.pb.cc; 5s linux-sandbox ... (4 actions running)
+INFO: From Compiling src/main/protobuf/failure_details.pb.cc:
+In file included from bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.cc:4:
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:992:60: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+  992 | constexpr MemoryOptions_Code MemoryOptions_Code_Code_MAX = MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:8349:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE' is deprecated [-Wdeprecated-declarations]
+ 8349 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:985:3: note: declared here
+  985 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE PROTOBUF_DEPRECATED_ENUM = 1,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:8351:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+ 8351 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1,759 / 3,642] Compiling Java headers external/com_google_protobuf/java/core/libcore-hjar.jar (36 source files, 1 source jar) [for tool]; 2s linux-sandbox ... (4 actions, 3 running)
+[1,761 / 3,642] Compiling Java headers external/com_google_protobuf/java/core/libcore-hjar.jar (36 source files, 1 source jar) [for tool]; 3s linux-sandbox ... (4 actions, 3 running)
+[1,766 / 3,642] Compiling Java headers src/main/java/com/google/devtools/common/options/libinvocation_policy-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions running)
+[1,771 / 3,642] Compiling Java headers src/main/protobuf/libfailure_details_proto-speed-hjar.jar (1 source jar); 0s linux-sandbox ... (4 actions, 3 running)
+[1,773 / 3,642] Compiling Java headers src/main/protobuf/libfailure_details_proto-speed-hjar.jar (1 source jar); 2s linux-sandbox ... (4 actions, 3 running)
+[1,776 / 3,642] Compiling Java headers external/googleapis/libgoogle_api_field_behavior_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,779 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar) [for tool]; 1s multiplex-worker ... (4 actions running)
+[1,783 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar) [for tool]; 2s multiplex-worker ... (4 actions running)
+[1,784 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar) [for tool]; 3s multiplex-worker ... (4 actions, 3 running)
+[1,790 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar) [for tool]; 5s multiplex-worker ... (4 actions, 3 running)
+[1,793 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar) [for tool]; 6s multiplex-worker ... (4 actions running)
+[1,794 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar) [for tool]; 7s multiplex-worker ... (4 actions running)
+[1,798 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar) [for tool]; 8s multiplex-worker ... (4 actions, 3 running)
+[1,800 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar) [for tool]; 10s multiplex-worker ... (4 actions, 3 running)
+[1,804 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar) [for tool]; 11s multiplex-worker ... (4 actions running)
+[1,811 / 3,642] Compiling Java headers external/com_google_protobuf/java/util/libutil-hjar.jar (7 source files); 1s linux-sandbox ... (4 actions running)
+[1,813 / 3,642] Compiling Java headers src/main/protobuf/liboption_filters_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,819 / 3,642] Compiling Java headers src/main/protobuf/libcommand_line_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,823 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/server/librpc_server-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[1,824 / 3,642] Compiling Java headers external/googleapis/libgoogle_devtools_build_v1_build_status_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions running)
+[1,827 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed-hjar.jar (1 source jar); 2s linux-sandbox ... (4 actions running)
+[1,830 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/collect/libcollect-hjar.jar (8 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[1,832 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bugreport/libbugreport-hjar.jar (4 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[1,834 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/skyframe/libskyframe-objects-hjar.jar (10 source files); 1s linux-sandbox ... (4 actions running)
+[1,842 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libbuild_driver_value-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[1,850 / 3,642] Compiling Java headers external/googleapis/libgoogle_rpc_status_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,856 / 3,642] Compiling Java headers external/googleapis/libgoogle_devtools_build_v1_build_events_proto-speed-hjar.jar (1 source jar); 0s linux-sandbox ... (4 actions, 3 running)
+[1,857 / 3,642] Compiling Java headers external/googleapis/libgoogle_devtools_build_v1_build_events_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,864 / 3,642] Compiling Java headers external/googleapis/libgoogle_devtools_build_v1_publish_build_event_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,867 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libclient_environment_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[1,871 / 3,642] Compiling Java headers external/googleapis/libgoogle_devtools_build_v1_publish_build_event_java_grpc-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,882 / 3,642] Building src/main/java/com/google/devtools/build/lib/profiler/libprofiler.jar (16 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions, 3 running)
+[1,887 / 3,642] Building src/main/java/com/google/devtools/build/lib/worker/libworker_metric.jar (2 source files) and running annotation processors (AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 0s multiplex-worker ... (4 actions, 3 running)
+[1,892 / 3,642] Compiling Java headers external/remoteapis/libbuild_bazel_remote_execution_v2_remote_execution_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions running)
+INFO: From Generating proto_library //src/main/protobuf:execution_statistics_proto:
+[libprotobuf WARNING external/com_google_protobuf/src/google/protobuf/compiler/java/file.cc:247] The optimize_for = LITE_RUNTIME option is no longer supported by protobuf Java code generator and is ignored--protoc will always generate full runtime code for Java. To use Java Lite runtime, users should use the Java Lite plugin instead. See:
+  https://github.com/protocolbuffers/protobuf/blob/main/java/lite.md
+[1,901 / 3,642] Compiling Java headers src/main/protobuf/libexecution_statistics_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,911 / 3,642] Compiling Java headers external/remoteapis/libbuild_bazel_remote_asset_v1_remote_asset_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,915 / 3,642] Compiling Java headers src/main/protobuf/libbuild_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,917 / 3,642] Compiling Java headers external/remoteapis/libbuild_bazel_remote_asset_v1_remote_asset_java_grpc-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,921 / 3,642] Compiling Java headers src/main/protobuf/libextra_actions_base_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,926 / 3,642] Compiling src/core/lib/channel/channel_stack_builder.cc; 1s linux-sandbox ... (4 actions running)
+[1,930 / 3,642] Compiling Java headers src/main/protobuf/libaction_cache_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,934 / 3,642] Compiling src/core/lib/channel/channel_args.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[1,939 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/remote/common/libcache_not_found_exception-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[1,945 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libfileset_entry_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[1,954 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/vfs/libvfs-hjar.jar (33 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[1,955 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/vfs/libvfs-hjar.jar (33 source files); 2s linux-sandbox ... (4 actions running)
+[1,963 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/libruntime/build_event_streamer_utils-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions running)
+[1,967 / 3,642] Compiling src/core/lib/json/json_util.cc; 1s linux-sandbox ... (4 actions running)
+[1,975 / 3,642] Compiling Java headers src/main/protobuf/libmemory_pressure_proto-speed-hjar.jar (1 source jar); 1s linux-sandbox ... (4 actions, 3 running)
+[1,983 / 3,642] Compiling src/core/lib/service_config/service_config_parser.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[1,987 / 3,642] Compiling src/core/lib/gprpp/status_helper.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[1,991 / 3,642] Compiling src/core/lib/json/json_reader.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[1,993 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar); 2s multiplex-worker ... (4 actions, 3 running)
+[1,997 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar); 3s multiplex-worker ... (4 actions running)
+[2,002 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar); 4s multiplex-worker ... (4 actions, 3 running)
+[2,015 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar); 5s multiplex-worker ... (4 actions, 3 running)
+[2,023 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar); 7s multiplex-worker ... (4 actions, 3 running)
+[2,032 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar); 8s multiplex-worker ... (4 actions, 3 running)
+[2,042 / 3,642] Building external/com_google_protobuf/java/core/libcore.jar (36 source files, 1 source jar); 9s multiplex-worker ... (4 actions, 3 running)
+[2,045 / 3,642] Compiling src/core/lib/resource_quota/memory_quota.cc; 2s linux-sandbox ... (4 actions running)
+INFO: From Compiling src/core/lib/resource_quota/memory_quota.cc:
+In file included from external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.cc:34:
+external/com_github_grpc_grpc/src/core/lib/promise/loop.h:120:31: warning: attribute ignored in declaration of 'union grpc_core::promise_detail::Loop<F>::<unnamed>' [-Wattributes]
+  120 |   GPR_NO_UNIQUE_ADDRESS union { GPR_NO_UNIQUE_ADDRESS PromiseType promise_; };
+      |                               ^
+external/com_github_grpc_grpc/src/core/lib/promise/loop.h:120:31: note: attribute for 'union grpc_core::promise_detail::Loop<F>::<unnamed>' must follow the 'union' keyword
+In file included from external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.h:40,
+                 from external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.cc:17:
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h: In instantiation of 'grpc_core::promise_detail::ActivityContexts<Contexts>::ScopedContext::ScopedContext(grpc_core::promise_detail::ActivityContexts<Contexts>*) [with Contexts = {}]':
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:471:19:   required from 'absl::lts_20211102::optional<typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise::Result> grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Start(grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Factory) [with F = grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::BasicMemoryQuota::Start()::<lambda(absl::lts_20211102::Status)>; Contexts = {}; typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise::Result = absl::lts_20211102::Status; typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise = grpc_core::promise_detail::PromiseLike<grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > > >; grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Factory = grpc_core::promise_detail::PromiseFactory<void, grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > > >]'
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:362:19:   required from 'grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::PromiseActivity(F, WakeupScheduler, OnDone, Contexts&& ...) [with F = grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::BasicMemoryQuota::Start()::<lambda(absl::lts_20211102::Status)>; Contexts = {}]'
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:532:7:   required from 'grpc_core::ActivityPtr grpc_core::MakeActivity(Factory, WakeupScheduler, OnDone, Contexts&& ...) [with Factory = grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::BasicMemoryQuota::Start()::<lambda(absl::lts_20211102::Status)>; Contexts = {}; grpc_core::ActivityPtr = std::unique_ptr<grpc_core::Activity, grpc_core::OrphanableDelete>]'
+external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.cc:438:19:   required from here
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:221:46: warning: parameter 'contexts' set but not used [-Wunused-but-set-parameter]
+  221 |     explicit ScopedContext(ActivityContexts* contexts)
+      |                            ~~~~~~~~~~~~~~~~~~^~~~~~~~
+[2,049 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/address_filtering.cc; 2s linux-sandbox ... (4 actions running)
+[2,057 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libtree_deleter-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[2,060 / 3,642] Compiling src/core/lib/service_config/service_config_impl.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,065 / 3,642] Compiling src/core/lib/service_config/service_config_impl.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,072 / 3,642] Compiling src/core/lib/config/core_configuration.cc; 1s linux-sandbox ... (4 actions running)
+[2,077 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/util/io/libio-hjar.jar (17 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[2,083 / 3,642] Compiling src/core/lib/resolver/resolver.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,086 / 3,642] Compiling src/core/lib/iomgr/timer.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,089 / 3,642] Compiling src/core/lib/resolver/resolver_registry.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,092 / 3,642] Compiling src/core/lib/resolver/resolver_registry.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,099 / 3,642] Compiling src/core/lib/iomgr/timer_heap.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,101 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/unix/libunix-hjar.jar (8 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[2,106 / 3,642] Building src/main/protobuf/libcrosstool_config_proto-speed.jar (1 source jar); 2s multiplex-worker ... (4 actions, 3 running)
+[2,108 / 3,642] Building src/main/protobuf/libcrosstool_config_proto-speed.jar (1 source jar); 3s multiplex-worker ... (4 actions running)
+[2,112 / 3,642] Compiling src/core/lib/uri/uri_parser.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,119 / 3,642] Compiling src/core/lib/iomgr/executor.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,124 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/authandtls/credentialhelper/libcredentialhelper-hjar.jar (7 source files); 0s linux-sandbox ... (4 actions running)
+[2,130 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/util/libcommand-hjar.jar (4 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[2,137 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/worker/libworker_key-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[2,141 / 3,642] Compiling src/core/lib/channel/channel_stack.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,144 / 3,642] Building external/remoteapis/libbuild_bazel_remote_execution_v2_remote_execution_proto-speed.jar (1 source jar); 1s multiplex-worker ... (4 actions, 3 running)
+[2,144 / 3,642] Building external/remoteapis/libbuild_bazel_remote_execution_v2_remote_execution_proto-speed.jar (1 source jar); 2s multiplex-worker ... (4 actions running)
+[2,147 / 3,642] Building external/remoteapis/libbuild_bazel_remote_execution_v2_remote_execution_proto-speed.jar (1 source jar); 3s multiplex-worker ... (4 actions, 3 running)
+[2,148 / 3,642] Building external/remoteapis/libbuild_bazel_remote_execution_v2_remote_execution_proto-speed.jar (1 source jar); 4s multiplex-worker ... (4 actions, 3 running)
+[2,152 / 3,642] Building src/main/protobuf/libfailure_details_proto-speed.jar (1 source jar); 5s multiplex-worker ... (4 actions, 3 running)
+[2,157 / 3,642] Compiling src/core/lib/channel/channelz.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,161 / 3,642] Building src/main/protobuf/libanalysis_v2_proto-speed.jar (1 source jar); 0s multiplex-worker ... (4 actions running)
+[2,163 / 3,642] Building src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed.jar (1 source jar); 1s multiplex-worker ... (4 actions running)
+[2,169 / 3,642] Building src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed.jar (1 source jar); 3s multiplex-worker ... (4 actions, 3 running)
+[2,171 / 3,642] Building src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed.jar (1 source jar); 4s multiplex-worker ... (4 actions, 3 running)
+[2,175 / 3,642] Building src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed.jar (1 source jar); 5s multiplex-worker ... (4 actions, 3 running)
+[2,178 / 3,642] Building src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed.jar (1 source jar); 6s multiplex-worker ... (4 actions, 3 running)
+[2,180 / 3,642] Building src/main/java/com/google/devtools/build/lib/buildeventstream/proto/libbuild_event_stream_proto-speed.jar (1 source jar); 7s multiplex-worker ... (4 actions, 3 running)
+[2,186 / 3,642] Building src/main/protobuf/libbuild_proto-speed.jar (1 source jar); 0s multiplex-worker ... (4 actions running)
+[2,189 / 3,642] Building src/main/protobuf/libbuild_proto-speed.jar (1 source jar); 1s multiplex-worker ... (4 actions, 3 running)
+[2,193 / 3,642] Building src/main/protobuf/libbuild_proto-speed.jar (1 source jar); 2s multiplex-worker ... (4 actions, 3 running)
+[2,198 / 3,642] Building src/main/protobuf/libbuild_proto-speed.jar (1 source jar); 3s multiplex-worker ... (4 actions, 3 running)
+[2,202 / 3,642] Compiling src/core/lib/transport/transport_op_string.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,204 / 3,642] Compiling src/core/lib/transport/transport_op_string.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,211 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/collect/nestedset/libfingerprint_cache-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[2,219 / 3,642] Compiling src/core/lib/transport/transport.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,224 / 3,642] Compiling src/core/lib/iomgr/call_combiner.cc; 1s linux-sandbox ... (4 actions running)
+[2,229 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/cmdline/libcmdline-hjar.jar (14 source files); 1s linux-sandbox ... (4 actions running)
+[2,234 / 3,642] Compiling src/core/lib/transport/status_conversion.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,240 / 3,642] Compiling src/core/lib/iomgr/endpoint.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,248 / 3,642] Compiling src/core/lib/transport/metadata_batch.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,254 / 3,642] Compiling src/core/lib/iomgr/endpoint_pair_posix.cc; 1s linux-sandbox ... (4 actions running)
+[2,263 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libcontaining_package_lookup_value-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[2,266 / 3,642] Compiling src/core/lib/iomgr/ev_epoll1_linux.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,271 / 3,642] Building src/main/java/com/google/devtools/build/lib/shell/libshell.jar (19 source files) and running annotation processors (AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 0s multiplex-worker ... (4 actions, 3 running)
+[2,276 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libglob_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,279 / 3,642] Compiling src/core/lib/iomgr/ev_posix.cc; 1s linux-sandbox ... (4 actions running)
+[2,287 / 3,642] Compiling src/core/lib/iomgr/executor/mpmcqueue.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,291 / 3,642] Compiling src/core/lib/security/context/security_context.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,296 / 3,642] Compiling src/core/lib/iomgr/executor/threadpool.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,303 / 3,642] Compiling src/core/lib/security/credentials/call_creds_util.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,308 / 3,642] Compiling src/core/lib/security/credentials/call_creds_util.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,322 / 3,642] Compiling src/core/lib/security/credentials/composite/composite_credentials.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,327 / 3,642] Compiling src/core/lib/security/credentials/composite/composite_credentials.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,331 / 3,642] Compiling src/core/lib/iomgr/iomgr_posix.cc; 0s linux-sandbox ... (4 actions running)
+[2,334 / 3,642] Compiling src/core/lib/security/credentials/credentials.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,340 / 3,642] Compiling src/core/lib/security/credentials/plugin/plugin_credentials.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,345 / 3,642] Compiling src/core/lib/security/credentials/plugin/plugin_credentials.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,349 / 3,642] Compiling src/core/lib/security/credentials/plugin/plugin_credentials.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,356 / 3,642] Compiling src/core/lib/security/security_connector/security_connector.cc; 1s linux-sandbox ... (4 actions running)
+[2,363 / 3,642] Compiling src/core/lib/iomgr/pollset.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,365 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/librepository_mapping_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,369 / 3,642] Compiling src/core/lib/security/transport/client_auth_filter.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,373 / 3,642] Compiling src/core/lib/security/transport/client_auth_filter.cc; 3s linux-sandbox ... (4 actions running)
+INFO: From Compiling src/core/lib/security/transport/client_auth_filter.cc:
+external/com_github_grpc_grpc/src/core/lib/security/transport/client_auth_filter.cc: In member function 'grpc_core::ArenaPromise<absl::lts_20211102::StatusOr<grpc_core::CallArgs> > grpc_core::ClientAuthFilter::GetCallCredsMetadata(grpc_core::CallArgs)':
+external/com_github_grpc_grpc/src/core/lib/security/transport/client_auth_filter.cc:153:8: warning: lambda capture initializers only available with '-std=c++14' or '-std=gnu++14'
+  153 |       [call_args =
+      |        ^~~~~~~~~
+[2,378 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/repository/librepository_options-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,383 / 3,642] Compiling src/core/lib/security/transport/secure_endpoint.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,388 / 3,642] Compiling src/core/lib/iomgr/socket_factory_posix.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,391 / 3,642] Compiling src/core/lib/security/transport/security_handshaker.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,395 / 3,642] Compiling src/core/lib/iomgr/socket_utils_common_posix.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,398 / 3,642] Compiling src/core/lib/security/transport/server_auth_filter.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,399 / 3,642] Compiling src/core/lib/security/transport/server_auth_filter.cc; 2s linux-sandbox ... (4 actions running)
+[2,407 / 3,642] Compiling src/core/lib/iomgr/tcp_client.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,412 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/starlarkbuildapi/proto/libproto-hjar.jar (3 source files); 1s linux-sandbox ... (4 actions running)
+[2,417 / 3,642] Compiling src/core/lib/security/credentials/tls/tls_utils.cc; 1s linux-sandbox ... (4 actions running)
+[2,422 / 3,642] Compiling src/core/lib/iomgr/tcp_posix.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,425 / 3,642] Compiling src/core/lib/iomgr/tcp_posix.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,431 / 3,642] Compiling src/core/lib/security/util/json_util.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,437 / 3,642] Compiling src/core/lib/iomgr/tcp_server.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,439 / 3,642] Compiling src/core/lib/security/authorization/authorization_policy_provider_vtable.cc; 2s linux-sandbox ... (4 actions running)
+[2,444 / 3,642] Compiling src/core/lib/iomgr/tcp_server_posix.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,447 / 3,642] Compiling src/core/lib/security/authorization/evaluate_args.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,453 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libconfig/build_options_cache-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,456 / 3,642] Compiling src/core/lib/security/authorization/grpc_server_authz_filter.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,463 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/genquery/libgenquery_configuration-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[2,467 / 3,642] Compiling src/core/lib/transport/tcp_connect_handshaker.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,472 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libconfig/fragment_registry-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,478 / 3,642] Compiling src/core/lib/http/format_request.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,483 / 3,642] Compiling src/core/lib/iomgr/wakeup_fd_pipe.cc; 1s linux-sandbox ... (4 actions running)
+[2,487 / 3,642] Compiling src/core/lib/http/httpcli.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,491 / 3,642] Compiling src/core/lib/http/httpcli.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,495 / 3,642] Compiling src/core/lib/iomgr/work_serializer.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,499 / 3,642] Compiling src/core/lib/http/parser.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,503 / 3,642] Compiling src/core/lib/resource_quota/api.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,509 / 3,642] Compiling src/core/lib/transport/http_connect_handshaker.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,512 / 3,642] Compiling src/core/lib/security/credentials/fake/fake_credentials.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,514 / 3,642] Compiling src/core/ext/filters/fault_injection/fault_injection_filter.cc; 1s linux-sandbox ... (4 actions running)
+[2,521 / 3,642] Compiling src/core/ext/filters/fault_injection/fault_injection_filter.cc; 3s linux-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/core/ext/filters/fault_injection/fault_injection_filter.cc:
+external/com_github_grpc_grpc/src/core/ext/filters/fault_injection/fault_injection_filter.cc: In member function 'virtual grpc_core::ArenaPromise<grpc_core::MetadataHandle<grpc_metadata_batch> > grpc_core::FaultInjectionFilter::MakeCallPromise(grpc_core::CallArgs, grpc_core::NextPromiseFactory)':
+external/com_github_grpc_grpc/src/core/ext/filters/fault_injection/fault_injection_filter.cc:138:8: warning: lambda capture initializers only available with '-std=c++14' or '-std=gnu++14'
+  138 |       [decision = std::move(decision)]() { return decision.MaybeAbort(); },
+      |        ^~~~~~~~
+[2,524 / 3,642] Compiling src/core/lib/surface/builtins.cc; 2s linux-sandbox ... (4 actions running)
+[2,527 / 3,642] Compiling src/core/ext/filters/fault_injection/service_config_parser.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,531 / 3,642] Compiling src/core/ext/transport/inproc/inproc_transport.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,533 / 3,642] Compiling src/core/ext/transport/inproc/inproc_transport.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,540 / 3,642] Compiling src/core/lib/surface/call.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,540 / 3,642] Compiling src/core/lib/surface/call.cc; 3s linux-sandbox ... (4 actions running)
+[2,541 / 3,642] Compiling src/core/lib/surface/call.cc; 4s linux-sandbox ... (4 actions running)
+INFO: From Compiling src/core/ext/filters/channel_idle/channel_idle_filter.cc:
+In file included from external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:34:
+external/com_github_grpc_grpc/src/core/lib/promise/loop.h:120:31: warning: attribute ignored in declaration of 'union grpc_core::promise_detail::Loop<F>::<unnamed>' [-Wattributes]
+  120 |   GPR_NO_UNIQUE_ADDRESS union { GPR_NO_UNIQUE_ADDRESS PromiseType promise_; };
+      |                               ^
+external/com_github_grpc_grpc/src/core/lib/promise/loop.h:120:31: note: attribute for 'union grpc_core::promise_detail::Loop<F>::<unnamed>' must follow the 'union' keyword
+external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc: In member function 'virtual grpc_core::ArenaPromise<grpc_core::MetadataHandle<grpc_metadata_batch> > grpc_core::ChannelIdleFilter::MakeCallPromise(grpc_core::CallArgs, grpc_core::NextPromiseFactory)':
+external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:200:8: warning: lambda capture initializers only available with '-std=c++14' or '-std=gnu++14'
+  200 |       [decrementer = Decrementer(this),
+      |        ^~~~~~~~~~~
+external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:201:8: warning: lambda capture initializers only available with '-std=c++14' or '-std=gnu++14'
+  201 |        next = next_promise_factory(std::move(call_args))]() mutable
+      |        ^~~~
+In file included from external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.h:40,
+                 from external/com_github_grpc_grpc/src/core/lib/resource_quota/arena.h:41,
+                 from external/com_github_grpc_grpc/src/core/lib/promise/arena_promise.h:29,
+                 from external/com_github_grpc_grpc/src/core/lib/channel/channel_stack.h:69,
+                 from external/com_github_grpc_grpc/src/core/lib/channel/call_finalization.h:24,
+                 from external/com_github_grpc_grpc/src/core/lib/channel/promise_based_filter.h:38,
+                 from external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.h:21,
+                 from external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:20:
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h: In instantiation of 'grpc_core::promise_detail::ActivityContexts<Contexts>::ScopedContext::ScopedContext(grpc_core::promise_detail::ActivityContexts<Contexts>*) [with Contexts = {}]':
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:471:19:   required from 'absl::lts_20211102::optional<typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise::Result> grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Start(grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Factory) [with F = grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::MaxAgeFilter::PostInit()::<lambda(absl::lts_20211102::Status)>; Contexts = {}; typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise::Result = absl::lts_20211102::Status; typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise = grpc_core::promise_detail::PromiseLike<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> > >; grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Factory = grpc_core::promise_detail::PromiseFactory<void, grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> > >]'
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:362:19:   required from 'grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::PromiseActivity(F, WakeupScheduler, OnDone, Contexts&& ...) [with F = grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::MaxAgeFilter::PostInit()::<lambda(absl::lts_20211102::Status)>; Contexts = {}]'
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:532:7:   required from 'grpc_core::ActivityPtr grpc_core::MakeActivity(Factory, WakeupScheduler, OnDone, Contexts&& ...) [with Factory = grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::MaxAgeFilter::PostInit()::<lambda(absl::lts_20211102::Status)>; Contexts = {}; grpc_core::ActivityPtr = std::unique_ptr<grpc_core::Activity, grpc_core::OrphanableDelete>]'
+external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:155:39:   required from here
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:221:46: warning: parameter 'contexts' set but not used [-Wunused-but-set-parameter]
+  221 |     explicit ScopedContext(ActivityContexts* contexts)
+      |                            ~~~~~~~~~~~~~~~~~~^~~~~~~~
+[2,548 / 3,642] Compiling src/core/ext/filters/http/client/http_client_filter.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,549 / 3,642] Compiling src/core/ext/filters/http/client/http_client_filter.cc; 2s linux-sandbox ... (4 actions running)
+[2,553 / 3,642] Compiling src/core/lib/surface/call_log_batch.cc; 2s linux-sandbox ... (4 actions running)
+[2,556 / 3,642] Compiling src/core/ext/filters/deadline/deadline_filter.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,560 / 3,642] Compiling src/core/lib/surface/channel.cc; 2s linux-sandbox ... (4 actions running)
+[2,565 / 3,642] Compiling src/core/lib/surface/channel_ping.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,567 / 3,642] Compiling src/core/ext/filters/http/message_compress/message_decompress_filter.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,569 / 3,642] Compiling src/core/lib/surface/completion_queue.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,572 / 3,642] Compiling src/core/ext/filters/http/server/http_server_filter.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,575 / 3,642] Compiling src/core/ext/filters/client_channel/client_channel.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,579 / 3,642] Compiling src/core/ext/filters/client_channel/client_channel.cc; 3s linux-sandbox ... (4 actions running)
+[2,581 / 3,642] Compiling src/core/ext/filters/client_channel/client_channel.cc; 5s linux-sandbox ... (4 actions, 3 running)
+[2,584 / 3,642] Compiling src/core/ext/filters/client_channel/client_channel.cc; 6s linux-sandbox ... (4 actions, 3 running)
+[2,586 / 3,642] Compiling src/core/ext/transport/chttp2/transport/chttp2_transport.cc; 4s linux-sandbox ... (4 actions, 3 running)
+[2,587 / 3,642] Compiling src/core/lib/surface/server.cc; 2s linux-sandbox ... (4 actions running)
+[2,592 / 3,642] Compiling src/core/ext/filters/client_channel/client_channel_factory.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,593 / 3,642] Compiling src/core/ext/filters/client_channel/client_channel_factory.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,598 / 3,642] Compiling src/core/lib/transport/bdp_estimator.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,601 / 3,642] Compiling src/core/ext/filters/client_channel/client_channel_plugin.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,606 / 3,642] Compiling src/core/ext/transport/chttp2/transport/frame_goaway.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,607 / 3,642] Compiling src/core/ext/filters/client_channel/config_selector.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,610 / 3,642] Compiling src/core/ext/transport/chttp2/transport/frame_ping.cc; 1s linux-sandbox ... (4 actions running)
+[2,613 / 3,642] Compiling src/core/lib/security/security_connector/insecure/insecure_security_connector.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,617 / 3,642] Compiling src/core/ext/transport/chttp2/transport/frame_rst_stream.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,619 / 3,642] Compiling src/core/ext/transport/chttp2/client/chttp2_connector.cc; 2s linux-sandbox ... (4 actions running)
+[2,623 / 3,642] Compiling src/core/ext/filters/client_channel/health/health_check_client.cc; 1s linux-sandbox ... (4 actions running)
+[2,626 / 3,642] Compiling src/core/ext/transport/chttp2/server/chttp2_server.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,628 / 3,642] Compiling src/core/ext/transport/chttp2/server/chttp2_server.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,632 / 3,642] Compiling src/core/ext/transport/chttp2/transport/hpack_encoder.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,633 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy.cc; 1s linux-sandbox ... (4 actions running)
+[2,637 / 3,642] Compiling src/core/ext/transport/chttp2/transport/hpack_parser.cc; 1s linux-sandbox ... (4 actions running)
+[2,640 / 3,642] Compiling src/core/ext/transport/chttp2/transport/hpack_parser.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,645 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/oob_backend_metric.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,646 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/oob_backend_metric.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,649 / 3,642] Compiling src/core/ext/transport/chttp2/transport/hpack_parser_table.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,652 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy_registry.cc; 2s linux-sandbox ... (4 actions running)
+[2,656 / 3,642] Building src/main/java/com/google/devtools/build/lib/packages/libpackages.jar (120 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions running)
+[2,658 / 3,642] Building src/main/java/com/google/devtools/build/lib/packages/libpackages.jar (120 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 3s multiplex-worker ... (4 actions, 3 running)
+[2,660 / 3,642] Building src/main/java/com/google/devtools/build/lib/packages/libpackages.jar (120 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 4s multiplex-worker ... (4 actions running)
+[2,661 / 3,642] Building src/main/java/com/google/devtools/build/lib/packages/libpackages.jar (120 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 5s multiplex-worker ... (4 actions running)
+[2,664 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/rls/rls.cc; 5s linux-sandbox ... (4 actions running)
+[2,665 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/rls/rls.cc; 6s linux-sandbox ... (4 actions, 3 running)
+[2,667 / 3,642] Compiling src/core/ext/filters/client_channel/retry_filter.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,671 / 3,642] Compiling src/core/ext/filters/client_channel/retry_filter.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,673 / 3,642] Compiling src/core/ext/filters/client_channel/retry_filter.cc; 4s linux-sandbox ... (4 actions, 3 running)
+[2,677 / 3,642] Compiling src/core/ext/filters/client_channel/resolver/dns/native/dns_resolver.cc; 1s linux-sandbox ... (4 actions running)
+[2,679 / 3,642] Compiling src/core/ext/filters/client_channel/resolver/dns/native/dns_resolver.cc; 2s linux-sandbox ... (4 actions running)
+[2,685 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/platform/libplatform-hjar.jar (7 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[2,687 / 3,642] Compiling src/core/ext/filters/client_channel/resolver/fake/fake_resolver.cc; 2s linux-sandbox ... (4 actions running)
+[2,693 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libtoolchain_context_key-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,695 / 3,642] Compiling src/core/ext/filters/client_channel/subchannel.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,698 / 3,642] Compiling src/core/ext/filters/client_channel/subchannel.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,700 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/grpclb/grpclb.cc; 2s linux-sandbox ... (4 actions running)
+[2,702 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/grpclb/grpclb.cc; 3s linux-sandbox ... (4 actions running)
+[2,705 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/grpclb/grpclb.cc; 4s linux-sandbox ... (4 actions, 3 running)
+[2,707 / 3,642] Compiling src/core/ext/filters/client_channel/subchannel_stream_client.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,711 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libcollect_test_suites_in_package_function-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[2,716 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/outlier_detection/outlier_detection.cc; 1s linux-sandbox ... (4 actions running)
+[2,719 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/outlier_detection/outlier_detection.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,721 / 3,642] Compiling src/core/ext/filters/client_channel/resolver/dns/c_ares/dns_resolver_ares.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,726 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/priority/priority.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,729 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/priority/priority.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,731 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/priority/priority.cc; 3s linux-sandbox ... (4 actions running)
+[2,736 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/pick_first/pick_first.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,738 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/pick_first/pick_first.cc; 2s linux-sandbox ... (4 actions running)
+[2,748 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/ring_hash/ring_hash.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,751 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/ring_hash/ring_hash.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,757 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/ring_hash/ring_hash.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,763 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/weighted_target/weighted_target.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,768 / 3,642] Compiling src/core/ext/filters/client_channel/lb_policy/weighted_target/weighted_target.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,774 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/query2/common/libQueryTransitivePackagePreloader-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,777 / 3,642] Compiling src/core/lib/surface/init.cc; 1s linux-sandbox ... (4 actions running)
+[2,782 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/io/libfile_symlink_cycle_uniqueness_function-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,787 / 3,642] Compiling src/cpp/client/client_callback.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,794 / 3,642] Compiling src/core/plugin_registry/grpc_plugin_registry_noextra.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,800 / 3,642] Compiling src/core/plugin_registry/grpc_plugin_registry_noextra.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,807 / 3,642] Compiling src/cpp/client/insecure_credentials.cc; 0s linux-sandbox ... (4 actions running)
+[2,813 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libclient_environment_function-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[2,822 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libskyframe_aware_action-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[2,826 / 3,642] Compiling src/main/protobuf/command_server.grpc.pb.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,831 / 3,642] Compiling src/main/protobuf/command_server.grpc.pb.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,835 / 3,642] Compiling src/main/protobuf/command_server.grpc.pb.cc; 3s linux-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/main/protobuf/command_server.grpc.pb.cc:
+In file included from bazel-out/k8-fastbuild/bin/src/main/protobuf/command_server.pb.h:34,
+                 from bazel-out/k8-fastbuild/bin/src/main/protobuf/command_server.grpc.pb.cc:5:
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:992:60: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+  992 | constexpr MemoryOptions_Code MemoryOptions_Code_Code_MAX = MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:8349:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE' is deprecated [-Wdeprecated-declarations]
+ 8349 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:985:3: note: declared here
+  985 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE PROTOBUF_DEPRECATED_ENUM = 1,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:8351:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+ 8351 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2,841 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libmap_as_package_roots-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,849 / 3,642] Compiling src/cpp/common/channel_arguments.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,854 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/actions/libartifacts-hjar.jar (8 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[2,858 / 3,642] Compiling src/main/cpp/blaze.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,863 / 3,642] Compiling src/main/cpp/blaze.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,867 / 3,642] Compiling src/main/cpp/blaze.cc; 4s linux-sandbox ... (4 actions, 3 running)
+INFO: From Compiling src/main/cpp/blaze.cc:
+In file included from bazel-out/k8-fastbuild/bin/src/main/protobuf/command_server.pb.h:34,
+                 from bazel-out/k8-fastbuild/bin/src/main/protobuf/command_server.grpc.pb.h:28,
+                 from src/main/cpp/blaze.cc:79:
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:992:60: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+  992 | constexpr MemoryOptions_Code MemoryOptions_Code_Code_MAX = MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:8349:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE' is deprecated [-Wdeprecated-declarations]
+ 8349 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:985:3: note: declared here
+  985 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE PROTOBUF_DEPRECATED_ENUM = 1,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:8351:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+ 8351 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-fastbuild/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2,873 / 3,642] Compiling src/cpp/util/time_cc.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,882 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/bzlmod/librepo_rule_creator-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[2,885 / 3,642] Building src/main/java/com/google/devtools/build/skyframe/libskyframe.jar (72 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions, 3 running)
+[2,888 / 3,642] Compiling src/cpp/thread_manager/thread_manager.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,895 / 3,642] Compiling src/cpp/server/server_posix.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,899 / 3,642] Compiling src/cpp/server/server_credentials.cc; 0s linux-sandbox ... (4 actions, 3 running)
+[2,906 / 3,642] Compiling src/cpp/server/server_context.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,911 / 3,642] Compiling src/cpp/server/server_context.cc; 2s linux-sandbox ... (4 actions running)
+[2,914 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libtest/baseline_coverage_result-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[2,918 / 3,642] Compiling src/cpp/server/server_cc.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,924 / 3,642] Compiling src/cpp/server/server_cc.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,929 / 3,642] Compiling src/cpp/server/server_cc.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,935 / 3,642] Compiling src/cpp/server/server_cc.cc; 4s linux-sandbox ... (4 actions, 3 running)
+[2,941 / 3,642] Compiling src/cpp/server/server_builder.cc; 1s linux-sandbox ... (4 actions, 3 running)
+[2,944 / 3,642] Compiling src/cpp/server/server_builder.cc; 2s linux-sandbox ... (4 actions, 3 running)
+[2,951 / 3,642] Compiling src/cpp/server/server_builder.cc; 3s linux-sandbox ... (4 actions, 3 running)
+[2,956 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/actions/libfile_metadata-hjar.jar (7 source files); 1s linux-sandbox ... (4 actions running)
+[2,958 / 3,642] Linking src/main/cpp/client; 1s linux-sandbox ... (4 actions running)
+[2,965 / 3,642] Linking src/main/cpp/client; 3s linux-sandbox ... (4 actions, 3 running)
+[2,971 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/buildeventstream/libbuildeventstream-hjar.jar (24 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[2,976 / 3,642] Building src/main/java/com/google/devtools/build/lib/skyframe/libpackage_lookup_value.jar (1 source file) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor); 0s multiplex-worker ... (4 actions, 3 running)
+[2,978 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libbuild_info_event-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,984 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libmetadata_consumer_for_metrics-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,987 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/repository/librepository_events-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions running)
+[2,990 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/librunfiles_artifact_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[2,998 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libglob_function-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,002 / 3,642] Building src/main/java/com/google/devtools/build/lib/actions/libactions.jar (108 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions, 3 running)
+[3,006 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/pkgcache/libpkgcache-hjar.jar (23 source files); 1s linux-sandbox ... (2 actions running)
+[3,007 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/actions/libactions-hjar.jar (108 source files); 1s linux-sandbox ... (4 actions running)
+[3,012 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libgraph_backed_recursive_package_provider-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,015 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libtarget_excluding_filtering_policy-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,019 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libtarget_pattern_value-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions running)
+[3,021 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libconfig/build_configuration-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,024 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/query2/query/output/liboutput-hjar.jar (24 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,028 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libprepare_deps_of_patterns_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,032 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libprepare_deps_of_targets_under_directory_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,036 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libconfigured_target_key-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,041 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libaspect_key_creator-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,046 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libtarget_pattern_util-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,052 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libfile_function-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,059 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libbuilder-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,068 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libtarget_cycle_reporter-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,071 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/repository/libexternal_package_helper-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,077 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libbzl_load_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,081 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libpackage_lookup_function-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,088 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libbzl_load_cycle_reporter-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,093 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libdependency-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,100 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libincremental_artifact_conflict_finder-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,104 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libcached_bzl_load_value_and_deps-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,110 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libcached_bzl_load_value_and_deps_builder_factory-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions running)
+[3,113 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/sandbox/libsandboxed_spawns-hjar.jar (6 source files); 1s linux-sandbox ... (4 actions running)
+[3,118 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libignored_package_prefixes_function-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,123 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libunloaded_toolchain_context-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,129 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libunloaded_toolchain_context_impl-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,134 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libbuildinfo/build_info_collection-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,137 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/worker/libmultiplex_worker-hjar.jar (4 source files); 1s linux-sandbox ... (4 actions running)
+[3,143 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libtarget_completion_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,148 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/librecursive_directory_traversal_function-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,151 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libaspect_creation_exception-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,156 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libcollect_packages_under_directory_function-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,162 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/librecursive_pkg_function-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,168 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libspawn_input_expander-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,173 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libfile_write_strategy-hjar.jar (1 source file); 1s linux-sandbox ... (3 actions running)
+[3,177 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libactions/abstract_file_write_action-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,181 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libspawn_cache-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,186 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libconfigured_value_creation_exception-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,191 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libtoolchain_exception-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions running)
+[3,193 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libactions/lazy_write_nested_set_of_tuple_action-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,197 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libextra/extra_action_info_file_write_action-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,200 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/remote/libabstract_action_input_prefetcher-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,203 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libstarlark/starlark_exec_group_collection-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,208 / 3,642] Building src/main/java/com/google/devtools/build/lib/analysis/libresolved_toolchain_context.jar (1 source file) and running annotation processors (AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 0s multiplex-worker ... (4 actions running)
+[3,211 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libtest/coverage_report_action_factory-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,220 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/remote/logging/liblogging-hjar.jar (11 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[3,228 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/remote/merkletree/libmerkletree-hjar.jar (3 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[3,231 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libaction_template_expansion_function-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,234 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/remote/libReferenceCountedChannel-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,238 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/query2/libaquery-utils-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions running)
+[3,243 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/actions/libshared_action_event-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,247 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libaction_execution_state-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,252 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/bzlmod/libregistry-hjar.jar (4 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,258 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/bzlmod/libresolution-hjar.jar (18 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[3,260 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/bzlmod/libresolution-hjar.jar (18 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,263 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libactions/custom_command_line-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,268 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libfileset_traversal_request-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,271 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libskyframe_incremental_build_monitor-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,276 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libworkspace_status_action-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,281 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libaction_metadata_handler-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,288 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libworkspace_status_function-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,291 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libfilesystem_value_checker-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,297 / 3,642] Building src/main/java/com/google/devtools/build/lib/bazel/bzlmod/libresolution.jar (18 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 2s multiplex-worker ... (4 actions, 3 running)
+[3,300 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libaction_lookup_conflict_finding_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,311 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libaction_execution_inactivity_watchdog-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,315 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libmodule_action_context_registry-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,319 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libbin_tools-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,322 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/rewinding/librewinding-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,326 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libsymlink_tree_helper-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,330 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libspawn_log_context-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,336 / 3,642] [Prepa] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libremote_local_fallback_registry-hjar.jar (1 source file)
+[3,339 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libspawn_strategy_registry-hjar.jar (1 source file); 0s linux-sandbox
+[3,343 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libblaze_executor-hjar.jar (1 source file); 0s linux-sandbox ... (2 actions, 1 running)
+[3,345 / 3,642] Building src/main/java/com/google/devtools/build/lib/analysis/libanalysis_cluster.jar (106 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (2 actions, 1 running)
+[3,345 / 3,642] Building src/main/java/com/google/devtools/build/lib/analysis/libanalysis_cluster.jar (106 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 2s multiplex-worker ... (4 actions running)
+[3,352 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libconstraints/incompatible_target_checker-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,357 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libtop_level_aspects_value-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,359 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libincremental_package_roots-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,366 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/librepository/workspace_base_rule-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,369 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/starlarkbuildapi/apple/libapple-hjar.jar (12 source files); 1s linux-sandbox ... (4 actions running)
+[3,373 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libbuild_driver_function-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions running)
+[3,380 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/librepository/local_repository_rule-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,384 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libskyframe_error_processor-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,387 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/librepository/repository_function-hjar.jar (7 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,391 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/libalias-hjar.jar (3 source files); 1s linux-sandbox ... (4 actions running)
+[3,392 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/libextra/action_listener-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,398 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/librepository/new_local_repository_function-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions running)
+[3,405 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/librepository/bind_rule-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,413 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/liblabel_build_settings-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,416 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/libextra/extra_action_rule-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,421 / 3,642] Building src/main/java/com/google/devtools/build/lib/skyframe/libskyframe_cluster.jar (62 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions running)
+[3,423 / 3,642] Building src/main/java/com/google/devtools/build/lib/skyframe/libskyframe_cluster.jar (62 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 2s multiplex-worker ... (4 actions, 3 running)
+[3,427 / 3,642] Building src/main/java/com/google/devtools/build/lib/skyframe/libskyframe_cluster.jar (62 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 4s multiplex-worker ... (4 actions, 3 running)
+[3,430 / 3,642] Building src/main/java/com/google/devtools/build/lib/skyframe/libskyframe_cluster.jar (62 source files) and running annotation processors (AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 5s multiplex-worker ... (4 actions, 3 running)
+[3,433 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/rules/genrule/libgenrule-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,436 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/rules/android/ndkcrosstools/r10e/libr10e-hjar.jar (6 source files); 1s linux-sandbox ... (4 actions running)
+[3,439 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/skyframe/libskyframe_cluster-hjar.jar (62 source files); 2s linux-sandbox ... (4 actions running)
+[3,444 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/exec/libstandalone_test_result-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,446 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/rules/android/ndkcrosstools/r12/libr12-hjar.jar (6 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,451 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/rules/android/ndkcrosstools/r13/libr13-hjar.jar (6 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,455 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/rules/android/ndkcrosstools/r15/libr15-hjar.jar (6 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,458 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libbuild_view-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions running)
+[3,462 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/analysis/libtest/test_trimming_transition_factory-hjar.jar (1 source file); 1s linux-sandbox ... (3 actions running)
+[3,466 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/query2/libquery2-hjar.jar (52 source files); 2s linux-sandbox ... (4 actions, 3 running)
+[3,469 / 3,642] Building src/main/java/com/google/devtools/build/lib/query2/libquery2.jar (52 source files) and running annotation processors (OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions running)
+[3,473 / 3,642] Building src/main/java/com/google/devtools/build/lib/query2/libquery2.jar (52 source files) and running annotation processors (OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 2s multiplex-worker ... (4 actions running)
+[3,474 / 3,642] Building src/main/java/com/google/devtools/build/lib/query2/libquery2.jar (52 source files) and running annotation processors (OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 3s multiplex-worker ... (4 actions, 3 running)
+[3,477 / 3,642] Building src/main/java/com/google/devtools/build/lib/libruntime.jar (111 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 3s multiplex-worker ... (4 actions, 3 running)
+[3,480 / 3,642] Building src/main/java/com/google/devtools/build/lib/libruntime.jar (111 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 4s multiplex-worker ... (4 actions running)
+[3,488 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/apple/cpp/libcpp-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,494 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/libruntime-hjar.jar (111 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,500 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/libruntime-hjar.jar (111 source files); 2s linux-sandbox ... (4 actions, 3 running)
+[3,505 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/libmodules-hjar.jar (3 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,508 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/rules/cpp/libcpp-hjar.jar (6 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,513 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/cpp/libcpp.jar (100 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions, 3 running)
+[3,516 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/cpp/libcpp.jar (100 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 3s multiplex-worker ... (4 actions running)
+[3,518 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/cpp/libcpp.jar (100 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 4s multiplex-worker ... (4 actions, 3 running)
+[3,521 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/cpp/libcpp.jar (100 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 5s multiplex-worker ... (4 actions, 3 running)
+[3,527 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/starlarkbuildapi/java/libjava-hjar.jar (16 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[3,531 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/libnativedeps-hjar.jar (2 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[3,535 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/java/libjava-compilation-hjar.jar (45 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,537 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/java/libjava-compilation-hjar.jar (45 source files); 2s linux-sandbox ... (4 actions running)
+[3,540 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/java/libjava-compilation.jar (45 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions running)
+[3,541 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/java/libjava-compilation.jar (45 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 2s multiplex-worker ... (4 actions, 3 running)
+[3,545 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/sandbox/libprocess_wrapper_sandbox-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,547 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/starlarkbuildapi/android/libandroid-hjar.jar (38 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,549 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/objc/libobjc-hjar.jar (37 source files); 2s linux-sandbox ... (4 actions, 3 running)
+[3,556 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/rules/objc/libobjc-hjar.jar (4 source files); 0s linux-sandbox ... (4 actions, 3 running)
+[3,560 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/rules/java/libjava-rules-hjar.jar (18 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,564 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/objc/libobjc.jar (37 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 0s multiplex-worker ... (4 actions running)
+[3,567 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/objc/libobjc.jar (37 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, StarlarkMethodProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions running)
+[3,569 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/remote/libremote-hjar.jar (29 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,575 / 3,642] Building src/main/java/com/google/devtools/build/lib/worker/libsingleplex_worker.jar (2 source files) and running annotation processors (AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 0s multiplex-worker ... (4 actions, 3 running)
+[3,576 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/android/libandroid-class.jar (106 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions running)
+[3,580 / 3,642] Building src/main/java/com/google/devtools/build/lib/rules/android/libandroid-class.jar (106 source files) and running annotation processors (StarlarkConfigurationFieldProcessor, AutoCodecProcessor, SerializationConstantProcessor, OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 3s multiplex-worker ... (4 actions running)
+[3,585 / 3,642] Building src/main/java/com/google/devtools/build/lib/remote/libremote.jar (29 source files) and running annotation processors (OptionProcessor); 3s multiplex-worker ... (4 actions, 3 running)
+[3,592 / 3,642] Building src/main/java/com/google/devtools/build/lib/buildeventservice/libbuildeventservice.jar (7 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 1s multiplex-worker ... (4 actions, 3 running)
+[3,597 / 3,642] Building src/main/java/com/google/devtools/build/lib/buildeventservice/libbuildeventservice.jar (7 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 2s multiplex-worker ... (4 actions running)
+[3,601 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/runtime/commands/libcommands-hjar.jar (25 source files); 1s linux-sandbox ... (4 actions running)
+[3,603 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/dynamic/libdynamic-hjar.jar (8 source files); 1s linux-sandbox ... (4 actions running)
+[3,608 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/bazel/commands/libcommands-hjar.jar (6 source files); 1s linux-sandbox ... (4 actions, 3 running)
+[3,611 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/platform/libsleep_prevention_module-hjar.jar (1 source file); 1s linux-sandbox ... (4 actions, 3 running)
+[3,615 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/includescanning/libincludescanning-hjar.jar (14 source files); 2s linux-sandbox ... (4 actions, 3 running)
+[3,618 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/outputfilter/liboutputfilter-hjar.jar (2 source files); 1s linux-sandbox ... (4 actions running)
+[3,623 / 3,642] Compiling Java headers src/main/java/com/google/devtools/build/lib/network/libnoop_connectivity-hjar.jar (1 source file); 0s linux-sandbox ... (4 actions, 3 running)
+[3,629 / 3,642] Building src/main/java/com/google/devtools/build/lib/bazel/commands/libcommands-class.jar (6 source files) and running annotation processors (OptionProcessor, AutoAnnotationProcessor, AutoOneOfProcessor, AutoValueProcessor, AutoValueGsonAdapterFactoryProcessor); 0s multiplex-worker ... (4 actions, 3 running)
+[3,635 / 3,642] Building src/main/java/com/google/devtools/build/lib/runtime/commands/libcommands-class.jar (25 source files) and running annotation processors (OptionProcessor); 1s multiplex-worker ... (2 actions, 1 running)
+[3,640 / 3,642] Executing genrule //src:package-zip_jdk_allmodules; 0s linux-sandbox
+Target //src:bazel-dev up-to-date:
+  bazel-bin/src/bazel-dev
+INFO: Elapsed time: 787.622s, Critical Path: 95.69s
+INFO: 3642 processes: 290 internal, 2530 linux-sandbox, 1 local, 821 worker.
+INFO: Build completed successfully, 3642 total actions
+
+^C
+[ec2-user@ip-172-31-24-241 various-tools]$
+[ec2-user@ip-172-31-24-241 various-tools]$
+[ec2-user@ip-172-31-24-241 various-tools]$ ls
+bazel-build.sh  setup.sh  temp-build-tee.txt
+[ec2-user@ip-172-31-24-241 various-tools]$ cd ~/bazel
+[ec2-user@ip-172-31-24-241 bazel]$ cd bazel-b
+bazel-bazel/ bazel-bin/
+[ec2-user@ip-172-31-24-241 bazel]$ cd bazel-bin/
+external/    src/         third_party/ tools/
+[ec2-user@ip-172-31-24-241 bazel]$ cd bazel-bin/src
+[ec2-user@ip-172-31-24-241 src]$ ./bazel-dev
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+                                                     [bazel development version]
+Usage: bazel <command> <options> ...
+
+Available commands:
+  analyze-profile     Analyzes build profile data.
+  aquery              Analyzes the given targets and queries the action graph.
+  build               Builds the specified targets.
+  canonicalize-flags  Canonicalizes a list of bazel options.
+  clean               Removes output files and optionally stops the server.
+  coverage            Generates code coverage report for specified test targets.
+  cquery              Loads, analyzes, and queries the specified targets w/ configurations.
+  dump                Dumps the internal state of the bazel server process.
+  fetch               Fetches external repositories that are prerequisites to the targets.
+  help                Prints help for commands, or the index.
+  info                Displays runtime info about the bazel server.
+  license             Prints the license of this software.
+  mobile-install      Installs targets to mobile devices.
+  modquery            Queries the Bzlmod external dependency graph
+  print_action        Prints the command line args for compiling a file.
+  query               Executes a dependency graph query.
+  run                 Runs the specified target.
+  shutdown            Stops the bazel server.
+  sync                Syncs all repositories specified in the workspace file
+  test                Builds and runs the specified test targets.
+  version             Prints version information for bazel.
+
+Getting more help:
+  bazel help <command>
+                   Prints help and options for <command>.
+  bazel help startup_options
+                   Options for the JVM hosting bazel.
+  bazel help target-syntax
+                   Explains the syntax for specifying targets.
+  bazel help info-keys
+                   Displays a list of keys used by the info command.
+[ec2-user@ip-172-31-24-241 src]$ bazel --test
+[FATAL 14:09:32.748 src/main/cpp/blaze.cc:1302] Unknown startup option: '--test'.
+  For more info, run 'bazel help startup_options'.
+[ec2-user@ip-172-31-24-241 src]$ bazel test
+Starting local Bazel server and connecting to it...
+ERROR: bazel should not be called from a bazel output directory. The pertinent workspace directory is: '/home/ec2-user/bazel'
+[ec2-user@ip-172-31-24-241 src]$ cd ..
+[ec2-user@ip-172-31-24-241 bazel-bin]$ cd ../..
+[ec2-user@ip-172-31-24-241 ~]$ cd bazel/
+[ec2-user@ip-172-31-24-241 bazel]$ bazel test
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 test targets...
+INFO: Elapsed time: 0.420s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+ERROR: No test targets were found, yet testing was requested
+[ec2-user@ip-172-31-24-241 bazel]$ ls
+AUTHORS       CODE_OF_CONDUCT.md  MODULE.bazel  WORKSPACE.bzlmod  bazel-testlogs               distdir.bzl         scripts      tools
+BUILD         CONTRIBUTING.md     README.md     bazel-bazel       combine_distfiles.py         distdir_deps.bzl    site
+CHANGELOG.md  CONTRIBUTORS        SECURITY.md   bazel-bin         combine_distfiles_to_tar.sh  examples            src
+CODEOWNERS    LICENSE             WORKSPACE     bazel-out         compile.sh                   maven_install.json  third_party
+[ec2-user@ip-172-31-24-241 bazel]$ cd src
+[ec2-user@ip-172-31-24-241 src]$ ls
+BUILD                         conditions                    embedded_tools.bzl    merge_zip_files.sh   rule_size_test.bzl        upload_java_tools.sh
+BUILD.tools                   create_embedded_tools.py      java_tools            minimize_jdk.sh      test                      zip_builtins.sh
+MODULE.tools                  create_embedded_tools_lib.py  jdeps_modules.golden  package-bazel.sh     tools                     zip_files.sh
+combine_derived_java_srcs.sh  create_java_tools_release.sh  main                  release_archive.bzl  upload_all_java_tools.sh
+[ec2-user@ip-172-31-24-241 src]$ cd test
+[ec2-user@ip-172-31-24-241 test]$ bazel test
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 test targets...
+INFO: Elapsed time: 0.373s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+ERROR: No test targets were found, yet testing was requested
+[ec2-user@ip-172-31-24-241 test]$ bazel build //scripts:bazel-complete.bash
+INFO: Analyzed target //scripts:bazel-complete.bash (2 packages loaded, 2166 targets configured).
+INFO: Found 1 target...
+INFO: From Compiling src/main/java/net/starlark/java/eval/cpu_profiler_posix.cc [for tool]:
+src/main/java/net/starlark/java/eval/cpu_profiler_posix.cc: In function 'void cpu_profiler::onsigprof(int)':
+src/main/java/net/starlark/java/eval/cpu_profiler_posix.cc:61:10: warning: ignoring return value of 'ssize_t write(int, const void*, size_t)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   61 |     write(2, msg, strlen(msg));
+      |     ~~~~~^~~~~~~~~~~~~~~~~~~~~
+src/main/java/net/starlark/java/eval/cpu_profiler_posix.cc:83:12: warning: ignoring return value of 'ssize_t write(int, const void*, size_t)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   83 |       write(2, msg, strlen(msg));
+      |       ~~~~~^~~~~~~~~~~~~~~~~~~~~
+src/main/java/net/starlark/java/eval/cpu_profiler_posix.cc:92:12: warning: ignoring return value of 'ssize_t write(int, const void*, size_t)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   92 |       write(2, buf, strlen(buf));
+      |       ~~~~~^~~~~~~~~~~~~~~~~~~~~
+INFO: From Generating Descriptor Set proto_library @com_github_cncf_udpa//xds/service/orca/v3:pkg [for tool]:
+xds/service/orca/v3/orca.proto:14:1: warning: Import validate/validate.proto is unused.
+INFO: From Compiling src/main/cpp/blaze_util_posix.cc [for tool]:
+src/main/cpp/blaze_util_posix.cc: In function 'uint64_t blaze::AcquireLock(const blaze_util::Path&, bool, bool, blaze::BlazeLock*)':
+src/main/cpp/blaze_util_posix.cc:708:19: warning: ignoring return value of 'int ftruncate(int, __off_t)' declared with attribute 'warn_unused_result' [-Wunused-result]
+  708 |   (void) ftruncate(lockfd, 0);
+      |          ~~~~~~~~~^~~~~~~~~~~
+INFO: From Compiling src/main/protobuf/failure_details.pb.cc [for tool]:
+In file included from bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.cc:4:
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:992:60: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+  992 | constexpr MemoryOptions_Code MemoryOptions_Code_Code_MAX = MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:8349:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE' is deprecated [-Wdeprecated-declarations]
+ 8349 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:985:3: note: declared here
+  985 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE PROTOBUF_DEPRECATED_ENUM = 1,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:8351:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+ 8351 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From Compiling src/main/protobuf/command_server.pb.cc [for tool]:
+In file included from bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/command_server.pb.h:34,
+                 from bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/command_server.pb.cc:4:
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:992:60: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+  992 | constexpr MemoryOptions_Code MemoryOptions_Code_Code_MAX = MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:8349:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE' is deprecated [-Wdeprecated-declarations]
+ 8349 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:985:3: note: declared here
+  985 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE PROTOBUF_DEPRECATED_ENUM = 1,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:8351:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+ 8351 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From Compiling src/core/lib/resource_quota/memory_quota.cc [for tool]:
+In file included from external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.cc:34:
+external/com_github_grpc_grpc/src/core/lib/promise/loop.h:120:31: warning: attribute ignored in declaration of 'union grpc_core::promise_detail::Loop<F>::<unnamed>' [-Wattributes]
+  120 |   GPR_NO_UNIQUE_ADDRESS union { GPR_NO_UNIQUE_ADDRESS PromiseType promise_; };
+      |                               ^
+external/com_github_grpc_grpc/src/core/lib/promise/loop.h:120:31: note: attribute for 'union grpc_core::promise_detail::Loop<F>::<unnamed>' must follow the 'union' keyword
+In file included from external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.h:40,
+                 from external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.cc:17:
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h: In instantiation of 'grpc_core::promise_detail::ActivityContexts<Contexts>::ScopedContext::ScopedContext(grpc_core::promise_detail::ActivityContexts<Contexts>*) [with Contexts = {}]':
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:471:19:   required from 'absl::lts_20211102::optional<typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise::Result> grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Start(grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Factory) [with F = grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::BasicMemoryQuota::Start()::<lambda(absl::lts_20211102::Status)>; Contexts = {}; typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise::Result = absl::lts_20211102::Status; typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise = grpc_core::promise_detail::PromiseLike<grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > > >; grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Factory = grpc_core::promise_detail::PromiseFactory<void, grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > > >]'
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:362:19:   required from 'grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::PromiseActivity(F, WakeupScheduler, OnDone, Contexts&& ...) [with F = grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::BasicMemoryQuota::Start()::<lambda(absl::lts_20211102::Status)>; Contexts = {}]'
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:532:7:   required from 'grpc_core::ActivityPtr grpc_core::MakeActivity(Factory, WakeupScheduler, OnDone, Contexts&& ...) [with Factory = grpc_core::promise_detail::Loop<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::SeqTraits, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda()>, grpc_core::BasicMemoryQuota::Start()::<lambda(std::tuple<const char*, grpc_core::RefCountedPtr<grpc_core::ReclaimerQueue::Handle> >)>, grpc_core::BasicMemoryQuota::Start()::<lambda()> > >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::BasicMemoryQuota::Start()::<lambda(absl::lts_20211102::Status)>; Contexts = {}; grpc_core::ActivityPtr = std::unique_ptr<grpc_core::Activity, grpc_core::OrphanableDelete>]'
+external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.cc:438:19:   required from here
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:221:46: warning: parameter 'contexts' set but not used [-Wunused-but-set-parameter]
+  221 |     explicit ScopedContext(ActivityContexts* contexts)
+      |                            ~~~~~~~~~~~~~~~~~~^~~~~~~~
+INFO: From Generating proto_library //src/main/protobuf:execution_statistics_proto [for tool]:
+[libprotobuf WARNING external/com_google_protobuf/src/google/protobuf/compiler/java/file.cc:247] The optimize_for = LITE_RUNTIME option is no longer supported by protobuf Java code generator and is ignored--protoc will always generate full runtime code for Java. To use Java Lite runtime, users should use the Java Lite plugin instead. See:
+  https://github.com/protocolbuffers/protobuf/blob/main/java/lite.md
+INFO: From Compiling src/core/lib/security/transport/client_auth_filter.cc [for tool]:
+external/com_github_grpc_grpc/src/core/lib/security/transport/client_auth_filter.cc: In member function 'grpc_core::ArenaPromise<absl::lts_20211102::StatusOr<grpc_core::CallArgs> > grpc_core::ClientAuthFilter::GetCallCredsMetadata(grpc_core::CallArgs)':
+external/com_github_grpc_grpc/src/core/lib/security/transport/client_auth_filter.cc:153:8: warning: lambda capture initializers only available with '-std=c++14' or '-std=gnu++14'
+  153 |       [call_args =
+      |        ^~~~~~~~~
+INFO: From Compiling src/core/ext/filters/fault_injection/fault_injection_filter.cc [for tool]:
+external/com_github_grpc_grpc/src/core/ext/filters/fault_injection/fault_injection_filter.cc: In member function 'virtual grpc_core::ArenaPromise<grpc_core::MetadataHandle<grpc_metadata_batch> > grpc_core::FaultInjectionFilter::MakeCallPromise(grpc_core::CallArgs, grpc_core::NextPromiseFactory)':
+external/com_github_grpc_grpc/src/core/ext/filters/fault_injection/fault_injection_filter.cc:138:8: warning: lambda capture initializers only available with '-std=c++14' or '-std=gnu++14'
+  138 |       [decision = std::move(decision)]() { return decision.MaybeAbort(); },
+      |        ^~~~~~~~
+INFO: From Compiling src/core/ext/transport/chttp2/transport/hpack_parser.cc [for tool]:
+external/com_github_grpc_grpc/src/core/ext/transport/chttp2/transport/hpack_parser.cc: In member function 'void grpc_core::HPackParser::Parser::LogHeader(const Memento&)':
+external/com_github_grpc_grpc/src/core/ext/transport/chttp2/transport/hpack_parser.cc:1065:12: warning: 'type' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 1065 |     gpr_log(GPR_DEBUG, "HTTP:%d:%s:%s: %s", log_info_.stream_id, type,
+      |     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1066 |             log_info_.is_client ? "CLI" : "SVR", memento.DebugString().c_str());
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From Compiling src/core/ext/transport/chttp2/transport/writing.cc [for tool]:
+In file included from external/com_github_grpc_grpc/src/core/lib/transport/transport.h:60,
+                 from external/com_github_grpc_grpc/src/core/ext/transport/chttp2/transport/chttp2_transport.h:32,
+                 from external/com_github_grpc_grpc/src/core/ext/transport/chttp2/transport/writing.cc:36:
+external/com_github_grpc_grpc/src/core/lib/transport/metadata_batch.h: In function 'grpc_chttp2_begin_write_result grpc_chttp2_begin_write(grpc_chttp2_transport*)':
+external/com_github_grpc_grpc/src/core/lib/transport/metadata_batch.h:667:60: warning: '*(unsigned int*)((char*)&stream_ctx + offsetof(<unnamed>::StreamWriteContext, <unnamed>::StreamWriteContext::send_content_type_.absl::lts_20211102::optional<grpc_core::ContentTypeMetadata::ValueType>::<unnamed>.absl::lts_20211102::optional_internal::optional_data<grpc_core::ContentTypeMetadata::ValueType, true>::<unnamed>.absl::lts_20211102::optional_internal::optional_data_base<grpc_core::ContentTypeMetadata::ValueType>::<unnamed>.absl::lts_20211102::optional_internal::optional_data_dtor_base<grpc_core::ContentTypeMetadata::ValueType, true>::<unnamed>))' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  667 |   explicit Value(const typename Which::ValueType& value) : value(value) {}
+      |                                                            ^~~~~~~~~~~~
+external/com_github_grpc_grpc/src/core/ext/transport/chttp2/transport/writing.cc:645:24: note: '*(unsigned int*)((char*)&stream_ctx + offsetof(<unnamed>::StreamWriteContext, <unnamed>::StreamWriteContext::send_content_type_.absl::lts_20211102::optional<grpc_core::ContentTypeMetadata::ValueType>::<unnamed>.absl::lts_20211102::optional_internal::optional_data<grpc_core::ContentTypeMetadata::ValueType, true>::<unnamed>.absl::lts_20211102::optional_internal::optional_data_base<grpc_core::ContentTypeMetadata::ValueType>::<unnamed>.absl::lts_20211102::optional_internal::optional_data_dtor_base<grpc_core::ContentTypeMetadata::ValueType, true>::<unnamed>))' was declared here
+  645 |     StreamWriteContext stream_ctx(&ctx, s);
+      |                        ^~~~~~~~~~
+In file included from external/com_github_grpc_grpc/src/core/lib/transport/transport.h:60,
+                 from external/com_github_grpc_grpc/src/core/ext/transport/chttp2/transport/chttp2_transport.h:32,
+                 from external/com_github_grpc_grpc/src/core/ext/transport/chttp2/transport/writing.cc:36:
+external/com_github_grpc_grpc/src/core/lib/transport/metadata_batch.h:667:60: warning: '*(const grpc_core::SimpleIntBasedMetadataBase<unsigned int>::ValueType*)((char*)&stream_ctx + offsetof(<unnamed>::StreamWriteContext, <unnamed>::StreamWriteContext::send_status_.absl::lts_20211102::optional<unsigned int>::<unnamed>.absl::lts_20211102::optional_internal::optional_data<unsigned int, true>::<unnamed>.absl::lts_20211102::optional_internal::optional_data_base<unsigned int>::<unnamed>.absl::lts_20211102::optional_internal::optional_data_dtor_base<unsigned int, true>::<unnamed>))' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  667 |   explicit Value(const typename Which::ValueType& value) : value(value) {}
+      |                                                            ^~~~~~~~~~~~
+external/com_github_grpc_grpc/src/core/ext/transport/chttp2/transport/writing.cc:645:24: note: '*(const grpc_core::SimpleIntBasedMetadataBase<unsigned int>::ValueType*)((char*)&stream_ctx + offsetof(<unnamed>::StreamWriteContext, <unnamed>::StreamWriteContext::send_status_.absl::lts_20211102::optional<unsigned int>::<unnamed>.absl::lts_20211102::optional_internal::optional_data<unsigned int, true>::<unnamed>.absl::lts_20211102::optional_internal::optional_data_base<unsigned int>::<unnamed>.absl::lts_20211102::optional_internal::optional_data_dtor_base<unsigned int, true>::<unnamed>))' was declared here
+  645 |     StreamWriteContext stream_ctx(&ctx, s);
+      |                        ^~~~~~~~~~
+INFO: From Compiling src/core/ext/filters/channel_idle/channel_idle_filter.cc [for tool]:
+In file included from external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:34:
+external/com_github_grpc_grpc/src/core/lib/promise/loop.h:120:31: warning: attribute ignored in declaration of 'union grpc_core::promise_detail::Loop<F>::<unnamed>' [-Wattributes]
+  120 |   GPR_NO_UNIQUE_ADDRESS union { GPR_NO_UNIQUE_ADDRESS PromiseType promise_; };
+      |                               ^
+external/com_github_grpc_grpc/src/core/lib/promise/loop.h:120:31: note: attribute for 'union grpc_core::promise_detail::Loop<F>::<unnamed>' must follow the 'union' keyword
+external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc: In member function 'virtual grpc_core::ArenaPromise<grpc_core::MetadataHandle<grpc_metadata_batch> > grpc_core::ChannelIdleFilter::MakeCallPromise(grpc_core::CallArgs, grpc_core::NextPromiseFactory)':
+external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:200:8: warning: lambda capture initializers only available with '-std=c++14' or '-std=gnu++14'
+  200 |       [decrementer = Decrementer(this),
+      |        ^~~~~~~~~~~
+external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:201:8: warning: lambda capture initializers only available with '-std=c++14' or '-std=gnu++14'
+  201 |        next = next_promise_factory(std::move(call_args))]() mutable
+      |        ^~~~
+In file included from external/com_github_grpc_grpc/src/core/lib/resource_quota/memory_quota.h:40,
+                 from external/com_github_grpc_grpc/src/core/lib/resource_quota/arena.h:41,
+                 from external/com_github_grpc_grpc/src/core/lib/promise/arena_promise.h:29,
+                 from external/com_github_grpc_grpc/src/core/lib/channel/channel_stack.h:69,
+                 from external/com_github_grpc_grpc/src/core/lib/channel/call_finalization.h:24,
+                 from external/com_github_grpc_grpc/src/core/lib/channel/promise_based_filter.h:38,
+                 from external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.h:21,
+                 from external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:20:
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h: In instantiation of 'grpc_core::promise_detail::ActivityContexts<Contexts>::ScopedContext::ScopedContext(grpc_core::promise_detail::ActivityContexts<Contexts>*) [with Contexts = {}]':
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:471:19:   required from 'absl::lts_20211102::optional<typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise::Result> grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Start(grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Factory) [with F = grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::MaxAgeFilter::PostInit()::<lambda(absl::lts_20211102::Status)>; Contexts = {}; typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise::Result = absl::lts_20211102::Status; typename grpc_core::promise_detail::PromiseFactory<void, F>::Promise = grpc_core::promise_detail::PromiseLike<grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> > >; grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::Factory = grpc_core::promise_detail::PromiseFactory<void, grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> > >]'
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:362:19:   required from 'grpc_core::promise_detail::PromiseActivity<F, WakeupScheduler, OnDone, Contexts>::PromiseActivity(F, WakeupScheduler, OnDone, Contexts&& ...) [with F = grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::MaxAgeFilter::PostInit()::<lambda(absl::lts_20211102::Status)>; Contexts = {}]'
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:532:7:   required from 'grpc_core::ActivityPtr grpc_core::MakeActivity(Factory, WakeupScheduler, OnDone, Contexts&& ...) [with Factory = grpc_core::promise_detail::BasicSeq<grpc_core::promise_detail::TrySeqTraits, grpc_core::Sleep, grpc_core::MaxAgeFilter::PostInit()::<lambda()>, grpc_core::MaxAgeFilter::PostInit()::<lambda()> >; WakeupScheduler = grpc_core::ExecCtxWakeupScheduler; OnDone = grpc_core::MaxAgeFilter::PostInit()::<lambda(absl::lts_20211102::Status)>; Contexts = {}; grpc_core::ActivityPtr = std::unique_ptr<grpc_core::Activity, grpc_core::OrphanableDelete>]'
+external/com_github_grpc_grpc/src/core/ext/filters/channel_idle/channel_idle_filter.cc:155:39:   required from here
+external/com_github_grpc_grpc/src/core/lib/promise/activity.h:221:46: warning: parameter 'contexts' set but not used [-Wunused-but-set-parameter]
+  221 |     explicit ScopedContext(ActivityContexts* contexts)
+      |                            ~~~~~~~~~~~~~~~~~~^~~~~~~~
+INFO: From Compiling src/core/ext/filters/client_channel/lb_policy/weighted_target/weighted_target.cc [for tool]:
+external/com_github_grpc_grpc/src/core/ext/filters/client_channel/lb_policy/weighted_target/weighted_target.cc: In member function 'virtual grpc_core::RefCountedPtr<grpc_core::LoadBalancingPolicy::Config> grpc_core::{anonymous}::WeightedTargetLbFactory::ParseLoadBalancingConfig(const grpc_core::Json&, grpc_error**) const':
+external/com_github_grpc_grpc/src/core/ext/filters/client_channel/lb_policy/weighted_target/weighted_target.cc:81:10: warning: 'child_config.grpc_core::{anonymous}::WeightedTargetLbConfig::ChildConfig::weight' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   81 |   struct ChildConfig {
+      |          ^~~~~~~~~~~
+external/com_github_grpc_grpc/src/core/ext/filters/client_channel/lb_policy/weighted_target/weighted_target.cc:720:45: note: 'child_config.grpc_core::{anonymous}::WeightedTargetLbConfig::ChildConfig::weight' was declared here
+  720 |         WeightedTargetLbConfig::ChildConfig child_config;
+      |                                             ^~~~~~~~~~~~
+INFO: From Compiling src/main/protobuf/command_server.grpc.pb.cc [for tool]:
+In file included from bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/command_server.pb.h:34,
+                 from bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/command_server.grpc.pb.cc:5:
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:992:60: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+  992 | constexpr MemoryOptions_Code MemoryOptions_Code_Code_MAX = MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:8349:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE' is deprecated [-Wdeprecated-declarations]
+ 8349 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:985:3: note: declared here
+  985 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE PROTOBUF_DEPRECATED_ENUM = 1,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:8351:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+ 8351 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From Compiling src/main/cpp/blaze.cc [for tool]:
+In file included from bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/command_server.pb.h:34,
+                 from bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/command_server.grpc.pb.h:28,
+                 from src/main/cpp/blaze.cc:79:
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:992:60: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+  992 | constexpr MemoryOptions_Code MemoryOptions_Code_Code_MAX = MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:8349:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE' is deprecated [-Wdeprecated-declarations]
+ 8349 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:985:3: note: declared here
+  985 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_THRESHOLD_INVALID_VALUE PROTOBUF_DEPRECATED_ENUM = 1,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:8351:5: warning: 'failure_details::MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND' is deprecated [-Wdeprecated-declarations]
+ 8351 |     MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bazel-out/k8-opt-exec-EDC14992/bin/src/main/protobuf/failure_details.pb.h:986:3: note: declared here
+  986 |   MemoryOptions_Code_DEPRECATED_EXPERIMENTAL_OOM_MORE_EAGERLY_NO_TENURED_COLLECTORS_FOUND PROTOBUF_DEPRECATED_ENUM = 2,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+INFO: From Generating proto_library @googleapis//:google_bytestream_bytestream_proto [for tool]:
+google/bytestream/bytestream.proto:19:1: warning: Import google/api/annotations.proto is unused.
+INFO: From JavaGrpcGenSource external/googleapis/google_bytestream_bytestream_java_grpc_srcs.jar [for tool]:
+google/bytestream/bytestream.proto:19:1: warning: Import google/api/annotations.proto is unused.
+INFO: From Generating proto_library @googleapis//:google_api_auth_proto [for tool]:
+google/api/auth.proto:19:1: warning: Import google/api/annotations.proto is unused.
+INFO: From Executing genrule //scripts:bash_completion:
+WARNING: Invoking Bazel in batch mode since it is not invoked from within a workspace (below a directory having a WORKSPACE file).
+Extracting Bazel installation...
+OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
+Target //scripts:bazel-complete.bash up-to-date:
+  bazel-bin/scripts/bazel-complete.bash
+INFO: Elapsed time: 618.551s, Critical Path: 92.88s
+INFO: 2737 processes: 168 internal, 1780 linux-sandbox, 1 local, 788 worker.
+INFO: Build completed successfully, 2737 total actions
+[ec2-user@ip-172-31-24-241 test]$ bazel build //scripts:bazel-complete.bash^C
+[ec2-user@ip-172-31-24-241 test]$ pushd ~/scripts/
+~/scripts ~/bazel/src/test
+[ec2-user@ip-172-31-24-241 scripts]$ !v
+vim bazel-build.sh
+[ec2-user@ip-172-31-24-241 scripts]$ vim ec2/various-tools/bazel-build.sh
+[ec2-user@ip-172-31-24-241 scripts]$ cd ~/bazel
+[ec2-user@ip-172-31-24-241 bazel]$ find . -name test*
+./examples/java-native/src/test
+./examples/java-starlark/src/test
+./examples/py_native/test.py
+./examples/shell/data/test_file.txt
+./examples/shell/test.sh
+./scripts/docs/testdata
+./scripts/packages/chocolatey/test.ps1
+./scripts/testenv.sh
+./site/en/images/test.png
+./site/en/reference/test-encyclopedia.md
+./site/en/rules/testing.md
+./src/java_tools/import_deps_checker/javatests/com/google/devtools/build/importdeps/testdata
+./src/java_tools/import_deps_checker/javatests/com/google/devtools/build/importdeps/testdata/library_no_members/com/google/devtools/build/importdeps/testdata
+./src/java_tools/import_deps_checker/javatests/com/google/devtools/build/importdeps/tests.bzl
+./src/java_tools/junitrunner/java/com/google/testing
+./src/java_tools/junitrunner/java/com/google/testing/junit/runner/sharding/testing
+./src/java_tools/junitrunner/javatests/com/google/testing
+./src/java_tools/junitrunner/javatests/com/google/testing/junit/runner/testbed
+./src/main/java/com/google/devtools/build/docgen/templates/attributes/common/testonly.html
+./src/main/java/com/google/devtools/build/docgen/templates/attributes/test
+./src/main/java/com/google/devtools/build/lib/analysis/test
+./src/main/java/com/google/devtools/build/lib/rules/android/test_suite_property_name.txt
+./src/main/java/com/google/devtools/build/lib/rules/test
+./src/main/java/com/google/devtools/build/lib/runtime/commands/test.txt
+./src/main/java/com/google/devtools/build/lib/skyframe/serialization/testutils
+./src/main/java/com/google/devtools/build/lib/starlarkbuildapi/test
+./src/main/java/com/google/devtools/build/lib/testing
+./src/main/java/com/google/devtools/common/options/testing
+./src/main/protobuf/test_status.proto
+./src/main/starlark/tests
+./src/main/starlark/tests/builtins_bzl/cc/cc_shared_library/test_cc_shared_library
+./src/main/starlark/tests/builtins_bzl/cc/cc_shared_library/test_cc_shared_library/testenv.sh
+./src/main/starlark/tests/builtins_bzl/cc/cc_shared_library/test_cc_shared_library2
+./src/main/starlark/tests/builtins_bzl/cc/cc_shared_library/test_cc_shared_library3
+./src/test
+./src/test/cpp/test_util.cc
+./src/test/cpp/test_util.h
+./src/test/cpp/util/test_util.h
+./src/test/java/com/google/devtools/build/android/dexer/test_main_dex_list.txt
+./src/test/java/com/google/devtools/build/android/dexer/testdata
+./src/test/java/com/google/devtools/build/android/dexer/testresource.txt
+./src/test/java/com/google/devtools/build/android/r8/testdata
+./src/test/java/com/google/devtools/build/android/testing
+./src/test/java/com/google/devtools/build/docgen/testutil
+./src/test/java/com/google/devtools/build/lib/analysis/test
+./src/test/java/com/google/devtools/build/lib/analysis/testing
+./src/test/java/com/google/devtools/build/lib/authandtls/credentialhelper/test_credential_helper.py
+./src/test/java/com/google/devtools/build/lib/bazel/repository/test_decompress_archive.tar.gz
+./src/test/java/com/google/devtools/build/lib/bazel/repository/test_decompress_archive.zip
+./src/test/java/com/google/devtools/build/lib/bazel/repository/test_files.ar
+./src/test/java/com/google/devtools/build/lib/blackbox/tests
+./src/test/java/com/google/devtools/build/lib/query2/testutil
+./src/test/java/com/google/devtools/build/lib/rules/test
+./src/test/java/com/google/devtools/build/lib/testing
+./src/test/java/com/google/devtools/build/lib/testutil
+./src/test/java/com/google/devtools/build/skydoc/test_templates
+./src/test/java/com/google/devtools/build/skydoc/testdata
+./src/test/java/com/google/devtools/common/options/testing
+./src/test/java/net/starlark/java/annot/processor/testsources
+./src/test/java/net/starlark/java/eval/testdata
+./src/test/py/bazel/bzlmod/test_utils.py
+./src/test/py/bazel/test_base.py
+./src/test/py/bazel/test_wrapper_test.py
+./src/test/py/bazel/testdata
+./src/test/shell/bazel/android/testdata
+./src/test/shell/bazel/testdata
+./src/test/shell/bazel/testing_server.py
+./src/test/shell/integration/test_test.sh
+./src/test/shell/testenv.sh.tmpl
+./src/test/testdata
+./src/test/testdata/test_tls_certificate
+./src/tools/execlog/test
+./src/tools/remote/src/test
+./src/tools/singlejar/test_util.cc
+./src/tools/singlejar/test_util.h
+./src/tools/workspacelog/test
+./third_party/ijar/test
+./third_party/ijar/test/testenv.sh
+./third_party/py/abseil/absl/testing
+./third_party/py/mock/tests
+./third_party/py/mock/tests/testcallable.py
+./third_party/py/mock/tests/testhelpers.py
+./third_party/py/mock/tests/testmagicmethods.py
+./third_party/py/mock/tests/testmock.py
+./third_party/py/mock/tests/testpatch.py
+./third_party/py/mock/tests/testsentinel.py
+./third_party/py/mock/tests/testwith.py
+./third_party/py/six/test_six.py
+./third_party/zlib/contrib/ada/test.adb
+./third_party/zlib/contrib/blast/test.pk
+./third_party/zlib/contrib/blast/test.txt
+./third_party/zlib/contrib/iostream/test.cpp
+./third_party/zlib/contrib/iostream3/test.cc
+./third_party/zlib/contrib/testzlib
+./third_party/zlib/contrib/testzlib/testzlib.c
+./third_party/zlib/contrib/testzlib/testzlib.txt
+./third_party/zlib/contrib/vstudio/vc10/testzlib.vcxproj
+./third_party/zlib/contrib/vstudio/vc10/testzlib.vcxproj.filters
+./third_party/zlib/contrib/vstudio/vc10/testzlibdll.vcxproj
+./third_party/zlib/contrib/vstudio/vc10/testzlibdll.vcxproj.filters
+./third_party/zlib/contrib/vstudio/vc11/testzlib.vcxproj
+./third_party/zlib/contrib/vstudio/vc11/testzlibdll.vcxproj
+./third_party/zlib/contrib/vstudio/vc12/testzlib.vcxproj
+./third_party/zlib/contrib/vstudio/vc12/testzlibdll.vcxproj
+./third_party/zlib/contrib/vstudio/vc14/testzlib.vcxproj
+./third_party/zlib/contrib/vstudio/vc14/testzlibdll.vcxproj
+./third_party/zlib/contrib/vstudio/vc9/testzlib.vcproj
+./third_party/zlib/contrib/vstudio/vc9/testzlibdll.vcproj
+./third_party/zlib/test
+./tools/build_defs/cc/tests
+./tools/build_defs/pkg/testdata
+./tools/build_defs/pkg/testenv.sh
+./tools/build_rules/test_rules.bzl
+./tools/build_rules/test_rules_private.bzl
+./tools/build_rules/test_rules_test.py
+./tools/cpp/test_data
+./tools/java/runfiles/testing
+./tools/test
+./tools/test/test-setup.sh
+[ec2-user@ip-172-31-24-241 bazel]$ cd src/test/
+[ec2-user@ip-172-31-24-241 test]$ ls
+cpp  gen  java  native  py  res  shell  testdata  tools
+[ec2-user@ip-172-31-24-241 test]$ bazel test
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 test targets...
+INFO: Elapsed time: 0.212s, Critical Path: 0.01s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+ERROR: No test targets were found, yet testing was requested
+[ec2-user@ip-172-31-24-241 test]$ cd ..
+[ec2-user@ip-172-31-24-241 src]$ cd  ..
+[ec2-user@ip-172-31-24-241 bazel]$ less examples/shell/test.sh
+[ec2-user@ip-172-31-24-241 bazel]$ bazel test
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 test targets...
+INFO: Elapsed time: 0.139s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+ERROR: No test targets were found, yet testing was requested
+[ec2-user@ip-172-31-24-241 bazel]$ cd src
+[ec2-user@ip-172-31-24-241 src]$ !b
+bazel test
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 test targets...
+INFO: Elapsed time: 0.124s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+ERROR: No test targets were found, yet testing was requested
+[ec2-user@ip-172-31-24-241 src]$ ls
+BUILD         combine_derived_java_srcs.sh  create_embedded_tools_lib.py  java_tools            merge_zip_files.sh  release_archive.bzl  tools                     zip_builtins.sh
+BUILD.tools   conditions                    create_java_tools_release.sh  jdeps_modules.golden  minimize_jdk.sh     rule_size_test.bzl   upload_all_java_tools.sh  zip_files.sh
+MODULE.tools  create_embedded_tools.py      embedded_tools.bzl            main                  package-bazel.sh    test                 upload_java_tools.sh
+[ec2-user@ip-172-31-24-241 src]$ cd ..
+[ec2-user@ip-172-31-24-241 bazel]$ ls
+AUTHORS       CODEOWNERS          CONTRIBUTORS  README.md    WORKSPACE.bzlmod  bazel-out             combine_distfiles_to_tar.sh  distdir_deps.bzl    scripts  third_party
+BUILD         CODE_OF_CONDUCT.md  LICENSE       SECURITY.md  bazel-bazel       bazel-testlogs        compile.sh                   examples            site     tools
+CHANGELOG.md  CONTRIBUTING.md     MODULE.bazel  WORKSPACE    bazel-bin         combine_distfiles.py  distdir.bzl                  maven_install.json  src
+[ec2-user@ip-172-31-24-241 bazel]$ cd src
+[ec2-user@ip-172-31-24-241 src]$ ls
+BUILD         combine_derived_java_srcs.sh  create_embedded_tools_lib.py  java_tools            merge_zip_files.sh  release_archive.bzl  tools                     zip_builtins.sh
+BUILD.tools   conditions                    create_java_tools_release.sh  jdeps_modules.golden  minimize_jdk.sh     rule_size_test.bzl   upload_all_java_tools.sh  zip_files.sh
+MODULE.tools  create_embedded_tools.py      embedded_tools.bzl            main                  package-bazel.sh    test                 upload_java_tools.sh
+[ec2-user@ip-172-31-24-241 src]$ cd tools
+[ec2-user@ip-172-31-24-241 tools]$ !b
+bazel test
+INFO: Analyzed 0 targets (0 packages loaded, 0 targets configured).
+INFO: Found 0 test targets...
+INFO: Elapsed time: 0.152s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+ERROR: No test targets were found, yet testing was requested
+[ec2-user@ip-172-31-24-241 tools]$ cd ..
+[ec2-user@ip-172-31-24-241 src]$ cd ..
+[ec2-user@ip-172-31-24-241 bazel]$ less README.md
+[ec2-user@ip-172-31-24-241 bazel]$
+[ec2-user@ip-172-31-24-241 bazel]$
+[ec2-user@ip-172-31-24-241 bazel]$ cd ~/scripts/
+[ec2-user@ip-172-31-24-241 scripts]$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   ec2/various-tools/bazel-build.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ec2/various-tools/temp-build-tee.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ec2-user@ip-172-31-24-241 scripts]$ mv ~/017-bazel-build-output.txt output/
+[ec2-user@ip-172-31-24-241 scripts]$ git commit -am"Bazel 017 - compiled on xlarge; where tests?"
+[main 4ccb320] Bazel 017 - compiled on xlarge; where tests?
+ 2 files changed, 30 insertions(+), 61 deletions(-)
+[ec2-user@ip-172-31-24-241 scripts]$ git pull
+Already up to date.
+[ec2-user@ip-172-31-24-241 scripts]$ git push
+Username for 'https://github.com': reed9999
+Password for 'https://reed9999@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/reed9999/build-various-things.git/'
+[ec2-user@ip-172-31-24-241 scripts]$ git push
+Username for 'https://github.com': reed9999
+Password for 'https://reed9999@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/reed9999/build-various-things.git/'
+[ec2-user@ip-172-31-24-241 scripts]$ git push
+Username for 'https://github.com': reed9999
+Password for 'https://reed9999@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/reed9999/build-various-things.git/'
+[ec2-user@ip-172-31-24-241 scripts]$ git push
+Username for 'https://github.com': reed9999
+Password for 'https://reed9999@github.com':
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.17 KiB | 1.17 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/reed9999/build-various-things.git
+   5811866..4ccb320  main -> main
+[ec2-user@ip-172-31-24-241 scripts]$ exit
+logout
+Connection to ec2-18-118-167-38.us-east-2.compute.amazonaws.com closed.
+
+phili@LAPTOP-V13NUT8E MINGW64 ~/.aws
+$
+
+
