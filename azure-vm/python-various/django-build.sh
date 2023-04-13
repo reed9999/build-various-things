@@ -6,8 +6,10 @@
 
 pushd ~/django
 sudo apt install python3.11-venv
+rm -rf ~/.virtualenvs/djangodev
 python3.11 -m venv ~/.virtualenvs/djangodev
-source ~/.virtualenvs/djangodev/bin/activate
+    python3 -m pip install --editable .
+    python3 -m pip install tblib		# Without this, the test suite might crash on a failure.
     python3 -m pip install --editable .
 
     pushd tests

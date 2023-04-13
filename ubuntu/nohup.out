@@ -1,0 +1,14 @@
+./perf-test-python-and-various.sh: 2: pushd: not found
+
+~~ begin various setup ~~ Thu Apr 13 20:37:18 UTC 2023
+./perf-test-python-and-various.sh: 7: ubuntu/python-various/setup.sh: not found
+
+
+~~ begin django build ~~ Thu Apr 13 20:37:18 UTC 2023
+
+./perf-test-python-and-various.sh: 13: ubuntu/python-various/django-build.sh: not found
+
+~~ begin pytest build ~~ Thu Apr 13 20:37:18 UTC 2023
+
+./perf-test-python-and-various.sh: 18: ubuntu/python-various/pytest-build.sh: not found
+./perf-test-python-and-various.sh: 33: popd: not found
