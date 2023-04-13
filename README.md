@@ -46,10 +46,24 @@ when I found it on a list of welcoming open source projects,
 
 
 
+### Pytest
+Often the tox suite reports these three failures somewhere along the way:
+```text
+========================================== short test summary info ===========================================
+FAILED testing/test_config.py::TestDebugOptions::test_debug_help - Failed: nomatch: '*Store internal tracing debug information in this log*'
+FAILED testing/test_helpconfig.py::test_help - Failed: nomatch: '  -m MARKEXPR           Only run tests matching given mark expression. For'
+FAILED testing/test_stepwise.py::test_sw_skip_help - Failed: nomatch: '*Implicitly enables --stepwise.'
+===================== 3 failed, 3309 passed, 97 skipped, 11 xfailed in 139.17s (0:02:19) ========
+```
+
+However, there is a watched-pot phenomenon where I seem not to catch this when tee-ing to a log file.
+One case where I can reproduce is running tox on my local WSL2 from the pytestdev venv.
+
+So far any attempts at `pytest -k conf` have failed, making me even more curious what tox is doing
+differently.
 
 
-
-### Build warnings
+#### Earlier build warnings
 
 This sounds inauspicious, from pytest I believe.
 ```
