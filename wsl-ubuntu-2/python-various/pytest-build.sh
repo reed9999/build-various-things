@@ -3,6 +3,7 @@ echo "pytest-build start time $(date)"
 
 pushd ~/pytest
 sudo apt install python3.8-venv
+rm -rf ~/.virtualenvs/pytestdev
 python3 -m venv ~/.virtualenvs/pytestdev
 source ~/.virtualenvs/pytestdev/bin/activate
 python3 -m pip install --editable .
