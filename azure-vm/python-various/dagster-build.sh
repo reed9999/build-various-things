@@ -1,10 +1,13 @@
 # On Ubuntu ec2, not Azure
 # Remember I also have a Mac version of this on my work Mac.
 pushd ~
+sudo apt install -y python3.10-venv
 sudo apt install -y python3-pip
+
 python3 -m venv ~/.virtualenvs/dagsterdev
 
 source ~/.virtualenvs/dagsterdev/bin/activate
+echo "post-activate. which python? $(which python3)"
 
     echo "Is node installed? $(node -v)"
     sudo apt install yarn
@@ -14,9 +17,13 @@ source ~/.virtualenvs/dagsterdev/bin/activate
         pushd dagster
         echo "after push to dagster pwd is $(pwd)"
         python3 -m pip install --editable .
+	echo "just before make, our python lives at $(which python3)"
+	echo "just before make, $(date)"
         make dev_install
+	echo "just after make, $(date)"
 
         python3 -m pytest python_modules/dagster/dagster_tests
+	echo "just after pytest, $(date)"
 
         popd
 deactivate

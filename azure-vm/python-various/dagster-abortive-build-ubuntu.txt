@@ -1,0 +1,59 @@
+2023-04-18
+Results from an abortive run of Dagster on an Ubuntu m5.large
+
+Previously I thought I got the snags worked out -- it does build and 
+test if the venv is loaded correctly (meaning "my" venv, not necessarily
+their suggested virtualenv setup). However now it's broken again so I will 
+need to find what's wrong.
+
+Meanwhile on my local WSL the tests always stall at about 70%. 
+
+
+
+#### 
+
+
+scripts/ubuntu/python-various/dagster-build.sh: 3: pushd: not found
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3.10-venv is already the newest version (3.10.6-1~22.04.2ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 27 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-pip is already the newest version (22.0.2+dfsg-1ubuntu0.2).
+0 upgraded, 0 newly installed, 0 to remove and 27 not upgraded.
+scripts/ubuntu/python-various/dagster-build.sh: 9: source: not found
+post-activate. which python? /usr/bin/python3
+scripts/ubuntu/python-various/dagster-build.sh: 12: node: not found
+Is node installed? 
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+cmdtest is already the newest version (0.32.14.gcdfe14e-2).
+0 upgraded, 0 newly installed, 0 to remove and 27 not upgraded.
+fatal: destination path 'dagster' already exists and is not an empty directory.
+scripts/ubuntu/python-various/dagster-build.sh: 17: pushd: not found
+after push to dagster pwd is /home/ubuntu
+Defaulting to user installation because normal site-packages is not writeable
+Obtaining file:///home/ubuntu
+ERROR: file:///home/ubuntu does not appear to be a Python project: neither 'setup.py' nor 'pyproject.toml' found.
+just before make, our python lives at /usr/bin/python3
+just before make, Tue Apr 18 23:59:27 UTC 2023
+make: *** No rule to make target 'dev_install'.  Stop.
+just after make, Tue Apr 18 23:59:27 UTC 2023
+/usr/bin/python3: No module named pytest
+just after pytest, Tue Apr 18 23:59:27 UTC 2023
+scripts/ubuntu/python-various/dagster-build.sh: 28: popd: not found
+scripts/ubuntu/python-various/dagster-build.sh: 29: deactivate: not found
+scripts/ubuntu/python-various/dagster-build.sh: 30: popd: not found
