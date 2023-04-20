@@ -3002,4 +3002,6 @@ python_modules/dagster/dagster_tests/storage_tests/test_defensive_row_unpack.py 
 .....                                                                    [ 87%]
 python_modules/dagster/dagster_tests/storage_tests/test_event_log.py ... [ 87%]
 ...........................s....s.s..................................... [ 88%]
-...........
+..........................s.s..s..................ssss.................. [ 89%]
+..........................s.ss.s........................................ [ 91%]
+...ss..............s...s.s..s........
