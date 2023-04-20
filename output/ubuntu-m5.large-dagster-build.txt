@@ -3004,4 +3004,63 @@ python_modules/dagster/dagster_tests/storage_tests/test_event_log.py ... [ 87%]
 ...........................s....s.s..................................... [ 88%]
 ..........................s.s..s..................ssss.................. [ 89%]
 ..........................s.ss.s........................................ [ 91%]
-...ss..............s...s.s..s........
+...ss..............s...s.s..s..................ssss.ss........           [ 92%]
+python_modules/dagster/dagster_tests/storage_tests/test_fs_io_manager.py . [ 92%]
+.............                                                            [ 92%]
+python_modules/dagster/dagster_tests/storage_tests/test_input_manager.py . [ 92%]
+.......................                                                  [ 93%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_manager.py .. [ 93%]
+..............................                                           [ 93%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_manager_composites.py . [ 93%]
+.....                                                                    [ 93%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_manager_multiprocess.py . [ 94%]
+                                                                         [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_managers_pythonic_config.py . [ 94%]
+...                                                                      [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_managers_with_graphs.py . [ 94%]
+.....                                                                    [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_job_run.py ....  [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_local_file_manager.py . [ 94%]
+..                                                                       [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_local_instance.py . [ 94%]
+.........                                                                [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_memoizable_io_manager.py . [ 94%]
+..                                                                       [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_partition_status_cache.py . [ 94%]
+...........                                                              [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_pipeline_run.py . [ 94%]
+...                                                                      [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_polling_event_watcher.py . [ 94%]
+                                                                         [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_run_storage.py . [ 94%]
+........................................................................ [ 96%]
+..........ss.....s........ss................sss....s..ss................ [ 97%]
+............................                                             [ 98%]
+python_modules/dagster/dagster_tests/storage_tests/test_schedule_storage.py . [ 98%]
+............................................................             [ 99%]
+python_modules/dagster/dagster_tests/storage_tests/test_schema_compat.py . [ 99%]
+                                                                         [ 99%]
+python_modules/dagster/dagster_tests/storage_tests/test_upath_io_manager.py . [ 99%]
+..................                                                       [ 99%]
+python_modules/dagster/dagster_tests/storage_tests/branching_io_manager_tests/test_branching_io_manager.py . [ 99%]
+...                                                                      [ 99%]
+python_modules/dagster/dagster_tests/storage_tests/branching_io_manager_tests/test_partitioned_branching_io_manager.py . [ 99%]
+.                                                                        [100%]
+
+=============================== warnings summary ===============================
+python_modules/dagster/dagster_tests/core_tests/test_op_invocation.py::test_dynamic_output_async_non_gen
+  /home/ubuntu/dagster/python_modules/dagster/dagster_tests/core_tests/test_op_invocation.py:951: RuntimeWarning: coroutine '_type_check_output_wrapper.<locals>.type_check_coroutine' was never awaited
+    with pytest.raises(Exception):
+
+python_modules/dagster/dagster_tests/storage_tests/test_run_storage.py: 24 warnings
+  /home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/runs/sql_run_storage.py:233: SAWarning: implicitly coercing SELECT object to scalar subquery; please use the .scalar_subquery() method to produce a scalar subquery.
+    query = query.where(RunsTable.c.id < cursor_query)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= SnapshotTest summary =============================
+31 snapshots passed.
+4 snapshots deprecated in 1 test suites. Inspect your code or run with `pytest --snapshot-update` to update them.
+=== 5078 passed, 46 skipped, 4 deselected, 25 warnings in 4019.54s (1:06:59) ===
+just after pytest, Thu Apr 20 18:54:32 UTC 2023
+/home/ubuntu/scripts/ubuntu/python-various/dagster-build.sh: line 39: popd: directory stack empty
+/home/ubuntu/scripts/ubuntu/python-various/dagster-build.sh: line 41: popd: directory stack empty
