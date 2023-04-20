@@ -1,0 +1,708 @@
+python-various/tox.sh: 1: pushd: not found
+Cloning into 'tox'...
+dev: install_deps> python -I -m pip install 'gitpython>=3.1.31' 'packaging>=23' 'towncrier>=22.12'
+.pkg: install_requires> python -I -m pip install 'hatch-vcs>=0.3' 'hatchling>=1.14'
+.pkg: _optional_hooks> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: get_requires_for_build_editable> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: get_requires_for_build_wheel> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: build_editable> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+dev: install_package_deps> python -I -m pip install 'build[virtualenv]>=0.10' 'cachetools>=5.3' 'chardet>=5.1' 'colorama>=0.4.6' 'covdefaults>=2.3' 'devpi-process>=0.3' 'diff-cover>=7.5' 'distlib>=0.3.6' 'filelock>=3.11' 'flaky>=3.7' 'furo>=2023.3.27' 'hatch-vcs>=0.3' 'hatchling>=1.14' 'importlib-metadata>=6.2; python_version < "3.8"' 'packaging>=23' 'platformdirs>=3.2' 'pluggy>=1' 'psutil>=5.9.4' 'pyproject-api>=1.5.1' 'pytest-cov>=4' 'pytest-mock>=3.10' 'pytest-xdist>=3.2.1' 'pytest>=7.2.2' 're-assert>=1.1' 'sphinx-argparse-cli>=1.11' 'sphinx-autodoc-typehints!=1.23.4,>=1.22' 'sphinx-copybutton>=0.5.1' 'sphinx-inline-tabs>=2022.1.2b11' 'sphinx>=6.1.3' 'sphinxcontrib-towncrier>=0.2.1a0' 'time-machine>=2.9; implementation_name != "pypy"' 'tomli>=2.0.1; python_version < "3.11"' 'towncrier>=22.12' 'typing-extensions>=4.5; python_version < "3.8"' 'virtualenv>=20.21' 'wheel>=0.40'
+dev: install_package> python -I -m pip install --force-reinstall --no-deps /home/philip/scripts/wsl-ubuntu-2/tox/.tox/.tmp/package/1/tox-4.4.12-py3-none-any.whl
+dev: commands[0]> python -m pip list --format=columns
+Package                       Version
+----------------------------- -----------
+aiohttp                       3.8.4
+aiosignal                     1.3.1
+alabaster                     0.7.13
+argon2-cffi                   21.3.0
+argon2-cffi-bindings          21.2.0
+async-timeout                 4.0.2
+attrs                         22.2.0
+Babel                         2.12.1
+beautifulsoup4                4.12.2
+build                         0.10.0
+cachetools                    5.3.0
+certifi                       2022.12.7
+cffi                          1.15.1
+chardet                       5.1.0
+charset-normalizer            3.1.0
+check-manifest                0.49
+click                         8.1.3
+click-default-group           1.2.2
+colorama                      0.4.6
+covdefaults                   2.3.0
+coverage                      7.2.3
+defusedxml                    0.7.1
+devpi-client                  6.0.4
+devpi-common                  3.7.0
+devpi-process                 0.3.0
+devpi-server                  6.8.0
+diff-cover                    7.5.0
+distlib                       0.3.6
+docutils                      0.19
+editables                     0.3
+exceptiongroup                1.1.1
+execnet                       1.9.0
+filelock                      3.11.0
+flaky                         3.7.0
+frozenlist                    1.3.3
+furo                          2023.3.27
+gitdb                         4.0.10
+GitPython                     3.1.31
+hatch-vcs                     0.3.0
+hatchling                     1.14.0
+hupper                        1.12
+idna                          3.4
+imagesize                     1.4.1
+importlib-metadata            6.3.0
+incremental                   22.10.0
+iniconfig                     2.0.0
+itsdangerous                  2.1.2
+Jinja2                        3.1.2
+lazy                          1.5
+MarkupSafe                    2.1.2
+multidict                     6.0.4
+packaging                     23.1
+passlib                       1.7.4
+PasteDeploy                   3.0.1
+pathspec                      0.11.1
+pep517                        0.13.0
+pip                           23.0.1
+pkginfo                       1.9.6
+plaster                       1.1.2
+plaster-pastedeploy           1.0.1
+platformdirs                  3.2.0
+pluggy                        1.0.0
+psutil                        5.9.4
+py                            1.11.0
+pycparser                     2.21
+Pygments                      2.15.0
+pyproject_api                 1.5.1
+pyproject_hooks               1.0.0
+pyramid                       2.0.1
+pytest                        7.3.0
+pytest-cov                    4.0.0
+pytest-mock                   3.10.0
+pytest-xdist                  3.2.1
+python-dateutil               2.8.2
+pytz                          2023.3
+re-assert                     1.1.0
+regex                         2023.3.23
+repoze.lru                    0.7
+requests                      2.28.2
+ruamel.yaml                   0.17.21
+ruamel.yaml.clib              0.2.7
+setuptools                    67.6.1
+setuptools-scm                7.1.0
+six                           1.16.0
+smmap                         5.0.0
+snowballstemmer               2.2.0
+soupsieve                     2.4
+Sphinx                        6.1.3
+sphinx_argparse_cli           1.11.0
+sphinx-autodoc-typehints      1.23.0
+sphinx-basic-ng               1.0.0b1
+sphinx-copybutton             0.5.1
+sphinx_inline_tabs            2022.1.2b11
+sphinxcontrib-applehelp       1.0.4
+sphinxcontrib-devhelp         1.0.2
+sphinxcontrib-htmlhelp        2.0.1
+sphinxcontrib-jsmath          1.0.1
+sphinxcontrib-qthelp          1.0.3
+sphinxcontrib-serializinghtml 1.1.5
+sphinxcontrib-towncrier       0.3.2a0
+strictyaml                    1.7.3
+time-machine                  2.9.0
+tomli                         2.0.1
+towncrier                     22.12.0
+tox                           4.4.12
+translationstring             1.4
+trove-classifiers             2023.3.9
+typing_extensions             4.5.0
+urllib3                       1.26.15
+venusian                      3.0.0
+virtualenv                    20.21.0
+waitress                      2.1.2
+WebOb                         1.8.7
+wheel                         0.40.0
+yarl                          1.8.2
+zipp                          3.15.0
+zope.deprecation              5.0
+zope.interface                6.0
+dev: commands[1]> python -c 'print(r'"'"'/home/philip/scripts/wsl-ubuntu-2/tox/.tox/dev/bin/python'"'"')'
+/home/philip/scripts/wsl-ubuntu-2/tox/.tox/dev/bin/python
+.pkg: _exit> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+  dev: OK (26.31=setup[25.86]+cmd[0.43,0.03] seconds)
+  congratulations :) (26.37 seconds)
+fix: install_deps> python -I -m pip install 'pre-commit>=3.2.2'
+fix: commands[0]> pre-commit run --all-files --show-diff-on-failure
+check python ast.........................................................Passed
+check builtin type constructor use.......................................Passed
+check docstring is first.................................................Passed
+check for merge conflicts................................................Passed
+check yaml...............................................................Passed
+check toml...............................................................Passed
+debug statements (python)................................................Passed
+fix end of files.........................................................Passed
+trim trailing whitespace.................................................Passed
+Add trailing commas......................................................Passed
+pyupgrade................................................................Passed
+pyupgrade................................................................Passed
+isort....................................................................Passed
+black....................................................................Passed
+blacken-docs.............................................................Passed
+rst ``code`` is two backticks............................................Passed
+tox-ini-fmt..............................................................Passed
+flake8...................................................................Passed
+prettier.................................................................Passed
+markdownlint.............................................................Failed
+- hook id: markdownlint
+- exit code: 1
+
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'node:fs'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/philip/.cache/pre-commit/repo4v99mkri/node_env-system/lib/node_modules/markdownlint-cli/markdownlint.js:5:12)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'node:fs'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (/home/philip/.cache/pre-commit/repo4v99mkri/node_env-system/lib/node_modules/markdownlint-cli/markdownlint.js:5:12)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+
+changelog filenames..................................(no files to check)Skipped
+Check hooks apply to the repository......................................Passed
+Check for useless excludes...............................................Passed
+fix: exit 1 (10.83 seconds) /home/philip/scripts/wsl-ubuntu-2/tox> pre-commit run --all-files --show-diff-on-failure pid=14220
+fix: FAIL ✖ in 13.81 seconds
+.pkg: _optional_hooks> python /home/philip/scripts/wsl-ubuntu-2/tox/.tox/dev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: get_requires_for_build_editable> python /home/philip/scripts/wsl-ubuntu-2/tox/.tox/dev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: get_requires_for_build_wheel> python /home/philip/scripts/wsl-ubuntu-2/tox/.tox/dev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: build_wheel> python /home/philip/scripts/wsl-ubuntu-2/tox/.tox/dev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+py311: install_package_deps> python -I -m pip install 'build[virtualenv]>=0.10' 'cachetools>=5.3' 'chardet>=5.1' 'colorama>=0.4.6' 'covdefaults>=2.3' 'devpi-process>=0.3' 'diff-cover>=7.5' 'distlib>=0.3.6' 'filelock>=3.11' 'flaky>=3.7' 'hatch-vcs>=0.3' 'hatchling>=1.14' 'importlib-metadata>=6.2; python_version < "3.8"' 'packaging>=23' 'platformdirs>=3.2' 'pluggy>=1' 'psutil>=5.9.4' 'pyproject-api>=1.5.1' 'pytest-cov>=4' 'pytest-mock>=3.10' 'pytest-xdist>=3.2.1' 'pytest>=7.2.2' 're-assert>=1.1' 'time-machine>=2.9; implementation_name != "pypy"' 'tomli>=2.0.1; python_version < "3.11"' 'typing-extensions>=4.5; python_version < "3.8"' 'virtualenv>=20.21' 'wheel>=0.40'
+py311: install_package> python -I -m pip install --force-reinstall --no-deps /home/philip/scripts/wsl-ubuntu-2/tox/.tox/.tmp/package/2/tox-4.4.12-py3-none-any.whl
+py311: commands[0]> pytest --junitxml /home/philip/scripts/wsl-ubuntu-2/tox/.tox/junit.py311.xml --cov /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/lib/python3.11/site-packages/tox --cov /home/philip/scripts/wsl-ubuntu-2/tox/tests --cov-config=/home/philip/scripts/wsl-ubuntu-2/tox/pyproject.toml --no-cov-on-fail --cov-report term-missing:skip-covered --cov-context=test --cov-report html:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/tmp/htmlcov --cov-report xml:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.py311.xml -n=auto tests --durations 5 --run-integration
+============================= test session starts ==============================
+platform linux -- Python 3.11.3, pytest-7.3.0, pluggy-1.0.0
+cachedir: .tox/py311/.pytest_cache
+rootdir: /home/philip/scripts/wsl-ubuntu-2/tox
+configfile: pyproject.toml
+plugins: time-machine-2.9.0, devpi-server-6.8.0, mock-3.10.0, cov-4.0.0, flaky-3.7.0, xdist-3.2.1
+gw0 I / gw1 I / gw2 I / gw3 I
+gw0 [1629] / gw1 [1629] / gw2 [1629] / gw3 [1629]
+
+......................................................................... [  4%]
+........................................................................ [  8%]
+......................................................................... [ 13%]
+........................................................................ [ 17%]
+........................................................................ [ 22%]
+......................................................................... [ 26%]
+........................................................................ [ 31%]
+......................................................................... [ 35%]
+........................................................................... [ 40%]
+.......................................................................... [ 44%]
+........................................................................ [ 49%]
+........................................................................ [ 53%]
+......................................................................... [ 57%]
+........................................................................ [ 62%]
+........................................................................ [ 66%]
+........................................................................ [ 71%]
+........................................................................ [ 75%]
+........................................................................ [ 80%]
+........................................................................ [ 84%]
+........................................................................ [ 89%]
+.........F.............................................................. [ 93%]
+........................................................................ [ 97%]
+...................................                                      [100%]
+=================================== FAILURES ===================================
+__________________________ test_build_wheel_external ___________________________
+[gw1] linux -- Python 3.11.3 /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/bin/python
+
+tox_project = <function init_fixture.<locals>._init at 0x7f0ab7c1b9c0>
+demo_pkg_inline = PosixPath('/home/philip/scripts/wsl-ubuntu-2/tox/tests/demo_pkg_inline')
+
+    @pytest.mark.usefixtures("enable_pip_pypi_access")
+    def test_build_wheel_external(tox_project: ToxProjectCreator, demo_pkg_inline: Path) -> None:
+        ini = """
+        [testenv]
+        package = external
+        package_env = .ext
+        commands =
+            python -c 'from demo_pkg_inline import do; do()'
+    
+        [testenv:.ext]
+        deps = build
+        package_glob = {envtmpdir}{/}dist{/}*.whl
+        commands =
+            pyproject-build -w . -o {envtmpdir}{/}dist
+        """
+        project = tox_project({"tox.ini": ini})
+        result = project.run("r", "--root", str(demo_pkg_inline))
+    
+>       result.assert_success()
+
+demo_pkg_inline = PosixPath('/home/philip/scripts/wsl-ubuntu-2/tox/tests/demo_pkg_inline')
+ini        = "\n    [testenv]\n    package = external\n    package_env = .ext\n    commands =\n        python -c 'from demo_pkg_inl...   package_glob = {envtmpdir}{/}dist{/}*.whl\n    commands =\n        pyproject-build -w . -o {envtmpdir}{/}dist\n    "
+project    = ToxProject(path=/tmp/pytest-of-philip/pytest-19/popen-gw1/test_build_wheel_external0/p) at 139684005258768
+result     = code: 1
+cmd: /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/bin/python -m tox r --root /home/philip/scripts/wsl-ubun...failed with stopping as failed to build package
+  py: FAIL code 1 (1.65 seconds)
+  evaluation failed :( (1.67 seconds)
+
+tox_project = <function init_fixture.<locals>._init at 0x7f0ab7c1b9c0>
+
+tests/tox_env/python/virtual_env/package/test_package_cmd_builder.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = code: 1
+cmd: /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/bin/python -m tox r --root /home/philip/scripts/wsl-ubun...failed with stopping as failed to build package
+  py: FAIL code 1 (1.65 seconds)
+  evaluation failed :( (1.67 seconds)
+
+
+    def assert_success(self) -> None:
+>       assert self.success, repr(self)
+E       AssertionError: code: 1
+E         cmd: /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/bin/python -m tox r --root /home/philip/scripts/wsl-ubuntu-2/tox/tests/demo_pkg_inline
+E         cwd: /tmp/pytest-of-philip/pytest-19/popen-gw1/test_build_wheel_external0/p
+E         standard output
+E         .ext: install_requires /home/philip/scripts/wsl-ubuntu-2/tox/tests/demo_pkg_inline> python -I -m pip install build
+E         .ext: install_deps /home/philip/scripts/wsl-ubuntu-2/tox/tests/demo_pkg_inline> python -I -m pip install build
+E         .ext: commands[0] /home/philip/scripts/wsl-ubuntu-2/tox/tests/demo_pkg_inline> pyproject-build -w . -o /home/philip/scripts/wsl-ubuntu-2/tox/tests/demo_pkg_inline/.tox/.ext/tmp/dist
+E         * Creating venv isolated environment...
+E         ERROR Failed to create venv. Maybe try installing virtualenv.
+E           Command '/tmp/build-env-766jv3mi/bin/python3.11 -m ensurepip --upgrade --default-pip' failed with return code 1
+E           stdout:
+E             /tmp/build-env-766jv3mi/bin/python3.11: No module named ensurepip
+E         
+E         .ext: exit 1 (0.15 seconds) /home/philip/scripts/wsl-ubuntu-2/tox/tests/demo_pkg_inline> pyproject-build -w . -o /home/philip/scripts/wsl-ubuntu-2/tox/tests/demo_pkg_inline/.tox/.ext/tmp/dist pid=17862
+E         py: failed with stopping as failed to build package
+E           py: FAIL code 1 (1.65 seconds)
+E           evaluation failed :( (1.67 seconds)
+E         
+E       assert False
+E        +  where False = code: 1\ncmd: /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/bin/python -m tox r --root /home/philip/scripts/wsl-ubun...failed with stopping as failed to build package\n  py: FAIL code 1 (1.65 seconds)\n  evaluation failed :( (1.67 seconds)\n.success
+
+self       = code: 1
+cmd: /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/bin/python -m tox r --root /home/philip/scripts/wsl-ubun...failed with stopping as failed to build package
+  py: FAIL code 1 (1.65 seconds)
+  evaluation failed :( (1.67 seconds)
+
+
+.tox/py311/lib/python3.11/site-packages/tox/pytest.py:353: AssertionError
+=============================== warnings summary ===============================
+.tox/py311/lib/python3.11/site-packages/xdist/plugin.py:250
+.tox/py311/lib/python3.11/site-packages/xdist/plugin.py:250
+.tox/py311/lib/python3.11/site-packages/xdist/plugin.py:250
+.tox/py311/lib/python3.11/site-packages/xdist/plugin.py:250
+.tox/py311/lib/python3.11/site-packages/xdist/plugin.py:250
+  /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/lib/python3.11/site-packages/xdist/plugin.py:250: DeprecationWarning: The --rsyncdir command line argument and rsyncdirs config variable are deprecated.
+  The rsync feature will be removed in pytest-xdist 4.0.
+    config.issue_config_time_warning(warning, 2)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/philip/scripts/wsl-ubuntu-2/tox/.tox/junit.py311.xml -
+============================= slowest 5 durations ==============================
+130.81s setup    tests/tox_env/test_tox_env_runner.py::test_package_only
+123.75s setup    tests/session/cmd/test_sequential.py::test_rerun_sequential_skip
+107.13s setup    tests/tox_env/python/test_python_runner.py::test_extras_are_normalized[d_oc-d-oc]
+11.25s setup    tests/test_provision.py::test_provision_requires_ok
+7.07s call     tests/test_provision.py::test_provision_plugin_runner[testenv:a]
+=========================== short test summary info ============================
+FAILED tests/tox_env/python/virtual_env/package/test_package_cmd_builder.py::test_build_wheel_external
+============ 1 failed, 1628 passed, 5 warnings in 151.87s (0:02:31) ============
+py311: exit 1 (158.34 seconds) /home/philip/scripts/wsl-ubuntu-2/tox> pytest --junitxml /home/philip/scripts/wsl-ubuntu-2/tox/.tox/junit.py311.xml --cov /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/lib/python3.11/site-packages/tox --cov /home/philip/scripts/wsl-ubuntu-2/tox/tests --cov-config=/home/philip/scripts/wsl-ubuntu-2/tox/pyproject.toml --no-cov-on-fail --cov-report term-missing:skip-covered --cov-context=test --cov-report html:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/py311/tmp/htmlcov --cov-report xml:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.py311.xml -n=auto tests --durations 5 --run-integration pid=14671
+py311: FAIL ✖ in 2 minutes 56.01 seconds
+py310: skipped because could not find python interpreter with spec(s): py310
+py310: SKIP ⚠ in 0.3 seconds
+py39: skipped because could not find python interpreter with spec(s): py39
+py39: SKIP ⚠ in 0.25 seconds
+py38: install_package_deps> python -I -m pip install 'build[virtualenv]>=0.10' 'cachetools>=5.3' 'chardet>=5.1' 'colorama>=0.4.6' 'covdefaults>=2.3' 'devpi-process>=0.3' 'diff-cover>=7.5' 'distlib>=0.3.6' 'filelock>=3.11' 'flaky>=3.7' 'hatch-vcs>=0.3' 'hatchling>=1.14' 'importlib-metadata>=6.2; python_version < "3.8"' 'packaging>=23' 'platformdirs>=3.2' 'pluggy>=1' 'psutil>=5.9.4' 'pyproject-api>=1.5.1' 'pytest-cov>=4' 'pytest-mock>=3.10' 'pytest-xdist>=3.2.1' 'pytest>=7.2.2' 're-assert>=1.1' 'time-machine>=2.9; implementation_name != "pypy"' 'tomli>=2.0.1; python_version < "3.11"' 'typing-extensions>=4.5; python_version < "3.8"' 'virtualenv>=20.21' 'wheel>=0.40'
+py38: install_package> python -I -m pip install --force-reinstall --no-deps /home/philip/scripts/wsl-ubuntu-2/tox/.tox/.tmp/package/3/tox-4.4.12-py3-none-any.whl
+py38: commands[0]> pytest --junitxml /home/philip/scripts/wsl-ubuntu-2/tox/.tox/junit.py38.xml --cov /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py38/lib/python3.8/site-packages/tox --cov /home/philip/scripts/wsl-ubuntu-2/tox/tests --cov-config=/home/philip/scripts/wsl-ubuntu-2/tox/pyproject.toml --no-cov-on-fail --cov-report term-missing:skip-covered --cov-context=test --cov-report html:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/py38/tmp/htmlcov --cov-report xml:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.py38.xml -n=auto tests --durations 5 --run-integration
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.3.0, pluggy-1.0.0
+cachedir: .tox/py38/.pytest_cache
+rootdir: /home/philip/scripts/wsl-ubuntu-2/tox
+configfile: pyproject.toml
+plugins: time-machine-2.9.0, devpi-server-6.8.0, mock-3.10.0, cov-4.0.0, flaky-3.7.0, xdist-3.2.1
+gw0 I / gw1 I / gw2 I / gw3 I
+gw0 [1629] / gw1 [1629] / gw2 [1629] / gw3 [1629]
+
+........................................................................ [  4%]
+........................................................................ [  8%]
+........................................................................ [ 13%]
+......................................................................... [ 17%]
+........................................................................ [ 22%]
+........................................................................ [ 26%]
+......................................................................... [ 31%]
+......................................................................... [ 35%]
+......................................................................... [ 39%]
+........................................................................ [ 44%]
+.......................................................................... [ 48%]
+......................................................................... [ 53%]
+......................................................................... [ 57%]
+......................................................................... [ 62%]
+........................................................................ [ 66%]
+......................................................................... [ 71%]
+........................................................................ [ 75%]
+........................................................................ [ 80%]
+........................................................................ [ 84%]
+........................................................................ [ 89%]
+........................................................................ [ 93%]
+........................................................................ [ 97%]
+...................................                                      [100%]
+=============================== warnings summary ===============================
+.tox/py38/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/py38/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/py38/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/py38/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/py38/lib/python3.8/site-packages/xdist/plugin.py:250
+  /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py38/lib/python3.8/site-packages/xdist/plugin.py:250: DeprecationWarning: The --rsyncdir command line argument and rsyncdirs config variable are deprecated.
+  The rsync feature will be removed in pytest-xdist 4.0.
+    config.issue_config_time_warning(warning, 2)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/philip/scripts/wsl-ubuntu-2/tox/.tox/junit.py38.xml -
+
+---------- coverage: platform linux, python 3.8.10-final-0 -----------
+Name                                                      Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------------------------------
+src/tox/config/cli/parse.py                                  56      1      4      0    98%   88
+src/tox/config/cli/parser.py                                199      0     79      1    99%   113->exit
+src/tox/config/loader/ini/replace.py                        216      0    100      1    99%   291->293
+src/tox/config/source/api.py                                 51      0     12      1    98%   53->exit
+src/tox/config/source/discover.py                            57      1     24      2    96%   31->38, 39
+src/tox/execute/local_sub_process/__init__.py               171      2     44      1    99%   299, 305, 310->314
+src/tox/execute/pep517_backend.py                            70      1     10      1    98%   44
+src/tox/provision.py                                         76      0     18      1    99%   118->exit
+src/tox/session/cmd/devenv.py                                37      0      4      1    98%   45->47
+src/tox/session/cmd/legacy.py                                83      0     36      3    97%   127->129, 129->131, 131->125
+src/tox/session/env_select.py                               248      0    104      1    99%   360->363
+src/tox/tox_env/python/pip/pip_install.py                   154      0     70      1    99%   200->203
+src/tox/tox_env/python/pip/req/util.py                       35      0     12      1    98%   40->35
+src/tox/tox_env/python/pip/req_file.py                       84      1     40      1    98%   44
+src/tox/tox_env/python/virtual_env/api.py                   100      0     16      1    99%   120->122
+src/tox/tox_env/python/virtual_env/package/pyproject.py     260      1     82      1    99%   281
+src/tox/tox_env/python/virtual_env/package/util.py           53      0     24      1    99%   31->25
+src/tox/util/file_view.py                                    28      3      8      2    86%   25->31, 29-30, 32
+tests/config/cli/test_cli_ini.py                             86      0      2      1    99%   227->231
+tests/conftest.py                                            95      1      8      1    98%   46
+tests/demo_pkg_inline/build.py                               34      3     10      1    82%   96-98
+tests/execute/local_subprocess/test_local_subprocess.py     248      2     16      0    99%   272-273
+tests/session/cmd/test_legacy.py                             83      0      8      1    99%   127->126
+-----------------------------------------------------------------------------------------------------
+TOTAL                                                     10947     16   2309     25    99%
+
+183 files skipped due to complete coverage.
+Coverage HTML written to dir /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py38/tmp/htmlcov
+Coverage XML written to file /home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.py38.xml
+
+Required test coverage of 88.0% reached. Total coverage: 99.66%
+============================= slowest 5 durations ==============================
+165.60s setup    tests/tox_env/test_tox_env_runner.py::test_package_only
+150.88s setup    tests/tox_env/python/test_python_runner.py::test_package_temp_dir_view
+148.93s setup    tests/session/cmd/test_sequential.py::test_rerun_sequential_skip
+18.07s setup    tests/test_provision.py::test_provision_requires_ok
+13.92s call     tests/tox_env/python/virtual_env/package/test_package_pyproject.py::test_pyproject_deps_static_with_dynamic[deps]
+================= 1629 passed, 5 warnings in 219.74s (0:03:39) =================
+py38: commands[1]> diff-cover --compare-branch origin/main /home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.py38.xml
+-------------
+Diff Coverage
+Diff: origin/main...HEAD, staged and unstaged changes
+-------------
+No lines with coverage information in this diff.
+-------------
+
+py38: OK ✔ in 4 minutes 3.15 seconds
+py37: skipped because could not find python interpreter with spec(s): py37
+py37: SKIP ⚠ in 0.17 seconds
+cov: install_package_deps> python -I -m pip install 'build[virtualenv]>=0.10' 'cachetools>=5.3' 'chardet>=5.1' 'colorama>=0.4.6' 'covdefaults>=2.3' 'devpi-process>=0.3' 'diff-cover>=7.5' 'distlib>=0.3.6' 'filelock>=3.11' 'flaky>=3.7' 'hatch-vcs>=0.3' 'hatchling>=1.14' 'importlib-metadata>=6.2; python_version < "3.8"' 'packaging>=23' 'platformdirs>=3.2' 'pluggy>=1' 'psutil>=5.9.4' 'pyproject-api>=1.5.1' 'pytest-cov>=4' 'pytest-mock>=3.10' 'pytest-xdist>=3.2.1' 'pytest>=7.2.2' 're-assert>=1.1' 'time-machine>=2.9; implementation_name != "pypy"' 'tomli>=2.0.1; python_version < "3.11"' 'typing-extensions>=4.5; python_version < "3.8"' 'virtualenv>=20.21' 'wheel>=0.40'
+cov: install_package> python -I -m pip install --force-reinstall --no-deps /home/philip/scripts/wsl-ubuntu-2/tox/.tox/.tmp/package/4/tox-4.4.12-py3-none-any.whl
+cov: commands[0]> pytest --junitxml /home/philip/scripts/wsl-ubuntu-2/tox/.tox/junit.cov.xml --cov /home/philip/scripts/wsl-ubuntu-2/tox/.tox/cov/lib/python3.8/site-packages/tox --cov /home/philip/scripts/wsl-ubuntu-2/tox/tests --cov-config=/home/philip/scripts/wsl-ubuntu-2/tox/pyproject.toml --no-cov-on-fail --cov-report term-missing:skip-covered --cov-context=test --cov-report html:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/cov/tmp/htmlcov --cov-report xml:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.cov.xml -n=auto tests --durations 5 --run-integration
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.3.0, pluggy-1.0.0
+cachedir: .tox/cov/.pytest_cache
+rootdir: /home/philip/scripts/wsl-ubuntu-2/tox
+configfile: pyproject.toml
+plugins: time-machine-2.9.0, devpi-server-6.8.0, mock-3.10.0, cov-4.0.0, flaky-3.7.0, xdist-3.2.1
+gw0 I / gw1 I / gw2 I / gw3 I
+gw0 [1629] / gw1 [1629] / gw2 [1629] / gw3 [1629]
+
+......................................................................... [  4%]
+......................................................................... [  8%]
+........................................................................ [ 13%]
+......................................................................... [ 17%]
+........................................................................ [ 22%]
+........................................................................ [ 26%]
+........................................................................ [ 31%]
+......................................................................... [ 35%]
+........................................................................ [ 40%]
+........................................................................ [ 44%]
+........................................................................ [ 48%]
+.......................................................................... [ 53%]
+.......................................................................... [ 57%]
+........................................................................ [ 62%]
+........................................................................ [ 66%]
+........................................................................ [ 71%]
+........................................................................ [ 75%]
+........................................................................ [ 80%]
+........................................................................ [ 84%]
+........................................................................ [ 88%]
+........................................................................ [ 93%]
+........................................................................ [ 97%]
+.....................................                                    [100%]
+=============================== warnings summary ===============================
+.tox/cov/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/cov/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/cov/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/cov/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/cov/lib/python3.8/site-packages/xdist/plugin.py:250
+  /home/philip/scripts/wsl-ubuntu-2/tox/.tox/cov/lib/python3.8/site-packages/xdist/plugin.py:250: DeprecationWarning: The --rsyncdir command line argument and rsyncdirs config variable are deprecated.
+  The rsync feature will be removed in pytest-xdist 4.0.
+    config.issue_config_time_warning(warning, 2)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/philip/scripts/wsl-ubuntu-2/tox/.tox/junit.cov.xml -
+
+---------- coverage: platform linux, python 3.8.10-final-0 -----------
+Name                                                      Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------------------------------
+src/tox/config/cli/parse.py                                  56      1      4      0    98%   88
+src/tox/config/cli/parser.py                                199      0     79      1    99%   113->exit
+src/tox/config/loader/ini/replace.py                        216      0    100      1    99%   291->293
+src/tox/config/source/api.py                                 51      0     12      1    98%   53->exit
+src/tox/config/source/discover.py                            57      1     24      2    96%   31->38, 39
+src/tox/execute/local_sub_process/__init__.py               171      2     44      1    99%   299, 305, 310->314
+src/tox/execute/pep517_backend.py                            70      1     10      1    98%   44
+src/tox/provision.py                                         76      0     18      1    99%   118->exit
+src/tox/session/cmd/devenv.py                                37      0      4      1    98%   45->47
+src/tox/session/cmd/legacy.py                                83      0     36      3    97%   127->129, 129->131, 131->125
+src/tox/session/env_select.py                               248      0    104      1    99%   360->363
+src/tox/tox_env/python/pip/pip_install.py                   154      0     70      1    99%   200->203
+src/tox/tox_env/python/pip/req/util.py                       35      0     12      1    98%   40->35
+src/tox/tox_env/python/pip/req_file.py                       84      1     40      1    98%   44
+src/tox/tox_env/python/virtual_env/api.py                   100      0     16      1    99%   120->122
+src/tox/tox_env/python/virtual_env/package/pyproject.py     260      1     82      1    99%   281
+src/tox/tox_env/python/virtual_env/package/util.py           53      0     24      1    99%   31->25
+src/tox/util/file_view.py                                    28      3      8      2    86%   25->31, 29-30, 32
+tests/config/cli/test_cli_ini.py                             86      0      2      1    99%   227->231
+tests/conftest.py                                            95      1      8      1    98%   46
+tests/demo_pkg_inline/build.py                               34      3     10      1    82%   96-98
+tests/execute/local_subprocess/test_local_subprocess.py     248      2     16      0    99%   272-273
+tests/session/cmd/test_legacy.py                             83      0      8      1    99%   127->126
+-----------------------------------------------------------------------------------------------------
+TOTAL                                                     10947     16   2309     25    99%
+
+183 files skipped due to complete coverage.
+Coverage HTML written to dir /home/philip/scripts/wsl-ubuntu-2/tox/.tox/cov/tmp/htmlcov
+Coverage XML written to file /home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.cov.xml
+
+Required test coverage of 88.0% reached. Total coverage: 99.66%
+============================= slowest 5 durations ==============================
+180.96s setup    tests/session/cmd/test_parallel.py::test_parallel_show_output_with_pkg
+175.44s setup    tests/tox_env/test_tox_env_runner.py::test_package_only
+171.67s setup    tests/session/cmd/test_sequential.py::test_sequential_inserted_env_vars
+19.87s setup    tests/test_provision.py::test_provision_requires_ok
+8.63s call     tests/test_provision.py::test_provision_requires_ok
+================= 1629 passed, 5 warnings in 239.30s (0:03:59) =================
+cov: commands[1]> diff-cover --compare-branch origin/main /home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.cov.xml
+-------------
+Diff Coverage
+Diff: origin/main...HEAD, staged and unstaged changes
+-------------
+No lines with coverage information in this diff.
+-------------
+
+cov: OK ✔ in 4 minutes 23.54 seconds
+type: install_deps> python -I -m pip install mypy==1.2 'types-cachetools>=5.3.0.5' 'types-chardet>=5.0.4.3'
+type: install_package_deps> python -I -m pip install 'build[virtualenv]>=0.10' 'cachetools>=5.3' 'chardet>=5.1' 'colorama>=0.4.6' 'covdefaults>=2.3' 'devpi-process>=0.3' 'diff-cover>=7.5' 'distlib>=0.3.6' 'filelock>=3.11' 'flaky>=3.7' 'hatch-vcs>=0.3' 'hatchling>=1.14' 'importlib-metadata>=6.2; python_version < "3.8"' 'packaging>=23' 'platformdirs>=3.2' 'pluggy>=1' 'psutil>=5.9.4' 'pyproject-api>=1.5.1' 'pytest-cov>=4' 'pytest-mock>=3.10' 'pytest-xdist>=3.2.1' 'pytest>=7.2.2' 're-assert>=1.1' 'time-machine>=2.9; implementation_name != "pypy"' 'tomli>=2.0.1; python_version < "3.11"' 'typing-extensions>=4.5; python_version < "3.8"' 'virtualenv>=20.21' 'wheel>=0.40'
+type: install_package> python -I -m pip install --force-reinstall --no-deps /home/philip/scripts/wsl-ubuntu-2/tox/.tox/.tmp/package/5/tox-4.4.12-py3-none-any.whl
+type: commands[0]> mypy src/tox
+Success: no issues found in 104 source files
+type: commands[1]> mypy tests
+Success: no issues found in 106 source files
+type: OK ✔ in 32.07 seconds
+docs: install_package_deps> python -I -m pip install 'cachetools>=5.3' 'chardet>=5.1' 'colorama>=0.4.6' 'filelock>=3.11' 'furo>=2023.3.27' 'importlib-metadata>=6.2; python_version < "3.8"' 'packaging>=23' 'platformdirs>=3.2' 'pluggy>=1' 'pyproject-api>=1.5.1' 'sphinx-argparse-cli>=1.11' 'sphinx-autodoc-typehints!=1.23.4,>=1.22' 'sphinx-copybutton>=0.5.1' 'sphinx-inline-tabs>=2022.1.2b11' 'sphinx>=6.1.3' 'sphinxcontrib-towncrier>=0.2.1a0' 'tomli>=2.0.1; python_version < "3.11"' 'towncrier>=22.12' 'typing-extensions>=4.5; python_version < "3.8"' 'virtualenv>=20.21'
+docs: install_package> python -I -m pip install --force-reinstall --no-deps /home/philip/scripts/wsl-ubuntu-2/tox/.tox/.tmp/package/6/tox-4.4.12-py3-none-any.whl
+docs: commands[0]> sphinx-build -d /home/philip/scripts/wsl-ubuntu-2/tox/.tox/docs/tmp/doctree docs /home/philip/scripts/wsl-ubuntu-2/tox/.tox/docs_out --color -b html -b linkcheck -W
+[01mRunning Sphinx v6.1.3[39;49;00m
+[01mmaking output directory... [39;49;00mdone
+loading intersphinx inventory from https://docs.python.org/3/objects.inv...
+loading intersphinx inventory from https://packaging.pypa.io/en/latest/objects.inv...
+[01mbuilding [mo]: [39;49;00mtargets for 0 po files that are out of date
+[01mwriting output... [39;49;00m
+[01mbuilding [linkcheck]: [39;49;00mtargets for 11 source files that are out of date
+[01mupdating environment: [39;49;00m[new config] 11 added, 0 changed, 0 removed
+[01mreading sources... [39;49;00m[  9%] [35mchangelog[39;49;00m                                            [01mreading sources... [39;49;00m[ 18%] [35mcli_interface[39;49;00m                                        [01mreading sources... [39;49;00m[ 27%] [35mconfig[39;49;00m                                               [01mreading sources... [39;49;00m[ 36%] [35mdevelopment[39;49;00m                                          [01mreading sources... [39;49;00m[ 45%] [35mfaq[39;49;00m                                                  [01mreading sources... [39;49;00m[ 54%] [35mindex[39;49;00m                                                [01mreading sources... [39;49;00m[ 63%] [35minstallation[39;49;00m                                         [01mreading sources... [39;49;00m[ 72%] [35mplugins[39;49;00m                                              [01mreading sources... [39;49;00m[ 81%] [35mplugins_api[39;49;00m                                          [01mreading sources... [39;49;00m[ 90%] [35mupgrading[39;49;00m                                            [01mreading sources... [39;49;00m[100%] [35muser_guide[39;49;00m                                           
+[01mlooking for now-outdated files... [39;49;00mnone found
+[01mpickling environment... [39;49;00mdone
+[01mchecking consistency... [39;49;00mdone
+[01mpreparing documents... [39;49;00mdone
+[01mwriting output... [39;49;00m[  9%] [32mchangelog[39;49;00m                                             [01mwriting output... [39;49;00m[ 18%] [32mcli_interface[39;49;00m                                         [01mwriting output... [39;49;00m[ 27%] [32mconfig[39;49;00m                                                [01mwriting output... [39;49;00m[ 36%] [32mdevelopment[39;49;00m                                           [01mwriting output... [39;49;00m[ 45%] [32mfaq[39;49;00m                                                   [01mwriting output... [39;49;00m[ 54%] [32mindex[39;49;00m                                                 [01mwriting output... [39;49;00m[ 63%] [32minstallation[39;49;00m                                          [01mwriting output... [39;49;00m[ 72%] [32mplugins[39;49;00m                                               [01mwriting output... [39;49;00m[ 81%] [32mplugins_api[39;49;00m                                           [01mwriting output... [39;49;00m[ 90%] [32mupgrading[39;49;00m                                             [01mwriting output... [39;49;00m[100%] [32muser_guide[39;49;00m                                            
+
+[91mWarning, treated as error:[39;49;00m
+/home/philip/scripts/wsl-ubuntu-2/tox/.tox/docs/lib/python3.8/site-packages/tox/config/cli/parser.py:docstring of tox.config.cli.parser.ArgumentParserWithEnvAndConfig.parse_args:1:py:class reference target not found: Namespace
+docs: exit 2 (4.70 seconds) /home/philip/scripts/wsl-ubuntu-2/tox> sphinx-build -d /home/philip/scripts/wsl-ubuntu-2/tox/.tox/docs/tmp/doctree docs /home/philip/scripts/wsl-ubuntu-2/tox/.tox/docs_out --color -b html -b linkcheck -W pid=32154
+.pkg: _exit> python /home/philip/scripts/wsl-ubuntu-2/tox/.tox/dev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+docs: FAIL ✖ in 15.16 seconds
+pkg_meta: install_deps> python -I -m pip install 'build[virtualenv]>=0.10' 'check-wheel-contents>=0.4' 'twine>=4.0.2'
+pkg_meta: commands[0]> python -m build -o /home/philip/scripts/wsl-ubuntu-2/tox/.tox/pkg_meta/tmp -s -w .
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (hatch-vcs>=0.3, hatchling>=1.14)
+* Getting build dependencies for sdist...
+* Building sdist...
+/tmp/build-env-9fgn632o/lib/python3.8/site-packages/setuptools_scm/git.py:135: UserWarning: "/home/philip/scripts/wsl-ubuntu-2/tox" is shallow and may cause errors
+  warnings.warn(f'"{wd.path}" is shallow and may cause errors')
+* Creating virtualenv isolated environment...
+* Installing packages in isolated environment... (hatch-vcs>=0.3, hatchling>=1.14)
+* Getting build dependencies for wheel...
+* Building wheel...
+/tmp/build-env-mhx8r87e/lib/python3.8/site-packages/setuptools_scm/git.py:135: UserWarning: "/home/philip/scripts/wsl-ubuntu-2/tox" is shallow and may cause errors
+  warnings.warn(f'"{wd.path}" is shallow and may cause errors')
+Successfully built tox-4.4.12.tar.gz and tox-4.4.12-py3-none-any.whl
+pkg_meta: commands[1]> twine check '/home/philip/scripts/wsl-ubuntu-2/tox/.tox/pkg_meta/tmp/*'
+Checking 
+/home/philip/scripts/wsl-ubuntu-2/tox/.tox/pkg_meta/tmp/tox-4.4.12-py3-none-any.
+whl: [32mPASSED[0m
+Checking 
+/home/philip/scripts/wsl-ubuntu-2/tox/.tox/pkg_meta/tmp/tox-4.4.12.tar.gz: [32mPASSED[0m
+pkg_meta: commands[2]> check-wheel-contents --no-config /home/philip/scripts/wsl-ubuntu-2/tox/.tox/pkg_meta/tmp
+/home/philip/scripts/wsl-ubuntu-2/tox/.tox/pkg_meta/tmp/tox-4.4.12-py3-none-any.whl: OK
+  fix: FAIL code 1 (13.81=setup[2.99]+cmd[10.83] seconds)
+  py311: FAIL code 1 (176.01=setup[17.67]+cmd[158.34] seconds)
+  py310: SKIP (0.30 seconds)
+  py39: SKIP (0.25 seconds)
+  py38: OK (243.14=setup[16.24]+cmd[226.73,0.18] seconds)
+  py37: SKIP (0.17 seconds)
+  cov: OK (263.54=setup[17.01]+cmd[246.33,0.20] seconds)
+  type: OK (32.06=setup[20.19]+cmd[8.63,3.24] seconds)
+  docs: FAIL code 2 (15.16=setup[10.47]+cmd[4.70] seconds)
+  pkg_meta: OK (16.82=setup[9.54]+cmd[6.77,0.35,0.15] seconds)
+  evaluation failed :( (761.59 seconds)
+~~~ Now beginning tox -e py Thu Apr 13 17:25:30 EDT 2023
+.pkg: _optional_hooks> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: get_requires_for_build_editable> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: get_requires_for_build_wheel> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: build_wheel> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+py: install_package_deps> python -I -m pip install 'build[virtualenv]>=0.10' 'cachetools>=5.3' 'chardet>=5.1' 'colorama>=0.4.6' 'covdefaults>=2.3' 'devpi-process>=0.3' 'diff-cover>=7.5' 'distlib>=0.3.6' 'filelock>=3.11' 'flaky>=3.7' 'hatch-vcs>=0.3' 'hatchling>=1.14' 'importlib-metadata>=6.2; python_version < "3.8"' 'packaging>=23' 'platformdirs>=3.2' 'pluggy>=1' 'psutil>=5.9.4' 'pyproject-api>=1.5.1' 'pytest-cov>=4' 'pytest-mock>=3.10' 'pytest-xdist>=3.2.1' 'pytest>=7.2.2' 're-assert>=1.1' 'time-machine>=2.9; implementation_name != "pypy"' 'tomli>=2.0.1; python_version < "3.11"' 'typing-extensions>=4.5; python_version < "3.8"' 'virtualenv>=20.21' 'wheel>=0.40'
+py: install_package> python -I -m pip install --force-reinstall --no-deps /home/philip/scripts/wsl-ubuntu-2/tox/.tox/.tmp/package/7/tox-4.4.12-py3-none-any.whl
+py: commands[0]> pytest --junitxml /home/philip/scripts/wsl-ubuntu-2/tox/.tox/junit.py.xml --cov /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py/lib/python3.8/site-packages/tox --cov /home/philip/scripts/wsl-ubuntu-2/tox/tests --cov-config=/home/philip/scripts/wsl-ubuntu-2/tox/pyproject.toml --no-cov-on-fail --cov-report term-missing:skip-covered --cov-context=test --cov-report html:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/py/tmp/htmlcov --cov-report xml:/home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.py.xml -n=auto tests --durations 5 --run-integration
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-7.3.0, pluggy-1.0.0
+cachedir: .tox/py/.pytest_cache
+rootdir: /home/philip/scripts/wsl-ubuntu-2/tox
+configfile: pyproject.toml
+plugins: time-machine-2.9.0, devpi-server-6.8.0, mock-3.10.0, cov-4.0.0, flaky-3.7.0, xdist-3.2.1
+gw0 I / gw1 I / gw2 I / gw3 I
+gw0 [1629] / gw1 [1629] / gw2 [1629] / gw3 [1629]
+
+......................................................................... [  4%]
+........................................................................ [  8%]
+......................................................................... [ 13%]
+........................................................................ [ 17%]
+........................................................................ [ 22%]
+........................................................................ [ 26%]
+........................................................................ [ 31%]
+........................................................................ [ 35%]
+........................................................................ [ 39%]
+........................................................................ [ 44%]
+......................................................................... [ 48%]
+......................................................................... [ 53%]
+.......................................................................... [ 57%]
+........................................................................ [ 62%]
+........................................................................ [ 66%]
+........................................................................ [ 71%]
+........................................................................ [ 75%]
+........................................................................ [ 79%]
+........................................................................ [ 84%]
+........................................................................ [ 88%]
+........................................................................ [ 93%]
+........................................................................ [ 97%]
+.......................................                                  [100%]
+=============================== warnings summary ===============================
+.tox/py/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/py/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/py/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/py/lib/python3.8/site-packages/xdist/plugin.py:250
+.tox/py/lib/python3.8/site-packages/xdist/plugin.py:250
+  /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py/lib/python3.8/site-packages/xdist/plugin.py:250: DeprecationWarning: The --rsyncdir command line argument and rsyncdirs config variable are deprecated.
+  The rsync feature will be removed in pytest-xdist 4.0.
+    config.issue_config_time_warning(warning, 2)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/philip/scripts/wsl-ubuntu-2/tox/.tox/junit.py.xml --
+
+---------- coverage: platform linux, python 3.8.10-final-0 -----------
+Name                                                      Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------------------------------------
+src/tox/config/cli/parse.py                                  56      1      4      0    98%   88
+src/tox/config/cli/parser.py                                199      0     79      1    99%   113->exit
+src/tox/config/loader/ini/replace.py                        216      0    100      1    99%   291->293
+src/tox/config/source/api.py                                 51      0     12      1    98%   53->exit
+src/tox/config/source/discover.py                            57      1     24      2    96%   31->38, 39
+src/tox/execute/local_sub_process/__init__.py               171      2     44      1    99%   299, 305, 310->314
+src/tox/execute/pep517_backend.py                            70      1     10      1    98%   44
+src/tox/provision.py                                         76      0     18      1    99%   118->exit
+src/tox/session/cmd/devenv.py                                37      0      4      1    98%   45->47
+src/tox/session/cmd/legacy.py                                83      0     36      3    97%   127->129, 129->131, 131->125
+src/tox/session/env_select.py                               248      0    104      1    99%   360->363
+src/tox/tox_env/python/pip/pip_install.py                   154      0     70      1    99%   200->203
+src/tox/tox_env/python/pip/req/util.py                       35      0     12      1    98%   40->35
+src/tox/tox_env/python/pip/req_file.py                       84      1     40      1    98%   44
+src/tox/tox_env/python/virtual_env/api.py                   100      0     16      1    99%   120->122
+src/tox/tox_env/python/virtual_env/package/pyproject.py     260      1     82      1    99%   281
+src/tox/tox_env/python/virtual_env/package/util.py           53      0     24      1    99%   31->25
+src/tox/util/file_view.py                                    28      3      8      2    86%   25->31, 29-30, 32
+tests/config/cli/test_cli_ini.py                             86      0      2      1    99%   227->231
+tests/conftest.py                                            95      1      8      1    98%   46
+tests/demo_pkg_inline/build.py                               34      3     10      1    82%   96-98
+tests/execute/local_subprocess/test_local_subprocess.py     248      2     16      0    99%   272-273
+tests/session/cmd/test_legacy.py                             83      0      8      1    99%   127->126
+-----------------------------------------------------------------------------------------------------
+TOTAL                                                     10947     16   2309     25    99%
+
+183 files skipped due to complete coverage.
+Coverage HTML written to dir /home/philip/scripts/wsl-ubuntu-2/tox/.tox/py/tmp/htmlcov
+Coverage XML written to file /home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.py.xml
+
+Required test coverage of 88.0% reached. Total coverage: 99.66%
+============================= slowest 5 durations ==============================
+11925.72s setup    tests/tox_env/test_tox_env_runner.py::test_package_only
+11906.90s setup    tests/tox_env/python/test_python_runner.py::test_package_temp_dir_view
+11902.52s setup    tests/session/cmd/test_sequential.py::test_rerun_sequential_skip
+11704.97s call     tests/tox_env/python/virtual_env/package/test_package_cmd_builder.py::test_build_wheel_external
+19.58s setup    tests/test_provision.py::test_provision_requires_ok
+================ 1629 passed, 5 warnings in 11985.43s (3:19:45) ================
+py: commands[1]> diff-cover --compare-branch origin/main /home/philip/scripts/wsl-ubuntu-2/tox/.tox/coverage.py.xml
+-------------
+Diff Coverage
+Diff: origin/main...HEAD, staged and unstaged changes
+-------------
+No lines with coverage information in this diff.
+-------------
+
+.pkg: _exit> python /home/philip/.virtualenvs/pytestdev/lib/python3.8/site-packages/pyproject_api/_backend.py True hatchling.build
+  py: OK (26796.78=setup[19.46]+cmd[26619.45,157.87] seconds)
+  congratulations :) (26796.97 seconds)
+~~~ Now ending tox -e py Fri Apr 14 00:52:08 EDT 2023

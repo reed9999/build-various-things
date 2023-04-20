@@ -1,0 +1,2622 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+32 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  python3-pip-whl python3-setuptools-whl
+The following NEW packages will be installed:
+  python3-pip-whl python3-setuptools-whl python3.10-venv
+0 upgraded, 3 newly installed, 0 to remove and 32 not upgraded.
+Need to get 2473 kB of archives.
+After this operation, 2882 kB of additional disk space will be used.
+Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-pip-whl all 22.0.2+dfsg-1ubuntu0.2 [1679 kB]
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-setuptools-whl all 59.6.0-1.2ubuntu0.22.04.1 [788 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3.10-venv amd64 3.10.6-1~22.04.2ubuntu1 [5718 B]
+Fetched 2473 kB in 0s (51.8 MB/s)
+Selecting previously unselected package python3-pip-whl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63657 files and directories currently installed.)
+Preparing to unpack .../python3-pip-whl_22.0.2+dfsg-1ubuntu0.2_all.deb ...
+Unpacking python3-pip-whl (22.0.2+dfsg-1ubuntu0.2) ...
+Selecting previously unselected package python3-setuptools-whl.
+Preparing to unpack .../python3-setuptools-whl_59.6.0-1.2ubuntu0.22.04.1_all.deb ...
+Unpacking python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.1) ...
+Selecting previously unselected package python3.10-venv.
+Preparing to unpack .../python3.10-venv_3.10.6-1~22.04.2ubuntu1_amd64.deb ...
+Unpacking python3.10-venv (3.10.6-1~22.04.2ubuntu1) ...
+Setting up python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.1) ...
+Setting up python3-pip-whl (22.0.2+dfsg-1ubuntu0.2) ...
+Setting up python3.10-venv (3.10.6-1~22.04.2ubuntu1) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  build-essential bzip2 cpp cpp-11 dpkg-dev fakeroot fontconfig-config
+  fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base javascript-common
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0
+  libcrypt-dev libdeflate0 libdpkg-perl libexpat1-dev libfakeroot
+  libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23
+  libitm1 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblsan0 libmpc3 libnsl-dev libpython3-dev
+  libpython3.10-dev libquadmath0 libstdc++-11-dev libtiff5 libtirpc-dev
+  libtsan0 libubsan1 libwebp7 libxpm4 linux-libc-dev lto-disabled-list make
+  manpages-dev python3-dev python3-wheel python3.10-dev rpcsvc-proto
+  zlib1g-dev
+Suggested packages:
+  bzip2-doc cpp-doc gcc-11-locales debian-keyring g++-multilib g++-11-multilib
+  gcc-11-doc gcc-multilib autoconf automake libtool flex bison gdb gcc-doc
+  gcc-11-multilib apache2 | lighttpd | httpd glibc-doc bzr libgd-tools
+  libstdc++-11-doc make-doc
+The following NEW packages will be installed:
+  build-essential bzip2 cpp cpp-11 dpkg-dev fakeroot fontconfig-config
+  fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base javascript-common
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0
+  libcrypt-dev libdeflate0 libdpkg-perl libexpat1-dev libfakeroot
+  libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23
+  libitm1 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblsan0 libmpc3 libnsl-dev libpython3-dev
+  libpython3.10-dev libquadmath0 libstdc++-11-dev libtiff5 libtirpc-dev
+  libtsan0 libubsan1 libwebp7 libxpm4 linux-libc-dev lto-disabled-list make
+  manpages-dev python3-dev python3-pip python3-wheel python3.10-dev
+  rpcsvc-proto zlib1g-dev
+0 upgraded, 64 newly installed, 0 to remove and 32 not upgraded.
+Need to get 71.2 MB of archives.
+After this operation, 239 MB of additional disk space will be used.
+Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-dev-bin amd64 2.35-0ubuntu3.1 [20.4 kB]
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-libc-dev amd64 5.15.0-70.77 [1339 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libcrypt-dev amd64 1:4.4.27-1 [112 kB]
+Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 rpcsvc-proto amd64 1.4.2-0ubuntu6 [68.5 kB]
+Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtirpc-dev amd64 1.3.2-2ubuntu0.1 [192 kB]
+Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libnsl-dev amd64 1.3.0-2build2 [71.3 kB]
+Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc6-dev amd64 2.35-0ubuntu3.1 [2099 kB]
+Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.3.0-1ubuntu1~22.04 [20.8 kB]
+Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libisl23 amd64 0.24-2build1 [727 kB]
+Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libmpc3 amd64 1.2.1-2build1 [46.9 kB]
+Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.3.0-1ubuntu1~22.04 [9967 kB]
+Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 cpp amd64 4:11.2.0-1ubuntu1 [27.7 kB]
+Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.1.0-2ubuntu1~22.04 [47.4 kB]
+Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.1.0-2ubuntu1~22.04 [126 kB]
+Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.1.0-2ubuntu1~22.04 [30.2 kB]
+Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.1.0-2ubuntu1~22.04 [10.4 kB]
+Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.3.0-1ubuntu1~22.04 [2284 kB]
+Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.1.0-2ubuntu1~22.04 [1069 kB]
+Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.3.0-1ubuntu1~22.04 [2262 kB]
+Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.1.0-2ubuntu1~22.04 [976 kB]
+Get:21 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.1.0-2ubuntu1~22.04 [154 kB]
+Get:22 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.3.0-1ubuntu1~22.04 [2517 kB]
+Get:23 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.3.0-1ubuntu1~22.04 [20.1 MB]
+Get:24 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 gcc amd64 4:11.2.0-1ubuntu1 [5112 B]
+Get:25 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libstdc++-11-dev amd64 11.3.0-1ubuntu1~22.04 [2087 kB]
+Get:26 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 g++-11 amd64 11.3.0-1ubuntu1~22.04 [11.4 MB]
+Get:27 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 g++ amd64 4:11.2.0-1ubuntu1 [1412 B]
+Get:28 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 make amd64 4.3-4.1build1 [180 kB]
+Get:29 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdpkg-perl all 1.21.1ubuntu2.1 [237 kB]
+Get:30 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 bzip2 amd64 1.0.8-5build1 [34.8 kB]
+Get:31 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 lto-disabled-list all 24 [12.5 kB]
+Get:32 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 dpkg-dev all 1.21.1ubuntu2.1 [922 kB]
+Get:33 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 build-essential amd64 12.9ubuntu3 [4744 B]
+Get:34 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libfakeroot amd64 1.28-1ubuntu1 [31.5 kB]
+Get:35 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 fakeroot amd64 1.28-1ubuntu1 [60.4 kB]
+Get:36 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 fonts-dejavu-core all 2.37-2build1 [1041 kB]
+Get:37 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 fontconfig-config all 2.13.1-4.2ubuntu5 [29.1 kB]
+Get:38 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 javascript-common all 11+nmu1 [5936 B]
+Get:39 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libalgorithm-diff-perl all 1.201-1 [41.8 kB]
+Get:40 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libalgorithm-diff-xs-perl amd64 0.04-6build3 [11.9 kB]
+Get:41 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+Get:42 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libfontconfig1 amd64 2.13.1-4.2ubuntu5 [131 kB]
+Get:43 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg-turbo8 amd64 2.1.2-0ubuntu1 [134 kB]
+Get:44 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg8 amd64 8c-2ubuntu10 [2264 B]
+Get:45 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libdeflate0 amd64 1.10-2 [70.9 kB]
+Get:46 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.22.04.1 [29.2 kB]
+Get:47 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libwebp7 amd64 1.2.2-2 [206 kB]
+Get:48 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtiff5 amd64 4.3.0-6ubuntu0.4 [183 kB]
+Get:49 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.22.04.1 [36.4 kB]
+Get:50 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libgd3 amd64 2.3.0-2ubuntu2 [129 kB]
+Get:51 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-devtools amd64 2.35-0ubuntu3.1 [28.9 kB]
+Get:52 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libexpat1-dev amd64 2.4.7-1ubuntu0.2 [147 kB]
+Get:53 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libfile-fcntllock-perl amd64 0.22-3build7 [33.9 kB]
+Get:54 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libjs-jquery all 3.6.0+dfsg+~3.5.13-1 [321 kB]
+Get:55 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libjs-underscore all 1.13.2~dfsg-2 [118 kB]
+Get:56 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libjs-sphinxdoc all 4.3.2-1 [139 kB]
+Get:57 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu9.2 [164 kB]
+Get:58 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-dev amd64 3.10.6-1~22.04.2ubuntu1 [4755 kB]
+Get:59 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3-dev amd64 3.10.6-1~22.04 [7166 B]
+Get:60 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 manpages-dev all 5.10-1ubuntu1 [2309 kB]
+Get:61 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10-dev amd64 3.10.6-1~22.04.2ubuntu1 [507 kB]
+Get:62 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-dev amd64 3.10.6-1~22.04 [26.0 kB]
+Get:63 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-wheel all 0.37.1-2ubuntu0.22.04.1 [32.0 kB]
+Get:64 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-pip all 22.0.2+dfsg-1ubuntu0.2 [1305 kB]
+Fetched 71.2 MB in 1s (55.0 MB/s)
+Selecting previously unselected package libc-dev-bin.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63672 files and directories currently installed.)
+Preparing to unpack .../00-libc-dev-bin_2.35-0ubuntu3.1_amd64.deb ...
+Unpacking libc-dev-bin (2.35-0ubuntu3.1) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../01-linux-libc-dev_5.15.0-70.77_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (5.15.0-70.77) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../02-libcrypt-dev_1%3a4.4.27-1_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.27-1) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../03-rpcsvc-proto_1.4.2-0ubuntu6_amd64.deb ...
+Unpacking rpcsvc-proto (1.4.2-0ubuntu6) ...
+Selecting previously unselected package libtirpc-dev:amd64.
+Preparing to unpack .../04-libtirpc-dev_1.3.2-2ubuntu0.1_amd64.deb ...
+Unpacking libtirpc-dev:amd64 (1.3.2-2ubuntu0.1) ...
+Selecting previously unselected package libnsl-dev:amd64.
+Preparing to unpack .../05-libnsl-dev_1.3.0-2build2_amd64.deb ...
+Unpacking libnsl-dev:amd64 (1.3.0-2build2) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../06-libc6-dev_2.35-0ubuntu3.1_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.35-0ubuntu3.1) ...
+Selecting previously unselected package gcc-11-base:amd64.
+Preparing to unpack .../07-gcc-11-base_11.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking gcc-11-base:amd64 (11.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../08-libisl23_0.24-2build1_amd64.deb ...
+Unpacking libisl23:amd64 (0.24-2build1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../09-libmpc3_1.2.1-2build1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.2.1-2build1) ...
+Selecting previously unselected package cpp-11.
+Preparing to unpack .../10-cpp-11_11.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking cpp-11 (11.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../11-cpp_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../12-libcc1-0_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../13-libgomp1_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libgomp1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../14-libitm1_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libitm1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../15-libatomic1_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libatomic1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libasan6:amd64.
+Preparing to unpack .../16-libasan6_11.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libasan6:amd64 (11.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../17-liblsan0_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking liblsan0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../18-libtsan0_11.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libtsan0:amd64 (11.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../19-libubsan1_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libubsan1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../20-libquadmath0_12.1.0-2ubuntu1~22.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Selecting previously unselected package libgcc-11-dev:amd64.
+Preparing to unpack .../21-libgcc-11-dev_11.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libgcc-11-dev:amd64 (11.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package gcc-11.
+Preparing to unpack .../22-gcc-11_11.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking gcc-11 (11.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../23-gcc_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package libstdc++-11-dev:amd64.
+Preparing to unpack .../24-libstdc++-11-dev_11.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libstdc++-11-dev:amd64 (11.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package g++-11.
+Preparing to unpack .../25-g++-11_11.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking g++-11 (11.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../26-g++_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking g++ (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../27-make_4.3-4.1build1_amd64.deb ...
+Unpacking make (4.3-4.1build1) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../28-libdpkg-perl_1.21.1ubuntu2.1_all.deb ...
+Unpacking libdpkg-perl (1.21.1ubuntu2.1) ...
+Selecting previously unselected package bzip2.
+Preparing to unpack .../29-bzip2_1.0.8-5build1_amd64.deb ...
+Unpacking bzip2 (1.0.8-5build1) ...
+Selecting previously unselected package lto-disabled-list.
+Preparing to unpack .../30-lto-disabled-list_24_all.deb ...
+Unpacking lto-disabled-list (24) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../31-dpkg-dev_1.21.1ubuntu2.1_all.deb ...
+Unpacking dpkg-dev (1.21.1ubuntu2.1) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../32-build-essential_12.9ubuntu3_amd64.deb ...
+Unpacking build-essential (12.9ubuntu3) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../33-libfakeroot_1.28-1ubuntu1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.28-1ubuntu1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../34-fakeroot_1.28-1ubuntu1_amd64.deb ...
+Unpacking fakeroot (1.28-1ubuntu1) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../35-fonts-dejavu-core_2.37-2build1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-2build1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../36-fontconfig-config_2.13.1-4.2ubuntu5_all.deb ...
+Unpacking fontconfig-config (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package javascript-common.
+Preparing to unpack .../37-javascript-common_11+nmu1_all.deb ...
+Unpacking javascript-common (11+nmu1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../38-libalgorithm-diff-perl_1.201-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.201-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../39-libalgorithm-diff-xs-perl_0.04-6build3_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-6build3) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../40-libalgorithm-merge-perl_0.08-3_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-3) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../41-libfontconfig1_2.13.1-4.2ubuntu5_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../42-libjpeg-turbo8_2.1.2-0ubuntu1_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../43-libjpeg8_8c-2ubuntu10_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu10) ...
+Selecting previously unselected package libdeflate0:amd64.
+Preparing to unpack .../44-libdeflate0_1.10-2_amd64.deb ...
+Unpacking libdeflate0:amd64 (1.10-2) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../45-libjbig0_2.1-3.1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Selecting previously unselected package libwebp7:amd64.
+Preparing to unpack .../46-libwebp7_1.2.2-2_amd64.deb ...
+Unpacking libwebp7:amd64 (1.2.2-2) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../47-libtiff5_4.3.0-6ubuntu0.4_amd64.deb ...
+Unpacking libtiff5:amd64 (4.3.0-6ubuntu0.4) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../48-libxpm4_1%3a3.5.12-1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../49-libgd3_2.3.0-2ubuntu2_amd64.deb ...
+Unpacking libgd3:amd64 (2.3.0-2ubuntu2) ...
+Selecting previously unselected package libc-devtools.
+Preparing to unpack .../50-libc-devtools_2.35-0ubuntu3.1_amd64.deb ...
+Unpacking libc-devtools (2.35-0ubuntu3.1) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../51-libexpat1-dev_2.4.7-1ubuntu0.2_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.4.7-1ubuntu0.2) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../52-libfile-fcntllock-perl_0.22-3build7_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-3build7) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../53-libjs-jquery_3.6.0+dfsg+~3.5.13-1_all.deb ...
+Unpacking libjs-jquery (3.6.0+dfsg+~3.5.13-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../54-libjs-underscore_1.13.2~dfsg-2_all.deb ...
+Unpacking libjs-underscore (1.13.2~dfsg-2) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../55-libjs-sphinxdoc_4.3.2-1_all.deb ...
+Unpacking libjs-sphinxdoc (4.3.2-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../56-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu9.2_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+Selecting previously unselected package libpython3.10-dev:amd64.
+Preparing to unpack .../57-libpython3.10-dev_3.10.6-1~22.04.2ubuntu1_amd64.deb ...
+Unpacking libpython3.10-dev:amd64 (3.10.6-1~22.04.2ubuntu1) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../58-libpython3-dev_3.10.6-1~22.04_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.10.6-1~22.04) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../59-manpages-dev_5.10-1ubuntu1_all.deb ...
+Unpacking manpages-dev (5.10-1ubuntu1) ...
+Selecting previously unselected package python3.10-dev.
+Preparing to unpack .../60-python3.10-dev_3.10.6-1~22.04.2ubuntu1_amd64.deb ...
+Unpacking python3.10-dev (3.10.6-1~22.04.2ubuntu1) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../61-python3-dev_3.10.6-1~22.04_amd64.deb ...
+Unpacking python3-dev (3.10.6-1~22.04) ...
+Selecting previously unselected package python3-wheel.
+Preparing to unpack .../62-python3-wheel_0.37.1-2ubuntu0.22.04.1_all.deb ...
+Unpacking python3-wheel (0.37.1-2ubuntu0.22.04.1) ...
+Selecting previously unselected package python3-pip.
+Preparing to unpack .../63-python3-pip_22.0.2+dfsg-1ubuntu0.2_all.deb ...
+Unpacking python3-pip (22.0.2+dfsg-1ubuntu0.2) ...
+Setting up javascript-common (11+nmu1) ...
+Setting up gcc-11-base:amd64 (11.3.0-1ubuntu1~22.04) ...
+Setting up manpages-dev (5.10-1ubuntu1) ...
+Setting up lto-disabled-list (24) ...
+Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Setting up libfile-fcntllock-perl (0.22-3build7) ...
+Setting up libalgorithm-diff-perl (1.201-1) ...
+Setting up libdeflate0:amd64 (1.10-2) ...
+Setting up linux-libc-dev:amd64 (5.15.0-70.77) ...
+Setting up libgomp1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up bzip2 (1.0.8-5build1) ...
+Setting up python3-wheel (0.37.1-2ubuntu0.22.04.1) ...
+Setting up libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Setting up libfakeroot:amd64 (1.28-1ubuntu1) ...
+Setting up libasan6:amd64 (11.3.0-1ubuntu1~22.04) ...
+Setting up fakeroot (1.28-1ubuntu1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up libtirpc-dev:amd64 (1.3.2-2ubuntu0.1) ...
+Setting up rpcsvc-proto (1.4.2-0ubuntu6) ...
+Setting up make (4.3-4.1build1) ...
+Setting up libquadmath0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up libmpc3:amd64 (1.2.1-2build1) ...
+Setting up libatomic1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up fonts-dejavu-core (2.37-2build1) ...
+Setting up python3-pip (22.0.2+dfsg-1ubuntu0.2) ...
+Setting up libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Setting up libdpkg-perl (1.21.1ubuntu2.1) ...
+Setting up libwebp7:amd64 (1.2.2-2) ...
+Setting up libubsan1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up libnsl-dev:amd64 (1.3.0-2build2) ...
+Setting up libcrypt-dev:amd64 (1:4.4.27-1) ...
+Setting up libjs-jquery (3.6.0+dfsg+~3.5.13-1) ...
+Setting up libisl23:amd64 (0.24-2build1) ...
+Setting up libc-dev-bin (2.35-0ubuntu3.1) ...
+Setting up libalgorithm-diff-xs-perl (0.04-6build3) ...
+Setting up libcc1-0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up liblsan0:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up libitm1:amd64 (12.1.0-2ubuntu1~22.04) ...
+Setting up libjs-underscore (1.13.2~dfsg-2) ...
+Setting up libalgorithm-merge-perl (0.08-3) ...
+Setting up libtsan0:amd64 (11.3.0-1ubuntu1~22.04) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu10) ...
+Setting up cpp-11 (11.3.0-1ubuntu1~22.04) ...
+Setting up fontconfig-config (2.13.1-4.2ubuntu5) ...
+Setting up dpkg-dev (1.21.1ubuntu2.1) ...
+Setting up libjs-sphinxdoc (4.3.2-1) ...
+Setting up libgcc-11-dev:amd64 (11.3.0-1ubuntu1~22.04) ...
+Setting up gcc-11 (11.3.0-1ubuntu1~22.04) ...
+Setting up cpp (4:11.2.0-1ubuntu1) ...
+Setting up libc6-dev:amd64 (2.35-0ubuntu3.1) ...
+Setting up libtiff5:amd64 (4.3.0-6ubuntu0.4) ...
+Setting up libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Setting up gcc (4:11.2.0-1ubuntu1) ...
+Setting up libexpat1-dev:amd64 (2.4.7-1ubuntu0.2) ...
+Setting up libgd3:amd64 (2.3.0-2ubuntu2) ...
+Setting up libstdc++-11-dev:amd64 (11.3.0-1ubuntu1~22.04) ...
+Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+Setting up libc-devtools (2.35-0ubuntu3.1) ...
+Setting up g++-11 (11.3.0-1ubuntu1~22.04) ...
+Setting up libpython3.10-dev:amd64 (3.10.6-1~22.04.2ubuntu1) ...
+Setting up python3.10-dev (3.10.6-1~22.04.2ubuntu1) ...
+Setting up g++ (4:11.2.0-1ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.9ubuntu3) ...
+Setting up libpython3-dev:amd64 (3.10.6-1~22.04) ...
+Setting up python3-dev (3.10.6-1~22.04) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libc-ares2 libjs-highlight.js libnode72 nodejs-doc
+Suggested packages:
+  npm
+The following NEW packages will be installed:
+  libc-ares2 libjs-highlight.js libnode72 nodejs nodejs-doc
+0 upgraded, 5 newly installed, 0 to remove and 32 not upgraded.
+Need to get 13.7 MB of archives.
+After this operation, 53.9 MB of additional disk space will be used.
+Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 libjs-highlight.js all 9.18.5+dfsg1-1 [367 kB]
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-ares2 amd64 1.18.1-1ubuntu0.22.04.1 [45.1 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 libnode72 amd64 12.22.9~dfsg-1ubuntu3 [10.8 MB]
+Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 nodejs-doc all 12.22.9~dfsg-1ubuntu3 [2409 kB]
+Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 nodejs amd64 12.22.9~dfsg-1ubuntu3 [122 kB]
+Fetched 13.7 MB in 1s (17.9 MB/s)
+Selecting previously unselected package libjs-highlight.js.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70456 files and directories currently installed.)
+Preparing to unpack .../libjs-highlight.js_9.18.5+dfsg1-1_all.deb ...
+Unpacking libjs-highlight.js (9.18.5+dfsg1-1) ...
+Selecting previously unselected package libc-ares2:amd64.
+Preparing to unpack .../libc-ares2_1.18.1-1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libc-ares2:amd64 (1.18.1-1ubuntu0.22.04.1) ...
+Selecting previously unselected package libnode72:amd64.
+Preparing to unpack .../libnode72_12.22.9~dfsg-1ubuntu3_amd64.deb ...
+Unpacking libnode72:amd64 (12.22.9~dfsg-1ubuntu3) ...
+Selecting previously unselected package nodejs-doc.
+Preparing to unpack .../nodejs-doc_12.22.9~dfsg-1ubuntu3_all.deb ...
+Unpacking nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+Selecting previously unselected package nodejs.
+Preparing to unpack .../nodejs_12.22.9~dfsg-1ubuntu3_amd64.deb ...
+Unpacking nodejs (12.22.9~dfsg-1ubuntu3) ...
+Setting up libc-ares2:amd64 (1.18.1-1ubuntu0.22.04.1) ...
+Setting up libnode72:amd64 (12.22.9~dfsg-1ubuntu3) ...
+Setting up libjs-highlight.js (9.18.5+dfsg1-1) ...
+Setting up nodejs (12.22.9~dfsg-1ubuntu3) ...
+update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+Setting up nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  python3-cliapp python3-markdown python3-pygments python3-ttystatus
+Suggested packages:
+  python3-xdg python-markdown-doc python-pygments-doc ttf-bitstream-vera
+The following NEW packages will be installed:
+  cmdtest python3-cliapp python3-markdown python3-pygments python3-ttystatus
+0 upgraded, 5 newly installed, 0 to remove and 32 not upgraded.
+Need to get 899 kB of archives.
+After this operation, 4875 kB of additional disk space will be used.
+Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 python3-cliapp all 1.20180812.1-4 [44.5 kB]
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 python3-markdown all 3.3.6-1 [68.5 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 python3-ttystatus all 0.38-4 [14.7 kB]
+Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 cmdtest all 0.32.14.gcdfe14e-2 [21.9 kB]
+Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 python3-pygments all 2.11.2+dfsg-2 [750 kB]
+Fetched 899 kB in 0s (9318 kB/s)
+Selecting previously unselected package python3-cliapp.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 70814 files and directories currently installed.)
+Preparing to unpack .../python3-cliapp_1.20180812.1-4_all.deb ...
+Unpacking python3-cliapp (1.20180812.1-4) ...
+Selecting previously unselected package python3-markdown.
+Preparing to unpack .../python3-markdown_3.3.6-1_all.deb ...
+Unpacking python3-markdown (3.3.6-1) ...
+Selecting previously unselected package python3-ttystatus.
+Preparing to unpack .../python3-ttystatus_0.38-4_all.deb ...
+Unpacking python3-ttystatus (0.38-4) ...
+Selecting previously unselected package cmdtest.
+Preparing to unpack .../cmdtest_0.32.14.gcdfe14e-2_all.deb ...
+Unpacking cmdtest (0.32.14.gcdfe14e-2) ...
+Selecting previously unselected package python3-pygments.
+Preparing to unpack .../python3-pygments_2.11.2+dfsg-2_all.deb ...
+Unpacking python3-pygments (2.11.2+dfsg-2) ...
+Setting up python3-ttystatus (0.38-4) ...
+Setting up python3-cliapp (1.20180812.1-4) ...
+Setting up python3-pygments (2.11.2+dfsg-2) ...
+Setting up python3-markdown (3.3.6-1) ...
+Setting up cmdtest (0.32.14.gcdfe14e-2) ...
+Processing triggers for man-db (2.10.2-1) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+post-activate. which python? /home/ubuntu/.virtualenvs/dagsterdev/bin/python3
+Is node installed? v12.22.9
+
+
+fatal: destination path 'dagster' already exists and is not an empty directory.
+after cd to dagster pwd is /home/ubuntu/dagster at Thu Apr 20 18:40:38 UTC 2023
+Obtaining file:///home/ubuntu/dagster
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build editable did not run successfully.
+  │ exit code: 1
+  ╰─> [14 lines of output]
+      error: Multiple top-level packages discovered in a flat-layout: ['helm', 'pyright', 'js_modules', 'python_modules', 'integration_tests'].
+      
+      To avoid accidental inclusion of unwanted files or directories,
+      setuptools will not proceed with this build.
+      
+      If you are trying to create a single distribution with multiple packages
+      on purpose, you should not rely on automatic discovery.
+      Instead, consider the following options:
+      
+      1. set up custom discovery (`find` directive with `include` or `exclude`)
+      2. use a `src-layout`
+      3. explicitly set `py_modules` or `packages` with a list of names
+      
+      To find more information, look for "package discovery" on setuptools docs.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× Getting requirements to build editable did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+just before make, our python lives at /home/ubuntu/.virtualenvs/dagsterdev/bin/python3
+just before make, Thu Apr 20 18:40:43 UTC 2023
+
+
+python scripts/install_dev_python_modules.py
+pip install -e python_modules/dagster[black,pyright,ruff,test] -e python_modules/dagster-graphql -e python_modules/dagster-test -e python_modules/dagit -e python_modules/automation -e python_modules/libraries/dagster-managed-elements -e python_modules/libraries/dagster-airbyte -e python_modules/libraries/dagster-airflow -e python_modules/libraries/dagster-aws[test] -e python_modules/libraries/dagster-celery -e python_modules/libraries/dagster-celery-docker -e python_modules/libraries/dagster-dask[yarn,pbs,kube] -e python_modules/libraries/dagster-databricks -e python_modules/libraries/dagster-datadog -e python_modules/libraries/dagster-datahub -e python_modules/libraries/dagster-dbt -e python_modules/libraries/dagster-docker -e python_modules/libraries/dagster-gcp -e python_modules/libraries/dagster-gcp-pandas -e python_modules/libraries/dagster-gcp-pyspark -e python_modules/libraries/dagster-fivetran -e python_modules/libraries/dagster-k8s -e python_modules/libraries/dagster-celery-k8s -e python_modules/libraries/dagster-github -e python_modules/libraries/dagster-mlflow -e python_modules/libraries/dagster-mysql -e python_modules/libraries/dagster-pagerduty -e python_modules/libraries/dagster-pandas -e python_modules/libraries/dagster-papertrail -e python_modules/libraries/dagster-postgres -e python_modules/libraries/dagster-prometheus -e python_modules/libraries/dagster-pyspark -e python_modules/libraries/dagster-shell -e python_modules/libraries/dagster-slack -e python_modules/libraries/dagster-spark -e python_modules/libraries/dagster-ssh -e python_modules/libraries/dagster-twilio -e python_modules/libraries/dagstermill -e integration_tests/python_modules/dagster-k8s-test-infra -e python_modules/libraries/dagster-azure -e python_modules/libraries/dagster-msteams -e python_modules/libraries/dagster-duckdb -e python_modules/libraries/dagster-duckdb-pandas -e python_modules/libraries/dagster-duckdb-polars -e python_modules/libraries/dagster-duckdb-pyspark -e python_modules/libraries/dagster-wandb -e helm/dagster/schema[test] -e .buildkite/dagster-buildkite -e python_modules/libraries/dagster-dbt -e python_modules/libraries/dagster-pandera -e python_modules/libraries/dagster-snowflake -e python_modules/libraries/dagster-snowflake-pandas
+Obtaining file:///home/ubuntu/dagster/python_modules/dagster
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/dagster-graphql
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/dagster-test
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/dagit
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/automation
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-managed-elements
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-airbyte
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-airflow
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-aws
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-celery
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-celery-docker
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-dask
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-databricks
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-datadog
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-datahub
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-dbt
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-docker
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-gcp
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-gcp-pandas
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-gcp-pyspark
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-fivetran
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-k8s
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-celery-k8s
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-github
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-mlflow
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-mysql
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-pagerduty
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-pandas
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-papertrail
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-postgres
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-prometheus
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-pyspark
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-shell
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-slack
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-spark
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-ssh
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-twilio
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagstermill
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/integration_tests/python_modules/dagster-k8s-test-infra
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-azure
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-msteams
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-duckdb
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-duckdb-pandas
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-duckdb-polars
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-duckdb-pyspark
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-wandb
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/helm/dagster/schema
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/.buildkite/dagster-buildkite
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-pandera
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-snowflake
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Obtaining file:///home/ubuntu/dagster/python_modules/libraries/dagster-snowflake-pandas
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting Jinja2
+Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 KB 2.6 MB/s eta 0:00:00
+Collecting PyYAML>=5.1
+Downloading PyYAML-6.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (682 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 682.2/682.2 KB 29.7 MB/s eta 0:00:00
+Collecting alembic!=1.6.3,!=1.7.0,>=1.2.1
+Downloading alembic-1.10.3-py3-none-any.whl (212 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 212.3/212.3 KB 29.2 MB/s eta 0:00:00
+Collecting click>=5.0
+Downloading click-8.1.3-py3-none-any.whl (96 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 KB 8.9 MB/s eta 0:00:00
+Collecting coloredlogs<=14.0,>=6.1
+Downloading coloredlogs-14.0-py2.py3-none-any.whl (43 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.9/43.9 KB 7.2 MB/s eta 0:00:00
+Collecting croniter>=0.3.34
+Downloading croniter-1.3.14-py2.py3-none-any.whl (18 kB)
+Collecting docstring-parser
+Downloading docstring_parser-0.15-py3-none-any.whl (36 kB)
+Collecting grpcio-health-checking>=1.44.0
+Downloading grpcio_health_checking-1.54.0-py3-none-any.whl (8.5 kB)
+Collecting packaging>=20.9
+Downloading packaging-23.1-py3-none-any.whl (48 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 KB 10.0 MB/s eta 0:00:00
+Collecting pendulum
+Downloading pendulum-2.1.2.tar.gz (81 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.2/81.2 KB 13.1 MB/s eta 0:00:00
+Installing build dependencies: started
+Installing build dependencies: finished with status 'done'
+Getting requirements to build wheel: started
+Getting requirements to build wheel: finished with status 'done'
+Preparing metadata (pyproject.toml): started
+Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting protobuf>=3.20.0
+Downloading protobuf-4.22.3-cp37-abi3-manylinux2014_x86_64.whl (302 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 302.4/302.4 KB 10.7 MB/s eta 0:00:00
+Collecting pydantic
+Downloading pydantic-1.10.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 45.5 MB/s eta 0:00:00
+Collecting python-dateutil
+Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 KB 34.0 MB/s eta 0:00:00
+Collecting python-dotenv
+Downloading python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+Collecting pytz
+Downloading pytz-2023.3-py2.py3-none-any.whl (502 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 502.3/502.3 KB 33.7 MB/s eta 0:00:00
+Collecting requests
+Downloading requests-2.28.2-py3-none-any.whl (62 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 KB 11.9 MB/s eta 0:00:00
+Requirement already satisfied: setuptools in /home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages (from dagster==1!0+dev) (59.6.0)
+Collecting sqlalchemy<2.0.0,>=1.0
+Downloading SQLAlchemy-1.4.47-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 47.2 MB/s eta 0:00:00
+Collecting tabulate
+Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+Collecting tomli
+Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting toposort>=1.0
+Downloading toposort-1.10-py3-none-any.whl (8.5 kB)
+Collecting tqdm
+Downloading tqdm-4.65.0-py3-none-any.whl (77 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.1/77.1 KB 14.1 MB/s eta 0:00:00
+Collecting typing_extensions>=4.4.0
+Downloading typing_extensions-4.5.0-py3-none-any.whl (27 kB)
+Collecting universal_pathlib
+Downloading universal_pathlib-0.0.23-py3-none-any.whl (28 kB)
+Collecting watchdog>=0.8.3
+Downloading watchdog-3.0.0-py3-none-manylinux2014_x86_64.whl (82 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.1/82.1 KB 12.5 MB/s eta 0:00:00
+Collecting grpcio<1.48.0,>=1.44.0
+Downloading grpcio-1.47.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.5 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 58.2 MB/s eta 0:00:00
+Collecting black[jupyter]==22.12.0
+Downloading black-22.12.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 52.8 MB/s eta 0:00:00
+Collecting docker
+Downloading docker-6.0.1-py3-none-any.whl (147 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 147.5/147.5 KB 23.2 MB/s eta 0:00:00
+Collecting grpcio-tools>=1.44.0
+Downloading grpcio_tools-1.54.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 45.5 MB/s eta 0:00:00
+Collecting mock==3.0.5
+Downloading mock-3.0.5-py2.py3-none-any.whl (25 kB)
+Collecting objgraph
+Downloading objgraph-3.5.0-py2.py3-none-any.whl (17 kB)
+Collecting pytest-cov==2.10.1
+Downloading pytest_cov-2.10.1-py2.py3-none-any.whl (19 kB)
+Collecting pytest-dependency==0.5.1
+Downloading pytest-dependency-0.5.1.tar.gz (27 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting pytest-mock==3.3.1
+Downloading pytest_mock-3.3.1-py3-none-any.whl (11 kB)
+Collecting pytest-rerunfailures==10.0
+Downloading pytest_rerunfailures-10.0-py3-none-any.whl (9.0 kB)
+Collecting pytest-runner==5.2
+Downloading pytest_runner-5.2-py2.py3-none-any.whl (6.8 kB)
+Collecting pytest-xdist==2.1.0
+Downloading pytest_xdist-2.1.0-py3-none-any.whl (36 kB)
+Collecting pytest==7.0.1
+Downloading pytest-7.0.1-py3-none-any.whl (296 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 297.0/297.0 KB 23.6 MB/s eta 0:00:00
+Collecting responses
+Downloading responses-0.23.1-py3-none-any.whl (52 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.1/52.1 KB 9.5 MB/s eta 0:00:00
+Collecting snapshottest==0.6.0
+Downloading snapshottest-0.6.0-py2.py3-none-any.whl (16 kB)
+Collecting tox==3.25.0
+Downloading tox-3.25.0-py2.py3-none-any.whl (85 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.9/85.9 KB 14.3 MB/s eta 0:00:00
+Collecting yamllint
+Downloading yamllint-1.30.0.tar.gz (124 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.3/124.3 KB 20.4 MB/s eta 0:00:00
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting buildkite-test-collector
+Downloading buildkite_test_collector-0.1.7-py3-none-any.whl (11 kB)
+Collecting pandas-stubs
+Downloading pandas_stubs-2.0.0.230412-py3-none-any.whl (149 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 149.6/149.6 KB 12.4 MB/s eta 0:00:00
+Collecting pyright==1.1.298
+Downloading pyright-1.1.298-py3-none-any.whl (17 kB)
+Collecting types-PyYAML
+Downloading types_PyYAML-6.0.12.9-py3-none-any.whl (14 kB)
+Collecting types-backports
+Downloading types_backports-0.1.3-py2.py3-none-any.whl (2.2 kB)
+Collecting types-certifi
+Downloading types_certifi-2021.10.8.3-py3-none-any.whl (2.1 kB)
+Collecting types-chardet
+Downloading types_chardet-5.0.4.3-py3-none-any.whl (5.9 kB)
+Collecting types-croniter
+Downloading types_croniter-1.3.2.9-py3-none-any.whl (3.6 kB)
+Collecting types-cryptography
+Downloading types_cryptography-3.3.23.2-py3-none-any.whl (30 kB)
+Collecting types-mock
+Downloading types_mock-5.0.0.6-py3-none-any.whl (5.0 kB)
+Collecting types-paramiko
+Downloading types_paramiko-3.0.0.7-py3-none-any.whl (31 kB)
+Collecting types-pkg-resources
+Downloading types_pkg_resources-0.1.3-py2.py3-none-any.whl (4.8 kB)
+Collecting types-pyOpenSSL
+Downloading types_pyOpenSSL-23.1.0.2-py3-none-any.whl (6.9 kB)
+Collecting types-python-dateutil
+Downloading types_python_dateutil-2.8.19.12-py3-none-any.whl (9.2 kB)
+Collecting types-pytz
+Downloading types_pytz-2023.3.0.0-py3-none-any.whl (4.7 kB)
+Collecting types-requests
+Downloading types_requests-2.28.11.17-py3-none-any.whl (14 kB)
+Collecting types-simplejson
+Downloading types_simplejson-3.19.0.0-py3-none-any.whl (3.9 kB)
+Collecting types-six
+Downloading types_six-1.16.21.8-py3-none-any.whl (14 kB)
+Collecting types-sqlalchemy
+Downloading types_SQLAlchemy-1.4.53.36-py3-none-any.whl (184 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.3/184.3 KB 24.7 MB/s eta 0:00:00
+Collecting types-tabulate
+Downloading types_tabulate-0.9.0.2-py3-none-any.whl (3.1 kB)
+Collecting types-toml
+Downloading types_toml-0.10.8.6-py3-none-any.whl (4.5 kB)
+Collecting types-tzlocal
+Downloading types_tzlocal-4.3.0.0-py3-none-any.whl (2.7 kB)
+Collecting ruff==0.0.255
+Downloading ruff-0.0.255-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.2 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 63.9 MB/s eta 0:00:00
+Collecting pathspec>=0.9.0
+Downloading pathspec-0.11.1-py3-none-any.whl (29 kB)
+Collecting mypy-extensions>=0.4.3
+Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+Collecting platformdirs>=2
+Downloading platformdirs-3.2.0-py3-none-any.whl (14 kB)
+Collecting tokenize-rt>=3.2.0
+Downloading tokenize_rt-5.0.0-py2.py3-none-any.whl (5.8 kB)
+Collecting ipython>=7.8.0
+Downloading ipython-8.12.0-py3-none-any.whl (796 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 796.4/796.4 KB 44.6 MB/s eta 0:00:00
+Collecting six
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting nodeenv>=1.6.0
+Downloading nodeenv-1.7.0-py2.py3-none-any.whl (21 kB)
+Collecting iniconfig
+Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting py>=1.8.2
+Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 KB 13.2 MB/s eta 0:00:00
+Collecting attrs>=19.2.0
+Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 8.2 MB/s eta 0:00:00
+Collecting pluggy<2.0,>=0.12
+Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Collecting coverage>=4.4
+Downloading coverage-7.2.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (227 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.0/228.0 KB 21.6 MB/s eta 0:00:00
+Collecting execnet>=1.1
+Downloading execnet-1.9.0-py2.py3-none-any.whl (39 kB)
+Collecting pytest-forked
+Downloading pytest_forked-1.6.0-py3-none-any.whl (4.9 kB)
+Collecting fastdiff<1,>=0.1.4
+Downloading fastdiff-0.3.0-py2.py3-none-any.whl (37 kB)
+Collecting termcolor
+Downloading termcolor-2.2.0-py3-none-any.whl (6.6 kB)
+Collecting toml>=0.9.4
+Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting virtualenv!=20.0.0,!=20.0.1,!=20.0.2,!=20.0.3,!=20.0.4,!=20.0.5,!=20.0.6,!=20.0.7,>=16.0.0
+Downloading virtualenv-20.22.0-py3-none-any.whl (3.2 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 53.1 MB/s eta 0:00:00
+Collecting filelock>=3.0.0
+Downloading filelock-3.12.0-py3-none-any.whl (10 kB)
+Collecting gql[requests]>=3.0.0
+Downloading gql-3.4.0-py2.py3-none-any.whl (65 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.2/65.2 KB 10.2 MB/s eta 0:00:00
+Collecting graphene>=3
+Downloading graphene-3.2.2-py2.py3-none-any.whl (125 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.6/125.6 KB 19.5 MB/s eta 0:00:00
+Collecting starlette
+Downloading starlette-0.26.1-py3-none-any.whl (66 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.9/66.9 KB 9.6 MB/s eta 0:00:00
+Collecting pyspark
+Downloading pyspark-3.4.0.tar.gz (310.8 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.8/310.8 MB 2.1 MB/s eta 0:00:00
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting uvicorn[standard]
+Downloading uvicorn-0.21.1-py3-none-any.whl (57 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.8/57.8 KB 11.0 MB/s eta 0:00:00
+Collecting autoflake
+Downloading autoflake-2.1.1-py3-none-any.whl (31 kB)
+Collecting boto3
+Downloading boto3-1.26.116-py3-none-any.whl (135 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.6/135.6 KB 20.6 MB/s eta 0:00:00
+Collecting pandas
+Downloading pandas-2.0.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.3 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 42.8 MB/s eta 0:00:00
+Collecting pytablereader
+Downloading pytablereader-0.31.3-py3-none-any.whl (48 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.5/48.5 KB 6.1 MB/s eta 0:00:00
+Collecting twine==1.15.0
+Downloading twine-1.15.0-py2.py3-none-any.whl (35 kB)
+Collecting urllib3
+Downloading urllib3-1.26.15-py2.py3-none-any.whl (140 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.9/140.9 KB 22.6 MB/s eta 0:00:00
+Collecting virtualenv!=20.0.0,!=20.0.1,!=20.0.2,!=20.0.3,!=20.0.4,!=20.0.5,!=20.0.6,!=20.0.7,>=16.0.0
+Downloading virtualenv-20.13.2-py2.py3-none-any.whl (8.7 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 71.4 MB/s eta 0:00:00
+Collecting wheel==0.33.6
+Downloading wheel-0.33.6-py2.py3-none-any.whl (21 kB)
+Collecting pkginfo>=1.4.2
+Downloading pkginfo-1.9.6-py3-none-any.whl (30 kB)
+Collecting requests-toolbelt!=0.9.0,>=0.8.0
+Downloading requests_toolbelt-0.10.1-py2.py3-none-any.whl (54 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.5/54.5 KB 3.9 MB/s eta 0:00:00
+Collecting readme-renderer>=21.0
+Downloading readme_renderer-37.3-py3-none-any.whl (14 kB)
+Collecting platformdirs>=2
+Downloading platformdirs-2.6.2-py3-none-any.whl (14 kB)
+Collecting distlib<1,>=0.3.1
+Downloading distlib-0.3.6-py2.py3-none-any.whl (468 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.5/468.5 KB 29.6 MB/s eta 0:00:00
+Collecting click_spinner
+Downloading click_spinner-0.1.10-py2.py3-none-any.whl (4.0 kB)
+Collecting docker
+Downloading docker-5.0.3-py2.py3-none-any.whl (146 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.2/146.2 KB 18.6 MB/s eta 0:00:00
+Collecting lazy_object_proxy
+Downloading lazy_object_proxy-1.9.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (63 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.3/63.3 KB 8.8 MB/s eta 0:00:00
+Collecting moto>=2.2.8
+Downloading moto-4.1.7-py2.py3-none-any.whl (3.0 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 55.7 MB/s eta 0:00:00
+Collecting requests-mock
+Downloading requests_mock-1.10.0-py2.py3-none-any.whl (28 kB)
+Collecting xmltodict==0.12.0
+Downloading xmltodict-0.12.0-py2.py3-none-any.whl (9.2 kB)
+Collecting celery>=4.3.0
+Downloading celery-5.2.7-py3-none-any.whl (405 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 405.6/405.6 KB 40.5 MB/s eta 0:00:00
+Collecting bokeh
+Downloading bokeh-3.1.0-py3-none-any.whl (8.3 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 62.7 MB/s eta 0:00:00
+Collecting dask[dataframe]>=1.2.2
+Downloading dask-2023.4.0-py3-none-any.whl (1.2 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 55.5 MB/s eta 0:00:00
+Collecting distributed>=1.28.1
+Downloading distributed-2023.4.0-py3-none-any.whl (961 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 961.1/961.1 KB 56.4 MB/s eta 0:00:00
+Collecting dask-kubernetes<=2022.9.0
+Downloading dask_kubernetes-2022.9.0-py3-none-any.whl (143 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 143.2/143.2 KB 16.1 MB/s eta 0:00:00
+Collecting dask-jobqueue
+Downloading dask_jobqueue-0.8.1-py2.py3-none-any.whl (46 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.0/46.0 KB 6.3 MB/s eta 0:00:00
+Collecting dask-yarn
+Downloading dask_yarn-0.9-py3-none-any.whl (25 kB)
+Collecting databricks-cli~=0.17
+Downloading databricks-cli-0.17.6.tar.gz (82 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.7/82.7 KB 12.0 MB/s eta 0:00:00
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting databricks_api
+Downloading databricks_api-0.8.0-py3-none-any.whl (7.2 kB)
+Collecting datadog
+Downloading datadog-0.45.0-py2.py3-none-any.whl (113 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 113.0/113.0 KB 13.7 MB/s eta 0:00:00
+Collecting acryl-datahub[datahub-kafka,datahub-rest]<0.8.41.2
+Downloading acryl_datahub-0.8.41.1-py3-none-any.whl (946 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 946.2/946.2 KB 32.7 MB/s eta 0:00:00
+Collecting dbt-core>=1.1
+Downloading dbt_core-1.4.6-py3-none-any.whl (924 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 924.4/924.4 KB 37.5 MB/s eta 0:00:00
+Collecting networkx
+Downloading networkx-3.1-py3-none-any.whl (2.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 38.8 MB/s eta 0:00:00
+Collecting typer[all]
+Downloading typer-0.7.0-py3-none-any.whl (38 kB)
+Collecting docker-image-py
+Downloading docker-image-py-0.1.12.tar.gz (8.2 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting db-dtypes
+Downloading db_dtypes-1.1.1-py2.py3-none-any.whl (14 kB)
+Collecting google-api-python-client
+Downloading google_api_python_client-2.86.0-py2.py3-none-any.whl (11.3 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 13.0 MB/s eta 0:00:00
+Collecting google-cloud-bigquery
+Downloading google_cloud_bigquery-3.10.0-py2.py3-none-any.whl (218 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 218.4/218.4 KB 4.7 MB/s eta 0:00:00
+Collecting google-cloud-storage
+Downloading google_cloud_storage-2.8.0-py2.py3-none-any.whl (113 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 113.6/113.6 KB 1.3 MB/s eta 0:00:00
+Collecting oauth2client
+Downloading oauth2client-4.1.3-py2.py3-none-any.whl (98 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.2/98.2 KB 735.4 kB/s eta 0:00:00
+Collecting pandas
+Downloading pandas-1.5.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 30.4 MB/s eta 0:00:00
+Collecting kubernetes
+Downloading kubernetes-26.1.0-py2.py3-none-any.whl (1.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 12.0 MB/s eta 0:00:00
+Collecting pyjwt[crypto]
+Downloading PyJWT-2.6.0-py3-none-any.whl (20 kB)
+Collecting mlflow
+Downloading mlflow-2.3.0-py3-none-any.whl (17.7 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.7/17.7 MB 6.8 MB/s eta 0:00:00
+Collecting mysql-connector-python
+Downloading mysql_connector_python-8.0.33-cp310-cp310-manylinux1_x86_64.whl (27.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 27.4/27.4 MB 28.7 MB/s eta 0:00:00
+Collecting pypd
+Downloading pypd-1.1.0.tar.gz (21 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting psycopg2-binary
+Downloading psycopg2_binary-2.9.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 52.7 MB/s eta 0:00:00
+Collecting prometheus_client
+Downloading prometheus_client-0.16.0-py3-none-any.whl (122 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.5/122.5 KB 18.3 MB/s eta 0:00:00
+Collecting slack_sdk
+Downloading slack_sdk-3.21.2-py2.py3-none-any.whl (276 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 276.5/276.5 KB 19.6 MB/s eta 0:00:00
+Collecting paramiko
+Downloading paramiko-3.1.0-py3-none-any.whl (211 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 211.2/211.2 KB 29.5 MB/s eta 0:00:00
+Collecting sshtunnel
+Downloading sshtunnel-0.4.0-py2.py3-none-any.whl (24 kB)
+Collecting twilio
+Downloading twilio-8.1.0-py2.py3-none-any.whl (1.7 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 50.8 MB/s eta 0:00:00
+Collecting ipykernel!=5.4.0,!=5.4.1,>=4.9.0
+Downloading ipykernel-6.22.0-py3-none-any.whl (149 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 150.0/150.0 KB 23.9 MB/s eta 0:00:00
+Collecting ipython_genutils>=0.2.0
+Downloading ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+Collecting jupyter-client<8
+Downloading jupyter_client-7.4.9-py3-none-any.whl (133 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.5/133.5 KB 21.7 MB/s eta 0:00:00
+Collecting nbconvert
+Downloading nbconvert-7.3.1-py3-none-any.whl (284 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 284.1/284.1 KB 22.3 MB/s eta 0:00:00
+Collecting papermill>=1.0.0
+Downloading papermill-2.4.0-py3-none-any.whl (38 kB)
+Collecting scrapbook>=0.5.0
+Downloading scrapbook-0.5.0-py3-none-any.whl (34 kB)
+Collecting azure-core<2.0.0,>=1.7.0
+Downloading azure_core-1.26.4-py3-none-any.whl (173 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.9/173.9 KB 28.9 MB/s eta 0:00:00
+Collecting azure-identity<2.0.0,>=1.7.0
+Downloading azure_identity-1.12.0-py3-none-any.whl (135 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.5/135.5 KB 12.5 MB/s eta 0:00:00
+Collecting azure-storage-blob<13.0.0,>=12.5.0
+Downloading azure_storage_blob-12.16.0-py3-none-any.whl (387 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 388.0/388.0 KB 24.2 MB/s eta 0:00:00
+Collecting azure-storage-file-datalake<13.0.0,>=12.5
+Downloading azure_storage_file_datalake-12.11.0-py3-none-any.whl (247 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.8/247.8 KB 32.0 MB/s eta 0:00:00
+Collecting duckdb
+Downloading duckdb-0.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (15.2 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 38.4 MB/s eta 0:00:00
+Collecting polars[pyarrow]
+Downloading polars-0.17.5-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.5 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.5/17.5 MB 17.4 MB/s eta 0:00:00
+Collecting wandb>=0.13.5
+Downloading wandb-0.15.0-py3-none-any.whl (2.0 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 53.2 MB/s eta 0:00:00
+Collecting kubernetes
+Downloading kubernetes-21.7.0-py2.py3-none-any.whl (1.8 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 52.0 MB/s eta 0:00:00
+Collecting pandera>=0.14.2
+Downloading pandera-0.14.5-py3-none-any.whl (149 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 149.3/149.3 KB 22.3 MB/s eta 0:00:00
+Collecting snowflake-connector-python>=2.1.0
+Downloading snowflake_connector_python-3.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (24.5 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.5/24.5 MB 29.7 MB/s eta 0:00:00
+Collecting snowflake-sqlalchemy>=1.2
+Downloading snowflake_sqlalchemy-1.4.7-py2.py3-none-any.whl (33 kB)
+Collecting mixpanel>=4.9.0
+Downloading mixpanel-4.10.0-py2.py3-none-any.whl (8.9 kB)
+Collecting typing-inspect
+Downloading typing_inspect-0.8.0-py3-none-any.whl (8.7 kB)
+Collecting types-termcolor>=1.0.0
+Downloading types_termcolor-1.1.6.2-py3-none-any.whl (2.4 kB)
+Collecting ratelimiter
+Downloading ratelimiter-1.2.0.post0-py3-none-any.whl (6.6 kB)
+Collecting psutil>=5.8.0
+Downloading psutil-5.9.5-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (282 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 282.1/282.1 KB 14.3 MB/s eta 0:00:00
+Collecting humanfriendly
+Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.8/86.8 KB 12.9 MB/s eta 0:00:00
+Collecting entrypoints
+Downloading entrypoints-0.4-py3-none-any.whl (5.3 kB)
+Collecting aiohttp<4
+Downloading aiohttp-3.8.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.0 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 46.7 MB/s eta 0:00:00
+Collecting types-Deprecated
+Downloading types_Deprecated-1.2.9.2-py3-none-any.whl (3.2 kB)
+Collecting avro<1.11,>=1.10.2
+Downloading avro-1.10.2.tar.gz (68 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.2/68.2 KB 10.5 MB/s eta 0:00:00
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting click-default-group
+Downloading click-default-group-1.2.2.tar.gz (3.3 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting Deprecated
+Downloading Deprecated-1.2.13-py2.py3-none-any.whl (9.6 kB)
+Collecting stackprinter
+Downloading stackprinter-0.2.10-py3-none-any.whl (29 kB)
+Collecting avro-gen3==0.7.4
+Downloading avro_gen3-0.7.4-py3-none-any.whl (26 kB)
+Collecting expandvars>=0.6.5
+Downloading expandvars-0.9.0-py3-none-any.whl (6.6 kB)
+Collecting progressbar2
+Downloading progressbar2-4.2.0-py2.py3-none-any.whl (27 kB)
+Collecting markupsafe<=2.0.1,>=1.1.1
+Downloading MarkupSafe-2.0.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (30 kB)
+Collecting fastavro>=1.2.0
+Downloading fastavro-1.7.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 59.0 MB/s eta 0:00:00
+Collecting confluent-kafka>=1.5.0
+Downloading confluent_kafka-2.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.9 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 56.1 MB/s eta 0:00:00
+Collecting tzlocal
+Downloading tzlocal-4.3-py3-none-any.whl (20 kB)
+Collecting Mako
+Downloading Mako-1.2.4-py3-none-any.whl (78 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.7/78.7 KB 13.0 MB/s eta 0:00:00
+Collecting cryptography>=2.5
+Downloading cryptography-40.0.2-cp36-abi3-manylinux_2_28_x86_64.whl (3.7 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 58.7 MB/s eta 0:00:00
+Collecting msal<2.0.0,>=1.12.0
+Downloading msal-1.22.0-py2.py3-none-any.whl (90 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.0/90.0 KB 15.2 MB/s eta 0:00:00
+Collecting msal-extensions<2.0.0,>=0.3.0
+Downloading msal_extensions-1.0.0-py2.py3-none-any.whl (19 kB)
+Collecting isodate>=0.6.1
+Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 KB 6.6 MB/s eta 0:00:00
+Collecting billiard<4.0,>=3.6.4.0
+Downloading billiard-3.6.4.0-py3-none-any.whl (89 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.5/89.5 KB 16.0 MB/s eta 0:00:00
+Collecting click-repl>=0.2.0
+Downloading click_repl-0.2.0-py3-none-any.whl (5.2 kB)
+Collecting click-didyoumean>=0.0.3
+Downloading click_didyoumean-0.3.0-py3-none-any.whl (2.7 kB)
+Collecting click-plugins>=1.1.1
+Downloading click_plugins-1.1.1-py2.py3-none-any.whl (7.5 kB)
+Collecting kombu<6.0,>=5.2.3
+Downloading kombu-5.2.4-py3-none-any.whl (189 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 189.2/189.2 KB 26.5 MB/s eta 0:00:00
+Collecting vine<6.0,>=5.0.0
+Downloading vine-5.0.0-py2.py3-none-any.whl (9.4 kB)
+Collecting kubernetes-asyncio>=12.0.1
+Downloading kubernetes_asyncio-24.2.2-py3-none-any.whl (1.8 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 48.1 MB/s eta 0:00:00
+Collecting kopf>=1.35.3
+Downloading kopf-1.36.0-py3-none-any.whl (205 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.9/205.9 KB 28.6 MB/s eta 0:00:00
+Collecting fsspec>=0.6.0
+Downloading fsspec-2023.4.0-py3-none-any.whl (153 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.0/154.0 KB 20.5 MB/s eta 0:00:00
+Collecting importlib-metadata>=4.13.0
+Downloading importlib_metadata-6.5.0-py3-none-any.whl (22 kB)
+Collecting partd>=1.2.0
+Downloading partd-1.4.0-py3-none-any.whl (18 kB)
+Collecting toolz>=0.8.2
+Downloading toolz-0.12.0-py3-none-any.whl (55 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 KB 7.4 MB/s eta 0:00:00
+Collecting cloudpickle>=1.1.1
+Downloading cloudpickle-2.2.1-py3-none-any.whl (25 kB)
+Collecting numpy>=1.21
+Downloading numpy-1.24.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 32.2 MB/s eta 0:00:00
+Collecting oauthlib>=3.1.0
+Downloading oauthlib-3.2.2-py3-none-any.whl (151 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.7/151.7 KB 22.6 MB/s eta 0:00:00
+Collecting werkzeug<3,>=1
+Downloading Werkzeug-2.2.3-py3-none-any.whl (233 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.6/233.6 KB 16.0 MB/s eta 0:00:00
+Collecting mashumaro[msgpack]==3.3.1
+Downloading mashumaro-3.3.1-py3-none-any.whl (86 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.7/86.7 KB 12.2 MB/s eta 0:00:00
+Collecting cffi<2.0.0,>=1.9
+Downloading cffi-1.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (441 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 441.8/441.8 KB 21.1 MB/s eta 0:00:00
+Collecting betterproto==1.2.5
+Downloading betterproto-1.2.5.tar.gz (26 kB)
+Installing build dependencies: started
+Installing build dependencies: finished with status 'done'
+Getting requirements to build wheel: started
+Getting requirements to build wheel: finished with status 'done'
+Preparing metadata (pyproject.toml): started
+Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting logbook<1.6,>=1.5
+Downloading Logbook-1.5.3.tar.gz (85 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.8/85.8 KB 7.5 MB/s eta 0:00:00
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting colorama<0.4.7,>=0.3.9
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting agate<1.7.1,>=1.6
+Downloading agate-1.7.0-py2.py3-none-any.whl (97 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.1/97.1 KB 1.6 MB/s eta 0:00:00
+Collecting hologram<=0.0.16,>=0.0.14
+Downloading hologram-0.0.16-py3-none-any.whl (11 kB)
+Collecting sqlparse<0.4.4,>=0.2.3
+Downloading sqlparse-0.4.3-py3-none-any.whl (42 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.8/42.8 KB 7.6 MB/s eta 0:00:00
+Collecting dbt-extractor~=0.4.1
+Downloading dbt_extractor-0.4.1-cp36-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 38.1 MB/s eta 0:00:00
+Collecting networkx
+Downloading networkx-2.8.8-py3-none-any.whl (2.0 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 60.8 MB/s eta 0:00:00
+Collecting pathspec>=0.9.0
+Downloading pathspec-0.10.3-py3-none-any.whl (29 kB)
+Collecting idna<4,>=2.5
+Downloading idna-3.4-py3-none-any.whl (61 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 KB 4.9 MB/s eta 0:00:00
+Collecting minimal-snowplow-tracker==0.0.2
+Downloading minimal-snowplow-tracker-0.0.2.tar.gz (12 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting grpclib
+Downloading grpclib-0.4.3.tar.gz (62 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 KB 9.9 MB/s eta 0:00:00
+Installing build dependencies: started
+Installing build dependencies: finished with status 'done'
+Getting requirements to build wheel: started
+Getting requirements to build wheel: finished with status 'done'
+Preparing metadata (pyproject.toml): started
+Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting stringcase
+Downloading stringcase-1.2.0.tar.gz (3.0 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting msgpack>=0.5.6
+Downloading msgpack-1.0.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (316 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 316.8/316.8 KB 20.4 MB/s eta 0:00:00
+Collecting sortedcontainers>=2.0.5
+Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Collecting zict>=2.2.0
+Downloading zict-3.0.0-py2.py3-none-any.whl (43 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.3/43.3 KB 6.8 MB/s eta 0:00:00
+Collecting tblib>=1.6.0
+Downloading tblib-1.7.0-py2.py3-none-any.whl (12 kB)
+Collecting tornado>=6.0.3
+Downloading tornado-6.3-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (426 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 426.4/426.4 KB 22.3 MB/s eta 0:00:00
+Collecting locket>=1.0.0
+Downloading locket-1.0.0-py2.py3-none-any.whl (4.4 kB)
+Collecting websocket-client>=0.32.0
+Downloading websocket_client-1.5.1-py3-none-any.whl (55 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.9/55.9 KB 5.0 MB/s eta 0:00:00
+Collecting yarl<2.0,>=1.6
+Downloading yarl-1.8.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (264 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 264.0/264.0 KB 19.6 MB/s eta 0:00:00
+Collecting graphql-core<3.3,>=3.2
+Downloading graphql_core-3.2.3-py3-none-any.whl (202 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.9/202.9 KB 25.5 MB/s eta 0:00:00
+Collecting backoff<3.0,>=1.11.1
+Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+Collecting aniso8601<10,>=8
+Downloading aniso8601-9.0.1-py2.py3-none-any.whl (52 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 KB 8.7 MB/s eta 0:00:00
+Collecting graphql-relay<3.3,>=3.1
+Downloading graphql_relay-3.2.0-py3-none-any.whl (16 kB)
+Collecting grpcio-health-checking>=1.44.0
+Downloading grpcio_health_checking-1.53.0-py3-none-any.whl (8.5 kB)
+Downloading grpcio_health_checking-1.51.3-py3-none-any.whl (8.5 kB)
+Downloading grpcio_health_checking-1.51.1-py3-none-any.whl (8.5 kB)
+Downloading grpcio_health_checking-1.50.0-py3-none-any.whl (17 kB)
+Downloading grpcio_health_checking-1.49.1-py3-none-any.whl (17 kB)
+Downloading grpcio_health_checking-1.48.2-py3-none-any.whl (18 kB)
+Downloading grpcio_health_checking-1.48.1-py3-none-any.whl (18 kB)
+Downloading grpcio_health_checking-1.47.5-py3-none-any.whl (8.7 kB)
+Collecting grpcio-tools>=1.44.0
+Downloading grpcio_tools-1.53.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 56.3 MB/s eta 0:00:00
+Downloading grpcio_tools-1.51.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 55.7 MB/s eta 0:00:00
+Downloading grpcio_tools-1.51.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 52.0 MB/s eta 0:00:00
+Downloading grpcio_tools-1.50.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 57.4 MB/s eta 0:00:00
+Downloading grpcio_tools-1.49.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 39.3 MB/s eta 0:00:00
+Downloading grpcio_tools-1.48.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 59.4 MB/s eta 0:00:00
+Downloading grpcio_tools-1.48.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 54.7 MB/s eta 0:00:00
+Collecting protobuf>=3.20.0
+Downloading protobuf-3.20.3-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 42.1 MB/s eta 0:00:00
+Collecting grpcio-tools>=1.44.0
+Downloading grpcio_tools-1.47.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.4/2.4 MB 50.3 MB/s eta 0:00:00
+Collecting pyzmq>=20
+Downloading pyzmq-25.0.2-cp310-cp310-manylinux_2_28_x86_64.whl (1.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 43.0 MB/s eta 0:00:00
+Collecting traitlets>=5.4.0
+Downloading traitlets-5.9.0-py3-none-any.whl (117 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.4/117.4 KB 17.5 MB/s eta 0:00:00
+Collecting comm>=0.1.1
+Downloading comm-0.1.3-py3-none-any.whl (6.6 kB)
+Collecting nest-asyncio
+Downloading nest_asyncio-1.5.6-py3-none-any.whl (5.2 kB)
+Collecting debugpy>=1.6.5
+Downloading debugpy-1.6.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 59.6 MB/s eta 0:00:00
+Collecting matplotlib-inline>=0.1
+Downloading matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting jupyter-core!=5.0.*,>=4.12
+Downloading jupyter_core-5.3.0-py3-none-any.whl (93 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.2/93.2 KB 14.6 MB/s eta 0:00:00
+Collecting google-auth>=1.0.1
+Downloading google_auth-2.17.3-py2.py3-none-any.whl (178 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.2/178.2 KB 15.5 MB/s eta 0:00:00
+Collecting certifi>=14.05.14
+Downloading certifi-2022.12.7-py3-none-any.whl (155 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 KB 14.1 MB/s eta 0:00:00
+Collecting requests-oauthlib
+Downloading requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+Collecting botocore>=1.12.201
+Downloading botocore-1.29.116-py3-none-any.whl (10.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 49.1 MB/s eta 0:00:00
+Collecting s3transfer<0.7.0,>=0.6.0
+Downloading s3transfer-0.6.0-py3-none-any.whl (79 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.6/79.6 KB 14.8 MB/s eta 0:00:00
+Collecting jmespath<2.0.0,>=0.7.1
+Downloading jmespath-1.0.1-py3-none-any.whl (20 kB)
+Collecting multimethod
+Downloading multimethod-1.9.1-py3-none-any.whl (10 kB)
+Collecting wrapt
+Downloading wrapt-1.15.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (78 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.4/78.4 KB 13.8 MB/s eta 0:00:00
+Collecting nbclient>=0.2.0
+Downloading nbclient-0.7.3-py3-none-any.whl (72 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.4/72.4 KB 11.5 MB/s eta 0:00:00
+Collecting ansiwrap
+Downloading ansiwrap-0.8.4-py2.py3-none-any.whl (8.5 kB)
+Collecting nbformat>=5.1.2
+Downloading nbformat-5.8.0-py3-none-any.whl (77 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.4/77.4 KB 12.8 MB/s eta 0:00:00
+Collecting tenacity
+Downloading tenacity-8.2.2-py3-none-any.whl (24 kB)
+Collecting py4j==0.10.9.7
+Downloading py4j-0.10.9.7-py2.py3-none-any.whl (200 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 200.5/200.5 KB 13.8 MB/s eta 0:00:00
+Collecting charset-normalizer<4,>=2
+Downloading charset_normalizer-3.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (199 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.3/199.3 KB 27.0 MB/s eta 0:00:00
+Collecting jsonschema
+Downloading jsonschema-4.17.3-py3-none-any.whl (90 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.4/90.4 KB 13.5 MB/s eta 0:00:00
+Collecting pyarrow
+Downloading pyarrow-11.0.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.9 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.9/34.9 MB 25.3 MB/s eta 0:00:00
+Collecting oscrypto<2.0.0
+Downloading oscrypto-1.3.0-py2.py3-none-any.whl (194 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 194.6/194.6 KB 17.1 MB/s eta 0:00:00
+Collecting pycryptodomex!=3.5.0,<4.0.0,>=3.2
+Downloading pycryptodomex-3.17-cp35-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 49.8 MB/s eta 0:00:00
+Collecting pyOpenSSL<24.0.0,>=16.2.0
+Downloading pyOpenSSL-23.1.1-py3-none-any.whl (57 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.9/57.9 KB 8.7 MB/s eta 0:00:00
+Collecting asn1crypto<2.0.0,>0.24.0
+Downloading asn1crypto-1.5.1-py2.py3-none-any.whl (105 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.0/105.0 KB 17.5 MB/s eta 0:00:00
+Collecting charset-normalizer<4,>=2
+Downloading charset_normalizer-2.1.1-py3-none-any.whl (39 kB)
+Collecting greenlet!=0.4.17
+Downloading greenlet-2.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (613 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 613.7/613.7 KB 38.3 MB/s eta 0:00:00
+Collecting pathtools
+Downloading pathtools-0.1.2.tar.gz (11 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting sentry-sdk>=1.0.0
+Downloading sentry_sdk-1.20.0-py2.py3-none-any.whl (198 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 198.8/198.8 KB 3.5 MB/s eta 0:00:00
+Collecting GitPython!=3.1.29,>=1.0.0
+Downloading GitPython-3.1.31-py3-none-any.whl (184 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.3/184.3 KB 2.5 MB/s eta 0:00:00
+Collecting docker-pycreds>=0.4.0
+Downloading docker_pycreds-0.4.0-py2.py3-none-any.whl (9.0 kB)
+Collecting setproctitle
+Downloading setproctitle-1.3.2-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (30 kB)
+Collecting appdirs>=1.4.3
+Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting pyflakes>=3.0.0
+Downloading pyflakes-3.0.1-py2.py3-none-any.whl (62 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 KB 9.6 MB/s eta 0:00:00
+Collecting pillow>=7.1.0
+Downloading Pillow-9.5.0-cp310-cp310-manylinux_2_28_x86_64.whl (3.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 57.3 MB/s eta 0:00:00
+Collecting contourpy>=1
+Downloading contourpy-1.0.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (300 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 300.3/300.3 KB 20.2 MB/s eta 0:00:00
+Collecting xyzservices>=2021.09.1
+Downloading xyzservices-2023.2.0-py3-none-any.whl (55 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.4/55.4 KB 10.2 MB/s eta 0:00:00
+Collecting skein>=0.8.0
+Downloading skein-0.8.2-py3-none-any.whl (7.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 42.3 MB/s eta 0:00:00
+Collecting regex>=2019.4.14
+Downloading regex-2023.3.23-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (769 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 769.6/769.6 KB 32.2 MB/s eta 0:00:00
+Collecting google-auth-httplib2>=0.1.0
+Downloading google_auth_httplib2-0.1.0-py2.py3-none-any.whl (9.3 kB)
+Collecting uritemplate<5,>=3.0.1
+Downloading uritemplate-4.1.1-py2.py3-none-any.whl (10 kB)
+Collecting httplib2<1dev,>=0.15.0
+Downloading httplib2-0.22.0-py3-none-any.whl (96 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.9/96.9 KB 14.1 MB/s eta 0:00:00
+Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5
+Downloading google_api_core-2.11.0-py3-none-any.whl (120 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 120.3/120.3 KB 18.6 MB/s eta 0:00:00
+Collecting google-resumable-media<3.0dev,>=0.6.0
+Downloading google_resumable_media-2.4.1-py2.py3-none-any.whl (77 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.7/77.7 KB 13.6 MB/s eta 0:00:00
+Collecting proto-plus<2.0.0dev,>=1.15.0
+Downloading proto_plus-1.22.2-py3-none-any.whl (47 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.9/47.9 KB 8.0 MB/s eta 0:00:00
+Collecting google-cloud-core<3.0.0dev,>=1.6.0
+Downloading google_cloud_core-2.3.2-py2.py3-none-any.whl (29 kB)
+Collecting matplotlib<4
+Downloading matplotlib-3.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 58.0 MB/s eta 0:00:00
+Collecting scipy<2
+Downloading scipy-1.10.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.4/34.4 MB 23.6 MB/s eta 0:00:00
+Collecting querystring-parser<2
+Downloading querystring_parser-1.2.4-py2.py3-none-any.whl (7.9 kB)
+Collecting markdown<4,>=3.3
+Downloading Markdown-3.4.3-py3-none-any.whl (93 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.9/93.9 KB 13.5 MB/s eta 0:00:00
+Collecting scikit-learn<2
+Downloading scikit_learn-1.2.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (9.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.6/9.6 MB 63.2 MB/s eta 0:00:00
+Collecting gunicorn<21
+Downloading gunicorn-20.1.0-py3-none-any.whl (79 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 KB 13.9 MB/s eta 0:00:00
+Collecting Flask<3
+Downloading Flask-2.2.3-py3-none-any.whl (101 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.8/101.8 KB 18.1 MB/s eta 0:00:00
+Collecting bleach
+Downloading bleach-6.0.0-py3-none-any.whl (162 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.5/162.5 KB 14.4 MB/s eta 0:00:00
+Collecting mistune<3,>=2.0.3
+Downloading mistune-2.0.5-py2.py3-none-any.whl (24 kB)
+Collecting pandocfilters>=1.4.1
+Downloading pandocfilters-1.5.0-py2.py3-none-any.whl (8.7 kB)
+Collecting beautifulsoup4
+Downloading beautifulsoup4-4.12.2-py3-none-any.whl (142 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 143.0/143.0 KB 17.3 MB/s eta 0:00:00
+Collecting tinycss2
+Downloading tinycss2-1.2.1-py3-none-any.whl (21 kB)
+Collecting jupyterlab-pygments
+Downloading jupyterlab_pygments-0.2.2-py2.py3-none-any.whl (21 kB)
+Collecting defusedxml
+Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Collecting pygments>=2.4.1
+Downloading Pygments-2.15.1-py3-none-any.whl (1.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 44.6 MB/s eta 0:00:00
+Collecting pyasn1-modules>=0.0.5
+Downloading pyasn1_modules-0.3.0-py2.py3-none-any.whl (181 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.3/181.3 KB 24.6 MB/s eta 0:00:00
+Collecting pyasn1>=0.1.7
+Downloading pyasn1-0.5.0-py2.py3-none-any.whl (83 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.9/83.9 KB 13.8 MB/s eta 0:00:00
+Collecting rsa>=3.1.4
+Downloading rsa-4.9-py3-none-any.whl (34 kB)
+Collecting graphviz
+Downloading graphviz-0.20.1-py3-none-any.whl (47 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.0/47.0 KB 7.7 MB/s eta 0:00:00
+Collecting pynacl>=1.5
+Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (856 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 856.7/856.7 KB 37.3 MB/s eta 0:00:00
+Collecting bcrypt>=3.2
+Downloading bcrypt-4.0.1-cp36-abi3-manylinux_2_28_x86_64.whl (593 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 593.7/593.7 KB 34.0 MB/s eta 0:00:00
+Collecting pytzdata>=2020.1
+Downloading pytzdata-2020.1-py2.py3-none-any.whl (489 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 490.0/490.0 KB 32.2 MB/s eta 0:00:00
+Collecting DataProperty<2,>=0.54.2
+Downloading DataProperty-0.55.0-py3-none-any.whl (26 kB)
+Collecting path<17,>=13
+Downloading path-16.6.0-py3-none-any.whl (26 kB)
+Collecting pathvalidate<3,>=2.3.0
+Downloading pathvalidate-2.5.2-py3-none-any.whl (20 kB)
+Collecting mbstrdecoder<2,>=1.0.0
+Downloading mbstrdecoder-1.1.2-py3-none-any.whl (7.7 kB)
+Collecting tabledata<2,>=1.1.1
+Downloading tabledata-1.3.1-py3-none-any.whl (11 kB)
+Collecting typepy<2,>=1.2.0
+Downloading typepy-1.3.0-py3-none-any.whl (31 kB)
+Collecting pyarrow
+Downloading pyarrow-10.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (35.9 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.9/35.9 MB 23.0 MB/s eta 0:00:00
+Collecting anyio<5,>=3.4.0
+Downloading anyio-3.6.2-py3-none-any.whl (80 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.6/80.6 KB 13.5 MB/s eta 0:00:00
+Collecting aiohttp-retry>=2.8.3
+Downloading aiohttp_retry-2.8.3-py3-none-any.whl (9.8 kB)
+Collecting rich<13.0.0,>=10.11.0
+Downloading rich-12.6.0-py3-none-any.whl (237 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 237.5/237.5 KB 31.4 MB/s eta 0:00:00
+Collecting shellingham<2.0.0,>=1.3.0
+Downloading shellingham-1.5.0.post1-py2.py3-none-any.whl (9.4 kB)
+Collecting types-urllib3<1.27
+Downloading types_urllib3-1.26.25.10-py3-none-any.whl (15 kB)
+Collecting h11>=0.8
+Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 KB 9.2 MB/s eta 0:00:00
+Collecting watchfiles>=0.13
+Downloading watchfiles-0.19.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 51.3 MB/s eta 0:00:00
+Collecting httptools>=0.5.0
+Downloading httptools-0.5.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (414 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 414.1/414.1 KB 22.4 MB/s eta 0:00:00
+Collecting websockets>=10.4
+Downloading websockets-11.0.2-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (129 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.9/129.9 KB 22.8 MB/s eta 0:00:00
+Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0
+Downloading uvloop-0.17.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 55.8 MB/s eta 0:00:00
+Collecting leather>=0.3.2
+Downloading leather-0.3.4-py2.py3-none-any.whl (31 kB)
+Collecting pytimeparse>=1.1.5
+Downloading pytimeparse-1.1.8-py2.py3-none-any.whl (10.0 kB)
+Collecting Babel>=2.0
+Downloading Babel-2.12.1-py3-none-any.whl (10.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 62.1 MB/s eta 0:00:00
+Collecting parsedatetime!=2.5,!=2.6,>=2.1
+Downloading parsedatetime-2.4.tar.gz (58 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 KB 9.3 MB/s eta 0:00:00
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting python-slugify>=1.2.1
+Downloading python_slugify-8.0.1-py2.py3-none-any.whl (9.7 kB)
+Collecting aiosignal>=1.1.2
+Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting frozenlist>=1.1.1
+Downloading frozenlist-1.3.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (149 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 149.6/149.6 KB 20.9 MB/s eta 0:00:00
+Collecting multidict<7.0,>=4.5
+Downloading multidict-6.0.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (114 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.5/114.5 KB 18.6 MB/s eta 0:00:00
+Collecting async-timeout<5.0,>=4.0.0a3
+Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Collecting sniffio>=1.1
+Downloading sniffio-1.3.0-py3-none-any.whl (10 kB)
+Collecting soupsieve>1.2
+Downloading soupsieve-2.4.1-py3-none-any.whl (36 kB)
+Collecting pycparser
+Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 KB 19.6 MB/s eta 0:00:00
+Collecting prompt-toolkit
+Downloading prompt_toolkit-3.0.38-py3-none-any.whl (385 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.8/385.8 KB 31.0 MB/s eta 0:00:00
+Collecting wasmer>=1.0.0
+Downloading wasmer-1.1.0-cp310-cp310-manylinux_2_24_x86_64.whl (1.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 53.4 MB/s eta 0:00:00
+Collecting wasmer-compiler-cranelift>=1.0.0
+Downloading wasmer_compiler_cranelift-1.1.0-cp310-cp310-manylinux_2_24_x86_64.whl (1.9 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 53.3 MB/s eta 0:00:00
+Collecting itsdangerous>=2.0
+Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting gitdb<5,>=4.0.1
+Downloading gitdb-4.0.10-py3-none-any.whl (62 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 KB 11.0 MB/s eta 0:00:00
+Collecting googleapis-common-protos<2.0dev,>=1.56.2
+Downloading googleapis_common_protos-1.59.0-py2.py3-none-any.whl (223 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.6/223.6 KB 30.5 MB/s eta 0:00:00
+Collecting grpcio-status<2.0dev,>=1.33.2
+Downloading grpcio_status-1.54.0-py3-none-any.whl (5.1 kB)
+Collecting cachetools<6.0,>=2.0.0
+Downloading cachetools-5.3.0-py3-none-any.whl (9.3 kB)
+Collecting google-crc32c<2.0dev,>=1.0
+Downloading google_crc32c-1.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (32 kB)
+Collecting pyparsing!=3.0.0,!=3.0.1,!=3.0.2,!=3.0.3,<4,>=2.4.2
+Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 KB 14.5 MB/s eta 0:00:00
+Collecting zipp>=0.5
+Downloading zipp-3.15.0-py3-none-any.whl (6.8 kB)
+Collecting jedi>=0.16
+Downloading jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 59.8 MB/s eta 0:00:00
+Collecting backcall
+Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting pexpect>4.3
+Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.0/59.0 KB 11.7 MB/s eta 0:00:00
+Collecting stack-data
+Downloading stack_data-0.6.2-py3-none-any.whl (24 kB)
+Collecting decorator
+Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting pickleshare
+Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+Downloading pyrsistent-0.19.3-py3-none-any.whl (57 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 KB 10.9 MB/s eta 0:00:00
+Collecting amqp<6.0.0,>=5.0.9
+Downloading amqp-5.1.1-py3-none-any.whl (50 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.8/50.8 KB 9.1 MB/s eta 0:00:00
+Collecting python-json-logger
+Downloading python_json_logger-2.0.7-py3-none-any.whl (8.1 kB)
+Collecting iso8601
+Downloading iso8601-1.1.0-py3-none-any.whl (9.9 kB)
+Collecting kiwisolver>=1.0.1
+Downloading kiwisolver-1.4.4-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 51.8 MB/s eta 0:00:00
+Collecting fonttools>=4.22.0
+Downloading fonttools-4.39.3-py3-none-any.whl (1.0 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 36.5 MB/s eta 0:00:00
+Collecting cycler>=0.10
+Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting chardet<6,>=3.0.4
+Downloading chardet-5.1.0-py3-none-any.whl (199 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.1/199.1 KB 23.6 MB/s eta 0:00:00
+Collecting portalocker<3,>=1.0
+Downloading portalocker-2.7.0-py2.py3-none-any.whl (15 kB)
+Collecting fastjsonschema
+Downloading fastjsonschema-2.16.3-py3-none-any.whl (23 kB)
+Collecting docutils>=0.13.1
+Downloading docutils-0.19-py3-none-any.whl (570 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 570.5/570.5 KB 29.5 MB/s eta 0:00:00
+Collecting webencodings
+Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting commonmark<0.10.0,>=0.9.0
+Downloading commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 KB 9.2 MB/s eta 0:00:00
+Collecting threadpoolctl>=2.0.0
+Downloading threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+Collecting joblib>=1.1.1
+Downloading joblib-1.2.0-py3-none-any.whl (297 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 298.0/298.0 KB 23.2 MB/s eta 0:00:00
+Collecting werkzeug<3,>=1
+Downloading Werkzeug-2.2.2-py3-none-any.whl (232 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.7/232.7 KB 29.1 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of websockets to determine which version is compatible with other requirements. This could take a while.
+Collecting websockets>=10.4
+Downloading websockets-11.0.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (129 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.8/129.8 KB 19.9 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of websocket-client to determine which version is compatible with other requirements. This could take a while.
+Collecting websocket-client>=0.32.0
+Downloading websocket_client-1.5.0-py3-none-any.whl (55 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.9/55.9 KB 10.6 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of watchfiles to determine which version is compatible with other requirements. This could take a while.
+Collecting watchfiles>=0.13
+Downloading watchfiles-0.18.1-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 50.3 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of vine to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of uvloop to determine which version is compatible with other requirements. This could take a while.
+Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0
+Downloading uvloop-0.16.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (4.3 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 55.8 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of uritemplate to determine which version is compatible with other requirements. This could take a while.
+Collecting uritemplate<5,>=3.0.1
+Downloading uritemplate-4.0.0-py2.py3-none-any.whl (9.5 kB)
+INFO: pip is looking at multiple versions of typing-inspect to determine which version is compatible with other requirements. This could take a while.
+Collecting typing-inspect
+Downloading typing_inspect-0.7.1-py3-none-any.whl (8.4 kB)
+INFO: pip is looking at multiple versions of types-urllib3 to determine which version is compatible with other requirements. This could take a while.
+Collecting types-urllib3<1.27
+Downloading types_urllib3-1.26.25.9-py3-none-any.whl (15 kB)
+INFO: pip is looking at multiple versions of types-termcolor to determine which version is compatible with other requirements. This could take a while.
+Collecting types-termcolor>=1.0.0
+Downloading types_termcolor-1.1.6.1-py3-none-any.whl (2.4 kB)
+INFO: pip is looking at multiple versions of typepy to determine which version is compatible with other requirements. This could take a while.
+Collecting typepy<2,>=1.2.0
+Downloading typepy-1.2.0-py3-none-any.whl (31 kB)
+INFO: pip is looking at multiple versions of traitlets to determine which version is compatible with other requirements. This could take a while.
+Collecting traitlets>=5.4.0
+Downloading traitlets-5.8.1-py3-none-any.whl (116 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 116.8/116.8 KB 17.8 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of tornado to determine which version is compatible with other requirements. This could take a while.
+Collecting tornado>=6.0.3
+Downloading tornado-6.2-cp37-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (423 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 424.0/424.0 KB 31.9 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of toolz to determine which version is compatible with other requirements. This could take a while.
+Collecting toolz>=0.8.2
+Downloading toolz-0.11.2-py3-none-any.whl (55 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 KB 8.6 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of toml to determine which version is compatible with other requirements. This could take a while.
+Collecting toml>=0.9.4
+Downloading toml-0.10.1-py2.py3-none-any.whl (19 kB)
+INFO: pip is looking at multiple versions of tokenize-rt to determine which version is compatible with other requirements. This could take a while.
+Collecting tokenize-rt>=3.2.0
+Downloading tokenize_rt-4.2.1-py2.py3-none-any.whl (6.1 kB)
+INFO: pip is looking at multiple versions of termcolor to determine which version is compatible with other requirements. This could take a while.
+Collecting termcolor
+Downloading termcolor-2.1.1-py3-none-any.whl (6.2 kB)
+INFO: pip is looking at multiple versions of tblib to determine which version is compatible with other requirements. This could take a while.
+Collecting tblib>=1.6.0
+Downloading tblib-1.6.0-py2.py3-none-any.whl (12 kB)
+INFO: pip is looking at multiple versions of tabledata to determine which version is compatible with other requirements. This could take a while.
+Collecting tabledata<2,>=1.1.1
+Downloading tabledata-1.3.0-py3-none-any.whl (11 kB)
+INFO: pip is looking at multiple versions of sqlparse to determine which version is compatible with other requirements. This could take a while.
+Collecting sqlparse<0.4.4,>=0.2.3
+Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.3/42.3 KB 7.1 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of sortedcontainers to determine which version is compatible with other requirements. This could take a while.
+Collecting sortedcontainers>=2.0.5
+Downloading sortedcontainers-2.3.0-py2.py3-none-any.whl (29 kB)
+INFO: pip is looking at multiple versions of skein to determine which version is compatible with other requirements. This could take a while.
+Collecting skein>=0.8.0
+Downloading skein-0.8.1-py2.py3-none-any.whl (7.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 54.5 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of six to determine which version is compatible with other requirements. This could take a while.
+Collecting six
+Downloading six-1.15.0-py2.py3-none-any.whl (10 kB)
+INFO: pip is looking at multiple versions of shellingham to determine which version is compatible with other requirements. This could take a while.
+Collecting shellingham<2.0.0,>=1.3.0
+Downloading shellingham-1.4.0-py2.py3-none-any.whl (9.4 kB)
+INFO: pip is looking at multiple versions of sentry-sdk to determine which version is compatible with other requirements. This could take a while.
+Collecting sentry-sdk>=1.0.0
+Downloading sentry_sdk-1.19.1-py2.py3-none-any.whl (199 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.2/199.2 KB 27.7 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of scipy to determine which version is compatible with other requirements. This could take a while.
+Collecting scipy<2
+Downloading scipy-1.10.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 34.4/34.4 MB 20.9 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of scikit-learn to determine which version is compatible with other requirements. This could take a while.
+Collecting scikit-learn<2
+Downloading scikit_learn-1.2.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (9.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.6/9.6 MB 56.8 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of s3transfer to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of rsa to determine which version is compatible with other requirements. This could take a while.
+Collecting rsa>=3.1.4
+Downloading rsa-4.8-py3-none-any.whl (39 kB)
+INFO: pip is looking at multiple versions of rich to determine which version is compatible with other requirements. This could take a while.
+Collecting rich<13.0.0,>=10.11.0
+Downloading rich-12.5.1-py3-none-any.whl (235 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 235.6/235.6 KB 35.3 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of requests-toolbelt to determine which version is compatible with other requirements. This could take a while.
+Collecting requests-toolbelt!=0.9.0,>=0.8.0
+Downloading requests_toolbelt-0.10.0-py2.py3-none-any.whl (54 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.4/54.4 KB 11.2 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of regex to determine which version is compatible with other requirements. This could take a while.
+Collecting regex>=2019.4.14
+Downloading regex-2023.3.22-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (764 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 764.3/764.3 KB 38.1 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of bleach to determine which version is compatible with other requirements. This could take a while.
+Collecting bleach
+Downloading bleach-5.0.1-py3-none-any.whl (160 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.9/160.9 KB 23.3 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of readme-renderer to determine which version is compatible with other requirements. This could take a while.
+Collecting readme-renderer>=21.0
+Downloading readme_renderer-37.2-py3-none-any.whl (14 kB)
+INFO: pip is looking at multiple versions of querystring-parser to determine which version is compatible with other requirements. This could take a while.
+Collecting querystring-parser<2
+Downloading querystring_parser-1.2.3.tar.gz (5.3 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+INFO: pip is looking at multiple versions of pyzmq to determine which version is compatible with other requirements. This could take a while.
+Collecting pyzmq>=20
+Downloading pyzmq-25.0.1-cp310-cp310-manylinux_2_28_x86_64.whl (1.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 48.7 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of pytzdata to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of pyopenssl to determine which version is compatible with other requirements. This could take a while.
+Collecting pyOpenSSL<24.0.0,>=16.2.0
+Downloading pyOpenSSL-23.1.0-py3-none-any.whl (57 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.7/57.7 KB 9.4 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of pynacl to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of pyjwt to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of pygments to determine which version is compatible with other requirements. This could take a while.
+Collecting pygments>=2.4.1
+Downloading Pygments-2.15.0-py3-none-any.whl (1.1 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 40.8 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of pyflakes to determine which version is compatible with other requirements. This could take a while.
+Collecting pyflakes>=3.0.0
+Downloading pyflakes-3.0.0-py2.py3-none-any.whl (62 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 KB 2.9 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of pycryptodomex to determine which version is compatible with other requirements. This could take a while.
+Collecting pycryptodomex!=3.5.0,<4.0.0,>=3.2
+Downloading pycryptodomex-3.16.0-cp35-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (2.3 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 51.6 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of pyasn1-modules to determine which version is compatible with other requirements. This could take a while.
+Collecting pyasn1-modules>=0.0.5
+Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 KB 21.3 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of pyasn1 to determine which version is compatible with other requirements. This could take a while.
+Collecting pyasn1>=0.1.7
+Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.1/77.1 KB 11.9 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of pyarrow to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of py to determine which version is compatible with other requirements. This could take a while.
+Collecting py>=1.8.2
+Downloading py-1.10.0-py2.py3-none-any.whl (97 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.6/97.6 KB 14.3 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of psutil to determine which version is compatible with other requirements. This could take a while.
+Collecting psutil>=5.8.0
+Downloading psutil-5.9.4-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (280 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 280.2/280.2 KB 20.5 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of proto-plus to determine which version is compatible with other requirements. This could take a while.
+Collecting proto-plus<2.0.0dev,>=1.15.0
+Downloading proto_plus-1.22.1-py3-none-any.whl (47 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.9/47.9 KB 6.8 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of pluggy to determine which version is compatible with other requirements. This could take a while.
+Collecting pluggy<2.0,>=0.12
+Downloading pluggy-0.13.1-py2.py3-none-any.whl (18 kB)
+INFO: pip is looking at multiple versions of platformdirs to determine which version is compatible with other requirements. This could take a while.
+Collecting platformdirs>=2
+Downloading platformdirs-2.6.1-py3-none-any.whl (14 kB)
+INFO: pip is looking at multiple versions of pkginfo to determine which version is compatible with other requirements. This could take a while.
+Collecting pkginfo>=1.4.2
+Downloading pkginfo-1.9.5-py3-none-any.whl (30 kB)
+INFO: pip is looking at multiple versions of pillow to determine which version is compatible with other requirements. This could take a while.
+Collecting pillow>=7.1.0
+Downloading Pillow-9.4.0-cp310-cp310-manylinux_2_28_x86_64.whl (3.4 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 37.9 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of pathvalidate to determine which version is compatible with other requirements. This could take a while.
+Collecting pathvalidate<3,>=2.3.0
+Downloading pathvalidate-2.5.1-py3-none-any.whl (20 kB)
+INFO: pip is looking at multiple versions of path to determine which version is compatible with other requirements. This could take a while.
+Collecting path<17,>=13
+Downloading path-16.5.0-py3-none-any.whl (26 kB)
+INFO: pip is looking at multiple versions of partd to determine which version is compatible with other requirements. This could take a while.
+Collecting partd>=1.2.0
+Downloading partd-1.3.0-py3-none-any.whl (18 kB)
+INFO: pip is looking at multiple versions of pandocfilters to determine which version is compatible with other requirements. This could take a while.
+Collecting pandocfilters>=1.4.1
+Downloading pandocfilters-1.4.3.tar.gz (16 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+INFO: pip is looking at multiple versions of oscrypto to determine which version is compatible with other requirements. This could take a while.
+Collecting oscrypto<2.0.0
+Downloading oscrypto-1.2.1-py2.py3-none-any.whl (192 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 192.1/192.1 KB 22.4 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of oauthlib to determine which version is compatible with other requirements. This could take a while.
+Collecting oauthlib>=3.1.0
+Downloading oauthlib-3.2.1-py3-none-any.whl (151 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.7/151.7 KB 22.6 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of numpy to determine which version is compatible with other requirements. This could take a while.
+Collecting numpy>=1.21
+Downloading numpy-1.24.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 26.7 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of nodeenv to determine which version is compatible with other requirements. This could take a while.
+Collecting nodeenv>=1.6.0
+Downloading nodeenv-1.6.0-py2.py3-none-any.whl (21 kB)
+INFO: pip is looking at multiple versions of nest-asyncio to determine which version is compatible with other requirements. This could take a while.
+Collecting nest-asyncio
+Downloading nest_asyncio-1.5.5-py3-none-any.whl (5.2 kB)
+INFO: pip is looking at multiple versions of nbformat to determine which version is compatible with other requirements. This could take a while.
+Collecting nbformat>=5.1.2
+Downloading nbformat-5.7.3-py3-none-any.whl (78 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.1/78.1 KB 466.9 kB/s eta 0:00:00
+INFO: pip is looking at multiple versions of nbclient to determine which version is compatible with other requirements. This could take a while.
+Collecting nbclient>=0.2.0
+Downloading nbclient-0.7.2-py3-none-any.whl (71 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.0/72.0 KB 725.3 kB/s eta 0:00:00
+INFO: pip is looking at multiple versions of mypy-extensions to determine which version is compatible with other requirements. This could take a while.
+Collecting mypy-extensions>=0.4.3
+Downloading mypy_extensions-0.4.4.tar.gz (4.2 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+INFO: pip is looking at multiple versions of msgpack to determine which version is compatible with other requirements. This could take a while.
+Collecting msgpack>=0.5.6
+Downloading msgpack-1.0.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (316 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.0/317.0 KB 13.0 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of msal-extensions to determine which version is compatible with other requirements. This could take a while.
+Collecting msal-extensions<2.0.0,>=0.3.0
+Downloading msal_extensions-0.3.1-py2.py3-none-any.whl (18 kB)
+INFO: pip is looking at multiple versions of msal to determine which version is compatible with other requirements. This could take a while.
+Collecting msal<2.0.0,>=1.12.0
+Downloading msal-1.21.0-py2.py3-none-any.whl (89 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 KB 1.5 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of mixpanel to determine which version is compatible with other requirements. This could take a while.
+Collecting mixpanel>=4.9.0
+Downloading mixpanel-4.9.0-py2.py3-none-any.whl (8.9 kB)
+INFO: pip is looking at multiple versions of mistune to determine which version is compatible with other requirements. This could take a while.
+Collecting mistune<3,>=2.0.3
+Downloading mistune-2.0.4-py2.py3-none-any.whl (24 kB)
+INFO: pip is looking at multiple versions of mbstrdecoder to determine which version is compatible with other requirements. This could take a while.
+Collecting mbstrdecoder<2,>=1.0.0
+Downloading mbstrdecoder-1.1.1-py3-none-any.whl (7.7 kB)
+INFO: pip is looking at multiple versions of matplotlib-inline to determine which version is compatible with other requirements. This could take a while.
+Collecting matplotlib-inline>=0.1
+Downloading matplotlib_inline-0.1.5-py3-none-any.whl (9.4 kB)
+INFO: pip is looking at multiple versions of matplotlib to determine which version is compatible with other requirements. This could take a while.
+Collecting matplotlib<4
+Downloading matplotlib-3.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 59.1 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of markupsafe to determine which version is compatible with other requirements. This could take a while.
+Collecting markupsafe<=2.0.1,>=1.1.1
+Downloading MarkupSafe-2.0.0.tar.gz (18 kB)
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+INFO: pip is looking at multiple versions of markdown to determine which version is compatible with other requirements. This could take a while.
+Collecting markdown<4,>=3.3
+Downloading Markdown-3.4.2-py3-none-any.whl (93 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.9/93.9 KB 13.8 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of logbook to determine which version is compatible with other requirements. This could take a while.
+Collecting logbook<1.6,>=1.5
+Downloading Logbook-1.5.2.tar.gz (85 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.7/85.7 KB 15.7 MB/s eta 0:00:00
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+INFO: pip is looking at multiple versions of locket to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of kubernetes-asyncio to determine which version is compatible with other requirements. This could take a while.
+Collecting kubernetes-asyncio>=12.0.1
+Downloading kubernetes_asyncio-24.2.1-py3-none-any.whl (1.8 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 55.5 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of markupsafe to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of kopf to determine which version is compatible with other requirements. This could take a while.
+Collecting kopf>=1.35.3
+Downloading kopf-1.35.6-py3-none-any.whl (205 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.5/205.5 KB 31.2 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of kombu to determine which version is compatible with other requirements. This could take a while.
+Collecting kombu<6.0,>=5.2.3
+Downloading kombu-5.2.3-py3-none-any.whl (189 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 189.0/189.0 KB 26.2 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of jupyter-core to determine which version is compatible with other requirements. This could take a while.
+Collecting jupyter-core!=5.0.*,>=4.12
+Downloading jupyter_core-5.2.0-py3-none-any.whl (94 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.3/94.3 KB 17.8 MB/s eta 0:00:00
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+INFO: pip is looking at multiple versions of jsonschema to determine which version is compatible with other requirements. This could take a while.
+Collecting jsonschema
+Downloading jsonschema-4.17.1-py3-none-any.whl (90 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.2/90.2 KB 14.1 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of jmespath to determine which version is compatible with other requirements. This could take a while.
+Collecting jmespath<2.0.0,>=0.7.1
+Downloading jmespath-1.0.0-py3-none-any.whl (23 kB)
+INFO: pip is looking at multiple versions of isodate to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of ipython to determine which version is compatible with other requirements. This could take a while.
+Collecting ipython>=7.8.0
+Downloading ipython-8.11.0-py3-none-any.whl (793 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 793.3/793.3 KB 39.0 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of importlib-metadata to determine which version is compatible with other requirements. This could take a while.
+Collecting importlib-metadata>=4.13.0
+Downloading importlib_metadata-6.4.1-py3-none-any.whl (22 kB)
+INFO: pip is looking at multiple versions of idna to determine which version is compatible with other requirements. This could take a while.
+Collecting idna<4,>=2.5
+Downloading idna-3.3-py3-none-any.whl (61 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 KB 12.0 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of humanfriendly to determine which version is compatible with other requirements. This could take a while.
+Collecting humanfriendly
+Downloading humanfriendly-9.2-py2.py3-none-any.whl (86 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.7/86.7 KB 15.6 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of httptools to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of httplib2 to determine which version is compatible with other requirements. This could take a while.
+Collecting httplib2<1dev,>=0.15.0
+Downloading httplib2-0.21.0-py3-none-any.whl (96 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.8/96.8 KB 17.4 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of hologram to determine which version is compatible with other requirements. This could take a while.
+Collecting hologram<=0.0.16,>=0.0.14
+Downloading hologram-0.0.15-py3-none-any.whl (11 kB)
+INFO: pip is looking at multiple versions of h11 to determine which version is compatible with other requirements. This could take a while.
+Collecting h11>=0.8
+Downloading h11-0.13.0-py3-none-any.whl (58 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.2/58.2 KB 11.5 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of gunicorn to determine which version is compatible with other requirements. This could take a while.
+Collecting gunicorn<21
+Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.9/77.9 KB 13.7 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of greenlet to determine which version is compatible with other requirements. This could take a while.
+Collecting greenlet!=0.4.17
+Downloading greenlet-2.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (539 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 539.9/539.9 KB 37.4 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of graphql-relay to determine which version is compatible with other requirements. This could take a while.
+Collecting graphql-relay<3.3,>=3.1
+Downloading graphql_relay-3.1.5-py3-none-any.whl (17 kB)
+INFO: pip is looking at multiple versions of graphql-core to determine which version is compatible with other requirements. This could take a while.
+Collecting graphql-core<3.3,>=3.2
+Downloading graphql_core-3.2.2-py3-none-any.whl (202 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.6/202.6 KB 26.7 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of google-resumable-media to determine which version is compatible with other requirements. This could take a while.
+Collecting google-resumable-media<3.0dev,>=0.6.0
+Downloading google_resumable_media-2.4.0-py2.py3-none-any.whl (77 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.4/77.4 KB 13.1 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of google-cloud-core to determine which version is compatible with other requirements. This could take a while.
+Collecting google-cloud-core<3.0.0dev,>=1.6.0
+Downloading google_cloud_core-2.3.1-py2.py3-none-any.whl (29 kB)
+INFO: pip is looking at multiple versions of google-auth-httplib2 to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of google-auth to determine which version is compatible with other requirements. This could take a while.
+Collecting google-auth>=1.0.1
+Downloading google_auth-2.17.2-py2.py3-none-any.whl (178 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.2/178.2 KB 17.5 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of google-api-core[grpc] to determine which version is compatible with other requirements. This could take a while.
+Collecting google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5
+Downloading google_api_core-2.10.2-py3-none-any.whl (115 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.6/115.6 KB 16.9 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of google-api-core to determine which version is compatible with other requirements. This could take a while.
+INFO: pip is looking at multiple versions of gitpython to determine which version is compatible with other requirements. This could take a while.
+Collecting GitPython!=3.1.29,>=1.0.0
+Downloading GitPython-3.1.30-py3-none-any.whl (184 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.0/184.0 KB 17.0 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of fsspec to determine which version is compatible with other requirements. This could take a while.
+Collecting fsspec>=0.6.0
+Downloading fsspec-2023.3.0-py3-none-any.whl (145 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 145.4/145.4 KB 23.5 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of flask to determine which version is compatible with other requirements. This could take a while.
+Collecting Flask<3
+Downloading Flask-2.2.2-py3-none-any.whl (101 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.5/101.5 KB 16.2 MB/s eta 0:00:00
+Collecting werkzeug<3,>=1
+Downloading Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.9/224.9 KB 18.7 MB/s eta 0:00:00
+Collecting Flask<3
+Downloading Flask-2.2.1-py3-none-any.whl (101 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.5/101.5 KB 15.1 MB/s eta 0:00:00
+Downloading Flask-2.2.0-py3-none-any.whl (101 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.1/101.1 KB 7.7 MB/s eta 0:00:00
+Downloading Flask-2.1.3-py3-none-any.whl (95 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.6/95.6 KB 9.2 MB/s eta 0:00:00
+Collecting textwrap3>=0.9.2
+Downloading textwrap3-0.9.2-py2.py3-none-any.whl (12 kB)
+Collecting python-utils>=3.0.0
+Downloading python_utils-3.5.2-py2.py3-none-any.whl (24 kB)
+Collecting smmap<6,>=3.0.1
+Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
+Collecting grpcio-status<2.0dev,>=1.33.2
+Downloading grpcio_status-1.53.0-py3-none-any.whl (5.1 kB)
+Downloading grpcio_status-1.51.3-py3-none-any.whl (5.1 kB)
+Downloading grpcio_status-1.51.1-py3-none-any.whl (5.1 kB)
+Downloading grpcio_status-1.50.0-py3-none-any.whl (14 kB)
+Downloading grpcio_status-1.49.1-py3-none-any.whl (14 kB)
+Downloading grpcio_status-1.48.2-py3-none-any.whl (14 kB)
+Downloading grpcio_status-1.48.1-py3-none-any.whl (14 kB)
+Downloading grpcio_status-1.47.5-py3-none-any.whl (5.1 kB)
+Collecting parso<0.9.0,>=0.8.0
+Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 KB 18.6 MB/s eta 0:00:00
+Collecting future
+Downloading future-0.18.3.tar.gz (840 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 840.9/840.9 KB 42.6 MB/s eta 0:00:00
+Preparing metadata (setup.py): started
+Preparing metadata (setup.py): finished with status 'done'
+Collecting ptyprocess>=0.5
+Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting wcwidth
+Downloading wcwidth-0.2.6-py2.py3-none-any.whl (29 kB)
+Collecting text-unidecode>=1.3
+Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.2/78.2 KB 12.0 MB/s eta 0:00:00
+Collecting h2<5,>=3.1.0
+Downloading h2-4.1.0-py3-none-any.whl (57 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 KB 10.2 MB/s eta 0:00:00
+Collecting pure-eval
+Downloading pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Collecting asttokens>=2.1.0
+Downloading asttokens-2.2.1-py2.py3-none-any.whl (26 kB)
+Collecting executing>=1.2.0
+Downloading executing-1.2.0-py2.py3-none-any.whl (24 kB)
+Collecting pytz-deprecation-shim
+Downloading pytz_deprecation_shim-0.1.0.post0-py2.py3-none-any.whl (15 kB)
+Collecting hpack<5,>=4.0
+Downloading hpack-4.0.0-py3-none-any.whl (32 kB)
+Collecting hyperframe<7,>=6.0
+Downloading hyperframe-6.0.1-py3-none-any.whl (12 kB)
+Collecting tzdata
+Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 KB 25.0 MB/s eta 0:00:00
+Using legacy 'setup.py install' for pytest-dependency, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for databricks-cli, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for minimal-snowplow-tracker, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for pyspark, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for docker-image-py, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for pypd, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for yamllint, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for avro, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for logbook, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for click-default-group, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for pathtools, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for parsedatetime, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for stringcase, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for future, since package 'wheel' is not installed.
+Building wheels for collected packages: betterproto, pendulum, grpclib
+Building wheel for betterproto (pyproject.toml): started
+Building wheel for betterproto (pyproject.toml): finished with status 'done'
+Created wheel for betterproto: filename=betterproto-1.2.5-py3-none-any.whl size=21998 sha256=467626a1d5f3580568b8b7c5ada8a3f63b94b82ce185d68d373699597f3b8510
+Stored in directory: /home/ubuntu/.cache/pip/wheels/d3/8b/bf/097193de631f010236664202ef3c05c62636abc9d2b172b458
+Building wheel for pendulum (pyproject.toml): started
+Building wheel for pendulum (pyproject.toml): finished with status 'done'
+Created wheel for pendulum: filename=pendulum-2.1.2-cp310-cp310-manylinux_2_35_x86_64.whl size=158437 sha256=5b27984758cbb4647075704b39dda66f3fde1b99768f355def59cdbbb67b7539
+Stored in directory: /home/ubuntu/.cache/pip/wheels/2e/41/ed/f113e4c9dc10f6c846d69f412e9cd9aa429960a3e2e485a4f9
+Building wheel for grpclib (pyproject.toml): started
+Building wheel for grpclib (pyproject.toml): finished with status 'done'
+Created wheel for grpclib: filename=grpclib-0.4.3-py3-none-any.whl size=77061 sha256=33151578178bd838d2c2491523055c01b3ffa2c3b8d85a47b741c8f3e100fa5e
+Stored in directory: /home/ubuntu/.cache/pip/wheels/e0/49/4d/31aa7f3f43e9833b8e79204457b404ad4434fc2278a32fa9f1
+Successfully built betterproto pendulum grpclib
+Installing collected packages: webencodings, wcwidth, wasmer-compiler-cranelift, wasmer, types-urllib3, types-toml, types-termcolor, types-tabulate, types-sqlalchemy, types-six, types-simplejson, types-PyYAML, types-pytz, types-python-dateutil, types-pkg-resources, types-mock, types-Deprecated, types-cryptography, types-croniter, types-chardet, types-certifi, types-backports, toposort, textwrap3, text-unidecode, stringcase, sortedcontainers, ratelimiter, pytz, pytimeparse, py4j, pure-eval, ptyprocess, pickleshare, pathtools, msgpack, mistune, logbook, ipython_genutils, fastjsonschema, executing, duckdb, distlib, confluent-kafka, commonmark, click_spinner, billiard, backcall, asn1crypto, appdirs, aniso8601, zipp, zict, xyzservices, xmltodict, wrapt, wheel, werkzeug, websockets, websocket-client, watchdog, vine, uvloop, urllib3, uritemplate, tzdata, typing_extensions, types-tzlocal, types-requests, traitlets, tqdm, tornado, toolz, tomli, toml, tokenize-rt, tinycss2, threadpoolctl, termcolor, tenacity, tblib, tabulate, stackprinter, sqlparse, soupsieve, sniffio, smmap, slack_sdk, six, shellingham, setproctitle, ruff, regex, pyzmq, PyYAML, pytzdata, python-utils, python-slugify, python-json-logger, python-dotenv, pytest-runner, pyspark, pyrsistent, pyparsing, pyjwt, pygments, pyflakes, pycryptodomex, pycparser, pyasn1, py, psycopg2-binary, psutil, protobuf, prompt-toolkit, prometheus_client, portalocker, pluggy, platformdirs, pkginfo, pillow, pexpect, pathvalidate, pathspec, path, parso, pandocfilters, pandas-stubs, packaging, oscrypto, oauthlib, numpy, nodeenv, networkx, nest-asyncio, mypy-extensions, multimethod, multidict, markupsafe, markdown, locket, lazy_object_proxy, kiwisolver, jupyterlab-pygments, joblib, jmespath, itsdangerous, iso8601, iniconfig, idna, hyperframe, humanfriendly, httptools, hpack, h11, gunicorn, greenlet, graphviz, graphql-core, google-crc32c, future, fsspec, frozenlist, fonttools, filelock, fastdiff, fastavro, expandvars, execnet, entrypoints, docutils, docstring-parser, defusedxml, decorator, debugpy, dbt-extractor, cycler, coverage, colorama, cloudpickle, click, charset-normalizer, chardet, certifi, cachetools, bcrypt, backoff, Babel, avro, attrs, async-timeout, ansiwrap, yarl, yamllint, virtualenv, uvicorn, universal_pathlib, typing-inspect, typer, sqlalchemy, snapshottest, sentry-sdk, scipy, rsa, rich, requests, querystring-parser, pytz-deprecation-shim, python-dateutil, pytest, pyright, pydantic, pyasn1-modules, pyarrow, proto-plus, progressbar2, polars, partd, parsedatetime, objgraph, mysql-connector-python, mock, mbstrdecoder, matplotlib-inline, mashumaro, Mako, leather, jupyter-core, jsonschema, Jinja2, jedi, isodate, importlib-metadata, httplib2, h2, grpcio, graphql-relay, googleapis-common-protos, google-resumable-media, gitdb, docker-pycreds, docker-image-py, Deprecated, contourpy, comm, coloredlogs, click-repl, click-plugins, click-didyoumean, click-default-group, cffi, bleach, black, beautifulsoup4, autoflake, asttokens, anyio, amqp, aiosignal, watchfiles, tzlocal, typepy, tox, starlette, stack-data, scikit-learn, responses, requests-toolbelt, requests-oauthlib, requests-mock, readme-renderer, pytest-rerunfailures, pytest-mock, pytest-forked, pytest-dependency, pytest-cov, pypd, pynacl, pendulum, pandas, oauth2client, nbformat, mixpanel, minimal-snowplow-tracker, matplotlib, kombu, jupyter-client, hologram, grpclib, grpcio-tools, grpcio-status, grpcio-health-checking, graphene, gql, google-auth, GitPython, Flask, docker, datadog, databricks-cli, dask, dagster-helm, dagster-buildkite, cryptography, croniter, buildkite-test-collector, botocore, azure-core, alembic, aiohttp, agate, wandb, types-pyOpenSSL, types-paramiko, twine, skein, s3transfer, pytest-xdist, pyOpenSSL, paramiko, pandera, nbclient, mlflow, kubernetes-asyncio, kubernetes, kopf, ipython, google-auth-httplib2, google-api-core, distributed, db-dtypes, databricks_api, dagster, celery, bokeh, betterproto, azure-storage-blob, avro-gen3, aiohttp-retry, twilio, sshtunnel, snowflake-connector-python, papermill, nbconvert, msal, ipykernel, google-cloud-core, google-api-python-client, dbt-core, DataProperty, dask-yarn, dask-kubernetes, dask-jobqueue, dagster-wandb, dagster-test, dagster-spark, dagster-slack, dagster-shell, dagster-prometheus, dagster-postgres, dagster-papertrail, dagster-pandera, dagster-pandas, dagster-pagerduty, dagster-mysql, dagster-msteams, dagster-mlflow, dagster-managed-elements, dagster-k8s, dagster-graphql, dagster-github, dagster-fivetran, dagster-duckdb, dagster-docker, dagster-datadog, dagster-dask, dagster-celery, dagster-airflow, dagster-airbyte, boto3, azure-storage-file-datalake, acryl-datahub, tabledata, snowflake-sqlalchemy, scrapbook, msal-extensions, moto, google-cloud-storage, google-cloud-bigquery, dagster-twilio, dagster-ssh, dagster-snowflake, dagster-pyspark, dagster-duckdb-pyspark, dagster-duckdb-polars, dagster-duckdb-pandas, dagster-dbt, dagster-celery-k8s, dagster-celery-docker, dagster-aws, dagit, pytablereader, dagstermill, dagster-snowflake-pandas, dagster-k8s-test-infra, dagster-gcp, dagster-datahub, dagster-databricks, azure-identity, dagster-gcp-pyspark, dagster-gcp-pandas, dagster-azure, automation
+Running setup.py install for stringcase: started
+Running setup.py install for stringcase: finished with status 'done'
+Running setup.py install for pathtools: started
+Running setup.py install for pathtools: finished with status 'done'
+Running setup.py install for logbook: started
+Running setup.py install for logbook: finished with status 'done'
+Running setup.py install for pyspark: started
+Running setup.py install for pyspark: finished with status 'done'
+Running setup.py install for future: started
+Running setup.py install for future: finished with status 'done'
+Running setup.py install for avro: started
+Running setup.py install for avro: finished with status 'done'
+Running setup.py install for yamllint: started
+Running setup.py install for yamllint: finished with status 'done'
+Running setup.py install for parsedatetime: started
+Running setup.py install for parsedatetime: finished with status 'done'
+Running setup.py install for docker-image-py: started
+Running setup.py install for docker-image-py: finished with status 'done'
+Running setup.py install for click-default-group: started
+Running setup.py install for click-default-group: finished with status 'done'
+Running setup.py install for pytest-dependency: started
+Running setup.py install for pytest-dependency: finished with status 'done'
+Running setup.py install for pypd: started
+Running setup.py install for pypd: finished with status 'done'
+Running setup.py install for minimal-snowplow-tracker: started
+Running setup.py install for minimal-snowplow-tracker: finished with status 'done'
+Running setup.py install for databricks-cli: started
+Running setup.py install for databricks-cli: finished with status 'done'
+Running setup.py develop for dagster-helm
+Running setup.py develop for dagster-buildkite
+Running setup.py develop for dagster
+Running setup.py develop for dagster-wandb
+Running setup.py develop for dagster-test
+Running setup.py develop for dagster-spark
+Running setup.py develop for dagster-slack
+Running setup.py develop for dagster-shell
+Running setup.py develop for dagster-prometheus
+Running setup.py develop for dagster-postgres
+Running setup.py develop for dagster-papertrail
+Running setup.py develop for dagster-pandera
+Running setup.py develop for dagster-pandas
+Running setup.py develop for dagster-pagerduty
+Running setup.py develop for dagster-mysql
+Running setup.py develop for dagster-msteams
+Running setup.py develop for dagster-mlflow
+Running setup.py develop for dagster-managed-elements
+Running setup.py develop for dagster-k8s
+Running setup.py develop for dagster-graphql
+Running setup.py develop for dagster-github
+Running setup.py develop for dagster-fivetran
+Running setup.py develop for dagster-duckdb
+Running setup.py develop for dagster-docker
+Running setup.py develop for dagster-datadog
+Running setup.py develop for dagster-dask
+Running setup.py develop for dagster-celery
+Running setup.py develop for dagster-airflow
+Running setup.py develop for dagster-airbyte
+Running setup.py develop for dagster-twilio
+Running setup.py develop for dagster-ssh
+Running setup.py develop for dagster-snowflake
+Running setup.py develop for dagster-pyspark
+Running setup.py develop for dagster-duckdb-pyspark
+Running setup.py develop for dagster-duckdb-polars
+Running setup.py develop for dagster-duckdb-pandas
+Running setup.py develop for dagster-dbt
+Running setup.py develop for dagster-celery-k8s
+Running setup.py develop for dagster-celery-docker
+Running setup.py develop for dagster-aws
+Running setup.py develop for dagit
+Running setup.py develop for dagstermill
+Running setup.py develop for dagster-snowflake-pandas
+Running setup.py develop for dagster-k8s-test-infra
+Running setup.py develop for dagster-gcp
+Running setup.py develop for dagster-datahub
+Running setup.py develop for dagster-databricks
+Running setup.py develop for dagster-gcp-pyspark
+Running setup.py develop for dagster-gcp-pandas
+Running setup.py develop for dagster-azure
+Running setup.py develop for automation
+Successfully installed Babel-2.12.1 DataProperty-0.55.0 Deprecated-1.2.13 Flask-2.1.3 GitPython-3.1.31 Jinja2-3.1.2 Mako-1.2.4 PyYAML-6.0 acryl-datahub-0.8.41.1 agate-1.7.0 aiohttp-3.8.4 aiohttp-retry-2.8.3 aiosignal-1.3.1 alembic-1.10.3 amqp-5.1.1 aniso8601-9.0.1 ansiwrap-0.8.4 anyio-3.6.2 appdirs-1.4.4 asn1crypto-1.5.1 asttokens-2.2.1 async-timeout-4.0.2 attrs-23.1.0 autoflake-2.1.1 automation-0.0.1 avro-1.10.2 avro-gen3-0.7.4 azure-core-1.26.4 azure-identity-1.12.0 azure-storage-blob-12.16.0 azure-storage-file-datalake-12.11.0 backcall-0.2.0 backoff-2.2.1 bcrypt-4.0.1 beautifulsoup4-4.12.2 betterproto-1.2.5 billiard-3.6.4.0 black-22.12.0 bleach-6.0.0 bokeh-3.1.0 boto3-1.26.116 botocore-1.29.116 buildkite-test-collector-0.1.7 cachetools-5.3.0 celery-5.2.7 certifi-2022.12.7 cffi-1.15.1 chardet-5.1.0 charset-normalizer-2.1.1 click-8.1.3 click-default-group-1.2.2 click-didyoumean-0.3.0 click-plugins-1.1.1 click-repl-0.2.0 click_spinner-0.1.10 cloudpickle-2.2.1 colorama-0.4.6 coloredlogs-14.0 comm-0.1.3 commonmark-0.9.1 confluent-kafka-2.1.0 contourpy-1.0.7 coverage-7.2.3 croniter-1.3.14 cryptography-40.0.2 cycler-0.11.0 dagit-1!0+dev dagster-1!0+dev dagster-airbyte-1!0+dev dagster-airflow-1!0+dev dagster-aws-1!0+dev dagster-azure-1!0+dev dagster-buildkite-0.0.1 dagster-celery-1!0+dev dagster-celery-docker-1!0+dev dagster-celery-k8s-1!0+dev dagster-dask-1!0+dev dagster-databricks-1!0+dev dagster-datadog-1!0+dev dagster-datahub-1!0+dev dagster-dbt-1!0+dev dagster-docker-1!0+dev dagster-duckdb-1!0+dev dagster-duckdb-pandas-1!0+dev dagster-duckdb-polars-1!0+dev dagster-duckdb-pyspark-1!0+dev dagster-fivetran-1!0+dev dagster-gcp-1!0+dev dagster-gcp-pandas-1!0+dev dagster-gcp-pyspark-1!0+dev dagster-github-1!0+dev dagster-graphql-1!0+dev dagster-helm-0.0.1 dagster-k8s-1!0+dev dagster-k8s-test-infra-0.0.0 dagster-managed-elements-1!0+dev dagster-mlflow-1!0+dev dagster-msteams-1!0+dev dagster-mysql-1!0+dev dagster-pagerduty-1!0+dev dagster-pandas-1!0+dev dagster-pandera-1!0+dev dagster-papertrail-1!0+dev dagster-postgres-1!0+dev dagster-prometheus-1!0+dev dagster-pyspark-1!0+dev dagster-shell-1!0+dev dagster-slack-1!0+dev dagster-snowflake-1!0+dev dagster-snowflake-pandas-1!0+dev dagster-spark-1!0+dev dagster-ssh-1!0+dev dagster-test-1!0+dev dagster-twilio-1!0+dev dagster-wandb-1!0+dev dagstermill-1!0+dev dask-2023.4.0 dask-jobqueue-0.8.1 dask-kubernetes-2022.9.0 dask-yarn-0.9 databricks-cli-0.17.6 databricks_api-0.8.0 datadog-0.45.0 db-dtypes-1.1.1 dbt-core-1.4.6 dbt-extractor-0.4.1 debugpy-1.6.7 decorator-5.1.1 defusedxml-0.7.1 distlib-0.3.6 distributed-2023.4.0 docker-5.0.3 docker-image-py-0.1.12 docker-pycreds-0.4.0 docstring-parser-0.15 docutils-0.19 duckdb-0.7.1 entrypoints-0.4 execnet-1.9.0 executing-1.2.0 expandvars-0.9.0 fastavro-1.7.3 fastdiff-0.3.0 fastjsonschema-2.16.3 filelock-3.12.0 fonttools-4.39.3 frozenlist-1.3.3 fsspec-2023.4.0 future-0.18.3 gitdb-4.0.10 google-api-core-2.11.0 google-api-python-client-2.86.0 google-auth-2.17.3 google-auth-httplib2-0.1.0 google-cloud-bigquery-3.10.0 google-cloud-core-2.3.2 google-cloud-storage-2.8.0 google-crc32c-1.5.0 google-resumable-media-2.4.1 googleapis-common-protos-1.59.0 gql-3.4.0 graphene-3.2.2 graphql-core-3.2.3 graphql-relay-3.2.0 graphviz-0.20.1 greenlet-2.0.2 grpcio-1.47.5 grpcio-health-checking-1.47.5 grpcio-status-1.47.5 grpcio-tools-1.47.5 grpclib-0.4.3 gunicorn-20.1.0 h11-0.14.0 h2-4.1.0 hologram-0.0.16 hpack-4.0.0 httplib2-0.22.0 httptools-0.5.0 humanfriendly-10.0 hyperframe-6.0.1 idna-3.4 importlib-metadata-6.5.0 iniconfig-2.0.0 ipykernel-6.22.0 ipython-8.12.0 ipython_genutils-0.2.0 iso8601-1.1.0 isodate-0.6.1 itsdangerous-2.1.2 jedi-0.18.2 jmespath-1.0.1 joblib-1.2.0 jsonschema-4.17.3 jupyter-client-7.4.9 jupyter-core-5.3.0 jupyterlab-pygments-0.2.2 kiwisolver-1.4.4 kombu-5.2.4 kopf-1.36.0 kubernetes-21.7.0 kubernetes-asyncio-24.2.2 lazy_object_proxy-1.9.0 leather-0.3.4 locket-1.0.0 logbook-1.5.3 markdown-3.4.3 markupsafe-2.0.1 mashumaro-3.3.1 matplotlib-3.7.1 matplotlib-inline-0.1.6 mbstrdecoder-1.1.2 minimal-snowplow-tracker-0.0.2 mistune-2.0.5 mixpanel-4.10.0 mlflow-2.3.0 mock-3.0.5 moto-4.1.7 msal-1.22.0 msal-extensions-1.0.0 msgpack-1.0.5 multidict-6.0.4 multimethod-1.9.1 mypy-extensions-1.0.0 mysql-connector-python-8.0.33 nbclient-0.7.3 nbconvert-7.3.1 nbformat-5.8.0 nest-asyncio-1.5.6 networkx-2.8.8 nodeenv-1.7.0 numpy-1.24.2 oauth2client-4.1.3 oauthlib-3.2.2 objgraph-3.5.0 oscrypto-1.3.0 packaging-23.1 pandas-1.5.3 pandas-stubs-2.0.0.230412 pandera-0.14.5 pandocfilters-1.5.0 papermill-2.4.0 paramiko-3.1.0 parsedatetime-2.4 parso-0.8.3 partd-1.4.0 path-16.6.0 pathspec-0.10.3 pathtools-0.1.2 pathvalidate-2.5.2 pendulum-2.1.2 pexpect-4.8.0 pickleshare-0.7.5 pillow-9.5.0 pkginfo-1.9.6 platformdirs-2.6.2 pluggy-1.0.0 polars-0.17.5 portalocker-2.7.0 progressbar2-4.2.0 prometheus_client-0.16.0 prompt-toolkit-3.0.38 proto-plus-1.22.2 protobuf-3.20.3 psutil-5.9.5 psycopg2-binary-2.9.6 ptyprocess-0.7.0 pure-eval-0.2.2 py-1.11.0 py4j-0.10.9.7 pyOpenSSL-23.1.1 pyarrow-10.0.1 pyasn1-0.5.0 pyasn1-modules-0.3.0 pycparser-2.21 pycryptodomex-3.17 pydantic-1.10.7 pyflakes-3.0.1 pygments-2.15.1 pyjwt-2.6.0 pynacl-1.5.0 pyparsing-3.0.9 pypd-1.1.0 pyright-1.1.298 pyrsistent-0.19.3 pyspark-3.4.0 pytablereader-0.31.3 pytest-7.0.1 pytest-cov-2.10.1 pytest-dependency-0.5.1 pytest-forked-1.6.0 pytest-mock-3.3.1 pytest-rerunfailures-10.0 pytest-runner-5.2 pytest-xdist-2.1.0 python-dateutil-2.8.2 python-dotenv-1.0.0 python-json-logger-2.0.7 python-slugify-8.0.1 python-utils-3.5.2 pytimeparse-1.1.8 pytz-2023.3 pytz-deprecation-shim-0.1.0.post0 pytzdata-2020.1 pyzmq-25.0.2 querystring-parser-1.2.4 ratelimiter-1.2.0.post0 readme-renderer-37.3 regex-2023.3.23 requests-2.28.2 requests-mock-1.10.0 requests-oauthlib-1.3.1 requests-toolbelt-0.10.1 responses-0.23.1 rich-12.6.0 rsa-4.9 ruff-0.0.255 s3transfer-0.6.0 scikit-learn-1.2.2 scipy-1.10.1 scrapbook-0.5.0 sentry-sdk-1.20.0 setproctitle-1.3.2 shellingham-1.5.0.post1 six-1.16.0 skein-0.8.2 slack_sdk-3.21.2 smmap-5.0.0 snapshottest-0.6.0 sniffio-1.3.0 snowflake-connector-python-3.0.2 snowflake-sqlalchemy-1.4.7 sortedcontainers-2.4.0 soupsieve-2.4.1 sqlalchemy-1.4.47 sqlparse-0.4.3 sshtunnel-0.4.0 stack-data-0.6.2 stackprinter-0.2.10 starlette-0.26.1 stringcase-1.2.0 tabledata-1.3.1 tabulate-0.9.0 tblib-1.7.0 tenacity-8.2.2 termcolor-2.2.0 text-unidecode-1.3 textwrap3-0.9.2 threadpoolctl-3.1.0 tinycss2-1.2.1 tokenize-rt-5.0.0 toml-0.10.2 tomli-2.0.1 toolz-0.12.0 toposort-1.10 tornado-6.3 tox-3.25.0 tqdm-4.65.0 traitlets-5.9.0 twilio-8.1.0 twine-1.15.0 typepy-1.3.0 typer-0.7.0 types-Deprecated-1.2.9.2 types-PyYAML-6.0.12.9 types-backports-0.1.3 types-certifi-2021.10.8.3 types-chardet-5.0.4.3 types-croniter-1.3.2.9 types-cryptography-3.3.23.2 types-mock-5.0.0.6 types-paramiko-3.0.0.7 types-pkg-resources-0.1.3 types-pyOpenSSL-23.1.0.2 types-python-dateutil-2.8.19.12 types-pytz-2023.3.0.0 types-requests-2.28.11.17 types-simplejson-3.19.0.0 types-six-1.16.21.8 types-sqlalchemy-1.4.53.36 types-tabulate-0.9.0.2 types-termcolor-1.1.6.2 types-toml-0.10.8.6 types-tzlocal-4.3.0.0 types-urllib3-1.26.25.10 typing-inspect-0.8.0 typing_extensions-4.5.0 tzdata-2023.3 tzlocal-4.3 universal_pathlib-0.0.23 uritemplate-4.1.1 urllib3-1.26.15 uvicorn-0.21.1 uvloop-0.17.0 vine-5.0.0 virtualenv-20.13.2 wandb-0.15.0 wasmer-1.1.0 wasmer-compiler-cranelift-1.1.0 watchdog-3.0.0 watchfiles-0.19.0 wcwidth-0.2.6 webencodings-0.5.1 websocket-client-1.5.1 websockets-11.0.2 werkzeug-2.1.2 wheel-0.33.6 wrapt-1.15.0 xmltodict-0.12.0 xyzservices-2023.2.0 yamllint-1.30.0 yarl-1.8.2 zict-3.0.0 zipp-3.15.0
+Checking for prod installs - if any are listed below reinstall with pip -e
+cd js_modules/dagit/; yarn install && yarn build
+ERROR: [Errno 2] No such file or directory: 'install'
+make: *** [Makefile:76: rebuild_dagit] Error 1
+just after make, Thu Apr 20 18:45:33 UTC 2023
+WARNING:root:Unable to detect CI environment.  No test analytics will be sent.
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.0.1, pluggy-1.0.0
+rootdir: /home/ubuntu/dagster, configfile: pyproject.toml
+plugins: cov-2.10.1, dependency-0.5.1, xdist-2.1.0, buildkite-test-collector-0.1.7, rerunfailures-10.0, forked-1.6.0, anyio-3.6.2, snapshottest-0.6.0, mock-3.3.1, requests-mock-1.10.0
+collected 5128 items / 4 deselected / 5124 selected
+
+python_modules/dagster/dagster_tests/test_annotations.py ............... [  0%]
+...                                                                      [  0%]
+python_modules/dagster/dagster_tests/api_tests/test_api_get_current_runs.py . [  0%]
+                                                                         [  0%]
+python_modules/dagster/dagster_tests/api_tests/test_api_launch_run.py .. [  0%]
+.                                                                        [  0%]
+python_modules/dagster/dagster_tests/api_tests/test_api_list_repositories.py . [  0%]
+......                                                                   [  0%]
+python_modules/dagster/dagster_tests/api_tests/test_api_notebook_data.py . [  0%]
+                                                                         [  0%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_execution_plan.py . [  0%]
+...                                                                      [  0%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_partition.py . [  0%]
+......                                                                   [  0%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_pipeline.py . [  0%]
+...                                                                      [  0%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_repository.py . [  0%]
+.s.                                                                      [  0%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_schedule_execution_data.py . [  0%]
+...                                                                      [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_sensor.py . [  1%]
+...                                                                      [  1%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_asset_graph.py . [  1%]
+..............                                                           [  1%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_asset_group.py . [  1%]
+........................................................................ [  2%]
+.                                                                        [  2%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_asset_selection.py . [  2%]
+..................                                                       [  3%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_assets.py ... [  3%]
+......................................................                   [  4%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_assets_from_modules.py . [  4%]
+................                                                         [  4%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_assets_job.py . [  4%]
+..................................................................       [  5%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_assets_loading.py . [  5%]
+                                                                         [  5%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_decorators.py . [  6%]
+..............................................................           [  7%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_external_asset_graph.py . [  7%]
+......                                                                   [  7%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_freshness_policy.py . [  7%]
+............                                                             [  7%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_materialize.py . [  7%]
+................                                                         [  7%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_materialize_to_memory.py . [  7%]
+................                                                         [  8%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_observe.py .. [  8%]
+.....                                                                    [  8%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_partitioned_assets.py . [  8%]
+.................                                                        [  8%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_partitions_subset.py . [  8%]
+.....                                                                    [  8%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_resolved_asset_deps.py . [  8%]
+...                                                                      [  8%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_source_asset.py . [  8%]
+...                                                                      [  9%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_source_asset_observation_job.py . [  9%]
+s.....                                                                   [  9%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_unresolved_asset_job.py . [  9%]
+........................................................................ [ 10%]
+............                                                             [ 10%]
+python_modules/dagster/dagster_tests/asset_defs_tests/partition_mapping_tests/test_asset_partition_mappings.py . [ 10%]
+.............                                                            [ 11%]
+python_modules/dagster/dagster_tests/asset_defs_tests/partition_mapping_tests/test_multipartition_partition_mapping.py . [ 11%]
+....................                                                     [ 11%]
+python_modules/dagster/dagster_tests/asset_defs_tests/partition_mapping_tests/test_static_partition_mapping.py . [ 11%]
+...                                                                      [ 11%]
+python_modules/dagster/dagster_tests/asset_defs_tests/partition_mapping_tests/test_time_window_partition_mapping.py . [ 11%]
+..........                                                               [ 11%]
+python_modules/dagster/dagster_tests/cli_tests/test_api_commands.py .... [ 11%]
+.......                                                                  [ 12%]
+python_modules/dagster/dagster_tests/cli_tests/test_asset_wipe_command.py . [ 12%]
+..........                                                               [ 12%]
+python_modules/dagster/dagster_tests/cli_tests/test_config_scaffolder.py . [ 12%]
+.                                                                        [ 12%]
+python_modules/dagster/dagster_tests/cli_tests/test_project_commands.py . [ 12%]
+.........                                                                [ 12%]
+python_modules/dagster/dagster_tests/cli_tests/test_version.py .         [ 12%]
+python_modules/dagster/dagster_tests/cli_tests/test_workspace_config_schema.py . [ 12%]
+.........                                                                [ 12%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_asset_list_command.py . [ 12%]
+.......                                                                  [ 12%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_backfill_command.py . [ 12%]
+...................                                                      [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_cli_commands.py . [ 13%]
+............                                                             [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_core_test_utils.py . [ 13%]
+                                                                         [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_execute_command.py . [ 13%]
+..................................................................       [ 14%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_launch_command.py . [ 14%]
+................................                                         [ 15%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_list_command.py . [ 15%]
+...                                                                      [ 15%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_materialize_command.py . [ 15%]
+...........                                                              [ 15%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_memoized_development_cli.py . [ 15%]
+                                                                         [ 15%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_print_command.py . [ 15%]
+.......................................                                  [ 16%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_scaffold_command.py . [ 16%]
+.................                                                        [ 16%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_schedule_commands.py . [ 16%]
+.................                                                        [ 17%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_sensor_commands.py . [ 17%]
+...............                                                          [ 17%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_telemetry.py . [ 17%]
+...............                                                          [ 17%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/test_grpc_server_workspace.py . [ 17%]
+....                                                                     [ 17%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/test_job_load.py . [ 18%]
+..........                                                               [ 18%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/test_repository_load.py . [ 18%]
+....................                                                     [ 18%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/test_workspace_load.py . [ 18%]
+                                                                         [ 18%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/autodiscovery_tests/test_autodiscovery.py . [ 18%]
+.................                                                        [ 18%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/hello_world_in_file/test_hello_world_in_file_workspace.py . [ 19%]
+..                                                                       [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/hello_world_in_module/test_hello_world_in_module_workspace.py . [ 19%]
+..                                                                       [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/multi_location/test_load_failure_workspace.py . [ 19%]
+.                                                                        [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/multi_location/test_multi_location_workspace.py . [ 19%]
+.....                                                                    [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/toml_tests/test_toml_loading.py . [ 19%]
+..                                                                       [ 19%]
+python_modules/dagster/dagster_tests/core_tests/test_asset_events.py ... [ 19%]
+.                                                                        [ 19%]
+python_modules/dagster/dagster_tests/core_tests/test_compute_only_pipeline.py . [ 19%]
+.                                                                        [ 19%]
+python_modules/dagster/dagster_tests/core_tests/test_configured.py .     [ 19%]
+python_modules/dagster/dagster_tests/core_tests/test_data_time.py ...... [ 19%]
+...........                                                              [ 19%]
+python_modules/dagster/dagster_tests/core_tests/test_data_versions.py .. [ 19%]
+                                                                         [ 19%]
+python_modules/dagster/dagster_tests/core_tests/test_decorator_utils.py . [ 19%]
+...                                                                      [ 19%]
+python_modules/dagster/dagster_tests/core_tests/test_errors.py .         [ 19%]
+python_modules/dagster/dagster_tests/core_tests/test_event_logging.py .. [ 19%]
+...                                                                      [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_event_utils.py ...  [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_external_execution_plan.py . [ 20%]
+.....                                                                    [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_input_injection.py . [ 20%]
+....                                                                     [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_job_errors.py ..... [ 20%]
+...                                                                      [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_job_execution.py .. [ 20%]
+.................................                                        [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_job_init.py ..      [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_metadata.py .       [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_misc.py ....        [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_multi_dependency.py . [ 21%]
+.....                                                                    [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_multiple_outputs.py . [ 21%]
+......                                                                   [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_naming_collisions.py . [ 21%]
+..                                                                       [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_nothing_dependencies.py . [ 21%]
+............                                                             [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_op_aliases.py ....  [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_op_arguments.py ..  [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_op_invocation.py .. [ 21%]
+..............................................................           [ 23%]
+python_modules/dagster/dagster_tests/core_tests/test_op_with_config.py . [ 23%]
+.........                                                                [ 23%]
+python_modules/dagster/dagster_tests/core_tests/test_resolve_versions.py . [ 23%]
+........................                                                 [ 23%]
+python_modules/dagster/dagster_tests/core_tests/test_telemetry_upload.py . [ 23%]
+...                                                                      [ 23%]
+python_modules/dagster/dagster_tests/core_tests/test_user_code_boundary.py . [ 23%]
+..                                                                       [ 24%]
+python_modules/dagster/dagster_tests/core_tests/test_utils.py .......    [ 24%]
+python_modules/dagster/dagster_tests/core_tests/test_validate_run_config.py . [ 24%]
+                                                                         [ 24%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_default_required.py . [ 24%]
+....                                                                     [ 24%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_enums.py . [ 24%]
+............                                                             [ 24%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_schema.py . [ 24%]
+.                                                                        [ 24%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_spec.py . [ 24%]
+.......                                                                  [ 24%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_type_system.py . [ 24%]
+...................................................                      [ 25%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_error_messages.py . [ 25%]
+....                                                                     [ 25%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_field_hash.py . [ 25%]
+............                                                             [ 26%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_new_config_types.py . [ 26%]
+.....                                                                    [ 26%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_source_types.py . [ 26%]
+...                                                                      [ 26%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_type_printer.py . [ 26%]
+.................                                                        [ 26%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_composite_descent.py . [ 26%]
+......................                                                   [ 27%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_config_mappings.py . [ 27%]
+................                                                         [ 27%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_defaults.py . [ 27%]
+                                                                         [ 27%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_evaluator.py . [ 27%]
+.............................................                            [ 28%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_validate.py . [ 28%]
+................................................                         [ 29%]
+python_modules/dagster/dagster_tests/core_tests/execution_tests/test_active.py . [ 29%]
+.                                                                        [ 29%]
+python_modules/dagster/dagster_tests/core_tests/execution_tests/test_asset_backfill.py . [ 29%]
+........................................................................ [ 30%]
+..............                                                           [ 31%]
+python_modules/dagster/dagster_tests/core_tests/execution_tests/test_context.py . [ 31%]
+.                                                                        [ 31%]
+python_modules/dagster/dagster_tests/core_tests/graph_tests/test_graph.py . [ 31%]
+..............................................................           [ 32%]
+python_modules/dagster/dagster_tests/core_tests/graph_tests/test_graph_ins_out.py . [ 32%]
+....                                                                     [ 32%]
+python_modules/dagster/dagster_tests/core_tests/graph_tests/test_graph_source_asset_input.py . [ 32%]
+........                                                                 [ 32%]
+python_modules/dagster/dagster_tests/core_tests/graph_tests/test_op_selection.py . [ 32%]
+.........................                                                [ 33%]
+python_modules/dagster/dagster_tests/core_tests/hook_tests/test_hook_def.py . [ 33%]
+................                                                         [ 33%]
+python_modules/dagster/dagster_tests/core_tests/hook_tests/test_hook_invocation.py . [ 33%]
+..........                                                               [ 33%]
+python_modules/dagster/dagster_tests/core_tests/hook_tests/test_hook_run.py . [ 33%]
+..................                                                       [ 33%]
+python_modules/dagster/dagster_tests/core_tests/host_representation_tests/test_custom_repository_data.py . [ 34%]
+                                                                         [ 34%]
+python_modules/dagster/dagster_tests/core_tests/host_representation_tests/test_external_data.py . [ 34%]
+........................                                                 [ 34%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_instance.py . [ 34%]
+........................                                                 [ 34%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_instance_config.py . [ 35%]
+.                                                                        [ 35%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_instance_data_versions.py . [ 35%]
+....                                                                     [ 35%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_instance_reexecution.py . [ 35%]
+..                                                                       [ 35%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_nux.py . [ 35%]
+                                                                         [ 35%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_run_launcher_lazy_load.py . [ 35%]
+                                                                         [ 35%]
+python_modules/dagster/dagster_tests/core_tests/partition_tests/test_partition.py . [ 35%]
+...........................................................              [ 36%]
+python_modules/dagster/dagster_tests/core_tests/partition_tests/test_partitioned_io_manager.py . [ 36%]
+..                                                                       [ 36%]
+python_modules/dagster/dagster_tests/core_tests/partition_tests/test_partitioned_job.py . [ 36%]
+...                                                                      [ 36%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_basic_pythonic_config.py . [ 36%]
+...................................                                      [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_constraints.py . [ 37%]
+...........                                                              [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_default_values.py . [ 37%]
+....                                                                     [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_descriptions.py . [ 37%]
+                                                                         [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_env_vars.py . [ 37%]
+....                                                                     [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_errors.py . [ 37%]
+.............                                                            [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_graphs.py . [ 37%]
+......                                                                   [ 38%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_jobs_graphs.py . [ 38%]
+.....                                                                    [ 38%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_pythonic_config_types.py . [ 38%]
+.......s................                                                 [ 38%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_validation.py . [ 38%]
+                                                                         [ 38%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_build_init_resource_context.py . [ 38%]
+..                                                                       [ 38%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_build_resources.py . [ 38%]
+......                                                                   [ 38%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_pythonic_config_resources.py . [ 38%]
+............................................................             [ 40%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_required_resources.py . [ 40%]
+.....................                                                    [ 40%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_resource_definition.py . [ 40%]
+.......................................                                  [ 41%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_resource_invocation.py . [ 41%]
+.........                                                                [ 41%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_resource_parameters.py . [ 41%]
+.........                                                                [ 41%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_with_resources.py . [ 41%]
+......................                                                   [ 42%]
+python_modules/dagster/dagster_tests/core_tests/run_coordinator_tests/test_default_run_coordinator.py . [ 42%]
+.                                                                        [ 42%]
+python_modules/dagster/dagster_tests/core_tests/run_coordinator_tests/test_queued_run_coordinator.py . [ 42%]
+.....                                                                    [ 42%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_dagster_type_decorator.py . [ 42%]
+..                                                                       [ 42%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_input_type_loading.py . [ 42%]
+..                                                                       [ 42%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_python_dict.py . [ 42%]
+..................                                                       [ 42%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_python_set.py . [ 42%]
+............                                                             [ 43%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_python_tuple.py . [ 43%]
+...............                                                          [ 43%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_runtime_types.py . [ 43%]
+......                                                                   [ 43%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_typed_list.py . [ 43%]
+...............                                                          [ 43%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_typed_python_dict.py . [ 43%]
+.....                                                                    [ 43%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_types.py . [ 43%]
+.........................                                                [ 44%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/config_schema_tests/test_builtin_schemas.py . [ 44%]
+.....................                                                    [ 44%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/config_schema_tests/test_config_schema.py . [ 44%]
+....                                                                     [ 44%]
+python_modules/dagster/dagster_tests/core_tests/selector_tests/test_execute.py . [ 44%]
+.......                                                                  [ 45%]
+python_modules/dagster/dagster_tests/core_tests/selector_tests/test_subset_selector.py . [ 45%]
+.................                                                        [ 45%]
+python_modules/dagster/dagster_tests/core_tests/serdes_tests/test_ipc.py . [ 45%]
+.......                                                                  [ 45%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_active_data.py . [ 45%]
+...                                                                      [ 45%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_composite_solid_def_snap.py . [ 45%]
+..                                                                       [ 45%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_config_schema_snapshot.py . [ 45%]
+...................                                                      [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_dagster_type_namespace_snapshot.py . [ 46%]
+...                                                                      [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_execution_plan.py . [ 46%]
+...                                                                      [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_job_snap.py . [ 46%]
+...........................                                              [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_legacy_mode_def_snap.py . [ 46%]
+                                                                         [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_old_execution_plan_snapshot.py . [ 46%]
+.                                                                        [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_repository_snap.py . [ 46%]
+............                                                             [ 47%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_solid_def_snap.py . [ 47%]
+.                                                                        [ 47%]
+python_modules/dagster/dagster_tests/core_tests/system_config_tests/test_system_config.py . [ 47%]
+...................                                                      [ 47%]
+python_modules/dagster/dagster_tests/core_tests/workspace_tests/test_request_context.py . [ 47%]
+                                                                         [ 47%]
+python_modules/dagster/dagster_tests/daemon_sensor_tests/test_asset_sensor_run.py . [ 47%]
+...................
+
+=============================== warnings summary ===============================
+python_modules/dagster/dagster_tests/core_tests/test_op_invocation.py::test_dynamic_output_async_non_gen
+  /home/ubuntu/dagster/python_modules/dagster/dagster_tests/core_tests/test_op_invocation.py:951: RuntimeWarning: coroutine '_type_check_output_wrapper.<locals>.type_check_coroutine' was never awaited
+    with pytest.raises(Exception):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= SnapshotTest summary =============================
+31 snapshots passed.
+4 snapshots deprecated in 1 test suites. Inspect your code or run with `pytest --snapshot-update` to update them.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KeyboardInterrupt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/home/ubuntu/dagster/python_modules/dagster/dagster_tests/daemon_sensor_tests/test_sensor_run.py:921: KeyboardInterrupt
+(to show a full traceback on KeyboardInterrupt use --full-trace)
+==== 2457 passed, 3 skipped, 4 deselected, 1 warning in 2049.28s (0:34:09) =====
+Exception ignored in: <module 'threading' from '/usr/lib/python3.10/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1567, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 
+just after pytest, Thu Apr 20 19:19:55 UTC 2023
+/home/ubuntu/scripts/ubuntu/python-various/dagster-build.sh: line 39: popd: directory stack empty
+/home/ubuntu/scripts/ubuntu/python-various/dagster-build.sh: line 41: popd: directory stack empty

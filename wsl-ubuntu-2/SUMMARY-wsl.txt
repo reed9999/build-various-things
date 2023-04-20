@@ -1,0 +1,8 @@
+- pytest: OKb - pass except https://github.com/pytest-dev/pytest/issues/10283
+- django: OK - Ran 16257 tests in 153.089s OK (skipped=1763, expected failures=5)
+- qutebrowser: ??? - hard to tell. py38-pyqt515-cov: FAIL code 1 (1.22=setup[0.05]+cmd[1.17] seconds)
+- tox: OK
+- dagster: no! - many many problems
+
+- vim: terrific. No tests yet?
+
