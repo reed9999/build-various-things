@@ -2768,4 +2768,201 @@ python_modules/dagster/dagster_tests/execution_tests/test_memoized_dev_loop.py .
 python_modules/dagster/dagster_tests/execution_tests/test_metadata.py .. [ 68%]
 ..........................                                               [ 69%]
 python_modules/dagster/dagster_tests/execution_tests/test_retries.py ... [ 69%]
-.....
+...................                                                      [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_solid_iterators.py . [ 69%]
+....                                                                     [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_timing.py ...  [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/context_tests/test_output.py . [ 69%]
+                                                                         [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_dsl.py . [ 69%]
+....                                                                     [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_dynamic_execution.py . [ 69%]
+.......................                                                  [ 70%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_dynamic_output.py . [ 70%]
+..........                                                               [ 70%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_not_allowed.py . [ 70%]
+.........                                                                [ 70%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_reexecute.py . [ 70%]
+................                                                         [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_step_handle.py . [ 71%]
+                                                                         [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_child_process_executor.py . [ 71%]
+...Fatal Python error: Segmentation fault
+
+Thread 0x00007f3b4cfc9640 (most recent call first):
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 228 in _feed
+  File "/usr/lib/python3.10/threading.py", line 953 in run
+  File "/usr/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 973 in _bootstrap
+
+Current thread 0x00007f3d416981c0 (most recent call first):
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 517 in string_at
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_utils/__init__.py", line 539 in segfault
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_child_process_executor.py", line 44 in execute
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/executor/child_process_executor.py", line 79 in _execute_command_in_child_process
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108 in run
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314 in _bootstrap
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 71 in _launch
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 19 in __init__
+  File "/usr/lib/python3.10/multiprocessing/context.py", line 281 in _Popen
+  File "/usr/lib/python3.10/multiprocessing/context.py", line 224 in _Popen
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 121 in start
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/executor/child_process_executor.py", line 157 in execute_child_process_command
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_child_process_executor.py", line 101 in test_child_process_segfault
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/python.py", line 192 in pytest_pyfunc_call
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 39 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 80 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 265 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/python.py", line 1718 in runtest
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 168 in pytest_runtest_call
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 39 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 80 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 265 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 261 in <lambda>
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 340 in from_call
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 260 in call_runtest_hook
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 221 in call_and_report
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 132 in runtestprotocol
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 113 in pytest_runtest_protocol
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 39 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 80 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 265 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/main.py", line 347 in pytest_runtestloop
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 39 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 80 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 265 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/main.py", line 322 in _main
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/main.py", line 268 in wrap_session
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/main.py", line 315 in pytest_cmdline_main
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 39 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 80 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 265 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/config/__init__.py", line 165 in main
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/config/__init__.py", line 188 in console_main
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pytest/__main__.py", line 5 in <module>
+  File "/usr/lib/python3.10/runpy.py", line 86 in _run_code
+  File "/usr/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+
+Extension modules: pendulum.parsing._iso8601, pendulum._extensions._helpers, yaml._yaml, pydantic.typing, pydantic.errors, pydantic.version, pydantic.utils, pydantic.class_validators, pydantic.config, pydantic.color, pydantic.datetime_parse, pydantic.validators, pydantic.networks, pydantic.types, pydantic.json, pydantic.error_wrappers, pydantic.fields, pydantic.parse, pydantic.schema, pydantic.main, pydantic.dataclasses, pydantic.annotated_types, pydantic.decorator, pydantic.env_settings, pydantic.tools, pydantic, grpc._cython.cygrpc, google.protobuf.pyext._message, sqlalchemy.cimmutabledict, greenlet._greenlet, sqlalchemy.cprocessors, sqlalchemy.cresultproxy, markupsafe._speedups (total: 33)
+.s                                                                    [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_multiprocessing.py . [ 71%]
+..................                                                       [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_priorities.py . [ 71%]
+.                                                                        [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_step_delegating_executor.py . [ 71%]
+..........                                                               [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_step_delegating_executor_retries.py . [ 71%]
+.                                                                        [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_step_handler.py . [ 71%]
+                                                                         [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_execution_plan.py . [ 71%]
+..............                                                           [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_execution_plan_composite.py . [ 72%]
+.                                                                        [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_execution_plan_reexecution.py . [ 72%]
+..                                                                       [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_execution_plan_subset.py . [ 72%]
+..                                                                       [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_external_step.py . [ 72%]
+................                                                         [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_host_run_worker.py . [ 72%]
+.                                                                        [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_objects.py . [ 72%]
+                                                                         [ 72%]
+python_modules/dagster/dagster_tests/general_tests/test_api.py .....     [ 72%]
+python_modules/dagster/dagster_tests/general_tests/test_deprecations.py . [ 72%]
+.                                                                        [ 72%]
+python_modules/dagster/dagster_tests/general_tests/test_import.py .      [ 72%]
+python_modules/dagster/dagster_tests/general_tests/test_pending_repository.py . [ 72%]
+......                                                                   [ 73%]
+python_modules/dagster/dagster_tests/general_tests/test_repository.py .. [ 73%]
+...                                                                      [ 73%]
+python_modules/dagster/dagster_tests/general_tests/test_serdes.py ...... [ 73%]
+..........................                                               [ 73%]
+python_modules/dagster/dagster_tests/general_tests/test_serdes_rpc.py .. [ 73%]
+..                                                                       [ 73%]
+python_modules/dagster/dagster_tests/general_tests/check_tests/test_check.py . [ 73%]
+........................................................................ [ 75%]
+................................................................         [ 76%]
+python_modules/dagster/dagster_tests/general_tests/compat_tests/test_back_compat.py . [ 76%]
+...................................                                      [ 77%]
+python_modules/dagster/dagster_tests/general_tests/compat_tests/test_change_snapshot_structure.py . [ 77%]
+                                                                         [ 77%]
+python_modules/dagster/dagster_tests/general_tests/compat_tests/test_dead_events.py . [ 77%]
+.                                                                        [ 77%]
+python_modules/dagster/dagster_tests/general_tests/compat_tests/test_execution_plan_snapshot.py . [ 77%]
+                                                                         [ 77%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_compile.py . [ 77%]
+                                                                         [ 77%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_grpc_server_registry.py . [ 77%]
+...                                                                      [ 77%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_health_check.py . [ 77%]
+.                                                                        [ 77%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_heartbeat.py . [ 77%]
+                                                                         [ 77%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_persistent.py . [ 77%]
+....................                                                     [ 77%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_ping.py s [ 77%]
+......s.........                                                         [ 78%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_watch_server.py . [ 78%]
+....                                                                     [ 78%]
+python_modules/dagster/dagster_tests/general_tests/py3_tests/test_inference.py . [ 78%]
+...................................                                      [ 79%]
+python_modules/dagster/dagster_tests/general_tests/py3_tests/test_type_examples_py3.py . [ 79%]
+................................                                         [ 79%]
+python_modules/dagster/dagster_tests/general_tests/seven_tests/test_seven.py . [ 79%]
+..........                                                               [ 79%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_backcompat.py . [ 79%]
+........                                                                 [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_backoff.py . [ 80%]
+.                                                                        [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_cached_method.py . [ 80%]
+...                                                                      [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_camelcase.py . [ 80%]
+                                                                         [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_enum.py . [ 80%]
+                                                                         [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_file_utils.py . [ 80%]
+.                                                                        [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_indenting_printer.py . [ 80%]
+...........                                                              [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_list_pull.py . [ 80%]
+..                                                                       [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_merger.py . [ 80%]
+.....                                                                    [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_net.py . [ 80%]
+                                                                         [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_rename_warning.py . [ 80%]
+                                                                         [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_signals.py . [ 80%]
+                                                                         [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_solid_isolation.py . [ 80%]
+...........                                                              [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_temp_file.py . [ 81%]
+                                                                         [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_timing.py . [ 81%]
+..                                                                       [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_typing_api.py . [ 81%]
+......                                                                   [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_utils.py . [ 81%]
+...                                                                      [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_yaml.py . [ 81%]
+.....                                                                    [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/log_tests/test_json_logging.py . [ 81%]
+...                                                                      [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/log_tests/test_single_handler.py . [ 81%]
+                                                                         [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/log_tests/test_structured_logging.py . [ 81%]
+.                                                                        [ 81%]
+python_modules/dagster/dagster_tests/launcher_tests/test_default_run_launcher.py . [ 81%]
+..................                                                       [ 81%]
+python_modules/dagster/dagster_tests/launcher_tests/test_persistent_grpc_run_launcher.py . [ 81%]
+...                                                                      [ 81%]
+python_modules/dagster/dagster_tests/logging_tests/test_log_capture.py . [ 82%]
+                                                                         [ 82%]
+python_modules/dagster/dagster_tests/logging_tests/test_log_manager.py . [ 82%]
+........                                                                 [ 82%]
+python_modules/dagster/dagster_tests/logging_tests/test_logging.py ..... [ 82%]
+................                                                         [ 82%]
+python_modules/dagster/dagster_tests/logging_tests/test_python_logging.py . [ 82%]
+.....................................
