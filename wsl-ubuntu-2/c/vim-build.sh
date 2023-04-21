@@ -8,7 +8,7 @@ sudo apt install -y libtool-bin
 git clone https://github.com/vim/vim.git
 pushd ~/vim/src
 make
-make tests
+make test
 sudo make install
 
 
