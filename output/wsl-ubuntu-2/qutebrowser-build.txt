@@ -1,0 +1,151 @@
+##### QUTEBROWSER
+qutebrowser-build start time Sat Apr 15 10:15:51 EDT 2023
+~/qutebrowser ~/scripts ~/pytest ~/scripts/wsl-ubuntu-2/python-various
+Requirement already satisfied: setuptools in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (44.0.0)
+Requirement already satisfied: tox in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (4.4.12)
+Requirement already satisfied: cachetools>=5.3 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (5.3.0)
+Requirement already satisfied: packaging>=23 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (23.1)
+Requirement already satisfied: pluggy>=1 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (1.0.0)
+Requirement already satisfied: virtualenv>=20.21 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (20.21.0)
+Requirement already satisfied: filelock>=3.11 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (3.11.0)
+Requirement already satisfied: pyproject-api>=1.5.1 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (1.5.1)
+Requirement already satisfied: tomli>=2.0.1; python_version < "3.11" in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (2.0.1)
+Requirement already satisfied: colorama>=0.4.6 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (0.4.6)
+Requirement already satisfied: platformdirs>=3.2 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (3.2.0)
+Requirement already satisfied: chardet>=5.1 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from tox) (5.1.0)
+Requirement already satisfied: distlib<1,>=0.3.6 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from virtualenv>=20.21->tox) (0.3.6)
+Obtaining file:///home/philip/qutebrowser
+Requirement already satisfied: PyYAML in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from qutebrowser==2.5.4) (6.0)
+Requirement already satisfied: jinja2 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from qutebrowser==2.5.4) (3.1.2)
+Requirement already satisfied: importlib_resources>=1.1.0 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from qutebrowser==2.5.4) (5.12.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from jinja2->qutebrowser==2.5.4) (2.1.2)
+Requirement already satisfied: zipp>=3.1.0; python_version < "3.10" in /home/philip/.virtualenvs/qutebrowserdev/lib/python3.8/site-packages (from importlib_resources>=1.1.0->qutebrowser==2.5.4) (3.15.0)
+Installing collected packages: qutebrowser
+  Attempting uninstall: qutebrowser
+    Found existing installation: qutebrowser 2.5.4
+    Uninstalling qutebrowser-2.5.4:
+      Successfully uninstalled qutebrowser-2.5.4
+  Running setup.py develop for qutebrowser
+Successfully installed qutebrowser
+running build
+running build_py
+running egg_info
+writing qutebrowser.egg-info/PKG-INFO
+writing dependency_links to qutebrowser.egg-info/dependency_links.txt
+writing entry points to qutebrowser.egg-info/entry_points.txt
+writing requirements to qutebrowser.egg-info/requires.txt
+writing top-level names to qutebrowser.egg-info/top_level.txt
+reading manifest file 'qutebrowser.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'qutebrowser.egg-info/SOURCES.txt'
+copying qutebrowser/git-commit-id -> build/lib/qutebrowser
+py38-pyqt515-cov: commands[0]> .tox/py38-pyqt515-cov/bin/python -bb -m pytest tests
+py38-pyqt515-cov: exit 1 (1.17 seconds) /home/philip/qutebrowser> .tox/py38-pyqt515-cov/bin/python -bb -m pytest tests pid=14695
+py38-pyqt515-cov: FAIL ✖ in 1.22 seconds
+mypy-pyqt5: commands[0]> .tox/mypy-pyqt5/bin/python -m mypy --always-false=USE_PYQT6 --always-true=USE_PYQT5 --always-false=USE_PYSIDE2 --always-false=USE_PYSIDE6 --always-true=IS_QT5 --always-false=IS_QT6 qutebrowser
+Success: no issues found in 203 source files
+mypy-pyqt5: OK ✔ in 0.45 seconds
+misc: commands[0]> .tox/misc/bin/python scripts/dev/misc_checks.py all
+
+[33m==================== git ====================[0m
+
+
+[33m==================== vcs ====================[0m
+
+
+[33m==================== spelling ====================[0m
+
+
+[33m==================== pyqt-imports ====================[0m
+
+
+[33m==================== userscript-descriptions ====================[0m
+
+[33m==================== userscript-shebangs ====================[0m
+
+[33m==================== changelog-urls ====================[0m
+misc: OK ✔ in 3.52 seconds
+vulture: commands[0]> .tox/vulture/bin/python scripts/dev/run_vulture.py
+vulture: OK ✔ in 1.5 seconds
+flake8: commands[0]> .tox/flake8/bin/python -m flake8 qutebrowser tests scripts
+flake8: OK ✔ in 12.35 seconds
+pylint: commands[0]> .tox/pylint/bin/python -m pylint scripts qutebrowser --output-format=colorized --reports=no
+[7;33m************* Module qutebrowser.qt.webenginewidgets[0m
+qutebrowser/qt/webenginewidgets.py:21:8: E0602: [1;31mUndefined variable 'QWebEngineSettings'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:22:8: E0602: [1;31mUndefined variable 'QWebEngineProfile'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:23:8: E0602: [1;31mUndefined variable 'QWebEngineDownloadItem'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:24:8: E0602: [1;31mUndefined variable 'QWebEnginePage'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:25:8: E0602: [1;31mUndefined variable 'QWebEngineCertificateError'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:26:8: E0602: [1;31mUndefined variable 'QWebEngineScript'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:27:8: E0602: [1;31mUndefined variable 'QWebEngineHistory'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:28:8: E0602: [1;31mUndefined variable 'QWebEngineHistoryItem'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:29:8: E0602: [1;31mUndefined variable 'QWebEngineScriptCollection'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:30:8: E0602: [1;31mUndefined variable 'QWebEngineClientCertificateSelection'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:31:8: E0602: [1;31mUndefined variable 'QWebEngineFullScreenRequest'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:32:8: E0602: [1;31mUndefined variable 'QWebEngineContextMenuData'[0m ([1;31mundefined-variable[0m)
+qutebrowser/qt/webenginewidgets.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+[7;33m************* Module qutebrowser.qt.webenginecore[0m
+qutebrowser/qt/webenginecore.py:3:0: I0021: [32mUseless suppression of 'unused-wildcard-import'[0m ([32museless-suppression[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webenginequtescheme[0m
+qutebrowser/browser/webengine/webenginequtescheme.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlSchemeHandler' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/webenginequtescheme.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlRequestJob' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/webenginequtescheme.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlScheme' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webengineinspector[0m
+qutebrowser/browser/webengine/webengineinspector.py:25:0: E0611: [1;31mNo name 'QWebEngineView' in module 'qutebrowser.qt.webenginewidgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.interceptor[0m
+qutebrowser/browser/webengine/interceptor.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlRequestInterceptor' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+qutebrowser/browser/webengine/interceptor.py:23:0: E0611: [1;31mNo name 'QWebEngineUrlRequestInfo' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webview[0m
+qutebrowser/browser/webengine/webview.py:27:0: E0611: [1;31mNo name 'QWebEngineView' in module 'qutebrowser.qt.webenginewidgets'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module qutebrowser.browser.webengine.webenginetab[0m
+qutebrowser/browser/webengine/webenginetab.py:32:0: E0611: [1;31mNo name 'QWebEngineView' in module 'qutebrowser.qt.webenginewidgets'[0m ([1;31mno-name-in-module[0m)
+
+-----------------------------------
+Your code has been rated at 9.97/10
+
+pylint: exit 2 (82.03 seconds) /home/philip/qutebrowser> .tox/pylint/bin/python -m pylint scripts qutebrowser --output-format=colorized --reports=no pid=14771
+pylint: commands[1]> .tox/pylint/bin/python scripts/dev/run_pylint_on_tests.py /home/philip/qutebrowser --output-format=colorized --reports=no
+[7;33m************* Module webengine.test_webengine_cookies[0m
+tests/unit/browser/webengine/test_webengine_cookies.py:23:0: E0611: [1;31mNo name 'QWebEngineCookieStore' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+[7;33m************* Module webengine.test_webengineinterceptor[0m
+tests/unit/browser/webengine/test_webengineinterceptor.py:27:0: E0611: [1;31mNo name 'QWebEngineUrlRequestInfo' in module 'qutebrowser.qt.webenginecore'[0m ([1;31mno-name-in-module[0m)
+
+------------------------------------
+Your code has been rated at 10.00/10
+
+pylint: exit 2 (116.93 seconds) /home/philip/qutebrowser> .tox/pylint/bin/python scripts/dev/run_pylint_on_tests.py /home/philip/qutebrowser --output-format=colorized --reports=no pid=14882
+pylint: FAIL ✖ in 3 minutes 19 seconds
+pyroma: commands[0]> .tox/pyroma/bin/pyroma .
+------------------------------
+Checking .
+Getting metadata for wheel...
+Found qutebrowser
+------------------------------
+Final rating: 10/10
+Your cheese is so fresh most people think it's a cream: Mascarpone
+------------------------------
+pyroma: OK ✔ in 1.1 seconds
+check-manifest: commands[0]> .tox/check-manifest/bin/check-manifest --ignore 'qutebrowser/git-commit-id,qutebrowser/html/doc,qutebrowser/html/doc/*,qutebrowser/html/doc/img/cheatsheet-*.png,*/__pycache__'
+lists of files in version control and sdist match
+check-manifest: OK ✔ in 4.55 seconds
+eslint: commands[0] /home/philip/qutebrowser/qutebrowser/javascript> eslint --report-unused-disable-directives .
+eslint: exit 2 (0.10 seconds) /home/philip/qutebrowser/qutebrowser/javascript> eslint --report-unused-disable-directives .
+eslint: FAIL ✖ in 0.12 seconds
+yamllint: commands[0]> .tox/yamllint/bin/python -m yamllint -f colored --strict .
+yamllint: OK ✔ in 2.86 seconds
+actionlint: commands[0]> actionlint
+actionlint: exit 2 (0.25 seconds) /home/philip/qutebrowser> actionlint
+  py38-pyqt515-cov: FAIL code 1 (1.22=setup[0.05]+cmd[1.17] seconds)
+  mypy-pyqt5: OK (0.45=setup[0.02]+cmd[0.43] seconds)
+  misc: OK (3.52=setup[0.01]+cmd[3.51] seconds)
+  vulture: OK (1.50=setup[0.01]+cmd[1.48] seconds)
+  flake8: OK (12.35=setup[0.01]+cmd[12.34] seconds)
+  pylint: FAIL code 2 (199.00=setup[0.04]+cmd[82.03,116.93] seconds)
+  pyroma: OK (1.10=setup[0.06]+cmd[1.04] seconds)
+  check-manifest: OK (4.55=setup[0.01]+cmd[4.54] seconds)
+  eslint: FAIL code 2 (0.12=setup[0.02]+cmd[0.10] seconds)
+  yamllint: OK (2.86=setup[0.01]+cmd[2.84] seconds)
+  actionlint: FAIL code 2 (0.26=setup[0.01]+cmd[0.25] seconds)
+  evaluation failed :( (227.00 seconds)
+~/scripts ~/pytest ~/scripts/wsl-ubuntu-2/python-various
+qutebrowser-build end time Sat Apr 15 10:19:44 EDT 2023
