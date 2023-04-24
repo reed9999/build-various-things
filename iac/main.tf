@@ -14,118 +14,74 @@ provider "aws" {
   # region = "us-east-1"
 }
 
+provider "aws" {
+  region = "us-east-1"
+  alias  = "aws_USE1"
+}
+
 data "template_file" "bootstrap" {
   # template = "${file("${path.cwd}/../ec2/boostrap.sh")}"
   template = file("../ec2/bootstrap.sh")
 }
 
-# make this one an instance to troubleshoot user_data
-resource "aws_instance" "ohio-023-instance" {
-  count = 0
-  ami           = "ami-0103f211a154d64a6" # us-east-2
-  instance_type = "t3.micro"
-  key_name      = "2023-build-ohio"
-  # iam_instance_profile = aws_iam_instance_profile.build-profile.name
+# INSTANCES
+# These are all hardcoded for now... 
+# Presently focusing on Ubuntu but can switch over to Amazon Linux if desired.
+resource "aws_spot_instance_request" "ohio-small" {
+count         = var.quantities.USE2.small
+ami           = var.USE2.amis.ubuntu
+instance_type = var.instance_types.small
+spot_price    = "0.04"
+key_name      = var.USE2.key_name
 
-  # I've tried many approaches to no avail. See also 
-  # https://stackoverflow.com/questions/51882030/commands-in-user-data-are-not-executed-in-terraform
-  # https://stackoverflow.com/questions/68180823/terraform-only-runs-the-first-part-of-multi-part-user-data
-  user_data = <<HERE
-  !#/bin/sh
-  echo FIRST > ~/first.txt ; sleep 10 s ; echo SECOND > /home/ec2-user/second.txt
-HERE
-  tags = {
-    Name = "ohio-023-t2.micro"
-
-  }
-
-}
-resource "aws_spot_instance_request" "ohio-amzn-linux-instance" {
-  count         = 0
-  ami           = "ami-0103f211a154d64a6" # us-east-2
-  instance_type = "t3.nano"
-  spot_price =  "0.10"
-  key_name      = "2023-build-ohio"
-  # iam_instance_profile = aws_iam_instance_profile.build-profile.name
-
-  # user_data = data.template_file.bootstrap.rendered
-  user_data = <<SSS
-#!/usr/bin/sh
-touch ~/xyz ; echo 'HELLO PHILIP' > ~/hello_philip.txt
-SSS
-  tags = {
-    Name = "ohio-amzn-linux-instance"
+user_data = file("startup.sh")
+# This has no observable effect in spot.
+tags = {
+  Name = "ohio-small"
 
   }
 }
 
-resource "aws_spot_instance_request" "virginia-001-instance" {
-  count         = 0
-  ami           = "ami-06e46074ae430fba6" # Amazon Linux
-  instance_type = "m5.large"    # Which seems to be about the price of xlarge in Ohio on a Wed afternoon....
-  spot_price =  "0.10"
-  key_name      = "2023-virginia-build"
-  # iam_instance_profile = aws_iam_instance_profile.build-profile.name
+resource "aws_spot_instance_request" "ohio-large" {
+  count         = var.quantities.USE2.large
+  ami           = var.USE2.amis.ubuntu
+  instance_type = var.instance_types.large
+  spot_price    = "0.10"
+  key_name      = var.USE2.key_name
 
-  # user_data = data.template_file.bootstrap.rendered
-  user_data = "touch ~/xyz ; echo 'HELLO PHILIP' > ~/hello_philip.txt"
+  user_data = file("startup.sh")
+  tags = {
+    Name = "ohio-large"
+  }
+}
+
+resource "aws_spot_instance_request" "virginia-small" {
+  provider = aws.aws_USE1
+  count    = var.quantities.USE1.small
+  # us-east-1 doesn't recognize its own stated AMI for Ubuntu. Why not?
+  ami           = var.USE1.amis.ubuntu
+  instance_type = var.instance_types.small
+  spot_price    = "0.04"
+  key_name      = var.USE1.key_name
+  user_data = file("startup.sh")
   tags = {
     Name = "virginia-m5.large-perftest"
 
   }
 }
 
-resource "aws_spot_instance_request" "ohio-spot-ubuntu" {
-  count         = 0
-  ami           = "ami-0a695f0d95cefc163" # us-east-2 Ubuntu
-  instance_type = "t3a.medium"
-  spot_price =  "0.10"
-  key_name      = "2023-build-ohio"
+resource "aws_spot_instance_request" "virginia-large" {
+  provider      = aws.aws_USE1
+  count         = var.quantities.USE1.large
+  ami           = var.USE1.amis.ubuntu
+  instance_type = var.instance_types.large
+  spot_price    = "0.10"
+  key_name      = var.USE1.key_name
   # iam_instance_profile = aws_iam_instance_profile.build-profile.name
 
-  # user_data = data.template_file.bootstrap.rendered
-  user_data = "#!/bin/sh\ntouch ~/xyz ; echo HELLO PHILIP > ~/hello_philip.txt"
+  user_data = file("startup.sh")
   tags = {
-    Name = "ohio-m5.large-ubuntu-dagster"
+    Name = "virginia-m5.large-perftest"
 
   }
 }
-
-resource "aws_spot_instance_request" "ohio-spot-ubuntu-larger" {
-  count         = 0
-  ami           = "ami-0a695f0d95cefc163" # us-east-2 Ubuntu
-  instance_type = "m5.large"
-  spot_price =  "0.10"
-  key_name      = "2023-build-ohio"
-  # iam_instance_profile = aws_iam_instance_profile.build-profile.name
-
-  # user_data = data.template_file.bootstrap.rendered
-  user_data = "#!/bin/sh\ntouch ~/xyz ; echo HELLO PHILIP > ~/hello_philip.txt"
-  tags = {
-    Name = "ohio-m5.large-ubuntu-dagster"
-
-  }
-}
-
-# Alternative approach since userdata is failing on the multipart thing. 
-# See https://stackoverflow.com/questions/62101009/terraform-copy-upload-files-to-aws-ec2-instance
-
-# data "cloudinit_config" "example" {
-  # gzip          = false
-  # base64_encode = false
-
-  # part {
-  #   content_type = "text/cloud-config"
-  #   filename     = "cloud-config.yaml"
-  #   content      = local.cloud_config_config
-  # }
-
-  # part {
-  #   content_type = "text/x-shellscript"
-  #   filename     = "example.sh"
-  #   content  = <<-EOF
-  #     #!/bin/bash
-  #     echo "Hello World"
-  # EOF
-  # }
-# }
