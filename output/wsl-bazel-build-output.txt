@@ -1,0 +1,4 @@
+Sat Apr 22 10:39:38 EDT 2023
+WARNING: Invoking Bazel in batch mode since it is not invoked from within a workspace (below a directory having a WORKSPACE file).
+FATAL: Could not find system javabase. Ensure JAVA_HOME is set, or javac is on your PATH.
+Sat Apr 22 10:39:38 EDT 2023
