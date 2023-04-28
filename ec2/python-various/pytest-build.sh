@@ -15,8 +15,12 @@ echo
 
 # Note that pytest clearly says to use tox instead, and the following doesn't run any tests.
 # python3 ./setup.py test
+
+echo "Before tox $(date)"
+
 python3 -m pip install tox
 tox
+echo "After tox $(date)"
 echo "-- next: attempt install of our new libraries"
 #
 # I don't know why I thought this was a good idea.
