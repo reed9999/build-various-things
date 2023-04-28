@@ -1,10 +1,10 @@
-# For the moment this is based on the latest offered (quick-start) Ubuntu
-
-# aws s3 cp s3://pjr/preferences/unix/.vimrc-unix .vimrc
+#!/bin/bash
 
 # git is already there.
-# sudo yum install -y git
-	git clone  https://github.com/reed9999/build-various-things.git scripts
+
+# Since user_data runs as root...
+mkdir -p /home/ubuntu
+	git clone  https://github.com/reed9999/build-various-things.git /home/ubuntu/scripts
 	pushd scripts
 		# Any git repo dir will do; set some global config.
 		git config pull.rebase false
@@ -15,10 +15,6 @@
 
 	popd
 
-cp ~/scripts/misc/.vimrc .
-
-
-# I sometimes like to make a huge version of the name using https://textkool.com/en/ascii-art-generator on ANSI Regular
-echo "\
-NAME OF THIS INSTANCE GOES HERE
-	" > THIS_INSTANCE_NAME.txt
+chown ubuntu /home/ubuntu/scripts
+cp ~/scripts/misc/.vimrc /home/ubuntu
+chown ubuntu /home/ubuntu/.vimrc
