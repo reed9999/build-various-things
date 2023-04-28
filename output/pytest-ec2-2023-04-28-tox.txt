@@ -1,0 +1,779 @@
+~/pytest ~
+Obtaining file:///home/ec2-user/pytest
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: iniconfig in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from pytest==7.4.0.dev39+ga15f54496) (2.0.0)
+Requirement already satisfied: pluggy<2.0,>=0.12 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from pytest==7.4.0.dev39+ga15f54496) (1.0.0)
+Requirement already satisfied: tomli>=1.0.0 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from pytest==7.4.0.dev39+ga15f54496) (2.0.1)
+Requirement already satisfied: packaging in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from pytest==7.4.0.dev39+ga15f54496) (23.1)
+Requirement already satisfied: exceptiongroup>=1.0.0rc8 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from pytest==7.4.0.dev39+ga15f54496) (1.1.1)
+Building wheels for collected packages: pytest
+  Building editable for pytest (pyproject.toml): started
+  Building editable for pytest (pyproject.toml): finished with status 'done'
+  Created wheel for pytest: filename=pytest-7.4.0.dev39+ga15f54496-0.editable-py3-none-any.whl size=5220 sha256=14afea0435d084fc54f9999cb763c8d6c14585971c2412ffe58e3f7a0d6faa6b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-57msm149/wheels/e8/11/da/5a40a5b91215367e426f09a4e16ae43f0098b9710104a5f1e8
+Successfully built pytest
+Installing collected packages: pytest
+  Attempting uninstall: pytest
+    Found existing installation: pytest 7.4.0.dev39+ga15f54496
+    Uninstalling pytest-7.4.0.dev39+ga15f54496:
+      Successfully uninstalled pytest-7.4.0.dev39+ga15f54496
+Successfully installed pytest-7.4.0.dev39+ga15f54496
+WARNING: You are using pip version 21.3.1; however, version 23.1.2 is available.
+You should consider upgrading via the '/home/ec2-user/.virtualenvs/pytestdev/bin/python3 -m pip install --upgrade pip' command.
+-- next: setup.py build
+/home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/setuptools/installer.py:27: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
+  warnings.warn(
+WARNING: The wheel package is not available.
+WARNING: The wheel package is not available.
+running build
+running build_py
+copying src/_pytest/_version.py -> build/lib/_pytest
+
+Before tox Fri Apr 28 16:55:52 UTC 2023
+Requirement already satisfied: tox in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (4.5.1)
+Requirement already satisfied: packaging>=23.1 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (23.1)
+Requirement already satisfied: colorama>=0.4.6 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (0.4.6)
+Requirement already satisfied: pyproject-api>=1.5.1 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (1.5.1)
+Requirement already satisfied: platformdirs>=3.2 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (3.5.0)
+Requirement already satisfied: tomli>=2.0.1 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (2.0.1)
+Requirement already satisfied: pluggy>=1 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (1.0.0)
+Requirement already satisfied: cachetools>=5.3 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (5.3.0)
+Requirement already satisfied: chardet>=5.1 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (5.1.0)
+Requirement already satisfied: virtualenv>=20.21 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (20.23.0)
+Requirement already satisfied: filelock>=3.11 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from tox) (3.12.0)
+Requirement already satisfied: distlib<1,>=0.3.6 in /home/ec2-user/.virtualenvs/pytestdev/lib/python3.9/site-packages (from virtualenv>=20.21->tox) (0.3.6)
+WARNING: You are using pip version 21.3.1; however, version 23.1.2 is available.
+You should consider upgrading via the '/home/ec2-user/.virtualenvs/pytestdev/bin/python3 -m pip install --upgrade pip' command.
+linting: commands[0]> pre-commit run --all-files --show-diff-on-failure
+[INFO] Installing environment for https://github.com/psf/black.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+An unexpected error has occurred: CalledProcessError: command: ('/home/ec2-user/pytest/.tox/linting/bin/python', '-mvirtualenv', '/home/ec2-user/.cache/pre-commit/repo_jrobyqf/py_env-3.10', '-p', '3.10')
+return code: 1
+stdout:
+    RuntimeError: failed to find interpreter for Builtin discover of python_spec='3.10'
+stderr: (none)
+Check the log at /home/ec2-user/.cache/pre-commit/pre-commit.log
+linting: exit 3 (0.40 seconds) /home/ec2-user/pytest> pre-commit run --all-files --show-diff-on-failure pid=41334
+linting: FAIL ✖ in 0.41 seconds
+py37: skipped because could not find python interpreter with spec(s): py37
+py37: SKIP ⚠ in 0.01 seconds
+py38: skipped because could not find python interpreter with spec(s): py38
+py38: SKIP ⚠ in 0 seconds
+.pkg: _optional_hooks> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+.pkg: get_requires_for_build_editable> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+.pkg: get_requires_for_build_sdist> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+.pkg: build_wheel> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+.pkg: build_sdist> python /home/ec2-user/.virtualenvs/pytestdev/lib64/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+py39: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/8/pytest-7.4.0.dev39+ga15f54496.tar.gz
+py39: commands[0]> pytest
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: .tox/py39/.pytest_cache
+rootdir: /home/ec2-user/pytest
+configfile: pyproject.toml
+testpaths: testing
+plugins: hypothesis-6.74.1
+collected 3429 items
+
+testing/acceptance_test.py .....                                         [  0%]
+testing/deprecated_test.py .......                                       [  0%]
+testing/test_argcomplete.py ..                                           [  0%]
+testing/test_assertion.py .............................................. [  1%]
+.......................                                                  [  2%]
+testing/test_assertrewrite.py .......................................... [  3%]
+..                                                                       [  3%]
+testing/test_capture.py ................................................ [  5%]
+.............s..                                                         [  5%]
+testing/test_collection.py .                                             [  5%]
+testing/test_compat.py ...........                                       [  5%]
+testing/test_config.py ................................................. [  7%]
+.....                                                                    [  7%]
+testing/test_conftest.py ...........                                     [  7%]
+testing/test_debugging.py .                                              [  7%]
+testing/test_doctest.py .............                                    [  8%]
+testing/test_entry_points.py .                                           [  8%]
+testing/test_faulthandler.py ...                                         [  8%]
+testing/test_findpaths.py ..............s...                             [  8%]
+testing/test_helpconfig.py .                                             [  8%]
+testing/test_junitxml.py ....                                            [  9%]
+testing/test_legacypath.py ....                                          [  9%]
+testing/test_main.py .....                                               [  9%]
+testing/test_mark.py ..............                                      [  9%]
+testing/test_mark_expression.py ........................................ [ 10%]
+............................................                             [ 12%]
+testing/test_monkeypatch.py ...............................              [ 13%]
+testing/test_nodes.py ..............                                     [ 13%]
+testing/test_nose.py ..                                                  [ 13%]
+testing/test_parseopt.py ............................                    [ 14%]
+testing/test_pastebin.py ....                                            [ 14%]
+testing/test_pathlib.py .............................................s.. [ 15%]
+...                                                                      [ 15%]
+testing/test_pluginmanager.py .........                                  [ 16%]
+testing/test_pytester.py .....................                           [ 16%]
+testing/test_recwarn.py ........................................         [ 17%]
+testing/test_runner.py ..............                                    [ 18%]
+testing/test_scope.py ....                                               [ 18%]
+testing/test_skipping.py .                                               [ 18%]
+testing/test_stash.py .                                                  [ 18%]
+testing/test_terminal.py .......................................         [ 19%]
+testing/test_tmpdir.py ...s...............                               [ 20%]
+testing/test_warning_types.py ..............                             [ 20%]
+testing/test_warnings.py .                                               [ 20%]
+testing/_py/test_local.py .............................................. [ 22%]
+...................ss..............s.................x......s........... [ 24%]
+..........................sssssss............................x...        [ 26%]
+testing/code/test_code.py .................                              [ 26%]
+testing/code/test_excinfo.py .................s.......s................. [ 27%]
+........................................................................ [ 29%]
+..............                                                           [ 30%]
+testing/code/test_source.py ............................................ [ 31%]
+...........                                                              [ 31%]
+testing/freeze/tests/test_trivial.py ..                                  [ 31%]
+testing/io/test_saferepr.py ..............                               [ 32%]
+testing/io/test_terminalwriter.py ...................................... [ 33%]
+.......                                                                  [ 33%]
+testing/io/test_wcwidth.py .................                             [ 34%]
+testing/logging/test_fixture.py .........                                [ 34%]
+testing/logging/test_formatter.py ....                                   [ 34%]
+testing/logging/test_reporting.py ..                                     [ 34%]
+testing/python/approx.py .sss..sssss.................................... [ 35%]
+..ssssss................ss........                                       [ 36%]
+testing/python/collect.py ..                                             [ 37%]
+testing/python/fixtures.py ..........                                    [ 37%]
+testing/python/integration.py ....                                       [ 37%]
+testing/python/metafunc.py .........................................     [ 38%]
+testing/python/raises.py .......................                         [ 39%]
+testing/freeze/tests/test_doctest.txt .                                  [ 39%]
+testing/acceptance_test.py ............................................. [ 40%]
+.....x....................                                               [ 41%]
+testing/deprecated_test.py .............                                 [ 41%]
+testing/test_assertion.py ...................................            [ 42%]
+testing/test_assertrewrite.py .......................................... [ 44%]
+..............                                                           [ 44%]
+testing/test_cacheprovider.py .......................................... [ 45%]
+..........                                                               [ 45%]
+testing/test_capture.py ......x....................................      [ 47%]
+testing/test_collection.py ...........................x................. [ 48%]
+.....................s.................                                  [ 49%]
+testing/test_compat.py ..                                                [ 49%]
+testing/test_config.py .............x................................... [ 51%]
+........................................................................ [ 53%]
+.....                                                                    [ 53%]
+testing/test_conftest.py .............s.............................     [ 54%]
+testing/test_debugging.py .............                                  [ 55%]
+testing/test_doctest.py ................................................ [ 56%]
+..............x......................................................... [ 58%]
+.                                                                        [ 58%]
+testing/test_error_diffs.py ............                                 [ 58%]
+testing/test_faulthandler.py ...                                         [ 58%]
+testing/test_helpconfig.py ........                                      [ 59%]
+testing/test_junitxml.py ............................................... [ 60%]
+..................................................s...s................. [ 62%]
+......                                                                   [ 62%]
+testing/test_legacypath.py ..........                                    [ 63%]
+testing/test_link_resolve.py .                                           [ 63%]
+testing/test_main.py .............                                       [ 63%]
+testing/test_mark.py ................................................... [ 65%]
+........x................                                                [ 65%]
+testing/test_monkeypatch.py ....                                         [ 65%]
+testing/test_nodes.py ....                                               [ 65%]
+testing/test_nose.py ......................                              [ 66%]
+testing/test_parseopt.py .                                               [ 66%]
+testing/test_pastebin.py ...                                             [ 66%]
+testing/test_pluginmanager.py ................                           [ 67%]
+testing/test_pytester.py x.........................                      [ 67%]
+testing/test_python_path.py .....                                        [ 68%]
+testing/test_recwarn.py ..                                               [ 68%]
+testing/test_reports.py ..................                               [ 68%]
+testing/test_runner.py .......................x.....................     [ 70%]
+testing/test_runner_xunit.py .............                               [ 70%]
+testing/test_session.py ........................                         [ 71%]
+testing/test_setuponly.py ..........................                     [ 71%]
+testing/test_setupplan.py ...                                            [ 71%]
+testing/test_skipping.py ............................................... [ 73%]
+.............................................                            [ 74%]
+testing/test_stepwise.py ..............                                  [ 75%]
+testing/test_terminal.py ..............................................s [ 76%]
+.......................................................sss......s......  [ 78%]
+testing/test_threadexception.py ....                                     [ 78%]
+testing/test_tmpdir.py ....................                              [ 79%]
+testing/test_unittest.py ......................sssssss.................. [ 80%]
+...............s........                                                 [ 81%]
+testing/test_unraisableexception.py ....                                 [ 81%]
+testing/test_warning_types.py .                                          [ 81%]
+testing/test_warnings.py ...................sss.........                 [ 82%]
+testing/code/test_excinfo.py ....sssssssss..............                 [ 83%]
+testing/examples/test_issue519.py .                                      [ 83%]
+testing/logging/test_fixture.py .......                                  [ 83%]
+testing/logging/test_reporting.py ...................................... [ 84%]
+...                                                                      [ 84%]
+testing/python/approx.py .                                               [ 84%]
+testing/python/collect.py .............................................. [ 85%]
+.............................                                            [ 86%]
+testing/python/fixtures.py ............................................. [ 88%]
+..........................x............................................. [ 90%]
+......................................................s..                [ 91%]
+testing/python/integration.py ...............                            [ 92%]
+testing/python/metafunc.py ............................................. [ 93%]
+...............                                                          [ 93%]
+testing/python/raises.py ...                                             [ 94%]
+testing/python/show_fixtures_per_test.py ........                        [ 94%]
+testing/acceptance_test.py ....                                          [ 94%]
+testing/test_assertion.py ............                                   [ 94%]
+testing/test_assertrewrite.py .........                                  [ 95%]
+testing/test_capture.py ........................                         [ 95%]
+testing/test_collection.py .                                             [ 95%]
+testing/test_compat.py .                                                 [ 95%]
+testing/test_config.py ..                                                [ 95%]
+testing/test_debugging.py sssssssssss.ssssssssssssssss.sss....ssss.sss   [ 97%]
+testing/test_faulthandler.py ..s.                                        [ 97%]
+testing/test_helpconfig.py ..                                            [ 97%]
+testing/test_legacypath.py .                                             [ 97%]
+testing/test_meta.py ................................................... [ 98%]
+................                                                         [ 99%]
+testing/test_pytester.py ....s                                           [ 99%]
+testing/test_reports.py .                                                [ 99%]
+testing/test_terminal.py ss..                                            [ 99%]
+testing/test_unittest.py s.                                              [ 99%]
+testing/test_warnings.py .........                                       [ 99%]
+testing/python/collect.py .                                              [ 99%]
+testing/python/fixtures.py ..                                            [100%]
+
+========== 3313 passed, 105 skipped, 11 xfailed in 159.47s (0:02:39) ===========
+py39: OK ✔ in 2 minutes 46 seconds
+py310: skipped because could not find python interpreter with spec(s): py310
+py310: SKIP ⚠ in 0 seconds
+py311: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/9/pytest-7.4.0.dev39+ga15f54496.tar.gz
+py311: commands[0]> pytest
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: .tox/py311/.pytest_cache
+rootdir: /home/ec2-user/pytest
+configfile: pyproject.toml
+testpaths: testing
+plugins: hypothesis-6.74.1
+collected 3429 items
+
+testing/acceptance_test.py .....                                         [  0%]
+testing/deprecated_test.py .......                                       [  0%]
+testing/test_argcomplete.py ..                                           [  0%]
+testing/test_assertion.py .............................................. [  1%]
+.......................                                                  [  2%]
+testing/test_assertrewrite.py .......................................... [  3%]
+..                                                                       [  3%]
+testing/test_capture.py ................................................ [  5%]
+.............s..                                                         [  5%]
+testing/test_collection.py .                                             [  5%]
+testing/test_compat.py ...........                                       [  5%]
+testing/test_config.py ................................................. [  7%]
+.....                                                                    [  7%]
+testing/test_conftest.py ...........                                     [  7%]
+testing/test_debugging.py .                                              [  7%]
+testing/test_doctest.py .............                                    [  8%]
+testing/test_entry_points.py .                                           [  8%]
+testing/test_faulthandler.py ...                                         [  8%]
+testing/test_findpaths.py ..............s...                             [  8%]
+testing/test_helpconfig.py .                                             [  8%]
+testing/test_junitxml.py ....                                            [  9%]
+testing/test_legacypath.py ....                                          [  9%]
+testing/test_main.py .....                                               [  9%]
+testing/test_mark.py ..............                                      [  9%]
+testing/test_mark_expression.py ........................................ [ 10%]
+............................................                             [ 12%]
+testing/test_monkeypatch.py ...............................              [ 13%]
+testing/test_nodes.py ..............                                     [ 13%]
+testing/test_nose.py ..                                                  [ 13%]
+testing/test_parseopt.py ............................                    [ 14%]
+testing/test_pastebin.py ....                                            [ 14%]
+testing/test_pathlib.py .............................................s.. [ 15%]
+...                                                                      [ 15%]
+testing/test_pluginmanager.py .........                                  [ 16%]
+testing/test_pytester.py .....................                           [ 16%]
+testing/test_recwarn.py ........................................         [ 17%]
+testing/test_runner.py ..............                                    [ 18%]
+testing/test_scope.py ....                                               [ 18%]
+testing/test_skipping.py .                                               [ 18%]
+testing/test_stash.py .                                                  [ 18%]
+testing/test_terminal.py .......................................         [ 19%]
+testing/test_tmpdir.py ...s...............                               [ 20%]
+testing/test_warning_types.py ..............                             [ 20%]
+testing/test_warnings.py .                                               [ 20%]
+testing/_py/test_local.py .............................................. [ 22%]
+...................ss..............s.................x......s........... [ 24%]
+..........................sssssss............................x...        [ 26%]
+testing/code/test_code.py .................                              [ 26%]
+testing/code/test_excinfo.py .................s.......s................. [ 27%]
+........................................................................ [ 29%]
+..............                                                           [ 30%]
+testing/code/test_source.py ............................................ [ 31%]
+...........                                                              [ 31%]
+testing/freeze/tests/test_trivial.py ..                                  [ 31%]
+testing/io/test_saferepr.py ..............                               [ 32%]
+testing/io/test_terminalwriter.py ...................................... [ 33%]
+.......                                                                  [ 33%]
+testing/io/test_wcwidth.py .................                             [ 34%]
+testing/logging/test_fixture.py .........                                [ 34%]
+testing/logging/test_formatter.py ....                                   [ 34%]
+testing/logging/test_reporting.py ..                                     [ 34%]
+testing/python/approx.py .sss..sssss.................................... [ 35%]
+..ssssss................ss........                                       [ 36%]
+testing/python/collect.py ..                                             [ 37%]
+testing/python/fixtures.py ..........                                    [ 37%]
+testing/python/integration.py ....                                       [ 37%]
+testing/python/metafunc.py .........................................     [ 38%]
+testing/python/raises.py .......................                         [ 39%]
+testing/freeze/tests/test_doctest.txt .                                  [ 39%]
+testing/acceptance_test.py ............................................. [ 40%]
+.....x....................                                               [ 41%]
+testing/deprecated_test.py .............                                 [ 41%]
+testing/test_assertion.py ...................................            [ 42%]
+testing/test_assertrewrite.py .......................................... [ 44%]
+..............                                                           [ 44%]
+testing/test_cacheprovider.py .......................................... [ 45%]
+..........                                                               [ 45%]
+testing/test_capture.py ......x....................................      [ 47%]
+testing/test_collection.py ...........................x................. [ 48%]
+.....................s.................                                  [ 49%]
+testing/test_compat.py ..                                                [ 49%]
+testing/test_config.py .............x................................... [ 51%]
+........................................................................ [ 53%]
+.....                                                                    [ 53%]
+testing/test_conftest.py .............s.............................     [ 54%]
+testing/test_debugging.py .............                                  [ 55%]
+testing/test_doctest.py ................................................ [ 56%]
+..............x......................................................... [ 58%]
+.                                                                        [ 58%]
+testing/test_error_diffs.py ............                                 [ 58%]
+testing/test_faulthandler.py ...                                         [ 58%]
+testing/test_helpconfig.py ........                                      [ 59%]
+testing/test_junitxml.py ............................................... [ 60%]
+..................................................s...s................. [ 62%]
+......                                                                   [ 62%]
+testing/test_legacypath.py ..........                                    [ 63%]
+testing/test_link_resolve.py .                                           [ 63%]
+testing/test_main.py .............                                       [ 63%]
+testing/test_mark.py ................................................... [ 65%]
+........x................                                                [ 65%]
+testing/test_monkeypatch.py ....                                         [ 65%]
+testing/test_nodes.py ....                                               [ 65%]
+testing/test_nose.py ......................                              [ 66%]
+testing/test_parseopt.py .                                               [ 66%]
+testing/test_pastebin.py ...                                             [ 66%]
+testing/test_pluginmanager.py ................                           [ 67%]
+testing/test_pytester.py x.........................                      [ 67%]
+testing/test_python_path.py .....                                        [ 68%]
+testing/test_recwarn.py ..                                               [ 68%]
+testing/test_reports.py ..................                               [ 68%]
+testing/test_runner.py .......................x.....................     [ 70%]
+testing/test_runner_xunit.py .............                               [ 70%]
+testing/test_session.py ........................                         [ 71%]
+testing/test_setuponly.py ..........................                     [ 71%]
+testing/test_setupplan.py ...                                            [ 71%]
+testing/test_skipping.py ............................................... [ 73%]
+.............................................                            [ 74%]
+testing/test_stepwise.py ..............                                  [ 75%]
+testing/test_terminal.py ..............................................s [ 76%]
+.......................................................sss......s......  [ 78%]
+testing/test_threadexception.py ....                                     [ 78%]
+testing/test_tmpdir.py ....................                              [ 79%]
+testing/test_unittest.py ......................sssssss.................. [ 80%]
+...............s........                                                 [ 81%]
+testing/test_unraisableexception.py ....                                 [ 81%]
+testing/test_warning_types.py .                                          [ 81%]
+testing/test_warnings.py ...................sss.........                 [ 82%]
+testing/code/test_excinfo.py .............sssssssss.....                 [ 83%]
+testing/examples/test_issue519.py .                                      [ 83%]
+testing/logging/test_fixture.py .......                                  [ 83%]
+testing/logging/test_reporting.py ...................................... [ 84%]
+...                                                                      [ 84%]
+testing/python/approx.py .                                               [ 84%]
+testing/python/collect.py .............................................. [ 85%]
+.............................                                            [ 86%]
+testing/python/fixtures.py ............................................. [ 88%]
+..........................x............................................. [ 90%]
+......................................................s..                [ 91%]
+testing/python/integration.py ...............                            [ 92%]
+testing/python/metafunc.py ............................................. [ 93%]
+...............                                                          [ 93%]
+testing/python/raises.py ...                                             [ 94%]
+testing/python/show_fixtures_per_test.py ........                        [ 94%]
+testing/acceptance_test.py ....                                          [ 94%]
+testing/test_assertion.py ............                                   [ 94%]
+testing/test_assertrewrite.py .........                                  [ 95%]
+testing/test_capture.py ........................                         [ 95%]
+testing/test_collection.py .                                             [ 95%]
+testing/test_compat.py s                                                 [ 95%]
+testing/test_config.py ..                                                [ 95%]
+testing/test_debugging.py sssssssssss.ssssssssssssssss.sss....ssss.sss   [ 97%]
+testing/test_faulthandler.py ..s.                                        [ 97%]
+testing/test_helpconfig.py ..                                            [ 97%]
+testing/test_legacypath.py .                                             [ 97%]
+testing/test_meta.py ................................................... [ 98%]
+................                                                         [ 99%]
+testing/test_pytester.py ....s                                           [ 99%]
+testing/test_reports.py .                                                [ 99%]
+testing/test_terminal.py ss..                                            [ 99%]
+testing/test_unittest.py s.                                              [ 99%]
+testing/test_warnings.py .........                                       [ 99%]
+testing/python/collect.py .                                              [ 99%]
+testing/python/fixtures.py ..                                            [100%]
+
+========== 3312 passed, 106 skipped, 11 xfailed in 146.04s (0:02:26) ===========
+py311: OK ✔ in 2 minutes 30.66 seconds
+py312: skipped because could not find python interpreter with spec(s): py312
+py312: SKIP ⚠ in 0 seconds
+pypy3: skipped because could not find python interpreter with spec(s): pypy3
+pypy3: SKIP ⚠ in 0 seconds
+py37-pexpect: skipped because could not find python interpreter with spec(s): py37
+py37-pexpect: SKIP ⚠ in 0 seconds
+py37-xdist: skipped because could not find python interpreter with spec(s): py37
+py37-xdist: SKIP ⚠ in 0 seconds
+py37-unittestextras: skipped because could not find python interpreter with spec(s): py37
+py37-unittestextras: SKIP ⚠ in 0 seconds
+py37-numpy: skipped because could not find python interpreter with spec(s): py37
+py37-numpy: SKIP ⚠ in 0 seconds
+py37-pluggymain: skipped because could not find python interpreter with spec(s): py37
+py37-pluggymain: SKIP ⚠ in 0 seconds
+py37-pylib: skipped because could not find python interpreter with spec(s): py37
+py37-pylib: SKIP ⚠ in 0 seconds
+doctesting: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/10/pytest-7.4.0.dev39+ga15f54496.tar.gz
+doctesting: commands[0]> pytest doc/en
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/doctesting/.pytest_cache
+rootdir: /home/ec2-user/pytest/doc/en
+configfile: pytest.ini
+plugins: hypothesis-6.74.1
+collected 15 items
+
+doc/en/example/assertion/test_failures.py .                              [  6%]
+doc/en/example/assertion/test_setup_flow_example.py ..                   [ 20%]
+doc/en/example/assertion/global_testmodule_config/test_hello_world.py .  [ 26%]
+doc/en/example/fixtures/test_fixtures_order_autouse.py .                 [ 33%]
+doc/en/example/fixtures/test_fixtures_order_autouse_multiple_scopes.py . [ 40%]
+.                                                                        [ 46%]
+doc/en/example/fixtures/test_fixtures_order_autouse_temp_effects.py .... [ 73%]
+                                                                         [ 73%]
+doc/en/example/fixtures/test_fixtures_order_dependencies.py .            [ 80%]
+doc/en/example/fixtures/test_fixtures_order_scope.py .                   [ 86%]
+doc/en/example/fixtures/test_fixtures_request_different_scope.py ..      [100%]
+
+============================== 15 passed in 0.53s ==============================
+doctesting: commands[1]> pytest --doctest-modules --pyargs _pytest
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: .tox/doctesting/.pytest_cache
+rootdir: /home/ec2-user/pytest
+configfile: pyproject.toml
+plugins: hypothesis-6.74.1
+collected 5 items
+
+.tox/doctesting/lib/python3.9/site-packages/_pytest/freeze_support.py .  [ 20%]
+.tox/doctesting/lib/python3.9/site-packages/_pytest/python_api.py ..     [ 60%]
+.tox/doctesting/lib/python3.9/site-packages/_pytest/recwarn.py ..        [100%]
+
+============================== 5 passed in 0.23s ===============================
+doctesting: OK ✔ in 5.62 seconds
+plugins: install_package> python -m pip install --pre --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/11/pytest-7.4.0.dev39+ga15f54496.tar.gz
+plugins: commands[0] /home/ec2-user/pytest/testing/plugins_integration> pip check
+No broken requirements found.
+plugins: commands[1] /home/ec2-user/pytest/testing/plugins_integration> pytest bdd_wallet.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 1 item
+
+bdd_wallet.py .                                                          [100%]
+
+============================== 1 passed in 0.02s ===============================
+plugins: commands[2] /home/ec2-user/pytest/testing/plugins_integration> pytest --cov=. simple_integration.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 4 items
+
+simple_integration.py ....                                               [100%]
+
+---------- coverage: platform linux, python 3.9.16-final-0 -----------
+Name                            Stmts   Miss  Cover
+---------------------------------------------------
+bdd_wallet.py                      25     25     0%
+django_settings.py                  1      1     0%
+pytest_anyio_integration.py         5      5     0%
+pytest_asyncio_integration.py       5      5     0%
+pytest_mock_integration.py          2      2     0%
+pytest_trio_integration.py          5      5     0%
+pytest_twisted_integration.py      11     11     0%
+simple_integration.py               6      0   100%
+---------------------------------------------------
+TOTAL                              60     54    10%
+
+
+============================== 4 passed in 0.07s ===============================
+plugins: commands[3] /home/ec2-user/pytest/testing/plugins_integration> pytest --ds=django_settings simple_integration.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+django: settings: django_settings (from option)
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 4 items
+
+simple_integration.py ....                                               [100%]
+
+=============================== warnings summary ===============================
+../../.tox/plugins/lib/python3.9/site-packages/django/conf/__init__.py:241
+  /home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/django/conf/__init__.py:241: RemovedInDjango50Warning: The default value of USE_TZ will change from False to True in Django 5.0. Set USE_TZ to False in your project settings if you want to keep the current default behavior.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 4 passed, 1 warning in 0.04s =========================
+plugins: commands[4] /home/ec2-user/pytest/testing/plugins_integration> pytest --html=simple.html simple_integration.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 4 items
+
+simple_integration.py ....                                               [100%]
+
+- generated html file: file:///home/ec2-user/pytest/testing/plugins_integration/simple.html -
+============================== 4 passed in 0.03s ===============================
+plugins: commands[5] /home/ec2-user/pytest/testing/plugins_integration> pytest --reruns 5 simple_integration.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 4 items
+
+simple_integration.py ....                                               [100%]
+
+============================== 4 passed in 0.02s ===============================
+plugins: commands[6] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_anyio_integration.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 2 items
+
+pytest_anyio_integration.py ..                                           [100%]
+
+============================== 2 passed in 0.03s ===============================
+plugins: commands[7] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_asyncio_integration.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 1 item
+
+pytest_asyncio_integration.py .                                          [100%]
+
+============================== 1 passed in 0.02s ===============================
+plugins: commands[8] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_mock_integration.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 1 item
+
+pytest_mock_integration.py .                                             [100%]
+
+============================== 1 passed in 0.02s ===============================
+plugins: commands[9] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_trio_integration.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 1 item
+
+pytest_trio_integration.py .                                             [100%]
+
+=============================== warnings summary ===============================
+pytest_trio_integration.py::test_sleep
+  /home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_wakeup_socketpair.py:56: RuntimeWarning: It looks like Trio's signal handling code might have collided with another library you're using. If you're running Trio in guest mode, then this might mean you should set host_uses_signal_set_wakeup_fd=True. Otherwise, file a bug on Trio and we'll help you figure out what's going on.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 1 passed, 1 warning in 0.02s =========================
+plugins: commands[10] /home/ec2-user/pytest/testing/plugins_integration> pytest pytest_twisted_integration.py
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+============================= test session starts ==============================
+platform linux -- Python 3.9.16, pytest-7.4.0.dev39+ga15f54496, pluggy-1.0.0
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 2 items
+
+pytest_twisted_integration.py ..                                         [100%]
+
+============================== 2 passed in 0.02s ===============================
+plugins: commands[11] /home/ec2-user/pytest/testing/plugins_integration> pytest simple_integration.py --force-sugar --flakes
+/home/ec2-user/pytest/.tox/plugins/lib/python3.9/site-packages/trio/_core/_multierror.py:511: RuntimeWarning: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.
+  warnings.warn(
+Test session starts (platform: linux, Python 3.9.16, pytest 7.4.0.dev39+ga15f54496, pytest-sugar 0.9.7)
+cachedir: /home/ec2-user/pytest/.tox/plugins/.pytest_cache
+rootdir: /home/ec2-user/pytest/testing/plugins_integration
+configfile: pytest.ini
+plugins: anyio-3.6.2, xvfb-2.0.0, twisted-1.14.0, sugar-0.9.7, rerunfailures-11.1.2, mock-3.10.0, metadata-2.0.4, flakes-4.0.5, django-4.5.2, cov-4.0.0, bdd-6.1.1, asyncio-0.21.0, trio-0.7.0, html-3.2.0, hypothesis-6.74.1
+asyncio: mode=strict
+collected 5 items
+
+ simple_integration.py s                                          20% ██         simple_integration.py s✓                                         40% ████       simple_integration.py s✓✓                                        60% ██████     simple_integration.py s✓✓✓                                       80% ████████   simple_integration.py s✓✓✓✓                                     100% ██████████
+
+Results (0.04s):
+       4 passed
+       1 skipped
+plugins: OK ✔ in 14.07 seconds
+py37-freeze: skipped because could not find python interpreter with spec(s): py37
+py37-freeze: SKIP ⚠ in 0 seconds
+docs: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/12/pytest-7.4.0.dev39+ga15f54496-py3-none-any.whl
+docs: commands[0]> python scripts/towncrier-draft-to-file.py
+Loading template...
+Finding news fragments...
+Rendering news fragments...
+Draft only -- nothing has been written.
+What is seen below is what would be written.
+
+docs: commands[1]> sphinx-build -W --keep-going -b html doc/en doc/en/_build/html -t changelog_towncrier_draft
+Running Sphinx v5.3.0
+loading pickled environment... done
+[autosummary] generating autosummary for: _changelog_towncrier_draft.rst, adopt.rst, announce/index.rst, announce/release-2.0.0.rst, announce/release-2.0.1.rst, announce/release-2.0.2.rst, announce/release-2.0.3.rst, announce/release-2.1.0.rst, announce/release-2.1.1.rst, announce/release-2.1.2.rst, ..., reference/customize.rst, reference/exit-codes.rst, reference/fixtures.rst, reference/index.rst, reference/plugin_list.rst, reference/reference.rst, sponsor.rst, talks.rst, tidelift.rst, yieldfixture.rst
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 1 source files that are out of date
+updating environment: 0 added, 6 changed, 0 removed
+reading sources... [ 16%] _changelog_towncrier_draft
+reading sources... [ 33%] changelog
+reading sources... [ 50%] how-to/assert
+reading sources... [ 66%] how-to/writing_hook_functions
+reading sources... [ 83%] how-to/writing_plugins
+reading sources... [100%] reference/reference
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [ 11%] _changelog_towncrier_draft
+writing output... [ 22%] changelog
+writing output... [ 33%] contents
+writing output... [ 44%] how-to/assert
+writing output... [ 55%] how-to/index
+writing output... [ 66%] how-to/writing_hook_functions
+writing output... [ 77%] how-to/writing_plugins
+writing output... [ 88%] reference/index
+writing output... [100%] reference/reference
+
+generating indices... py-modindex done
+highlighting module code... [  3%] _pytest._code.code
+highlighting module code... [  6%] _pytest.assertion
+highlighting module code... [  9%] _pytest.cacheprovider
+highlighting module code... [ 12%] _pytest.capture
+highlighting module code... [ 15%] _pytest.config
+highlighting module code... [ 18%] _pytest.config.argparsing
+highlighting module code... [ 21%] _pytest.config.exceptions
+highlighting module code... [ 25%] _pytest.doctest
+highlighting module code... [ 28%] _pytest.fixtures
+highlighting module code... [ 31%] _pytest.freeze_support
+highlighting module code... [ 34%] _pytest.hookspec
+highlighting module code... [ 37%] _pytest.junitxml
+highlighting module code... [ 40%] _pytest.legacypath
+highlighting module code... [ 43%] _pytest.logging
+highlighting module code... [ 46%] _pytest.main
+highlighting module code... [ 50%] _pytest.mark
+highlighting module code... [ 53%] _pytest.mark.structures
+highlighting module code... [ 56%] _pytest.monkeypatch
+highlighting module code... [ 59%] _pytest.nodes
+highlighting module code... [ 62%] _pytest.outcomes
+highlighting module code... [ 65%] _pytest.pytester
+highlighting module code... [ 68%] _pytest.python
+highlighting module code... [ 71%] _pytest.python_api
+highlighting module code... [ 75%] _pytest.recwarn
+highlighting module code... [ 78%] _pytest.reports
+highlighting module code... [ 81%] _pytest.runner
+highlighting module code... [ 84%] _pytest.stash
+highlighting module code... [ 87%] _pytest.tmpdir
+highlighting module code... [ 90%] builtins
+highlighting module code... [ 93%] functools
+highlighting module code... [ 96%] pluggy._manager
+highlighting module code... [100%] pytest
+
+writing additional pages... search done
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en)... done
+dumping object inventory... done
+build succeeded.
+
+The HTML pages are in doc/en/_build/html.
+docs: OK ✔ in 14.14 seconds
+docs-checklinks: install_package> python -I -m pip install --force-reinstall --no-deps /home/ec2-user/pytest/.tox/.tmp/package/13/pytest-7.4.0.dev39+ga15f54496-py3-none-any.whl
+docs-checklinks: commands[0] /home/ec2-user/pytest/doc/en> sphinx-build -W -q --keep-going -b linkcheck . _build
+/home/ec2-user/pytest/doc/en/adopt.rst:55: WARNING: broken link: assert.html ()
+/home/ec2-user/pytest/doc/en/adopt.rst:56: WARNING: broken link: fixture.html ()
+/home/ec2-user/pytest/doc/en/announce/release-2.2.0.rst:12: WARNING: broken link: http://pytest.org/en/stable/example/how-to/parametrize.html (404 Client Error: Not Found for url: https://pytest.org/en/stable/example/how-to/parametrize.html)
+/home/ec2-user/pytest/doc/en/adopt.rst:55: WARNING: broken link: https://bitbucket.org/hpk42/pycmd/overview (404 Client Error: Not Found for url: https://bitbucket.org/hpk42/pycmd/overview)
+/home/ec2-user/pytest/doc/en/announce/release-2.6.0.rst:21: WARNING: broken link: https://bitbucket.org/pytest-dev/pytest/issues?status=new&status=open&sort=-votes (404 Client Error: Not Found for url: https://bitbucket.org/pytest-dev/pytest/issues?status=new&status=open&sort=-votes)
+/home/ec2-user/pytest/doc/en/explanation/goodpractices.rst:111: WARNING: broken link: https://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structure> (Anchor 'the-structure>' not found)
+/home/ec2-user/pytest/doc/en/history.rst:120: WARNING: broken link: http://web.archive.org/web/20091012022829/http://codespeak.net/py/dist/test/plugin/how-to/monkeypatch.html (404 Client Error: NOT FOUND for url: http://web.archive.org/web/20091012022829/http://codespeak.net/py/dist/test/plugin/how-to/monkeypatch.html)
+/home/ec2-user/pytest/doc/en/announce/release-2.3.0.rst:97: WARNING: broken link: https://docs.pytest.org/en/6.0.1/faq.html (404 Client Error: Not Found for url: https://docs.pytest.org/en/6.0.1/faq.html)
+/home/ec2-user/pytest/doc/en/reference/reference.rst:153: WARNING: broken link: https://github.com/asottile/re-assert#re_assertmatchespattern-str-args-kwargs (Anchor 're_assertmatchespattern-str-args-kwargs' not found)
+/home/ec2-user/pytest/doc/en/explanation/goodpractices.rst:288: WARNING: broken link: https://github.com/pytest-dev/pytest-runner#deprecation-notice (Anchor 'deprecation-notice' not found)
+/home/ec2-user/pytest/doc/en/history.rst:108: WARNING: broken link: https://github.com/pytest-dev/pytest/blob/main/doc/en/changelog.rst#091 (Anchor '091' not found)
