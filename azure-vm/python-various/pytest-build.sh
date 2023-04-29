@@ -1,8 +1,11 @@
 echo "##### PYTEST"
 echo "pytest-build start time $(date)"
 
-pushd ~/pytest
-sudo apt install python3.8-venv
+pushd ~
+git clone https://github.com/pytest-dev/pytest.git
+cd ~/pytest
+# sudo apt install -y python3.8-venv
+sudo apt install -y python3.11-venv
 python3 -m venv ~/.virtualenvs/pytestdev
 source ~/.virtualenvs/pytestdev/bin/activate
 python3 -m pip install --editable .

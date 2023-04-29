@@ -1,32 +1,34 @@
 # Steps to prepare us to build various Python tools
-# Azure edition
+# Ubuntu edition - started with Azure, then AWS Ubuntu, and now WSL Ubuntu2. 
+# Needs to be tested on Azure and WSL.
+
+# For issues that got resolved see 
+#   `../output/ubuntu-setup-script-issues-resolved.md`
+
 # Generalize as much as possible so we can merge it back in.
-#
 # git should already be installed by now as a bootstrap
+
 
 PKGMGR=apt
 # See https://ubuntuhandbook.org/index.php/2022/10/python-3-11-released-how-install-ubuntu/
-sudo add-apt-repository ppa:deadsnakes/ppa
+# This gets some output that I would like to understand better. See NOTE-ADD-REPO below
+sudo add-apt-repository -y ppa:deadsnakes/ppa
+
 sudo ${PKGMGR} install -y python3.11   # not python311
 sudo ${PKGMGR} install -y pip
-sudo pip install --upgrade build
-sudo pip install --upgrade setuptools
+
+# Now these get a very similar message. I've installed these globally rather than in a venv because I expect them 
+# to apply across projects. See NOTE-PIP below.
+# sudo pip install --upgrade build
+# sudo pip install --upgrade setuptools
+
+sudo apt install -y python3-build
+sudo apt install -y python3-setuptools
 
 pushd ~
-git clone https://github.com/pytest-dev/pytest.git
+# Start removing these from here... they're not global and belong with the build scripts.
 git clone --depth 1 https://github.com/django/django.git
 git clone https://github.com/qutebrowser/qutebrowser.git
-git clone --depth 1 https://github.com/pytorch/pytorch
+# I'm not doing anything with pytorch at the moment. 
+# git clone --depth 1 https://github.com/pytorch/pytorch
 popd
-
-
-<<NOTE
-Excerpt of output from setuptools:
-
-Collecting setuptools
-  Downloading setuptools-67.6.1-py3-none-any.whl (1.1 MB)
-     |████████████████████████████████| 1.1 MB 10.2 MB/s
-ERROR: launchpadlib 1.10.13 requires testresources, which is not installed.
-Installing collected packages: setuptools
-
-NOTE
