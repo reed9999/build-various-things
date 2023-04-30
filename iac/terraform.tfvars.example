@@ -9,6 +9,6 @@ quantities = {
   }
   USE2 = {
     large = 1
-    small = 1
+    small = 0
   }
 }

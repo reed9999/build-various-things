@@ -34,7 +34,7 @@ instance_type = var.instance_types.small
 spot_price    = "0.04"
 key_name      = var.USE2.key_name
 
-user_data = file("startup.sh")
+user_data = file("../ubuntu/bootstrap.sh")
 # This has no observable effect in spot.
 tags = {
   Name = "ohio-small"
@@ -45,11 +45,13 @@ tags = {
 resource "aws_spot_instance_request" "ohio-large" {
   count         = var.quantities.USE2.large
   ami           = var.USE2.amis.ubuntu
+  # ami           = var.USE2.amis.amazon_linux
   instance_type = var.instance_types.large
   spot_price    = "0.10"
   key_name      = var.USE2.key_name
 
-  user_data = file("startup.sh")
+  user_data = file("../ubuntu/bootstrap.sh")
+  # user_data = file("../ec2/bootstrap.sh")
   tags = {
     Name = "ohio-large"
   }
@@ -84,4 +86,8 @@ resource "aws_spot_instance_request" "virginia-large" {
     Name = "virginia-m5.large-perftest"
 
   }
+}
+output "instances" {
+  value       = "${aws_spot_instance_request.ohio-large.*.private_ip}"
+  description = "PrivateIP address details"
 }
