@@ -3,3 +3,6 @@ iac/__*
 backup*
 iac/.terraform
 *.tfstate*
+terraform.tfvars
+
+__*
