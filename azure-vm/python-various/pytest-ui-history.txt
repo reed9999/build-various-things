@@ -1,0 +1,21 @@
+    1  ls
+    2  git clone https://github.com/martinsmid/pytest-ui.git
+    3  pip 
+    4  pip install pytest
+    5  X=scripts/ubuntu/python-various
+    6  vim $X/pytest-b*
+    7  cd pytest-ui/
+    8  sudo apt install -y python3.11-venv
+    9  python3 -m venv ~/.virtualenvs/pytestdev
+   10  source ~/.virtualenvs/pytestdev/bin/activate
+   11  pip install pytest
+   12  ls
+   13  tox
+   14  sudo apt install tox
+   15  ls
+   16  make 
+   17  vim ~/$X
+   18  python3 -m pip install --editable .
+   19  python3 setup.py build
+   20  pytui
+   21  history > pytest-ui-history.txt
