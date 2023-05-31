@@ -1,6 +1,11 @@
 echo "##### PYTEST"
 echo "pytest-build start time $(date)"
 
+source ~/scripts/util/detect-installer.sh
+echo $BVT_DISTRO
+echo $BVT_INSTALLER
+exit 0
+
 pushd ~
 git clone https://github.com/pytest-dev/pytest.git
 cd ~/pytest

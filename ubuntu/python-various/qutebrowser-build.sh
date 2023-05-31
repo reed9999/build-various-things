@@ -1,5 +1,8 @@
+# This isn't the most useful thing, because Qutebrowser is a GUI app and probably not that useful to 
+# build in my contexts, except for curiosity.
 # TODO - should use tox
 echo "##### QUTEBROWSER"
+git clone https://github.com/qutebrowser/qutebrowser.git
 echo "qutebrowser-build start time $(date)"
 pushd ~/qutebrowser
 python3 -m venv ~/.virtualenvs/qutebrowserdev

@@ -27,8 +27,7 @@ sudo apt install -y python3-setuptools
 
 pushd ~
 # Start removing these from here... they're not global and belong with the build scripts.
-git clone --depth 1 https://github.com/django/django.git
-git clone https://github.com/qutebrowser/qutebrowser.git
+
 # I'm not doing anything with pytorch at the moment. 
 # git clone --depth 1 https://github.com/pytorch/pytorch
 popd
