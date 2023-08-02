@@ -1,0 +1,69 @@
+I don't know why these are still presented in such a klunky format. Some of the methods
+on here look promising for Amazon Linux:
+https://docs.aws.amazon.com/linux/al2023/ug/get-started.html#launch-via-aws-cli
+
+Or search the Public Images under Images -> AMIs for something like:
+`al2023-ami-2023.1.202307`
+
+For convenience, here are all the Jammy Jellyfish Ubuntu 22.04 LTS images by region.
+Source: https://cloud-images.ubuntu.com/locator/ec2/
+
+ca-central-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0c46e7a2b195be0eb	hvm
+il-central-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-02f0702d0879fddfb	hvm
+eu-west-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0abdeb283774a31d1	hvm
+eu-west-2	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-075795f7b7bc466fc	hvm
+af-south-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0a07f131b46310277	hvm
+me-central-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0d3706903ea87dd71	hvm
+us-east-2	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0b5801d081fa3a76c	hvm
+ap-southeast-2	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0cf25d66769f45ea5	hvm
+ap-southeast-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-013cf51f360a57131	hvm
+ap-southeast-4	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0d18c275cc9c3c7ea	hvm
+ap-northeast-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0d3ff2ce9993e5135	hvm
+ap-northeast-2	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-06c3718fe091036c3	hvm
+sa-east-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0e5c21a771a0e183f	hvm
+eu-central-2	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-08479160849a41e25	hvm
+ap-south-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-054c705cf8b229d9d	hvm
+ap-southeast-3	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0afcbf8b19e0f291d	hvm
+ap-east-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0ab2380c5650be974	hvm
+me-south-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0d4bd97e5d3b33711	hvm
+us-west-2	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-06edaf01ee52adb1e	hvm
+ap-south-2	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-035d85e4b9fe3a7fd	hvm
+eu-south-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0e6866ce259013169	hvm
+us-west-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0819328f1fed7fbc8	hvm
+eu-west-3	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0201b39f9d48700fd	hvm
+ap-northeast-3	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-087e469b73954e289	hvm
+eu-north-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-058d6eb6cd7ae2a8a	hvm
+eu-central-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0868828dc450dee2f	hvm
+eu-south-2	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-0dc8808686039d44f	hvm
+us-east-1	Jammy Jellyfish	22.04 LTS	arm64	hvm:ebs-ssd	20230728	ami-067cf009aedb2612d	hvm
+eu-west-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0ab14756db2442499	hvm
+us-west-2	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-016d1b215ea28dcee	hvm
+ap-northeast-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0e250adc27214ced5	hvm
+eu-north-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-01774536c57ab815f	hvm
+il-central-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-029294a043b4c7a97	hvm
+me-central-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0f2c36ff85fb40715	hvm
+ap-southeast-2	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-001ce199760f46907	hvm
+us-east-2	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-05d251e0fc338590c	hvm
+ap-southeast-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-08fad42036d22d32d	hvm
+us-east-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-02675d30b814d1daa	hvm
+ap-northeast-2	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-039c6c8b7212df747	hvm
+us-west-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-01973462ceff35e85	hvm
+ap-southeast-4	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0ed4477a5a9f76fc8	hvm
+eu-central-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0c3472daea3f355b7	hvm
+ap-east-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-050eeeeea5805d75b	hvm
+me-south-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-02ce6813c8dc9f3d6	hvm
+ap-southeast-3	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0a771e72e1f9777cb	hvm
+eu-west-3	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-029c608efaef0b395	hvm
+sa-east-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-00142cf6b8e05296d	hvm
+ap-south-2	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0b4e97d64c8cbc8cb	hvm
+eu-south-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-088d3d25a75944f99	hvm
+ap-northeast-3	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0665945cfeb36e972	hvm
+af-south-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-085d7c5ed6c47da72	hvm
+eu-west-2	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-063e8f8a5f0599010	hvm
+eu-central-2	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0e4d1886bf4bb88d5	hvm
+eu-south-2	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-02551197367f90c14	hvm
+ap-south-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0b2d10dd2f6c1babd	hvm
+ca-central-1	Jammy Jellyfish	22.04 LTS	amd64	hvm:ebs-ssd	20230728	ami-0bb9f02ed5a2dfdc6	hvm
+
+We can also try Red Hat. Add this to ourc us-east-2 list:
+        rhel9        = "ami-02b8534ff4b424939"
