@@ -4,11 +4,13 @@ variable "USE2" {
     location = "ohio"
     amis = {
       amazon_linux = "ami-0103f211a154d64a6"
-      old_ubuntu       = "ami-0a695f0d95cefc163"
-      arm_ubuntu       = "ami-0f12014c8b2f26d33"  
+# Refreshing 2023-07-31: old is now the previous "arm" which gives warnings about daemons.
+      old_ubuntu       = "ami-0f12014c8b2f26d33"  
+      arm_ubuntu       = "ami-08fdd91d87f63bb09"
+  # To use this on my work computer
       ubuntu       = "ami-0fa42adc23c516686"  
     }
-    key_name = "2023-build-ohio"
+    key_name = "2023-07-build-ohio"
   }
 }
 

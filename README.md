@@ -1,7 +1,88 @@
 # README - Compiling and Building Various Things
+
 Here I attempt to automate build processes... just because.
 (Building from source is a prereq to mucking around in source, kind of, 
 and beyond that it just feels good.)
+
+The first section is an update for July 2023 then the preexisting README file.
+
+# Q3 2023 
+
+## Punch list: 
+- Amzn Linux: Apparently I never automated bootstrap.
+- Ubuntu: CUI issue below; switch out some files (sed?)
+
+## Details of issues
+
+1. Ubuntu produces a CUI dialog box with: 
+
+```
+────┤ Daemons using outdated libraries ├─────┐
+│                                             │ 
+│                                             │ 
+│ Which services should be restarted?         │ 
+│                                             │ 
+│  [ ] networkd-dispatcher.service            │ 
+│  [ ] unattended-upgrades.service            │ 
+│                                             │ 
+│                                             │ 
+│          <Ok>              <Cancel>         │ 
+│                                        
+```
+
+https://stackoverflow.com/questions/73397110/how-to-stop-ubuntu-pop-up-daemons-using-outdated-libraries-when-using-apt-to-i
+
+2. Django build fails with a lot of
+```
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.11/README.venv for more information.
+
+
+```
+
+3. Pytest build on Ubuntu is mostly OK, and on Amzn is fine, but this on U: 
+
+```
+Using /home/ubuntu/.virtualenvs/pytestdev/lib/python3.11/site-packages
+Finished processing dependencies for pytest==8.0.0.dev142+g485c55581
++ popd
+~
++ '
+/usr/lib/python3.9/site-packages/setuptools/installer.py:27: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
+  warnings.warn(
+WARNING: The wheel package is not available.
+WARNING: The wheel package is not available.
+WARNING: The wheel package is not available.
+WARNING: The wheel package is not available.
+usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+   or: setup.py --help [cmd1 cmd2 ...]
+   or: setup.py --help-commands
+   or: setup.py cmd --help
+
+'
+scripts/ubuntu/python-various/pytest-build.sh: line 51: 
+```
+
+4. Amazon Linux -- bootstrap
+
+Use my learning from Ubuntu.
+
+# Q1-2 2023
 
 ## Directions I could go in
 There are many ways I could take this.
@@ -62,6 +143,8 @@ One case where I can reproduce is running tox on my local WSL2 from the pytestde
 So far any attempts at `pytest -k conf` have failed, making me even more curious what tox is doing
 differently.
 
+Note to self: Here is some explanation of what might be different with a .toml.
+Try the python -m build approach and see if it produces similar behaviors.
 
 #### Earlier build warnings
 

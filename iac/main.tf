@@ -9,14 +9,16 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
+# To use this on my work computer I need profile = "philip"
 provider "aws" {
   region = "us-east-2"
-  # region = "us-east-1"
+  profile = "philip"
 }
 
 provider "aws" {
   region = "us-east-1"
   alias  = "aws_USE1"
+  profile = "philip"
 }
 
 data "template_file" "bootstrap" {
@@ -28,11 +30,11 @@ data "template_file" "bootstrap" {
 # These are all hardcoded for now... 
 # Presently focusing on Ubuntu but can switch over to Amazon Linux if desired.
 resource "aws_spot_instance_request" "ohio-small" {
-count         = var.quantities.USE2.small
-ami           = var.USE2.amis.ubuntu
-instance_type = var.instance_types.small
-spot_price    = "0.04"
-key_name      = var.USE2.key_name
+	count         = var.quantities.USE2.small
+	ami           = var.USE2.amis.ubuntu
+	instance_type = var.instance_types.small
+	spot_price    = "0.04"
+	key_name      = var.USE2.key_name
 
 user_data = file("../ubuntu/bootstrap.sh")
 # This has no observable effect in spot.
@@ -44,8 +46,8 @@ tags = {
 
 resource "aws_spot_instance_request" "ohio-large" {
   count         = var.quantities.USE2.large
-  ami           = var.USE2.amis.ubuntu
-  # ami           = var.USE2.amis.amazon_linux
+  # ami           = var.USE2.amis.ubuntu
+  ami           = var.USE2.amis.amazon_linux
   instance_type = var.instance_types.large
   spot_price    = "0.10"
   key_name      = var.USE2.key_name
