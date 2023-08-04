@@ -14,6 +14,11 @@ mkdir -p /home/ubuntu
 
 cp /home/ubuntu/scripts/misc/.vimrc /home/ubuntu
 
+# With Ubuntu 22.04 it attempts something interactive. We want it automatic.
+# See https://stackoverflow.com/questions/73397110/#comment131834051_73397970
+cp /etc/needrestart/needrestart.conf ~ubuntu/needrestart.conf.backup
+sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
+
 # Since user_data runs as root, we should change ownership for convenience
 chown -R ubuntu /home/ubuntu/*
 
