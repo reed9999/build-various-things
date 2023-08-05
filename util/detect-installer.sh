@@ -18,7 +18,8 @@ get_installer_name() {
         # Assume Amazon Linux for the moment.
         # I've not used amazon-linux-extras but Bing AI suggested it
         # Fall back to yum if needed.
-        echo "amazon-linux-extras"
+        # echo "amazon-linux-extras"
+        echo "yum"
     fi
 }
 

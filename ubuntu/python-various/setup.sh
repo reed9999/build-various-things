@@ -32,15 +32,36 @@ do_apt_get_install() {
 }
 
 do_amazon_install(){
-    echo "NYI"
+    # sudo yum install -y python311
+    # sudo yum install -y pip
+    # sudo pip install --upgrade build
+    # sudo pip install --upgrade setuptools
+    sudo ${BVT_INSTALLER} install -y python311
+    sudo ${BVT_INSTALLER} install -y pip
+    sudo pip install --upgrade build
+    sudo pip install --upgrade setuptools
+
+    # These have now been decentralized to the appropriate project build files for 
+    # Ubuntu, and we should do the same for Amazon Linux.
+    pushd ~
+        # git clone https://github.com/pytest-dev/pytest.git
+        # git clone --depth 1 https://github.com/django/django.git
+        # git clone https://github.com/qutebrowser/qutebrowser.git
+        # git clone --depth 1 https://github.com/pytorch/pytorch
+    popd
 }
+
 if [[ "$BVT_INSTALLER" == "apt-get" ]]; then
     echo "BVT_INSTALLER is apt-get"
     do_apt_get_install
-elif [[ "$BVT_INSTALLER" == "amazon-linux-extras" ]]; then
-    # Do something if ENV_VAR is Y
-    echo "BVT_INSTALLER is amazon-linux-extras"
+elif [[ "$BVT_INSTALLER" == "yum" ]]; then
+    echo "BVT_INSTALLER is yum"
     do_amazon_install
+elif [[ "$BVT_INSTALLER" == "amazon-linux-extras" ]]; then
+    echo "BVT_INSTALLER is amazon-linux-extras"
+    echo "However that isn't installed by default and is not how we're approach it right now."
+    exit -1
+    # do_amazon_install
 else
     echo "BVT_INSTALLER is neither apt-get nor amazon-linux-extras; terminating."
     exit -1
