@@ -34,18 +34,3 @@ echo "-- next: attempt install of our new libraries"
 python3 ./setup.py install
 
 popd
-
-# Pretty much similar warnings to on AWS EC2
-"
-/usr/lib/python3.9/site-packages/setuptools/installer.py:27: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
-  warnings.warn(
-WARNING: The wheel package is not available.
-WARNING: The wheel package is not available.
-WARNING: The wheel package is not available.
-WARNING: The wheel package is not available.
-usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
-   or: setup.py --help [cmd1 cmd2 ...]
-   or: setup.py --help-commands
-   or: setup.py cmd --help
-
-"
