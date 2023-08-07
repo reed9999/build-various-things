@@ -27,6 +27,14 @@ variable "config" {
       }
       key_name = "2023-virginia-build"
     }
+    AFS1 = {
+      name     = "af-south-1"
+      location = "cape-town"
+      amis     = {
+        ubuntu_amd = "ami-085d7c5ed6c47da72"
+      }
+      key_name = "2023-07-cape-town-build"
+    }
     SAE1 = {
       name     = "sa-east-1"
       location = "sao-paulo"
@@ -56,18 +64,44 @@ variable "USE1" {
 variable "quantities" {
   default = {
     USE2 = {
-      micro = { amazon = 0, ubuntu = 0 },
-      large = 0
+      nano      = { amazon = 0, ubuntu = 0 },
+      micro     = { amazon = 0, ubuntu = 0 },
+      large     = { amazon = 0, ubuntu = 0 },
+      # To experiment, let's also work in a compute-optimized instance type
+      c6a-large = { amazon = 0, ubuntu = 0 }
     }
-    USE1 = { micro = 0, large = 0 }
-    SAE1 = { micro = 0, large = 0 }
+    USE1 = {
+      micro = { amazon = 0, ubuntu = 0 },
+      large = { amazon = 0, ubuntu = 0 },
+    }
+    # not yet in effect
+    APNE3 = {
+      micro = { amazon = 0, ubuntu = 0 },
+      large = { amazon = 0, ubuntu = 0 },
+    }
+    # not yet in effect
+    SAE1 = {
+      micro = { amazon = 0, ubuntu = 0 },
+      large = { amazon = 0, ubuntu = 0 },
+    }
+    AFS1 = {
+      micro = { amazon = 0, ubuntu = 0 },
+      large = { amazon = 0, ubuntu = 0 },
+    }
   }
+}
+
+variable "for_each_experiment" {
+  default = [ "amazon",
+    "ubuntu",
+    "amazon" ]
 }
 
 variable "instance_types" {
   default = {
-    micro = "t2.micro"
-    large = "m5.large"
+    micro    = "t2.micro"  # Not available in Cape Town
+    t3-micro = "t3.micro"
+    large    = "m5.large"
   }
 }
 
