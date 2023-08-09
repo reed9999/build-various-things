@@ -102,6 +102,7 @@ variable "instance_types" {
     micro    = "t2.micro"  # Not available in Cape Town
     t3-micro = "t3.micro"
     large    = "m5.large"
+    c6a-large    = "c6a.large"
   }
 }
 

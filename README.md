@@ -9,30 +9,14 @@ The first section is an update for July 2023 then the preexisting README file.
 # Q3 2023 
 
 ## Punch list: 
-- Amzn Linux: Apparently I never automated bootstrap.
-- Ubuntu: CUI issue below; switch out some files (sed?)
 
 ## Details of issues
 
-1. Ubuntu produces a CUI dialog box with: 
+1. Ubuntu produces a CUI dialog box. Fixed. 
+https://stackoverflow.com/questions/73397110/
 
-```
-────┤ Daemons using outdated libraries ├─────┐
-│                                             │ 
-│                                             │ 
-│ Which services should be restarted?         │ 
-│                                             │ 
-│  [ ] networkd-dispatcher.service            │ 
-│  [ ] unattended-upgrades.service            │ 
-│                                             │ 
-│                                             │ 
-│          <Ok>              <Cancel>         │ 
-│                                        
-```
-
-https://stackoverflow.com/questions/73397110/how-to-stop-ubuntu-pop-up-daemons-using-outdated-libraries-when-using-apt-to-i
-
-2. Django build fails with a lot of
+2. Django build fails on Ubuntu.  
+with a lot of
 ```
 error: externally-managed-environment
 

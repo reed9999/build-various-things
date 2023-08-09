@@ -93,6 +93,15 @@ resource "aws_spot_instance_request" "ohio-large-amazon" {
     Name = "ohio-large"
   }
 }
+resource "aws_spot_instance_request" "ohio-c6a-large-ubuntu" {
+  count     = var.quantities.USE2.c6a-large.ubuntu
+  ami       = var.config.USE2.amis.ubuntu_amd
+  user_data = file("../ubuntu/bootstrap.sh")
+
+  instance_type = var.instance_types.c6a-large
+  spot_price    = "0.08"
+  key_name      = var.config.USE2.key_name
+}
 
 resource "aws_spot_instance_request" "virginia-micro" {
   provider      = aws.aws_USE1
@@ -136,7 +145,6 @@ resource "aws_spot_instance_request" "cape-town-micro-ubuntu" {
 output "instances" {
   value = {
     ohio-large-amazon : aws_spot_instance_request.ohio-large-amazon.*.private_ip
-#    ohio-large-ubuntu : aws_spot_instance_request.ohio-large-ubuntu.*.private_ip
     ohio-micro-amazon : aws_spot_instance_request.ohio-micro-amazon.*.private_ip
     ohio-micro-ubuntu : aws_spot_instance_request.ohio-micro-ubuntu.*.private_ip
 
@@ -144,3 +152,16 @@ output "instances" {
   }
   description = "PrivateIP address details"
 }
+
+## The experiment
+#
+#resource "aws_spot_instance_request" "ohio-micro-generic" {
+#  for_each = var.for_each_experiment
+#  ami      = (each == "ubuntu" ?
+#    var.config.USE2.amis.ubuntu_amd :
+#    var.config.USE2.amis.amazon_linux)
+#  user_data     = file("../ubuntu/bootstrap.sh")
+#  instance_type = var.instance_types.micro
+#  spot_price    = "0.04"
+#  key_name      = var.config.USE2.key_name
+#}
