@@ -2,6 +2,9 @@
 # Under development on Ubuntu on EC2
 # See https://docs.dagster.io/community/contributing
 
+source ~/scripts/ubuntu/python-various/setup.sh
+echo "***** BEGIN DAGSTER BUILD SCRIPT $(date) *****"
+
 # I don't get why pushd isn't working under nohup
 cd ~
 sudo apt update # critical

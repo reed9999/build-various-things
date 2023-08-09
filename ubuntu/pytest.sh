@@ -1,9 +1,7 @@
-echo "##### PYTEST"
-echo "pytest-build start time $(date)"
-
-source ~/scripts/util/detect-installer.sh
+source ~/scripts/ubuntu/setup-python.sh
 echo "Linux distribution: $BVT_DISTRO"
 echo "Selected installer: $BVT_INSTALLER"
+echo "***** BEGIN PYTEST BUILD SCRIPT $(date) *****"
 
 pushd ~
 git clone https://github.com/pytest-dev/pytest.git
@@ -13,12 +11,9 @@ cd ~/pytest
 sudo apt install -y python3.10-venv
 
 echo "*****
-python3.11-venv is installed by root
-Err, I mean 3.10
+python3.10-venv is installed by root
 ready to load venv and start building.
 *****
-
-
 
 "
 python3 -m venv ~/.virtualenvs/pytestdev

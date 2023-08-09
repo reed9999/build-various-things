@@ -1,5 +1,12 @@
 # This works and passes tests, except the ln mechanism is untested
 #
+
+source ~/scripts/ubuntu/setup-python.sh
+echo "Linux distribution: $BVT_DISTRO"
+echo "Selected installer: $BVT_INSTALLER"
+echo
+echo "***** BEGIN DJANGO BUILD SCRIPT $(date) *****"
+
 # This is not an ideal way to get Python 3.11 in place for Django -- breaks the AWS CLI
 # sudo mv /usr/bin/python3 /usr/bin/python3-original
 # sudo ln -s /usr/bin/python3.11 /usr/bin/python3
