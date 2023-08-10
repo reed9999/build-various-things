@@ -4,9 +4,46 @@ Here I attempt to automate build processes... just because.
 (Building from source is a prereq to mucking around in source, kind of, 
 and beyond that it just feels good.)
 
-The first section is an update for July 2023 then the preexisting README file.
 
-# Q3 2023 
+# Directions this could go in
+Adding new apps to build from source is fun, but ultimately I'll learn more if 
+I set a hiatus condition and then learn more about what I have.
+
+0. Keep improving at Terraform.
+   1. Especially see if there is a good for_each approach.
+1. New apps. After these, just put it on hold! 
+	- CPython
+    - pytest
+    - Django
+    - Bazel
+    - Dagster
+    - Ruby
+    - Rust
+    - Go language
+    - Haskell
+    - Vim
+    - Airflow
+    - \[Pytorch - on hold]
+2. Pick the most relevant--e.g. Python, Python tools, Dagster, possibly 
+   Airflow--and force myself to learn what the build is really doing.
+3. Some builds have test failures. Why? Can I fix these, follow up on them, etc.?
+	- Pytest has 3 failures if viewed interactively. There is a Github issue;
+	  follow up.
+	- And in Bazel I don't even understand how the self-build is being tested.
+4. Unify scripts for Amazon Linux and Ubuntu. Try a few other distros.
+4. Change environments, see what else needs to change.
+	- instance types
+	- OS (Win, Mac)
+	- Azure, GCP
+	- local
+5. Perf test any of the above, esp. larger instance types.
+6. Muck about in source code. Break things. Put in my own strings, my own easter eggs.
+
+
+# Q3 2023 (phase 2)
+
+Because I didn't do much on here between April and late July, 2023, here is my
+refresh of the README -- should be merged in with the original stuff. 
 
 ## Punch list: 
 
@@ -15,29 +52,7 @@ The first section is an update for July 2023 then the preexisting README file.
 1. Ubuntu produces a CUI dialog box. Fixed. 
 https://stackoverflow.com/questions/73397110/
 
-2. Django build fails on Ubuntu.  
-with a lot of
-```
-error: externally-managed-environment
-
-× This environment is externally managed
-╰─> To install Python packages system-wide, try apt install
-    python3-xyz, where xyz is the package you are trying to
-    install.
-    
-    If you wish to install a non-Debian-packaged Python package,
-    create a virtual environment using python3 -m venv path/to/venv.
-    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
-    sure you have python3-full installed.
-    
-    If you wish to install a non-Debian packaged Python application,
-    it may be easiest to use pipx install xyz, which will manage a
-    virtual environment for you. Make sure you have pipx installed.
-    
-    See /usr/share/doc/python3.11/README.venv for more information.
-
-
-```
+2. Django build fails on Ubuntu -- resolved in script, under final testing.
 
 3. Pytest build on Ubuntu is mostly OK, and on Amzn is fine, but this on U: 
 
@@ -66,23 +81,8 @@ scripts/ubuntu/python-various/pytest-build.sh: line 51:
 
 Use my learning from Ubuntu.
 
-# Q1-2 2023
+# Q1-2 2023 (phase 1)
 
-## Directions I could go in
-There are many ways I could take this.
-0. Terraform!
-1. Keep adding new things to build.
-2. Puzzles
-2. Dig into the most relevant (Python, Python tools, maybe Bazel) and understand the build.
-3. Some builds have test failures. Why? Can I fix these, follow up on them, etc.?
-	- And in Bazel I don't even understand how the self-build is being tested.
-4. Change environments, see what else needs to change.
-	- instance types
-	- OS (Win, Mac)
-	- Azure, GCP
-	- local
-5. Perf test any of the above, esp. larger instance types.
-6. Muck about in source code. Break things. Put in my own strings, my own easter eggs.
 
 ## Summary
 - cpython: yes but *probably* needs a decent-sized instance, I don't recall.
@@ -218,9 +218,9 @@ Can we just use an EC2 image with gcc? Try:
 amzn2-ami-kernel-5.10-hvm-2.0.20230320.0-x86_64-gp2
 ami-00a16e018e54305c6 
 
-(in sa-east-1)
 
-I started using this region for fun, and there is a little latency. Try to get this working for
-closer regions to compare.
+# Handy links and ideas, etc.
 
-Terraform-automate of course.
+Preserve colors: 
+https://superuser.com/questions/352697/preserve-colors-while-piping-to-tee
+https://stackoverflow.com/questions/3515208/can-colorized-output-be-captured-via-shell-redirect
