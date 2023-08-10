@@ -4,6 +4,17 @@
 # sudo mv /usr/bin/python3 /usr/bin/python3-original
 # sudo ln -s /usr/bin/python3.11 /usr/bin/python3
 
+echo "*** DEPRECATED ***"
+echo
+echo "To build Django on Amazon Linux, you can now use the 'unified' script via the symlink"
+echo "at scripts/ec2/django.sh"
+
+~/scripts/ec2/django.sh
+echo "Remember, django-build.sh for Amazon Linux is now deprecated. Use scripts/ec2/django.sh"
+exit 255
+
+# Obsolete code
+
 pushd ~/django
 python3.11 -m venv ~/.virtualenvs/djangodev
 source ~/.virtualenvs/djangodev/bin/activate

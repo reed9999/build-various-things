@@ -13,12 +13,17 @@ echo "***** BEGIN DJANGO BUILD SCRIPT $(date) *****"
 
 git clone --depth 1 https://github.com/django/django.git
 pushd ~/django
-  sudo apt install python3.11-venv
+  if [[ "$BVT_DISTRO" == "ubuntu" ]]; then
+    # This doesn't appear to be needed for amazon-linux
+    sudo ${BVT_INSTALLER} install python3.11-venv
+
+    # Possibly needed to fix KeyError: 'unix_user'
+    # https://github.com/pypa/setuptools/issues/2938#issuecomment-1239769624
+    # No idea if helpful apart from ubuntu
+    sudo ${BVT_INSTALLER} purge -y python3-setuptools
+  fi
   rm -rf ~/.virtualenvs/djangodev
 
-  # Possibly needed to fix KeyError: 'unix_user'
-  # https://github.com/pypa/setuptools/issues/2938#issuecomment-1239769624
-  sudo apt purge -y python3-setuptools
 
   python3.11 -m venv ~/.virtualenvs/djangodev
   source ~/.virtualenvs/djangodev/bin/activate
@@ -26,9 +31,21 @@ pushd ~/django
   python3 -m pip install tblib # Without this, the test suite might crash on a failure.
 #  python3 -m pip install --editable .   # doubtful we need a second one?
 
-# This is critical so that pip can build the pywatchman wheel via gcc.
-# Without it, Python.h won't be found.
-  sudo ${BVT_INSTALLER} install -y python3.11-dev
+  if [[ "$BVT_DISTRO" == "amazon-linux" ]]; then
+    # https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/compile-software.html
+    # May not be helpful though.
+    sudo ${BVT_INSTALLER} groupinstall -y "Development Tools"
+
+    # added python311-devel to the Python setup. However, pywatchman wheel build still can't find
+    # Python.h.
+    # https://stackoverflow.com/questions/66254702/python-h-no-such-file-or-directory-on-amazon-linux-lambda-container
+
+  elif [[ "$BVT_DISTRO" == "ubuntu" ]]; then
+    # This is critical so that pip can build the pywatchman wheel via gcc.
+    # Without it, Python.h won't be found.
+    # It's now redundantly in setup-python.sh and can be removed from here.
+    sudo ${BVT_INSTALLER} install -y python3.11-dev
+  fi
 
   pushd tests
     python -m pip install -r requirements/py3.txt

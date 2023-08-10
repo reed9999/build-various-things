@@ -19,6 +19,7 @@ do_apt_get_install() {
     sudo add-apt-repository -y ppa:deadsnakes/ppa
 
     sudo ${PKGMGR} install -y python3.11   # not python311
+    sudo ${BVT_INSTALLER} install -y python3.11-dev
     sudo ${PKGMGR} install -y pip
 
     # Now these get a very similar message. I've installed these globally rather than in a venv because I expect them 
@@ -32,11 +33,8 @@ do_apt_get_install() {
 }
 
 do_amazon_install(){
-    # sudo yum install -y python311
-    # sudo yum install -y pip
-    # sudo pip install --upgrade build
-    # sudo pip install --upgrade setuptools
-    sudo ${BVT_INSTALLER} install -y python311
+    # Apparently either python311 or 3.11 is fine, but for devel we need the dot
+    sudo ${BVT_INSTALLER} install -y python311 python3.11-devel
     sudo ${BVT_INSTALLER} install -y pip
     sudo pip install --upgrade build
     sudo pip install --upgrade setuptools
