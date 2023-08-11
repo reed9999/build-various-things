@@ -103,6 +103,16 @@ resource "aws_spot_instance_request" "ohio-c6a-large-ubuntu" {
   key_name      = var.config.USE2.key_name
 }
 
+resource "aws_spot_instance_request" "ohio-c6a-large-amazon" {
+  count     = var.quantities.USE2.c6a-large.amazon
+  ami       = var.config.USE2.amis.amazon_linux
+  user_data = file("../ec2/bootstrap.sh")
+
+  instance_type = var.instance_types.c6a-large
+  spot_price    = "0.08"
+  key_name      = var.config.USE2.key_name
+}
+
 resource "aws_spot_instance_request" "virginia-micro" {
   provider      = aws.aws_USE1
   count         = var.quantities.USE1.micro.ubuntu
