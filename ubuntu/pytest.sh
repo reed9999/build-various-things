@@ -8,8 +8,9 @@ git clone https://github.com/pytest-dev/pytest.git
 cd ~/pytest
 # sudo $BVT_INSTALLER install -y python3.11-venv
 # The message says 3.10 -- but why???
-sudo apt install -y python3.10-venv
+sudo ${BVT_INSTALLER} install -y python3.10-venv
 
+# For Amazon Linux -- try ignoring the above 3.10 install and see what happens.
 echo "*****
 python3.10-venv is installed by root
 ready to load venv and start building.

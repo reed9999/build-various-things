@@ -1,0 +1,1455 @@
+just after make, Wed Aug  9 01:23:03 UTC 2023
+WARNING:root:Unable to detect CI environment.  No test analytics will be sent.
+=================================================================== test session starts ====================================================================
+platform linux -- Python 3.10.12, pytest-7.0.1, pluggy-1.2.0
+rootdir: /home/ubuntu/dagster, configfile: pyproject.toml
+plugins: typeguard-4.1.0, xdist-2.1.0, rerunfailures-10.0, forked-1.6.0, requests-mock-1.11.0, dependency-0.5.1, mock-3.3.1, syrupy-3.0.6, cov-2.10.1, anyio-3.7.1, buildkite-test-collector-0.1.7
+collected 5527 items / 4 deselected / 5523 selected                                                                                                        
+
+python_modules/dagster/dagster_tests/test_annotations.py .....................F...................................                                   [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_get_current_runs.py .                                                                        [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_launch_run.py ...                                                                            [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_list_repositories.py .......                                                                 [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_notebook_data.py .                                                                           [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_execution_plan.py ....                                                              [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_job.py .....                                                                        [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_partition.py ...........                                                            [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_repository.py ..s.                                                                  [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_schedule_execution_data.py .....                                                    [  1%]
+python_modules/dagster/dagster_tests/api_tests/test_api_snapshot_sensor.py .....                                                                     [  1%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_asset_deps.py ...................                                                         [  2%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_asset_graph.py ...............                                                            [  2%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_asset_selection.py .......................                                                [  2%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_assets.py ...............................................................                 [  4%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_assets_from_modules.py ..................                                                 [  4%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_assets_job.py ........................................................................... [  5%]
+................................................                                                                                                     [  6%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_assets_loading.py .                                                                       [  6%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_decorators.py ........................................................................... [  7%]
+.                                                                                                                                                    [  7%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_external_asset_graph.py ........                                                          [  8%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_freshness_policy.py .............                                                         [  8%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_materialize.py .................                                                          [  8%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_materialize_to_memory.py .................                                                [  8%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_observe.py ..........                                                                     [  9%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_partitioned_assets.py ...................                                                 [  9%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_partitions_subset.py ......                                                               [  9%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_resolved_asset_deps.py ....                                                               [  9%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_source_asset.py ...                                                                       [  9%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_source_asset_observation_job.py .s.....                                                   [  9%]
+python_modules/dagster/dagster_tests/asset_defs_tests/test_unresolved_asset_job.py ................................................................. [ 11%]
+......................                                                                                                                               [ 11%]
+python_modules/dagster/dagster_tests/asset_defs_tests/partition_mapping_tests/test_asset_partition_mappings.py .............                         [ 11%]
+python_modules/dagster/dagster_tests/asset_defs_tests/partition_mapping_tests/test_multipartition_partition_mapping.py ......................        [ 12%]
+python_modules/dagster/dagster_tests/asset_defs_tests/partition_mapping_tests/test_static_partition_mapping.py ....                                  [ 12%]
+python_modules/dagster/dagster_tests/asset_defs_tests/partition_mapping_tests/test_time_window_partition_mapping.py ................................ [ 12%]
+........                                                                                                                                             [ 12%]
+python_modules/dagster/dagster_tests/cli_tests/test_api_commands.py ...........                                                                      [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/test_asset_wipe_command.py ...........                                                                [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/test_config_scaffolder.py ..                                                                          [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/test_project_commands.py .............                                                                [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/test_version.py .                                                                                     [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/test_workspace_config_schema.py ..........                                                            [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_asset_list_command.py ........                                                     [ 13%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_backfill_command.py ....................                                           [ 14%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_cli_commands.py .............                                                      [ 14%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_concurrency_command.py ...                                                         [ 14%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_core_test_utils.py .                                                               [ 14%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_execute_command.py ............................................................... [ 15%]
+....                                                                                                                                                 [ 15%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_launch_command.py .................................                                [ 16%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_list_command.py ....                                                               [ 16%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_materialize_command.py ............                                                [ 16%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_memoized_development_cli.py .                                                      [ 16%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_print_command.py ........................................                          [ 17%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_scaffold_command.py ..................                                             [ 17%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_schedule_commands.py ..................                                            [ 18%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_sensor_commands.py ................                                                [ 18%]
+python_modules/dagster/dagster_tests/cli_tests/command_tests/test_telemetry.py ......................                                                [ 18%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/test_grpc_server_workspace.py .....                                                   [ 18%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/test_job_load.py ...........                                                          [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/test_repository_load.py .....................                                         [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/test_workspace_load.py .                                                              [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/autodiscovery_tests/test_autodiscovery.py ................                            [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/hello_world_in_file/test_hello_world_in_file_workspace.py ...                         [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/hello_world_in_module/test_hello_world_in_module_workspace.py ...                     [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/multi_location/test_load_failure_workspace.py ..                                      [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/multi_location/test_multi_location_workspace.py ......                                [ 19%]
+python_modules/dagster/dagster_tests/cli_tests/workspace_tests/toml_tests/test_toml_loading.py ...                                                   [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_asset_events.py ....                                                                            [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_compute_only_job.py ..                                                                          [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_configured.py .                                                                                 [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_data_time.py .................                                                                  [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_data_versions.py ..                                                                             [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_decorator_utils.py ....                                                                         [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_errors.py .                                                                                     [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_event_logging.py .....                                                                          [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_event_utils.py ...                                                                              [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_external_execution_plan.py ......                                                               [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_input_injection.py .....                                                                        [ 20%]
+python_modules/dagster/dagster_tests/core_tests/test_job_errors.py ........                                                                          [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_job_execution.py ...................................                                            [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_job_init.py ..                                                                                  [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_metadata.py .                                                                                   [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_misc.py ....                                                                                    [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_multi_dependency.py ......                                                                      [ 21%]
+python_modules/dagster/dagster_tests/core_tests/test_multiple_outputs.py .......                                                                     [ 22%]
+python_modules/dagster/dagster_tests/core_tests/test_naming_collisions.py ...                                                                        [ 22%]
+python_modules/dagster/dagster_tests/core_tests/test_nothing_dependencies.py .............                                                           [ 22%]
+python_modules/dagster/dagster_tests/core_tests/test_op_aliases.py ....                                                                              [ 22%]
+python_modules/dagster/dagster_tests/core_tests/test_op_arguments.py ..                                                                              [ 22%]
+python_modules/dagster/dagster_tests/core_tests/test_op_invocation.py ............................................................................   [ 23%]
+python_modules/dagster/dagster_tests/core_tests/test_op_with_config.py ..........                                                                    [ 24%]
+python_modules/dagster/dagster_tests/core_tests/test_resolve_versions.py .........................                                                   [ 24%]
+python_modules/dagster/dagster_tests/core_tests/test_telemetry_upload.py ....                                                                        [ 24%]
+python_modules/dagster/dagster_tests/core_tests/test_user_code_boundary.py ...                                                                       [ 24%]
+python_modules/dagster/dagster_tests/core_tests/test_utils.py ........                                                                               [ 24%]
+python_modules/dagster/dagster_tests/core_tests/test_validate_run_config.py .                                                                        [ 24%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_default_required.py .....                                             [ 24%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_enums.py .............                                                [ 25%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_schema.py ..                                                          [ 25%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_spec.py ........                                                      [ 25%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_config_type_system.py ....................................................   [ 26%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_error_messages.py .....                                                      [ 26%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_field_hash.py .............                                                  [ 26%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_new_config_types.py ......                                                   [ 26%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_source_types.py ....                                                         [ 26%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/test_type_printer.py ..................                                           [ 27%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_composite_descent.py .......................                 [ 27%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_config_mappings.py .................                         [ 27%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_defaults.py .                                                [ 27%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_evaluator.py ..............................................  [ 28%]
+python_modules/dagster/dagster_tests/core_tests/config_types_tests/evaluator_tests/test_validate.py ................................................ [ 29%]
+.                                                                                                                                                    [ 29%]
+python_modules/dagster/dagster_tests/core_tests/execution_tests/test_active.py ....                                                                  [ 29%]
+python_modules/dagster/dagster_tests/core_tests/execution_tests/test_asset_backfill.py ............................................................. [ 30%]
+................................................                                                                                                     [ 31%]
+python_modules/dagster/dagster_tests/core_tests/execution_tests/test_context.py .                                                                    [ 31%]
+python_modules/dagster/dagster_tests/core_tests/execution_tests/test_instance_concurrency_context.py .....                                           [ 31%]
+python_modules/dagster/dagster_tests/core_tests/graph_tests/test_graph.py ..............................................................             [ 32%]
+python_modules/dagster/dagster_tests/core_tests/graph_tests/test_graph_ins_out.py .....                                                              [ 32%]
+python_modules/dagster/dagster_tests/core_tests/graph_tests/test_graph_source_asset_input.py .........                                               [ 33%]
+python_modules/dagster/dagster_tests/core_tests/graph_tests/test_op_selection.py ..........................                                          [ 33%]
+python_modules/dagster/dagster_tests/core_tests/hook_tests/test_hook_def.py .................                                                        [ 33%]
+python_modules/dagster/dagster_tests/core_tests/hook_tests/test_hook_invocation.py ...........                                                       [ 34%]
+python_modules/dagster/dagster_tests/core_tests/hook_tests/test_hook_run.py ...................                                                      [ 34%]
+python_modules/dagster/dagster_tests/core_tests/host_representation_tests/test_custom_repository_data.py .                                           [ 34%]
+python_modules/dagster/dagster_tests/core_tests/host_representation_tests/test_external_data.py .............................                        [ 34%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_instance.py ............................                                         [ 35%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_instance_config.py ..                                                            [ 35%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_instance_data_versions.py ......                                                 [ 35%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_instance_lazy_load.py ...                                                        [ 35%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_instance_reexecution.py ...                                                      [ 35%]
+python_modules/dagster/dagster_tests/core_tests/instance_tests/test_nux.py .                                                                         [ 35%]
+python_modules/dagster/dagster_tests/core_tests/partition_tests/test_partition.py ..........                                                         [ 35%]
+python_modules/dagster/dagster_tests/core_tests/partition_tests/test_partitioned_io_manager.py ...                                                   [ 35%]
+python_modules/dagster/dagster_tests/core_tests/partition_tests/test_partitioned_job.py ....                                                         [ 35%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_basic_pythonic_config.py .......................................          [ 36%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_configured.py ....                                                        [ 36%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_constraints.py ............                                               [ 36%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_default_values.py .....                                                   [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_descriptions.py .                                                         [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_env_vars.py .....                                                         [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_errors.py ...............                                                 [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_graphs.py ..........                                                      [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_jobs_graphs.py ......                                                     [ 37%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_pythonic_config_types.py ........s...................                     [ 38%]
+python_modules/dagster/dagster_tests/core_tests/pythonic_config_tests/test_validation.py .                                                           [ 38%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_build_init_resource_context.py ...                                               [ 38%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_build_resources.py .......                                                       [ 38%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_required_resources.py ......................                                     [ 38%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_resource_definition.py ..........................................                [ 39%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_resource_invocation.py ..........                                                [ 39%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_resource_parameters.py ..........                                                [ 39%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/test_with_resources.py .......................                                        [ 40%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/pythonic_resources/test_binding.py ..................                                 [ 40%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/pythonic_resources/test_direct_invocation.py ...........                              [ 40%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/pythonic_resources/test_env_vars.py .......                                           [ 41%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/pythonic_resources/test_general_pythonic_resources.py ............................... [ 41%]
+                                                                                                                                                     [ 41%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/pythonic_resources/test_lifecycle_methods.py ................                         [ 41%]
+python_modules/dagster/dagster_tests/core_tests/resource_tests/pythonic_resources/test_nesting.py ...........                                        [ 42%]
+python_modules/dagster/dagster_tests/core_tests/run_coordinator_tests/test_default_run_coordinator.py ..                                             [ 42%]
+python_modules/dagster/dagster_tests/core_tests/run_coordinator_tests/test_queued_run_coordinator.py ......                                          [ 42%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_dagster_type_decorator.py ...                                               [ 42%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_input_type_loading.py ...                                                   [ 42%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_python_dict.py ...................                                          [ 42%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_python_set.py .............                                                 [ 42%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_python_tuple.py ................                                            [ 43%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_runtime_types.py .......                                                    [ 43%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_typed_list.py ................                                              [ 43%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_typed_python_dict.py ......                                                 [ 43%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/test_types.py ..........................                                         [ 44%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/config_schema_tests/test_builtin_schemas.py ......................               [ 44%]
+python_modules/dagster/dagster_tests/core_tests/runtime_types_tests/config_schema_tests/test_config_schema.py .....                                  [ 44%]
+python_modules/dagster/dagster_tests/core_tests/selector_tests/test_execute.py ........                                                              [ 44%]
+python_modules/dagster/dagster_tests/core_tests/selector_tests/test_subset_selector.py ..................                                            [ 45%]
+python_modules/dagster/dagster_tests/core_tests/serdes_tests/test_ipc.py ........                                                                    [ 45%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_active_data.py ....                                                                  [ 45%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_config_schema_snapshot.py ....................                                       [ 45%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_dagster_type_namespace_snapshot.py ....                                              [ 45%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_execution_plan.py ....                                                               [ 45%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_job_snap.py ............................                                             [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_legacy_mode_def_snap.py .                                                            [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_node_def_snap.py .....                                                               [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_old_execution_plan_snapshot.py ..                                                    [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_repository_snap.py .............                                                     [ 46%]
+python_modules/dagster/dagster_tests/core_tests/snap_tests/test_snap_to_yaml.py ......                                                               [ 46%]
+python_modules/dagster/dagster_tests/core_tests/system_config_tests/test_system_config.py ....................                                       [ 47%]
+python_modules/dagster/dagster_tests/core_tests/workspace_tests/test_request_context.py .                                                            [ 47%]
+python_modules/dagster/dagster_tests/daemon_sensor_tests/test_asset_sensor_run.py ..                                                                 [ 47%]
+python_modules/dagster/dagster_tests/daemon_sensor_tests/test_no_instance_with_no_resources_on_sensor.py ..                                          [ 47%]
+python_modules/dagster/dagster_tests/daemon_sensor_tests/test_pythonic_resources.py .....................                                            [ 47%]
+python_modules/dagster/dagster_tests/daemon_sensor_tests/test_run_status_sensors.py ..............................                                   [ 48%]
+python_modules/dagster/dagster_tests/daemon_sensor_tests/test_sensor_failure_recovery.py ....                                                        [ 48%]
+python_modules/dagster/dagster_tests/daemon_sensor_tests/test_sensor_run.py ........................................................................ [ 49%]
+.............................                                                                                                                        [ 50%]
+python_modules/dagster/dagster_tests/daemon_tests/test_backfill.py .............                                                                     [ 50%]
+python_modules/dagster/dagster_tests/daemon_tests/test_backfill_failure_recovery.py ...                                                              [ 50%]
+python_modules/dagster/dagster_tests/daemon_tests/test_concurrency_daemon.py .                                                                       [ 50%]
+python_modules/dagster/dagster_tests/daemon_tests/test_dagster_daemon.py ...                                                                         [ 50%]
+python_modules/dagster/dagster_tests/daemon_tests/test_monitoring_daemon.py ......                                                                   [ 50%]
+python_modules/dagster/dagster_tests/daemon_tests/test_queued_run_coordinator_daemon.py .................................                            [ 51%]
+python_modules/dagster/dagster_tests/daemon_tests/test_types.py ...                                                                                  [ 51%]
+python_modules/dagster/dagster_tests/definitions_tests/test_autoalias.py ..                                                                          [ 51%]
+python_modules/dagster/dagster_tests/definitions_tests/test_backfill_policy.py .                                                                     [ 51%]
+python_modules/dagster/dagster_tests/definitions_tests/test_composition.py ..................................................                        [ 52%]
+python_modules/dagster/dagster_tests/definitions_tests/test_default_io_manager.py ....                                                               [ 52%]
+python_modules/dagster/dagster_tests/definitions_tests/test_definition_errors.py ................                                                    [ 52%]
+python_modules/dagster/dagster_tests/definitions_tests/test_definitions.py ...........                                                               [ 52%]
+python_modules/dagster/dagster_tests/definitions_tests/test_definitions_class.py ..................................                                  [ 53%]
+python_modules/dagster/dagster_tests/definitions_tests/test_dynamic_partitions.py ............                                                       [ 53%]
+python_modules/dagster/dagster_tests/definitions_tests/test_events.py .                                                                              [ 53%]
+python_modules/dagster/dagster_tests/definitions_tests/test_executor_definition.py ...........                                                       [ 53%]
+python_modules/dagster/dagster_tests/definitions_tests/test_flatten_time_window_ranges.py ........                                                   [ 54%]
+python_modules/dagster/dagster_tests/definitions_tests/test_freshness_policy_sensor.py ...                                                           [ 54%]
+python_modules/dagster/dagster_tests/definitions_tests/test_inference.py ..                                                                          [ 54%]
+python_modules/dagster/dagster_tests/definitions_tests/test_input_defaults.py ...........                                                            [ 54%]
+python_modules/dagster/dagster_tests/definitions_tests/test_job.py ................                                                                  [ 54%]
+python_modules/dagster/dagster_tests/definitions_tests/test_logger_definition.py ...                                                                 [ 54%]
+python_modules/dagster/dagster_tests/definitions_tests/test_logger_invocation.py .....                                                               [ 54%]
+python_modules/dagster/dagster_tests/definitions_tests/test_multi_partitions.py .....................                                                [ 55%]
+python_modules/dagster/dagster_tests/definitions_tests/test_node_handle.py ......                                                                    [ 55%]
+python_modules/dagster/dagster_tests/definitions_tests/test_op_io.py .........                                                                       [ 55%]
+python_modules/dagster/dagster_tests/definitions_tests/test_output_events.py ..                                                                      [ 55%]
+python_modules/dagster/dagster_tests/definitions_tests/test_partitioned_schedule.py ..............                                                   [ 55%]
+python_modules/dagster/dagster_tests/definitions_tests/test_reconstructable.py .............                                                         [ 55%]
+python_modules/dagster/dagster_tests/definitions_tests/test_repository_definition.py ..........................................................      [ 56%]
+python_modules/dagster/dagster_tests/definitions_tests/test_schedule.py ....                                                                         [ 57%]
+python_modules/dagster/dagster_tests/definitions_tests/test_schedule_invocation.py ........                                                          [ 57%]
+python_modules/dagster/dagster_tests/definitions_tests/test_sensor.py ..                                                                             [ 57%]
+python_modules/dagster/dagster_tests/definitions_tests/test_sensor_invocation.py ................................................                    [ 58%]
+python_modules/dagster/dagster_tests/definitions_tests/test_sensor_result.py .......                                                                 [ 58%]
+python_modules/dagster/dagster_tests/definitions_tests/test_sensor_typechecks.py .                                                                   [ 58%]
+python_modules/dagster/dagster_tests/definitions_tests/test_tags.py ...                                                                              [ 58%]
+python_modules/dagster/dagster_tests/definitions_tests/test_time_window_partitions.py .............................................................. [ 59%]
+..................                                                                                                                                   [ 59%]
+python_modules/dagster/dagster_tests/definitions_tests/auto_materialize_tests/test_asset_daemon.py ................................................. [ 60%]
+.........
+
+.........................................................................................................................                   [ 62%]
+python_modules/dagster/dagster_tests/definitions_tests/auto_materialize_tests/test_asset_daemon_cursor.py ..                                         [ 63%]
+python_modules/dagster/dagster_tests/definitions_tests/auto_materialize_tests/test_asset_daemon_fast.py ............................................ [ 63%]
+....................................................................................................                                                 [ 65%]
+python_modules/dagster/dagster_tests/definitions_tests/auto_materialize_tests/test_asset_daemon_perf.py .........                                    [ 65%]
+python_modules/dagster/dagster_tests/definitions_tests/auto_materialize_tests/test_auto_materialize_asset_evaluation.py .                            [ 65%]
+python_modules/dagster/dagster_tests/definitions_tests/auto_materialize_tests/test_auto_materialize_policy.py .                                      [ 65%]
+python_modules/dagster/dagster_tests/definitions_tests/auto_materialize_tests/test_auto_observe.py .....                                             [ 65%]
+python_modules/dagster/dagster_tests/definitions_tests/decorators_tests/test_config_mapping.py .....                                                 [ 65%]
+python_modules/dagster/dagster_tests/definitions_tests/decorators_tests/test_description_inference.py .                                              [ 66%]
+python_modules/dagster/dagster_tests/definitions_tests/decorators_tests/test_job.py ......                                                           [ 66%]
+python_modules/dagster/dagster_tests/definitions_tests/decorators_tests/test_op.py ................................................................. [ 67%]
+.................                                                                                                                                    [ 67%]
+python_modules/dagster/dagster_tests/definitions_tests/decorators_tests/test_schedule.py ............                                                [ 67%]
+python_modules/dagster/dagster_tests/definitions_tests/decorators_tests/test_source_asset_decorator.py ..                                            [ 67%]
+python_modules/dagster/dagster_tests/execution_tests/test_api_iterators.py .......                                                                   [ 67%]
+python_modules/dagster/dagster_tests/execution_tests/test_async.py ..                                                                                [ 68%]
+python_modules/dagster/dagster_tests/execution_tests/test_custom_reconstructable.py ..                                                               [ 68%]
+python_modules/dagster/dagster_tests/execution_tests/test_data_versions.py .........................                                                 [ 68%]
+python_modules/dagster/dagster_tests/execution_tests/test_execute_in_process.py ..................                                                   [ 68%]
+python_modules/dagster/dagster_tests/execution_tests/test_execute_job.py ..............                                                              [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_execute_op_for_test.py .                                                                   [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_expectations.py ...                                                                        [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_failure.py .                                                                               [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_input_values_from_intermediates.py ..                                                      [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_interrupt.py .........                                                                     [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_job.py ............                                                                        [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_markers.py .                                                                               [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_memoized_dev_loop.py .......                                                               [ 69%]
+python_modules/dagster/dagster_tests/execution_tests/test_metadata.py ............................                                                   [ 70%]
+python_modules/dagster/dagster_tests/execution_tests/test_op_iterators.py .....                                                                      [ 70%]
+python_modules/dagster/dagster_tests/execution_tests/test_retries.py ......................                                                          [ 70%]
+python_modules/dagster/dagster_tests/execution_tests/test_timing.py ...                                                                              [ 70%]
+python_modules/dagster/dagster_tests/execution_tests/context_tests/test_output.py .                                                                  [ 70%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_dsl.py .....                                                                 [ 70%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_dynamic_execution.py ........................                                [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_dynamic_output.py ...........                                                [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_not_allowed.py ..........                                                    [ 71%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_reexecute.py .................                                               [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/dynamic_tests/test_step_handle.py .                                                             [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_child_process_executor.py ....Fatal Python error: Segmentation fault
+
+Thread 0x00007ffad67fc640 (most recent call first):
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 228 in _feed
+  File "/usr/lib/python3.10/threading.py", line 953 in run
+  File "/usr/lib/python3.10/threading.py", line 1016 in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 973 in _bootstrap
+
+Current thread 0x00007ffb080ab000 (most recent call first):
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 517 in string_at
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_utils/__init__.py", line 541 in segfault
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_child_process_executor.py", line 44 in execute
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/executor/child_process_executor.py", line 79 in _execute_command_in_child_process
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 108 in run
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 314 in _bootstrap
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 71 in _launch
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 19 in __init__
+  File "/usr/lib/python3.10/multiprocessing/context.py", line 281 in _Popen
+  File "/usr/lib/python3.10/multiprocessing/context.py", line 224 in _Popen
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 121 in start
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/executor/child_process_executor.py", line 157 in execute_child_process_command
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_child_process_executor.py", line 101 in test_child_process_segfault
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/python.py", line 192 in pytest_pyfunc_call
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 80 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 112 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 433 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/python.py", line 1718 in runtest
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 168 in pytest_runtest_call
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 80 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 112 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 433 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 261 in <lambda>
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 340 in from_call
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 260 in call_runtest_hook
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 221 in call_and_report
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 132 in runtestprotocol
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/runner.py", line 113 in pytest_runtest_protocol
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 80 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 112 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 433 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/main.py", line 347 in pytest_runtestloop
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 80 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 112 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 433 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/main.py", line 322 in _main
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/main.py", line 268 in wrap_session
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/main.py", line 315 in pytest_cmdline_main
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_callers.py", line 80 in _multicall
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_manager.py", line 112 in _hookexec
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pluggy/_hooks.py", line 433 in __call__
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/config/__init__.py", line 165 in main
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/_pytest/config/__init__.py", line 188 in console_main
+  File "/home/ubuntu/.virtualenvs/dagsterdev/lib/python3.10/site-packages/pytest/__main__.py", line 5 in <module>
+  File "/usr/lib/python3.10/runpy.py", line 86 in _run_code
+  File "/usr/lib/python3.10/runpy.py", line 196 in _run_module_as_main
+
+Extension modules: charset_normalizer.md, pendulum.parsing._iso8601, pendulum._extensions._helpers, yaml._yaml, pydantic.typing, pydantic.errors, pydantic.version, pydantic.utils, pydantic.class_validators, pydantic.config, pydantic.color, pydantic.datetime_parse, pydantic.validators, pydantic.networks, pydantic.types, pydantic.json, pydantic.error_wrappers, pydantic.fields, pydantic.parse, pydantic.schema, pydantic.main, pydantic.dataclasses, pydantic.annotated_types, pydantic.decorator, pydantic.env_settings, pydantic.tools, pydantic, grpc._cython.cygrpc, google._upb._message, sqlalchemy.cimmutabledict, greenlet._greenlet, sqlalchemy.cprocessors, sqlalchemy.cresultproxy, markupsafe._speedups (total: 34)
+.s                                              [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_multiprocessing.py ...................                                        [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_op_concurrency.py ..........                                                  [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_priorities.py ..                                                              [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_step_delegating_executor.py ...........                                       [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_step_delegating_executor_retries.py ..                                        [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/engine_tests/test_step_handler.py .                                                             [ 72%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_execution_plan.py ...............                                     [ 73%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_execution_plan_composite.py ..                                        [ 73%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_execution_plan_reexecution.py ...                                     [ 73%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_execution_plan_subset.py ...                                          [ 73%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_external_step.py .................                                    [ 73%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_host_run_worker.py ..                                                 [ 73%]
+python_modules/dagster/dagster_tests/execution_tests/execution_plan_tests/test_objects.py .                                                          [ 73%]
+python_modules/dagster/dagster_tests/general_tests/test_api.py .....                                                                                 [ 73%]
+python_modules/dagster/dagster_tests/general_tests/test_deprecations.py ..                                                                           [ 73%]
+python_modules/dagster/dagster_tests/general_tests/test_import.py .                                                                                  [ 73%]
+python_modules/dagster/dagster_tests/general_tests/test_internal_init_implementations.py ......                                                      [ 73%]
+python_modules/dagster/dagster_tests/general_tests/test_pending_repository.py .......                                                                [ 74%]
+python_modules/dagster/dagster_tests/general_tests/test_repository.py .......                                                                        [ 74%]
+python_modules/dagster/dagster_tests/general_tests/test_serdes.py .................................                                                  [ 74%]
+python_modules/dagster/dagster_tests/general_tests/test_serdes_rpc.py ....                                                                           [ 74%]
+python_modules/dagster/dagster_tests/general_tests/check_tests/test_check.py ....................................................................... [ 76%]
+..................................................................                                                                                   [ 77%]
+python_modules/dagster/dagster_tests/general_tests/compat_tests/test_back_compat.py .....................................                            [ 78%]
+python_modules/dagster/dagster_tests/general_tests/compat_tests/test_change_snapshot_structure.py .                                                  [ 78%]
+python_modules/dagster/dagster_tests/general_tests/compat_tests/test_dead_events.py ..                                                               [ 78%]
+python_modules/dagster/dagster_tests/general_tests/compat_tests/test_execution_plan_snapshot.py .                                                    [ 78%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_compile.py .                                                                      [ 78%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_grpc_server_registry.py .....                                                     [ 78%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_health_check.py ..                                                                [ 78%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_heartbeat.py .                                                                    [ 78%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_persistent.py .................................                                   [ 78%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_ping.py s......s.........                                                         [ 79%]
+python_modules/dagster/dagster_tests/general_tests/grpc_tests/test_watch_server.py .....                                                             [ 79%]
+python_modules/dagster/dagster_tests/general_tests/py3_tests/test_inference.py ......................................                                [ 79%]
+python_modules/dagster/dagster_tests/general_tests/py3_tests/test_type_examples_py3.py .................................                             [ 80%]
+python_modules/dagster/dagster_tests/general_tests/seven_tests/test_seven.py ...........                                                             [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_backoff.py ..                                                                    [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_cached_method.py ....                                                            [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_camelcase.py .                                                                   [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_enum.py .                                                                        [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_file_utils.py ..                                                                 [ 80%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_indenting_printer.py ............                                                [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_list_pull.py ...                                                                 [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_merger.py ......                                                                 [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_net.py .                                                                         [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_op_isolation.py ............                                                     [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_signals.py .                                                                     [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_temp_file.py .                                                                   [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_timing.py ...                                                                    [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_typing_api.py .......                                                            [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_utils.py ....                                                                    [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_warnings.py ......                                                               [ 81%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/test_yaml.py ......                                                                   [ 82%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/log_tests/test_json_logging.py ....                                                   [ 82%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/log_tests/test_single_handler.py .                                                    [ 82%]
+python_modules/dagster/dagster_tests/general_tests/utils_tests/log_tests/test_structured_logging.py ..                                               [ 82%]
+python_modules/dagster/dagster_tests/launcher_tests/test_default_run_launcher.py ...................                                                 [ 82%]
+python_modules/dagster/dagster_tests/launcher_tests/test_persistent_grpc_run_launcher.py ....                                                        [ 82%]
+python_modules/dagster/dagster_tests/logging_tests/test_log_capture.py .                                                                             [ 82%]
+python_modules/dagster/dagster_tests/logging_tests/test_log_manager.py .........                                                                     [ 82%]
+python_modules/dagster/dagster_tests/logging_tests/test_logging.py .....................                                                             [ 83%]
+python_modules/dagster/dagster_tests/logging_tests/test_python_logging.py ..........................................                                 [ 83%]
+python_modules/dagster/dagster_tests/logging_tests/test_stdout.py ..........                                                                         [ 84%]
+python_modules/dagster/dagster_tests/scheduler_tests/test_cron_string_iterator.py .....                                                              [ 84%]
+python_modules/dagster/dagster_tests/scheduler_tests/test_no_instance_with_no_resources_on_schedule.py ..                                            [ 84%]
+python_modules/dagster/dagster_tests/scheduler_tests/test_pythonic_resources.py ....                                                                 [ 84%]
+python_modules/dagster/dagster_tests/scheduler_tests/test_schedule_iterator.py ........                                                              [ 84%]
+python_modules/dagster/dagster_tests/scheduler_tests/test_scheduler_failure_recovery.py ............                                                 [ 84%]
+python_modules/dagster/dagster_tests/scheduler_tests/test_scheduler_run.py ......................................................................... [ 86%]
+.....                                                                                                                                                [ 86%]
+python_modules/dagster/dagster_tests/scheduler_tests/test_scheduler_timezones.py ..................                                                  [ 86%]
+python_modules/dagster/dagster_tests/scheduler_tests/test_scheduler_utils.py .                                                                       [ 86%]
+python_modules/dagster/dagster_tests/storage_tests/test_asset_events.py .....                                                                        [ 86%]
+python_modules/dagster/dagster_tests/storage_tests/test_asset_lineage.py s                                                                           [ 86%]
+python_modules/dagster/dagster_tests/storage_tests/test_asset_value_loader.py ..........                                                             [ 86%]
+python_modules/dagster/dagster_tests/storage_tests/test_assets.py ........                                                                           [ 86%]
+python_modules/dagster/dagster_tests/storage_tests/test_captured_log_manager.py ...ss....                                                            [ 87%]
+python_modules/dagster/dagster_tests/storage_tests/test_compute_log_manager.py ...                                                                   [ 87%]
+python_modules/dagster/dagster_tests/storage_tests/test_daemon_cursor_storage.py ...                                                                 [ 87%]
+python_modules/dagster/dagster_tests/storage_tests/test_dagster_run.py ....                                                                          [ 87%]
+python_modules/dagster/dagster_tests/storage_tests/test_db_io_manager.py .............                                                               [ 87%]
+python_modules/dagster/dagster_tests/storage_tests/test_defensive_row_unpack.py ......                                                               [ 87%]
+python_modules/dagster/dagster_tests/storage_tests/test_event_log.py ..............................s....s.s.....................................ssss [ 89%]
+ssss..............................s.s..s......................ssss...........ssssssss.................................s.ss.s........................ [ 91%]
+.............ssssssss..........ss..............s...s.s..s......................ssss.ss........ssssssss                                               [ 93%]
+python_modules/dagster/dagster_tests/storage_tests/test_fs_io_manager.py ..............                                                              [ 93%]
+python_modules/dagster/dagster_tests/storage_tests/test_input_manager.py ..................                                                          [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_manager.py ..................................                                             [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_manager_asset_metadata.py .......                                                         [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_manager_composites.py .....                                                               [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_manager_multiprocess.py .                                                                 [ 94%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_managers_pythonic_config.py ...............                                               [ 95%]
+python_modules/dagster/dagster_tests/storage_tests/test_io_managers_with_graphs.py .....                                                             [ 95%]
+python_modules/dagster/dagster_tests/storage_tests/test_job_run.py ....                                                                              [ 95%]
+python_modules/dagster/dagster_tests/storage_tests/test_local_file_manager.py ...                                                                    [ 95%]
+python_modules/dagster/dagster_tests/storage_tests/test_local_instance.py .........                                                                  [ 95%]
+python_modules/dagster/dagster_tests/storage_tests/test_memoizable_io_manager.py ...                                                                 [ 95%]
+python_modules/dagster/dagster_tests/storage_tests/test_partition_status_cache.py ............                                                       [ 95%]
+python_modules/dagster/dagster_tests/storage_tests/test_polling_event_watcher.py .                                                                   [ 95%]
+python_modules/dagster/dagster_tests/storage_tests/test_run_storage.py ............................................s........ss................sss... [ 97%]
+.sss..........................................                                                                                                       [ 98%]
+python_modules/dagster/dagster_tests/storage_tests/test_schedule_storage.py ...................................................................      [ 99%]
+python_modules/dagster/dagster_tests/storage_tests/test_schema_compat.py .                                                                           [ 99%]
+python_modules/dagster/dagster_tests/storage_tests/test_upath_io_manager.py ..........................F.F                                            [ 99%]
+python_modules/dagster/dagster_tests/storage_tests/branching_io_manager_tests/test_branching_io_manager.py ....                                      [ 99%]
+python_modules/dagster/dagster_tests/storage_tests/branching_io_manager_tests/test_partitioned_branching_io_manager.py ..                            [100%]
+
+========================================================================= FAILURES =========================================================================
+_________________________________________________________________ test_deprecated_resource _________________________________________________________________
+
+    def test_deprecated_resource():
+        @deprecated_bound
+        @resource
+        def foo():
+            ...
+    
+        assert is_deprecated(foo)
+    
+        with pytest.warns(
+            DeprecationWarning,
+            match=r"Dagster resource `[^`]+foo` is deprecated and will be removed in 2.0",
+        ) as warning:
+            foo()
+>           assert warning[0].filename.endswith("test_annotations.py")
+E           AssertionError: assert False
+E            +  where False = <built-in method endswith of str object at 0x7ffb01ff9740>('test_annotations.py')
+E            +    where <built-in method endswith of str object at 0x7ffb01ff9740> = '/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/sqlalchemy_compat.py'.endswith
+E            +      where '/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/sqlalchemy_compat.py' = <warnings.WarningMessage object at 0x7ffafc91cdc0>.filename
+
+python_modules/dagster/dagster_tests/test_annotations.py:272: AssertionError
+___________________________________________________ test_upath_io_manager_async_multiple_time_partitions ___________________________________________________
+
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7ffac44a01f0>, force_local_execution = False
+
+    def dagster_event_sequence_for_step(
+        step_context: StepExecutionContext, force_local_execution: bool = False
+    ) -> Iterator[DagsterEvent]:
+        """Yield a sequence of dagster events for the given step with the step context.
+    
+        This function also processes errors. It handles a few error cases:
+    
+            (1) User code requests to be retried:
+                A RetryRequested has been raised. We will either put the step in to
+                up_for_retry state or a failure state depending on the number of previous attempts
+                and the max_retries on the received RetryRequested.
+    
+            (2) User code fails successfully:
+                The user-space code has raised a Failure which may have
+                explicit metadata attached.
+    
+            (3) User code fails unexpectedly:
+                The user-space code has raised an Exception. It has been
+                wrapped in an exception derived from DagsterUserCodeException. In that
+                case the original user exc_info is stashed on the exception
+                as the original_exc_info property.
+    
+            (4) Execution interrupted:
+                The run was interrupted in the middle of execution (typically by a
+                termination request).
+    
+            (5) Dagster framework error:
+                The framework raised a DagsterError that indicates a usage error
+                or some other error not communicated by a user-thrown exception. For example,
+                if the user yields an object out of a compute function that is not a
+                proper event (not an Output, ExpectationResult, etc).
+    
+            (6) All other errors:
+                An unexpected error occurred. Either there has been an internal error in the framework
+                OR we have forgotten to put a user code error boundary around invoked user-space code.
+    
+    
+        The "raised_dagster_errors" context manager can be used to force these errors to be
+        re-raised and surfaced to the user. This is mostly to get sensible errors in test and
+        ad-hoc contexts, rather than forcing the user to wade through the
+        JobExecutionResult API in order to find the step that failed.
+    
+        For tools, however, this option should be false, and a sensible error message
+        signaled to the user within that tool.
+    
+        When we launch a step that has a step launcher, we use this function on both the host process
+        and the remote process. When we run the step in the remote process, to prevent an infinite loop
+        of launching steps that then launch steps, and so on, the remote process will run this with
+        the force_local_execution argument set to True.
+        """
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        try:
+            if step_context.step_launcher and not force_local_execution:
+                # info all on step_context - should deprecate second arg
+                step_events = step_context.step_launcher.launch_step(step_context)
+            else:
+                step_events = core_dagster_event_sequence_for_step(step_context)
+    
+>           for step_event in check.generator(step_events):
+
+python_modules/dagster/dagster/_core/execution/plan/execute_plan.py:273: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7ffac44a01f0>
+
+    def core_dagster_event_sequence_for_step(
+        step_context: StepExecutionContext,
+    ) -> Iterator[DagsterEvent]:
+        """Execute the step within the step_context argument given the in-memory
+        events. This function yields a sequence of DagsterEvents, but without
+        catching any exceptions that have bubbled up during the computation
+        of the step.
+        """
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        if step_context.previous_attempt_count > 0:
+            yield DagsterEvent.step_restarted_event(step_context, step_context.previous_attempt_count)
+        else:
+            yield DagsterEvent.step_start_event(step_context)
+    
+        inputs = {}
+    
+        if step_context.is_sda_step:
+            step_context.fetch_external_input_asset_version_info()
+    
+        for step_input in step_context.step.step_inputs:
+            input_def = step_context.op_def.input_def_named(step_input.name)
+            dagster_type = input_def.dagster_type
+    
+            if dagster_type.is_nothing:
+                continue
+    
+>           for event_or_input_value in step_input.source.load_input_object(step_context, input_def):
+
+python_modules/dagster/dagster/_core/execution/plan/execute_step.py:372: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = FromSourceAsset(node_handle=NodeHandle(name='downstream_asset', parent=None), input_name='upstream_asset')
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7ffac44a01f0>
+input_def = <dagster._core.definitions.input.InputDefinition object at 0x7ffab447f340>
+
+    def load_input_object(
+        self,
+        step_context: "StepExecutionContext",
+        input_def: InputDefinition,
+    ) -> Iterator[object]:
+        from dagster._core.definitions.asset_layer import AssetOutputInfo
+        from dagster._core.events import DagsterEvent
+        from dagster._core.execution.context.output import OutputContext
+    
+        asset_layer = step_context.job_def.asset_layer
+    
+        input_asset_key = asset_layer.asset_key_for_input(
+            self.node_handle, input_name=self.input_name
+        )
+        assert input_asset_key is not None
+    
+        input_manager_key = (
+            input_def.input_manager_key
+            if input_def.input_manager_key
+            else asset_layer.io_manager_key_for_asset(input_asset_key)
+        )
+    
+        op_config = step_context.resolved_run_config.ops.get(str(self.node_handle))
+        config_data = op_config.inputs.get(self.input_name) if op_config else None
+    
+        loader = getattr(step_context.resources, input_manager_key)
+        resources = build_resources_for_manager(input_manager_key, step_context)
+        resource_config = step_context.resolved_run_config.resources[input_manager_key].config
+        load_input_context = step_context.for_input_manager(
+            input_def.name,
+            config_data,
+            metadata=input_def.metadata,
+            dagster_type=input_def.dagster_type,
+            resource_config=resource_config,
+            resources=resources,
+            artificial_output_context=OutputContext(
+                resources=resources,
+                asset_info=AssetOutputInfo(
+                    key=input_asset_key,
+                    partitions_def=asset_layer.partitions_def_for_asset(input_asset_key),
+                ),
+                name=input_asset_key.path[-1],
+                step_key="none",
+                metadata=asset_layer.metadata_for_asset(input_asset_key),
+                resource_config=resource_config,
+                log_manager=step_context.log,
+            ),
+        )
+    
+>       yield from _load_input_with_input_manager(loader, load_input_context)
+
+python_modules/dagster/dagster/_core/execution/plan/inputs.py:187: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input_manager = AsyncJSONIOManager(base_dir='/tmp/pytest-of-ubuntu/pytest-0/test_upath_io_manager_async_mu0', _state__internal__=Confi...ed_resources={}, resource_context=<dagster._core.execution.context.init.InitResourceContext object at 0x7ffab47c3430>))
+context = <dagster._core.execution.context.input.InputContext object at 0x7ffac44a3dc0>
+
+    def _load_input_with_input_manager(
+        input_manager: "InputManager", context: "InputContext"
+    ) -> Iterator[object]:
+        from dagster._core.execution.context.system import StepExecutionContext
+    
+        step_context = cast(StepExecutionContext, context.step_context)
+>       with op_execution_error_boundary(
+            DagsterExecutionLoadInputError,
+            msg_fn=lambda: f'Error occurred while loading input "{context.name}" of step "{step_context.step.key}":',
+            step_context=step_context,
+            step_key=step_context.step.key,
+            input_name=context.name,
+        ):
+
+python_modules/dagster/dagster/_core/execution/plan/inputs.py:780: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <contextlib._GeneratorContextManager object at 0x7ffac44a1480>, typ = <class 'RuntimeError'>
+value = RuntimeError("There is no current event loop in thread 'MainThread'."), traceback = <traceback object at 0x7ffaa7af9f80>
+
+    def __exit__(self, typ, value, traceback):
+        if typ is None:
+            try:
+                next(self.gen)
+            except StopIteration:
+                return False
+            else:
+                raise RuntimeError("generator didn't stop")
+        else:
+            if value is None:
+                # Need to force instantiation so we can reliably
+                # tell if we get the same exception back
+                value = typ()
+            try:
+>               self.gen.throw(typ, value, traceback)
+
+/usr/lib/python3.10/contextlib.py:153: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+error_cls = <class 'dagster._core.errors.DagsterExecutionLoadInputError'>
+msg_fn = <function _load_input_with_input_manager.<locals>.<lambda> at 0x7ffad55a40d0>
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7ffac44a01f0>
+kwargs = {'input_name': 'upstream_asset', 'step_key': 'downstream_asset'}
+StepExecutionContext = <class 'dagster._core.execution.context.system.StepExecutionContext'>, retry_policy = None
+
+    @contextmanager
+    def op_execution_error_boundary(
+        error_cls: Type[DagsterUserCodeExecutionError],
+        msg_fn: Callable[[], str],
+        step_context: "StepExecutionContext",
+        **kwargs: Any,
+    ) -> Iterator[None]:
+        """A specialization of user_code_error_boundary for the steps involved in executing a solid.
+        This variant supports the control flow exceptions RetryRequested and Failure as well
+        as respecting the RetryPolicy if present.
+        """
+        from dagster._core.execution.context.system import StepExecutionContext
+    
+        check.callable_param(msg_fn, "msg_fn")
+        check.class_param(error_cls, "error_cls", superclass=DagsterUserCodeExecutionError)
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        with raise_execution_interrupts():
+            step_context.log.begin_python_log_capture()
+            retry_policy = step_context.op_retry_policy
+    
+            try:
+                yield
+            except DagsterError as de:
+                # The system has thrown an error that is part of the user-framework contract
+                raise de
+    
+            except Exception as e:
+                # An exception has been thrown by user code and computation should cease
+                # with the error reported further up the stack
+    
+                # Directly thrown RetryRequested escalate before evaluating the retry policy.
+                if isinstance(e, RetryRequested):
+                    raise e
+    
+                if retry_policy:
+                    # if Failure with allow_retries set to false, disregard retry policy and raise
+                    if isinstance(e, Failure) and not e.allow_retries:
+                        raise e
+    
+                    raise RetryRequestedFromPolicy(
+                        max_retries=retry_policy.max_retries,
+                        seconds_to_wait=retry_policy.calculate_delay(
+                            step_context.previous_attempt_count + 1
+                        ),
+                    ) from e
+    
+                # Failure exceptions get re-throw without wrapping
+                if isinstance(e, Failure):
+                    raise e
+    
+                # Otherwise wrap the user exception with context
+>               raise error_cls(
+                    msg_fn(),
+                    user_exception=e,
+                    original_exc_info=sys.exc_info(),
+                    **kwargs,
+                ) from e
+E               dagster._core.errors.DagsterExecutionLoadInputError: Error occurred while loading input "upstream_asset" of step "downstream_asset":
+
+python_modules/dagster/dagster/_core/execution/plan/utils.py:84: DagsterExecutionLoadInputError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-0/test_upath_io_manager_async_mu0')
+daily = TimeWindowPartitionsDefinition(start=1640995200.0, timezone='UTC', fmt='%Y-%m-%d', end_offset=0, cron_schedule='0 0 * * *')
+start = datetime.datetime(2022, 1, 1, 0, 0)
+
+    @requires_python38
+    def test_upath_io_manager_async_multiple_time_partitions(
+        tmp_path: Path,
+        daily: DailyPartitionsDefinition,
+        start: datetime,
+    ):
+        manager = AsyncJSONIOManager(base_dir=str(tmp_path))
+    
+        @asset(partitions_def=daily, io_manager_def=manager)
+        def upstream_asset(context: AssetExecutionContext) -> str:
+            return context.partition_key
+    
+        @asset(
+            partitions_def=daily,
+            io_manager_def=manager,
+            ins={
+                "upstream_asset": AssetIn(partition_mapping=TimeWindowPartitionMapping(start_offset=-1))
+            },
+        )
+        def downstream_asset(upstream_asset: Dict[str, str]):
+            return upstream_asset
+    
+        for days in range(2):
+            materialize(
+                [upstream_asset],
+                partition_key=(start + timedelta(days=days)).strftime(daily.fmt),
+            )
+    
+>       result = materialize(
+            [upstream_asset.to_source_asset(), downstream_asset],
+            partition_key=(start + timedelta(days=1)).strftime(daily.fmt),
+        )
+
+python_modules/dagster/dagster_tests/storage_tests/test_upath_io_manager.py:600: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python_modules/dagster/dagster/_core/definitions/materialize.py:103: in materialize
+    return check.not_none(
+python_modules/dagster/dagster/_core/definitions/job_definition.py:701: in execute_in_process
+    return core_execute_in_process(
+python_modules/dagster/dagster/_core/execution/execute_in_process.py:76: in core_execute_in_process
+    event_list = list(execute_run_iterable)
+python_modules/dagster/dagster/_core/execution/api.py:868: in __iter__
+    yield from self.iterator(
+python_modules/dagster/dagster/_core/execution/api.py:757: in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+python_modules/dagster/dagster/_core/executor/in_process.py:55: in execute
+    yield from iter(
+python_modules/dagster/dagster/_core/execution/api.py:868: in __iter__
+    yield from self.iterator(
+python_modules/dagster/dagster/_core/executor/in_process.py:26: in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+python_modules/dagster/dagster/_core/execution/plan/execute_plan.py:119: in inner_plan_execution_iterator
+    for step_event in check.generator(
+python_modules/dagster/dagster/_core/execution/plan/execute_plan.py:347: in dagster_event_sequence_for_step
+    raise dagster_user_error.user_exception
+python_modules/dagster/dagster/_core/execution/plan/utils.py:54: in op_execution_error_boundary
+    yield
+python_modules/dagster/dagster/_core/execution/plan/inputs.py:787: in _load_input_with_input_manager
+    value = input_manager.load_input(context)
+python_modules/dagster/dagster/_core/storage/upath_io_manager.py:426: in load_input
+    return self._load_multiple_inputs(context)
+python_modules/dagster/dagster/_core/storage/upath_io_manager.py:388: in _load_multiple_inputs
+    awaited_objects = asyncio.get_event_loop().run_until_complete(collect())
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <asyncio.unix_events._UnixDefaultEventLoopPolicy object at 0x7ffafcb24370>
+
+    def get_event_loop(self):
+        """Get the event loop for the current context.
+    
+        Returns an instance of EventLoop or raises an exception.
+        """
+        if (self._local._loop is None and
+                not self._local._set_called and
+                threading.current_thread() is threading.main_thread()):
+            self.set_event_loop(self.new_event_loop())
+    
+        if self._local._loop is None:
+>           raise RuntimeError('There is no current event loop in thread %r.'
+                               % threading.current_thread().name)
+E           RuntimeError: There is no current event loop in thread 'MainThread'.
+
+/usr/lib/python3.10/asyncio/events.py:656: RuntimeError
+------------------------------------------------------------------- Captured stderr call -------------------------------------------------------------------
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - ENGINE_EVENT - Executing steps in process (pid: 3939)
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - upstream_asset - RESOURCE_INIT_STARTED - Starting initialization of resources [upstream_asset__io_manager].
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - upstream_asset - RESOURCE_INIT_SUCCESS - Finished initialization of resources [upstream_asset__io_manager].
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - LOGS_CAPTURED - Started capturing logs in process (pid: 3939).
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - upstream_asset - STEP_START - Started execution of step "upstream_asset".
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - upstream_asset - STEP_OUTPUT - Yielded output "result" of type "String". (Type check passed).
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - upstream_asset - Writing file at: /tmp/pytest-of-ubuntu/pytest-0/test_upath_io_manager_async_mu0/upstream_asset/2022-01-01 using AsyncJSONIOManager...
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - upstream_asset - ASSET_MATERIALIZATION - Materialized value upstream_asset.
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - upstream_asset - HANDLED_OUTPUT - Handled output "result" using IO manager "upstream_asset__io_manager"
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - upstream_asset - STEP_SUCCESS - Finished execution of step "upstream_asset" in 7.3ms.
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - ENGINE_EVENT - Finished steps in process (pid: 3939) in 15ms
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 9891800b-3494-46f7-911f-b4b4305d5b7c - 3939 - RUN_SUCCESS - Finished execution of run for "__ephemeral_asset_job__".
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - ENGINE_EVENT - Executing steps in process (pid: 3939)
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - upstream_asset - RESOURCE_INIT_STARTED - Starting initialization of resources [upstream_asset__io_manager].
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - upstream_asset - RESOURCE_INIT_SUCCESS - Finished initialization of resources [upstream_asset__io_manager].
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - LOGS_CAPTURED - Started capturing logs in process (pid: 3939).
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - upstream_asset - STEP_START - Started execution of step "upstream_asset".
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - upstream_asset - STEP_OUTPUT - Yielded output "result" of type "String". (Type check passed).
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - upstream_asset - Writing file at: /tmp/pytest-of-ubuntu/pytest-0/test_upath_io_manager_async_mu0/upstream_asset/2022-01-02 using AsyncJSONIOManager...
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - upstream_asset - ASSET_MATERIALIZATION - Materialized value upstream_asset.
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - upstream_asset - HANDLED_OUTPUT - Handled output "result" using IO manager "upstream_asset__io_manager"
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - upstream_asset - STEP_SUCCESS - Finished execution of step "upstream_asset" in 7.15ms.
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - ENGINE_EVENT - Finished steps in process (pid: 3939) in 15ms
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 2c0b8118-0ba4-4c2a-bf94-80d43b20b8cc - 3939 - RUN_SUCCESS - Finished execution of run for "__ephemeral_asset_job__".
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 3ba7e2ed-6909-47d9-b5e7-8c6ea643ebcf - 3939 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 3ba7e2ed-6909-47d9-b5e7-8c6ea643ebcf - 3939 - ENGINE_EVENT - Executing steps in process (pid: 3939)
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 3ba7e2ed-6909-47d9-b5e7-8c6ea643ebcf - 3939 - downstream_asset - RESOURCE_INIT_STARTED - Starting initialization of resources [downstream_asset__io_manager, upstream_asset__io_manager].
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 3ba7e2ed-6909-47d9-b5e7-8c6ea643ebcf - 3939 - downstream_asset - RESOURCE_INIT_SUCCESS - Finished initialization of resources [downstream_asset__io_manager, upstream_asset__io_manager].
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 3ba7e2ed-6909-47d9-b5e7-8c6ea643ebcf - 3939 - LOGS_CAPTURED - Started capturing logs in process (pid: 3939).
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 3ba7e2ed-6909-47d9-b5e7-8c6ea643ebcf - 3939 - downstream_asset - STEP_START - Started execution of step "downstream_asset".
+2023-08-09 02:25:12 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 3ba7e2ed-6909-47d9-b5e7-8c6ea643ebcf - downstream_asset - Loading 2 partitions...
+2023-08-09 02:25:12 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 3ba7e2ed-6909-47d9-b5e7-8c6ea643ebcf - 3939 - downstream_asset - STEP_FAILURE - Execution of step "downstream_asset" failed.
+
+dagster._core.errors.DagsterExecutionLoadInputError: Error occurred while loading input "upstream_asset" of step "downstream_asset"::
+
+RuntimeError: There is no current event loop in thread 'MainThread'.
+
+Stack Trace:
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/inputs.py", line 787, in _load_input_with_input_manager
+    value = input_manager.load_input(context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/upath_io_manager.py", line 426, in load_input
+    return self._load_multiple_inputs(context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/upath_io_manager.py", line 388, in _load_multiple_inputs
+    awaited_objects = asyncio.get_event_loop().run_until_complete(collect())
+  File "/usr/lib/python3.10/asyncio/events.py", line 656, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+
+2023-08-09 02:25:12 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 3ba7e2ed-6909-47d9-b5e7-8c6ea643ebcf - 3939 - RUN_FAILURE - Execution of run for "__ephemeral_asset_job__" failed. An exception was thrown during execution.
+
+RuntimeError: There is no current event loop in thread 'MainThread'.
+
+Stack Trace:
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/api.py", line 757, in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/executor/in_process.py", line 55, in execute
+    yield from iter(
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/api.py", line 868, in __iter__
+    yield from self.iterator(
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/executor/in_process.py", line 26, in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 119, in inner_plan_execution_iterator
+    for step_event in check.generator(
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 347, in dagster_event_sequence_for_step
+    raise dagster_user_error.user_exception
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/inputs.py", line 787, in _load_input_with_input_manager
+    value = input_manager.load_input(context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/upath_io_manager.py", line 426, in load_input
+    return self._load_multiple_inputs(context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/upath_io_manager.py", line 388, in _load_multiple_inputs
+    awaited_objects = asyncio.get_event_loop().run_until_complete(collect())
+  File "/usr/lib/python3.10/asyncio/events.py", line 656, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+
+The above exception occurred during handling of the following exception:
+dagster._core.errors.DagsterExecutionLoadInputError: Error occurred while loading input "upstream_asset" of step "downstream_asset":
+
+Stack Trace:
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 273, in dagster_event_sequence_for_step
+    for step_event in check.generator(step_events):
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 372, in core_dagster_event_sequence_for_step
+    for event_or_input_value in step_input.source.load_input_object(step_context, input_def):
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/inputs.py", line 187, in load_input_object
+    yield from _load_input_with_input_manager(loader, load_input_context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/inputs.py", line 780, in _load_input_with_input_manager
+    with op_execution_error_boundary(
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 84, in op_execution_error_boundary
+    raise error_cls(
+
+-------------------------------------------------------------------- Captured log call ---------------------------------------------------------------------
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+___________________________________________________ test_upath_io_manager_async_allow_missing_partitions ___________________________________________________
+
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7ffaf604b1f0>, force_local_execution = False
+
+    def dagster_event_sequence_for_step(
+        step_context: StepExecutionContext, force_local_execution: bool = False
+    ) -> Iterator[DagsterEvent]:
+        """Yield a sequence of dagster events for the given step with the step context.
+    
+        This function also processes errors. It handles a few error cases:
+    
+            (1) User code requests to be retried:
+                A RetryRequested has been raised. We will either put the step in to
+                up_for_retry state or a failure state depending on the number of previous attempts
+                and the max_retries on the received RetryRequested.
+    
+            (2) User code fails successfully:
+                The user-space code has raised a Failure which may have
+                explicit metadata attached.
+    
+            (3) User code fails unexpectedly:
+                The user-space code has raised an Exception. It has been
+                wrapped in an exception derived from DagsterUserCodeException. In that
+                case the original user exc_info is stashed on the exception
+                as the original_exc_info property.
+    
+            (4) Execution interrupted:
+                The run was interrupted in the middle of execution (typically by a
+                termination request).
+    
+            (5) Dagster framework error:
+                The framework raised a DagsterError that indicates a usage error
+                or some other error not communicated by a user-thrown exception. For example,
+                if the user yields an object out of a compute function that is not a
+                proper event (not an Output, ExpectationResult, etc).
+    
+            (6) All other errors:
+                An unexpected error occurred. Either there has been an internal error in the framework
+                OR we have forgotten to put a user code error boundary around invoked user-space code.
+    
+    
+        The "raised_dagster_errors" context manager can be used to force these errors to be
+        re-raised and surfaced to the user. This is mostly to get sensible errors in test and
+        ad-hoc contexts, rather than forcing the user to wade through the
+        JobExecutionResult API in order to find the step that failed.
+    
+        For tools, however, this option should be false, and a sensible error message
+        signaled to the user within that tool.
+    
+        When we launch a step that has a step launcher, we use this function on both the host process
+        and the remote process. When we run the step in the remote process, to prevent an infinite loop
+        of launching steps that then launch steps, and so on, the remote process will run this with
+        the force_local_execution argument set to True.
+        """
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        try:
+            if step_context.step_launcher and not force_local_execution:
+                # info all on step_context - should deprecate second arg
+                step_events = step_context.step_launcher.launch_step(step_context)
+            else:
+                step_events = core_dagster_event_sequence_for_step(step_context)
+    
+>           for step_event in check.generator(step_events):
+
+python_modules/dagster/dagster/_core/execution/plan/execute_plan.py:273: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7ffaf604b1f0>
+
+    def core_dagster_event_sequence_for_step(
+        step_context: StepExecutionContext,
+    ) -> Iterator[DagsterEvent]:
+        """Execute the step within the step_context argument given the in-memory
+        events. This function yields a sequence of DagsterEvents, but without
+        catching any exceptions that have bubbled up during the computation
+        of the step.
+        """
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        if step_context.previous_attempt_count > 0:
+            yield DagsterEvent.step_restarted_event(step_context, step_context.previous_attempt_count)
+        else:
+            yield DagsterEvent.step_start_event(step_context)
+    
+        inputs = {}
+    
+        if step_context.is_sda_step:
+            step_context.fetch_external_input_asset_version_info()
+    
+        for step_input in step_context.step.step_inputs:
+            input_def = step_context.op_def.input_def_named(step_input.name)
+            dagster_type = input_def.dagster_type
+    
+            if dagster_type.is_nothing:
+                continue
+    
+>           for event_or_input_value in step_input.source.load_input_object(step_context, input_def):
+
+python_modules/dagster/dagster/_core/execution/plan/execute_step.py:372: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = FromSourceAsset(node_handle=NodeHandle(name='downstream_asset', parent=None), input_name='upstream_asset')
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7ffaf604b1f0>
+input_def = <dagster._core.definitions.input.InputDefinition object at 0x7ffaf4ab6770>
+
+    def load_input_object(
+        self,
+        step_context: "StepExecutionContext",
+        input_def: InputDefinition,
+    ) -> Iterator[object]:
+        from dagster._core.definitions.asset_layer import AssetOutputInfo
+        from dagster._core.events import DagsterEvent
+        from dagster._core.execution.context.output import OutputContext
+    
+        asset_layer = step_context.job_def.asset_layer
+    
+        input_asset_key = asset_layer.asset_key_for_input(
+            self.node_handle, input_name=self.input_name
+        )
+        assert input_asset_key is not None
+    
+        input_manager_key = (
+            input_def.input_manager_key
+            if input_def.input_manager_key
+            else asset_layer.io_manager_key_for_asset(input_asset_key)
+        )
+    
+        op_config = step_context.resolved_run_config.ops.get(str(self.node_handle))
+        config_data = op_config.inputs.get(self.input_name) if op_config else None
+    
+        loader = getattr(step_context.resources, input_manager_key)
+        resources = build_resources_for_manager(input_manager_key, step_context)
+        resource_config = step_context.resolved_run_config.resources[input_manager_key].config
+        load_input_context = step_context.for_input_manager(
+            input_def.name,
+            config_data,
+            metadata=input_def.metadata,
+            dagster_type=input_def.dagster_type,
+            resource_config=resource_config,
+            resources=resources,
+            artificial_output_context=OutputContext(
+                resources=resources,
+                asset_info=AssetOutputInfo(
+                    key=input_asset_key,
+                    partitions_def=asset_layer.partitions_def_for_asset(input_asset_key),
+                ),
+                name=input_asset_key.path[-1],
+                step_key="none",
+                metadata=asset_layer.metadata_for_asset(input_asset_key),
+                resource_config=resource_config,
+                log_manager=step_context.log,
+            ),
+        )
+    
+>       yield from _load_input_with_input_manager(loader, load_input_context)
+
+python_modules/dagster/dagster/_core/execution/plan/inputs.py:187: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input_manager = AsyncJSONIOManager(base_dir='/tmp/pytest-of-ubuntu/pytest-0/test_upath_io_manager_async_al0', _state__internal__=Confi...ed_resources={}, resource_context=<dagster._core.execution.context.init.InitResourceContext object at 0x7ffaf61c7b50>))
+context = <dagster._core.execution.context.input.InputContext object at 0x7ffab475e470>
+
+    def _load_input_with_input_manager(
+        input_manager: "InputManager", context: "InputContext"
+    ) -> Iterator[object]:
+        from dagster._core.execution.context.system import StepExecutionContext
+    
+        step_context = cast(StepExecutionContext, context.step_context)
+>       with op_execution_error_boundary(
+            DagsterExecutionLoadInputError,
+            msg_fn=lambda: f'Error occurred while loading input "{context.name}" of step "{step_context.step.key}":',
+            step_context=step_context,
+            step_key=step_context.step.key,
+            input_name=context.name,
+        ):
+
+python_modules/dagster/dagster/_core/execution/plan/inputs.py:780: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <contextlib._GeneratorContextManager object at 0x7ffaf604bbb0>, typ = <class 'RuntimeError'>
+value = RuntimeError("There is no current event loop in thread 'MainThread'."), traceback = <traceback object at 0x7ffaffe9cd40>
+
+    def __exit__(self, typ, value, traceback):
+        if typ is None:
+            try:
+                next(self.gen)
+            except StopIteration:
+                return False
+            else:
+                raise RuntimeError("generator didn't stop")
+        else:
+            if value is None:
+                # Need to force instantiation so we can reliably
+                # tell if we get the same exception back
+                value = typ()
+            try:
+>               self.gen.throw(typ, value, traceback)
+
+/usr/lib/python3.10/contextlib.py:153: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+error_cls = <class 'dagster._core.errors.DagsterExecutionLoadInputError'>
+msg_fn = <function _load_input_with_input_manager.<locals>.<lambda> at 0x7ffaf5bfa5f0>
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7ffaf604b1f0>
+kwargs = {'input_name': 'upstream_asset', 'step_key': 'downstream_asset'}
+StepExecutionContext = <class 'dagster._core.execution.context.system.StepExecutionContext'>, retry_policy = None
+
+    @contextmanager
+    def op_execution_error_boundary(
+        error_cls: Type[DagsterUserCodeExecutionError],
+        msg_fn: Callable[[], str],
+        step_context: "StepExecutionContext",
+        **kwargs: Any,
+    ) -> Iterator[None]:
+        """A specialization of user_code_error_boundary for the steps involved in executing a solid.
+        This variant supports the control flow exceptions RetryRequested and Failure as well
+        as respecting the RetryPolicy if present.
+        """
+        from dagster._core.execution.context.system import StepExecutionContext
+    
+        check.callable_param(msg_fn, "msg_fn")
+        check.class_param(error_cls, "error_cls", superclass=DagsterUserCodeExecutionError)
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        with raise_execution_interrupts():
+            step_context.log.begin_python_log_capture()
+            retry_policy = step_context.op_retry_policy
+    
+            try:
+                yield
+            except DagsterError as de:
+                # The system has thrown an error that is part of the user-framework contract
+                raise de
+    
+            except Exception as e:
+                # An exception has been thrown by user code and computation should cease
+                # with the error reported further up the stack
+    
+                # Directly thrown RetryRequested escalate before evaluating the retry policy.
+                if isinstance(e, RetryRequested):
+                    raise e
+    
+                if retry_policy:
+                    # if Failure with allow_retries set to false, disregard retry policy and raise
+                    if isinstance(e, Failure) and not e.allow_retries:
+                        raise e
+    
+                    raise RetryRequestedFromPolicy(
+                        max_retries=retry_policy.max_retries,
+                        seconds_to_wait=retry_policy.calculate_delay(
+                            step_context.previous_attempt_count + 1
+                        ),
+                    ) from e
+    
+                # Failure exceptions get re-throw without wrapping
+                if isinstance(e, Failure):
+                    raise e
+    
+                # Otherwise wrap the user exception with context
+>               raise error_cls(
+                    msg_fn(),
+                    user_exception=e,
+                    original_exc_info=sys.exc_info(),
+                    **kwargs,
+                ) from e
+E               dagster._core.errors.DagsterExecutionLoadInputError: Error occurred while loading input "upstream_asset" of step "downstream_asset":
+
+python_modules/dagster/dagster/_core/execution/plan/utils.py:84: DagsterExecutionLoadInputError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-0/test_upath_io_manager_async_al0')
+daily = TimeWindowPartitionsDefinition(start=1640995200.0, timezone='UTC', fmt='%Y-%m-%d', end_offset=0, cron_schedule='0 0 * * *')
+start = datetime.datetime(2022, 1, 1, 0, 0)
+
+    @requires_python38
+    def test_upath_io_manager_async_allow_missing_partitions(
+        tmp_path: Path,
+        daily: DailyPartitionsDefinition,
+        start: datetime,
+    ):
+        manager = AsyncJSONIOManager(base_dir=str(tmp_path))
+    
+        @asset(partitions_def=daily, io_manager_def=manager)
+        def upstream_asset(context: AssetExecutionContext) -> str:
+            return context.partition_key
+    
+        @asset(
+            partitions_def=daily,
+            io_manager_def=manager,
+            ins={
+                "upstream_asset": AssetIn(
+                    partition_mapping=TimeWindowPartitionMapping(start_offset=-1),
+                    metadata={"allow_missing_partitions": True},
+                )
+            },
+        )
+        def downstream_asset(upstream_asset: Dict[str, str]):
+            return upstream_asset
+    
+        materialize(
+            [upstream_asset],
+            partition_key=start.strftime(daily.fmt),
+        )
+    
+>       result = materialize(
+            [upstream_asset.to_source_asset(), downstream_asset],
+            partition_key=(start + timedelta(days=1)).strftime(daily.fmt),
+        )
+
+python_modules/dagster/dagster_tests/storage_tests/test_upath_io_manager.py:672: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python_modules/dagster/dagster/_core/definitions/materialize.py:103: in materialize
+    return check.not_none(
+python_modules/dagster/dagster/_core/definitions/job_definition.py:701: in execute_in_process
+    return core_execute_in_process(
+python_modules/dagster/dagster/_core/execution/execute_in_process.py:76: in core_execute_in_process
+    event_list = list(execute_run_iterable)
+python_modules/dagster/dagster/_core/execution/api.py:868: in __iter__
+    yield from self.iterator(
+python_modules/dagster/dagster/_core/execution/api.py:757: in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+python_modules/dagster/dagster/_core/executor/in_process.py:55: in execute
+    yield from iter(
+python_modules/dagster/dagster/_core/execution/api.py:868: in __iter__
+    yield from self.iterator(
+python_modules/dagster/dagster/_core/executor/in_process.py:26: in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+python_modules/dagster/dagster/_core/execution/plan/execute_plan.py:119: in inner_plan_execution_iterator
+    for step_event in check.generator(
+python_modules/dagster/dagster/_core/execution/plan/execute_plan.py:347: in dagster_event_sequence_for_step
+    raise dagster_user_error.user_exception
+python_modules/dagster/dagster/_core/execution/plan/utils.py:54: in op_execution_error_boundary
+    yield
+python_modules/dagster/dagster/_core/execution/plan/inputs.py:787: in _load_input_with_input_manager
+    value = input_manager.load_input(context)
+python_modules/dagster/dagster/_core/storage/upath_io_manager.py:426: in load_input
+    return self._load_multiple_inputs(context)
+python_modules/dagster/dagster/_core/storage/upath_io_manager.py:388: in _load_multiple_inputs
+    awaited_objects = asyncio.get_event_loop().run_until_complete(collect())
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <asyncio.unix_events._UnixDefaultEventLoopPolicy object at 0x7ffafcb24370>
+
+    def get_event_loop(self):
+        """Get the event loop for the current context.
+    
+        Returns an instance of EventLoop or raises an exception.
+        """
+        if (self._local._loop is None and
+                not self._local._set_called and
+                threading.current_thread() is threading.main_thread()):
+            self.set_event_loop(self.new_event_loop())
+    
+        if self._local._loop is None:
+>           raise RuntimeError('There is no current event loop in thread %r.'
+                               % threading.current_thread().name)
+E           RuntimeError: There is no current event loop in thread 'MainThread'.
+
+/usr/lib/python3.10/asyncio/events.py:656: RuntimeError
+------------------------------------------------------------------- Captured stderr call -------------------------------------------------------------------
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - ENGINE_EVENT - Executing steps in process (pid: 3939)
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - upstream_asset - RESOURCE_INIT_STARTED - Starting initialization of resources [upstream_asset__io_manager].
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - upstream_asset - RESOURCE_INIT_SUCCESS - Finished initialization of resources [upstream_asset__io_manager].
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - LOGS_CAPTURED - Started capturing logs in process (pid: 3939).
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - upstream_asset - STEP_START - Started execution of step "upstream_asset".
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - upstream_asset - STEP_OUTPUT - Yielded output "result" of type "String". (Type check passed).
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - upstream_asset - Writing file at: /tmp/pytest-of-ubuntu/pytest-0/test_upath_io_manager_async_al0/upstream_asset/2022-01-01 using AsyncJSONIOManager...
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - upstream_asset - ASSET_MATERIALIZATION - Materialized value upstream_asset.
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - upstream_asset - HANDLED_OUTPUT - Handled output "result" using IO manager "upstream_asset__io_manager"
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - upstream_asset - STEP_SUCCESS - Finished execution of step "upstream_asset" in 7.32ms.
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - ENGINE_EVENT - Finished steps in process (pid: 3939) in 15ms
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 8703b919-80ec-4fb1-acd8-f2ea40a361d0 - 3939 - RUN_SUCCESS - Finished execution of run for "__ephemeral_asset_job__".
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+INFO:alembic.runtime.migration:Context impl SQLiteImpl.
+INFO:alembic.runtime.migration:Will assume non-transactional DDL.
+INFO:alembic.runtime.migration:Running stamp_revision  -> 5771160a95ad
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 48e4479e-57dc-485a-8291-891c6342023b - 3939 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 48e4479e-57dc-485a-8291-891c6342023b - 3939 - ENGINE_EVENT - Executing steps in process (pid: 3939)
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 48e4479e-57dc-485a-8291-891c6342023b - 3939 - downstream_asset - RESOURCE_INIT_STARTED - Starting initialization of resources [downstream_asset__io_manager, upstream_asset__io_manager].
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 48e4479e-57dc-485a-8291-891c6342023b - 3939 - downstream_asset - RESOURCE_INIT_SUCCESS - Finished initialization of resources [downstream_asset__io_manager, upstream_asset__io_manager].
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 48e4479e-57dc-485a-8291-891c6342023b - 3939 - LOGS_CAPTURED - Started capturing logs in process (pid: 3939).
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 48e4479e-57dc-485a-8291-891c6342023b - 3939 - downstream_asset - STEP_START - Started execution of step "downstream_asset".
+2023-08-09 02:25:13 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 48e4479e-57dc-485a-8291-891c6342023b - downstream_asset - Loading 2 partitions...
+2023-08-09 02:25:13 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 48e4479e-57dc-485a-8291-891c6342023b - 3939 - downstream_asset - STEP_FAILURE - Execution of step "downstream_asset" failed.
+
+dagster._core.errors.DagsterExecutionLoadInputError: Error occurred while loading input "upstream_asset" of step "downstream_asset"::
+
+RuntimeError: There is no current event loop in thread 'MainThread'.
+
+Stack Trace:
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/inputs.py", line 787, in _load_input_with_input_manager
+    value = input_manager.load_input(context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/upath_io_manager.py", line 426, in load_input
+    return self._load_multiple_inputs(context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/upath_io_manager.py", line 388, in _load_multiple_inputs
+    awaited_objects = asyncio.get_event_loop().run_until_complete(collect())
+  File "/usr/lib/python3.10/asyncio/events.py", line 656, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+
+2023-08-09 02:25:13 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 48e4479e-57dc-485a-8291-891c6342023b - 3939 - RUN_FAILURE - Execution of run for "__ephemeral_asset_job__" failed. An exception was thrown during execution.
+
+RuntimeError: There is no current event loop in thread 'MainThread'.
+
+Stack Trace:
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/api.py", line 757, in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/executor/in_process.py", line 55, in execute
+    yield from iter(
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/api.py", line 868, in __iter__
+    yield from self.iterator(
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/executor/in_process.py", line 26, in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 119, in inner_plan_execution_iterator
+    for step_event in check.generator(
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 347, in dagster_event_sequence_for_step
+    raise dagster_user_error.user_exception
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/inputs.py", line 787, in _load_input_with_input_manager
+    value = input_manager.load_input(context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/upath_io_manager.py", line 426, in load_input
+    return self._load_multiple_inputs(context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/storage/upath_io_manager.py", line 388, in _load_multiple_inputs
+    awaited_objects = asyncio.get_event_loop().run_until_complete(collect())
+  File "/usr/lib/python3.10/asyncio/events.py", line 656, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+
+The above exception occurred during handling of the following exception:
+dagster._core.errors.DagsterExecutionLoadInputError: Error occurred while loading input "upstream_asset" of step "downstream_asset":
+
+Stack Trace:
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 273, in dagster_event_sequence_for_step
+    for step_event in check.generator(step_events):
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 372, in core_dagster_event_sequence_for_step
+    for event_or_input_value in step_input.source.load_input_object(step_context, input_def):
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/inputs.py", line 187, in load_input_object
+    yield from _load_input_with_input_manager(loader, load_input_context)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/inputs.py", line 780, in _load_input_with_input_manager
+    with op_execution_error_boundary(
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/ubuntu/dagster/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 84, in op_execution_error_boundary
+    raise error_cls(
+
+-------------------------------------------------------------------- Captured log call ---------------------------------------------------------------------
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+INFO     alembic.runtime.migration:migration.py:213 Context impl SQLiteImpl.
+INFO     alembic.runtime.migration:migration.py:216 Will assume non-transactional DDL.
+INFO     alembic.runtime.migration:migration.py:621 Running stamp_revision  -> 5771160a95ad
+===================================================================== warnings summary =====================================================================
+python_modules/dagster/dagster_tests/core_tests/test_op_invocation.py::test_dynamic_output_async_non_gen
+  /home/ubuntu/dagster/python_modules/dagster/dagster_tests/core_tests/test_op_invocation.py:990: RuntimeWarning: coroutine '_type_check_output_wrapper.<locals>.type_check_coroutine' was never awaited
+    with pytest.raises(Exception):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+----------------------------------------------------------------- snapshot report summary ------------------------------------------------------------------
+31 snapshots passed.
+================================================================= short test summary info ==================================================================
+FAILED python_modules/dagster/dagster_tests/test_annotations.py::test_deprecated_resource - AssertionError: assert False
+FAILED python_modules/dagster/dagster_tests/storage_tests/test_upath_io_manager.py::test_upath_io_manager_async_multiple_time_partitions - RuntimeError: ...
+FAILED python_modules/dagster/dagster_tests/storage_tests/test_upath_io_manager.py::test_upath_io_manager_async_allow_missing_partitions - RuntimeError: ...
+===================================== 3 failed, 5444 passed, 76 skipped, 4 deselected, 1 warning in 3734.89s (1:02:14) =====================================
+just after pytest, Wed Aug  9 02:25:20 UTC 2023
