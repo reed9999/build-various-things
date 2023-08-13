@@ -88,11 +88,8 @@ resource "aws_spot_instance_request" "ohio-large-amazon" {
   instance_type = var.instance_types.large
   spot_price    = "0.08"
   key_name      = var.config.USE2.key_name
-
-  tags = {
-    Name = "ohio-large"
-  }
 }
+
 resource "aws_spot_instance_request" "ohio-c6a-large-ubuntu" {
   count     = var.quantities.USE2.c6a-large.ubuntu
   ami       = var.config.USE2.amis.ubuntu_amd
