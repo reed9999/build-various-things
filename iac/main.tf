@@ -161,14 +161,32 @@ output "instances" {
 }
 
 ## The experiment
-#
-#resource "aws_spot_instance_request" "ohio-micro-generic" {
-#  for_each = var.for_each_experiment
-#  ami      = (each == "ubuntu" ?
-#    var.config.USE2.amis.ubuntu_amd :
-#    var.config.USE2.amis.amazon_linux)
-#  user_data     = file("../ubuntu/bootstrap.sh")
-#  instance_type = var.instance_types.micro
-#  spot_price    = "0.04"
-#  key_name      = var.config.USE2.key_name
-#}
+locals {
+#  UBUNTU = {
+#    ami = var.config.USE2.amis.ubuntu_amd
+#    user_data = file("../ubuntu/bootstrap.sh")
+#  }
+  UBUNTU = {
+      ami = var.config.USE2.amis.ubuntu_amd
+      user_data = file("../ubuntu/bootstrap.sh")
+    }
+  AMAZON-LINUX = {
+    ami = var.config.USE2.amis.amazon_linux
+    user_data = file("../ec2/bootstrap.sh")
+  }
+  for_each_experiment = {
+    "ubuntu" = local.UBUNTU
+    "two" = local.UBUNTU
+  }
+}
+
+resource "aws_spot_instance_request" "ohio-micro-generic" {
+  for_each = local.for_each_experiment
+  //noinspection HILUnresolvedReference   # PyCharm doesn't like this syntax.
+  ami      = each.value.ami
+  //noinspection HILUnresolvedReference
+  user_data     = each.value.user_data
+  instance_type = var.instance_types.micro
+  spot_price    = "0.04"
+  key_name      = var.config.USE2.key_name
+}
