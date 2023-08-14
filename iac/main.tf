@@ -162,30 +162,69 @@ output "instances" {
 
 ## The experiment
 locals {
-#  UBUNTU = {
-#    ami = var.config.USE2.amis.ubuntu_amd
-#    user_data = file("../ubuntu/bootstrap.sh")
-#  }
+  #  UBUNTU = {
+  #    ami = var.config.USE2.amis.ubuntu_amd
+  #    user_data = file("../ubuntu/bootstrap.sh")
+  #  }
   UBUNTU = {
-      ami = var.config.USE2.amis.ubuntu_amd
-      user_data = file("../ubuntu/bootstrap.sh")
-    }
+    ami       = var.config.USE2.amis.ubuntu_amd
+    user_data = file("../ubuntu/bootstrap.sh")
+  }
   AMAZON-LINUX = {
-    ami = var.config.USE2.amis.amazon_linux
+    ami       = var.config.USE2.amis.amazon_linux
     user_data = file("../ec2/bootstrap.sh")
   }
-  for_each_experiment = {
-    "ubuntu" = local.UBUNTU
-    "two" = local.UBUNTU
+  MICRO = {
+    instance_type = var.instance_types.micro
+    spot_price    = "0.01"
+  }
+  C6A-LARGE = {
+    instance_type = var.instance_types.c6a-large
+    spot_price    = "0.09"
+  }
+
+  # for_each experiments
+  # Trying to make these into separate "variable" blocks didn't work because of
+  # "Variables may not be used here" so I need to work on refactoring a bit more.
+
+  ohio_instances = {
+        "ubuntu-micro-01" = {
+          image = local.UBUNTU
+          type = local.MICRO
+        }
+  }
+  other_region_instances = {
+    # This is not yet functional!!!
+    # The idea is that I use USE2 so much that there
+    # is no need to force an explicit custom AWS provider. However I like to play
+    # around with other regions at times, so here we need to construct the appropriate
+    # metadata.
+        "ubuntu-micro-01" = {
+          # Somehow we'll use this to look up AMI and region name
+          region = "USE1"
+          image = local.UBUNTU
+          type = local.MICRO
+        }
   }
 }
 
-resource "aws_spot_instance_request" "ohio-micro-generic" {
-  for_each = local.for_each_experiment
+resource "aws_spot_instance_request" "ohio-generic" {
+  for_each      = local.ohio_instances
   //noinspection HILUnresolvedReference   # PyCharm doesn't like this syntax.
-  ami      = each.value.ami
+  ami           = each.value.image.ami
   //noinspection HILUnresolvedReference
-  user_data     = each.value.user_data
+  user_data     = each.value.image.user_data
+  instance_type = var.instance_types.micro
+  spot_price    = "0.04"
+  key_name      = var.config.USE2.key_name
+}
+
+resource "aws_spot_instance_request" "other-region-generic" {
+  for_each      = {}
+  //noinspection HILUnresolvedReference   # PyCharm doesn't like this syntax.
+  ami           = each.value.image.ami
+  //noinspection HILUnresolvedReference
+  user_data     = each.value.image.user_data
   instance_type = var.instance_types.micro
   spot_price    = "0.04"
   key_name      = var.config.USE2.key_name

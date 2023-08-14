@@ -91,18 +91,12 @@ variable "quantities" {
   }
 }
 
-variable "for_each_experiment" {
-  default = [ "amazon",
-    "ubuntu",
-    "amazon" ]
-}
-
 variable "instance_types" {
   default = {
-    micro    = "t2.micro"  # Not available in Cape Town
-    t3-micro = "t3.micro"
-    large    = "m5.large"
-    c6a-large    = "c6a.large"
+    micro     = "t2.micro"  # Not available in Cape Town
+    t3-micro  = "t3.micro"
+    large     = "m5.large"
+    c6a-large = "c6a.large"
   }
 }
 
