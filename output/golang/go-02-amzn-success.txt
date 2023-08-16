@@ -1,0 +1,633 @@
+Last login: Wed Aug 16 15:26:41 on ttys003
+43228@ICFX947PQ4WPX iac % ssh -i "2023-07-build-ohio.pem" ec2-user@ec2-18-217-246-107.us-east-2.compute.amazonaws.com
+The authenticity of host 'ec2-18-217-246-107.us-east-2.compute.amazonaws.com (18.217.246.107)' can't be established.
+ED25519 key fingerprint is SHA256:Gnv4rh48xjvb/5+MaW6z1wizljQblxZ677VU9SjJJs4.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-18-217-246-107.us-east-2.compute.amazonaws.com' (ED25519) to the list of known hosts.
+
+A newer release of "Amazon Linux" is available.
+  Version 2023.1.20230809:
+Run "/usr/bin/dnf check-release-update" for full release and version update info
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-172-31-15-10 ~]$ vim scripts/ec2/golang.sh 
+[ec2-user@ip-172-31-15-10 ~]$ ^vim ^^
+scripts/ec2/golang.sh 
+Last metadata expiration check: 0:18:04 ago on Wed Aug 16 19:13:00 2023.
+====================================================================================================================================
+WARNING:
+  A newer release of "Amazon Linux" is available.
+
+  Available Versions:
+
+  Version 2023.1.20230809:
+    Run the following command to upgrade to 2023.1.20230809:
+
+      dnf upgrade --releasever=2023.1.20230809
+
+    Release notes:
+     https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html
+
+====================================================================================================================================
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:18:04 ago on Wed Aug 16 19:13:00 2023.
+Package git-2.40.1-1.amzn2023.0.1.x86_64 is already installed.
+Dependencies resolved.
+====================================================================================================================================
+ Package                            Architecture           Version                                Repository                   Size
+====================================================================================================================================
+Installing:
+ gcc                                x86_64                 11.3.1-4.amzn2023.0.3                  amazonlinux                  32 M
+Installing dependencies:
+ annobin-docs                       noarch                 10.93-1.amzn2023.0.1                   amazonlinux                  92 k
+ annobin-plugin-gcc                 x86_64                 10.93-1.amzn2023.0.1                   amazonlinux                 887 k
+ cpp                                x86_64                 11.3.1-4.amzn2023.0.3                  amazonlinux                  10 M
+ gc                                 x86_64                 8.0.4-5.amzn2023.0.2                   amazonlinux                 105 k
+ glibc-devel                        x86_64                 2.34-52.amzn2023.0.3                   amazonlinux                  48 k
+ glibc-headers-x86                  noarch                 2.34-52.amzn2023.0.3                   amazonlinux                 448 k
+ guile22                            x86_64                 2.2.7-2.amzn2023.0.2                   amazonlinux                 6.4 M
+ kernel-headers                     x86_64                 6.1.38-59.109.amzn2023                 amazonlinux                 1.4 M
+ libmpc                             x86_64                 1.2.1-2.amzn2023.0.2                   amazonlinux                  62 k
+ libtool-ltdl                       x86_64                 2.4.7-1.amzn2023.0.3                   amazonlinux                  38 k
+ libxcrypt-devel                    x86_64                 4.4.33-7.amzn2023                      amazonlinux                  32 k
+ make                               x86_64                 1:4.3-5.amzn2023.0.2                   amazonlinux                 534 k
+
+Transaction Summary
+====================================================================================================================================
+Install  13 Packages
+
+Total download size: 52 M
+Installed size: 167 M
+Downloading Packages:
+(1/13): glibc-devel-2.34-52.amzn2023.0.3.x86_64.rpm                                                 903 kB/s |  48 kB     00:00    
+(2/13): kernel-headers-6.1.38-59.109.amzn2023.x86_64.rpm                                             12 MB/s | 1.4 MB     00:00    
+(3/13): annobin-plugin-gcc-10.93-1.amzn2023.0.1.x86_64.rpm                                          9.1 MB/s | 887 kB     00:00    
+(4/13): make-4.3-5.amzn2023.0.2.x86_64.rpm                                                           13 MB/s | 534 kB     00:00    
+(5/13): libxcrypt-devel-4.4.33-7.amzn2023.x86_64.rpm                                                883 kB/s |  32 kB     00:00    
+(6/13): libtool-ltdl-2.4.7-1.amzn2023.0.3.x86_64.rpm                                                2.8 MB/s |  38 kB     00:00    
+(7/13): cpp-11.3.1-4.amzn2023.0.3.x86_64.rpm                                                         30 MB/s |  10 MB     00:00    
+(8/13): gc-8.0.4-5.amzn2023.0.2.x86_64.rpm                                                          2.3 MB/s | 105 kB     00:00    
+(9/13): libmpc-1.2.1-2.amzn2023.0.2.x86_64.rpm                                                      4.8 MB/s |  62 kB     00:00    
+(10/13): annobin-docs-10.93-1.amzn2023.0.1.noarch.rpm                                               1.3 MB/s |  92 kB     00:00    
+(11/13): glibc-headers-x86-2.34-52.amzn2023.0.3.noarch.rpm                                          9.4 MB/s | 448 kB     00:00    
+(12/13): guile22-2.2.7-2.amzn2023.0.2.x86_64.rpm                                                     20 MB/s | 6.4 MB     00:00    
+(13/13): gcc-11.3.1-4.amzn2023.0.3.x86_64.rpm                                                        38 MB/s |  32 MB     00:00    
+------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                55 MB/s |  52 MB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                            1/1 
+  Installing       : libmpc-1.2.1-2.amzn2023.0.2.x86_64                                                                        1/13 
+  Installing       : cpp-11.3.1-4.amzn2023.0.3.x86_64                                                                          2/13 
+  Installing       : glibc-headers-x86-2.34-52.amzn2023.0.3.noarch                                                             3/13 
+  Installing       : annobin-docs-10.93-1.amzn2023.0.1.noarch                                                                  4/13 
+  Installing       : gc-8.0.4-5.amzn2023.0.2.x86_64                                                                            5/13 
+  Installing       : libtool-ltdl-2.4.7-1.amzn2023.0.3.x86_64                                                                  6/13 
+  Installing       : guile22-2.2.7-2.amzn2023.0.2.x86_64                                                                       7/13 
+  Installing       : make-1:4.3-5.amzn2023.0.2.x86_64                                                                          8/13 
+  Installing       : kernel-headers-6.1.38-59.109.amzn2023.x86_64                                                              9/13 
+  Installing       : libxcrypt-devel-4.4.33-7.amzn2023.x86_64                                                                 10/13 
+  Installing       : glibc-devel-2.34-52.amzn2023.0.3.x86_64                                                                  11/13 
+  Installing       : gcc-11.3.1-4.amzn2023.0.3.x86_64                                                                         12/13 
+  Running scriptlet: gcc-11.3.1-4.amzn2023.0.3.x86_64                                                                         12/13 
+  Installing       : annobin-plugin-gcc-10.93-1.amzn2023.0.1.x86_64                                                           13/13 
+  Running scriptlet: annobin-plugin-gcc-10.93-1.amzn2023.0.1.x86_64                                                           13/13 
+  Verifying        : kernel-headers-6.1.38-59.109.amzn2023.x86_64                                                              1/13 
+  Verifying        : cpp-11.3.1-4.amzn2023.0.3.x86_64                                                                          2/13 
+  Verifying        : glibc-devel-2.34-52.amzn2023.0.3.x86_64                                                                   3/13 
+  Verifying        : gcc-11.3.1-4.amzn2023.0.3.x86_64                                                                          4/13 
+  Verifying        : annobin-plugin-gcc-10.93-1.amzn2023.0.1.x86_64                                                            5/13 
+  Verifying        : make-1:4.3-5.amzn2023.0.2.x86_64                                                                          6/13 
+  Verifying        : libxcrypt-devel-4.4.33-7.amzn2023.x86_64                                                                  7/13 
+  Verifying        : libtool-ltdl-2.4.7-1.amzn2023.0.3.x86_64                                                                  8/13 
+  Verifying        : gc-8.0.4-5.amzn2023.0.2.x86_64                                                                            9/13 
+  Verifying        : guile22-2.2.7-2.amzn2023.0.2.x86_64                                                                      10/13 
+  Verifying        : libmpc-1.2.1-2.amzn2023.0.2.x86_64                                                                       11/13 
+  Verifying        : annobin-docs-10.93-1.amzn2023.0.1.noarch                                                                 12/13 
+  Verifying        : glibc-headers-x86-2.34-52.amzn2023.0.3.noarch                                                            13/13 
+====================================================================================================================================
+WARNING:
+  A newer release of "Amazon Linux" is available.
+
+  Available Versions:
+
+  Version 2023.1.20230809:
+    Run the following command to upgrade to 2023.1.20230809:
+
+      dnf upgrade --releasever=2023.1.20230809
+
+    Release notes:
+     https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html
+
+====================================================================================================================================
+
+Installed:
+  annobin-docs-10.93-1.amzn2023.0.1.noarch                         annobin-plugin-gcc-10.93-1.amzn2023.0.1.x86_64                   
+  cpp-11.3.1-4.amzn2023.0.3.x86_64                                 gc-8.0.4-5.amzn2023.0.2.x86_64                                   
+  gcc-11.3.1-4.amzn2023.0.3.x86_64                                 glibc-devel-2.34-52.amzn2023.0.3.x86_64                          
+  glibc-headers-x86-2.34-52.amzn2023.0.3.noarch                    guile22-2.2.7-2.amzn2023.0.2.x86_64                              
+  kernel-headers-6.1.38-59.109.amzn2023.x86_64                     libmpc-1.2.1-2.amzn2023.0.2.x86_64                               
+  libtool-ltdl-2.4.7-1.amzn2023.0.3.x86_64                         libxcrypt-devel-4.4.33-7.amzn2023.x86_64                         
+  make-1:4.3-5.amzn2023.0.2.x86_64                                
+
+Complete!
+Last metadata expiration check: 0:18:09 ago on Wed Aug 16 19:13:00 2023.
+Dependencies resolved.
+====================================================================================================================================
+ Package                          Architecture           Version                                  Repository                   Size
+====================================================================================================================================
+Installing:
+ golang                           x86_64                 1.20.5-1.amzn2023.0.2                    amazonlinux                 600 k
+Installing dependencies:
+ apr                              x86_64                 1.7.2-2.amzn2023.0.2                     amazonlinux                 129 k
+ apr-util                         x86_64                 1.6.3-1.amzn2023.0.1                     amazonlinux                  98 k
+ emacs-filesystem                 noarch                 1:28.2-3.amzn2023.0.6                    amazonlinux                 9.5 k
+ golang-bin                       x86_64                 1.20.5-1.amzn2023.0.2                    amazonlinux                  58 M
+ golang-src                       noarch                 1.20.5-1.amzn2023.0.2                    amazonlinux                  11 M
+ libserf                          x86_64                 1.3.9-23.amzn2023.0.3                    amazonlinux                  58 k
+ subversion-libs                  x86_64                 1.14.2-5.amzn2023.0.3                    amazonlinux                 1.5 M
+ utf8proc                         x86_64                 2.6.1-2.amzn2023.0.2                     amazonlinux                  80 k
+Installing weak dependencies:
+ apr-util-openssl                 x86_64                 1.6.3-1.amzn2023.0.1                     amazonlinux                  17 k
+ mercurial                        x86_64                 5.7.1-1.amzn2023.0.3                     amazonlinux                 4.9 M
+ subversion                       x86_64                 1.14.2-5.amzn2023.0.3                    amazonlinux                 1.0 M
+
+Transaction Summary
+====================================================================================================================================
+Install  12 Packages
+
+Total download size: 77 M
+Installed size: 242 M
+Downloading Packages:
+(1/12): libserf-1.3.9-23.amzn2023.0.3.x86_64.rpm                                                    1.1 MB/s |  58 kB     00:00    
+(2/12): apr-1.7.2-2.amzn2023.0.2.x86_64.rpm                                                         8.1 MB/s | 129 kB     00:00    
+(3/12): subversion-libs-1.14.2-5.amzn2023.0.3.x86_64.rpm                                             19 MB/s | 1.5 MB     00:00    
+(4/12): subversion-1.14.2-5.amzn2023.0.3.x86_64.rpm                                                  14 MB/s | 1.0 MB     00:00    
+(5/12): golang-1.20.5-1.amzn2023.0.2.x86_64.rpm                                                     6.8 MB/s | 600 kB     00:00    
+(6/12): apr-util-1.6.3-1.amzn2023.0.1.x86_64.rpm                                                    5.5 MB/s |  98 kB     00:00    
+(7/12): apr-util-openssl-1.6.3-1.amzn2023.0.1.x86_64.rpm                                            1.3 MB/s |  17 kB     00:00    
+(8/12): utf8proc-2.6.1-2.amzn2023.0.2.x86_64.rpm                                                    1.5 MB/s |  80 kB     00:00    
+(9/12): mercurial-5.7.1-1.amzn2023.0.3.x86_64.rpm                                                    19 MB/s | 4.9 MB     00:00    
+(10/12): emacs-filesystem-28.2-3.amzn2023.0.6.noarch.rpm                                            771 kB/s | 9.5 kB     00:00    
+(11/12): golang-src-1.20.5-1.amzn2023.0.2.noarch.rpm                                                 26 MB/s |  11 MB     00:00    
+(12/12): golang-bin-1.20.5-1.amzn2023.0.2.x86_64.rpm                                                 54 MB/s |  58 MB     00:01    
+------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                69 MB/s |  77 MB     00:01     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Running scriptlet: golang-1.20.5-1.amzn2023.0.2.x86_64                                                                        1/1 
+  Preparing        :                                                                                                            1/1 
+  Installing       : apr-1.7.2-2.amzn2023.0.2.x86_64                                                                           1/12 
+  Installing       : apr-util-openssl-1.6.3-1.amzn2023.0.1.x86_64                                                              2/12 
+  Installing       : apr-util-1.6.3-1.amzn2023.0.1.x86_64                                                                      3/12 
+  Installing       : libserf-1.3.9-23.amzn2023.0.3.x86_64                                                                      4/12 
+  Installing       : emacs-filesystem-1:28.2-3.amzn2023.0.6.noarch                                                             5/12 
+  Installing       : mercurial-5.7.1-1.amzn2023.0.3.x86_64                                                                     6/12 
+  Installing       : golang-src-1.20.5-1.amzn2023.0.2.noarch                                                                   7/12 
+  Installing       : utf8proc-2.6.1-2.amzn2023.0.2.x86_64                                                                      8/12 
+  Installing       : subversion-libs-1.14.2-5.amzn2023.0.3.x86_64                                                              9/12 
+  Installing       : subversion-1.14.2-5.amzn2023.0.3.x86_64                                                                  10/12 
+  Running scriptlet: subversion-1.14.2-5.amzn2023.0.3.x86_64                                                                  10/12 
+  Installing       : golang-1.20.5-1.amzn2023.0.2.x86_64                                                                      11/12 
+  Installing       : golang-bin-1.20.5-1.amzn2023.0.2.x86_64                                                                  12/12 
+  Running scriptlet: golang-bin-1.20.5-1.amzn2023.0.2.x86_64                                                                  12/12 
+  Verifying        : subversion-libs-1.14.2-5.amzn2023.0.3.x86_64                                                              1/12 
+  Verifying        : golang-bin-1.20.5-1.amzn2023.0.2.x86_64                                                                   2/12 
+  Verifying        : libserf-1.3.9-23.amzn2023.0.3.x86_64                                                                      3/12 
+  Verifying        : apr-1.7.2-2.amzn2023.0.2.x86_64                                                                           4/12 
+  Verifying        : golang-1.20.5-1.amzn2023.0.2.x86_64                                                                       5/12 
+  Verifying        : subversion-1.14.2-5.amzn2023.0.3.x86_64                                                                   6/12 
+  Verifying        : apr-util-1.6.3-1.amzn2023.0.1.x86_64                                                                      7/12 
+  Verifying        : utf8proc-2.6.1-2.amzn2023.0.2.x86_64                                                                      8/12 
+  Verifying        : apr-util-openssl-1.6.3-1.amzn2023.0.1.x86_64                                                              9/12 
+  Verifying        : mercurial-5.7.1-1.amzn2023.0.3.x86_64                                                                    10/12 
+  Verifying        : golang-src-1.20.5-1.amzn2023.0.2.noarch                                                                  11/12 
+  Verifying        : emacs-filesystem-1:28.2-3.amzn2023.0.6.noarch                                                            12/12 
+====================================================================================================================================
+WARNING:
+  A newer release of "Amazon Linux" is available.
+
+  Available Versions:
+
+  Version 2023.1.20230809:
+    Run the following command to upgrade to 2023.1.20230809:
+
+      dnf upgrade --releasever=2023.1.20230809
+
+    Release notes:
+     https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes.html
+
+====================================================================================================================================
+
+Installed:
+  apr-1.7.2-2.amzn2023.0.2.x86_64                                  apr-util-1.6.3-1.amzn2023.0.1.x86_64                             
+  apr-util-openssl-1.6.3-1.amzn2023.0.1.x86_64                     emacs-filesystem-1:28.2-3.amzn2023.0.6.noarch                    
+  golang-1.20.5-1.amzn2023.0.2.x86_64                              golang-bin-1.20.5-1.amzn2023.0.2.x86_64                          
+  golang-src-1.20.5-1.amzn2023.0.2.noarch                          libserf-1.3.9-23.amzn2023.0.3.x86_64                             
+  mercurial-5.7.1-1.amzn2023.0.3.x86_64                            subversion-1.14.2-5.amzn2023.0.3.x86_64                          
+  subversion-libs-1.14.2-5.amzn2023.0.3.x86_64                     utf8proc-2.6.1-2.amzn2023.0.2.x86_64                             
+
+Complete!
+~ ~
+Cloning into 'go'...
+remote: Finding sources: 100% (16/16)
+remote: Total 584374 (delta 426061), reused 584370 (delta 426061)
+Receiving objects: 100% (584374/584374), 493.32 MiB | 36.17 MiB/s, done.
+Resolving deltas: 100% (426061/426061), done.
+Building Go cmd/dist using /usr/lib/golang. (go1.20.5 linux/amd64)
+Building Go toolchain1 using /usr/lib/golang.
+Building Go bootstrap cmd/go (go_bootstrap) using Go toolchain1.
+Building Go toolchain2 using go_bootstrap and Go toolchain1.
+Building Go toolchain3 using go_bootstrap and Go toolchain2.
+Building packages and commands for linux/amd64.
+
+##### Test execution environment.
+# GOARCH: amd64
+# CPU: AMD EPYC 7R13 Processor
+# GOOS: linux
+# OS Version: Linux 6.1.38-59.109.amzn2023.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Jul 11 23:51:29 UTC 2023 x86_64
+
+##### Testing packages.
+ok  	archive/tar	0.285s
+ok  	archive/zip	0.106s
+ok  	bufio	0.044s
+ok  	bytes	0.119s
+ok  	cmp	0.002s
+ok  	compress/bzip2	0.042s
+ok  	compress/flate	0.680s
+ok  	compress/gzip	1.641s
+ok  	compress/lzw	0.014s
+ok  	compress/zlib	0.017s
+ok  	container/heap	0.003s
+ok  	container/list	0.001s
+ok  	container/ring	0.001s
+ok  	context	0.017s
+ok  	crypto	0.001s
+ok  	crypto/aes	0.015s
+ok  	crypto/cipher	0.004s
+ok  	crypto/des	0.005s
+ok  	crypto/dsa	0.010s
+ok  	crypto/ecdh	0.034s
+ok  	crypto/ecdsa	0.023s
+ok  	crypto/ed25519	0.044s
+ok  	crypto/elliptic	0.005s
+ok  	crypto/hmac	0.002s
+ok  	crypto/internal/alias	0.001s
+ok  	crypto/internal/bigmod	0.154s
+ok  	crypto/internal/boring	0.001s
+ok  	crypto/internal/boring/bcache	0.150s
+ok  	crypto/internal/edwards25519	4.017s
+ok  	crypto/internal/edwards25519/field	3.249s
+ok  	crypto/internal/nistec	0.132s
+ok  	crypto/internal/nistec/fiat	0.001s [no tests to run]
+ok  	crypto/md5	0.003s
+ok  	crypto/rand	0.035s
+ok  	crypto/rc4	0.023s
+ok  	crypto/rsa	0.254s
+ok  	crypto/sha1	0.018s
+ok  	crypto/sha256	0.003s
+ok  	crypto/sha512	0.003s
+ok  	crypto/subtle	0.164s
+ok  	crypto/tls	0.570s
+ok  	crypto/x509	0.289s
+ok  	database/sql	0.493s
+ok  	database/sql/driver	0.001s
+ok  	debug/buildinfo	0.004s
+ok  	debug/dwarf	0.023s
+ok  	debug/elf	0.205s
+ok  	debug/gosym	0.162s
+ok  	debug/macho	0.010s
+ok  	debug/pe	0.020s
+ok  	debug/plan9obj	0.003s
+ok  	embed	0.003s [no tests to run]
+ok  	embed/internal/embedtest	0.001s
+ok  	encoding/ascii85	0.013s
+ok  	encoding/asn1	0.003s
+ok  	encoding/base32	0.025s
+ok  	encoding/base64	0.018s
+ok  	encoding/binary	0.002s
+ok  	encoding/csv	0.006s
+ok  	encoding/gob	2.445s
+ok  	encoding/hex	0.002s
+ok  	encoding/json	0.111s
+ok  	encoding/pem	0.294s
+ok  	encoding/xml	0.034s
+ok  	errors	0.016s
+ok  	expvar	0.018s
+ok  	flag	0.013s
+ok  	fmt	0.049s
+ok  	go/ast	0.003s
+ok  	go/build	1.620s
+ok  	go/build/constraint	0.002s
+ok  	go/constant	0.002s
+ok  	go/doc	0.092s
+ok  	go/doc/comment	0.810s
+ok  	go/format	0.005s
+ok  	go/importer	0.176s
+ok  	go/internal/gccgoimporter	0.015s
+ok  	go/internal/gcimporter	1.213s
+ok  	go/internal/srcimporter	6.892s
+ok  	go/parser	0.172s
+ok  	go/printer	0.170s
+ok  	go/scanner	0.002s
+ok  	go/token	0.013s
+ok  	go/types	4.013s
+ok  	hash	0.002s
+ok  	hash/adler32	0.005s
+ok  	hash/crc32	0.006s
+ok  	hash/crc64	0.002s
+ok  	hash/fnv	0.001s
+ok  	hash/maphash	0.053s
+ok  	html	0.003s
+ok  	html/template	0.045s
+ok  	image	0.056s
+ok  	image/color	0.014s
+ok  	image/draw	0.073s
+ok  	image/gif	0.207s
+ok  	image/jpeg	0.142s
+ok  	image/png	0.275s
+ok  	index/suffixarray	0.128s
+ok  	internal/abi	0.032s
+ok  	internal/buildcfg	0.001s
+ok  	internal/coverage/cformat	0.002s
+ok  	internal/coverage/cmerge	0.001s
+ok  	internal/coverage/pods	0.002s
+ok  	internal/coverage/slicereader	0.003s
+ok  	internal/coverage/slicewriter	0.001s
+ok  	internal/coverage/test	0.009s
+ok  	internal/cpu	0.004s
+ok  	internal/dag	0.001s
+ok  	internal/diff	0.025s
+ok  	internal/fmtsort	0.002s
+ok  	internal/fuzz	0.005s
+ok  	internal/godebug	0.280s
+ok  	internal/godebugs	0.008s
+ok  	internal/intern	0.147s
+ok  	internal/itoa	0.001s
+ok  	internal/platform	1.073s
+ok  	internal/poll	0.087s
+ok  	internal/profile	0.002s
+ok  	internal/reflectlite	0.002s
+ok  	internal/safefilepath	0.001s
+ok  	internal/saferio	0.014s
+ok  	internal/singleflight	0.014s
+ok  	internal/testenv	0.173s
+ok  	internal/trace	0.041s
+ok  	internal/types/errors	0.277s
+ok  	internal/unsafeheader	0.001s
+ok  	internal/xcoff	0.013s
+ok  	internal/zstd	0.138s
+ok  	io	0.026s
+ok  	io/fs	0.393s
+ok  	io/ioutil	0.003s
+ok  	log	0.003s
+ok  	log/slog	0.024s
+ok  	log/slog/internal/benchmarks	0.001s
+ok  	log/slog/internal/buffer	0.001s
+ok  	log/syslog	1.211s
+ok  	maps	0.001s
+ok  	math	0.004s
+ok  	math/big	0.946s
+ok  	math/bits	0.012s
+ok  	math/cmplx	0.002s
+ok  	math/rand	0.084s
+ok  	mime	0.005s
+ok  	mime/multipart	0.559s
+ok  	mime/quotedprintable	0.012s
+ok  	net	8.523s
+ok  	net/http	9.659s
+ok  	net/http/cgi	0.171s
+ok  	net/http/cookiejar	0.004s
+ok  	net/http/fcgi	0.204s
+ok  	net/http/httptest	0.018s
+ok  	net/http/httptrace	0.005s
+ok  	net/http/httputil	0.648s
+ok  	net/http/internal	0.007s
+ok  	net/http/internal/ascii	0.001s
+ok  	net/http/pprof	4.047s
+ok  	net/internal/socktest	0.001s
+ok  	net/mail	0.003s
+ok  	net/netip	0.168s
+ok  	net/rpc	0.019s
+ok  	net/rpc/jsonrpc	0.003s
+ok  	net/smtp	0.006s
+ok  	net/textproto	0.012s
+ok  	net/url	0.005s
+ok  	os	0.605s
+ok  	os/exec	0.216s
+ok  	os/exec/internal/fdtest	0.001s
+ok  	os/signal	2.722s
+ok  	os/user	0.004s
+ok  	path	0.002s
+ok  	path/filepath	0.009s
+ok  	plugin	0.002s
+ok  	reflect	0.809s
+ok  	regexp	0.314s
+ok  	regexp/syntax	0.824s
+ok  	runtime	56.927s
+ok  	runtime/cgo	0.002s
+ok  	runtime/coverage	0.011s
+ok  	runtime/debug	0.056s
+ok  	runtime/internal/atomic	0.021s
+ok  	runtime/internal/math	0.001s
+ok  	runtime/internal/sys	0.001s
+ok  	runtime/internal/syscall	0.001s
+ok  	runtime/internal/wasitest	0.002s
+ok  	runtime/metrics	0.002s
+ok  	runtime/pprof	5.610s
+ok  	runtime/trace	1.680s
+ok  	slices	0.077s
+ok  	sort	0.033s
+ok  	strconv	0.294s
+ok  	strings	0.171s
+ok  	sync	0.439s
+ok  	sync/atomic	1.301s
+ok  	syscall	3.260s
+ok  	testing	1.237s
+ok  	testing/fstest	0.002s
+ok  	testing/iotest	0.001s
+ok  	testing/quick	0.031s
+ok  	testing/slogtest	0.002s
+ok  	text/scanner	0.003s
+ok  	text/tabwriter	0.002s
+ok  	text/template	0.020s
+ok  	text/template/parse	0.004s
+ok  	time	1.690s
+ok  	unicode	0.002s
+ok  	unicode/utf16	0.001s
+ok  	unicode/utf8	0.003s
+ok  	cmd/addr2line	0.315s
+ok  	cmd/api	0.375s
+ok  	cmd/asm/internal/asm	0.572s
+ok  	cmd/asm/internal/lex	0.002s
+ok  	cmd/cgo/internal/swig	0.007s
+ok  	cmd/cgo/internal/test	1.031s
+ok  	cmd/cgo/internal/testcarchive	0.002s
+ok  	cmd/cgo/internal/testcshared	0.001s
+ok  	cmd/cgo/internal/testerrors	13.675s
+ok  	cmd/cgo/internal/testfortran	0.021s
+ok  	cmd/cgo/internal/testgodefs	0.661s
+ok  	cmd/cgo/internal/testlife	0.541s
+ok  	cmd/cgo/internal/testnocgo	0.001s
+ok  	cmd/cgo/internal/testplugin	0.003s
+ok  	cmd/cgo/internal/testsanitizers	0.078s
+ok  	cmd/cgo/internal/testshared	0.003s
+ok  	cmd/cgo/internal/testso	1.742s
+ok  	cmd/cgo/internal/teststdio	1.864s
+ok  	cmd/cgo/internal/testtls	0.015s
+ok  	cmd/compile/internal/abt	0.015s
+ok  	cmd/compile/internal/amd64	4.143s
+ok  	cmd/compile/internal/base	0.002s
+ok  	cmd/compile/internal/compare	0.010s
+ok  	cmd/compile/internal/dwarfgen	0.324s
+ok  	cmd/compile/internal/importer	1.020s
+ok  	cmd/compile/internal/inline/inlheur	0.029s
+ok  	cmd/compile/internal/ir	0.002s
+ok  	cmd/compile/internal/logopt	0.142s
+ok  	cmd/compile/internal/loopvar	42.383s
+ok  	cmd/compile/internal/noder	0.011s
+ok  	cmd/compile/internal/reflectdata	0.011s [no tests to run]
+ok  	cmd/compile/internal/ssa	43.007s
+ok  	cmd/compile/internal/syntax	0.053s
+ok  	cmd/compile/internal/test	7.971s
+ok  	cmd/compile/internal/typecheck	0.353s
+ok  	cmd/compile/internal/types	0.020s
+ok  	cmd/compile/internal/types2	4.030s
+ok  	cmd/covdata	0.007s
+ok  	cmd/cover	1.500s
+ok  	cmd/dist	0.002s
+ok  	cmd/distpack	0.020s
+ok  	cmd/doc	0.100s
+ok  	cmd/fix	4.320s
+ok  	cmd/go	89.829s
+ok  	cmd/go/internal/auth	0.002s
+ok  	cmd/go/internal/cache	0.018s
+ok  	cmd/go/internal/envcmd	0.064s
+ok  	cmd/go/internal/fsys	0.013s
+ok  	cmd/go/internal/generate	0.008s
+ok  	cmd/go/internal/gover	0.003s
+ok  	cmd/go/internal/imports	0.023s
+ok  	cmd/go/internal/load	0.008s
+ok  	cmd/go/internal/lockedfile	0.129s
+ok  	cmd/go/internal/lockedfile/internal/filelock	0.035s
+ok  	cmd/go/internal/modfetch	0.015s
+ok  	cmd/go/internal/modfetch/codehost	1.217s
+ok  	cmd/go/internal/modfetch/zip_sum_test	0.016s
+ok  	cmd/go/internal/modindex	0.191s
+ok  	cmd/go/internal/modload	0.011s
+ok  	cmd/go/internal/mvs	0.006s
+ok  	cmd/go/internal/par	0.007s
+ok  	cmd/go/internal/str	0.016s
+ok  	cmd/go/internal/test	0.025s
+ok  	cmd/go/internal/toolchain	0.016s
+ok  	cmd/go/internal/vcs	0.010s
+ok  	cmd/go/internal/vcweb	0.011s
+ok  	cmd/go/internal/vcweb/vcstest	13.992s
+ok  	cmd/go/internal/web	0.003s
+ok  	cmd/go/internal/work	0.072s
+ok  	cmd/gofmt	0.071s
+ok  	cmd/internal/archive	0.537s
+ok  	cmd/internal/bootstrap_test	0.002s
+ok  	cmd/internal/buildid	0.194s
+ok  	cmd/internal/cov	0.585s
+ok  	cmd/internal/dwarf	0.003s
+ok  	cmd/internal/edit	0.004s
+ok  	cmd/internal/goobj	0.014s
+ok  	cmd/internal/moddeps	2.124s
+ok  	cmd/internal/notsha256	0.029s
+ok  	cmd/internal/obj	1.382s
+ok  	cmd/internal/obj/ppc64	0.211s
+ok  	cmd/internal/obj/riscv	0.097s
+ok  	cmd/internal/obj/s390x	0.003s
+ok  	cmd/internal/obj/x86	0.207s
+ok  	cmd/internal/objabi	0.002s
+ok  	cmd/internal/pkgpath	0.013s
+ok  	cmd/internal/pkgpattern	0.005s
+ok  	cmd/internal/quoted	0.004s
+ok  	cmd/internal/src	0.017s
+ok  	cmd/internal/test2json	0.176s
+ok  	cmd/link	14.129s
+ok  	cmd/link/internal/benchmark	0.012s
+ok  	cmd/link/internal/ld	7.678s
+ok  	cmd/link/internal/loader	0.029s
+ok  	cmd/nm	2.033s
+ok  	cmd/objdump	3.185s
+ok  	cmd/pack	0.286s
+ok  	cmd/pprof	1.368s
+ok  	cmd/trace	0.319s
+ok  	cmd/vet	5.658s
+No support for static linking found (lacks libc.a?), skip cgo static linking test.
+No support for static linking found (lacks libc.a?), skip cgo static linking test.
+No support for static linking found (lacks libc.a?), skip cgo static linking test.
+No support for static linking found (lacks libc.a?), skip cgo static linking test.
+No support for static linking found (lacks libc.a?), skip cgo static linking test.
+
+##### os/user with tag osusergo
+ok  	os/user	0.027s
+
+##### hash/maphash purego implementation
+ok  	hash/maphash	0.086s
+
+##### GOMAXPROCS=2 runtime -cpu=1,2,4 -quick
+ok  	runtime	19.594s
+
+##### Testing without libgcc.
+ok  	net	0.018s
+ok  	os/user	0.023s
+
+##### internal linking of -buildmode=pie
+ok  	reflect	0.351s
+ok  	os/user	0.034s
+
+##### sync -cpu=10
+ok  	sync	0.628s
+
+##### Testing race detector
+ok  	runtime/race	10.123s
+ok  	flag	1.061s
+ok  	net	1.073s
+ok  	os	1.125s
+ok  	os/exec	2.049s
+ok  	encoding/gob	1.109s
+ok  	flag	1.078s
+ok  	os/exec	2.027s
+
+##### Testing cgo
+ok  	cmd/cgo/internal/test	1.279s
+ok  	cmd/cgo/internal/test	1.455s
+ok  	cmd/cgo/internal/testtls	0.011s
+ok  	cmd/cgo/internal/test	1.165s
+ok  	cmd/cgo/internal/test	1.263s
+ok  	cmd/cgo/internal/testtls	0.011s
+ok  	cmd/cgo/internal/testnocgo	0.018s
+
+##### ../test
+ok  	cmd/internal/testdir	134.382s
+
+##### API check
+ok  	cmd/api	35.881s
+
+ALL TESTS PASSED
+---
+Installed Go for linux/amd64 in /home/ec2-user/go
+Installed commands in /home/ec2-user/go/bin
+*** You need to add /home/ec2-user/go/bin to your PATH.
+~
+[ec2-user@ip-172-31-15-10 ~]$ 

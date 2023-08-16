@@ -1,0 +1,2304 @@
+Last login: Wed Aug 16 11:48:57 on ttys004
+43228@ICFX947PQ4WPX ~ % ssh -i "2023-07-build-ohio.pem" ubuntu@ec2-3-143-241-250.us-east-2.compute.amazonaws.com
+Warning: Identity file 2023-07-build-ohio.pem not accessible: No such file or directory.
+The authenticity of host 'ec2-3-143-241-250.us-east-2.compute.amazonaws.com (3.143.241.250)' can't be established.
+ED25519 key fingerprint is SHA256:mxfL5mSWjMv2vsv458TMDMxRJFYelP0vIi5BGmX0BPI.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? no
+Host key verification failed.
+43228@ICFX947PQ4WPX ~ % cd code/build-various-things/iac
+43228@ICFX947PQ4WPX iac % ssh -i "2023-07-build-ohio.pem" ubuntu@ec2-3-143-241-250.us-east-2.compute.amazonaws.com
+The authenticity of host 'ec2-3-143-241-250.us-east-2.compute.amazonaws.com (3.143.241.250)' can't be established.
+ED25519 key fingerprint is SHA256:mxfL5mSWjMv2vsv458TMDMxRJFYelP0vIi5BGmX0BPI.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-3-143-241-250.us-east-2.compute.amazonaws.com' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Aug 16 16:22:06 UTC 2023
+
+  System load:  0.130859375       Processes:             109
+  Usage of /:   21.1% of 7.57GB   Users logged in:       0
+  Memory usage: 6%                IPv4 address for ens5: 172.31.6.159
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ip-172-31-6-159:~$ ./scripts/ubuntu/
+bazel.sh                         django.sh                        ruby/                            
+bootstrap.sh                     perf-test-python-and-various.sh  rust.sh                          
+dagster.sh                       pytest.sh                        setup-python.sh                  
+ubuntu@ip-172-31-6-159:~$ ./scripts/ubuntu/^C
+ubuntu@ip-172-31-6-159:~$ ls scripts/ubuntu/
+bazel.sh  bootstrap.sh  dagster.sh  django.sh  perf-test-python-and-various.sh  pytest.sh  ruby  rust.sh  setup-python.sh
+ubuntu@ip-172-31-6-159:~$ cp scripts/ec2/python/
+build.sh      output/       pip-build.sh  setup.sh      
+ubuntu@ip-172-31-6-159:~$ cp scripts/ec2/python/setup.sh scripts/ubuntu/cpython-setup.sh
+ubuntu@ip-172-31-6-159:~$ cp scripts/ec2/python/build.sh scripts/ubuntu/cpython.sh
+ubuntu@ip-172-31-6-159:~$ cp scripts/ec2/python/ scripts/ubuntu/cpython.sh
+build.sh      output/       pip-build.sh  setup.sh      
+ubuntu@ip-172-31-6-159:~$ cp^Ccripts/ec2/python/ scripts/ubuntu/cpython.sh
+ubuntu@ip-172-31-6-159:~$ export XX=scripts/ubuntu/cpython-setup.sh
+ubuntu@ip-172-31-6-159:~$ vim $XX
+ubuntu@ip-172-31-6-159:~$ ./scripts/ubuntu/cpython.sh 
+Linux distribution: ubuntu
+Selected installer: apt-get
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  cpp cpp-11 fontconfig-config fonts-dejavu-core gcc-11 gcc-11-base libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0
+  libcrypt-dev libdeflate0 libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23 libitm1 libjbig0 libjpeg-turbo8 libjpeg8 liblsan0 libmpc3
+  libnsl-dev libquadmath0 libtiff5 libtirpc-dev libtsan0 libubsan1 libwebp7 libxpm4 linux-libc-dev manpages-dev rpcsvc-proto
+Suggested packages:
+  cpp-doc gcc-11-locales gcc-multilib make autoconf automake libtool flex bison gdb gcc-doc gcc-11-multilib gcc-11-doc glibc-doc libgd-tools
+The following NEW packages will be installed:
+  cpp cpp-11 fontconfig-config fonts-dejavu-core gcc gcc-11 gcc-11-base libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0
+  libcrypt-dev libdeflate0 libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23 libitm1 libjbig0 libjpeg-turbo8 libjpeg8 liblsan0 libmpc3
+  libnsl-dev libquadmath0 libtiff5 libtirpc-dev libtsan0 libubsan1 libwebp7 libxpm4 linux-libc-dev manpages-dev rpcsvc-proto
+0 upgraded, 37 newly installed, 0 to remove and 0 not upgraded.
+Need to get 48.6 MB of archives.
+After this operation, 152 MB of additional disk space will be used.
+Ign:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.3.0-1ubuntu1~22.04.1
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libisl23 amd64 0.24-2build1 [727 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libmpc3 amd64 1.2.1-2build1 [46.9 kB]
+Ign:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.3.0-1ubuntu1~22.04.1
+Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 cpp amd64 4:11.2.0-1ubuntu1 [27.7 kB]
+Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 fonts-dejavu-core all 2.37-2build1 [1041 kB]
+Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 fontconfig-config all 2.13.1-4.2ubuntu5 [29.1 kB]
+Ign:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.1.0-2ubuntu1~22.04
+Ign:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.1.0-2ubuntu1~22.04
+Ign:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.1.0-2ubuntu1~22.04
+Ign:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.1.0-2ubuntu1~22.04
+Err:1 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Ign:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.3.0-1ubuntu1~22.04.1
+Ign:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.1.0-2ubuntu1~22.04
+Ign:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.3.0-1ubuntu1~22.04.1
+Err:4 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Err:8 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:9 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:10 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:11 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Ign:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.1.0-2ubuntu1~22.04
+Ign:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.1.0-2ubuntu1~22.04
+Ign:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+Err:12 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Err:13 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:14 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Ign:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.3.0-1ubuntu1~22.04.1
+Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 gcc amd64 4:11.2.0-1ubuntu1 [5112 B]
+Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-dev-bin amd64 2.35-0ubuntu3.1 [20.4 kB]
+Get:21 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libfontconfig1 amd64 2.13.1-4.2ubuntu5 [131 kB]
+Get:22 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg-turbo8 amd64 2.1.2-0ubuntu1 [134 kB]
+Get:23 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg8 amd64 8c-2ubuntu10 [2264 B]
+Get:24 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libdeflate0 amd64 1.10-2 [70.9 kB]
+Get:25 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.22.04.1 [29.2 kB]
+Get:26 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libwebp7 amd64 1.2.2-2ubuntu0.22.04.1 [206 kB]
+Get:27 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtiff5 amd64 4.3.0-6ubuntu0.4 [183 kB]
+Get:28 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.22.04.1 [36.4 kB]
+Get:29 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libgd3 amd64 2.3.0-2ubuntu2 [129 kB]
+Get:30 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc-devtools amd64 2.35-0ubuntu3.1 [28.9 kB]
+Get:31 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-libc-dev amd64 5.15.0-78.85 [1307 kB]
+Get:32 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libcrypt-dev amd64 1:4.4.27-1 [112 kB]
+Err:15 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:16 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Get:33 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 rpcsvc-proto amd64 1.4.2-0ubuntu6 [68.5 kB]
+Get:34 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtirpc-dev amd64 1.3.2-2ubuntu0.1 [192 kB]
+Get:35 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libnsl-dev amd64 1.3.0-2build2 [71.3 kB]
+Get:36 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libc6-dev amd64 2.35-0ubuntu3.1 [2099 kB]
+Get:37 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 manpages-dev all 5.10-1ubuntu1 [2309 kB]
+Err:17 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Err:18 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Fetched 9007 kB in 1s (13.0 MB/s)
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11-base_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/cpp-11_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libcc1-0_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libgomp1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libitm1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libatomic1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libasan6_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/liblsan0_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libtsan0_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libubsan1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libquadmath0_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libgcc-11-dev_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+~ ~
+Cloning into 'cpython'...
+remote: Enumerating objects: 4815, done.
+remote: Counting objects: 100% (4815/4815), done.
+remote: Compressing objects: 100% (4321/4321), done.
+remote: Total 4815 (delta 504), reused 1687 (delta 322), pack-reused 0
+Receiving objects: 100% (4815/4815), 26.36 MiB | 9.44 MiB/s, done.
+Resolving deltas: 100% (504/504), done.
+fatal: not a git repository (or any of the parent directories): .git
+~
+~/cpython ~
+./scripts/ubuntu/cpython.sh: line 21: make: command not found
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bzip2 cpp cpp-11 dpkg-dev fakeroot fontconfig-config fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0 libcrypt-dev
+  libdeflate0 libdpkg-perl libfakeroot libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblsan0 libmpc3 libnsl-dev libquadmath0 libstdc++-11-dev libtiff5 libtirpc-dev libtsan0 libubsan1 libwebp7 libxpm4
+  linux-libc-dev lto-disabled-list make manpages-dev rpcsvc-proto
+Suggested packages:
+  bzip2-doc cpp-doc gcc-11-locales debian-keyring g++-multilib g++-11-multilib gcc-11-doc gcc-multilib autoconf automake libtool flex bison
+  gdb gcc-doc gcc-11-multilib glibc-doc bzr libgd-tools libstdc++-11-doc make-doc
+The following NEW packages will be installed:
+  build-essential bzip2 cpp cpp-11 dpkg-dev fakeroot fontconfig-config fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0
+  libcrypt-dev libdeflate0 libdpkg-perl libfakeroot libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23 libitm1
+  libjbig0 libjpeg-turbo8 libjpeg8 liblsan0 libmpc3 libnsl-dev libquadmath0 libstdc++-11-dev libtiff5 libtirpc-dev libtsan0 libubsan1
+  libwebp7 libxpm4 linux-libc-dev lto-disabled-list make manpages-dev rpcsvc-proto
+0 upgraded, 52 newly installed, 0 to remove and 0 not upgraded.
+Need to get 54.6 MB/63.6 MB of archives.
+After this operation, 207 MB of additional disk space will be used.
+Ign:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.3.0-1ubuntu1~22.04.1
+Ign:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.3.0-1ubuntu1~22.04.1
+Ign:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.1.0-2ubuntu1~22.04
+Ign:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.1.0-2ubuntu1~22.04
+Ign:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.1.0-2ubuntu1~22.04
+Ign:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.1.0-2ubuntu1~22.04
+Ign:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.3.0-1ubuntu1~22.04.1
+Err:1 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.102.108 80]
+Ign:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.1.0-2ubuntu1~22.04
+Ign:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.3.0-1ubuntu1~22.04.1
+Ign:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.1.0-2ubuntu1~22.04
+Ign:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.1.0-2ubuntu1~22.04
+Err:2 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.102.108 80]
+Err:3 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.102.108 80]
+Err:4 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.102.108 80]
+Err:5 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.102.108 80]
+Err:6 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.102.108 80]
+Err:7 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.102.108 80]
+Ign:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+Ign:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.3.0-1ubuntu1~22.04.1
+Ign:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libstdc++-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+Err:8 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.102.108 80]
+Err:9 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.102.108 80]
+Err:10 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.102.108 80]
+Err:11 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.102.108 80]
+Ign:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 g++-11 amd64 11.3.0-1ubuntu1~22.04.1
+Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 g++ amd64 4:11.2.0-1ubuntu1 [1412 B]
+Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 make amd64 4.3-4.1build1 [180 kB]
+Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libdpkg-perl all 1.21.1ubuntu2.2 [237 kB]
+Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 bzip2 amd64 1.0.8-5build1 [34.8 kB]
+Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 lto-disabled-list all 24 [12.5 kB]
+Get:21 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 dpkg-dev all 1.21.1ubuntu2.2 [922 kB]
+Get:22 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 build-essential amd64 12.9ubuntu3 [4744 B]
+Get:23 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libfakeroot amd64 1.28-1ubuntu1 [31.5 kB]
+Get:24 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 fakeroot amd64 1.28-1ubuntu1 [60.4 kB]
+Get:25 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libalgorithm-diff-perl all 1.201-1 [41.8 kB]
+Get:26 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libalgorithm-diff-xs-perl amd64 0.04-6build3 [11.9 kB]
+Get:27 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+Get:28 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libfile-fcntllock-perl amd64 0.22-3build7 [33.9 kB]
+Err:12 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.102.108 80]
+Err:13 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.102.108 80]
+Err:14 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libstdc++-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.102.108 80]
+Err:15 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 g++-11 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.102.108 80]
+Fetched 1583 kB in 1s (2252 kB/s)
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11-base_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/cpp-11_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libcc1-0_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libgomp1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libitm1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libatomic1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libasan6_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/liblsan0_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libtsan0_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libubsan1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libquadmath0_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libgcc-11-dev_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libstdc%2b%2b-11-dev_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/g%2b%2b-11_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.102.108 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+checking for git... found
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for Python interpreter freezing... ./_bootstrap_python
+checking for python3.12... no
+checking for python3.11... no
+checking for python3.10... python3.10
+checking Python for regen version... Python 3.10.6
+checking for pkg-config... no
+checking for --enable-universalsdk... no
+checking for --with-universal-archs... no
+checking MACHDEP... "linux"
+checking for gcc... no
+checking for cc... no
+checking for cl.exe... no
+configure: error: in `/home/ubuntu/cpython':
+configure: error: no acceptable C compiler found in $PATH
+See `config.log' for more details
+./scripts/ubuntu/cpython.sh: line 25: make: command not found
+./scripts/ubuntu/cpython.sh: line 27: make: command not found
+ubuntu@ip-172-31-6-159:~$ vim ./scripts/ubuntu/cpython.sh 
+ubuntu@ip-172-31-6-159:~$ sudo ${BVT_INSTALLER} install -y build-essential
+install: invalid option -- 'y'
+Try 'install --help' for more information.
+ubuntu@ip-172-31-6-159:~$ sudo apt-get install -y build-essential
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bzip2 cpp cpp-11 dpkg-dev fakeroot fontconfig-config fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0 libcrypt-dev
+  libdeflate0 libdpkg-perl libfakeroot libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblsan0 libmpc3 libnsl-dev libquadmath0 libstdc++-11-dev libtiff5 libtirpc-dev libtsan0 libubsan1 libwebp7 libxpm4
+  linux-libc-dev lto-disabled-list make manpages-dev rpcsvc-proto
+Suggested packages:
+  bzip2-doc cpp-doc gcc-11-locales debian-keyring g++-multilib g++-11-multilib gcc-11-doc gcc-multilib autoconf automake libtool flex bison
+  gdb gcc-doc gcc-11-multilib glibc-doc bzr libgd-tools libstdc++-11-doc make-doc
+The following NEW packages will be installed:
+  build-essential bzip2 cpp cpp-11 dpkg-dev fakeroot fontconfig-config fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0
+  libcrypt-dev libdeflate0 libdpkg-perl libfakeroot libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23 libitm1
+  libjbig0 libjpeg-turbo8 libjpeg8 liblsan0 libmpc3 libnsl-dev libquadmath0 libstdc++-11-dev libtiff5 libtirpc-dev libtsan0 libubsan1
+  libwebp7 libxpm4 linux-libc-dev lto-disabled-list make manpages-dev rpcsvc-proto
+0 upgraded, 52 newly installed, 0 to remove and 0 not upgraded.
+Need to get 53.0 MB/63.6 MB of archives.
+After this operation, 207 MB of additional disk space will be used.
+Ign:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.3.0-1ubuntu1~22.04.1
+Ign:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.3.0-1ubuntu1~22.04.1
+Ign:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.1.0-2ubuntu1~22.04
+Ign:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.1.0-2ubuntu1~22.04
+Ign:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.1.0-2ubuntu1~22.04
+Ign:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.1.0-2ubuntu1~22.04
+Ign:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.3.0-1ubuntu1~22.04.1
+Err:1 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Ign:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.1.0-2ubuntu1~22.04
+Ign:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.3.0-1ubuntu1~22.04.1
+Ign:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.1.0-2ubuntu1~22.04
+Ign:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.1.0-2ubuntu1~22.04
+Err:2 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Err:3 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:4 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:5 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:6 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:7 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Ign:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+Ign:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.3.0-1ubuntu1~22.04.1
+Ign:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libstdc++-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+Err:8 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:9 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Err:10 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Err:11 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.1.0-2ubuntu1~22.04
+  404  Not Found [IP: 52.15.106.142 80]
+Ign:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 g++-11 amd64 11.3.0-1ubuntu1~22.04.1
+Err:12 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Err:13 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Err:14 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 libstdc++-11-dev amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+Err:15 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 g++-11 amd64 11.3.0-1ubuntu1~22.04.1
+  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11-base_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/cpp-11_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libcc1-0_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libgomp1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libitm1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libatomic1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libasan6_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/liblsan0_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libtsan0_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libubsan1_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-12/libquadmath0_12.1.0-2ubuntu1%7e22.04_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libgcc-11-dev_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/gcc-11_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/libstdc%2b%2b-11-dev_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/gcc-11/g%2b%2b-11_11.3.0-1ubuntu1%7e22.04.1_amd64.deb  404  Not Found [IP: 52.15.106.142 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+ubuntu@ip-172-31-6-159:~$ sudo apt-get update
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]             
+Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [14.1 MB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [659 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [153 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11.2 kB]      
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [662 kB]           
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [105 kB]          
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [536 B]     
+Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe Translation-en [5652 kB]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [770 kB]                    
+Get:14 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [140 kB]              
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.4 kB]     
+Get:16 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36.5 kB]          
+Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB]
+Get:18 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [7060 B]
+Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [217 kB]          
+Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/multiverse Translation-en [112 kB]          
+Get:21 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B]
+Get:22 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [889 kB]
+Get:23 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [214 kB]
+Get:24 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Get:25 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [15.6 kB]
+Get:26 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [710 kB]
+Get:27 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [113 kB]
+Get:28 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [536 B]
+Get:29 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [966 kB]
+Get:30 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [210 kB]
+Get:31 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [21.5 kB]
+Get:32 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [41.6 kB]
+Get:33 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [9768 B]
+Get:34 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [476 B]
+Get:35 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [40.8 kB]
+Get:36 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.2 kB]
+Get:37 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:38 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:39 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [22.3 kB]
+Get:40 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [15.4 kB]
+Get:41 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [576 B]
+Get:42 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 26.5 MB in 2s (11.0 MB/s)                              
+Reading package lists... Done
+ubuntu@ip-172-31-6-159:~$ sudo apt-get install -y build-essential
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  bzip2 cpp cpp-11 dpkg-dev fakeroot fontconfig-config fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base gcc-12-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0 libcrypt-dev
+  libdeflate0 libdpkg-perl libfakeroot libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgcc-s1 libgd3 libgomp1 libisl23 libitm1
+  libjbig0 libjpeg-turbo8 libjpeg8 liblsan0 libmpc3 libnsl-dev libquadmath0 libstdc++-11-dev libstdc++6 libtiff5 libtirpc-dev libtsan0
+  libubsan1 libwebp7 libxpm4 linux-libc-dev lto-disabled-list make manpages-dev rpcsvc-proto
+Suggested packages:
+  bzip2-doc cpp-doc gcc-11-locales debian-keyring g++-multilib g++-11-multilib gcc-11-doc gcc-multilib autoconf automake libtool flex bison
+  gdb gcc-doc gcc-11-multilib glibc-doc bzr libgd-tools libstdc++-11-doc make-doc
+The following NEW packages will be installed:
+  build-essential bzip2 cpp cpp-11 dpkg-dev fakeroot fontconfig-config fonts-dejavu-core g++ g++-11 gcc gcc-11 gcc-11-base
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan6 libatomic1 libc-dev-bin libc-devtools libc6-dev libcc1-0
+  libcrypt-dev libdeflate0 libdpkg-perl libfakeroot libfile-fcntllock-perl libfontconfig1 libgcc-11-dev libgd3 libgomp1 libisl23 libitm1
+  libjbig0 libjpeg-turbo8 libjpeg8 liblsan0 libmpc3 libnsl-dev libquadmath0 libstdc++-11-dev libtiff5 libtirpc-dev libtsan0 libubsan1
+  libwebp7 libxpm4 linux-libc-dev lto-disabled-list make manpages-dev rpcsvc-proto
+The following packages will be upgraded:
+  gcc-12-base libgcc-s1 libstdc++6
+3 upgraded, 52 newly installed, 0 to remove and 40 not upgraded.
+Need to get 55.5 MB/64.6 MB of archives.
+After this operation, 207 MB of additional disk space will be used.
+Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-12-base amd64 12.3.0-1ubuntu1~22.04 [20.1 kB]
+Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libstdc++6 amd64 12.3.0-1ubuntu1~22.04 [699 kB]
+Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-s1 amd64 12.3.0-1ubuntu1~22.04 [53.9 kB]
+Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-libc-dev amd64 5.15.0-79.86 [1338 kB]
+Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11-base amd64 11.4.0-1ubuntu1~22.04 [20.2 kB]
+Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cpp-11 amd64 11.4.0-1ubuntu1~22.04 [10.0 MB]
+Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcc1-0 amd64 12.3.0-1ubuntu1~22.04 [48.3 kB]
+Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgomp1 amd64 12.3.0-1ubuntu1~22.04 [126 kB]
+Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libitm1 amd64 12.3.0-1ubuntu1~22.04 [30.2 kB]
+Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libatomic1 amd64 12.3.0-1ubuntu1~22.04 [10.4 kB]
+Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libasan6 amd64 11.4.0-1ubuntu1~22.04 [2282 kB]
+Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 liblsan0 amd64 12.3.0-1ubuntu1~22.04 [1069 kB]
+Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtsan0 amd64 11.4.0-1ubuntu1~22.04 [2260 kB]
+Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libubsan1 amd64 12.3.0-1ubuntu1~22.04 [976 kB]
+Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libquadmath0 amd64 12.3.0-1ubuntu1~22.04 [154 kB]
+Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgcc-11-dev amd64 11.4.0-1ubuntu1~22.04 [2517 kB]
+Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gcc-11 amd64 11.4.0-1ubuntu1~22.04 [20.1 MB]
+Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libstdc++-11-dev amd64 11.4.0-1ubuntu1~22.04 [2101 kB]
+Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 g++-11 amd64 11.4.0-1ubuntu1~22.04 [11.4 MB]
+Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libtiff5 amd64 4.3.0-6ubuntu0.5 [184 kB]
+Fetched 55.5 MB in 1s (51.3 MB/s)   
+Extracting templates from packages: 100%
+(Reading database ... 64312 files and directories currently installed.)
+Preparing to unpack .../gcc-12-base_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking gcc-12-base:amd64 (12.3.0-1ubuntu1~22.04) over (12.1.0-2ubuntu1~22.04) ...
+Setting up gcc-12-base:amd64 (12.3.0-1ubuntu1~22.04) ...
+(Reading database ... 64312 files and directories currently installed.)
+Preparing to unpack .../libstdc++6_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libstdc++6:amd64 (12.3.0-1ubuntu1~22.04) over (12.1.0-2ubuntu1~22.04) ...
+Setting up libstdc++6:amd64 (12.3.0-1ubuntu1~22.04) ...
+(Reading database ... 64312 files and directories currently installed.)
+Preparing to unpack .../libgcc-s1_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libgcc-s1:amd64 (12.3.0-1ubuntu1~22.04) over (12.1.0-2ubuntu1~22.04) ...
+Setting up libgcc-s1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libc-dev-bin.
+(Reading database ... 64312 files and directories currently installed.)
+Preparing to unpack .../00-libc-dev-bin_2.35-0ubuntu3.1_amd64.deb ...
+Unpacking libc-dev-bin (2.35-0ubuntu3.1) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../01-linux-libc-dev_5.15.0-79.86_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (5.15.0-79.86) ...
+Selecting previously unselected package libcrypt-dev:amd64.
+Preparing to unpack .../02-libcrypt-dev_1%3a4.4.27-1_amd64.deb ...
+Unpacking libcrypt-dev:amd64 (1:4.4.27-1) ...
+Selecting previously unselected package rpcsvc-proto.
+Preparing to unpack .../03-rpcsvc-proto_1.4.2-0ubuntu6_amd64.deb ...
+Unpacking rpcsvc-proto (1.4.2-0ubuntu6) ...
+Selecting previously unselected package libtirpc-dev:amd64.
+Preparing to unpack .../04-libtirpc-dev_1.3.2-2ubuntu0.1_amd64.deb ...
+Unpacking libtirpc-dev:amd64 (1.3.2-2ubuntu0.1) ...
+Selecting previously unselected package libnsl-dev:amd64.
+Preparing to unpack .../05-libnsl-dev_1.3.0-2build2_amd64.deb ...
+Unpacking libnsl-dev:amd64 (1.3.0-2build2) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../06-libc6-dev_2.35-0ubuntu3.1_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.35-0ubuntu3.1) ...
+Selecting previously unselected package gcc-11-base:amd64.
+Preparing to unpack .../07-gcc-11-base_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking gcc-11-base:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../08-libisl23_0.24-2build1_amd64.deb ...
+Unpacking libisl23:amd64 (0.24-2build1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../09-libmpc3_1.2.1-2build1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.2.1-2build1) ...
+Selecting previously unselected package cpp-11.
+Preparing to unpack .../10-cpp-11_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking cpp-11 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../11-cpp_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking cpp (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../12-libcc1-0_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../13-libgomp1_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libgomp1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../14-libitm1_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libitm1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../15-libatomic1_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libatomic1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libasan6:amd64.
+Preparing to unpack .../16-libasan6_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libasan6:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../17-liblsan0_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking liblsan0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../18-libtsan0_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libtsan0:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../19-libubsan1_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libubsan1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../20-libquadmath0_12.3.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Selecting previously unselected package libgcc-11-dev:amd64.
+Preparing to unpack .../21-libgcc-11-dev_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libgcc-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package gcc-11.
+Preparing to unpack .../22-gcc-11_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking gcc-11 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../23-gcc_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking gcc (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package libstdc++-11-dev:amd64.
+Preparing to unpack .../24-libstdc++-11-dev_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking libstdc++-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package g++-11.
+Preparing to unpack .../25-g++-11_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking g++-11 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../26-g++_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking g++ (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../27-make_4.3-4.1build1_amd64.deb ...
+Unpacking make (4.3-4.1build1) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../28-libdpkg-perl_1.21.1ubuntu2.2_all.deb ...
+Unpacking libdpkg-perl (1.21.1ubuntu2.2) ...
+Selecting previously unselected package bzip2.
+Preparing to unpack .../29-bzip2_1.0.8-5build1_amd64.deb ...
+Unpacking bzip2 (1.0.8-5build1) ...
+Selecting previously unselected package lto-disabled-list.
+Preparing to unpack .../30-lto-disabled-list_24_all.deb ...
+Unpacking lto-disabled-list (24) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../31-dpkg-dev_1.21.1ubuntu2.2_all.deb ...
+Unpacking dpkg-dev (1.21.1ubuntu2.2) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../32-build-essential_12.9ubuntu3_amd64.deb ...
+Unpacking build-essential (12.9ubuntu3) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../33-libfakeroot_1.28-1ubuntu1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.28-1ubuntu1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../34-fakeroot_1.28-1ubuntu1_amd64.deb ...
+Unpacking fakeroot (1.28-1ubuntu1) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../35-fonts-dejavu-core_2.37-2build1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-2build1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../36-fontconfig-config_2.13.1-4.2ubuntu5_all.deb ...
+Unpacking fontconfig-config (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../37-libalgorithm-diff-perl_1.201-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.201-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../38-libalgorithm-diff-xs-perl_0.04-6build3_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-6build3) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../39-libalgorithm-merge-perl_0.08-3_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-3) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../40-libfontconfig1_2.13.1-4.2ubuntu5_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../41-libjpeg-turbo8_2.1.2-0ubuntu1_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../42-libjpeg8_8c-2ubuntu10_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu10) ...
+Selecting previously unselected package libdeflate0:amd64.
+Preparing to unpack .../43-libdeflate0_1.10-2_amd64.deb ...
+Unpacking libdeflate0:amd64 (1.10-2) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../44-libjbig0_2.1-3.1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Selecting previously unselected package libwebp7:amd64.
+Preparing to unpack .../45-libwebp7_1.2.2-2ubuntu0.22.04.1_amd64.deb ...
+Unpacking libwebp7:amd64 (1.2.2-2ubuntu0.22.04.1) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../46-libtiff5_4.3.0-6ubuntu0.5_amd64.deb ...
+Unpacking libtiff5:amd64 (4.3.0-6ubuntu0.5) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../47-libxpm4_1%3a3.5.12-1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../48-libgd3_2.3.0-2ubuntu2_amd64.deb ...
+Unpacking libgd3:amd64 (2.3.0-2ubuntu2) ...
+Selecting previously unselected package libc-devtools.
+Preparing to unpack .../49-libc-devtools_2.35-0ubuntu3.1_amd64.deb ...
+Unpacking libc-devtools (2.35-0ubuntu3.1) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../50-libfile-fcntllock-perl_0.22-3build7_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-3build7) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../51-manpages-dev_5.10-1ubuntu1_all.deb ...
+Unpacking manpages-dev (5.10-1ubuntu1) ...
+Setting up gcc-11-base:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up manpages-dev (5.10-1ubuntu1) ...
+Setting up lto-disabled-list (24) ...
+Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.22.04.1) ...
+Setting up libfile-fcntllock-perl (0.22-3build7) ...
+Setting up libalgorithm-diff-perl (1.201-1) ...
+Setting up libdeflate0:amd64 (1.10-2) ...
+Setting up linux-libc-dev:amd64 (5.15.0-79.86) ...
+Setting up libgomp1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up bzip2 (1.0.8-5build1) ...
+Setting up libjbig0:amd64 (2.1-3.1ubuntu0.22.04.1) ...
+Setting up libfakeroot:amd64 (1.28-1ubuntu1) ...
+Setting up libasan6:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up fakeroot (1.28-1ubuntu1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up libtirpc-dev:amd64 (1.3.2-2ubuntu0.1) ...
+Setting up rpcsvc-proto (1.4.2-0ubuntu6) ...
+Setting up make (4.3-4.1build1) ...
+Setting up libquadmath0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libmpc3:amd64 (1.2.1-2build1) ...
+Setting up libatomic1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up fonts-dejavu-core (2.37-2build1) ...
+Setting up libjpeg-turbo8:amd64 (2.1.2-0ubuntu1) ...
+Setting up libdpkg-perl (1.21.1ubuntu2.2) ...
+Setting up libwebp7:amd64 (1.2.2-2ubuntu0.22.04.1) ...
+Setting up libubsan1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libnsl-dev:amd64 (1.3.0-2build2) ...
+Setting up libcrypt-dev:amd64 (1:4.4.27-1) ...
+Setting up libisl23:amd64 (0.24-2build1) ...
+Setting up libc-dev-bin (2.35-0ubuntu3.1) ...
+Setting up libalgorithm-diff-xs-perl (0.04-6build3) ...
+Setting up libcc1-0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up liblsan0:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libitm1:amd64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libalgorithm-merge-perl (0.08-3) ...
+Setting up libtsan0:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu10) ...
+Setting up cpp-11 (11.4.0-1ubuntu1~22.04) ...
+Setting up fontconfig-config (2.13.1-4.2ubuntu5) ...
+Setting up dpkg-dev (1.21.1ubuntu2.2) ...
+Setting up libgcc-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up gcc-11 (11.4.0-1ubuntu1~22.04) ...
+Setting up cpp (4:11.2.0-1ubuntu1) ...
+Setting up libc6-dev:amd64 (2.35-0ubuntu3.1) ...
+Setting up libtiff5:amd64 (4.3.0-6ubuntu0.5) ...
+Setting up libfontconfig1:amd64 (2.13.1-4.2ubuntu5) ...
+Setting up gcc (4:11.2.0-1ubuntu1) ...
+Setting up libgd3:amd64 (2.3.0-2ubuntu2) ...
+Setting up libstdc++-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up libc-devtools (2.35-0ubuntu3.1) ...
+Setting up g++-11 (11.4.0-1ubuntu1~22.04) ...
+Setting up g++ (4:11.2.0-1ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.9ubuntu3) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Scanning processes...                                                                                                                          
+Scanning candidates...                                                                                                                         
+Scanning linux images...                                                                                                                       
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+ systemctl restart multipathd.service packagekit.service
+
+Service restarts being deferred:
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+ubuntu@ip-172-31-6-159:~$ vim ./scripts/ubuntu/cpython.sh 
+ubuntu@ip-172-31-6-159:~$ make clean
+make: *** No rule to make target 'clean'.  Stop.
+ubuntu@ip-172-31-6-159:~$ vim ./scripts/ubuntu/cpython.sh 
+ubuntu@ip-172-31-6-159:~$ ^vim ^
+./scripts/ubuntu/cpython.sh 
+Linux distribution: ubuntu
+Selected installer: apt-get
+Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Reading package lists... Done                        
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+build-essential is already the newest version (12.9ubuntu3).
+0 upgraded, 0 newly installed, 0 to remove and 40 not upgraded.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+gcc is already the newest version (4:11.2.0-1ubuntu1).
+gcc set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 40 not upgraded.
+~ ~
+fatal: destination path 'cpython' already exists and is not an empty directory.
+fatal: not a git repository (or any of the parent directories): .git
+~
+~/cpython ~
+make: *** No rule to make target 'clean'.  Stop.
+checking for git... found
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for Python interpreter freezing... ./_bootstrap_python
+checking for python3.12... no
+checking for python3.11... no
+checking for python3.10... python3.10
+checking Python for regen version... Python 3.10.6
+checking for pkg-config... no
+checking for --enable-universalsdk... no
+checking for --with-universal-archs... no
+checking MACHDEP... "linux"
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for egrep... /usr/bin/grep -E
+checking for CC compiler name... gcc
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for g++... no
+configure:
+
+  By default, distutils will build C++ extension modules with "g++".
+  If this is not intended, then set CXX on the configure command line.
+  
+checking for the platform triplet based on compiler characteristics... x86_64-linux-gnu
+checking for multiarch... x86_64-linux-gnu
+checking for PEP 11 support tier... x86_64-pc-linux-gnu/gcc has tier 1 (supported)
+checking for -Wl,--no-as-needed... yes
+checking for the Android API level... not Android
+checking for --with-emscripten-target... 
+checking for --enable-wasm-dynamic-linking... missing
+checking for --enable-wasm-pthreads... missing
+checking for --with-suffix... 
+checking for case-insensitive build directory... no
+checking LIBRARY... libpython$(VERSION)$(ABIFLAGS).a
+checking LINKCC... $(PURIFY) $(CC)
+checking EXPORTSYMS... 
+checking for GNU ld... yes
+checking for --enable-shared... no
+checking for --with-static-libpython... yes
+checking for --enable-profiling... no
+checking LDLIBRARY... checking HOSTRUNNER... 
+libpython$(VERSION)$(ABIFLAGS).a
+checking for ar... ar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for --with-pydebug... yes
+checking for --with-trace-refs... no
+checking for --enable-pystats... no
+checking for --with-assertions... implied by --with-pydebug
+checking for --enable-optimizations... no
+checking PROFILE_TASK... -m test --pgo --timeout=$(TESTTIMEOUT)
+checking for --with-lto... no
+checking for --enable-bolt... no
+checking for llvm-profdata... no
+checking if gcc supports -fstrict-overflow and -fno-strict-overflow... yes
+checking for --with-strict-overflow... no
+checking if gcc supports -Og optimization level... yes
+checking if we can add -Wextra... yes
+checking whether gcc -fno-strict-aliasing accepts and needs -fno-strict-aliasing... no
+checking if we can disable gcc unused-parameter warning... yes
+checking if we can disable gcc int-conversion warning... yes
+checking if we can disable gcc missing-field-initializers warning... yes
+checking if we can enable gcc sign-compare warning... yes
+checking if we can enable gcc unreachable-code warning... yes
+checking if we can enable gcc strict-prototypes warning... no
+checking if we can make implicit function declaration an error in gcc -Werror=implicit-function-declaration... yes
+checking if we can use visibility in gcc -fvisibility=hidden... yes
+checking whether pthreads are available without options... yes
+checking whether g++ also accepts flags for thread support... no
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking asm/types.h usability... yes
+checking asm/types.h presence... yes
+checking for asm/types.h... yes
+checking bluetooth.h usability... no
+checking bluetooth.h presence... no
+checking for bluetooth.h... no
+checking conio.h usability... no
+checking conio.h presence... no
+checking for conio.h... no
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking direct.h usability... no
+checking direct.h presence... no
+checking for direct.h... no
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking io.h usability... no
+checking io.h presence... no
+checking for io.h... no
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking linux/auxvec.h usability... yes
+checking linux/auxvec.h presence... yes
+checking for linux/auxvec.h... yes
+checking sys/auxv.h usability... yes
+checking sys/auxv.h presence... yes
+checking for sys/auxv.h... yes
+checking linux/fs.h usability... yes
+checking linux/fs.h presence... yes
+checking for linux/fs.h... yes
+checking linux/memfd.h usability... yes
+checking linux/memfd.h presence... yes
+checking for linux/memfd.h... yes
+checking linux/random.h usability... yes
+checking linux/random.h presence... yes
+checking for linux/random.h... yes
+checking linux/soundcard.h usability... yes
+checking linux/soundcard.h presence... yes
+checking for linux/soundcard.h... yes
+checking linux/tipc.h usability... yes
+checking linux/tipc.h presence... yes
+checking for linux/tipc.h... yes
+checking linux/wait.h usability... yes
+checking linux/wait.h presence... yes
+checking for linux/wait.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking net/ethernet.h usability... yes
+checking net/ethernet.h presence... yes
+checking for net/ethernet.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking netpacket/packet.h usability... yes
+checking netpacket/packet.h presence... yes
+checking for netpacket/packet.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking process.h usability... no
+checking process.h presence... no
+checking for process.h... no
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking pty.h usability... yes
+checking pty.h presence... yes
+checking for pty.h... yes
+checking sched.h usability... yes
+checking sched.h presence... yes
+checking for sched.h... yes
+checking setjmp.h usability... yes
+checking setjmp.h presence... yes
+checking for setjmp.h... yes
+checking shadow.h usability... yes
+checking shadow.h presence... yes
+checking for shadow.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking spawn.h usability... yes
+checking spawn.h presence... yes
+checking for spawn.h... yes
+checking stropts.h usability... no
+checking stropts.h presence... no
+checking for stropts.h... no
+checking sys/audioio.h usability... no
+checking sys/audioio.h presence... no
+checking for sys/audioio.h... no
+checking sys/bsdtty.h usability... no
+checking sys/bsdtty.h presence... no
+checking for sys/bsdtty.h... no
+checking sys/devpoll.h usability... no
+checking sys/devpoll.h presence... no
+checking for sys/devpoll.h... no
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking sys/epoll.h usability... yes
+checking sys/epoll.h presence... yes
+checking for sys/epoll.h... yes
+checking sys/event.h usability... no
+checking sys/event.h presence... no
+checking for sys/event.h... no
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/kern_control.h usability... no
+checking sys/kern_control.h presence... no
+checking for sys/kern_control.h... no
+checking sys/loadavg.h usability... no
+checking sys/loadavg.h presence... no
+checking for sys/loadavg.h... no
+checking sys/lock.h usability... no
+checking sys/lock.h presence... no
+checking for sys/lock.h... no
+checking sys/memfd.h usability... no
+checking sys/memfd.h presence... no
+checking for sys/memfd.h... no
+checking sys/mkdev.h usability... no
+checking sys/mkdev.h presence... no
+checking for sys/mkdev.h... no
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/modem.h usability... no
+checking sys/modem.h presence... no
+checking for sys/modem.h... no
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking sys/random.h usability... yes
+checking sys/random.h presence... yes
+checking for sys/random.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/sendfile.h usability... yes
+checking sys/sendfile.h presence... yes
+checking for sys/sendfile.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/soundcard.h usability... yes
+checking sys/soundcard.h presence... yes
+checking for sys/soundcard.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking sys/sys_domain.h usability... no
+checking sys/sys_domain.h presence... no
+checking for sys/sys_domain.h... no
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking sys/sysmacros.h usability... yes
+checking sys/sysmacros.h presence... yes
+checking for sys/sysmacros.h... yes
+checking sys/termio.h usability... no
+checking sys/termio.h presence... no
+checking for sys/termio.h... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/uio.h usability... yes
+checking sys/uio.h presence... yes
+checking for sys/uio.h... yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking sys/xattr.h usability... yes
+checking sys/xattr.h presence... yes
+checking for sys/xattr.h... yes
+checking sysexits.h usability... yes
+checking sysexits.h presence... yes
+checking for sysexits.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking util.h usability... no
+checking util.h presence... no
+checking for util.h... no
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking utmp.h usability... yes
+checking utmp.h presence... yes
+checking for utmp.h... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether sys/types.h defines makedev... no
+checking for sys/mkdev.h... (cached) no
+checking for sys/sysmacros.h... (cached) yes
+checking bluetooth/bluetooth.h usability... no
+checking bluetooth/bluetooth.h presence... no
+checking for bluetooth/bluetooth.h... no
+checking for net/if.h... yes
+checking for linux/netlink.h... yes
+checking for linux/qrtr.h... yes
+checking for linux/vm_sockets.h... yes
+checking for linux/can.h... yes
+checking for linux/can/bcm.h... yes
+checking for linux/can/j1939.h... yes
+checking for linux/can/raw.h... yes
+checking for netcan/can.h... no
+checking for clock_t in time.h... yes
+checking for makedev... yes
+checking for le64toh... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking for ssize_t... yes
+checking for __uint128_t... yes
+checking size of int... 4
+checking size of long... 8
+checking alignment of long... 8
+checking size of long long... 8
+checking size of void *... 8
+checking size of short... 2
+checking size of float... 4
+checking size of double... 8
+checking size of fpos_t... 16
+checking size of size_t... 8
+checking alignment of size_t... 8
+checking size of pid_t... 4
+checking size of uintptr_t... 8
+checking for long double... yes
+checking size of long double... 16
+checking size of _Bool... 1
+checking size of off_t... 8
+checking whether to enable large file support... no
+checking size of time_t... 8
+checking for pthread_t... yes
+checking size of pthread_t... 8
+checking size of pthread_key_t... 4
+checking whether pthread_key_t is compatible with int... yes
+checking for --enable-framework... no
+checking for --with-dsymutil... no
+checking for dyld... no
+checking for --with-address-sanitizer... no
+checking for --with-memory-sanitizer... no
+checking for --with-undefined-behavior-sanitizer... no
+checking the extension of shared libraries... .so
+checking LDSHARED... $(CC) -shared
+checking BLDSHARED flags... $(CC) -shared
+checking CCSHARED... -fPIC
+checking LINKFORSHARED... -Xlinker -export-dynamic
+checking CFLAGSFORSHARED... 
+checking SHLIBS... $(LIBS)
+checking perf trampoline... yes
+checking for sendfile in -lsendfile... no
+checking for dlopen in -ldl... yes
+checking for shl_load in -ldld... no
+checking uuid.h usability... no
+checking uuid.h presence... no
+checking for uuid.h... no
+checking for LIBUUID... no
+checking uuid/uuid.h usability... no
+checking uuid/uuid.h presence... no
+checking for uuid/uuid.h... no
+checking for uuid/uuid.h... (cached) no
+checking for library containing sem_init... none required
+checking for textdomain in -lintl... no
+checking aligned memory access is required... no
+checking for --with-hash-algorithm... default
+checking for --with-tzpath... "/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/etc/zoneinfo"
+checking for t_open in -lnsl... no
+checking for socket in -lsocket... no
+checking for --with-libs... no
+checking for --with-system-expat... no
+checking for LIBFFI... no
+checking ffi.h usability... no
+checking ffi.h presence... no
+checking for ffi.h... no
+checking for --with-system-libmpdec... no
+checking for --with-decimal-contextvar... yes
+checking for decimal libmpdec machine... uint128
+checking for LIBNSL... no
+checking for library containing yp_match... -lnsl
+checking rpc/rpc.h usability... no
+checking rpc/rpc.h presence... no
+checking for rpc/rpc.h... no
+checking for LIBSQLITE3... no
+checking sqlite3.h usability... no
+checking sqlite3.h presence... no
+checking for sqlite3.h... no
+checking for --enable-loadable-sqlite-extensions... no
+checking gdbm.h usability... no
+checking gdbm.h presence... no
+checking for gdbm.h... no
+checking ndbm.h usability... no
+checking ndbm.h presence... no
+checking for ndbm.h... no
+checking for ndbm presence and linker args...  ()
+checking gdbm/ndbm.h usability... no
+checking gdbm/ndbm.h presence... no
+checking for gdbm/ndbm.h... no
+checking gdbm-ndbm.h usability... no
+checking gdbm-ndbm.h presence... no
+checking for gdbm-ndbm.h... no
+checking db.h usability... no
+checking db.h presence... no
+checking for db.h... no
+checking for --with-dbmliborder... gdbm:ndbm:bdb
+checking for _dbm module CFLAGS and LIBS...  
+checking if PTHREAD_SCOPE_SYSTEM is supported... yes
+checking for pthread_sigmask... yes
+checking for pthread_getcpuclockid... yes
+checking if --enable-ipv6 is specified... yes
+checking if RFC2553 API is available... yes
+checking ipv6 stack type... linux-glibc
+checking CAN_RAW_FD_FRAMES... yes
+checking for CAN_RAW_JOIN_FILTERS... yes
+checking for --with-doc-strings... yes
+checking for --with-pymalloc... yes
+checking for --with-freelists... yes
+checking for --with-c-locale-coercion... yes
+checking for --with-valgrind... no
+checking for --with-dtrace... no
+checking for dlopen... yes
+checking DYNLOADFILE... dynload_shlib.o
+checking MACHDEP_OBJS... none
+checking for accept4... yes
+checking for alarm... yes
+checking for bind_textdomain_codeset... yes
+checking for chmod... yes
+checking for chown... yes
+checking for clock... yes
+checking for close_range... yes
+checking for confstr... yes
+checking for copy_file_range... yes
+checking for ctermid... yes
+checking for dup... yes
+checking for dup3... yes
+checking for execv... yes
+checking for explicit_bzero... yes
+checking for explicit_memset... no
+checking for faccessat... yes
+checking for fchmod... yes
+checking for fchmodat... yes
+checking for fchown... yes
+checking for fchownat... yes
+checking for fdopendir... yes
+checking for fdwalk... no
+checking for fexecve... yes
+checking for fork... yes
+checking for fork1... no
+checking for fpathconf... yes
+checking for fstatat... yes
+checking for ftime... yes
+checking for ftruncate... yes
+checking for futimens... yes
+checking for futimes... yes
+checking for futimesat... yes
+checking for gai_strerror... yes
+checking for getegid... yes
+checking for getentropy... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getgrgid... yes
+checking for getgrgid_r... yes
+checking for getgrnam_r... yes
+checking for getgrouplist... yes
+checking for getgroups... yes
+checking for gethostname... yes
+checking for getitimer... yes
+checking for getloadavg... yes
+checking for getlogin... yes
+checking for getpeername... yes
+checking for getpgid... yes
+checking for getpid... yes
+checking for getppid... yes
+checking for getpriority... yes
+checking for _getpty... no
+checking for getpwent... yes
+checking for getpwnam_r... yes
+checking for getpwuid... yes
+checking for getpwuid_r... yes
+checking for getresgid... yes
+checking for getresuid... yes
+checking for getrusage... yes
+checking for getsid... yes
+checking for getspent... yes
+checking for getspnam... yes
+checking for getuid... yes
+checking for getwd... yes
+checking for if_nameindex... yes
+checking for initgroups... yes
+checking for kill... yes
+checking for killpg... yes
+checking for lchown... yes
+checking for linkat... yes
+checking for lockf... yes
+checking for lstat... yes
+checking for lutimes... yes
+checking for madvise... yes
+checking for mbrtowc... yes
+checking for memrchr... yes
+checking for mkdirat... yes
+checking for mkfifo... yes
+checking for mkfifoat... yes
+checking for mknod... yes
+checking for mknodat... yes
+checking for mktime... yes
+checking for mmap... yes
+checking for mremap... yes
+checking for nice... yes
+checking for openat... yes
+checking for opendir... yes
+checking for pathconf... yes
+checking for pause... yes
+checking for pipe... yes
+checking for pipe2... yes
+checking for plock... no
+checking for poll... yes
+checking for posix_fadvise... yes
+checking for posix_fallocate... yes
+checking for posix_spawn... yes
+checking for posix_spawnp... yes
+checking for pread... yes
+checking for preadv... yes
+checking for preadv2... yes
+checking for pthread_condattr_setclock... yes
+checking for pthread_init... no
+checking for pthread_kill... yes
+checking for pwrite... yes
+checking for pwritev... yes
+checking for pwritev2... yes
+checking for readlink... yes
+checking for readlinkat... yes
+checking for readv... yes
+checking for realpath... yes
+checking for renameat... yes
+checking for rtpSpawn... no
+checking for sched_get_priority_max... yes
+checking for sched_rr_get_interval... yes
+checking for sched_setaffinity... yes
+checking for sched_setparam... yes
+checking for sched_setscheduler... yes
+checking for sem_clockwait... yes
+checking for sem_getvalue... yes
+checking for sem_open... yes
+checking for sem_timedwait... yes
+checking for sem_unlink... yes
+checking for sendfile... yes
+checking for setegid... yes
+checking for seteuid... yes
+checking for setgid... yes
+checking for sethostname... yes
+checking for setitimer... yes
+checking for setlocale... yes
+checking for setpgid... yes
+checking for setpgrp... yes
+checking for setpriority... yes
+checking for setregid... yes
+checking for setresgid... yes
+checking for setresuid... yes
+checking for setreuid... yes
+checking for setsid... yes
+checking for setuid... yes
+checking for setvbuf... yes
+checking for shutdown... yes
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for sigfillset... yes
+checking for siginterrupt... yes
+checking for sigpending... yes
+checking for sigrelse... yes
+checking for sigtimedwait... yes
+checking for sigwait... yes
+checking for sigwaitinfo... yes
+checking for snprintf... yes
+checking for splice... yes
+checking for strftime... yes
+checking for strlcpy... no
+checking for strsignal... yes
+checking for symlinkat... yes
+checking for sync... yes
+checking for sysconf... yes
+checking for system... yes
+checking for tcgetpgrp... yes
+checking for tcsetpgrp... yes
+checking for tempnam... yes
+checking for timegm... yes
+checking for times... yes
+checking for tmpfile... yes
+checking for tmpnam... yes
+checking for tmpnam_r... yes
+checking for truncate... yes
+checking for ttyname... yes
+checking for umask... yes
+checking for uname... yes
+checking for unlinkat... yes
+checking for utimensat... yes
+checking for utimes... yes
+checking for vfork... yes
+checking for wait... yes
+checking for wait3... yes
+checking for wait4... yes
+checking for waitid... yes
+checking for waitpid... yes
+checking for wcscoll... yes
+checking for wcsftime... yes
+checking for wcsxfrm... yes
+checking for wmemcmp... yes
+checking for writev... yes
+checking whether dirfd is declared... yes
+checking for chroot... yes
+checking for link... yes
+checking for symlink... yes
+checking for fchdir... yes
+checking for fsync... yes
+checking for fdatasync... yes
+checking for epoll_create... yes
+checking for epoll_create1... yes
+checking for kqueue... no
+checking for prlimit... yes
+checking for _dyld_shared_cache_contains_path... no
+checking for memfd_create... yes
+checking for eventfd... yes
+checking for ctermid_r... no
+checking for flock declaration... yes
+checking for flock... yes
+checking for flock in -lbsd... no
+checking for getpagesize... yes
+checking for broken unsetenv... no
+checking for true... true
+checking for inet_aton in -lc... yes
+checking for chflags... no
+checking for lchflags... no
+checking for ZLIB... no
+checking zlib.h usability... no
+checking zlib.h presence... no
+checking for zlib.h... no
+checking for BZIP2... no
+checking bzlib.h usability... no
+checking bzlib.h presence... no
+checking for bzlib.h... no
+checking for LIBLZMA... no
+checking lzma.h usability... no
+checking lzma.h presence... no
+checking for lzma.h... no
+checking for hstrerror... yes
+checking for getservbyname... yes
+checking for getservbyport... yes
+checking for gethostbyname... yes
+checking for gethostbyaddr... yes
+checking for getprotobyname... yes
+checking for inet_aton... yes
+checking for inet_ntoa... yes
+checking for inet_pton... yes
+checking for getpeername... (cached) yes
+checking for getsockname... yes
+checking for accept... yes
+checking for bind... yes
+checking for connect... yes
+checking for listen... yes
+checking for recvfrom... yes
+checking for sendto... yes
+checking for setsockopt... yes
+checking for socket... yes
+checking for setgroups... yes
+checking for openpty... yes
+checking for library containing login_tty... none required
+checking for forkpty... yes
+checking for fseek64... no
+checking for fseeko... yes
+checking for fstatvfs... yes
+checking for ftell64... no
+checking for ftello... yes
+checking for statvfs... yes
+checking for dup2... yes
+checking for getpgrp... yes
+checking for setpgrp... (cached) yes
+checking for setns... yes
+checking for unshare... yes
+checking for LIBCRYPT... no
+checking for library containing crypt_r... -lcrypt
+checking for crypt or crypt_r... yes
+checking for clock_gettime... yes
+checking for clock_getres... yes
+checking for clock_settime... yes
+checking for clock_nanosleep... yes
+checking for nanosleep... yes
+checking for major, minor, and makedev... yes
+checking for getaddrinfo... yes
+checking getaddrinfo bug... no
+checking for getnameinfo... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for struct stat.st_rdev... yes
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_flags... no
+checking for struct stat.st_gen... no
+checking for struct stat.st_birthtime... no
+checking for struct stat.st_blocks... yes
+checking for struct passwd.pw_gecos... yes
+checking for struct passwd.pw_passwd... yes
+checking for siginfo_t.si_band... yes
+checking for time.h that defines altzone... no
+checking for addrinfo... yes
+checking for sockaddr_storage... yes
+checking for sockaddr_alg... yes
+checking for an ANSI C-conforming const... yes
+checking for working signed char... yes
+checking for prototypes... yes
+checking for socketpair... yes
+checking if sockaddr has sa_len member... no
+checking for gethostbyname_r... yes
+checking gethostbyname_r with 6 args... yes
+checking for __fpu_control... yes
+checking for --with-libm=STRING... default LIBM="-lm"
+checking for --with-libc=STRING... default LIBC=""
+checking for x64 gcc inline assembler... yes
+checking whether float word ordering is bigendian... no
+checking whether we can use gcc inline assembler to get and set x87 control word... yes
+checking whether we can use gcc inline assembler to get and set mc68881 fpcr... no
+checking for x87-style double rounding... no
+checking for acosh... yes
+checking for asinh... yes
+checking for atanh... yes
+checking for erf... yes
+checking for erfc... yes
+checking for expm1... yes
+checking for log1p... yes
+checking for log2... yes
+checking whether POSIX semaphores are enabled... yes
+checking for broken sem_getvalue... no
+checking whether RTLD_LAZY is declared... yes
+checking whether RTLD_NOW is declared... yes
+checking whether RTLD_GLOBAL is declared... yes
+checking whether RTLD_LOCAL is declared... yes
+checking whether RTLD_NODELETE is declared... yes
+checking whether RTLD_NOLOAD is declared... yes
+checking whether RTLD_DEEPBIND is declared... yes
+checking whether RTLD_MEMBER is declared... no
+checking digit size for Python's longs... no value specified
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking size of wchar_t... 4
+checking whether wchar_t is signed... yes
+checking whether wchar_t is usable... no
+checking whether byte ordering is bigendian... no
+checking ABIFLAGS... d
+checking SOABI... cpython-312d-x86_64-linux-gnu
+checking LDVERSION... $(VERSION)$(ABIFLAGS)
+checking for --with-platlibdir... no
+checking for --with-wheel-pkg-dir... no
+checking whether right shift extends the sign bit... yes
+checking for getc_unlocked() and friends... yes
+checking for LIBREADLINE... no
+checking readline/readline.h usability... no
+checking readline/readline.h presence... no
+checking for readline/readline.h... no
+checking how to link readline... no
+checking for broken nice()... no
+checking for broken poll()... no
+checking for working tzset()... yes
+checking for tv_nsec in struct stat... yes
+checking for tv_nsec2 in struct stat... no
+checking curses.h usability... no
+checking curses.h presence... no
+checking for curses.h... no
+checking ncurses.h usability... no
+checking ncurses.h presence... no
+checking for ncurses.h... no
+checking curses module flags... no
+checking panel.h usability... no
+checking panel.h presence... no
+checking for panel.h... no
+checking panel flags... no
+checking for term.h... no
+checking whether mvwdelch is an expression... no
+checking whether WINDOW has _flags... no
+checking for curses function is_pad... no
+checking for curses function is_term_resized... no
+checking for curses function resize_term... no
+checking for curses function resizeterm... no
+checking for curses function immedok... no
+checking for curses function syncok... no
+checking for curses function wchgat... no
+checking for curses function filter... no
+checking for curses function has_key... no
+checking for curses function typeahead... no
+checking for curses function use_env... no
+configure: checking for device files
+checking for /dev/ptmx... yes
+checking for /dev/ptc... no
+checking for socklen_t... yes
+checking for broken mbstowcs... no
+checking for --with-computed-gotos... no value specified
+checking whether gcc supports computed gotos... yes
+checking for build directories... done
+checking for -O2... yes
+checking for glibc _FORTIFY_SOURCE/memmove bug... no
+checking for gcc ipa-pure-const bug... no
+checking for stdatomic.h... yes
+checking for builtin __atomic_load_n and __atomic_store_n functions... yes
+checking for ensurepip... upgrade
+checking if the dirent structure of a d_type field... yes
+checking for the Linux getrandom() syscall... yes
+checking for the getrandom() function... yes
+checking for library containing shm_open... none required
+checking for shm_open... yes
+checking for shm_unlink... yes
+checking for pkg-config... no
+checking for openssl/ssl.h in /usr/local/ssl... no
+checking for openssl/ssl.h in /usr/lib/ssl... no
+checking for openssl/ssl.h in /usr/ssl... no
+checking for openssl/ssl.h in /usr/pkg... no
+checking for openssl/ssl.h in /usr/local... no
+checking for openssl/ssl.h in /usr... no
+checking whether compiling and linking against OpenSSL works... no
+checking for --with-openssl-rpath... 
+checking whether OpenSSL provides required ssl module APIs... no
+checking whether OpenSSL provides required hashlib module APIs... no
+checking for --with-ssl-default-suites... python
+checking for --with-builtin-hashlib-hashes... md5,sha1,sha2,sha3,blake2
+checking for LIBB2... no
+checking for --disable-test-modules... yes
+checking for stdlib extension module _multiprocessing... yes
+checking for stdlib extension module _posixshmem... yes
+checking for stdlib extension module fcntl... yes
+checking for stdlib extension module mmap... yes
+checking for stdlib extension module _socket... yes
+checking for stdlib extension module grp... yes
+checking for stdlib extension module ossaudiodev... yes
+checking for stdlib extension module pwd... yes
+checking for stdlib extension module resource... yes
+checking for stdlib extension module _scproxy... n/a
+checking for stdlib extension module spwd... yes
+checking for stdlib extension module syslog... yes
+checking for stdlib extension module termios... yes
+checking for stdlib extension module pyexpat... yes
+checking for stdlib extension module _elementtree... yes
+checking for stdlib extension module _md5... yes
+checking for stdlib extension module _sha1... yes
+checking for stdlib extension module _sha2... yes
+checking for stdlib extension module _sha3... yes
+checking for stdlib extension module _blake2... yes
+checking for stdlib extension module _crypt... yes
+checking for stdlib extension module _ctypes... missing
+checking for stdlib extension module _curses... missing
+checking for stdlib extension module _curses_panel... missing
+checking for stdlib extension module _decimal... yes
+checking for stdlib extension module _dbm... missing
+checking for stdlib extension module _gdbm... missing
+checking for stdlib extension module nis... missing
+checking for stdlib extension module readline... missing
+checking for stdlib extension module _sqlite3... disabled
+checking for stdlib extension module _tkinter... missing
+checking for stdlib extension module _uuid... missing
+checking for stdlib extension module zlib... missing
+checking for stdlib extension module _bz2... missing
+checking for stdlib extension module _lzma... missing
+checking for stdlib extension module _ssl... missing
+checking for stdlib extension module _hashlib... missing
+checking for stdlib extension module _testcapi... yes
+checking for stdlib extension module _testclinic... yes
+checking for stdlib extension module _testinternalcapi... yes
+checking for stdlib extension module _testbuffer... yes
+checking for stdlib extension module _testimportmultiple... yes
+checking for stdlib extension module _testmultiphase... yes
+checking for stdlib extension module xxsubtype... yes
+checking for stdlib extension module _xxtestfuzz... yes
+checking for stdlib extension module _ctypes_test... missing
+checking for stdlib extension module xxlimited... yes
+checking for stdlib extension module xxlimited_35... yes
+configure: creating ./config.status
+config.status: creating Makefile.pre
+config.status: creating Misc/python.pc
+config.status: creating Misc/python-embed.pc
+config.status: creating Misc/python-config.sh
+config.status: creating Modules/Setup.bootstrap
+config.status: creating Modules/Setup.stdlib
+config.status: creating Modules/ld_so_aix
+config.status: creating pyconfig.h
+configure: creating Modules/Setup.local
+configure: creating Makefile
+configure: WARNING: pkg-config is missing. Some dependencies may not be detected correctly.
+Note: Deepfreeze may have added some global objects,
+      so run 'make regen-global-objects' if necessary.
+The following modules are *disabled* in configure script:
+_sqlite3                                                       
+
+The necessary bits to build these optional modules were not found:
+_bz2                  _ctypes               _ctypes_test       
+_curses               _curses_panel         _dbm               
+_gdbm                 _hashlib              _lzma              
+_ssl                  _tkinter              _uuid              
+nis                   readline              zlib               
+To find the necessary bits, look in configure.ac and config.log.
+
+Could not build the ssl module!
+Python requires a OpenSSL 1.1.1 or newer
+
+Checked 111 modules (30 built-in, 64 shared, 1 n/a on linux-x86_64, 1 disabled, 15 missing, 0 failed on import)
+The following modules are *disabled* in configure script:
+_sqlite3                                                       
+
+The necessary bits to build these optional modules were not found:
+_bz2                  _ctypes               _ctypes_test       
+_curses               _curses_panel         _dbm               
+_gdbm                 _hashlib              _lzma              
+_ssl                  _tkinter              _uuid              
+nis                   readline              zlib               
+To find the necessary bits, look in configure.ac and config.log.
+
+Could not build the ssl module!
+Python requires a OpenSSL 1.1.1 or newer
+
+Checked 111 modules (30 built-in, 64 shared, 1 n/a on linux-x86_64, 1 disabled, 15 missing, 0 failed on import)
+./python -E  ./Tools/scripts/run_tests.py 
+== CPython 3.12.0a6+ (heads/main:fd1947e, Aug 16 2023, 16:39:07) [GCC 11.4.0]
+== Linux-5.19.0-1029-aws-x86_64-with-glibc2.35 little-endian
+== Python build: debug
+== cwd: /home/ubuntu/cpython/build/test_python_14342æ
+== CPU count: 2
+== encodings: locale=UTF-8, FS=utf-8
+Using random seed 5499022
+0:00:00 load avg: 1.44 Run tests in parallel using 4 child processes
+0:00:00 load avg: 1.44 [  1/433] test_structseq passed
+0:00:00 load avg: 1.44 [  2/433] test_imghdr passed
+0:00:00 load avg: 1.44 [  3/433] test_doctest2 passed
+0:00:01 load avg: 1.44 [  4/433] test_univnewlines passed
+0:00:01 load avg: 1.44 [  5/433] test_timeit passed
+0:00:01 load avg: 1.44 [  6/433] test_fnmatch passed
+0:00:01 load avg: 1.44 [  7/433] test_sqlite3 skipped
+test_sqlite3 skipped -- No module named '_sqlite3'
+0:00:02 load avg: 1.44 [  8/433] test_strftime passed
+0:00:04 load avg: 1.57 [  9/433] test_inspect passed
+0:00:05 load avg: 1.57 [ 10/433] test_tomllib passed
+0:00:06 load avg: 1.57 [ 11/433] test_fork1 passed
+0:00:06 load avg: 1.57 [ 12/433] test_reprlib passed
+0:00:06 load avg: 1.57 [ 13/433] test_codecs passed
+0:00:07 load avg: 1.57 [ 14/433] test_script_helper passed
+0:00:07 load avg: 1.57 [ 15/433] test_module passed
+0:00:08 load avg: 1.57 [ 16/433] test_optparse passed
+0:00:09 load avg: 1.76 [ 17/433] test_bufio passed
+0:00:09 load avg: 1.76 [ 18/433] test_unittest passed
+/home/ubuntu/cpython/Lib/unittest/case.py:580: RuntimeWarning: TestResult has no addDuration method
+  warnings.warn("TestResult has no addDuration method",
+0:00:09 load avg: 1.76 [ 19/433] test_cmd passed
+0:00:09 load avg: 1.76 [ 20/433] test_tabnanny passed
+0:00:10 load avg: 1.76 [ 21/433] test_code passed
+0:00:10 load avg: 1.76 [ 22/433] test_float passed
+0:00:11 load avg: 1.76 [ 23/433] test_socketserver passed
+/home/ubuntu/cpython/Lib/test/test_socketserver.py:63: DeprecationWarning: This process (pid=14458) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+/home/ubuntu/cpython/Lib/socketserver.py:610: DeprecationWarning: This process (pid=14458) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+0:00:13 load avg: 1.76 [ 24/433] test_pydoc passed
+0:00:13 load avg: 1.76 [ 25/433] test_c_locale_coercion passed
+0:00:14 load avg: 1.86 [ 26/433] test_copyreg passed
+0:00:14 load avg: 1.86 [ 27/433] test_int_literal passed
+0:00:17 load avg: 1.86 [ 28/433] test_nntplib passed
+0:00:24 load avg: 2.11 [ 29/433] test_support passed
+0:00:37 load avg: 2.84 [ 30/433] test_venv passed
+Could not find platform dependent libraries <exec_prefix>
+0:00:38 load avg: 2.84 [ 31/433] test_genericpath passed
+0:00:38 load avg: 2.84 [ 32/433] test_http_cookies passed
+0:00:39 load avg: 2.85 [ 33/433] test_binop passed
+0:00:39 load avg: 2.85 [ 34/433] test_spwd passed
+0:00:40 load avg: 2.85 [ 35/433] test_graphlib passed
+0:00:42 load avg: 2.85 [ 36/433] test_multiprocessing_main_handling passed
+0:00:42 load avg: 2.85 [ 37/433] test_codecencodings_iso2022 passed
+0:00:42 load avg: 2.85 [ 38/433] test_minidom passed
+0:00:43 load avg: 2.85 [ 39/433] test_binascii passed
+0:00:43 load avg: 2.85 [ 40/433] test_array passed
+0:00:44 load avg: 2.85 [ 41/433] test_descrtut passed
+0:00:44 load avg: 2.70 [ 42/433] test_tkinter skipped
+test_tkinter skipped -- No module named '_tkinter'
+0:00:49 load avg: 2.49 [ 43/433] test_timeout passed -- running: test_io (35.2 sec), test_multiprocessing_forkserver (31.9 sec)
+0:00:55 load avg: 2.53 [ 44/433] test_bytes passed -- running: test_io (41.1 sec), test_multiprocessing_forkserver (37.8 sec)
+0:00:56 load avg: 2.53 [ 45/433] test_profile passed -- running: test_io (41.7 sec), test_multiprocessing_forkserver (38.5 sec)
+0:00:56 load avg: 2.53 [ 46/433] test_sunau passed -- running: test_io (42.0 sec), test_multiprocessing_forkserver (38.7 sec)
+0:00:59 load avg: 2.57 [ 47/433] test_threading passed -- running: test_io (45.3 sec), test_multiprocessing_forkserver (42.0 sec)
+0:00:59 load avg: 2.57 [ 48/433] test_userstring passed -- running: test_io (45.5 sec), test_multiprocessing_forkserver (42.2 sec)
+0:01:00 load avg: 2.57 [ 49/433] test_contextlib_async passed -- running: test_io (45.8 sec), test_multiprocessing_forkserver (42.5 sec)
+0:01:00 load avg: 2.57 [ 50/433] test_ctypes skipped -- running: test_io (46.0 sec), test_multiprocessing_forkserver (42.7 sec)
+test_ctypes skipped -- No module named '_ctypes'
+0:01:01 load avg: 2.57 [ 51/433] test_strtod passed -- running: test_io (47.1 sec), test_multiprocessing_forkserver (43.8 sec)
+0:01:02 load avg: 2.57 [ 52/433] test_userdict passed -- running: test_io (47.6 sec), test_multiprocessing_forkserver (44.3 sec)
+0:01:03 load avg: 2.57 [ 53/433] test_os passed -- running: test_io (48.6 sec), test_multiprocessing_forkserver (45.4 sec)
+0:01:03 load avg: 2.57 [ 54/433] test_smtplib passed -- running: test_io (49.0 sec), test_multiprocessing_forkserver (45.8 sec)
+0:01:03 load avg: 2.57 [ 55/433] test_codeccallbacks passed -- running: test_io (49.4 sec), test_multiprocessing_forkserver (46.1 sec)
+0:01:04 load avg: 2.57 [ 56/433] test_subclassinit passed -- running: test_io (49.7 sec), test_multiprocessing_forkserver (46.4 sec)
+0:01:04 load avg: 2.60 [ 57/433] test_msilib skipped -- running: test_io (49.9 sec), test_multiprocessing_forkserver (46.6 sec)
+test_msilib skipped -- No module named '_msi'
+0:01:05 load avg: 2.60 [ 58/433] test_io passed (50.4 sec) -- running: test_multiprocessing_forkserver (47.3 sec)
+0:01:07 load avg: 2.60 [ 59/433] test_xml_etree_c passed -- running: test_multiprocessing_forkserver (49.3 sec)
+0:01:07 load avg: 2.60 [ 60/433] test_except_star passed -- running: test_multiprocessing_forkserver (49.6 sec)
+0:01:08 load avg: 2.60 [ 61/433] test_imp passed -- running: test_multiprocessing_forkserver (50.9 sec)
+0:01:09 load avg: 2.63 [ 62/433] test_pow passed -- running: test_multiprocessing_forkserver (51.4 sec)
+0:01:09 load avg: 2.63 [ 63/433] test_print passed -- running: test_multiprocessing_forkserver (51.9 sec)
+0:01:12 load avg: 2.63 [ 64/433] test_interpreters passed -- running: test_multiprocessing_forkserver (55.1 sec)
+0:01:13 load avg: 2.63 [ 65/433] test_pyclbr passed -- running: test_multiprocessing_forkserver (55.9 sec)
+0:01:14 load avg: 2.63 [ 66/433] test_dbm_ndbm skipped -- running: test_multiprocessing_forkserver (56.3 sec)
+test_dbm_ndbm skipped -- No module named '_dbm'
+0:01:14 load avg: 2.74 [ 67/433] test_urllibnet passed -- running: test_multiprocessing_forkserver (57.2 sec)
+0:01:15 load avg: 2.74 [ 68/433] test_crashers passed -- running: test_multiprocessing_forkserver (57.7 sec)
+0:01:15 load avg: 2.74 [ 69/433] test_crypt passed -- running: test_multiprocessing_forkserver (57.8 sec)
+0:01:19 load avg: 2.84 [ 70/433] test_enum passed -- running: test_multiprocessing_forkserver (1 min 1 sec)
+0:01:19 load avg: 2.84 [ 71/433] test_gdb skipped -- running: test_multiprocessing_forkserver (1 min 1 sec)
+test_gdb skipped -- Couldn't find gdb on the path
+0:01:20 load avg: 2.84 [ 72/433] test_idle skipped -- running: test_multiprocessing_forkserver (1 min 2 sec)
+test_idle skipped -- No module named '_tkinter'
+0:01:20 load avg: 2.84 [ 73/433] test_doctest passed -- running: test_multiprocessing_forkserver (1 min 2 sec)
+<frozen importlib._bootstrap>:824: ImportWarning: TestImporter.exec_module() not found; falling back to load_module()
+0:01:20 load avg: 2.84 [ 74/433] test_sundry passed -- running: test_multiprocessing_forkserver (1 min 3 sec)
+0:01:22 load avg: 2.84 [ 75/433] test_call passed -- running: test_multiprocessing_forkserver (1 min 4 sec)
+0:01:22 load avg: 2.84 [ 76/433] test_asdl_parser passed -- running: test_multiprocessing_forkserver (1 min 4 sec)
+0:01:22 load avg: 2.84 [ 77/433] test_file passed -- running: test_multiprocessing_forkserver (1 min 5 sec)
+0:01:23 load avg: 2.84 [ 78/433] test_turtle skipped -- running: test_multiprocessing_forkserver (1 min 5 sec)
+test_turtle skipped -- No module named '_tkinter'
+0:01:23 load avg: 2.84 [ 79/433] test_iterlen passed -- running: test_multiprocessing_forkserver (1 min 5 sec)
+0:01:23 load avg: 2.84 [ 80/433] test_difflib passed -- running: test_multiprocessing_forkserver (1 min 5 sec)
+0:01:23 load avg: 2.84 [ 81/433] test_dictcomps passed -- running: test_multiprocessing_forkserver (1 min 6 sec)
+0:01:24 load avg: 2.84 [ 82/433] test_format passed -- running: test_multiprocessing_forkserver (1 min 6 sec)
+0:01:24 load avg: 2.86 [ 83/433] test_types passed -- running: test_multiprocessing_forkserver (1 min 6 sec)
+0:01:24 load avg: 2.86 [ 84/433] test_sndhdr passed -- running: test_multiprocessing_forkserver (1 min 6 sec)
+0:01:24 load avg: 2.86 [ 85/433] test_ntpath passed -- running: test_multiprocessing_forkserver (1 min 7 sec)
+0:01:25 load avg: 2.86 [ 86/433] test_posixpath passed -- running: test_multiprocessing_forkserver (1 min 7 sec)
+0:01:25 load avg: 2.86 [ 87/433] test_eof passed -- running: test_multiprocessing_forkserver (1 min 7 sec)
+0:01:25 load avg: 2.86 [ 88/433] test_epoll passed -- running: test_multiprocessing_forkserver (1 min 7 sec)
+0:01:26 load avg: 2.86 [ 89/433] test_strptime passed -- running: test_multiprocessing_forkserver (1 min 8 sec)
+0:01:26 load avg: 2.86 [ 90/433] test_base64 passed -- running: test_multiprocessing_forkserver (1 min 9 sec)
+0:01:27 load avg: 2.86 [ 91/433] test_fileutils passed -- running: test_multiprocessing_forkserver (1 min 9 sec)
+0:01:27 load avg: 2.86 [ 92/433] test_xxtestfuzz passed -- running: test_multiprocessing_forkserver (1 min 10 sec)
+/home/ubuntu/cpython/Lib/test/test_xxtestfuzz.py:13: DeprecationWarning: module 'sre_compile' is deprecated
+  _xxtestfuzz.run(b"")
+/home/ubuntu/cpython/Lib/test/test_xxtestfuzz.py:13: DeprecationWarning: module 'sre_constants' is deprecated
+  _xxtestfuzz.run(b"")
+0:01:28 load avg: 2.86 [ 93/433] test_baseexception passed -- running: test_multiprocessing_forkserver (1 min 10 sec)
+0:01:41 load avg: 2.96 [ 94/433] test_embed passed -- running: test_tokenize (38.8 sec), test_multiprocessing_forkserver (1 min 24 sec)
+0:01:42 load avg: 2.96 [ 95/433] test_textwrap passed -- running: test_tokenize (39.1 sec), test_multiprocessing_forkserver (1 min 24 sec)
+0:01:44 load avg: 3.05 [ 96/433] test_set passed -- running: test_tokenize (41.2 sec), test_multiprocessing_forkserver (1 min 26 sec)
+0:01:44 load avg: 3.05 [ 97/433] test__osx_support passed -- running: test_tokenize (41.7 sec), test_multiprocessing_forkserver (1 min 27 sec)
+0:01:45 load avg: 3.05 [ 98/433] test_peg_generator skipped -- running: test_tokenize (42.1 sec), test_multiprocessing_forkserver (1 min 27 sec)
+test_peg_generator skipped -- distutils has been removed in Python 3.12
+0:01:48 load avg: 3.05 [ 99/433] test__xxsubinterpreters passed -- running: test_tokenize (45.0 sec), test_multiprocessing_forkserver (1 min 30 sec)
+0:01:48 load avg: 3.05 [100/433] test_unicode_file passed -- running: test_tokenize (45.4 sec), test_multiprocessing_forkserver (1 min 30 sec)
+0:01:48 load avg: 3.05 [101/433] test_type_annotations passed -- running: test_tokenize (45.9 sec), test_multiprocessing_forkserver (1 min 31 sec)
+0:01:50 load avg: 3.04 [102/433] test_threading_local passed -- running: test_tokenize (47.5 sec), test_multiprocessing_forkserver (1 min 32 sec)
+0:01:51 load avg: 3.04 [103/433] test_ssl skipped -- running: test_tokenize (48.2 sec), test_multiprocessing_forkserver (1 min 33 sec)
+test_ssl skipped -- No module named '_ssl'
+0:01:59 load avg: 3.20 [104/433] test_multiprocessing_forkserver passed (1 min 41 sec) -- running: test_tokenize (56.1 sec)
+0:01:59 load avg: 3.20 [105/433] test_source_encoding passed -- running: test_tokenize (56.7 sec)
+0:02:00 load avg: 3.20 [106/433] test_funcattrs passed -- running: test_tokenize (57.0 sec)
+0:02:04 load avg: 3.26 [107/433] test_tracemalloc passed -- running: test_tokenize (1 min 1 sec)
+0:02:04 load avg: 3.26 [108/433] test_winreg skipped -- running: test_tokenize (1 min 1 sec)
+test_winreg skipped -- No module named 'winreg'
+0:02:05 load avg: 3.26 [109/433] test_importlib passed -- running: test_tokenize (1 min 1 sec)
+0:02:07 load avg: 3.26 [110/433] test_sys passed -- running: test_tokenize (1 min 4 sec)
+0:02:07 load avg: 3.26 [111/433] test_heapq passed -- running: test_tokenize (1 min 4 sec)
+0:02:07 load avg: 3.26 [112/433] test_datetime passed -- running: test_tokenize (1 min 4 sec)
+0:02:07 load avg: 3.26 [113/433] test_pyexpat passed -- running: test_tokenize (1 min 4 sec)
+0:02:07 load avg: 3.26 [114/433] test_gettext passed -- running: test_tokenize (1 min 4 sec)
+0:02:09 load avg: 3.32 [115/433] test_typing passed -- running: test_tokenize (1 min 6 sec)
+0:02:10 load avg: 3.32 [116/433] test_http_cookiejar passed -- running: test_tokenize (1 min 6 sec)
+0:02:10 load avg: 3.32 [117/433] test_codecmaps_cn passed -- running: test_tokenize (1 min 7 sec)
+0:02:10 load avg: 3.32 [118/433] test_aifc passed -- running: test_tokenize (1 min 7 sec)
+0:02:11 load avg: 3.32 [119/433] test_memoryview passed -- running: test_tokenize (1 min 8 sec)
+0:02:19 load avg: 3.35 [120/433] test_long passed -- running: test_tokenize (1 min 16 sec)
+0:02:19 load avg: 3.35 [121/433] test_telnetlib passed -- running: test_tokenize (1 min 16 sec)
+0:02:26 load avg: 3.32 [122/433] test_json passed -- running: test_tokenize (1 min 23 sec)
+0:02:27 load avg: 3.32 [123/433] test_weakref passed -- running: test_tokenize (1 min 24 sec)
+0:02:27 load avg: 3.32 [124/433] test_bdb passed -- running: test_tokenize (1 min 24 sec)
+0:02:28 load avg: 3.32 [125/433] test_mimetypes passed -- running: test_tokenize (1 min 25 sec)
+0:02:32 load avg: 3.30 [126/433] test_descr passed -- running: test_tokenize (1 min 29 sec)
+0:02:33 load avg: 3.30 [127/433] test_stat passed -- running: test_tokenize (1 min 30 sec)
+0:02:33 load avg: 3.30 [128/433] test_weakset passed -- running: test_tokenize (1 min 30 sec)
+0:02:34 load avg: 3.30 [129/433] test_listcomps passed -- running: test_tokenize (1 min 30 sec)
+0:02:34 load avg: 3.19 [130/433] test_filecmp passed -- running: test_tokenize (1 min 31 sec)
+0:02:46 load avg: 2.86 [131/433] test_tokenize passed (1 min 43 sec) -- running: test_subprocess (37.1 sec)
+0:02:48 load avg: 2.86 [132/433] test_faulthandler passed -- running: test_subprocess (38.5 sec)
+0:02:48 load avg: 2.86 [133/433] test_subprocess passed (38.9 sec)
+0:02:49 load avg: 2.87 [134/433] test_cgitb passed
+0:02:49 load avg: 2.87 [135/433] test_dbm_dumb passed
+0:02:50 load avg: 2.87 [136/433] test_positional_only_arg passed
+0:02:50 load avg: 2.87 [137/433] test_abstract_numbers passed
+0:02:50 load avg: 2.87 [138/433] test_locale passed
+0:02:50 load avg: 2.87 [139/433] test_cppext passed
+0:02:51 load avg: 2.87 [140/433] test_type_cache passed
+0:02:51 load avg: 2.87 [141/433] test_xxlimited passed
+0:03:12 load avg: 2.98 [142/433] test_selectors passed -- running: test_multiprocessing_fork (38.5 sec)
+0:03:13 load avg: 2.98 [143/433] test_clinic passed -- running: test_multiprocessing_fork (39.5 sec)
+0:03:14 load avg: 2.98 [144/433] test_generator_stop passed -- running: test_multiprocessing_fork (39.9 sec)
+0:03:15 load avg: 2.98 [145/433] test_codecmaps_tw passed -- running: test_multiprocessing_fork (41.4 sec)
+0:03:35 load avg: 3.20 [146/433] test_hashlib passed (46.8 sec) -- running: test_multiprocessing_fork (1 min), test_lib2to3 (48.5 sec)
+0:03:35 load avg: 3.20 [147/433] test_genexps passed -- running: test_multiprocessing_fork (1 min 1 sec), test_lib2to3 (49.1 sec)
+0:03:36 load avg: 3.20 [148/433] test_uuid passed -- running: test_multiprocessing_fork (1 min 2 sec), test_lib2to3 (50.0 sec)
+usage: [-h] [-u {uuid1,uuid3,uuid4,uuid5}] [-n NAMESPACE] [-N NAME]
+: error: Incorrect number of arguments. uuid3 requires a namespace and a name. Run 'python -m uuid -h' for more information.
+usage: [-h] [-u {uuid1,uuid3,uuid4,uuid5}] [-n NAMESPACE] [-N NAME]
+: error: Incorrect number of arguments. uuid3 requires a namespace and a name. Run 'python -m uuid -h' for more information.
+0:03:41 load avg: 3.42 [149/433] test_regrtest passed -- running: test_multiprocessing_fork (1 min 7 sec), test_lib2to3 (54.9 sec)
+0:03:41 load avg: 3.42 [150/433] test_fractions passed -- running: test_multiprocessing_fork (1 min 7 sec), test_lib2to3 (55.3 sec)
+0:03:42 load avg: 3.42 [151/433] test_compiler_codegen passed -- running: test_multiprocessing_fork (1 min 7 sec), test_lib2to3 (55.6 sec)
+0:03:47 load avg: 3.31 [152/433] test_imaplib passed -- running: test_multiprocessing_fork (1 min 12 sec), test_lib2to3 (1 min)
+0:03:47 load avg: 3.31 [153/433] test_pkg passed -- running: test_multiprocessing_fork (1 min 13 sec), test_lib2to3 (1 min)
+0:03:48 load avg: 3.31 [154/433] test_thread passed -- running: test_multiprocessing_fork (1 min 14 sec), test_lib2to3 (1 min 2 sec)
+0:03:49 load avg: 3.31 [155/433] test_unicode passed -- running: test_multiprocessing_fork (1 min 14 sec), test_lib2to3 (1 min 2 sec)
+0:03:49 load avg: 3.31 [156/433] test_stringprep passed -- running: test_multiprocessing_fork (1 min 14 sec), test_lib2to3 (1 min 2 sec)
+0:03:49 load avg: 3.28 [157/433] test_rlcompleter passed -- running: test_multiprocessing_fork (1 min 15 sec), test_lib2to3 (1 min 2 sec)
+0:03:49 load avg: 3.28 [158/433] test_quopri passed -- running: test_multiprocessing_fork (1 min 15 sec), test_lib2to3 (1 min 3 sec)
+0:03:50 load avg: 3.28 [159/433] test_numeric_tower passed -- running: test_multiprocessing_fork (1 min 15 sec), test_lib2to3 (1 min 3 sec)
+0:03:51 load avg: 3.28 [160/433] test__xxinterpchannels passed -- running: test_multiprocessing_fork (1 min 16 sec), test_lib2to3 (1 min 4 sec)
+0:03:51 load avg: 3.28 [161/433] test_platform passed -- running: test_multiprocessing_fork (1 min 16 sec), test_lib2to3 (1 min 4 sec)
+0:03:52 load avg: 3.28 [162/433] test_fcntl passed -- running: test_multiprocessing_fork (1 min 17 sec), test_lib2to3 (1 min 5 sec)
+struct.pack:  b'\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+struct.pack:  b'\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+0:03:52 load avg: 3.28 [163/433] test_bisect passed -- running: test_multiprocessing_fork (1 min 18 sec), test_lib2to3 (1 min 5 sec)
+0:03:52 load avg: 3.28 [164/433] test_xdrlib passed -- running: test_multiprocessing_fork (1 min 18 sec), test_lib2to3 (1 min 6 sec)
+0:03:53 load avg: 3.28 [165/433] test_zipimport_support passed -- running: test_multiprocessing_fork (1 min 18 sec), test_lib2to3 (1 min 6 sec)
+0:03:53 load avg: 3.28 [166/433] test_bz2 skipped -- running: test_multiprocessing_fork (1 min 18 sec), test_lib2to3 (1 min 6 sec)
+test_bz2 skipped -- No module named '_bz2'
+0:03:53 load avg: 3.28 [167/433] test__opcode passed -- running: test_multiprocessing_fork (1 min 19 sec), test_lib2to3 (1 min 6 sec)
+0:03:53 load avg: 3.28 [168/433] test_codecencodings_tw passed -- running: test_multiprocessing_fork (1 min 19 sec), test_lib2to3 (1 min 6 sec)
+0:03:53 load avg: 3.28 [169/433] test_augassign passed -- running: test_multiprocessing_fork (1 min 19 sec), test_lib2to3 (1 min 7 sec)
+0:03:53 load avg: 3.28 [170/433] test_super passed -- running: test_multiprocessing_fork (1 min 19 sec), test_lib2to3 (1 min 7 sec)
+0:03:54 load avg: 3.26 [171/433] test_zipimport passed -- running: test_multiprocessing_fork (1 min 20 sec), test_lib2to3 (1 min 7 sec)
+0:03:55 load avg: 3.26 [172/433] test_coroutines passed -- running: test_multiprocessing_fork (1 min 20 sec), test_lib2to3 (1 min 8 sec)
+0:03:55 load avg: 3.26 [173/433] test_longexp passed -- running: test_multiprocessing_fork (1 min 20 sec), test_lib2to3 (1 min 8 sec)
+0:03:55 load avg: 3.26 [174/433] test_winsound skipped (resource denied) -- running: test_multiprocessing_fork (1 min 21 sec), test_lib2to3 (1 min 8 sec)
+test_winsound skipped -- Use of the 'audio' resource not enabled
+0:03:56 load avg: 3.26 [175/433] test_unicode_file_functions passed -- running: test_multiprocessing_fork (1 min 21 sec), test_lib2to3 (1 min 9 sec)
+0:03:56 load avg: 3.26 [176/433] test_colorsys passed -- running: test_multiprocessing_fork (1 min 22 sec), test_lib2to3 (1 min 9 sec)
+0:03:56 load avg: 3.26 [177/433] test_xml_dom_minicompat passed -- running: test_multiprocessing_fork (1 min 22 sec), test_lib2to3 (1 min 10 sec)
+0:03:57 load avg: 3.26 [178/433] test_multiprocessing_fork passed (1 min 23 sec) -- running: test_lib2to3 (1 min 11 sec)
+/home/ubuntu/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=23771) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ubuntu/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=23525) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ubuntu/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=26554) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ubuntu/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=23525) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+0:04:17 load avg: 3.54 [179/433] test_lib2to3 passed (1 min 30 sec)
+0:04:18 load avg: 3.54 [180/433] test_memoryio passed
+0:04:19 load avg: 3.54 [181/433] test_copy passed
+0:04:20 load avg: 3.58 [182/433] test_poplib passed
+0:04:23 load avg: 3.58 [183/433] test_buffer passed
+0:04:25 load avg: 3.61 [184/433] test_dataclasses passed -- running: test_multiprocessing_spawn (30.3 sec)
+0:04:43 load avg: 3.86 [185/433] test_compile passed -- running: test_compileall (47.2 sec), test_multiprocessing_spawn (48.8 sec)
+0:04:44 load avg: 3.79 [186/433] test_ensurepip passed -- running: test_compileall (47.9 sec), test_multiprocessing_spawn (49.6 sec)
+0:04:53 load avg: 3.97 [187/433] test_decimal passed (33.0 sec) -- running: test_compileall (56.8 sec), test_multiprocessing_spawn (58.4 sec)
+0:04:53 load avg: 3.97 [188/433] test_compileall passed (56.5 sec) -- running: test_multiprocessing_spawn (58.5 sec)
+0:04:53 load avg: 3.97 [189/433] test_exception_variations passed -- running: test_multiprocessing_spawn (58.7 sec)
+0:04:54 load avg: 3.73 [190/433] test_ordered_dict passed -- running: test_multiprocessing_spawn (59.2 sec)
+0:04:55 load avg: 3.73 [191/433] test_slice passed -- running: test_multiprocessing_spawn (1 min)
+0:04:55 load avg: 3.73 [192/433] test_winconsoleio skipped -- running: test_multiprocessing_spawn (1 min)
+test_winconsoleio skipped -- test only relevant on win32
+0:04:56 load avg: 3.73 [193/433] test_plistlib passed -- running: test_multiprocessing_spawn (1 min 1 sec)
+0:04:58 load avg: 3.73 [194/433] test_threadsignals passed -- running: test_multiprocessing_spawn (1 min 3 sec)
+0:05:00 load avg: 3.83 [195/433] test_dict passed -- running: test_multiprocessing_spawn (1 min 5 sec)
+0:05:00 load avg: 3.83 [196/433] test_calendar passed -- running: test_multiprocessing_spawn (1 min 5 sec)
+0:05:01 load avg: 3.83 [197/433] test__locale passed -- running: test_multiprocessing_spawn (1 min 5 sec)
+0:05:01 load avg: 3.83 [198/433] test_contextlib passed -- running: test_multiprocessing_spawn (1 min 6 sec)
+0:05:03 load avg: 3.83 [199/433] test_httpservers passed -- running: test_multiprocessing_spawn (1 min 7 sec)
+/home/ubuntu/cpython/Lib/http/server.py:1168: DeprecationWarning: This process (pid=28850) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+0:05:06 load avg: 3.69 [200/433] test_context passed -- running: test_multiprocessing_spawn (1 min 11 sec)
+0:05:06 load avg: 3.69 [201/433] test_popen passed -- running: test_multiprocessing_spawn (1 min 11 sec)
+0:05:07 load avg: 3.69 [202/433] test_string_literals passed -- running: test_multiprocessing_spawn (1 min 12 sec)
+0:05:08 load avg: 3.69 [203/433] test_defaultdict passed -- running: test_multiprocessing_spawn (1 min 13 sec)
+0:05:12 load avg: 3.63 [204/433] test_deque passed -- running: test_multiprocessing_spawn (1 min 16 sec)
+0:05:12 load avg: 3.63 [205/433] test_zipfile passed -- running: test_multiprocessing_spawn (1 min 17 sec)
+0:05:12 load avg: 3.63 [206/433] test_unicode_identifiers passed -- running: test_multiprocessing_spawn (1 min 17 sec)
+0:05:14 load avg: 3.50 [207/433] test_ftplib passed -- running: test_signal (30.0 sec), test_multiprocessing_spawn (1 min 19 sec)
+0:05:14 load avg: 3.50 [208/433] test_osx_env passed -- running: test_signal (30.3 sec), test_multiprocessing_spawn (1 min 19 sec)
+0:05:17 load avg: 3.50 [209/433] test_mailbox passed -- running: test_signal (33.2 sec), test_multiprocessing_spawn (1 min 22 sec)
+0:05:19 load avg: 3.46 [210/433] test_warnings passed -- running: test_signal (35.1 sec), test_multiprocessing_spawn (1 min 24 sec)
+/home/ubuntu/cpython/Lib/test/test_warnings/__init__.py:390: UserWarning: Other types of warnings are not errors
+  self.module.warn("Other types of warnings are not errors")
+/home/ubuntu/cpython/Lib/test/test_warnings/__init__.py:390: UserWarning: Other types of warnings are not errors
+  self.module.warn("Other types of warnings are not errors")
+0:05:20 load avg: 3.46 [211/433] test_audioop passed -- running: test_signal (35.8 sec), test_multiprocessing_spawn (1 min 25 sec)
+0:05:21 load avg: 3.46 [212/433] test_wave passed -- running: test_signal (36.6 sec), test_multiprocessing_spawn (1 min 26 sec)
+0:05:22 load avg: 3.46 [213/433] test_repl passed -- running: test_signal (37.9 sec), test_multiprocessing_spawn (1 min 27 sec)
+0:05:47 load avg: 3.75 [214/433] test_signal passed (1 min 2 sec) -- running: test_unicodedata (34.5 sec), test_multiprocessing_spawn (1 min 52 sec)
+0:05:49 load avg: 3.69 [215/433] test_struct passed -- running: test_unicodedata (36.8 sec), test_multiprocessing_spawn (1 min 54 sec)
+0:05:53 load avg: 3.69 [216/433] test___all__ passed -- running: test_unicodedata (40.4 sec), test_capi (30.6 sec), test_multiprocessing_spawn (1 min 58 sec)
+0:05:53 load avg: 3.69 [217/433] test_symtable passed -- running: test_unicodedata (40.8 sec), test_capi (31.0 sec), test_multiprocessing_spawn (1 min 58 sec)
+0:05:53 load avg: 3.69 [218/433] test_grp passed -- running: test_unicodedata (41.1 sec), test_capi (31.3 sec), test_multiprocessing_spawn (1 min 58 sec)
+0:05:54 load avg: 3.71 [219/433] test_httplib passed -- running: test_unicodedata (41.8 sec), test_capi (32.1 sec), test_multiprocessing_spawn (1 min 59 sec)
+0:05:59 load avg: 3.66 [220/433] test_peepholer passed -- running: test_unicodedata (46.9 sec), test_capi (37.1 sec), test_multiprocessing_spawn (2 min 4 sec)
+0:06:00 load avg: 3.66 [221/433] test_exception_group passed -- running: test_unicodedata (47.2 sec), test_capi (37.4 sec), test_multiprocessing_spawn (2 min 4 sec)
+0:06:00 load avg: 3.66 [222/433] test_keywordonlyarg passed -- running: test_unicodedata (47.6 sec), test_capi (37.9 sec), test_multiprocessing_spawn (2 min 5 sec)
+0:06:00 load avg: 3.66 [223/433] test_getopt passed -- running: test_unicodedata (48.1 sec), test_capi (38.3 sec), test_multiprocessing_spawn (2 min 5 sec)
+0:06:01 load avg: 3.66 [224/433] test_uu passed -- running: test_unicodedata (48.4 sec), test_capi (38.6 sec), test_multiprocessing_spawn (2 min 6 sec)
+0:06:01 load avg: 3.66 [225/433] test_pprint passed -- running: test_unicodedata (48.9 sec), test_capi (39.1 sec), test_multiprocessing_spawn (2 min 6 sec)
+0:06:02 load avg: 3.66 [226/433] test_patma passed -- running: test_unicodedata (49.3 sec), test_capi (39.5 sec), test_multiprocessing_spawn (2 min 7 sec)
+0:06:03 load avg: 3.66 [227/433] test_docxmlrpc passed -- running: test_unicodedata (50.4 sec), test_capi (40.6 sec), test_multiprocessing_spawn (2 min 8 sec)
+0:06:05 load avg: 3.76 [228/433] test_configparser passed -- running: test_unicodedata (52.6 sec), test_capi (42.8 sec), test_multiprocessing_spawn (2 min 10 sec)
+0:06:08 load avg: 3.76 [229/433] test_time passed -- running: test_unicodedata (55.4 sec), test_capi (45.6 sec), test_multiprocessing_spawn (2 min 13 sec)
+0:06:09 load avg: 3.76 [230/433] test_urllib2 passed -- running: test_unicodedata (56.5 sec), test_capi (46.7 sec), test_multiprocessing_spawn (2 min 14 sec)
+0:06:09 load avg: 3.94 [231/433] test_flufl passed -- running: test_unicodedata (57.0 sec), test_capi (47.2 sec), test_multiprocessing_spawn (2 min 14 sec)
+0:06:10 load avg: 3.94 [232/433] test_largefile passed -- running: test_unicodedata (57.6 sec), test_capi (47.8 sec), test_multiprocessing_spawn (2 min 15 sec)
+0:06:11 load avg: 3.94 [233/433] test_shlex passed -- running: test_unicodedata (58.2 sec), test_capi (48.4 sec), test_multiprocessing_spawn (2 min 15 sec)
+0:06:13 load avg: 3.94 [234/433] test_unicodedata passed (1 min) -- running: test_capi (51.1 sec), test_multiprocessing_spawn (2 min 18 sec)
+0:06:13 load avg: 3.94 [235/433] test_glob passed -- running: test_capi (51.1 sec), test_multiprocessing_spawn (2 min 18 sec)
+0:06:14 load avg: 4.19 [236/433] test_future5 passed -- running: test_capi (51.8 sec), test_multiprocessing_spawn (2 min 19 sec)
+0:06:14 load avg: 4.19 [237/433] test_getpass passed -- running: test_capi (52.1 sec), test_multiprocessing_spawn (2 min 19 sec)
+0:06:15 load avg: 4.19 [238/433] test_genericclass passed -- running: test_capi (52.8 sec), test_multiprocessing_spawn (2 min 20 sec)
+0:06:16 load avg: 4.19 [239/433] test_urllib2_localnet passed -- running: test_capi (53.4 sec), test_multiprocessing_spawn (2 min 20 sec)
+0:06:16 load avg: 4.19 [240/433] test_xml_etree passed -- running: test_capi (53.5 sec), test_multiprocessing_spawn (2 min 20 sec)
+0:06:16 load avg: 4.19 [241/433] test_extcall passed -- running: test_capi (54.1 sec), test_multiprocessing_spawn (2 min 21 sec)
+0:06:16 load avg: 4.19 [242/433] test_netrc passed -- running: test_capi (54.1 sec), test_multiprocessing_spawn (2 min 21 sec)
+0:06:17 load avg: 4.19 [243/433] test_wsgiref passed -- running: test_capi (55.0 sec), test_multiprocessing_spawn (2 min 22 sec)
+0:06:20 load avg: 4.17 [244/433] test_utf8_mode passed -- running: test_capi (57.9 sec), test_multiprocessing_spawn (2 min 25 sec)
+0:06:20 load avg: 4.17 [245/433] test_readline skipped -- running: test_capi (58.3 sec), test_multiprocessing_spawn (2 min 25 sec)
+test_readline skipped -- No module named 'readline'
+0:06:21 load avg: 4.17 [246/433] test_ttk skipped -- running: test_capi (58.7 sec), test_multiprocessing_spawn (2 min 26 sec)
+test_ttk skipped -- No module named '_tkinter'
+0:06:21 load avg: 4.17 [247/433] test_linecache passed -- running: test_capi (59.2 sec), test_multiprocessing_spawn (2 min 26 sec)
+0:06:23 load avg: 4.17 [248/433] test_int passed -- running: test_capi (1 min 1 sec), test_multiprocessing_spawn (2 min 28 sec)
+0:06:24 load avg: 4.17 [249/433] test_tarfile passed -- running: test_capi (1 min 1 sec), test_multiprocessing_spawn (2 min 29 sec)
+0:06:24 load avg: 4.16 [250/433] test_pep646_syntax passed -- running: test_capi (1 min 1 sec), test_multiprocessing_spawn (2 min 29 sec)
+0:06:24 load avg: 4.16 [251/433] test_metaclass passed -- running: test_capi (1 min 2 sec), test_multiprocessing_spawn (2 min 29 sec)
+0:06:25 load avg: 4.16 [252/433] test_enumerate passed -- running: test_capi (1 min 2 sec), test_multiprocessing_spawn (2 min 30 sec)
+0:06:26 load avg: 4.16 [253/433] test_py_compile passed -- running: test_capi (1 min 4 sec), test_multiprocessing_spawn (2 min 31 sec)
+0:06:27 load avg: 4.16 [254/433] test_fstring passed -- running: test_capi (1 min 5 sec), test_multiprocessing_spawn (2 min 32 sec)
+0:06:28 load avg: 4.16 [255/433] test_sort passed -- running: test_capi (1 min 5 sec), test_multiprocessing_spawn (2 min 33 sec)
+0:06:28 load avg: 4.16 [256/433] test_list passed -- running: test_capi (1 min 6 sec), test_multiprocessing_spawn (2 min 33 sec)
+0:06:29 load avg: 4.15 [257/433] test_getpath passed -- running: test_capi (1 min 6 sec), test_multiprocessing_spawn (2 min 34 sec)
+0:06:34 load avg: 4.15 [258/433] test_audit passed -- running: test_capi (1 min 11 sec), test_multiprocessing_spawn (2 min 38 sec)
+0:06:37 load avg: 4.13 [259/433] test_re passed -- running: test_capi (1 min 15 sec), test_multiprocessing_spawn (2 min 42 sec)
+0:06:40 load avg: 4.04 [260/433] test_email passed -- running: test_capi (1 min 18 sec), test_multiprocessing_spawn (2 min 45 sec)
+0:06:41 load avg: 4.04 [261/433] test_zlib skipped -- running: test_capi (1 min 18 sec), test_multiprocessing_spawn (2 min 45 sec)
+test_zlib skipped -- No module named 'zlib'
+0:06:43 load avg: 4.04 [262/433] test_gc passed -- running: test_capi (1 min 20 sec), test_multiprocessing_spawn (2 min 48 sec)
+0:06:44 load avg: 4.04 [263/433] test_shelve passed -- running: test_capi (1 min 21 sec), test_multiprocessing_spawn (2 min 49 sec)
+0:06:44 load avg: 4.20 [264/433] test_userlist passed -- running: test_capi (1 min 22 sec), test_multiprocessing_spawn (2 min 49 sec)
+0:06:45 load avg: 4.20 [265/433] test_launcher skipped -- running: test_capi (1 min 22 sec), test_multiprocessing_spawn (2 min 49 sec)
+test_launcher skipped -- test only applies to Windows
+0:06:48 load avg: 4.20 [266/433] test_random passed -- running: test_capi (1 min 26 sec), test_multiprocessing_spawn (2 min 53 sec)
+0:06:49 load avg: 4.20 [267/433] test___future__ passed -- running: test_capi (1 min 26 sec), test_multiprocessing_spawn (2 min 53 sec)
+0:06:49 load avg: 4.10 [268/433] test_poll passed -- running: test_capi (1 min 26 sec), test_multiprocessing_spawn (2 min 54 sec)
+0:06:49 load avg: 4.10 [269/433] test_perf_profiler passed -- running: test_capi (1 min 27 sec), test_multiprocessing_spawn (2 min 54 sec)
+0:06:50 load avg: 4.10 [270/433] test_codecmaps_hk passed -- running: test_capi (1 min 27 sec), test_multiprocessing_spawn (2 min 55 sec)
+0:06:51 load avg: 4.10 [271/433] test_shutil passed -- running: test_capi (1 min 28 sec), test_multiprocessing_spawn (2 min 56 sec)
+0:06:54 load avg: 3.77 [272/433] test_capi passed (1 min 31 sec) -- running: test_multiprocessing_spawn (2 min 59 sec)
+0:06:54 load avg: 3.77 [273/433] test_decorators passed -- running: test_multiprocessing_spawn (2 min 59 sec)
+0:06:56 load avg: 3.77 [274/433] test_posix passed -- running: test_multiprocessing_spawn (3 min 1 sec)
+0:06:57 load avg: 3.77 [275/433] test_cprofile passed -- running: test_multiprocessing_spawn (3 min 2 sec)
+0:06:57 load avg: 3.77 [276/433] test_generators passed -- running: test_multiprocessing_spawn (3 min 2 sec)
+0:06:59 load avg: 3.87 [277/433] test_queue passed -- running: test_multiprocessing_spawn (3 min 4 sec)
+0:06:59 load avg: 3.87 [278/433] test_gzip skipped -- running: test_multiprocessing_spawn (3 min 4 sec)
+test_gzip skipped -- No module named 'zlib'
+0:07:01 load avg: 3.87 [279/433] test_tools passed -- running: test_multiprocessing_spawn (3 min 6 sec)
+0:07:01 load avg: 3.87 [280/433] test_pwd passed -- running: test_multiprocessing_spawn (3 min 6 sec)
+0:07:01 load avg: 3.87 [281/433] test_nis skipped -- running: test_multiprocessing_spawn (3 min 6 sec)
+test_nis skipped -- No module named 'nis'
+0:07:02 load avg: 3.87 [282/433] test_mailcap passed -- running: test_multiprocessing_spawn (3 min 6 sec)
+/home/ubuntu/cpython/Lib/mailcap.py:228: UnsafeMailcapInput: Refusing to substitute MIME type 'audio/*' into a shell command.
+  warnings.warn(msg, UnsafeMailcapInput)
+/home/ubuntu/cpython/Lib/mailcap.py:228: UnsafeMailcapInput: Refusing to substitute MIME type 'audio/*' into a shell command.
+  warnings.warn(msg, UnsafeMailcapInput)
+0:07:03 load avg: 3.87 [283/433] test_pdb passed -- running: test_multiprocessing_spawn (3 min 8 sec)
+0:07:03 load avg: 3.87 [284/433] test_lzma skipped -- running: test_multiprocessing_spawn (3 min 8 sec)
+test_lzma skipped -- No module named '_lzma'
+0:07:03 load avg: 3.87 [285/433] test_range passed -- running: test_multiprocessing_spawn (3 min 8 sec)
+0:07:03 load avg: 3.87 [286/433] test_genericalias passed -- running: test_multiprocessing_spawn (3 min 8 sec)
+0:07:04 load avg: 3.87 [287/433] test_raise passed -- running: test_multiprocessing_spawn (3 min 9 sec)
+0:07:05 load avg: 3.72 [288/433] test_marshal passed -- running: test_multiprocessing_spawn (3 min 9 sec)
+0:07:05 load avg: 3.72 [289/433] test_future passed -- running: test_multiprocessing_spawn (3 min 10 sec)
+0:07:05 load avg: 3.72 [290/433] test_tix skipped -- running: test_multiprocessing_spawn (3 min 10 sec)
+test_tix skipped -- No module named '_tkinter'
+0:07:06 load avg: 3.72 [291/433] test_runpy passed -- running: test_multiprocessing_spawn (3 min 11 sec)
+0:07:06 load avg: 3.72 [292/433] test_sys_setprofile passed -- running: test_multiprocessing_spawn (3 min 11 sec)
+0:07:06 load avg: 3.72 [293/433] test_multiprocessing_spawn passed (3 min 11 sec)
+0:07:06 load avg: 3.72 [294/433] test_fileinput passed
+0:07:07 load avg: 3.72 [295/433] test_devpoll skipped
+test_devpoll skipped -- test works only on Solaris OS family
+0:07:07 load avg: 3.72 [296/433] test_frame passed
+0:07:07 load avg: 3.72 [297/433] test_codecmaps_kr passed
+0:07:08 load avg: 3.72 [298/433] test_atexit passed
+0:07:09 load avg: 3.72 [299/433] test_hash passed
+0:07:09 load avg: 3.66 [300/433] test_urllib passed
+0:07:10 load avg: 3.66 [301/433] test_hmac passed
+0:07:12 load avg: 3.66 [302/433] test_tuple passed
+0:07:12 load avg: 3.66 [303/433] test_ttk_textonly skipped
+test_ttk_textonly skipped -- No module named '_tkinter'
+0:07:14 load avg: 3.61 [304/433] test_pickletools passed
+0:07:15 load avg: 3.61 [305/433] test_ossaudiodev skipped (resource denied)
+test_ossaudiodev skipped -- Use of the 'audio' resource not enabled
+0:07:16 load avg: 3.61 [306/433] test_logging passed
+0:07:16 load avg: 3.61 [307/433] test_unary passed
+0:07:17 load avg: 3.61 [308/433] test_webbrowser passed
+0:07:17 load avg: 3.61 [309/433] test_urllib2net passed
+0:07:17 load avg: 3.61 [310/433] test_with passed
+0:07:17 load avg: 3.61 [311/433] test_unpack passed
+0:07:19 load avg: 3.64 [312/433] test_urlparse passed
+0:07:20 load avg: 3.64 [313/433] test_file_eintr passed
+0:07:21 load avg: 3.64 [314/433] test_zipfile64 skipped (resource denied)
+test_zipfile64 skipped -- test requires loads of disk-space bytes and a long time to run
+0:07:21 load avg: 3.64 [315/433] test_charmapcodec passed
+0:07:22 load avg: 3.64 [316/433] test_exception_hierarchy passed
+0:07:23 load avg: 3.64 [317/433] test_modulefinder passed
+0:07:24 load avg: 3.64 [318/433] test_htmlparser passed
+0:07:24 load avg: 3.67 [319/433] test_html passed
+0:07:25 load avg: 3.67 [320/433] test_fileio passed
+0:07:25 load avg: 3.67 [321/433] test_codeop passed
+0:07:26 load avg: 3.67 [322/433] test_codecencodings_hk passed
+0:07:27 load avg: 3.67 [323/433] test_sax passed
+0:07:27 load avg: 3.67 [324/433] test_setcomps passed
+0:07:28 load avg: 3.67 [325/433] test_compare passed
+0:07:28 load avg: 3.67 [326/433] test_zoneinfo skipped
+test_zoneinfo skipped -- No module named '_lzma'
+0:07:29 load avg: 3.67 [327/433] test_opcache passed
+0:07:29 load avg: 3.70 [328/433] test_global passed
+0:07:30 load avg: 3.70 [329/433] test_property passed
+0:07:30 load avg: 3.70 [330/433] test_ast passed
+0:07:30 load avg: 3.70 [331/433] test_cgi passed
+0:07:31 load avg: 3.70 [332/433] test_bool passed
+0:07:41 load avg: 3.74 [333/433] test_cmd_line passed -- running: test_math (32.7 sec)
+0:07:41 load avg: 3.74 [334/433] test_type_comments passed -- running: test_math (33.2 sec)
+0:07:42 load avg: 3.74 [335/433] test_errno passed -- running: test_math (33.6 sec)
+0:07:42 load avg: 3.74 [336/433] test_statistics passed -- running: test_math (33.9 sec)
+0:07:42 load avg: 3.74 [337/433] test_stable_abi_ctypes skipped -- running: test_math (34.3 sec)
+test_stable_abi_ctypes skipped -- No module named '_ctypes'
+0:07:45 load avg: 3.77 [338/433] test_collections passed -- running: test_math (36.6 sec)
+0:07:45 load avg: 3.77 [339/433] test_pty passed -- running: test_math (37.1 sec)
+hi there
+0:07:46 load avg: 3.77 [340/433] test_future3 passed -- running: test_math (37.5 sec)
+0:07:47 load avg: 3.77 [341/433] test_csv passed -- running: test_math (38.7 sec)
+0:07:48 load avg: 3.77 [342/433] test_itertools passed -- running: test_math (39.7 sec)
+0:07:48 load avg: 3.77 [343/433] test_sysconfig passed -- running: test_math (40.4 sec)
+0:07:50 load avg: 3.78 [344/433] test_codecmaps_jp passed -- running: test_math (41.8 sec)
+0:07:50 load avg: 3.78 [345/433] test_mmap passed -- running: test_math (42.4 sec)
+0:07:51 load avg: 3.78 [346/433] test_pstats passed -- running: test_math (43.2 sec)
+0:07:52 load avg: 3.78 [347/433] test_codecencodings_cn passed -- running: test_math (44.2 sec)
+0:07:54 load avg: 3.80 [348/433] test_dis passed -- running: test_math (46.4 sec)
+0:07:55 load avg: 3.80 [349/433] test_secrets passed -- running: test_math (46.7 sec)
+0:07:55 load avg: 3.80 [350/433] test_robotparser passed -- running: test_math (47.2 sec)
+0:07:57 load avg: 3.80 [351/433] test_eintr passed -- running: test_math (49.1 sec)
+0:07:58 load avg: 3.80 [352/433] test_iter passed -- running: test_math (49.6 sec)
+0:08:01 load avg: 3.82 [353/433] test_import passed -- running: test_math (52.8 sec)
+0:08:02 load avg: 3.82 [354/433] test_resource passed -- running: test_math (53.9 sec)
+0:08:30 load avg: 3.49 [355/433] test_xmlrpc passed -- running: test_math (1 min 22 sec), test_asyncio (34.9 sec), test_unparse (47.9 sec)
+0:08:32 load avg: 3.49 [356/433] test_select passed -- running: test_math (1 min 24 sec), test_asyncio (36.9 sec), test_unparse (49.8 sec)
+0:08:33 load avg: 3.49 [357/433] test_tcl skipped -- running: test_math (1 min 24 sec), test_asyncio (37.3 sec), test_unparse (50.2 sec)
+test_tcl skipped -- No module named '_tkinter'
+0:08:33 load avg: 3.49 [358/433] test_code_module passed -- running: test_math (1 min 25 sec), test_asyncio (38.0 sec), test_unparse (51.0 sec)
+0:08:34 load avg: 3.53 [359/433] test_syntax passed -- running: test_math (1 min 26 sec), test_asyncio (38.9 sec), test_unparse (51.8 sec)
+0:08:35 load avg: 3.53 [360/433] test_index passed -- running: test_math (1 min 26 sec), test_asyncio (39.3 sec), test_unparse (52.3 sec)
+0:08:35 load avg: 3.53 [361/433] test_dynamicclassattribute passed -- running: test_math (1 min 26 sec), test_asyncio (39.8 sec), test_unparse (52.7 sec)
+0:08:36 load avg: 3.53 [362/433] test_codecencodings_kr passed -- running: test_math (1 min 27 sec), test_asyncio (40.6 sec), test_unparse (53.5 sec)
+0:08:36 load avg: 3.53 [363/433] test_dbm passed -- running: test_math (1 min 28 sec), test_asyncio (41.1 sec), test_unparse (54.0 sec)
+0:08:37 load avg: 3.53 [364/433] test_ioctl skipped -- running: test_math (1 min 28 sec), test_asyncio (41.4 sec), test_unparse (54.4 sec)
+test_ioctl skipped -- Unable to open /dev/tty
+0:08:37 load avg: 3.53 [365/433] test_string passed -- running: test_math (1 min 29 sec), test_asyncio (41.9 sec), test_unparse (54.8 sec)
+0:08:38 load avg: 3.53 [366/433] test_richcmp passed -- running: test_math (1 min 29 sec), test_asyncio (42.3 sec), test_unparse (55.3 sec)
+0:08:38 load avg: 3.53 [367/433] test_syslog passed -- running: test_math (1 min 30 sec), test_asyncio (43.1 sec), test_unparse (56.1 sec)
+0:08:39 load avg: 3.53 [368/433] test_picklebuffer passed -- running: test_math (1 min 30 sec), test_asyncio (43.6 sec), test_unparse (56.5 sec)
+0:08:39 load avg: 3.57 [369/433] test_wmi skipped -- running: test_math (1 min 31 sec), test_asyncio (44.0 sec), test_unparse (56.9 sec)
+test_wmi skipped -- No module named '_wmi'
+0:08:40 load avg: 3.57 [370/433] test_bigmem passed -- running: test_math (1 min 31 sec), test_asyncio (44.5 sec), test_unparse (57.4 sec)
+0:08:40 load avg: 3.57 [371/433] test_unpack_ex passed -- running: test_math (1 min 32 sec), test_asyncio (45.0 sec), test_unparse (58.0 sec)
+0:08:46 load avg: 3.53 [372/433] test_wait4 passed -- running: test_math (1 min 37 sec), test_asyncio (50.5 sec), test_unparse (1 min 3 sec)
+0:09:00 load avg: 3.63 [373/433] test_trace passed -- running: test_math (1 min 52 sec), test_asyncio (1 min 5 sec), test_unparse (1 min 18 sec)
+0:09:01 load avg: 3.63 [374/433] test_unparse passed (1 min 18 sec) -- running: test_math (1 min 52 sec), test_asyncio (1 min 5 sec)
+0:09:01 load avg: 3.63 [375/433] test_complex passed -- running: test_math (1 min 53 sec), test_asyncio (1 min 5 sec)
+0:09:02 load avg: 3.63 [376/433] test_smtpnet skipped -- running: test_math (1 min 53 sec), test_asyncio (1 min 6 sec)
+test_smtpnet skipped -- No module named '_ssl'
+0:09:02 load avg: 3.63 [377/433] test_ipaddress passed -- running: test_math (1 min 53 sec), test_asyncio (1 min 6 sec)
+0:09:02 load avg: 3.63 [378/433] test_urllib_response passed -- running: test_math (1 min 54 sec), test_asyncio (1 min 6 sec)
+0:09:02 load avg: 3.63 [379/433] test_operator passed -- running: test_math (1 min 54 sec), test_asyncio (1 min 7 sec)
+0:09:03 load avg: 3.63 [380/433] test_future4 passed -- running: test_math (1 min 54 sec), test_asyncio (1 min 7 sec)
+0:09:03 load avg: 3.63 [381/433] test_openpty passed -- running: test_math (1 min 55 sec), test_asyncio (1 min 7 sec)
+0:09:04 load avg: 3.63 [382/433] test_site passed -- running: test_math (1 min 55 sec), test_asyncio (1 min 8 sec)
+0:09:04 load avg: 3.63 [383/433] test_pulldom passed -- running: test_math (1 min 55 sec), test_asyncio (1 min 8 sec)
+0:09:04 load avg: 3.74 [384/433] test_opcodes passed -- running: test_math (1 min 56 sec), test_asyncio (1 min 8 sec)
+0:09:04 load avg: 3.74 [385/433] test_yield_from passed -- running: test_math (1 min 56 sec), test_asyncio (1 min 9 sec)
+0:09:10 load avg: 3.76 [386/433] test_sys_settrace passed -- running: test_math (2 min 2 sec), test_asyncio (1 min 15 sec)
+/home/ubuntu/cpython/Lib/test/test_sys_settrace.py:1771: RuntimeWarning: assigning None to 1 unbound local
+  frame.f_lineno = self.firstLine + self.jumpTo
+/home/ubuntu/cpython/Lib/test/test_sys_settrace.py:1771: RuntimeWarning: assigning None to 2 unbound locals
+  frame.f_lineno = self.firstLine + self.jumpTo
+0:09:11 load avg: 3.76 [387/433] test_isinstance passed -- running: test_math (2 min 2 sec), test_asyncio (1 min 15 sec)
+0:09:11 load avg: 3.76 [388/433] test_grammar passed -- running: test_math (2 min 3 sec), test_asyncio (1 min 16 sec)
+0:09:12 load avg: 3.76 [389/433] test_startfile skipped -- running: test_math (2 min 3 sec), test_asyncio (1 min 16 sec)
+test_startfile skipped -- object <module 'os' from '/home/ubuntu/cpython/Lib/os.py'> has no attribute 'startfile'
+0:09:12 load avg: 3.76 [390/433] test_pipes passed -- running: test_math (2 min 4 sec), test_asyncio (1 min 17 sec)
+0:09:13 load avg: 3.76 [391/433] test_dynamic passed -- running: test_math (2 min 4 sec), test_asyncio (1 min 17 sec)
+0:09:13 load avg: 3.76 [392/433] test_pkgutil passed -- running: test_math (2 min 5 sec), test_asyncio (1 min 18 sec)
+0:09:14 load avg: 3.78 [393/433] test_finalization passed -- running: test_math (2 min 6 sec), test_asyncio (1 min 19 sec)
+0:09:18 load avg: 3.78 [394/433] test_traceback passed -- running: test_math (2 min 10 sec), test_asyncio (1 min 23 sec)
+0:09:19 load avg: 3.78 [395/433] test_class passed -- running: test_math (2 min 10 sec), test_asyncio (1 min 23 sec)
+0:09:20 load avg: 3.72 [396/433] test_tempfile passed -- running: test_math (2 min 12 sec), test_asyncio (1 min 25 sec)
+0:09:20 load avg: 3.72 [397/433] test_curses skipped -- running: test_math (2 min 12 sec), test_asyncio (1 min 25 sec)
+test_curses skipped -- No module named '_curses'
+0:09:50 load avg: 3.42 running: test_socket (36.1 sec), test_math (2 min 42 sec), test_asyncio (1 min 55 sec), test_concurrent_futures (30.0 sec)
+0:09:54 load avg: 3.30 [398/433] test_math passed (2 min 46 sec) -- running: test_socket (40.0 sec), test_asyncio (1 min 59 sec), test_concurrent_futures (33.9 sec)
+0:09:55 load avg: 3.30 [399/433] test_xmlrpc_net passed -- running: test_socket (40.1 sec), test_asyncio (1 min 59 sec), test_concurrent_futures (34.0 sec)
+0:09:55 load avg: 3.30 [400/433] test_bigaddrspace passed -- running: test_socket (40.3 sec), test_asyncio (1 min 59 sec), test_concurrent_futures (34.2 sec)
+0:09:56 load avg: 3.30 [401/433] test_pathlib passed -- running: test_socket (42.0 sec), test_asyncio (2 min 1 sec), test_concurrent_futures (35.9 sec)
+0:09:57 load avg: 3.30 [402/433] test_frozen passed -- running: test_socket (42.2 sec), test_asyncio (2 min 1 sec), test_concurrent_futures (36.1 sec)
+0:09:57 load avg: 3.30 [403/433] test_socket passed (42.0 sec) -- running: test_asyncio (2 min 1 sec), test_concurrent_futures (36.3 sec)
+0:09:57 load avg: 3.30 [404/433] test_scope passed -- running: test_asyncio (2 min 1 sec), test_concurrent_futures (36.4 sec)
+0:10:01 load avg: 3.36 [405/433] test_cmd_line_script passed -- running: test_asyncio (2 min 5 sec), test_concurrent_futures (40.7 sec)
+/home/ubuntu/cpython/Lib/subprocess.py:849: RuntimeWarning: pass_fds overriding close_fds.
+  warnings.warn("pass_fds overriding close_fds.", RuntimeWarning)
+0:10:02 load avg: 3.36 [406/433] test_lltrace passed -- running: test_asyncio (2 min 7 sec), test_concurrent_futures (41.9 sec)
+0:10:03 load avg: 3.36 [407/433] test_multibytecodec passed -- running: test_asyncio (2 min 7 sec), test_concurrent_futures (42.5 sec)
+0:10:03 load avg: 3.36 [408/433] test_sched passed -- running: test_asyncio (2 min 8 sec), test_concurrent_futures (42.9 sec)
+0:10:04 load avg: 3.41 [409/433] test_functools passed -- running: test_asyncio (2 min 9 sec), test_concurrent_futures (43.9 sec)
+0:10:05 load avg: 3.41 [410/433] test_dictviews passed -- running: test_asyncio (2 min 9 sec), test_concurrent_futures (44.3 sec)
+0:10:05 load avg: 3.41 [411/433] test_dtrace passed -- running: test_asyncio (2 min 9 sec), test_concurrent_futures (44.7 sec)
+0:10:06 load avg: 3.41 [412/433] test_cmath passed -- running: test_asyncio (2 min 10 sec), test_concurrent_futures (45.4 sec)
+0:10:07 load avg: 3.41 [413/433] test_typechecks passed -- running: test_asyncio (2 min 11 sec), test_concurrent_futures (46.0 sec)
+0:10:09 load avg: 3.41 [414/433] test_codecencodings_jp passed -- running: test_asyncio (2 min 13 sec), test_concurrent_futures (48.5 sec)
+0:10:09 load avg: 3.38 [415/433] test_dict_version passed -- running: test_asyncio (2 min 13 sec), test_concurrent_futures (48.7 sec)
+0:10:09 load avg: 3.38 [416/433] test_kqueue skipped -- running: test_asyncio (2 min 14 sec), test_concurrent_futures (49.0 sec)
+test_kqueue skipped -- test works only on BSD
+0:10:11 load avg: 3.38 [417/433] test_exceptions passed -- running: test_asyncio (2 min 15 sec), test_concurrent_futures (50.7 sec)
+0:10:12 load avg: 3.38 [418/433] test_ucn passed -- running: test_asyncio (2 min 16 sec), test_concurrent_futures (51.4 sec)
+/home/ubuntu/cpython/Lib/test/support/__init__.py:743: ResourceWarning: unclosed <socket.socket [closed] fd=3, family=2, type=1, proto=6>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+0:10:12 load avg: 3.38 [419/433] test_named_expressions passed -- running: test_asyncio (2 min 17 sec), test_concurrent_futures (51.8 sec)
+0:10:13 load avg: 3.38 [420/433] test_contains passed -- running: test_asyncio (2 min 17 sec), test_concurrent_futures (52.1 sec)
+0:10:13 load avg: 3.38 [421/433] test_keyword passed -- running: test_asyncio (2 min 17 sec), test_concurrent_futures (52.3 sec)
+0:10:13 load avg: 3.38 [422/433] test_zipapp passed -- running: test_asyncio (2 min 17 sec), test_concurrent_futures (52.7 sec)
+0:10:13 load avg: 3.38 [423/433] test_utf8source passed -- running: test_asyncio (2 min 18 sec), test_concurrent_futures (52.9 sec)
+0:10:19 load avg: 3.19 [424/433] test_wait3 passed -- running: test_asyncio (2 min 23 sec), test_concurrent_futures (58.5 sec)
+0:10:26 load avg: 3.16 [425/433] test_argparse passed -- running: test_asyncio (2 min 30 sec), test_concurrent_futures (1 min 5 sec)
+0:10:26 load avg: 3.16 [426/433] test_dbm_gnu skipped -- running: test_asyncio (2 min 31 sec), test_concurrent_futures (1 min 6 sec)
+test_dbm_gnu skipped -- No module named '_gdbm'
+0:10:27 load avg: 3.16 [427/433] test_abc passed -- running: test_asyncio (2 min 31 sec), test_concurrent_futures (1 min 6 sec)
+0:10:31 load avg: 3.14 [428/433] test_builtin passed -- running: test_asyncio (2 min 36 sec), test_concurrent_futures (1 min 10 sec)
+0:10:32 load avg: 3.14 [429/433] test_asyncgen passed -- running: test_asyncio (2 min 37 sec), test_concurrent_futures (1 min 11 sec)
+0:10:33 load avg: 3.14 [430/433] test_threadedtempfile passed -- running: test_asyncio (2 min 37 sec), test_concurrent_futures (1 min 12 sec)
+0:10:39 load avg: 2.97 [431/433] test_pickle passed -- running: test_asyncio (2 min 44 sec), test_concurrent_futures (1 min 18 sec)
+0:11:09 load avg: 2.99 running: test_asyncio (3 min 14 sec), test_concurrent_futures (1 min 48 sec)
+0:11:33 load avg: 2.44 [432/433] test_asyncio passed (3 min 37 sec) -- running: test_concurrent_futures (2 min 12 sec)
+0:11:56 load avg: 1.61 [433/433] test_concurrent_futures passed (2 min 35 sec)
+/home/ubuntu/cpython/Lib/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=32419) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+/home/ubuntu/cpython/Lib/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Traceback (most recent call last):
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/ubuntu/cpython/Lib/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/cpython/Lib/multiprocessing/synchronize.py", line 87, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+
+== Tests result: SUCCESS ==
+
+397 tests OK.
+
+36 tests skipped:
+    test_bz2 test_ctypes test_curses test_dbm_gnu test_dbm_ndbm
+    test_devpoll test_gdb test_gzip test_idle test_ioctl test_kqueue
+    test_launcher test_lzma test_msilib test_nis test_ossaudiodev
+    test_peg_generator test_readline test_smtpnet test_sqlite3
+    test_ssl test_stable_abi_ctypes test_startfile test_tcl test_tix
+    test_tkinter test_ttk test_ttk_textonly test_turtle
+    test_winconsoleio test_winreg test_winsound test_wmi
+    test_zipfile64 test_zlib test_zoneinfo
+
+Total duration: 11 min 56 sec
+Tests result: SUCCESS
+ubuntu@ip-172-31-6-159:~$ 

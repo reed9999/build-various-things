@@ -23,10 +23,7 @@ do_apt_get_install() {
     sudo ${PKGMGR} install -y pip
 
     # Now these get a very similar message. I've installed these globally rather than in a venv because I expect them 
-    # to apply across projects. See NOTE-PIP below.
-    # sudo pip install --upgrade build
-    # sudo pip install --upgrade setuptools
-
+    # to apply across projects.
     sudo apt install -y python3-build
     sudo apt install -y python3-setuptools
 

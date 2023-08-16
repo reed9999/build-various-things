@@ -4,8 +4,7 @@ Here I attempt to automate build processes... just because.
 (Building from source is a prereq to mucking around in source, kind of, 
 and beyond that it just feels good.)
 
-
-# Directions this could go in
+## Directions this could go in
 Adding new apps to build from source is fun, but ultimately I'll learn more if 
 I set a hiatus condition and then learn more about what I have.
 
@@ -39,6 +38,23 @@ I set a hiatus condition and then learn more about what I have.
 5. Perf test any of the above, esp. larger instance types.
 6. Muck about in source code. Break things. Put in my own strings, my own easter eggs.
 
+### Status
+
+- CPython -- Each works, separate scripts. Pass with warnings for each.
+- pytest -- unified
+- Django -- unified
+- Bazel -- unified I think; built on Ubuntu with some test failures
+- Dagster -- unified; 3 test failures on each
+- Ruby -- unified; test failures on each
+- Rust -- Ubuntu only 
+- Go language -- Amazon only
+- Haskell
+- Vim -- Ubuntu (and WSL Ubuntu) only; some post-build steps maybe needed.
+- Airflow
+- \[Pytorch - on hold]
+
+Furthermore on Red Hat: CPython (Amazon Linux script); pytest in progress 
+(unified)
 
 # Q3 2023 (phase 2)
 
@@ -211,6 +227,11 @@ Ready
 Agent version
 2.9.0.4
 
+
+## Troublshooting common issues
+### configure: error: no acceptable C compiler found in $PATH
+For CPython it was simply `sudo apt-get update` so that build-essential 
+could be found and installed.
 
 ## Enhancements -- somewhat redundant with "Directions..." above.
 Can we just use an EC2 image with gcc? Try:
