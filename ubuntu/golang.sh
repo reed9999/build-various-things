@@ -17,6 +17,13 @@ sudo ${BVT_INSTALLER} install -y git gcc
 
 sudo ${BVT_INSTALLER} install -y golang-1.20
 
+if [[ "$BVT_DISTRO" == "ubuntu" ]]; then
+  # Unclear how the new 1.20 is supposed to get installed automatically;
+  # in any case, either of these two approaches should be enough.
+  sudo ln -s /usr/lib/go-1.20/bin/go /usr/bin/go
+#  export GOROOT_BOOTSTRAP=/usr/lib/go-1.20
+fi
+
 pushd ~ || exit 255
 git clone https://go.googlesource.com/go
 cd go/src
