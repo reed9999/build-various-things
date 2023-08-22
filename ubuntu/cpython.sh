@@ -16,8 +16,7 @@ sudo ${BVT_INSTALLER} install -y build-essential   # I think this was another wa
 sudo ${BVT_INSTALLER} install -y gcc  # redundant?
 
 pushd ~
-git clone --depth 1 https://github.com/reed9999/cpython.git
-git remote add upstream https://github.com/python/cpython
+git clone --depth 1 https://github.com/python/cpython.git
 popd
 
 pushd ~/cpython
