@@ -47,9 +47,9 @@ I set a hiatus condition and then learn more about what I have.
 - Dagster -- unified; 3 test failures on each
 - Ruby -- unified; test failures on each
 - Rust -- Ubuntu only 
-- Go language -- Amazon only
-- Haskell
-- Vim -- Ubuntu (and WSL Ubuntu) only; some post-build steps maybe needed.
+- Go language -- both, not unified
+- Haskell -- not working, only attempted on Ubuntu
+- Vim -- Ubuntu (and WSL Ubuntu) only; some post-build steps may be needed.
 - Airflow
 - \[Pytorch - on hold]
 
