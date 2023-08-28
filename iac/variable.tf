@@ -63,13 +63,7 @@ variable "USE1" {
 # Reminder -- these are overridden in terraform.tfvars. This is intended simply as a default.
 variable "quantities" {
   default = {
-    USE2 = {
-      nano      = { amazon = 0, ubuntu = 0 },
-      micro     = { amazon = 0, ubuntu = 0 },
-      large     = { amazon = 0, ubuntu = 0 },
-      # To experiment, let's also work in a compute-optimized instance type
-      c6a-large = { amazon = 0, ubuntu = 0 }
-    }
+    # For USE2 use the for_each setup (ohio-instances, presently in main.tf)
     USE1 = {
       micro = { amazon = 0, ubuntu = 0 },
       large = { amazon = 0, ubuntu = 0 },
@@ -96,7 +90,7 @@ variable "instance_types" {
     micro     = "t2.micro"  # Not available in Cape Town
     t3-micro  = "t3.micro"
     large     = "m5.large"
-    c6a-large = "c6a.large"
+#    c6a-large = "c6a.large"
   }
 }
 
