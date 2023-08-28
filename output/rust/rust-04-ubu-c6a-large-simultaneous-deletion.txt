@@ -9,12 +9,6 @@ disk-intensive.
 
 
 Last login: Tue Aug 15 18:43:59 on ttys003
-43228@ICFX947PQ4WPX iac % 
-43228@ICFX947PQ4WPX iac % 
-43228@ICFX947PQ4WPX iac % 
-43228@ICFX947PQ4WPX iac % pwd
-/Users/43228/code/build-various-things/iac
-43228@ICFX947PQ4WPX iac % ssh -i "2023-07-build-ohio.pem" ubuntu@ec2-3-143-17-31.us-east-2.compute.amazonaws.com
 The authenticity of host 'ec2-3-143-17-31.us-east-2.compute.amazonaws.com (3.143.17.31)' can't be established.
 ED25519 key fingerprint is SHA256:eUqO9iZ+1Z3hIZTWv0C6q/wpfUV2NiKzEwIDvE7277Q.
 This key is not known by any other names

@@ -4,8 +4,6 @@ takes time to build credits back up, over several iterations.
 
 
 
-Last login: Tue Aug 15 13:06:14 on ttys003
-43228@ICFX947PQ4WPX iac % ssh -i "2023-07-build-ohio.pem" ubuntu@ec2-3-17-164-222.us-east-2.compute.amazonaws.com
 The authenticity of host 'ec2-3-17-164-222.us-east-2.compute.amazonaws.com (3.17.164.222)' can't be established.
 ED25519 key fingerprint is SHA256:cS1sOrWB5hJvzrIkOq6VKo9eRs21DKFvRuBj9pzQa4k.
 This key is not known by any other names
