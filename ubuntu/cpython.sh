@@ -28,4 +28,21 @@ make clean
 
 make -s -j2
 
+echo "*****"
+echo "*  Here's an example of some tests that work"
+echo "*****"
+./python -u -W default -bb -E -E  -m test test_fork1 test_format \
+ test_fractions -r -w -j 0 -u all,-largefile,-audio,-gui
+# A much shorter command is probably sufficient; the complete set of flags
+# above simulates the complete set added by `make test`.
+# ./python -m test test_fork1 test_format
+
+echo "*****"
+echo "*  And here's one that has been failing lately."
+echo "*****"
+./python -u -W default -bb -E -E  -m test test_peg_generator \
+  -r -w -j 0 -u all,-largefile,-audio,-gui
+
+echo "***** BEGIN FULL TEST SUITE $(date)"
 make test | tee ~/python-test-output.txt
+echo "***** END FULL TEST SUITE $(date)"
