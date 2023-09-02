@@ -1,5 +1,5 @@
 #!/bin/bash
-# Scripts from Bing AI to help identify distro and installer.
+# Identify distro and installer.
 # Use BVT prefix for "build various things" to avoid namespace pollution
 
 get_distro() {
