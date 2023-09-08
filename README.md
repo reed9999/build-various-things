@@ -40,7 +40,7 @@ I set a hiatus condition and then learn more about what I have.
 
 ### Status
 
-- CPython -- Each works, separate scripts. Pass with warnings for each.
+- CPython -- unified -- recent change broke test_peg_generator, apparently
 - pytest -- unified
 - Django -- unified
 - Bazel -- unified I think; built on Ubuntu with some test failures
@@ -63,40 +63,7 @@ refresh of the README -- should be merged in with the original stuff.
 
 ## Punch list: 
 
-## Details of issues
-
-1. Ubuntu produces a CUI dialog box. Fixed. 
-https://stackoverflow.com/questions/73397110/
-
-2. Django build fails on Ubuntu -- resolved in script, under final testing.
-
-3. Pytest build on Ubuntu is mostly OK, and on Amzn is fine, but this on U: 
-
-```
-Using /home/ubuntu/.virtualenvs/pytestdev/lib/python3.11/site-packages
-Finished processing dependencies for pytest==8.0.0.dev142+g485c55581
-+ popd
-~
-+ '
-/usr/lib/python3.9/site-packages/setuptools/installer.py:27: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
-  warnings.warn(
-WARNING: The wheel package is not available.
-WARNING: The wheel package is not available.
-WARNING: The wheel package is not available.
-WARNING: The wheel package is not available.
-usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
-   or: setup.py --help [cmd1 cmd2 ...]
-   or: setup.py --help-commands
-   or: setup.py cmd --help
-
-'
-scripts/ubuntu/python-various/pytest-build.sh: line 51: 
-```
-
-4. Amazon Linux -- bootstrap
-
-Use my learning from Ubuntu.
-
+Cleared out specific issues from here, because 
 # Q1-2 2023 (phase 1)
 
 
@@ -168,8 +135,8 @@ Django gets some deprecation warnings. Can they reasonably be fixed.
 ## MySQL
 - mysql: yes but needs a decent-sized instance.
 - bazel: yes but needs a decent-sized instance.
-# https://dev.mysql.com/doc/refman/8.0/en/installing-development-tree.html
-# https://dev.mysql.com/doc/refman/8.0/en/source-installation-prerequisites.html
+ https://dev.mysql.com/doc/refman/8.0/en/installing-development-tree.html
+ https://dev.mysql.com/doc/refman/8.0/en/source-installation-prerequisites.html
 
 
 If I need something fun to explore, check out these i18n dependencies: 
@@ -239,7 +206,36 @@ Can we just use an EC2 image with gcc? Try:
 amzn2-ami-kernel-5.10-hvm-2.0.20230320.0-x86_64-gp2
 ami-00a16e018e54305c6 
 
+# Specific builds - complications
 
+## Haskell
+
+I've tried various ways to bring ghc to 9.4 because that is what a message 
+said it needs to build itself. I installed ghcup. 
+
+Now I'm going back to https://gitlab.haskell.org/ghc/ghc/-/wikis/building/preparation/linux
+ready to try `sudo apt-get build-dep ghc` but: 
+
+```$ sudo apt-get build-dep ghc
+Reading package lists... Done
+E: You must put some 'deb-src' URIs in your sources.list
+```
+https://www.tecmint.com/fix-deb-src-uris-in-your-sources-list-error/
+
+```shell
+sudo vim /etc/apt/sources.list
+# uncomment at least a couple of the deb-src. I did universe and multiverse.
+
+sudo apt-get build-dep ghc
+
+```                                                                                                                   │ 
+ │ Newer kernel available                                                                                            │ 
+ │                                                                                                                   │ 
+ │ The currently running kernel version is 5.19.0-1029-aws which is not the expected kernel version 6.2.0-1010-aws.  │ 
+ │                                                                                                                   │ 
+ │ Restarting the system to load the new kernel will not be handled automatically, so you should consider            │ 
+ │ rebooting.       `
+```
 # Handy links and ideas, etc.
 
 Preserve colors: 
